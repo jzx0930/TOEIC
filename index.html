@@ -392,7 +392,7 @@ async function init() {
 // 載入單一檔案並建立折疊區塊
 async function loadWordsFromFile(fileName) {
   try {
-    const response = await fetch(`txt/${fileName}`);
+    const response = await fetch(`word/${fileName}`);
     if (!response.ok) throw new Error(`找不到檔案: ${fileName}`);
     
     const sectionTitleText = fileName.replace(/\.(txt|json)$/, "");
