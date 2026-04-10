@@ -1,0 +1,534 @@
+/* =========================
+   全域設定與排版
+========================= */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  border: 10px solid #00aa55;
+  animation: fadeInBody 1s ease-in;
+}
+
+h1, .title {
+  font-size: 2.5em;
+  color: #0f0;
+  animation: fadeIn 1s ease-out;
+  font-family: "Comic Sans MS", "DFKai-SB", cursive;
+}
+
+h2, h3 {
+  color: #0f0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-out;
+}
+.back-button.list-return {
+  background-color: #ffcc00;
+  color: #000;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.back-button.list-return:hover {
+  background-color: #ffee88;
+  transform: scale(1.05);
+}
+
+/* =========================
+   清單樣式
+========================= */
+.note-list {
+  list-style-type: decimal;
+  padding-left: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.note-list li {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #d4af37;
+  animation: fadeIn 1.5s ease-out;
+}
+
+ul {
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+li {
+  font-size: 1.1em;
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* =========================
+   文字樣式
+========================= */
+.main-text {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #0f0;
+}
+
+.sub-text {
+  margin-left: 1em;
+  color: #ccc;
+  font-size: 1em;
+  text-indent: 0;
+}
+
+/* =========================
+   程式碼樣式
+========================= */
+code {
+  background-color: #111;
+  color: #0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
+
+pre {
+  background-color: #111;
+  color: #0f0;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95em;
+  margin: 10px 0 20px;
+  border: 1px solid #0f0;
+}
+/* =========================
+   工程詞彙導覽卡片的主體樣式
+========================= */
+.term-card {
+  display: block; /* 讓整個卡片區塊可點擊（a 標籤變成區塊元素） */
+  width: 200px; /* 固定卡片寬度，方便排版一致性 */
+  padding: 20px; /* 內部留白，讓文字不貼邊 */
+  margin: 20px; /* 外部留白，讓卡片之間有間距 */
+  background-color: #111; /* 深色背景，符合整體暗色主題 */
+  border: 2px solid #0f0; /* 螢光綠邊框，強調科技感與互動性 */
+  border-radius: 12px; /* 圓角設計，讓卡片更柔和不生硬 */
+  text-align: left; /* 文字靠左對齊，提升可讀性 */
+  text-decoration: none; /* 移除 a 標籤預設底線 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* hover 動畫平滑過渡 */
+  animation: fadeIn 1s ease-out; /* 進場動畫，讓卡片逐一淡入 */
+}
+/* =========================
+ 滑鼠懸停時的互動效果
+========================= */
+
+.term-card:hover {
+  transform: scale(1.05); /* 微放大卡片，提供視覺回饋 */
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6); /* 螢光綠外光暈，強化互動感 */
+}
+/* =========================
+ 詞彙標題樣式
+========================= */
+.term-card .main-text {
+  font-size: 1.4em; /* 放大主標題字體 */
+  color: #0f0; /* 使用螢光綠，與主題一致 */
+  margin-bottom: 8px; /* 與副標題之間留點空隙 */
+}
+/* =========================
+詞彙簡介樣式
+========================= */
+.term-card .sub-text {
+  font-size: 1em; /* 一般大小字體，作為補充說明 */
+  color: #ccc; /* 淺灰色，與主標題形成對比但仍清晰可讀 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   表格樣式
+========================= */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  animation: fadeIn 1.5s ease-out;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  font-size: 1em;
+}
+
+th {
+  background-color: #222;
+  color: #0f0;
+  font-weight: bold;
+}
+
+td {
+  background-color: #111;
+  color: #eee;
+}
+
+/* =========================
+   按鈕樣式
+========================= */
+.copy-btn, .back-button {
+  display: inline-block;
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.4);
+  animation: fadeIn 1s ease-out;
+  text-decoration: none;
+  font-family: "Comic Sans MS", "DFKai-SB", cursive;
+}
+
+.copy-btn:hover, .back-button:hover,
+.copy-btn.copied {
+  background-color: #00ff88;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+  transform: scale(1.05);
+}
+
+/* =========================
+   影片區塊
+========================= */
+.video-box {
+  width: 80%;
+  max-width: 640px;
+  margin: 30px auto;
+  border: 2px solid #0f0;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #111;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.video-title {
+  font-size: 1.6em;
+  color: #0f0;
+  margin-bottom: 12px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* =========================
+   展開區塊與箭頭動畫
+========================= */
+section h2 {
+  font-size: 1.8em;
+  max-width: 800px;
+  text-align: left;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.api-section {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #111;
+  border: 2px solid #0f0;
+  border-radius: 12px;
+  color: #ccc;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+section.expanded .api-section {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 0.6s ease-out;
+}
+
+section.collapsed .api-section {
+  display: none;
+}
+
+.api-section h3 {
+  color: #d4af37;
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.arrow {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.collapsed .arrow {
+  transform: rotate(0deg);
+}
+
+.expanded .arrow {
+  transform: rotate(90deg);
+}
+
+/* =========================
+   色彩標籤
+========================= */
+.red { color: #f00; animation-delay: 0.5s; }
+.green { color: #0a0; animation-delay: 0.8s; }
+.blue { color: #00f; animation-delay: 1.1s; }
+
+/* =========================
+   結構排版
+========================= */
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+/* =========================
+   幾何與動畫元件
+========================= */
+.divider {
+  width: 4px;
+  height: 120px;
+  background-color: purple;
+  border-radius: 2px;
+  animation: fadeInBody 1s ease-in;
+}
+
+.orbit-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.triangle {
+  position: absolute;
+  top: 10px;
+  left: 0; right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #ffcc00;
+  animation: popIn 0.8s ease-out;
+}
+
+.orbit-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: infinityLoop 4s linear infinite;
+  box-shadow: 0 0 12px 4px rgba(255, 255, 150, 0.6);
+  filter: brightness(1.2);
+}
+
+.orbit-dot::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: blur(6px);
+  transform: scale(1.5);
+}
+
+/* =========================
+   進度條樣式
+========================= */
+.progress-label {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  font-family: "Comic Sans MS", "DFKai-SB", cursive;
+}
+
+.progress-container {
+  width: 80%;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  border: 2px solid #fff;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: repeating-linear-gradient(
+    45deg,
+    red 0px,
+    orange 20px,
+    yellow 40px,
+    green 60px,
+    blue 80px,
+    indigo 100px,
+    violet 120px
+  );
+  background-size: 200% 100%;
+  animation: fillRainbow 3s linear forwards;
+}
+
+.progress-bar.spin {
+  animation: spinGradient 1s linear infinite;
+}
+/* 自動呼吸燈橘色按鈕 */
+.back-button.glow-orange {
+  background-color: #ffa500;
+  color: #000;
+  font-size: 1em;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(255, 165, 0, 0.6);
+  animation: breatheOrange 2.5s ease-in-out infinite;
+  font-family: "Segoe UI", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+/* 呼吸燈動畫：大小與橘色光暈漸變 */
+@keyframes breatheOrange {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.4);
+    background-color: #ffa500;
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.8);
+    background-color: #ff8c00;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.4);
+    background-color: #ffa500;
+  }
+}
+
+/* =========================
+   動畫定義
+========================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fillRainbow {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes spinGradient {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+@keyframes orbitAround {
+  0%   { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+@keyframes infinityLoop {
+  0%   { transform: translate(-50%, -50%) translateX(0px) translateY(0px); }
+  12.5%{ transform: translate(-50%, -50%) translateX(30px) translateY(-30px); }
+  25%  { transform: translate(-50%, -50%) translateX(60px) translateY(0px); }
+  37.5%{ transform: translate(-50%, -50%) translateX(30px) translateY(30px); }
+  50%  { transform: translate(-50%, -50%) translateX(0px) translateY(0px); }
+  62.5%{ transform: translate(-50%, -50%) translateX(-30px) translateY(-30px); }
+  75%  { transform: translate(-50%, -50%) translateX(-60px) translateY(0px); }
+  87.5%{ transform: translate(-50%, -50%) translateX(-30px) translateY(30px); }
+  100% { transform: translate(-50%, -50%) translateX(0px) translateY(0px); }
+}
+
+
+
+
