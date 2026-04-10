@@ -367,7 +367,7 @@ async function init() {
 
   try {
     // 讀取 list.json 獲取檔案清單
-    const listResponse = await fetch("txt/list.json");
+    const listResponse = await fetch("word/list.json");
     if (!listResponse.ok) throw new Error("無法讀取 list.json 索引檔");
     
     const fileList = await listResponse.json();
