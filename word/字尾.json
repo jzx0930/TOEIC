@@ -1,0 +1,55 @@
+{
+  "tor_words": [
+    {
+      "word": "actor",
+      "meaning": "演員；表演者",
+      "type": "person"
+    },
+    {
+      "word": "creator",
+      "meaning": "創造者；創作者",
+      "type": "person"
+    },
+    {
+      "word": "inventor",
+      "meaning": "發明家",
+      "type": "person"
+    },
+    {
+      "word": "mentor",
+      "meaning": "導師；指導者",
+      "type": "person"
+    },
+    {
+      "word": "doctor",
+      "meaning": "醫生；博士",
+      "type": "person"
+    },
+    {
+      "word": "governor",
+      "meaning": "州長；管理者",
+      "type": "person"
+    },
+    {
+      "word": "generator",
+      "meaning": "發電機；產生器",
+      "type": "instrument"
+    },
+    {
+      "word": "elevator",
+      "meaning": "電梯；升降機",
+      "type": "instrument"
+    },
+    {
+      "word": "detector",
+      "meaning": "偵測器；探測器",
+      "type": "instrument"
+    },
+    {
+      "word": "translator",
+      "meaning": "翻譯者；譯者",
+      "type": "person"
+    }
+  ],
+  "note": "字尾 -tor 多源自拉丁文，通常表示執行某種動作的人或具有某種功能的工具。"
+}
