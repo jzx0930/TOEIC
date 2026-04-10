@@ -1,0 +1,30 @@
+What's your name? | 你叫什麼名字？
+How long have you been learning English? | 你學習英文語多久了？
+Where are you from? | 你是從哪裡來的？
+What are your hobbies? | 你的興趣是什麼？
+Where do you live? | 你住在哪裡？
+Have you ever danced before? | 你做過跳舞嗎？
+How are you? | 你好嗎？
+Can I cook? | 我可以做料理嗎？
+How about you? | 你呢？
+When did you go on a trip? | 你什麼時候做了旅行？
+Nice to meet you. | 初次見面。
+Do you like music? | 你喜歡音樂嗎？
+What are you doing? | 你在做什麼？
+What does this mean? | 這個是什麼意思？
+Can you speak French? | 你會說法語嗎？
+Can you play the piano? | 你會彈鋼琴嗎？
+Is there a restaurant here? | 這裡有餐廳嗎？
+Why are you learning English? | 你為什麼學習英文語？
+Please say it again. | 請再說一次。
+Because of work. | 因為工作的關係。
+How much is this? | 這個多少錢？
+I want to go to the park. | 我想去公園。
+How can I get to the station? | 要怎麼到車站？
+Which restaurant is it? | 是哪個餐廳？
+Who is that person? | 那位是誰？
+What time is it now? | 現在幾點？
+Do you have any recommended dishes? | 有推薦的料理嗎？
+I want this. | 我要這個。
+Please check out. | 請結帳。
+Can you help me open the door? | 你可以幫我開門嗎？
