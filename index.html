@@ -1,0 +1,972 @@
+<!-- https://responsivevoice.org/app/?email=fuli62%40yahoo.com.tw&vgo_ee=l%2BG91NTiMwHTDhMuytIjXX56c%2FlYGgXXWMRtITQlpOpcygo%3D%3Aj5g2%2FBmLVehDI8quBB2qtW37f5TrPq9G -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+
+
+  
+<meta charset="UTF-8">
+<title>TOEIC單字卡</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<script defer src="index.js"></script>
+<style>
+
+
+/* 筆記按鈕樣式 */
+.note-btn {
+  position: absolute;
+bottom: 8px;    /* 距離底部 8px */
+  right: 8px;     /* 距離右側 8px */
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #ffcc00; /* 金黃色 */
+  z-index: 10;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.note-btn:hover {
+  transform: scale(1.2);
+}
+
+/* 筆記內容區塊 */
+.note-content {
+  display: none;
+  background-color: #333;
+  color: #ffcc00;
+  font-size: 13px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px dashed #ffcc00;
+  word-break: break-all;
+  text-align: left;
+  white-space: pre-wrap; /* 支援換行 */
+}
+
+.note-content.show {
+  display: block;
+}
+  
+/* 單字卡相對定位，方便放置右上角眼睛 */
+.term-card {
+  position: relative;
+  min-height: 100px;
+}
+
+/* 眼睛按鈕樣式 */
+.eye-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #00ff99;
+  z-index: 10;
+  padding: 5px;
+}
+
+.eye-btn:hover {
+  transform: scale(1.2);
+}
+
+/* 單字隱藏時的樣式：變透明或模糊 */
+.main-text.hidden-word {
+  color: transparent;
+  text-shadow: 0 0 8px rgba(255,255,255,0.5); /* 模糊效果 */
+  user-select: none; /* 防止反白偷看 */
+}
+
+/* 頂部全域控制按鈕容器 */
+.global-eye-controls {
+  margin-bottom: 10px;
+}
+
+/* 測驗佈局調整 */
+#quizModal .quiz-layout {
+  display: flex;
+  width: 95%;
+  max-width: 1200px;
+  height: 80vh;
+  gap: 20px;
+}
+
+.quiz-sidebar {
+  flex: 1;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-title {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background: #333;
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.sidebar-item {
+  background: #333;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #444;
+}
+
+.sidebar-item.correct { border-left-color: #00ff99; }
+.sidebar-item.wrong { border-left-color: #ff5555; }
+
+.main-quiz-area {
+  flex: 1.5;
+  background: #333;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #00ff99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.exit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.exit-btn:hover { background: #777; }
+
+/* 隱藏原生捲軸但保留功能 (可選) */
+.sidebar-content::-webkit-scrollbar { width: 5px; }
+.sidebar-content::-webkit-scrollbar-thumb { background: #555; }
+
+
+
+
+
+
+
+  
+
+/* 測驗選項按鈕樣式 */
+.option-btn {
+  padding: 15px;
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.option-btn:hover { background: #555; border-color: #00ff99; }
+.option-correct { background: #008855 !important; border-color: #00ff99 !important; }
+.option-wrong { background: #882222 !important; border-color: #ff5555 !important; }
+
+
+  
+.speak-button {
+  margin-left: 6px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #eee;
+  font-size: 12px;
+}
+.speak-button:hover { background-color: #ddd; }
+
+.section {
+  margin-bottom: 24px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.section-title {
+  background-color: #333;
+  color: #00ff99;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.arrow { margin-right: 8px; transition: transform 0.3s; }
+.arrow.rotate { transform: rotate(90deg); }
+
+.content-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 12px;
+}
+.term-card {
+  background-color: #222;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+.main-text { font-size: 16px; font-weight: bold; }
+.sub-text { font-size: 14px; margin-top: 4px; color: #ccc; }
+
+@media (max-width: 768px) {
+  .content-row { grid-template-columns: 1fr; }
+}
+.collapsed { display: none; }
+
+.controls { margin-bottom: 20px; }
+.control-button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.control-button:hover { background-color: #ddd; }
+
+.search-box { margin: 20px 0; text-align: center; }
+.search-input {
+  padding: 8px;
+  width: 250px;
+  border: 2px solid #0f0;
+  border-radius: 6px;
+  background-color: #111;
+  color: #fff;
+}
+.search-button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  border: 2px solid #0f0;
+  border-radius: 6px;
+  background-color: #0f0;
+  color: #000;
+  cursor: pointer;
+}
+.search-button:hover { background-color: #00ff88; }
+.highlight { background-color: yellow; color: black; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="content-wrapper">
+  
+ <!-- <a href="index.html" class="back-button">🏠 返回主頁</a> -->
+
+
+
+  <div class="quiz-controls" style="text-align: center; margin-bottom: 20px; padding: 15px; background: #222; border-radius: 8px; border: 1px solid #00ff99;">
+  <span style="color: #00ff99; font-weight: bold; margin-right: 10px;">測驗模式:</span>
+  <select id="quizRange" class="search-input" style="width: auto; margin-bottom: 10px;">
+    <option value="all">全部範圍</option>
+  </select>
+    
+<span style="color: #00ff99; font-weight: bold; margin-left: 15px; margin-right: 10px;">題型:</span>
+  <select id="quizMode" class="search-input" style="width: auto; margin-bottom: 10px;">
+    <option value="cn-en">中選英 (看中文選英文)</option>
+    <option value="en-cn">英選中 (看英文選中文)</option>
+  </select>
+
+
+
+
+
+    
+  <button class="search-button" onclick="openQuiz()">開始抽考</button>
+</div>
+
+
+  
+<div id="quizModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+  <div class="quiz-layout">
+    
+    <div class="quiz-sidebar">
+      <div class="sidebar-title" style="color: #00ff99;">✓ 正確清單</div>
+      <div id="correctList" class="sidebar-content"></div>
+    </div>
+
+    <div class="main-quiz-area">
+      <div style="margin-bottom: 20px;">
+        <span style="color:#00ff99;">正確: <span id="quizCorrect">0</span></span> |  
+        <span style="color:#ff5555;">錯誤: <span id="quizWrong">0</span></span>
+        <div id="quizProgress" style="font-size: 12px; color: #888; margin-top: 5px;">進度: 0 / 0</div>
+      </div>
+
+      <h3 id="quizQuestionCN" style="font-size: 28px; color:#fff; margin-bottom: 30px;">題目</h3>
+      
+      <div id="quizOptions" style="display:grid; grid-template-columns:1fr; gap:12px;"></div>
+      
+      <p id="quizFeedback" style="margin-top:20px; font-weight:bold; height:24px;"></p>
+      
+      <button class="exit-btn" onclick="closeQuiz()">提前結束測驗</button>
+    </div>
+
+    <div class="quiz-sidebar">
+      <div class="sidebar-title" style="color: #ff5555;">✗ 錯誤清單</div>
+      <div id="wrongList" class="sidebar-content"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+  
+  <h2>📘 TOEIC 單字</h2>
+
+  <!-- 搜尋框 -->
+  <div class="search-box">
+    <input type="text" id="searchInput" class="search-input" placeholder="輸入英文單字搜尋...">
+    <button class="search-button" onclick="searchWord()">搜尋</button>
+  </div>
+
+  <!-- 全部展開 / 收合控制 -->
+ <div class="controls">
+  <button class="control-button" onclick="expandAll()">全部展開</button>
+  <button class="control-button" onclick="collapseAll()">全部收合</button>
+  <button class="control-button" style="border-color: #00ff99;" onclick="toggleAllWords(false)">👁️ 全部顯示</button>
+  <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">🙈 全部隱藏</button>
+</div>
+
+  <div id="word-container"></div>
+</div>
+
+<script>
+// 記錄重播狀態
+const repeatStatus = {};
+const container = document.getElementById("word-container");
+
+// 初始化：先抓取 list.json 索引檔，再依序載入所有 .txt
+async function init() {
+  container.innerHTML = "正在讀取索引檔...";
+
+  try {
+    // 讀取 list.json 獲取檔案清單
+    const listResponse = await fetch("txt/list.json");
+    if (!listResponse.ok) throw new Error("無法讀取 list.json 索引檔");
+    
+    const fileList = await listResponse.json();
+    
+    // 清空載入中提示
+    container.innerHTML = "";
+    
+    // 循環載入清單內的檔案
+    for (const fileName of fileList) {
+      await loadWordsFromFile(fileName);
+    }
+    
+    if (fileList.length === 0) {
+      container.innerHTML = "索引檔內沒有任何檔案。";
+    }
+  } catch (err) {
+    console.error(err);
+    container.innerHTML = `<p style="color:red">初始化失敗：${err.message}</p>`;
+  }
+}
+
+// 載入單一檔案並建立折疊區塊
+async function loadWordsFromFile(fileName) {
+  try {
+    const response = await fetch(`txt/${fileName}`);
+    if (!response.ok) throw new Error(`找不到檔案: ${fileName}`);
+    
+    const sectionTitleText = fileName.replace(/\.(txt|json)$/, "");
+    const section = document.createElement("section");
+    section.className = "section";
+
+  const title = document.createElement("div");
+  title.className = "section-title";
+  // 增加一個容器讓標題和按鈕分開
+  title.style.display = "flex";
+  title.style.justifyContent = "space-between";
+  title.style.alignItems = "center";
+
+  // 左側標題內容
+  const titleText = document.createElement("span");
+  titleText.innerHTML = `<span class="arrow">▶</span> ${sectionTitleText}`;
+  title.appendChild(titleText);
+
+  // 右側循環播放按鈕
+  const loopBtn = document.createElement("button");
+  loopBtn.className = "control-button";
+  loopBtn.style.fontSize = "12px";
+  loopBtn.style.padding = "2px 8px";
+  loopBtn.style.margin = "0";
+  loopBtn.style.borderColor = "#00ff99";
+  loopBtn.style.backgroundColor = "transparent";
+  loopBtn.style.color = "#00ff99";
+  loopBtn.innerText = "🔁 循環播放區塊";
+
+  // 點擊按鈕時執行循環邏輯
+  loopBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // 阻止折疊區塊收合
+    toggleSectionLoop(sectionTitleText, loopBtn);
+  });
+
+  title.appendChild(loopBtn);
+
+    const row = document.createElement("div");
+    row.className = "content-row collapsed";
+
+    title.addEventListener("click", () => {
+      row.classList.toggle("collapsed");
+      title.querySelector(".arrow").classList.toggle("rotate");
+    });
+
+    let wordList = [];
+
+    // --- 判斷檔案格式 ---
+    if (fileName.endsWith(".json")) {
+      wordList = await response.json();
+    } else {
+      // 兼容舊有的 txt 格式
+      const text = await response.text();
+      wordList = text.split("\n").map(line => {
+        const idx = line.indexOf("|");
+        if (idx !== -1) {
+          return {
+            word: line.substring(0, idx).trim(),
+            translation: line.substring(idx + 1).trim()
+          };
+        }
+        return null;
+      }).filter(item => item !== null);
+    }
+
+   // --- 渲染單字卡 (已修正加入筆記功能) ---
+    wordList.forEach(item => {
+      const word = item.word;
+      const translation = item.translation;
+      const kk = item.kk || ""; 
+      const note = (item.note || "").trim(); // 讀取 note 並去除空白
+      const safeWord = word.replace(/'/g, "\\'");
+
+      const card = document.createElement("div");
+      card.className = "term-card";
+      card.dataset.word = word;
+
+      // 關鍵：判斷 note 是否存在
+      const hasNote = note.length > 0;
+      const noteButtonHtml = hasNote ? `<button class="note-btn" onclick="toggleNote(this)" title="查看筆記">📝</button>` : "";
+      const noteContentHtml = hasNote ? `<div class="note-content">${note}</div>` : "";
+
+      card.innerHTML = `
+          ${noteButtonHtml}
+          <button class="eye-btn" onclick="toggleSingleWord(this)">👁️</button>
+          <div class="main-text">${word}</div> 
+          <div class="sub-text" style="color: #00ff99; font-family: Arial; margin-bottom: 4px;">${kk}</div>
+          <div class="button-group">
+              <button class="speak-button" onclick="speakWord('${safeWord}','en-GB')">🇬🇧 英式</button>
+              <button class="speak-button" onclick="speakWord('${safeWord}','en-US')">🇺🇸 美式</button>
+              <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-GB')">🔁 英式重播</button>
+              <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式重播</button>
+          </div>
+          <div class="sub-text">${translation}</div>
+          ${noteContentHtml}
+      `;
+      row.appendChild(card);
+    });
+
+    section.appendChild(title);
+    section.appendChild(row);
+    container.appendChild(section);
+
+    // 同步更新測驗池 (Quiz Pool)
+   quizPool[sectionTitleText] = wordList.map(item => ({
+      en: item.word,
+      cn: item.translation
+    }));
+updateQuizRangeUI(sectionTitleText);
+  } catch (err) {
+    console.warn(`跳過檔案 ${fileName}: ${err.message}`);
+  }
+}
+
+// ---------------- 以下為原功能微調 ----------------
+// ---------------- 發音功能核心 ----------------
+async function speakWord(word, lang, callback) {
+  /*GOOGLE API 適用jzx2930那隻帳號
+  https://console.cloud.google.com/apis/library?project=my-toeic-app-492606*/
+  
+    // 1. 在這裡貼上你的 Google API 金鑰
+    const GOOGLE_API_KEY = "AIzaSyB9jqgbVynCg1Y5_bzBO-Tug_ROPkZ_vmA"; 
+    const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_API_KEY}`;
+
+    // 2. 停止目前正在播放的所有聲音 (避免重疊)
+    window.speechSynthesis.cancel();
+
+    // 3. 設定發音參數
+    const isUS = lang.toUpperCase().includes("US");
+
+
+  
+    const requestBody = {
+        input: { text: word },
+        voice: { 
+            languageCode: isUS ? "en-US" : "en-GB", 
+          
+        /*語音類型每月免費額度超過後的費用(EX:apple為5個字元)
+        Standard 語音前 400 萬 字元免費$4.00美金 
+        Wavenet 語音前 100 萬 字元免費$16.00 美金
+        下面則一
+         // 將 Wavenet 改為 Standard，這就是最經典的 Google 翻譯女聲
+         // 使用 Wavenet 系列聲音，這才是真正的真人音質
+        */                           
+                                 
+               name: isUS ? "en-US-Standard-C" : "en-GB-Standard-A",
+             // name: isUS ? "en-US-Wavenet-F" : "en-GB-Wavenet-A", 
+            ssmlGender: "FEMALE"// 女聲
+          
+        },
+        audioConfig: { 
+            audioEncoding: "MP3",
+            pitch: 0,
+            speakingRate: 1.0 // 速度可以依照喜好調整
+        }
+    };
+
+  
+
+    try {
+        const response = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(requestBody)
+        });
+
+        const data = await response.json();
+
+        if (data.audioContent) {
+            // 4. 將 Base64 資料轉成音訊並播放
+            const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
+            audio.play();
+            
+            // 5. 播放結束後執行回傳函式 (例如：自動下一題)
+            audio.onended = () => {
+                if (callback) callback();
+            };
+        } else {
+            console.error("Google TTS 沒回傳音訊內容，請檢查金鑰權限。");
+        }
+    } catch (error) {
+        console.error("呼叫 Google API 失敗:", error);
+    }
+}
+/*
+function speakWord(word, lang) {
+  speechSynthesis.cancel();
+  clearAllRepeatStatus();
+
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = lang;
+  speechSynthesis.speak(utterance);
+}*/
+
+function repeatSpeak(word, lang) {
+  const key = word + lang;
+
+  if (repeatStatus[key]) {
+    speechSynthesis.cancel();
+    repeatStatus[key] = false;
+    return;
+  }
+
+  speechSynthesis.cancel();
+  clearAllRepeatStatus();
+
+  repeatStatus[key] = true;
+
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = lang;
+
+  utterance.onend = () => {
+    if (repeatStatus[key]) {
+      speechSynthesis.speak(utterance);
+    }
+  };
+
+  speechSynthesis.speak(utterance);
+}
+
+
+function clearAllRepeatStatus() {
+  for (const key in repeatStatus) {
+    repeatStatus[key] = false;
+  }
+}
+
+// 全部展開
+function expandAll() {
+  document.querySelectorAll(".content-row").forEach(row => {
+    row.classList.remove("collapsed");
+    const arrow = row.previousElementSibling.querySelector(".arrow");
+    if (arrow) arrow.classList.add("rotate");
+  });
+}
+
+// 全部收合
+function collapseAll() {
+  document.querySelectorAll(".content-row").forEach(row => {
+    row.classList.add("collapsed");
+    const arrow = row.previousElementSibling.querySelector(".arrow");
+    if (arrow) arrow.classList.remove("rotate");
+  });
+}
+
+// 搜尋功能（支援跨檔案搜尋並自動展開）
+function searchWord() {
+  const query = document.getElementById("searchInput").value.trim().toLowerCase();
+  if (!query) return;
+
+  let found = false;
+
+  document.querySelectorAll(".term-card").forEach(card => {
+    const word = card.dataset.word.toLowerCase();
+    const row = card.closest(".content-row");
+    const title = row.previousElementSibling;
+
+    card.querySelector(".word").classList.remove("highlight");
+
+    if (word.includes(query)) {
+      found = true;
+      row.classList.remove("collapsed");
+      title.querySelector(".arrow").classList.add("rotate");
+
+      card.querySelector(".word").classList.add("highlight");
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  });
+
+  if (!found) {
+    alert("找不到該單字！");
+  }
+}
+
+// 執行載入
+// 執行載入
+init();
+
+// --- 測驗功能專用的全域變數 ---
+let quizPool = {}; 
+let currentQuizList = [];
+let quizIndex = 0; 
+let correctCount = 0;
+let wrongCount = 0;
+let isAnswering = false;
+let currentQuizType = "cn-en";
+
+// 洗牌演算法
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+// 更新下拉選單 (此函式由 loadWordsFromFile 在載入成功後呼叫)
+function updateQuizRangeUI(catName) {
+    const sel = document.getElementById("quizRange");
+    // 檢查是否已經存在該選項，避免重複添加
+    if (!Array.from(sel.options).some(opt => opt.value === catName)) {
+        const opt = document.createElement("option");
+        opt.value = catName;
+        opt.textContent = catName;
+        sel.appendChild(opt);
+    }
+}
+
+// 修改 loadWordsFromFile 內部邏輯以支援 UI 更新
+// (請確保你先前的 loadWordsFromFile 函式末端有呼叫 updateQuizRangeUI)
+// 為了保險起見，這裡提供一個「自動修復版」的測驗範圍初始化
+function openQuiz() {
+    const range = document.getElementById("quizRange").value;
+    currentQuizType = document.getElementById("quizMode").value;
+    currentQuizList = [];
+    
+    if(range === "all") {
+        Object.values(quizPool).forEach(list => currentQuizList.push(...list));
+    } else {
+        currentQuizList = quizPool[range] ? [...quizPool[range]] : [];
+    }
+
+    if(currentQuizList.length < 4) {
+        alert("該範圍單字量不足 4 個，無法開始測驗！");
+        return;
+    }
+
+    shuffleArray(currentQuizList);
+    quizIndex = 0;
+    correctCount = 0;
+    wrongCount = 0;
+    document.getElementById("correctList").innerHTML = "";
+    document.getElementById("wrongList").innerHTML = "";
+    document.getElementById("quizCorrect").textContent = "0";
+    document.getElementById("quizWrong").textContent = "0";
+    document.getElementById("quizModal").style.display = "flex";
+    
+    nextQuestion();
+}
+
+// ... 剩下的 closeQuiz, nextQuestion, handleAnswer, updateSideList, finishQuiz 邏輯保持不變 ...
+
+function closeQuiz() {
+    if(quizIndex < currentQuizList.length && quizIndex > 0) {
+        if(!confirm("測驗尚未結束，確定要提前離開嗎？")) return;
+    }
+    document.getElementById("quizModal").style.display = "none";
+    speechSynthesis.cancel();
+}
+function nextQuestion() {
+    if (quizIndex >= currentQuizList.length) {
+        finishQuiz();
+        return;
+    }
+
+    isAnswering = false;
+    document.getElementById("quizFeedback").textContent = "";
+    document.getElementById("quizProgress").textContent = `進度: ${quizIndex + 1} / ${currentQuizList.length}`;
+    
+    const optionsBox = document.getElementById("quizOptions");
+    optionsBox.innerHTML = "";
+
+    const target = currentQuizList[quizIndex];
+
+    // --- 根據題型決定題目顯示 ---
+    // 中選英：題目顯示中文；英選中：題目顯示英文
+    document.getElementById("quizQuestionCN").textContent = 
+        (currentQuizType === "cn-en") ? target.cn : target.en;
+
+    let allFlattened = [];
+    Object.values(quizPool).forEach(l => allFlattened.push(...l));
+    
+    let distractors = [];
+    while(distractors.length < 3) {
+        let rand = allFlattened[Math.floor(Math.random() * allFlattened.length)];
+        // 確保干擾項不重複且不是正確答案
+        if(rand.en !== target.en && !distractors.find(d => d.en === rand.en)) {
+            distractors.push(rand);
+        }
+    }
+
+    let options = [target, ...distractors].sort(() => Math.random() - 0.5);
+
+    options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        
+        // --- 根據題型決定按鈕顯示文字 ---
+        // 中選英：按鈕顯示英文；英選中：按鈕顯示中文
+        btn.textContent = (currentQuizType === "cn-en") ? opt.en : opt.cn;
+        
+        btn.onclick = () => handleAnswer(opt, target, btn);
+        optionsBox.appendChild(btn);
+    });
+}
+
+function handleAnswer(selectedObj, targetObj, btnElement) {
+    if(isAnswering) return;
+    isAnswering = true;
+
+    const isCorrect = selectedObj.en === targetObj.en;
+
+    if(isCorrect) {
+        correctCount++;
+        document.getElementById("quizCorrect").textContent = correctCount;
+        btnElement.classList.add("option-correct");
+        document.getElementById("quizFeedback").style.color = "#00ff99";
+        document.getElementById("quizFeedback").textContent = "Correct! ✓";
+        updateSideList("correctList", targetObj, "correct");
+    } else {
+        wrongCount++;
+        document.getElementById("quizWrong").textContent = wrongCount;
+        btnElement.classList.add("option-wrong");
+        document.getElementById("quizFeedback").style.color = "#ff5555";
+        
+        const correctText = (currentQuizType === "cn-en") ? targetObj.en : targetObj.cn;
+        document.getElementById("quizFeedback").textContent = `Wrong! 正確答案是: ${correctText}`;
+        
+        updateSideList("wrongList", targetObj, "wrong");
+        
+        Array.from(document.querySelectorAll(".option-btn")).forEach(b => {
+            if(b.textContent === correctText) b.classList.add("option-correct");
+        });
+    }
+
+    // --- 關鍵修正：使用高品質發音，並在播放結束後才跳下一題 ---
+    // 這裡我們帶入一個 callback 函式
+    speakWord(targetObj.en, 'en-US', () => {
+        quizIndex++;
+        setTimeout(nextQuestion, 800);
+    });
+}
+
+// 更新左右側清單
+function updateSideList(listId, wordObj, type) {
+    const list = document.getElementById(listId);
+    const item = document.createElement("div");
+    item.className = `sidebar-item ${type}`;
+    
+    // 處理單引號避免 JS 報錯
+    const safeEn = wordObj.en.replace(/'/g, "\\'");
+    
+    item.innerHTML = `
+        <div>
+            <b>${wordObj.en}</b><br>
+            <small>${wordObj.cn}</small>
+        </div>
+        <button class="speak-button" onclick="speakWord('${safeEn}', 'en-US')">🔊</button>
+    `;
+    // 讓最新的顯示在最上面
+    list.insertBefore(item, list.firstChild);
+}
+
+function finishQuiz() {
+    document.getElementById("quizQuestionCN").textContent = "🎊 測驗完成！";
+    document.getElementById("quizOptions").innerHTML = `
+        <div style="color:#fff; font-size: 20px; margin: 20px 0;">
+            正確題數：${correctCount} <br>
+            錯誤題數：${wrongCount}
+        </div>
+        <button class="search-button" onclick="document.getElementById('quizModal').style.display='none'">關閉結果</button>
+    `;
+    document.getElementById("quizFeedback").textContent = "";
+}
+
+  // 切換單個單字的顯示/隱藏
+function toggleSingleWord(btn) {
+    const mainText = btn.nextElementSibling; // 眼睛下一個元素就是 main-text
+    mainText.classList.toggle("hidden-word");
+    
+    // 切換眼睛圖示
+    if (mainText.classList.contains("hidden-word")) {
+        btn.textContent = "🙈";
+    } else {
+        btn.textContent = "👁️";
+    }
+}
+
+// 全域控制：全部顯示或全部隱藏
+function toggleAllWords(shouldHide) {
+    const allWords = document.querySelectorAll(".main-text");
+    const allEyeBtns = document.querySelectorAll(".eye-btn");
+    
+    allWords.forEach(word => {
+        if (shouldHide) {
+            word.classList.add("hidden-word");
+        } else {
+            word.classList.remove("hidden-word");
+        }
+    });
+    
+    allEyeBtns.forEach(btn => {
+        btn.textContent = shouldHide ? "🙈" : "👁️";
+    });
+}
+
+
+  // 切換筆記顯示/隱藏的函數
+function toggleNote(btn) {
+    // 找到同一個字卡內的 note-content
+    const card = btn.closest('.term-card');
+    const noteContent = card.querySelector(".note-content");
+    if (noteContent) {
+        noteContent.classList.toggle("show");
+        // 點擊後稍微改變按鈕透明度代表已開啟
+        btn.style.opacity = noteContent.classList.contains("show") ? "0.5" : "1";
+    }
+}
+
+  // 記錄各區塊的播放狀態
+const sectionLoopStatus = {};
+function toggleSectionLoop(sectionName, btnElement) {
+    // 如果該區塊正在播放，則停止
+    if (sectionLoopStatus[sectionName]) {
+        sectionLoopStatus[sectionName] = false;
+        window.speechSynthesis.cancel();
+        btnElement.innerText = "🔁 循環播放區塊";
+        btnElement.style.backgroundColor = "transparent";
+        btnElement.style.color = "#00ff99";
+        return;
+    }
+
+    // 停止所有其他正在進行的發音
+    window.speechSynthesis.cancel();
+    // 將所有其他按鈕重置（可選）
+    document.querySelectorAll(".section-title .control-button").forEach(btn => {
+        if (btn !== btnElement) {
+            btn.innerText = "🔁 循環播放區塊";
+            btn.style.backgroundColor = "transparent";
+            btn.style.color = "#00ff99";
+        }
+    });
+
+    // 標記目前區塊為播放中
+    // 先把所有狀態清空，確保一次只有一個區塊在循環
+    for (let key in sectionLoopStatus) sectionLoopStatus[key] = false;
+    sectionLoopStatus[sectionName] = true;
+
+    btnElement.innerText = "⏹ 停止播放";
+    btnElement.style.backgroundColor = "#00ff99";
+    btnElement.style.color = "#000";
+
+    const words = quizPool[sectionName];
+    if (!words || words.length === 0) return;
+
+    let currentIndex = 0;
+
+    function playNext() {
+        if (!sectionLoopStatus[sectionName]) return; // 如果狀態被切換為 false，停止遞迴
+
+        const wordObj = words[currentIndex];
+        const utterance = new SpeechSynthesisUtterance(wordObj.en);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9; // 稍微放慢一點點，聽得比較清楚
+
+        utterance.onend = () => {
+            if (sectionLoopStatus[sectionName]) {
+                currentIndex = (currentIndex + 1) % words.length; // 循環索引
+                setTimeout(playNext, 1000); // 每個單字間隔 1 秒
+            }
+        };
+
+        utterance.onerror = () => {
+            sectionLoopStatus[sectionName] = false;
+            btnElement.innerText = "🔁 循環播放區塊";
+        };
+
+        window.speechSynthesis.speak(utterance);
+    }
+
+    playNext();
+}
+  
+</script>
+ 
+
+</body>
+</html>
