@@ -2,5 +2,23 @@
   {"word": "grand opening", "kk": "[ɡrænd ˈopənɪŋ]", "translation": "開幕典禮、盛大開幕", "part_of_speech": "n. phr.", "note": "多益商務活動。grand(盛大)+opening(開始)。常用：Attend a grand opening。"},
 {"word": "take place", "kk": "[tek ples]", "translation": "舉辦、發生", "part_of_speech": "v. phr.", "note": "多益會議行程。等於 hold 或 happen。通常指計畫好的事件。"},
 {"word": "leaning against", "kk": "[ˈlinɪŋ əˈɡɛnst]", "translation": "斜靠在...上", "part_of_speech": "v. phr.", "note": "多益聽力 Part 1 必考。形容人或物品靠在支撐物上的姿勢。"},
-  {"word": "in charge of", "kk": "[ɪn tʃɑrdʒ ʌv]", "translation": "負責、掌管", "part_of_speech": "prep. phr.", "note": "【多益必考：職責描述】後接名詞或 V-ing。等於 be responsible for。例：He is in charge of marketing。"}
+  {"word": "in charge of", "kk": "[ɪn tʃɑrdʒ ʌv]", "translation": "負責、掌管", "part_of_speech": "prep. phr.", "note": "【多益必考：職責描述】後接名詞或 V-ing。等於 be responsible for。例：He is in charge of marketing。"},
+{"word": "loaded with cargo", "kk": "[ˈlodɪd wɪð ˈkɑrɡo]", "translation": "裝滿貨物", "part_of_speech": "phr.", "note": "多益聽力 Part 1 常用，描述貨車或船隻裝載貨物的狀態。"},
+{"word": "get off", "kk": "[ɡɛt ɔf]", "translation": "下車、從...下來", "part_of_speech": "phr.", "note": "常用於大眾運輸工具。相反詞為 get on (上車)。"},
+{"word": "administrative assistant", "kk": "[ədˈmɪnəˌstretɪv əˈsɪstənt]", "translation": "行政助理", "part_of_speech": "n.", "note": "多益職場情境常見職稱，負責辦公室行政事務。"},
+{"word": "schedule", "kk": "[ˈskɛdʒul]", "translation": "安排、排定；日程表", "part_of_speech": "v./n.", "note": "美式發音重點為 [sk-]。常見用法：ahead of schedule (提前)。"},
+{"word": "informing", "kk": "[ɪnˈfɔrmɪŋ]", "translation": "告知、通知", "part_of_speech": "v.", "note": "inform 的現在分詞。常用結構：inform someone of something。"},
+{"word": "in charge of", "kk": "[ɪn tʃɑrdʒ ʌv]", "translation": "負責、掌管", "part_of_speech": "phr.", "note": "職場必考，等於 be responsible for。後接職務內容。"},
+{"word": "general manager", "kk": "[ˈdʒɛnərəl ˈmænədʒɚ]", "translation": "總經理", "part_of_speech": "n.", "note": "簡稱 GM，為企業內負責全面營運的高階主管。"},
+{"word": "wondering", "kk": "[ˈwʌndərɪŋ]", "translation": "想知道、納悶", "part_of_speech": "v.", "note": "常用於委婉詢問：I was wondering if... (我想知道是否...)"},
+{"word": "documents", "kk": "[ˈdɑkjəmənts]", "translation": "文件、公文", "part_of_speech": "n.", "note": "辦公室情境核心單字。複數形式。"},
+{"word": "applies to", "kk": "[əˈplaɪz tu]", "translation": "適用於", "part_of_speech": "phr.", "note": "常用於規則或折扣的適用範圍。"},
+{"word": "discount", "kk": "[ˈdɪskaʊnt]", "translation": "折扣", "part_of_speech": "n.", "note": "常見組合：at a discount (打折中)、quantity discount (大宗採購折扣)。"},
+{"word": "take off", "kk": "[tek ɔf]", "translation": "脫掉；起飛；休假", "part_of_speech": "phr.", "note": "多義詞：多益常考「飛機起飛」或「向公司請假」。"},
+{"word": "inter-bank transfer", "kk": "[ˌɪntɚ-bæŋk ˈtrænsfɝ]", "translation": "跨行轉帳", "part_of_speech": "n.", "note": "金融情境常見，inter- 有「之間」的意思。"},
+{"word": "assembled", "kk": "[əˈsɛmbəld]", "translation": "組裝好的；聚集的", "part_of_speech": "adj./v.", "note": "形容產品已完成組裝。動詞 assemble 亦常指「召集員工」。"},
+{"word": "in line", "kk": "[ɪn laɪn]", "translation": "排隊中、成一直線", "part_of_speech": "phr.", "note": "常見用法：stand in line (排隊)。"},
+{"word": "in front of", "kk": "[ɪn frʌnt ʌv]", "translation": "在...前面", "part_of_speech": "phr.", "note": "多益照片描述題常見方位詞。"},
+{"word": "file cabinet", "kk": "[faɪl ˈkæbənɪt]", "translation": "檔案櫃", "part_of_speech": "n.", "note": "辦公室情境中常見的硬體設備。"}]
+
 ]
