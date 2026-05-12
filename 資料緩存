@@ -5,8 +5,9 @@
   {"word": "in charge of", "kk": "[ɪn tʃɑrdʒ ʌv]", "translation": "負責、掌管", "part_of_speech": "prep. phr.", "note": "【多益必考：職責描述】後接名詞或 V-ing。等於 be responsible for。例：He is in charge of marketing。"}
 ]
 
-以上是我需要的各式範例
-將下列的每一行都生成反例中的各式
+以上是我需要的格式範例
+將下列的每一行都生成範例中的格式
+若是片語可以在備註中特別註解說明
 
 documents
 
@@ -21,3 +22,9 @@ interview
 plenty of time 
 revise 
 contract during
+    head office
+            human resources
+            senior manager
+            make a presentation
+            auditorium
+            suggestions
