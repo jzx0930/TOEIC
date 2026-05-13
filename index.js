@@ -90,3 +90,48 @@ function initCopyButtons() {
     wrapper.insertBefore(button, pre);
   });
 }
+
+
+
+// 切換單個單字的中文顯示/隱藏
+function toggleSingleChinese(btn) {
+    const card = btn.closest('.term-card');
+    const translation = card.querySelector('.translation');
+    
+    if (!translation) return;
+    
+    translation.classList.toggle('hidden');
+    
+    // 切換圖示
+    if (translation.classList.contains('hidden')) {
+        btn.textContent = "🙈";
+        btn.style.color = "#ff5555";
+    } else {
+        btn.textContent = "中";
+        btn.style.color = "#ffaa00";
+    }
+}
+
+// 全域顯示/隱藏中文
+function toggleAllChinese(shouldHide) {
+    const allTranslations = document.querySelectorAll('.translation');
+    const allChineseBtns = document.querySelectorAll('.eye-btn[onclick*="toggleSingleChinese"]');
+    
+    allTranslations.forEach(trans => {
+        if (shouldHide) {
+            trans.classList.add('hidden');
+        } else {
+            trans.classList.remove('hidden');
+        }
+    });
+    
+    allChineseBtns.forEach(btn => {
+        if (shouldHide) {
+            btn.textContent = "🙈";
+            btn.style.color = "#ff5555";
+        } else {
+            btn.textContent = "中";
+            btn.style.color = "#ffaa00";
+        }
+    });
+}
