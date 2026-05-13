@@ -51,14 +51,14 @@ h2 {
   background-color: #00ff88;
 }
 
-/* ==================== 控制按鈕區域（三行置中） ==================== */
+/* ==================== 控制按鈕區域（四行置中） ==================== */
 .controls {
-    margin: 25px auto;
+    margin: 25px auto 45px auto;   /* 最重要的修改：下方增加間距 */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    max-width: 580px;        /* 稍微加寬容納第四行 */
+    max-width: 580px;
 }
 
 .controls > div {
