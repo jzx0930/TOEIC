@@ -356,18 +356,24 @@ bottom: 8px;    /* 距離底部 8px */
     <!-- 第二行：英文控制 -->
     <div>
         <span style="margin-right: 8px; color:#ffaa00; font-weight:bold;">英文：</span>
-        <button class="control-button" style="border-color: #ffaa00;" onclick="toggleAllWords(false)">👁️ 全顯</button>
-        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">🙈 全隱</button>
+        <button class="control-button" style="border-color: #ffaa00;" onclick="toggleAllWords(false)">英 全部顯示</button>
+        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">英 全部隱藏</button>
     </div>
     
     <!-- 第三行：中文控制 -->
     <div>
         <span style="margin-right: 8px; color:#ffcc00; font-weight:bold;">中文：</span>
-        <button class="control-button" style="border-color: #ffcc00;" onclick="toggleAllChinese(false)">中 全顯</button>
-        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllChinese(true)">中 全隱</button>
+        <button class="control-button" style="border-color: #ffcc00;" onclick="toggleAllChinese(false)">中 全部顯示</button>
+        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllChinese(true)">中 全部隱藏</button>
     </div>
 </div>
-
+  
+<!-- 第四行：筆記控制（新增） -->
+    <div>
+        <span style="margin-right: 8px; color:#ffcc00; font-weight:bold;">筆記：</span>
+        <button class="control-button" style="border-color: #ffcc00;" onclick="toggleAllNotes(false)">📝 全部打開</button>
+        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllNotes(true)">📝 全部關閉</button>
+    </div>
 
   
   <div id="word-container"></div>
