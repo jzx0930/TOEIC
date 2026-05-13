@@ -93,45 +93,92 @@ function initCopyButtons() {
 
 
 
-// 切換單個單字的中文顯示/隱藏
-function toggleSingleChinese(btn) {
+
+
+// ======================
+// 單字顯示隱藏功能（中英文獨立控制）
+// ======================
+
+// 切換單個英文（英 按鈕）
+function toggleSingleWord(btn) {
+    if (!btn) return;
     const card = btn.closest('.term-card');
-    const translation = card.querySelector('.translation');
-    
+    const mainText = card?.querySelector('.main-text');
+   
+    if (!mainText) return;
+   
+    mainText.classList.toggle('hidden-word');
+   
+    if (mainText.classList.contains('hidden-word')) {
+        btn.textContent = "🙈";
+        btn.style.color = "#ff5555";
+    } else {
+        btn.textContent = "英";
+        btn.style.color = "#ffaa00";
+    }
+}
+
+// 切換單個中文（中 按鈕）
+function toggleSingleChinese(btn) {
+    if (!btn) return;
+    const card = btn.closest('.term-card');
+    const translation = card?.querySelector('.translation');
+   
     if (!translation) return;
-    
+   
     translation.classList.toggle('hidden');
-    
-    // 切換圖示
+   
     if (translation.classList.contains('hidden')) {
         btn.textContent = "🙈";
         btn.style.color = "#ff5555";
     } else {
         btn.textContent = "中";
-        btn.style.color = "#ffaa00";
+        btn.style.color = "#ffcc00";
     }
 }
 
-// 全域顯示/隱藏中文
-function toggleAllChinese(shouldHide) {
-    const allTranslations = document.querySelectorAll('.translation');
-    const allChineseBtns = document.querySelectorAll('.eye-btn[onclick*="toggleSingleChinese"]');
-    
-    allTranslations.forEach(trans => {
+// 全域控制 - 英文
+function toggleAllWords(shouldHide) {
+    // 控制所有英文單字
+    document.querySelectorAll('.main-text').forEach(text => {
         if (shouldHide) {
-            trans.classList.add('hidden');
+            text.classList.add('hidden-word');
         } else {
-            trans.classList.remove('hidden');
+            text.classList.remove('hidden-word');
         }
     });
     
-    allChineseBtns.forEach(btn => {
+    // 同步更新所有「英」按鈕
+    document.querySelectorAll('.toggle-en').forEach(btn => {
+        if (shouldHide) {
+            btn.textContent = "🙈";
+            btn.style.color = "#ff5555";
+        } else {
+            btn.textContent = "英";
+            btn.style.color = "#ffaa00";
+        }
+    });
+}
+
+// 全域控制 - 中文
+function toggleAllChinese(shouldHide) {
+    // 控制所有中文翻譯
+    document.querySelectorAll('.translation').forEach(text => {
+        if (shouldHide) {
+            text.classList.add('hidden');
+        } else {
+            text.classList.remove('hidden');
+        }
+    });
+    
+    // 同步更新所有「中」按鈕
+    document.querySelectorAll('.toggle-cn').forEach(btn => {
         if (shouldHide) {
             btn.textContent = "🙈";
             btn.style.color = "#ff5555";
         } else {
             btn.textContent = "中";
-            btn.style.color = "#ffaa00";
+            btn.style.color = "#ffcc00";
         }
     });
 }
