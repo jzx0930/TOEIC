@@ -347,18 +347,29 @@ bottom: 8px;    /* 距離底部 8px */
 
   <!-- 全部展開 / 收合控制 -->
 <div class="controls">
-  <button class="control-button" onclick="expandAll()">全部展開</button>
-  <button class="control-button" onclick="collapseAll()">全部收合</button>
-  
-  <span style="margin:0 10px; color:#888;">英文：</span>
-  <button class="control-button" style="border-color: #00ff99;" onclick="toggleAllWords(false)">👁️ 全顯</button>
-  <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">🙈 全隱</button>
-  
-  <span style="margin:0 10px; color:#888;">中文：</span>
-  <button class="control-button" style="border-color: #ffaa00;" onclick="toggleAllChinese(false)">中 全顯</button>
-  <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllChinese(true)">中 全隱</button>
+    <!-- 第一行 -->
+    <div>
+        <button class="control-button" onclick="expandAll()">全部展開</button>
+        <button class="control-button" onclick="collapseAll()">全部收合</button>
+    </div>
+    
+    <!-- 第二行：英文控制 -->
+    <div>
+        <span style="margin-right: 8px; color:#ffaa00; font-weight:bold;">英文：</span>
+        <button class="control-button" style="border-color: #ffaa00;" onclick="toggleAllWords(false)">👁️ 全顯</button>
+        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">🙈 全隱</button>
+    </div>
+    
+    <!-- 第三行：中文控制 -->
+    <div>
+        <span style="margin-right: 8px; color:#ffcc00; font-weight:bold;">中文：</span>
+        <button class="control-button" style="border-color: #ffcc00;" onclick="toggleAllChinese(false)">中 全顯</button>
+        <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllChinese(true)">中 全隱</button>
+    </div>
 </div>
 
+
+  
   <div id="word-container"></div>
 </div>
 
@@ -481,13 +492,14 @@ async function loadWordsFromFile(fileName) {
       const noteButtonHtml = hasNote ? `<button class="note-btn" onclick="toggleNote(this)" title="查看筆記">📝</button>` : "";
       const noteContentHtml = hasNote ? `<div class="note-content">${note}</div>` : "";
 
-    card.innerHTML = `
-    <!-- 筆記按鈕 -->
+  card.innerHTML = `
     ${noteButtonHtml}
     
-    <!-- 兩個眼睛按鈕：英文 + 中文 -->
-    <button class="eye-btn" onclick="toggleSingleWord(this)" title="顯示/隱藏英文">👁️</button>
-    <button class="eye-btn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文" style="color:#ffaa00;">中</button>
+    <!-- 右側垂直控制按鈕 -->
+    <div class="eye-controls">
+        <button class="toggle-btn toggle-en" onclick="toggleSingleWord(this)" title="顯示/隱藏英文">英</button>
+        <button class="toggle-btn toggle-cn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文">中</button>
+    </div>
     
     <div class="main-text">${word}</div>
     <div class="sub-text" style="color: #00ff99; font-family: Arial; margin-bottom: 4px;">${kk}</div>
@@ -499,9 +511,7 @@ async function loadWordsFromFile(fileName) {
         <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式</button>
     </div>
     
-    <!-- 中文翻譯加上 class -->
     <div class="sub-text translation">${translation}</div>
-    
     ${noteContentHtml}
 `;
       row.appendChild(card);
