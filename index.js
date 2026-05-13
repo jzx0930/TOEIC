@@ -182,3 +182,23 @@ function toggleAllChinese(shouldHide) {
         }
     });
 }
+
+// ======================
+// 全域控制 - 筆記顯示/隱藏
+// ======================
+function toggleAllNotes(shouldHide) {
+    const allNotes = document.querySelectorAll('.note-content');
+    
+    allNotes.forEach(note => {
+        if (shouldHide) {
+            note.classList.remove('show');     // 隱藏筆記
+        } else {
+            note.classList.add('show');        // 顯示筆記
+        }
+    });
+    
+    // 同步改變筆記按鈕的透明度（視覺提示）
+    document.querySelectorAll('.note-btn').forEach(btn => {
+        btn.style.opacity = shouldHide ? "1" : "0.6";
+    });
+}
