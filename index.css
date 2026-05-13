@@ -156,7 +156,26 @@ pre {
   color: #ccc; /* 淺灰色，與主標題形成對比但仍清晰可讀 */
 }
 
+/* 隱藏中文專用樣式 */
+.translation.hidden {
+    color: transparent;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5);
+    user-select: none;
+}
 
+
+/* 兩個眼睛按鈕靠右上角排列 */
+.term-card .eye-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    margin: 0 4px;
+}
+
+/* 讓兩個眼睛按鈕不會重疊 */
+.term-card .eye-btn:nth-child(2) {
+    right: 40px;   /* 調整距離 */
+}
 
 
 
