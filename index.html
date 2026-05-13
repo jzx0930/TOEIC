@@ -346,11 +346,17 @@ bottom: 8px;    /* 距離底部 8px */
   </div>
 
   <!-- 全部展開 / 收合控制 -->
- <div class="controls">
+<div class="controls">
   <button class="control-button" onclick="expandAll()">全部展開</button>
   <button class="control-button" onclick="collapseAll()">全部收合</button>
-  <button class="control-button" style="border-color: #00ff99;" onclick="toggleAllWords(false)">👁️ 全部顯示</button>
-  <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">🙈 全部隱藏</button>
+  
+  <span style="margin:0 10px; color:#888;">英文：</span>
+  <button class="control-button" style="border-color: #00ff99;" onclick="toggleAllWords(false)">👁️ 全顯</button>
+  <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllWords(true)">🙈 全隱</button>
+  
+  <span style="margin:0 10px; color:#888;">中文：</span>
+  <button class="control-button" style="border-color: #ffaa00;" onclick="toggleAllChinese(false)">中 全顯</button>
+  <button class="control-button" style="border-color: #ff5555;" onclick="toggleAllChinese(true)">中 全隱</button>
 </div>
 
   <div id="word-container"></div>
@@ -475,20 +481,29 @@ async function loadWordsFromFile(fileName) {
       const noteButtonHtml = hasNote ? `<button class="note-btn" onclick="toggleNote(this)" title="查看筆記">📝</button>` : "";
       const noteContentHtml = hasNote ? `<div class="note-content">${note}</div>` : "";
 
-      card.innerHTML = `
-          ${noteButtonHtml}
-          <button class="eye-btn" onclick="toggleSingleWord(this)">👁️</button>
-          <div class="main-text">${word}</div> 
-          <div class="sub-text" style="color: #00ff99; font-family: Arial; margin-bottom: 4px;">${kk}</div>
-          <div class="button-group">
-              <button class="speak-button" onclick="speakWord('${safeWord}','en-GB')">🇬🇧 英式</button>
-              <button class="speak-button" onclick="speakWord('${safeWord}','en-US')">🇺🇸 美式</button>
-              <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-GB')">🔁 英式重播</button>
-              <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式重播</button>
-          </div>
-          <div class="sub-text">${translation}</div>
-          ${noteContentHtml}
-      `;
+    card.innerHTML = `
+    <!-- 筆記按鈕 -->
+    ${noteButtonHtml}
+    
+    <!-- 兩個眼睛按鈕：英文 + 中文 -->
+    <button class="eye-btn" onclick="toggleSingleWord(this)" title="顯示/隱藏英文">👁️</button>
+    <button class="eye-btn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文" style="color:#ffaa00;">中</button>
+    
+    <div class="main-text">${word}</div>
+    <div class="sub-text" style="color: #00ff99; font-family: Arial; margin-bottom: 4px;">${kk}</div>
+    
+    <div class="button-group">
+        <button class="speak-button" onclick="speakWord('${safeWord}','en-GB')">🇬🇧 英式</button>
+        <button class="speak-button" onclick="speakWord('${safeWord}','en-US')">🇺🇸 美式</button>
+        <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-GB')">🔁 英式</button>
+        <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式</button>
+    </div>
+    
+    <!-- 中文翻譯加上 class -->
+    <div class="sub-text translation">${translation}</div>
+    
+    ${noteContentHtml}
+`;
       row.appendChild(card);
     });
 
