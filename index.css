@@ -180,7 +180,63 @@ pre {
 
 
 
+/* 控制按鈕區塊 - 改成三行排列 */
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+/* 單字卡右側兩個按鈕垂直排列 */
+.term-card {
+    position: relative;
+}
+
+.term-card .eye-controls {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 10;
+}
+
+.term-card .toggle-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.2s;
+    min-width: 32px;
+    text-align: center;
+}
+
+.term-card .toggle-btn:hover {
+    transform: scale(1.15);
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* 英文按鈕 - 橘色 */
+.toggle-en {
+    color: #ffaa00;
+}
+
+/* 中文按鈕 - 黃色 */
+.toggle-cn {
+    color: #ffcc00;
+}
+
+/* 隱藏時的樣式 */
+.translation.hidden,
+.main-text.hidden-word {
+    color: transparent;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5);
+    user-select: none;
+}
 
 
 
