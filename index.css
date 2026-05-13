@@ -53,20 +53,20 @@ h2 {
 
 /* ==================== 控制按鈕區域（三行置中） ==================== */
 .controls {
-  margin: 25px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;           /* 整體置中 */
-  gap: 12px;
-  max-width: 560px;              /* 限制最大寬度 */
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 580px;        /* 稍微加寬容納第四行 */
 }
 
 .controls > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;       /* 每一行內容置中 */
-  gap: 10px;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
 }
 
 /* 一般控制按鈕 */
