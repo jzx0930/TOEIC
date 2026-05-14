@@ -1,6 +1,6 @@
 /* =============================================
-   TOEIC 單字卡專用 CSS - 清理優化版
-   包含置中對齊功能
+   TOEIC 單字卡最終合併版 CSS
+   保留原風格 + 新功能（置中、四行控制、筆記全控）
 ============================================= */
 
 /* ==================== 全域樣式 ==================== */
@@ -14,11 +14,12 @@ body {
   border: 10px solid #00aa55;
 }
 
-/* 標題樣式 */
+/* 標題樣式（保留原風格） */
 h2 {
   color: #0f0;
   margin: 30px 0 20px 0;
   font-size: 2em;
+  animation: fadeIn 1s ease-out;
 }
 
 /* ==================== 搜尋區域 ==================== */
@@ -26,7 +27,6 @@ h2 {
   margin: 20px 0;
   text-align: center;
 }
-
 .search-input {
   padding: 8px;
   width: 250px;
@@ -35,7 +35,6 @@ h2 {
   background-color: #111;
   color: #fff;
 }
-
 .search-button {
   padding: 8px 12px;
   margin-left: 8px;
@@ -46,27 +45,25 @@ h2 {
   cursor: pointer;
   font-weight: bold;
 }
-
 .search-button:hover {
   background-color: #00ff88;
 }
 
-/* ==================== 控制按鈕區域（四行置中） ==================== */
+/* ==================== 控制按鈕區域（四行置中 + 加大間距） ==================== */
 .controls {
-    margin: 25px auto 45px auto;   /* 最重要的修改：下方增加間距 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    max-width: 580px;
+  margin: 25px auto 55px auto;   /* 上方25px，下方55px（已加大與單字卡距離） */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 580px;
 }
-
 .controls > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
 }
 
 /* 一般控制按鈕 */
@@ -78,43 +75,50 @@ h2 {
   cursor: pointer;
   white-space: nowrap;
 }
-
 .control-button:hover {
   background-color: #ddd;
 }
 
-/* ==================== 單字卡容器 ==================== */
+/* ==================== 單字卡容器（置中） ==================== */
 .content-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
   padding: 15px;
-  justify-content: center;       /* Grid 整體置中 */
-  justify-items: center;         /* 每張卡片置中 */
-  max-width: 1100px;
-  margin: 0 auto;                /* 容器置中 */
+  justify-content: center;
+  justify-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
-/* 單字卡主體樣式 */
+/* ==================== 單字卡主體（保留原外觀風格） ==================== */
 .term-card {
-  position: relative;            /* 讓右上角按鈕能絕對定位 */
-  background-color: #222;
-  color: #fff;
-  padding: 14px;
-  border-radius: 8px;
-  border: 1px solid #444;
+  position: relative;
   width: 100%;
-  max-width: 320px;              /* 卡片最大寬度，讓排版更美觀 */
-  box-sizing: border-box;
+  max-width: 320px;
+  padding: 20px;                    /* 保留原較大內距 */
+  margin: 8px;                      /* 卡片間距 */
+  background-color: #111;           /* 原風格深色 */
+  border: 2px solid #0f0;           /* 保留原螢光綠邊框 */
+  border-radius: 12px;
   text-align: left;
-  min-height: 160px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-out;
+  min-height: 180px;
+}
+
+/* 滑鼠懸停效果（保留原互動感） */
+.term-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
 }
 
 /* ==================== 單字卡右上角控制按鈕 ==================== */
 .term-card .eye-controls {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -132,23 +136,30 @@ h2 {
   min-width: 34px;
   text-align: center;
 }
-
 .term-card .toggle-btn:hover {
   transform: scale(1.15);
   background-color: rgba(255,255,255,0.15);
 }
 
-/* 英文按鈕顏色 */
-.toggle-en {
-  color: #ffaa00;
+.toggle-en { color: #ffaa00; }
+.toggle-cn { color: #ffcc00; }
+
+/* ==================== 文字造型（保留原風格） ==================== */
+.main-text {
+  font-weight: bold;
+  font-size: 1.35em;
+  color: #0f0;           /* 原綠色主文字 */
+  margin-bottom: 8px;
 }
 
-/* 中文按鈕顏色 */
-.toggle-cn {
-  color: #ffcc00;
+.sub-text {
+  margin-left: 1em;      /* 保留原縮排風格 */
+  color: #ccc;
+  font-size: 1em;
+  margin-top: 4px;
 }
 
-/* ==================== 隱藏文字樣式 ==================== */
+/* 隱藏文字效果 */
 .main-text.hidden-word,
 .translation.hidden {
   color: transparent;
@@ -156,36 +167,19 @@ h2 {
   user-select: none;
 }
 
-/* 單字主要文字 */
-.main-text {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-/* 音標與中文翻譯 */
-.sub-text {
-  font-size: 14px;
-  color: #ccc;
-  margin-top: 4px;
-}
-
-/* 發音按鈕群組 */
-.button-group {
-  margin: 10px 0;
-}
-
 /* 發音按鈕 */
+.button-group {
+  margin: 12px 0;
+}
 .speak-button {
   margin: 3px 2px;
-  padding: 4px 8px;
+  padding: 5px 9px;
   border: 1px solid #333;
   border-radius: 4px;
   background-color: #eee;
-  font-size: 12px;
+  font-size: 12.5px;
   cursor: pointer;
 }
-
 .speak-button:hover {
   background-color: #ddd;
 }
@@ -193,46 +187,42 @@ h2 {
 /* ==================== 筆記功能 ==================== */
 .note-btn {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 10px;
+  right: 10px;
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 19px;
   color: #ffcc00;
   z-index: 10;
-  padding: 5px;
 }
-
 .note-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
 }
 
 .note-content {
   display: none;
   background-color: #333;
   color: #ffcc00;
-  font-size: 13px;
+  font-size: 13.5px;
   padding: 10px;
-  border-radius: 4px;
-  margin-top: 10px;
+  border-radius: 6px;
+  margin-top: 12px;
   border: 1px dashed #ffcc00;
   white-space: pre-wrap;
   text-align: left;
 }
-
 .note-content.show {
   display: block;
 }
 
-/* ==================== 區塊折疊功能 ==================== */
+/* ==================== 區塊折疊 ==================== */
 .section {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   border: 1px solid #444;
   border-radius: 8px;
   overflow: hidden;
 }
-
 .section-title {
   background-color: #333;
   color: #00ff99;
@@ -244,39 +234,39 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
-
 .arrow {
   margin-right: 8px;
   transition: transform 0.3s;
 }
-
 .arrow.rotate {
   transform: rotate(90deg);
 }
-
 .collapsed {
   display: none;
 }
 
-/* ==================== 搜尋高亮 ==================== */
+/* ==================== 其他常用樣式 ==================== */
 .highlight {
   background-color: yellow;
   color: black;
   font-weight: bold;
 }
 
-/* ==================== 響應式設計 ==================== */
+/* ==================== 響應式 ==================== */
 @media (max-width: 768px) {
   .content-row {
     grid-template-columns: 1fr;
-    padding: 10px;
   }
-  
   .term-card {
     max-width: 380px;
   }
-  
   body {
     padding: 15px;
   }
+}
+
+/* ==================== 動畫定義（保留常用） ==================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
