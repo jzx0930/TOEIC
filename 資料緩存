@@ -1,26 +1,36 @@
+你是一位精通多益（TOEIC）考試的專業英文老師。請根據我提供的「現有單字庫」與「待處理的新單字清單」，為新單字生成與現有字庫完全相同格式的 JSON 資料。
+
+### 生成與處理規則：
+1. **查重過濾**：如果「待處理的新單字清單」中的字詞已經存在於「現有單字庫」中，請直接「略過不生成」，避免重複。
+2. **片語判定**：若新清單中的同一行包含多個單字（如 photography contest），請依據多益標準判斷是否為常考片語。若是片語則將其視為一組（例如當作 n. phr. 或 v. phr.）；若不是，則拆解或保留多益最核心的關鍵字來生成。
+3. **音標標準**：`kk` 欄位必須使用「美式發音」的 KK 音標，並用中括號 `[...]` 包裹。
+4. **詞性規範**：`part_of_speech` 請使用縮寫（如 n., v., adj., adv., phr., n. phr., v. phr., prep. phr. 等）。
+5. **備註強化**：`note` 欄位請務必深入分析多益考法。包含：常考情境（如聽力 Part 1、商務會議、人事招募、產品投訴）、常見搭配詞（Collocations）、同義詞/反義詞、或混淆字提示。
+6. **時間軸排序**：由於以下字詞是依據 YouTube 影片 (https://youtu.be/8YDf5qfoRYI?si=X3YAr-X2C5hukDOy) 的出現順序排列，請在剔除重複字詞後，「保持原有清單的上下先後順序」進行生成，並將最終成果與現有字庫合併輸出。
+7. **輸出格式**：請僅輸出標準的 JSON 陣列，不要包含任何額外的解釋性文字。
+
+### 現有單字庫 (不需重新生成，但請保留並與新生成的內容依影片順序合併)：
 [
-{"word": "grand opening", "kk": "[ɡrænd ˈopənɪŋ]", "translation": "開幕典禮、盛大開幕", "part_of_speech": "n. phr.", "note": "多益商務活動。grand(盛大)+opening(開始)。常用：Attend a grand opening。"},
-{"word": "take place", "kk": "[tek ples]", "translation": "舉辦、發生", "part_of_speech": "v. phr.", "note": "多益會議行程。等於 hold 或 happen。通常指計畫好的事件。"},
-{"word": "leaning against", "kk": "[ˈlinɪŋ əˈɡɛnst]", "translation": "斜靠在...上", "part_of_speech": "v. phr.", "note": "多益聽力 Part 1 必考。形容人或物品靠在支撐物上的姿勢。"},
-{"word": "in charge of", "kk": "[ɪn tʃɑrdʒ ʌv]", "translation": "負責、掌管", "part_of_speech": "prep. phr.", "note": "【多益必考：職責描述】後接名詞或 V-ing。等於 be responsible for。例：He is in charge of marketing。 職場必考，等於 be responsible for。後接職務內容。"},
-{"word": "loaded with cargo", "kk": "[ˈlodɪd wɪð ˈkɑrɡo]", "translation": "裝滿貨物", "part_of_speech": "phr.", "note": "多益聽力 Part 1 常用，描述貨車或船隻裝載貨物的狀態。"},
-{"word": "get off", "kk": "[ɡɛt ɔf]", "translation": "下車、從...下來", "part_of_speech": "phr.", "note": "常用於大眾運輸工具。相反詞為 get on (上車)。"},
-{"word": "administrative assistant", "kk": "[ədˈmɪnəˌstretɪv əˈsɪstənt]", "translation": "行政助理", "part_of_speech": "n.", "note": "多益職場情境常見職稱，負責辦公室行政事務。"},
-{"word": "schedule", "kk": "[ˈskɛdʒul]", "translation": "安排、排定；日程表", "part_of_speech": "v./n.", "note": "美式發音重點為 [sk-]。常見用法：ahead of schedule (提前)。"},
-{"word": "informing", "kk": "[ɪnˈfɔrmɪŋ]", "translation": "告知、通知", "part_of_speech": "v.", "note": "inform 的現在分詞。常用結構：inform someone of something。"},
-
-{"word": "general manager", "kk": "[ˈdʒɛnərəl ˈmænədʒɚ]", "translation": "總經理", "part_of_speech": "n.", "note": "簡稱 GM，為企業內負責全面營運的高階主管。"},
-{"word": "wondering", "kk": "[ˈwʌndərɪŋ]", "translation": "想知道、納悶", "part_of_speech": "v.", "note": "常用於委婉詢問：I was wondering if... (我想知道是否...)"},
-
-{"word": "applies to", "kk": "[əˈplaɪz tu]", "translation": "適用於", "part_of_speech": "phr.", "note": "常用於規則或折扣的適用範圍。"},
-{"word": "discount", "kk": "[ˈdɪskaʊnt]", "translation": "折扣", "part_of_speech": "n.", "note": "常見組合：at a discount (打折中)、quantity discount (大宗採購折扣)。"},
-{"word": "take off", "kk": "[tek ɔf]", "translation": "脫掉；起飛；休假", "part_of_speech": "phr.", "note": "多義詞：多益常考「飛機起飛」或「向公司請假」。"},
-{"word": "inter-bank transfer", "kk": "[ˌɪntɚ-bæŋk ˈtrænsfɝ]", "translation": "跨行轉帳", "part_of_speech": "n.", "note": "金融情境常見，inter- 有「之間」的意思。"},
-{"word": "assembled", "kk": "[əˈsɛmbəld]", "translation": "組裝好的；聚集的", "part_of_speech": "adj./v.", "note": "形容產品已完成組裝。動詞 assemble 亦常指「召集員工」。"},
-{"word": "in line", "kk": "[ɪn laɪn]", "translation": "排隊中、成一直線", "part_of_speech": "phr.", "note": "常見用法：stand in line (排隊)。"},
-{"word": "in front of", "kk": "[ɪn frʌnt ʌv]", "translation": "在...前面", "part_of_speech": "phr.", "note": "多益照片描述題常見方位詞。"},
-{"word": "file cabinet", "kk": "[faɪl ˈkæbənɪt]", "translation": "檔案櫃", "part_of_speech": "n.", "note": "辦公室情境中常見的硬體設備。"},
-  {"word": "documents", "kk": "[ˈdɑkjəmənts]", "translation": "文件、公文", "part_of_speech": "n.", "note": "辦公室情境核心單字。複數形式;多益辦公室情境高頻詞。常用：file documents (歸檔文件)、confidential documents (機密文件)。"},
+  {"word": "grand opening", "kk": "[ɡrænd ˈopənɪŋ]", "translation": "開幕典禮、盛大開幕", "part_of_speech": "n. phr.", "note": "多益商務活動。grand(盛大)+opening(開始)。常用：Attend a grand opening。"},
+  {"word": "take place", "kk": "[tek ples]", "translation": "舉辦、發生", "part_of_speech": "v. phr.", "note": "多益會議行程。等於 hold 或 happen。通常指計畫好的事件。"},
+  {"word": "leaning against", "kk": "[ˈlinɪŋ əˈɡɛnst]", "translation": "斜靠在...上", "part_of_speech": "v. phr.", "note": "多益聽力 Part 1 必考。形容人或物品靠在支撐物上的姿勢。"},
+  {"word": "in charge of", "kk": "[ɪn tʃɑrdʒ ʌv]", "translation": "負責、掌管", "part_of_speech": "prep. phr.", "note": "【多益必考：職責描述】後接名詞或 V-ing。等於 be responsible for。例：He is in charge of marketing。 職場必考，等於 be responsible for。後接職務內容。"},
+  {"word": "loaded with cargo", "kk": "[ˈlodɪd wɪð ˈkɑrɡo]", "translation": "裝滿貨物", "part_of_speech": "phr.", "note": "多益聽力 Part 1 常用，描述貨車或船隻裝載貨物的狀態。"},
+  {"word": "get off", "kk": "[ɡɛt ɔf]", "translation": "下車、從...下來", "part_of_speech": "phr.", "note": "常用於大眾運輸工具。相反詞為 get on (上車)。"},
+  {"word": "administrative assistant", "kk": "[ədˈmɪnəˌstretɪv əˈsɪstənt]", "translation": "行政助理", "part_of_speech": "n.", "note": "多益職場情境常見職稱，負責辦公室行政事務。"},
+  {"word": "schedule", "kk": "[ˈskɛdʒul]", "translation": "安排、排定；日程表", "part_of_speech": "v./n.", "note": "美式發音重點為 [sk-]。常見用法：ahead of schedule (提前)。"},
+  {"word": "informing", "kk": "[ɪnˈfɔrmɪŋ]", "translation": "告知、通知", "part_of_speech": "v.", "note": "inform 的現在分詞。常用結構：inform someone of something。"},
+  {"word": "general manager", "kk": "[ˈdʒɛnərəl ˈmænədʒɚ]", "translation": "總經理", "part_of_speech": "n.", "note": "簡稱 GM，為企業內負責全面營運的高階主管。"},
+  {"word": "wondering", "kk": "[ˈwʌndərɪŋ]", "translation": "想知道、納悶", "part_of_speech": "v.", "note": "常用於委婉詢問：I was wondering if... (我想知道是否...)"},
+  {"word": "applies to", "kk": "[əˈplaɪz tu]", "translation": "適用於", "part_of_speech": "phr.", "note": "常用於規則或折扣的適用範圍。"},
+  {"word": "discount", "kk": "[ˈdɪskaʊnt]", "translation": "折扣", "part_of_speech": "n.", "note": "常見組合：at a discount (打折中)、quantity discount (大宗採購折扣)。"},
+  {"word": "take off", "kk": "[tek ɔf]", "translation": "脫掉；起飛；休假", "part_of_speech": "phr.", "note": "多義詞：多益常考「飛機起飛」或「向公司請假」。"},
+  {"word": "inter-bank transfer", "kk": "[ˌɪntɚ-bæŋk ˈtrænsfɝ]", "translation": "跨行轉帳", "part_of_speech": "n.", "note": "金融情境常見，inter- 有「之間」的意思。"},
+  {"word": "assembled", "kk": "[əˈsɛmbəld]", "translation": "組裝好的；聚集的", "part_of_speech": "adj./v.", "note": "形容 product 已完成組裝。動詞 assemble 亦常指「召集員工」。"},
+  {"word": "in line", "kk": "[ɪn laɪn]", "translation": "排隊中、成一直線", "part_of_speech": "phr.", "note": "常見用法：stand in line (排隊)。"},
+  {"word": "in front of", "kk": "[ɪn frʌnt ʌv]", "translation": "在...前面", "part_of_speech": "phr.", "note": "多益照片描述題常見方位詞。"},
+  {"word": "file cabinet", "kk": "[faɪl ˈkæbənɪt]", "translation": "檔案櫃", "part_of_speech": "n.", "note": "辦公室情境中常見的硬體設備。"},
+  {"word": "documents", "kk": "[ˈdɑkjəmənts]", "translation": "文件、公公文", "part_of_speech": "n.", "note": "辦公室情境核心單字。複數形式;多益辦公室情境高頻詞。常用：file documents (歸檔文件)、confidential documents (機密文件)。"},
   {"word": "promote our", "kk": "[prəˈmot aʊr]", "translation": "推廣我們的...", "part_of_speech": "v. phr.", "note": "【片語】常用於行銷情境。promote 除了推廣，在多益中也常指「升職」。"},
   {"word": "bought", "kk": "[bɔt]", "translation": "購買", "part_of_speech": "v. (pt.)", "note": "buy 的過去式。多益購物與採購情境常用詞。"},
   {"word": "defective", "kk": "[dɪˈfɛktɪv]", "translation": "有瑕疵的、有故障的", "part_of_speech": "adj.", "note": "多益產品投訴情境必考。例：return a defective product (退回瑕疵品)。"},
@@ -38,7 +48,7 @@
   {"word": "brochure", "kk": "[broˈʃʊr]", "translation": "小冊子、廣告手冊", "part_of_speech": "n.", "note": "多益行銷與旅遊情境常出現的宣傳品。"},
   {"word": "complex", "kk": "[kəmˈplɛks]", "translation": "複雜的；綜合設施", "part_of_speech": "adj. / n.", "note": "作為名詞時常指「建築群」，如 office complex (辦公大樓群)。"},
   {"word": "thought", "kk": "[θɔt]", "translation": "想法、思考", "part_of_speech": "n. / v. (pt.)", "note": "think 的過去式或名詞形式。"},
-  {"word": "definitely", "kk": "[ˈdɛfənɪtli]", "translation": "肯定地、當然地", "part_of_speech": "adv.", "note": "用於加強語氣。"},
+  {"word": "definitely", "kk": "[ˈdɛfənɪtli]", "translation": "肯定地、當然地", "adv.", "note": "用於加強語氣。"},
   {"word": "increase", "kk": "[ɪnˈkris]", "translation": "增加、增長", "part_of_speech": "v. / n.", "note": "多益數據分析情境常用。反義詞為 decrease。"},
   {"word": "sales", "kk": "[selz]", "translation": "業務、銷售額", "part_of_speech": "n.", "note": "常用於 sales department (業務部門) 或 sales figures (銷售數據)。"},
   {"word": "parade", "kk": "[pəˈred]", "translation": "遊行、慶祝遊行", "part_of_speech": "n.", "note": "多益聽力 Part 1 圖片題或 Part 4 廣播題偶爾出現。"},
@@ -63,71 +73,52 @@
   {"word": "show up", "kk": "[ʃo ʌp]", "translation": "出現、出席", "part_of_speech": "v. phr.", "note": "【片語】等於 appear 或 attend。"},
   {"word": "come up", "kk": "[kʌm ʌp]", "translation": "（問題等）發生、被提及", "part_of_speech": "v. phr.", "note": "【片語】常用於「事情突然發生」導致行程更動。"},
   {"word": "alternative", "kk": "[ɔlˈtɝnətɪv]", "translation": "替代方案、可供選擇的", "part_of_speech": "n. / adj.", "note": "多益常見：alternative plan (替代方案)。"}
-] 
+]
 
-
-以上是我需要的格式範例
-kk音標要是美式發音的kk音標
-將下列的每一行都生成範例中的格式
-若下列內容每一行不只有一個單字時依據多益標準判斷是不是片語
-若是就將片語生成我要的格式，若不是就保留重要單字生成我要的格式
-
-若單字常與片語一起使用
-或是多益常出現的考法
-都可以在備註中特別註解說明
-
-另外若下列的內容已經存在於上述的格式中則直接略過不生成
-並將上述的格式及加上新增的內容依據
-yt影片中單字出現的時間順序進行排列
-影片連結 https://youtu.be/8YDf5qfoRYI?si=X3YAr-X2C5hukDOy
-
+### 待處理的新單字清單 (請依據上方規則過濾、判定片語並補上新資料後合併)：
 documents
 photography 
 contest
 promote our
-
 documents
-
 bought 
 defective.
-
 interview 
 plenty of time 
 revise 
 contract during
-    head office
-            human resources
-            senior manager
-            make a presentation
-            auditorium
-            suggestions
-  information
-            brochure
-            complex
-            thought
-            definitely
-            increase
-            sales
-            parade
-            national day
-            celebration
-            spoke
-            service
-            technician
-            reschedule
-            appointment
-            draft of
-            flyer
-            front door
-            clearly
-            malfunctioning
-            repairperson
-            laptop
-            warranty
-            another
-            extend
-            presenter
-            show up
-            come up
-            alternative
-
+head office
+human resources
+senior manager
+make a presentation
+auditorium
+suggestions
+information
+brochure
+complex
+thought
+definitely
+increase
+sales
+parade
+national day
+celebration
+spoke
+service
+technician
+reschedule
+appointment
+draft of
+flyer
+front door
+clearly
+malfunctioning
+repairperson
+laptop
+warranty
+another
+extend
+presenter
+show up
+come up
+alternative
