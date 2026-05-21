@@ -9,6 +9,16 @@
 6. **時間軸排序**：由於以下字詞是依據 YouTube 影片 (https://youtu.be/8YDf5qfoRYI?si=X3YAr-X2C5hukDOy) 的出現順序排列，請在剔除重複字詞後，「保持原有清單的上下先後順序」進行生成，並將最終成果與現有字庫合併輸出。
 7. **輸出格式**：請僅輸出標準的 JSON 陣列，不要包含任何額外的解釋性文字。
 
+### 範例格式:(不須生成只是範例而已)
+[
+  {"word": "grand opening", "kk": "[ɡrænd ˈopənɪŋ]", "translation": "開幕典禮、盛大開幕", "part_of_speech": "n. phr.", "note": "多益商務活動。grand(盛大)+opening(開始)。常用：Attend a grand opening。"},
+  {"word": "extend", "kk": "[ɪkˈstɛnd]", "translation": "延長、延伸", "part_of_speech": "v.", "note": "多益常見：extend a deadline (延長期限) 或 extend an invitation (發出邀請)。"},
+  {"word": "presenter", "kk": "[prɪˈzɛntɚ]", "translation": "主持人、報告者", "part_of_speech": "n.", "note": "會議或研討會情境常用。"},
+  {"word": "show up", "kk": "[ʃo ʌp]", "translation": "出現、出席", "part_of_speech": "v. phr.", "note": "【片語】等於 appear 或 attend。"},
+  {"word": "come up", "kk": "[kʌm ʌp]", "translation": "（問題等）發生、被提及", "part_of_speech": "v. phr.", "note": "【片語】常用於「事情突然發生」導致行程更動。"},
+  {"word": "alternative", "kk": "[ɔlˈtɝnətɪv]", "translation": "替代方案、可供選擇的", "part_of_speech": "n. / adj.", "note": "多益常見：alternative plan (替代方案)。"}
+]
+
 ### 現有單字庫 (不需重新生成，但請保留並與新生成的內容依影片順序合併)：
 [
   {"word": "grand opening", "kk": "[ɡrænd ˈopənɪŋ]", "translation": "開幕典禮、盛大開幕", "part_of_speech": "n. phr.", "note": "多益商務活動。grand(盛大)+opening(開始)。常用：Attend a grand opening。"},
