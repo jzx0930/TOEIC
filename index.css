@@ -177,12 +177,13 @@ h3 {
   white-space: nowrap;
 }
 
-/* 一般控制按鈕 */
+/* 一般控制按鈕(全部隱藏的按鈕樣式) */
+/*預設未懸停時*/
 .control-button {
   padding: 8px 14px;
   border: 2px solid var(--bright-green);
   border-radius: 6px;
-  background-color: var(--light-gray);   /* 預設灰底 */
+  background-color: var( --bright-green);   /* 預設亮綠底 */
   color: var(--text-white);              /* 白字 */
   cursor: pointer;
   font-weight: 600;
@@ -190,9 +191,9 @@ h3 {
   transition: all var(--transition-speed);
 }
 
-
+/*懸停時*/
 .control-button:hover {
-  background-color: var(--bright-green); /* 懸停亮綠底 */
+  background-color: var(--light-gray); /* 懸停灰底 */
   color: var(--dark-bg);                 /* 黑字 */
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -304,7 +305,7 @@ h3 {
 /* ==================== 文字造型 ==================== */
 .main-text {
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 1.5em;
   color: var(--primary-green);
   margin-bottom: 8px;
   word-break: break-word;
