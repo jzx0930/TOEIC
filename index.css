@@ -182,8 +182,12 @@ h3 {
   padding: 8px 14px;
   border: 2px solid currentColor;
   border-radius: 6px;
-  background-color: transparent;
-  color: var(--text-white);
+ /* background-color: transparent;
+  color: var(--text-white);*/
+
+   background-color: var(--bright-green); 
+   color: var(--dark-bg);
+   
   cursor: pointer;
   font-weight: 600;
   font-size: 13px;
@@ -357,10 +361,16 @@ h3 {
 
 .speak-button {
   padding: 6px 11px;
-  border: 1px solid var(--border-dark);
+ /* border: 1px solid var(--border-dark);*/
   border-radius: 4px;
-  background-color: rgba(238, 238, 238, 0.1);
+
+   background-color: var(--card-bg);
+   border: 1px solid var(--bright-green);
+   
+ /* background-color: rgba(238, 238, 238, 0.1);*/
   color: var(--text-white);
+
+   
   font-size: 12px;
   cursor: pointer;
   font-weight: 500;
