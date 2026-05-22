@@ -368,7 +368,7 @@ h3 {
 }
 
 .speak-button:hover {
-  background-color: rgba(238, 238, 238, 0.25);
+  background-color: rgba(100, 100, 100, 0.25);
   border-color: var(--bright-green);
   transform: translateY(-1px);
 }
