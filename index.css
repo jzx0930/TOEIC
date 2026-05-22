@@ -180,25 +180,20 @@ h3 {
 /* 一般控制按鈕 */
 .control-button {
   padding: 8px 14px;
-  border: 2px solid currentColor;
+  border: 2px solid var(--bright-green);
   border-radius: 6px;
- /* background-color: transparent;
-  color: var(--text-white);*/
-
-   background-color: var(--bright-green); 
-   color: var(--dark-bg);
-   
+  background-color: var(--light-gray);   /* 預設灰底 */
+  color: var(--text-white);              /* 白字 */
   cursor: pointer;
   font-weight: 600;
   font-size: 13px;
-  white-space: nowrap;
   transition: all var(--transition-speed);
-  user-select: none;
 }
 
+
 .control-button:hover {
-  background-color: currentColor;
-  color: var(--dark-bg);
+  background-color: var(--bright-green); /* 懸停亮綠底 */
+  color: var(--dark-bg);                 /* 黑字 */
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -359,18 +354,13 @@ h3 {
   justify-content: flex-start;
 }
 
+/* 發音按鈕 */
 .speak-button {
   padding: 6px 11px;
- /* border: 1px solid var(--border-dark);*/
+  border: 1px solid var(--bright-green);
   border-radius: 4px;
-
-   background-color: var(--card-bg);
-   border: 1px solid var(--bright-green);
-   
- /* background-color: rgba(238, 238, 238, 0.1);*/
-  color: var(--text-white);
-
-   
+  background-color: var(--card-bg);      /* 深灰底 */
+  color: var(--text-white);              /* 白字 */
   font-size: 12px;
   cursor: pointer;
   font-weight: 500;
@@ -378,8 +368,8 @@ h3 {
 }
 
 .speak-button:hover {
-  background-color: rgba(100, 100, 100, 0.25);
-  border-color: var(--bright-green);
+  background-color: var(--orange);       /* 懸停橘底 */
+  color: var(--dark-bg);                 /* 黑字 */
   transform: translateY(-1px);
 }
 
