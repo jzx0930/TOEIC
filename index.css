@@ -184,7 +184,7 @@ h3 {
   padding: 8px 14px;
   border: 2px solid var(--bright-green);
   border-radius: 6px;
-  background-color: var( --purple);   /* 預設亮綠底 */
+  background-color: var(--purple);   /* 預設亮綠底 */
   color: var(--text-white);              /* 白字 */
   cursor: pointer;
   font-weight: 600;
