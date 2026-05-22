@@ -147,7 +147,7 @@ h2 {
 /* ==================== 文字造型（保留原風格） ==================== */
 .main-text {
   font-weight: bold;
-  font-size: 1.35em;
+  font-size: 1.5em;/*單字卡內字體大小 原1.35*/
   color: #0f0;           /* 原綠色主文字 */
   margin-bottom: 8px;
 }
