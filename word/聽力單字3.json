@@ -1,1 +1,170 @@
-1
+[
+{
+"word": "wheel barrow",
+"kk": "[ˈhwil ˌbæro]",
+"translation": "獨輪手推車",
+"part_of_speech": "n. phr.",
+"note": "多益聽力 Part 1 高頻單字。常見於工地、園藝與戶外勞動情境。常用搭配：push a wheelbarrow (推獨輪車)、load a wheelbarrow (裝載手推車)。"
+},
+{
+"word": "bricks",
+"kk": "[brɪks]",
+"translation": "磚塊",
+"part_of_speech": "n.",
+"note": "多益聽力 Part 1 常考物品。常見於建築工地或步道背景。常見搭配：brick wall (磚牆)、stacked bricks (堆疊的磚塊)。"
+},
+{
+"word": "sidewalk",
+"kk": "[ˈsaɪdˌwɔk]",
+"translation": "人行道",
+"part_of_speech": "n.",
+"note": "多益聽力 Part 1 核心單字。英式多益常考同義詞為 pavement。常見搭配：stroll along the sidewalk (沿著人行道散步)、sweep the sidewalk (打掃人行道)。"
+},
+{
+"word": "plugging",
+"kk": "[ˈplʌɡɪŋ]",
+"translation": "插上插頭、堵塞",
+"part_of_speech": "v.",
+"note": "多益聽力 Part 1 辦公室或電器操作常考動作。常見搭配：plugging a cord into an outlet (將電線插上插座)。反義詞為 unplug。"
+},
+{
+"word": "cord",
+"kk": "[kɔrd]",
+"translation": "電線、繩索",
+"part_of_speech": "n.",
+"note": "多益聽力 Part 1 辦公室或工廠設施常見物品。常見搭配：power cord (電源線)、extension cord (延長線)、untangle a cord (解開電線)。"
+},
+{
+"word": "equipment",
+"kk": "[ɪˈkwɪpmənt]",
+"translation": "設備、器材",
+"part_of_speech": "n.",
+"note": "多益全大考極核心字（不可數名詞，不可加 s）。常見情境包含辦公設備、工廠器材。常見搭配：office equipment (辦公設備)、laboratory equipment (實驗室設備)。"
+},
+{
+"word": "appearance",
+"kk": "[əˈpɪrəns]",
+"translation": "外貌、外觀、出現",
+"part_of_speech": "n.",
+"note": "多益商務常用字，可用於產品外觀或人員儀表考題。常見搭配：personal appearance (個人儀表)、make an appearance (出席、露面)。"
+},
+{
+"word": "mirror",
+"kk": "[ˈmɪrɚ]",
+"translation": "鏡子",
+"part_of_speech": "n.",
+"note": "多益聽力 Part 1 飯店或室內布置情境。常見搭配：look into the mirror (照鏡子)、rearview mirror (後視鏡)。"
+},
+{
+"word": "placed",
+"kk": "[plest]",
+"translation": "放置、被放置的",
+"part_of_speech": "v.",
+"note": "多益聽力 Part 1 靜態物品題最愛用被動語態 be placed。另外在 Part 3/4 中 place an order (下訂單) 為核心商務片語。"
+},
+{
+"word": "lobby",
+"kk": "[ˈlɑbi]",
+"translation": "大廳",
+"part_of_speech": "n.",
+"note": "多益商務會議、飯店住宿與辦公大樓情境極高頻單字。常見搭配：hotel lobby (飯店大廳)、reception lobby (接待大廳)。"
+},
+{
+"word": "passengers",
+"kk": "[ˈpæsndʒɚz]",
+"translation": "乘客、旅客",
+"part_of_speech": "n.",
+"note": "多益交通運輸情境（機場、車站、大眾運輸）必考字。常見搭配：passenger terminal (客運航廈)、commuter (通勤者)。"
+},
+{
+"word": "across",
+"kk": "[əˈkrɔs]",
+"translation": "橫過、在...對面",
+"part_of_speech": "prep. / adv.",
+"note": "多益聽力 Part 1 常見空間位置介係詞。常見搭配：walk across the street (穿過馬路)、across from the station (在車站正對面)。"
+},
+{
+"word": "served",
+"kk": "[sɝvd]",
+"translation": "供應（餐點）、服務",
+"part_of_speech": "v.",
+"note": "多益餐飲或機艙情境常用字。常見搭配：food is being served (食物正被供應)、serve as a consultant (擔任顧問職務)。"
+},
+{
+"word": "meal",
+"kk": "[mil]",
+"translation": "餐點、一餐",
+"part_of_speech": "n.",
+"note": "多益餐飲與商務社交情境字。常見搭配：complimentary meal (免費贈送的餐點)、business meal (商務聚餐)。"
+},
+{
+"word": "left",
+"kk": "[lɛft]",
+"translation": "留下、遺留、離開",
+"part_of_speech": "v. / adj.",
+"note": "多益聽力與閱讀常見字（leave的過去式/過去分詞）。常見搭配：items left unattended (無人看管的物品，多益機場廣播必考)、leave a message (留言)。"
+},
+{
+"word": "cartridges",
+"kk": "[ˈhɑrtrɪdʒɪz]",
+"translation": "墨水匣、碳粉匣",
+"part_of_speech": "n.",
+"note": "多益辦公室設備故障或行政補給情境核心詞。常見搭配：ink cartridge (墨水匣)、toner cartridge (碳粉匣)、replace a cartridge (更換墨水匣)。"
+},
+{
+"word": "installed",
+"kk": "[ɪnˈstɔld]",
+"translation": "安裝（的）",
+"part_of_speech": "v.",
+"note": "多益 IT 資訊科技與設備維護情境核心字。常見搭配：install software (安裝軟體)、installation guide (安裝指南)。"
+},
+{
+"word": "went",
+"kk": "[wɛnt]",
+"translation": "去、進展（go的過去式）",
+"part_of_speech": "v.",
+"note": "常出現在多益聽力 Part 3/4 過去事件敘述。常見搭配：went wrong (出錯、進展不順)、went smoothly (進展順利)。"
+},
+{
+"word": "departmental",
+"kk": "[ˌdipɑrtˈmɛntl]",
+"translation": "部門的",
+"part_of_speech": "adj.",
+"note": "多益企業人事與內部管理情境常用形容詞。常見搭配：departmental meeting (部門會議)、departmental budget (部門預算)。"
+},
+{
+"word": "bring",
+"kk": "[brɪŋ]",
+"translation": "帶來、攜帶",
+"part_of_speech": "v.",
+"note": "多益聽力商務對話中常考的指令動作。常見搭配：bring up a topic (提出討論話題)、bring to a close (結束、收尾)。"
+},
+{
+"word": "portfolio",
+"kk": "[portˈfolɪo]",
+"translation": "作品集、投資組合",
+"part_of_speech": "n.",
+"note": "多益人事招募（設計/行銷崗位）或金融投資情境高頻字。常考搭配：investment portfolio (投資組合)、submit a portfolio (提交作品集)。"
+},
+{
+"word": "petrol",
+"kk": "[ˈpɛtrəl]",
+"translation": "汽油",
+"part_of_speech": "n.",
+"note": "多益英澳美式用語對比考點。此為英式用法，美式為 gasoline 或 gas。常考情境為出差交通費核銷或加油站。"
+},
+{
+"word": "definitely",
+"kk": "[ˈdɛfənɪtli]",
+"translation": "肯定地、毫無疑問地",
+"part_of_speech": "adv.",
+"note": "多益聽力 Part 3/4 對話中常用於表示強烈贊同對方提議。同義詞：absolutely, certainly。"
+},
+{
+"word": "over budget",
+"kk": "[ˈovɚ ˈbʌdʒɪt]",
+"translation": "超出預算",
+"part_of_speech": "adj. phr.",
+"note": "多益專案管理與財務審查的核心商務片語。反義詞為 under budget (低於預算)。常見搭配：go over budget (超出預算)、stay on budget (維持在預算內)。"
+}
+]
