@@ -37,7 +37,6 @@
 
 
 
-
     
   <button class="search-button" onclick="openQuiz()">開始抽考</button>
 </div>
@@ -75,7 +74,6 @@
 
   </div>
 </div>
-
 
 
 
@@ -288,7 +286,7 @@ async function speakWord(word, lang, callback) {
   /*GOOGLE API 適用jzx2930那隻帳號
   https://console.cloud.google.com/apis/library?project=my-toeic-app-492606*/
   
-    // 1. 在這裡貼上你的 Google API 金鑰
+    // 1. 在這裡貼上你�� Google API 金鑰
     const GOOGLE_API_KEY = "AIzaSyB9jqgbVynCg1Y5_bzBO-Tug_ROPkZ_vmA"; 
     const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_API_KEY}`;
 
@@ -313,9 +311,9 @@ async function speakWord(word, lang, callback) {
          // 使用 Wavenet 系列聲音，這才是真正的真人音質
         */                           
                                  
-               name: isUS ? "en-US-Standard-C" : "en-GB-Standard-A",
-             // name: isUS ? "en-US-Wavenet-F" : "en-GB-Wavenet-A", 
-            ssmlGender: "FEMALE"// 女聲
+                name: isUS ? "en-US-Standard-C" : "en-GB-Standard-A",
+              // name: isUS ? "en-US-Wavenet-F" : "en-GB-Wavenet-A", 
+             ssmlGender: "FEMALE"// 女聲
           
         },
         audioConfig: { 
@@ -463,7 +461,7 @@ function shuffleArray(array) {
     }
 }
 
-// 更新下拉選單 (此函式由 loadWordsFromFile 在載入成功後呼叫)
+// 更新下拉選單 (此函式由 loadWordsFromFile 在載���成功後呼叫)
 function updateQuizRangeUI(catName) {
     const sel = document.getElementById("quizRange");
     // 檢查是否已經存在該選項，避免重複添加
@@ -718,12 +716,23 @@ function toggleSectionLoop(sectionName, btnElement) {
         if (!sectionLoopStatus[sectionName]) return; // 如果狀態被切換為 false，停止遞迴
 
         const wordObj = words[currentIndex];
+        
+        // 🎯 新增：獲取該單字的卡片並高亮
+        const card = findCardByWord(wordObj.en);
+        if (card) {
+            highlightCard(card);
+        }
+
         const utterance = new SpeechSynthesisUtterance(wordObj.en);
         utterance.lang = 'en-US';
         utterance.rate = 0.9; // 稍微放慢一點點，聽得比較清楚
 
         utterance.onend = () => {
             if (sectionLoopStatus[sectionName]) {
+                // 🎯 新增：移除高亮
+                if (card) {
+                    removeHighlightCard(card);
+                }
                 currentIndex = (currentIndex + 1) % words.length; // 循環索引
                 setTimeout(playNext, 1000); // 每個單字間隔 1 秒
             }
@@ -732,12 +741,49 @@ function toggleSectionLoop(sectionName, btnElement) {
         utterance.onerror = () => {
             sectionLoopStatus[sectionName] = false;
             btnElement.innerText = "🔁 循環播放區塊";
+            if (card) {
+                removeHighlightCard(card);
+            }
         };
 
         window.speechSynthesis.speak(utterance);
     }
 
     playNext();
+}
+
+// 🎯 新增：根據單字找到對應的卡片
+function findCardByWord(word) {
+    const cards = document.querySelectorAll(".term-card");
+    for (let card of cards) {
+        if (card.dataset.word === word) {
+            return card;
+        }
+    }
+    return null;
+}
+
+// 🎯 新增：高亮卡片 - 置於螢幕中間並添加視覺效果
+function highlightCard(card) {
+    // 移除其他卡片的高亮
+    document.querySelectorAll(".term-card").forEach(c => {
+        if (c !== card) {
+            c.classList.remove("loop-highlight");
+        }
+    });
+
+    // 添加高亮到當前卡片
+    card.classList.add("loop-highlight");
+
+    // 平滑捲動到螢幕中間
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+// 🎯 新增：移除高亮
+function removeHighlightCard(card) {
+    if (card) {
+        card.classList.remove("loop-highlight");
+    }
 }
   
 </script>
