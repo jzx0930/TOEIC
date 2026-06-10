@@ -20,7 +20,8 @@
   
  <!-- <a href="index.html" class="back-button">🏠 返回主頁</a> -->
 
-
+<!-- 🎯 新增：浮動停止循環播放按鈕 -->
+<button id="floatingStopBtn" onclick="stopLoopPlayback()">⏹ 停止循環播放</button>
 
   <div class="quiz-controls" style="text-align: center; margin-bottom: 20px; padding: 15px; background: #222; border-radius: 8px; border: 1px solid #00ff99;">
   <span style="color: #00ff99; font-weight: bold; margin-right: 10px;">測驗模式:</span>
@@ -126,6 +127,9 @@
 const repeatStatus = {};
 const container = document.getElementById("word-container");
 
+// 🎯 新增：記錄目前正在循環播放的區塊名稱
+let currentLoopingSection = null;
+
 // 初始化：先抓取 list.json 索引檔，再依序載入所有 .txt
 async function init() {
   container.innerHTML = "正在讀取索引檔...";
@@ -187,7 +191,7 @@ async function loadWordsFromFile(fileName) {
   loopBtn.style.color = "#00ff99";
   loopBtn.innerText = "🔁 循環播放區塊";
 
-  // 點擊按鈕時執行循環邏輯
+  // 點擊按鈕時��行循環邏輯
   loopBtn.addEventListener("click", (e) => {
     e.stopPropagation(); // 阻止折疊區塊收合
     toggleSectionLoop(sectionTitleText, loopBtn);
@@ -286,7 +290,7 @@ async function speakWord(word, lang, callback) {
   /*GOOGLE API 適用jzx2930那隻帳號
   https://console.cloud.google.com/apis/library?project=my-toeic-app-492606*/
   
-    // 1. 在這裡貼上你�� Google API 金鑰
+    // 1. 在這裡貼上你的 Google API 金鑰
     const GOOGLE_API_KEY = "AIzaSyB9jqgbVynCg1Y5_bzBO-Tug_ROPkZ_vmA"; 
     const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_API_KEY}`;
 
@@ -461,7 +465,7 @@ function shuffleArray(array) {
     }
 }
 
-// 更新下拉選單 (此函式由 loadWordsFromFile 在載���成功後呼叫)
+// 更新下拉選單 (此函式由 loadWordsFromFile 在載入成功後呼叫)
 function updateQuizRangeUI(catName) {
     const sel = document.getElementById("quizRange");
     // 檢查是否已經存在該選項，避免重複添加
@@ -676,6 +680,33 @@ function toggleNote(btn) {
 
   // 記錄各區塊的播放狀態
 const sectionLoopStatus = {};
+
+// 🎯 新增：停止循環播放的全域函數
+function stopLoopPlayback() {
+    if (currentLoopingSection) {
+        sectionLoopStatus[currentLoopingSection] = false;
+        window.speechSynthesis.cancel();
+        
+        // 重置區塊按鈕狀態
+        document.querySelectorAll(".section-title .control-button").forEach(btn => {
+            btn.innerText = "🔁 循環播放區塊";
+            btn.style.backgroundColor = "transparent";
+            btn.style.color = "#00ff99";
+        });
+        
+        // 移除所有卡片的高亮
+        document.querySelectorAll(".term-card.loop-highlight").forEach(card => {
+            card.classList.remove("loop-highlight");
+        });
+        
+        currentLoopingSection = null;
+        
+        // 隱藏浮動按鈕
+        const floatingBtn = document.getElementById("floatingStopBtn");
+        floatingBtn.classList.remove("show");
+    }
+}
+
 function toggleSectionLoop(sectionName, btnElement) {
     // 如果該區塊正在播放，則停止
     if (sectionLoopStatus[sectionName]) {
@@ -684,6 +715,11 @@ function toggleSectionLoop(sectionName, btnElement) {
         btnElement.innerText = "🔁 循環播放區塊";
         btnElement.style.backgroundColor = "transparent";
         btnElement.style.color = "#00ff99";
+        currentLoopingSection = null;
+        
+        // 隱藏浮動按鈕
+        const floatingBtn = document.getElementById("floatingStopBtn");
+        floatingBtn.classList.remove("show");
         return;
     }
 
@@ -702,10 +738,15 @@ function toggleSectionLoop(sectionName, btnElement) {
     // 先把所有狀態清空，確保一次只有一個區塊在循環
     for (let key in sectionLoopStatus) sectionLoopStatus[key] = false;
     sectionLoopStatus[sectionName] = true;
+    currentLoopingSection = sectionName;
 
     btnElement.innerText = "⏹ 停止播放";
     btnElement.style.backgroundColor = "#00ff99";
     btnElement.style.color = "#000";
+
+    // 🎯 顯示浮動停止按鈕
+    const floatingBtn = document.getElementById("floatingStopBtn");
+    floatingBtn.classList.add("show");
 
     const words = quizPool[sectionName];
     if (!words || words.length === 0) return;
@@ -717,7 +758,7 @@ function toggleSectionLoop(sectionName, btnElement) {
 
         const wordObj = words[currentIndex];
         
-        // 🎯 新增：獲取該單字的卡片並高亮
+        // 🎯 獲取該單字的卡片並高亮
         const card = findCardByWord(wordObj.en);
         if (card) {
             highlightCard(card);
@@ -729,7 +770,7 @@ function toggleSectionLoop(sectionName, btnElement) {
 
         utterance.onend = () => {
             if (sectionLoopStatus[sectionName]) {
-                // 🎯 新增：移除高亮
+                // 🎯 移除高亮
                 if (card) {
                     removeHighlightCard(card);
                 }
@@ -744,6 +785,8 @@ function toggleSectionLoop(sectionName, btnElement) {
             if (card) {
                 removeHighlightCard(card);
             }
+            floatingBtn.classList.remove("show");
+            currentLoopingSection = null;
         };
 
         window.speechSynthesis.speak(utterance);
@@ -752,7 +795,7 @@ function toggleSectionLoop(sectionName, btnElement) {
     playNext();
 }
 
-// 🎯 新增：根據單字找到對應的卡片
+// 🎯 根據單字找到對應的卡片
 function findCardByWord(word) {
     const cards = document.querySelectorAll(".term-card");
     for (let card of cards) {
@@ -763,7 +806,7 @@ function findCardByWord(word) {
     return null;
 }
 
-// 🎯 新增：高亮卡片 - 置於螢幕中間並添加視覺效果
+// 🎯 高亮卡片 - 置於螢幕中間並添加視覺效果（青綠色發光）
 function highlightCard(card) {
     // 移除其他卡片的高亮
     document.querySelectorAll(".term-card").forEach(c => {
@@ -779,7 +822,7 @@ function highlightCard(card) {
     card.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
-// 🎯 新增：移除高亮
+// 🎯 移除高亮
 function removeHighlightCard(card) {
     if (card) {
         card.classList.remove("loop-highlight");
