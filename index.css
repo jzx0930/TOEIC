@@ -273,16 +273,19 @@ h3 {
   animation: loopPulseGreen 0.8s ease-in-out infinite;
 }
 
-/* 🎯 停止循環播放浮動按鈕（沿用原固定鈕綠色樣式，置於英/中按鈕正下方） */
+/* 🎯 停止循環直書按鈕（綠色樣式，與英/中按鈕同寬，置於其正下方） */
 .follow-stop-btn {
-  align-self: flex-end;
-  padding: 10px 16px;
+  align-self: stretch;            /* 與英/中按鈕對齊寬度 */
+  writing-mode: vertical-rl;      /* 直書（文字由上往下） */
+  text-orientation: upright;      /* 中文字正立 */
+  padding: 12px 6px;
   background: rgba(0, 255, 153, 0.95);
   border: 2px solid var(--bright-green);
-  border-radius: 50px;
+  border-radius: 12px;
   color: var(--dark-bg);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
+  letter-spacing: 2px;
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0, 255, 153, 0.5);
@@ -291,7 +294,7 @@ h3 {
 }
 
 .follow-stop-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   box-shadow: 0 8px 30px rgba(0, 255, 153, 0.8);
 }
 
@@ -313,8 +316,9 @@ h3 {
 
 @media (max-width: 480px) {
   .follow-stop-btn {
-    font-size: 11px;
-    padding: 8px 12px;
+    font-size: 12px;
+    padding: 10px 5px;
+    letter-spacing: 1px;
   }
 }
 

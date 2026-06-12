@@ -824,7 +824,7 @@ function attachFollowStopBtn(card) {
         btn = document.createElement("button");
         btn.id = "followStopBtn";
         btn.className = "follow-stop-btn";
-        btn.textContent = "⏹ 停止循環播放";
+        btn.textContent = "停止循環";
         btn.addEventListener("click", (e) => {
             e.stopPropagation();
             stopLoopPlayback();
