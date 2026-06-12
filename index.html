@@ -20,8 +20,6 @@
   
  <!-- <a href="index.html" class="back-button">🏠 返回主頁</a> -->
 
-<!-- 🎯 新增：浮動停止循環播放按鈕 -->
-<button id="floatingStopBtn" onclick="stopLoopPlayback()">⏹ 停止循環播放</button>
 
   <div class="quiz-controls" style="text-align: center; margin-bottom: 20px; padding: 15px; background: #222; border-radius: 8px; border: 1px solid #00ff99;">
   <span style="color: #00ff99; font-weight: bold; margin-right: 10px;">測驗模式:</span>
@@ -703,10 +701,6 @@ function stopLoopPlayback() {
         removeFollowStopBtn();
 
         currentLoopingSection = null;
-
-        // 隱藏浮動按鈕
-        const floatingBtn = document.getElementById("floatingStopBtn");
-        floatingBtn.classList.remove("show");
     }
 }
 
@@ -722,10 +716,6 @@ function toggleSectionLoop(sectionName, btnElement) {
 
         // 移除跟隨停止鈕
         removeFollowStopBtn();
-
-        // 隱藏浮動按鈕
-        const floatingBtn = document.getElementById("floatingStopBtn");
-        floatingBtn.classList.remove("show");
         return;
     }
 
@@ -749,10 +739,6 @@ function toggleSectionLoop(sectionName, btnElement) {
     btnElement.innerText = "⏹ 停止播放";
     btnElement.style.backgroundColor = "#00ff99";
     btnElement.style.color = "#000";
-
-    // 🎯 顯示浮動停止按鈕
-    const floatingBtn = document.getElementById("floatingStopBtn");
-    floatingBtn.classList.add("show");
 
     const words = quizPool[sectionName];
     if (!words || words.length === 0) return;
@@ -792,7 +778,6 @@ function toggleSectionLoop(sectionName, btnElement) {
                 removeHighlightCard(card);
             }
             removeFollowStopBtn();
-            floatingBtn.classList.remove("show");
             currentLoopingSection = null;
         };
 
@@ -845,8 +830,10 @@ function attachFollowStopBtn(card) {
             stopLoopPlayback();
         });
     }
-    if (card && btn.parentElement !== card) {
-        card.appendChild(btn);
+    // 附著到卡片右側的英/中按鈕容器下方（找不到就退回卡片本身）
+    const target = card ? (card.querySelector(".eye-controls") || card) : null;
+    if (target && btn.parentElement !== target) {
+        target.appendChild(btn);
     }
 }
 
