@@ -698,9 +698,12 @@ function stopLoopPlayback() {
         document.querySelectorAll(".term-card.loop-highlight").forEach(card => {
             card.classList.remove("loop-highlight");
         });
-        
+
+        // 移除跟隨停止鈕
+        removeFollowStopBtn();
+
         currentLoopingSection = null;
-        
+
         // 隱藏浮動按鈕
         const floatingBtn = document.getElementById("floatingStopBtn");
         floatingBtn.classList.remove("show");
@@ -716,7 +719,10 @@ function toggleSectionLoop(sectionName, btnElement) {
         btnElement.style.backgroundColor = "transparent";
         btnElement.style.color = "#00ff99";
         currentLoopingSection = null;
-        
+
+        // 移除跟隨停止鈕
+        removeFollowStopBtn();
+
         // 隱藏浮動按鈕
         const floatingBtn = document.getElementById("floatingStopBtn");
         floatingBtn.classList.remove("show");
@@ -785,6 +791,7 @@ function toggleSectionLoop(sectionName, btnElement) {
             if (card) {
                 removeHighlightCard(card);
             }
+            removeFollowStopBtn();
             floatingBtn.classList.remove("show");
             currentLoopingSection = null;
         };
@@ -818,8 +825,35 @@ function highlightCard(card) {
     // 添加高亮到當前卡片
     card.classList.add("loop-highlight");
 
+    // 🎯 把「停止循環播放」跟隨鈕附著到目前朗讀的卡片
+    attachFollowStopBtn(card);
+
     // 平滑捲動到螢幕中間
     card.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+// 🎯 取得（或建立）跟隨停止鈕，並附著到指定卡片
+function attachFollowStopBtn(card) {
+    let btn = document.getElementById("followStopBtn");
+    if (!btn) {
+        btn = document.createElement("button");
+        btn.id = "followStopBtn";
+        btn.className = "follow-stop-btn";
+        btn.textContent = "⏹ 停止循環播放";
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            stopLoopPlayback();
+        });
+    }
+    if (card && btn.parentElement !== card) {
+        card.appendChild(btn);
+    }
+}
+
+// 🎯 移除跟隨停止鈕
+function removeFollowStopBtn() {
+    const btn = document.getElementById("followStopBtn");
+    if (btn) btn.remove();
 }
 
 // 🎯 移除高亮

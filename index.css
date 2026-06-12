@@ -273,6 +273,43 @@ h3 {
   animation: loopPulseGreen 0.8s ease-in-out infinite;
 }
 
+/* 🎯 新增：跟隨目前朗讀卡片的「停止循環播放」按鈕 */
+.follow-stop-btn {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  padding: 8px 16px;
+  background: #ff5555;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 85, 85, 0.7);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.follow-stop-btn:hover {
+  transform: translateX(-50%) scale(1.08);
+  box-shadow: 0 6px 20px rgba(255, 85, 85, 0.9);
+}
+
+.follow-stop-btn:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .follow-stop-btn {
+    font-size: 11px;
+    padding: 6px 12px;
+    top: -14px;
+  }
+}
+
 /* 🎯 新增：青綠色高亮脈動動畫（與發音按鈕效果一致） */
 @keyframes loopPulseGreen {
   0%, 100% {
