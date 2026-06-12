@@ -265,12 +265,15 @@ h3 {
   left: 100%;
 }
 
-/* 🎯 新增：循環播放時的高亮效果 - 使用青綠色光效（如同發音按鈕互動） */
+/* 🎯 循環播放高亮：與滑鼠 hover 效果完全一致（移開時自動回復，如同滑鼠離開） */
 .term-card.loop-highlight {
-  border: 2px solid var(--bright-green);
-  background: linear-gradient(135deg, rgba(0, 255, 153, 0.2), rgba(0, 136, 85, 0.15));
-  box-shadow: 0 0 30px rgba(0, 255, 153, 0.7), inset 0 0 20px rgba(0, 255, 153, 0.3);
-  animation: loopPulseGreen 0.8s ease-in-out infinite;
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 255, 153, 0.4);
+  border-color: var(--bright-green);
+}
+
+.term-card.loop-highlight::before {
+  left: 100%;
 }
 
 /* 🎯 停止循環直書按鈕（綠色樣式，與英/中按鈕同寬，置於其正下方） */
