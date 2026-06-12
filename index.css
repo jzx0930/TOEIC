@@ -265,15 +265,11 @@ h3 {
   left: 100%;
 }
 
-/* 🎯 循環播放高亮：與滑鼠 hover 效果完全一致（移開時自動回復，如同滑鼠離開） */
+/* 🎯 循環播放高亮：保留放大與變色，不含光掃效果 */
 .term-card.loop-highlight {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 255, 153, 0.4);
   border-color: var(--bright-green);
-}
-
-.term-card.loop-highlight::before {
-  left: 100%;
 }
 
 /* 🎯 停止循環直書按鈕（綠色樣式，與英/中按鈕同寬，置於其正下方） */
