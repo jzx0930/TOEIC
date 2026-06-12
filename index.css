@@ -1,37 +1,54 @@
 /* =====================================================
    TOEIC 單字卡完整優化版 CSS v3.2
    單字加大 + 全面性能優化 + 可訪問性改進 + 循環播放高亮
+   -----------------------------------------------------
+   設計風格：黑底 + 螢光綠（終端機 / 駭客風）。
+   檔案結構由上而下大致為：
+     1. 全域重置與 CSS 變數（:root）
+     2. 全域樣式（body、標題、搜尋區）
+     3. 抽考控制列、批次控制按鈕
+     4. 單字卡（卡片本體、hover、循環高亮、英中切換、發音鈕、筆記）
+     5. 章節折疊系統
+     6. 測驗彈窗（modal）與其內部元件
+     7. 共用動畫 @keyframes
+     8. 響應式設計 @media（1200 / 768 / 480 三個斷點）
 ===================================================== */
 
 /* ==================== 全域重置 & 根樣式 ==================== */
+/* 通用選擇器 *：把所有元素的盒模型統一為 border-box，並清掉預設邊距，
+   避免不同瀏覽器的預設值造成版面跑掉 */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* :root 定義全站共用的「色彩 / 速度」變數，之後用 var(--xxx) 取用，
+   想換配色時只要改這裡即可，不必逐條修改 */
 :root {
-   --purple: #6639b7;
-  --primary-green: #0f0;
-  --bright-green: #00ff99;
-  --dark-bg: #000;
-  --card-bg: #111;
-  --light-gray: #333;
-  --text-white: #fff;
-  --text-gray: #ccc;
-  --orange: #ffaa00;
-  --yellow: #ffcc00;
-  --red-error: #ff5555;
-  --green-success: #008855;
-  --border-dark: #444;
-  --transition-speed: 0.3s;
+   --purple: #6639b7;            /* 紫色（控制按鈕底色） */
+  --primary-green: #0f0;         /* 主綠（單字、標題） */
+  --bright-green: #00ff99;       /* 亮綠（邊框、重點強調） */
+  --dark-bg: #000;               /* 全站深色背景 */
+  --card-bg: #111;               /* 單字卡背景 */
+  --light-gray: #333;            /* 淺灰 */
+  --text-white: #fff;            /* 白色文字 */
+  --text-gray: #ccc;             /* 灰色次要文字 */
+  --orange: #ffaa00;             /* 橘色（英文切換） */
+  --yellow: #ffcc00;             /* 黃色（中文 / 筆記） */
+  --red-error: #ff5555;          /* 紅色（錯誤 / 隱藏） */
+  --green-success: #008855;      /* 深綠（答對） */
+  --border-dark: #444;           /* 深色邊框 */
+  --transition-speed: 0.3s;      /* 共用過場時間 */
 }
 
 /* ==================== 全域樣式 ==================== */
+/* 讓頁面內錨點捲動（含搜尋捲動）呈平滑效果 */
 html {
   scroll-behavior: smooth;
 }
 
+/* 全站基礎：深色背景、白字、整頁外圍一圈亮綠粗邊框（招牌視覺） */
 body {
   background-color: var(--dark-bg);
   color: var(--text-white);
@@ -39,27 +56,29 @@ body {
   text-align: center;
   margin: 0;
   padding: 30px 20px;
-  border: 10px solid var(--bright-green);
+  border: 10px solid var(--bright-green); /* 整頁外框 */
   min-height: 100vh;
   line-height: 1.6;
 }
 
-/* 內容包裝器 */
+/* 內容包裝器：限制最大寬度並水平置中，避免在寬螢幕上拉得太開 */
 .content-wrapper {
   max-width: 1400px;
   margin: 0 auto;
 }
 
 /* ==================== 標題樣式 ==================== */
+/* 主標題 h2（例如「📘 TOEIC 單字」） */
 h2 {
   color: var(--primary-green);
   margin: 40px 0 25px 0;
   font-size: 2.2em;
   font-weight: 700;
   letter-spacing: 1px;
-  animation: fadeInDown 0.8s ease-out;
+  animation: fadeInDown 0.8s ease-out; /* 進場淡入下移 */
 }
 
+/* 次標題 h3 */
 h3 {
   color: var(--text-white);
   font-size: 1.3em;
@@ -67,6 +86,7 @@ h3 {
 }
 
 /* ==================== 搜尋區域 ==================== */
+/* 搜尋框外框容器 */
 .search-box {
   margin: 25px 0;
   text-align: center;
@@ -75,6 +95,7 @@ h3 {
   border-radius: 8px;
 }
 
+/* 文字輸入框（搜尋框與測驗下拉皆共用此 class） */
 .search-input {
   padding: 10px 14px;
   width: 280px;
@@ -87,6 +108,7 @@ h3 {
   transition: all var(--transition-speed);
 }
 
+/* 輸入框聚焦時：加亮邊框與綠光暈，提升可見度 */
 .search-input:focus {
   outline: none;
   border-color: var(--primary-green);
@@ -94,35 +116,40 @@ h3 {
   background-color: rgba(17, 17, 17, 1);
 }
 
+/* 主要動作按鈕（搜尋、開始抽考、關閉結果等） */
 .search-button {
   padding: 10px 16px;
   margin-left: 8px;
   border: 2px solid var(--bright-green);
   border-radius: 6px;
-  background-color: var(--bright-green);
-  color: var(--dark-bg);
+  background-color: var(--bright-green); /* 亮綠底 */
+  color: var(--dark-bg);                 /* 黑字 */
   cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   transition: all var(--transition-speed);
 }
 
+/* 按鈕 hover：上浮 + 綠光暈 */
 .search-button:hover {
   background-color: var(--primary-green);
   box-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
   transform: translateY(-2px);
 }
 
+/* 按下瞬間回到原位（點擊回饋） */
 .search-button:active {
   transform: translateY(0);
 }
 
+/* 鍵盤聚焦時的可見外框（無障礙） */
 .search-button:focus {
   outline: 2px solid var(--bright-green);
   outline-offset: 2px;
 }
 
 /* ==================== 測驗控制區域 ==================== */
+/* 抽考控制列容器（縱向排列、置中、可換行） */
 .quiz-controls {
   text-align: center;
   margin-bottom: 30px;
@@ -137,6 +164,7 @@ h3 {
   align-items: center;
 }
 
+/* 測驗下拉選單外觀 */
 .quiz-controls select {
   padding: 8px 10px;
   border: 2px solid var(--bright-green);
@@ -148,12 +176,14 @@ h3 {
   transition: all var(--transition-speed);
 }
 
+/* 下拉聚焦時的綠光暈 */
 .quiz-controls select:focus {
   outline: none;
   box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
 }
 
 /* ==================== 控制按鈕區域（四行置中 + 優化間距） ==================== */
+/* 批次控制列的外層容器：縱向四行、置中 */
 .controls {
   margin: 30px auto 60px auto;
   display: flex;
@@ -163,6 +193,7 @@ h3 {
   max-width: 650px;
 }
 
+/* 每一行（橫向排列、置中、可換行） */
 .controls > div {
   display: flex;
   align-items: center;
@@ -172,6 +203,7 @@ h3 {
   flex-wrap: wrap;
 }
 
+/* 每行前的標籤文字（英文：/中文：/筆記：） */
 .controls > div span {
   font-weight: 700;
   font-size: 14px;
@@ -184,7 +216,7 @@ h3 {
   padding: 8px 14px;
   border: 2px solid var(--bright-green);
   border-radius: 6px;
-  background-color: var(--purple);   /* 預設亮綠底 */
+  background-color: var(--purple);   /* 預設紫色底 */
   color: var(--text-white);              /* 白字 */
   cursor: pointer;
   font-weight: 600;
@@ -200,22 +232,25 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* 按下回到原位 */
 .control-button:active {
   transform: translateY(0);
 }
 
+/* 鍵盤聚焦外框（無障礙） */
 .control-button:focus {
   outline: 2px solid var(--bright-green);
   outline-offset: 2px;
 }
 
-/* 控制按鈕色彩 */
+/* 控制按鈕色彩：當 inline style 帶有橘/黃色時，邊框跟著文字色（currentColor） */
 .control-button[style*="ffaa00"],
 .control-button[style*="ffcc00"] {
   border-color: currentColor;
 }
 
 /* ==================== 單字卡容器（置中） ==================== */
+/* 內容列：用 grid 自動排版，每張卡最小 300px，空間夠就並排、不夠就換行 */
 .content-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -227,6 +262,8 @@ h3 {
 }
 
 /* ==================== 單字卡主體（完整優化） ==================== */
+/* 單字卡：相對定位（讓內部絕對定位的按鈕有依據）、彈性縱向排列、隱藏溢出
+   transition 用帶回彈的 cubic-bezier，hover/高亮時放大有彈跳感 */
 .term-card {
   position: relative;
   width: 100%;
@@ -244,12 +281,14 @@ h3 {
   overflow: hidden;
 }
 
+/* 滑鼠移上卡片：上浮 + 微放大 + 綠光陰影 + 邊框轉亮綠 */
 .term-card:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 255, 153, 0.4);
   border-color: var(--bright-green);
 }
 
+/* ::before 是一層藏在卡片左側外的光，預設在 left:-100%（看不到） */
 .term-card::before {
   content: '';
   position: absolute;
@@ -261,11 +300,14 @@ h3 {
   transition: left 0.6s;
 }
 
+/* hover 時把光移到 left:100%，形成「一道光由左掃到右」的效果 */
 .term-card:hover::before {
   left: 100%;
 }
 
-/* 🎯 循環播放高亮：保留放大與變色，不含光掃效果 */
+/* 🎯 循環播放高亮：刻意做成與滑鼠 hover 相同（放大＋變色），
+   但「不」觸發 ::before 的光掃效果。移除此 class 時，靠 .term-card 的
+   transition 平滑回復，視覺上就像滑鼠移開。 */
 .term-card.loop-highlight {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 255, 153, 0.4);
@@ -273,10 +315,11 @@ h3 {
 }
 
 /* 🎯 停止循環直書按鈕（綠色樣式，與英/中按鈕同寬，置於其正下方） */
+/* 由 JS 動態建立並塞進 .eye-controls，循環朗讀時跟著目前卡片移動 */
 .follow-stop-btn {
-  align-self: stretch;            /* 與英/中按鈕對齊寬度 */
-  writing-mode: vertical-rl;      /* 直書（文字由上往下） */
-  text-orientation: upright;      /* 中文字正立 */
+  align-self: stretch;            /* 在 flex 直欄中拉成與英/中按鈕同寬 */
+  writing-mode: vertical-rl;      /* 直書（文字由上往下排列） */
+  text-orientation: upright;      /* 讓中文字維持正立而非旋轉 */
   padding: 12px 6px;
   background: rgba(0, 255, 153, 0.95);
   border: 2px solid var(--bright-green);
@@ -284,24 +327,26 @@ h3 {
   color: var(--dark-bg);
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 2px;
-  white-space: nowrap;
+  letter-spacing: 2px;            /* 直書時等於字與字的上下間距 */
+  white-space: nowrap;            /* 不換欄，維持單一直行 */
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0, 255, 153, 0.5);
   transition: all 0.3s ease;
-  animation: popIn 0.4s ease-out;
+  animation: popIn 0.4s ease-out; /* 出現時的彈入動畫 */
 }
 
+/* 跟隨鈕 hover：放大 + 加強光暈 */
 .follow-stop-btn:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 30px rgba(0, 255, 153, 0.8);
 }
 
+/* 按下回饋 */
 .follow-stop-btn:active {
   transform: scale(0.95);
 }
 
-/* 浮動按鈕出現動畫 */
+/* 浮動按鈕出現動畫：由小、半透明、下方 → 正常大小、不透明、定位 */
 @keyframes popIn {
   from {
     opacity: 0;
@@ -313,6 +358,7 @@ h3 {
   }
 }
 
+/* 手機（≤480px）：跟隨鈕縮小字級與間距 */
 @media (max-width: 480px) {
   .follow-stop-btn {
     font-size: 12px;
@@ -321,7 +367,8 @@ h3 {
   }
 }
 
-/* 🎯 新增：青綠色高亮脈動動畫（與發音按鈕效果一致） */
+/* 🎯（保留）青綠色脈動動畫：先前循環高亮曾使用，現已改為 hover 風格，
+   此動畫目前未被引用，保留備用 */
 @keyframes loopPulseGreen {
   0%, 100% {
     box-shadow: 0 0 25px rgba(0, 255, 153, 0.5), inset 0 0 15px rgba(0, 255, 153, 0.2);
@@ -332,6 +379,8 @@ h3 {
 }
 
 /* ==================== 單字卡右上角控制按鈕 ==================== */
+/* 英/中切換鈕的容器：絕對定位在卡片右上角，縱向堆疊、靠右對齊
+   （循環朗讀時，JS 會把「停止循環」鈕也放進這個容器的最下面） */
 .term-card .eye-controls {
   position: absolute;
   top: 10px;
@@ -343,6 +392,7 @@ h3 {
   z-index: 5;
 }
 
+/* 英 / 中 切換鈕的共同外觀（半透明底 + 毛玻璃模糊） */
 .term-card .toggle-btn {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid currentColor;
@@ -357,20 +407,24 @@ h3 {
   backdrop-filter: blur(5px);
 }
 
+/* 切換鈕 hover：放大 + 底色加深 */
 .term-card .toggle-btn:hover {
   transform: scale(1.15);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* 「英」鈕用橘色 */
 .toggle-en {
   color: var(--orange);
 }
 
+/* 「中」鈕用黃色 */
 .toggle-cn {
   color: var(--yellow);
 }
 
 /* ==================== 文字造型 ==================== */
+/* 主文字（英文單字本體）：放大、綠色、粗體 */
 .main-text {
   font-weight: 700;
   font-size: 1.5em;
@@ -382,6 +436,7 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+/* 英文被隱藏時：文字透明（仍佔空間，只是看不到），並停用選取與點擊 */
 .main-text.hidden-word {
   color: transparent;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -389,6 +444,7 @@ h3 {
   pointer-events: none;
 }
 
+/* 次文字（KK 音標等）：灰色、斜體、略縮排 */
 .sub-text {
   margin-left: 1em;
   color: var(--text-gray);
@@ -397,6 +453,7 @@ h3 {
   font-style: italic;
 }
 
+/* 中文翻譯：白字、正體，上方加一條虛線分隔，與單字區隔開 */
 .sub-text.translation {
   color: var(--text-white);
   font-size: 1em;
@@ -408,6 +465,7 @@ h3 {
   transition: all var(--transition-speed);
 }
 
+/* 中文被隱藏時：文字透明（同英文隱藏邏輯） */
 .sub-text.translation.hidden {
   color: transparent;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -415,6 +473,7 @@ h3 {
 }
 
 /* ==================== 發音按鈕區域 ==================== */
+/* 四顆發音鈕的容器：橫向、可換行 */
 .button-group {
   margin: 14px 0;
   display: flex;
@@ -423,7 +482,7 @@ h3 {
   justify-content: flex-start;
 }
 
-/* 發音按鈕 */
+/* 發音按鈕外觀 */
 .speak-button {
   padding: 6px 11px;
   border: 1px solid var(--bright-green);
@@ -436,21 +495,25 @@ h3 {
   transition: all var(--transition-speed);
 }
 
+/* 發音鈕 hover：橘底黑字 + 微上浮 */
 .speak-button:hover {
   background-color: var(--orange);       /* 懸停橘底 */
   color: var(--dark-bg);                 /* 黑字 */
   transform: translateY(-1px);
 }
 
+/* 按下回到原位 */
 .speak-button:active {
   transform: translateY(0);
 }
 
+/* 鍵盤聚焦外框 */
 .speak-button:focus {
   outline: 1px solid var(--bright-green);
 }
 
 /* ==================== 筆記功能（優化） ==================== */
+/* 筆記按鈕 📝：絕對定位在卡片右下角 */
 .note-btn {
   position: absolute;
   bottom: 12px;
@@ -466,11 +529,14 @@ h3 {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
+/* 筆記鈕 hover：放大並輕微旋轉，帶黃光投影 */
 .note-btn:hover {
   transform: scale(1.3) rotate(15deg);
   filter: drop-shadow(0 4px 8px rgba(255, 204, 0, 0.5));
 }
 
+/* 筆記內容：預設隱藏（display:none），加上 .show 才顯示
+   保留換行（pre-wrap）、可捲動，超過 150px 高度出現捲軸 */
 .note-content {
   display: none;
   background-color: rgba(51, 51, 51, 0.95);
@@ -489,10 +555,12 @@ h3 {
   line-height: 1.5;
 }
 
+/* 筆記展開狀態 */
 .note-content.show {
   display: block;
 }
 
+/* 筆記區自訂捲軸（WebKit 系瀏覽器）：細捲軸、黃色把手 */
 .note-content::-webkit-scrollbar {
   width: 4px;
 }
@@ -507,6 +575,7 @@ h3 {
 }
 
 /* ==================== 區塊折疊系統 ==================== */
+/* 每個單字檔對應一個 .section 折疊區塊 */
 .section {
   margin-bottom: 35px;
   border: 1px solid var(--border-dark);
@@ -516,6 +585,7 @@ h3 {
   animation: fadeIn 0.6s ease-out;
 }
 
+/* 區塊標題列：漸層底、亮綠字，可點擊折疊，左右兩端對齊（標題 / 循環鈕） */
 .section-title {
   background: linear-gradient(135deg, rgba(51, 51, 51, 0.8), rgba(0, 255, 153, 0.05));
   color: var(--bright-green);
@@ -531,12 +601,14 @@ h3 {
   border-bottom: 2px solid transparent;
 }
 
+/* 標題列 hover：底色加深、底線變亮綠、左側內縮製造位移感 */
 .section-title:hover {
   background: linear-gradient(135deg, rgba(51, 51, 51, 1), rgba(0, 255, 153, 0.1));
   border-bottom-color: var(--bright-green);
   padding-left: 18px;
 }
 
+/* 標題列左側（箭頭 + 文字）佔滿剩餘空間 */
 .section-title > span {
   display: flex;
   align-items: center;
@@ -544,6 +616,7 @@ h3 {
   flex: 1;
 }
 
+/* 折疊箭頭 ▶：用 transform 旋轉切換方向，帶回彈動畫 */
 .arrow {
   display: inline-block;
   margin-right: 8px;
@@ -551,10 +624,12 @@ h3 {
   font-size: 14px;
 }
 
+/* 展開時箭頭旋轉 90 度（▶ → ▼ 的視覺效果） */
 .arrow.rotate {
   transform: rotate(90deg);
 }
 
+/* 標題列內的循環播放鈕：不被壓縮、字級略小 */
 .section-title .control-button {
   flex-shrink: 0;
   margin: 0;
@@ -562,6 +637,7 @@ h3 {
   padding: 4px 10px;
 }
 
+/* 收合狀態：高度歸零、隱藏、淡出（搭配 slideUp 動畫） */
 .collapsed {
   max-height: 0;
   overflow: hidden;
@@ -573,11 +649,13 @@ h3 {
   animation: slideUp 0.4s ease-in;
 }
 
+/* 展開狀態（非 collapsed）：用 slideDown 動畫滑出 */
 .content-row:not(.collapsed) {
   animation: slideDown 0.4s ease-out;
 }
 
 /* ==================== 測驗模態框 ==================== */
+/* 測驗彈窗：固定全螢幕、半透明黑底遮罩、最高層級，內容置中 */
 #quizModal {
   display: none;
   position: fixed;
@@ -595,6 +673,7 @@ h3 {
   animation: fadeIn 0.4s ease-out;
 }
 
+/* 測驗三欄版面（左清單 / 中主區 / 右清單），佔 80% 視窗高 */
 .quiz-layout {
   display: flex;
   width: 95%;
@@ -604,7 +683,7 @@ h3 {
   animation: slideUp 0.4s ease-out;
 }
 
-/* 測驗側邊欄 */
+/* 測驗側邊欄（正確 / 錯誤清單）容器 */
 .quiz-sidebar {
   flex: 0.9;
   background: rgba(17, 17, 17, 0.9);
@@ -616,6 +695,7 @@ h3 {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
+/* 側邊欄標題（✓ 正確清單 / ✗ 錯誤清單） */
 .sidebar-title {
   padding: 14px;
   text-align: center;
@@ -625,12 +705,14 @@ h3 {
   border-bottom: 2px solid currentColor;
 }
 
+/* 側邊欄內容（可捲動清單區） */
 .sidebar-content {
   flex: 1;
   overflow-y: auto;
   padding: 12px;
 }
 
+/* 側邊欄自訂捲軸（WebKit） */
 .sidebar-content::-webkit-scrollbar {
   width: 6px;
 }
@@ -648,6 +730,7 @@ h3 {
   background: var(--primary-green);
 }
 
+/* 清單中的單一單字項目（英文 + 中文 + 重聽鈕，左右排列） */
 .sidebar-item {
   background: rgba(51, 51, 51, 0.6);
   margin-bottom: 10px;
@@ -663,22 +746,25 @@ h3 {
   animation: slideDown 0.3s ease-out;
 }
 
+/* 清單項目 hover：底色加深、左側內縮 */
 .sidebar-item:hover {
   background: rgba(51, 51, 51, 0.8);
   padding-left: 13px;
 }
 
+/* 答對項目：左側綠色標記 + 淡綠底 */
 .sidebar-item.correct {
   border-left-color: var(--bright-green);
   background: rgba(0, 255, 153, 0.1);
 }
 
+/* 答錯項目：左側紅色標記 + 淡紅底 */
 .sidebar-item.wrong {
   border-left-color: var(--red-error);
   background: rgba(255, 85, 85, 0.1);
 }
 
-/* 主測驗區域 */
+/* 主測驗區域（題目與選項） */
 .main-quiz-area {
   flex: 1.6;
   background: rgba(34, 34, 34, 0.9);
@@ -692,6 +778,7 @@ h3 {
   box-shadow: 0 8px 32px rgba(0, 255, 153, 0.2);
 }
 
+/* 進度文字（進度: x / y） */
 #quizProgress {
   font-size: 12px;
   color: var(--text-gray);
@@ -699,6 +786,7 @@ h3 {
   font-weight: 500;
 }
 
+/* 題目文字（大字顯示） */
 #quizQuestionCN {
   font-size: 32px;
   color: var(--text-white);
@@ -708,6 +796,7 @@ h3 {
   animation: fadeIn 0.4s ease-out;
 }
 
+/* 選項容器：單欄格線 */
 #quizOptions {
   display: grid;
   grid-template-columns: 1fr;
@@ -715,6 +804,7 @@ h3 {
   margin-bottom: 25px;
 }
 
+/* 選項按鈕外觀 */
 .option-btn {
   padding: 16px;
   background: rgba(68, 68, 68, 0.7);
@@ -728,6 +818,7 @@ h3 {
   user-select: none;
 }
 
+/* 選項 hover（尚未判定對錯時）：右移 + 綠光，提示可點 */
 .option-btn:hover:not(.option-correct):not(.option-wrong) {
   background: rgba(68, 68, 68, 0.9);
   transform: translateX(8px);
@@ -738,18 +829,21 @@ h3 {
   transform: translateX(0);
 }
 
+/* 答對的選項：深綠底 + 脈動動畫（!important 蓋過 hover 樣式） */
 .option-correct {
   background: rgba(0, 136, 85, 0.8) !important;
   border-color: var(--bright-green) !important;
   animation: pulse 0.6s ease-out;
 }
 
+/* 答錯的選項：暗紅底 + 左右晃動動畫 */
 .option-wrong {
   background: rgba(136, 34, 34, 0.8) !important;
   border-color: var(--red-error) !important;
   animation: shake 0.4s ease-in-out;
 }
 
+/* 作答回饋文字（Correct! / Wrong!） */
 #quizFeedback {
   margin-top: 20px;
   font-weight: 700;
@@ -758,6 +852,7 @@ h3 {
   animation: slideDown 0.3s ease-out;
 }
 
+/* 「提前結束測驗」按鈕 */
 .exit-btn {
   padding: 12px 24px;
   background: rgba(85, 85, 85, 0.8);
@@ -770,6 +865,7 @@ h3 {
   align-self: center;
 }
 
+/* 結束鈕 hover：亮綠底黑字 + 上浮 */
 .exit-btn:hover {
   background: var(--bright-green);
   color: var(--dark-bg);
@@ -782,6 +878,7 @@ h3 {
 }
 
 /* ==================== 其他常用樣式 ==================== */
+/* 搜尋命中時，單字的高亮標記（黃底黑字） */
 .highlight {
   background-color: var(--yellow);
   color: var(--dark-bg);
@@ -791,6 +888,7 @@ h3 {
 }
 
 /* ==================== 動畫定義 ==================== */
+/* 單純淡入 */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -800,6 +898,7 @@ h3 {
   }
 }
 
+/* 由上方淡入下移（標題進場用） */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -811,6 +910,7 @@ h3 {
   }
 }
 
+/* 展開：由上滑入並撐開高度（折疊區塊、筆記、清單項目共用） */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -824,6 +924,7 @@ h3 {
   }
 }
 
+/* 收合：高度收起並上滑淡出 */
 @keyframes slideUp {
   from {
     opacity: 1;
@@ -837,6 +938,7 @@ h3 {
   }
 }
 
+/* 脈動放大（答對時用） */
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
@@ -846,6 +948,7 @@ h3 {
   }
 }
 
+/* 左右晃動（答錯時用） */
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
@@ -859,6 +962,8 @@ h3 {
 }
 
 /* ==================== 響應式設計 ==================== */
+/* 斷點一：平板 / 小筆電（≤1200px）
+   單字卡最小寬度下調；測驗版面由三欄改為上下堆疊 */
 @media (max-width: 1200px) {
   .content-row {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -873,19 +978,21 @@ h3 {
 
   .quiz-sidebar {
     max-height: 200px;
-    order: 2;
+    order: 2; /* 側欄移到主測驗區下方 */
   }
 
   .main-quiz-area {
-    order: 1;
+    order: 1; /* 主測驗區排最上面 */
     flex: 1;
   }
 
   .quiz-sidebar:last-child {
-    order: 3;
+    order: 3; /* 錯誤清單排最後 */
   }
 }
 
+/* 斷點二：手機橫向 / 大手機（≤768px）
+   外框變細、單字卡改單欄、控制列與搜尋框改為直向堆疊 */
 @media (max-width: 768px) {
   body {
     padding: 15px 10px;
@@ -898,7 +1005,7 @@ h3 {
   }
 
   .content-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 單欄 */
     gap: 14px;
     padding: 10px 0;
   }
@@ -998,6 +1105,8 @@ h3 {
   }
 }
 
+/* 斷點三：小手機（≤480px）
+   進一步縮小邊框、字級、卡片內距，確保小螢幕也好讀好點 */
 @media (max-width: 480px) {
   body {
     padding: 10px 8px;
