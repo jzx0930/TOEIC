@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=7"><!-- 外部樣式表（?v=7 為破快取版本號） -->
-<script defer src="index.js?v=7"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=8"><!-- 外部樣式表（?v=8 為破快取版本號） -->
+<script defer src="index.js?v=8"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -52,10 +52,10 @@
   </div>
 
 <span style="color: #00ff99; font-weight: bold; margin-left: 15px; margin-right: 10px;">題型:</span>
-  <!-- 題型下拉選單：中選英 或 英選中 -->
+  <!-- 題型下拉選單：中選英 或 英選中；預設為「英選中（看英文選中文）」 -->
   <select id="quizMode" class="search-input" style="width: auto; margin-bottom: 10px;">
+    <option value="en-cn" selected>英選中 (看英文選中文)</option>
     <option value="cn-en">中選英 (看中文選英文)</option>
-    <option value="en-cn">英選中 (看英文選中文)</option>
   </select>
 
 
@@ -524,7 +524,7 @@ let quizIndex = 0;            // 目前進行到第幾題
 let correctCount = 0;         // 答對題數
 let wrongCount = 0;           // 答錯題數
 let isAnswering = false;      // 是否正在處理作答（避免一題重複點擊）
-let currentQuizType = "cn-en";// 目前題型（cn-en 中選英 / en-cn 英選中）
+let currentQuizType = "en-cn";// 目前題型（預設 en-cn 英選中；另有 cn-en 中選英）
 let wrongWords = [];          // 本次測驗答錯的單字清單（[{en, cn}, ...]），測驗結束可匯出
 let unfamiliarFileHandle = null; // 記住使用者選定的 Unfamiliar.json 檔案handle（同一次開啟頁面內只需選一次）
 
