@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=9"><!-- 外部樣式表（?v=9 為破快取版本號） -->
-<script defer src="index.js?v=9"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=10"><!-- 外部樣式表（?v=10 為破快取版本號） -->
+<script defer src="index.js?v=10"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -343,26 +343,13 @@ updateQuizRangeUI(sectionTitleText); // 同步把此區塊加進「測驗範圍�
 // ---------------- 發音功能核心 ----------------
 //
 // ⚠️ 重要：Google TTS 金鑰「不再」寫在前端，已改走 Cloudflare Worker 代理。
-//   前端只會把要唸的字送到你的代理網址，並附上一組「通行碼 token」；
-//   真正的 Google 金鑰存在 Worker 的 Secret 裡，不會出現在這份原始碼中。
+//   前端只把要唸的字送到你的代理網址；真正的 Google 金鑰存在 Worker 的 Secret 裡，
+//   不會出現在這份原始碼中。代理只接受「來自本網站」的請求（用 Origin 判斷），
+//   所以使用者不需要輸入任何通行碼，但別人也無法拿你的代理亂用。
 //   部署與設定方式見專案內的 tts-proxy/README.md。
 //
 // TTS_PROXY_URL：你的 Cloudflare Worker 代理網址（部署後請改成自己的）。
 const TTS_PROXY_URL = "https://toeic-tts.fuli62.workers.dev";
-
-// getTtsToken：取得發音通行碼。第一次會跳出輸入框，輸入後記在瀏覽器 localStorage，
-//   之後同一台裝置不必再輸入。通行碼錯誤時會被清掉以便重新輸入。
-function getTtsToken() {
-    let token = localStorage.getItem("ttsToken");
-    if (!token) {
-        token = prompt("請輸入發音服務通行碼（只需輸入一次）：");
-        if (token) {
-            token = token.trim();
-            localStorage.setItem("ttsToken", token);
-        }
-    }
-    return token ? token.trim() : "";
-}
 
 // speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
 // 參數：word=要唸的字、lang=語系(en-GB/en-US)、callback=播放結束後要執行的函式
@@ -370,31 +357,13 @@ async function speakWord(word, lang, callback) {
     // 先停掉目前正在播放的任何聲音，避免重疊
     window.speechSynthesis.cancel();
 
-    const token = getTtsToken();
-    if (!token) {
-        console.warn("未輸入發音通行碼，略過發音。");
-        if (callback) callback(); // 沒發音也讓流程（例如抽考下一題）繼續
-        return;
-    }
-
     try {
         // 呼叫你的 Cloudflare Worker 代理（金鑰在 Worker 那端，前端看不到）
         const response = await fetch(TTS_PROXY_URL, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "x-access-token": token // 通行碼放在標頭，供代理驗證
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text: word, lang })
         });
-
-        // 通行碼錯誤：清掉本機記住的通行碼，提示重輸
-        if (response.status === 401) {
-            localStorage.removeItem("ttsToken");
-            alert("發音通行碼錯誤，請重新整理頁面後再輸入一次。");
-            if (callback) callback();
-            return;
-        }
 
         const data = await response.json();
 
