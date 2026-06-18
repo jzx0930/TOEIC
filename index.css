@@ -182,6 +182,47 @@ h3 {
   box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
 }
 
+/* 測驗範圍核取方塊群組（可複選多個範圍）：外觀比照輸入框，內部選項可換行 */
+.quiz-range-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  justify-content: center;
+  align-items: center;
+  max-width: 620px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 2px solid var(--bright-green);
+  border-radius: 6px;
+  background-color: rgba(17, 17, 17, 0.9);
+  vertical-align: middle;
+}
+
+/* 單一範圍選項（核取方塊 + 文字） */
+.quiz-range-group .range-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-white);
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: color var(--transition-speed);
+}
+
+.quiz-range-group .range-item:hover {
+  color: var(--bright-green);
+}
+
+/* 核取方塊本身用亮綠色（accent-color 讓勾選顏色符合主題） */
+.quiz-range-group .range-item input {
+  accent-color: var(--bright-green);
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
 /* ==================== 控制按鈕區域（四行置中 + 優化間距） ==================== */
 /* 批次控制列的外層容器：縱向四行、置中 */
 .controls {

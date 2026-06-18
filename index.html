@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=4"><!-- 外部樣式表（?v=4 為破快取版本號） -->
-<script defer src="index.js?v=4"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=5"><!-- 外部樣式表（?v=5 為破快取版本號） -->
+<script defer src="index.js?v=5"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -44,11 +44,11 @@
        抽考控制列：選擇測驗範圍與題型，按「開始抽考」啟動測驗
        ============================================================ -->
   <div class="quiz-controls" style="text-align: center; margin-bottom: 20px; padding: 15px; background: #222; border-radius: 8px; border: 1px solid #00ff99;">
-  <span style="color: #00ff99; font-weight: bold; margin-right: 10px;">測驗模式:</span>
-  <!-- 測驗範圍下拉選單：預設「全部範圍」，其餘選項由 JS 依載入的單字檔動態加入 -->
-  <select id="quizRange" class="search-input" style="width: auto; margin-bottom: 10px;">
-    <option value="all">全部範圍</option>
-  </select>
+  <span style="color: #00ff99; font-weight: bold; margin-right: 10px;">測驗範圍（可複選）:</span>
+  <!-- 測驗範圍核取方塊群組：預設勾「全部範圍」，其餘選項由 JS 依載入的單字檔動態加入；可複選多個範圍 -->
+  <div id="quizRange" class="quiz-range-group">
+    <label class="range-item"><input type="checkbox" value="all" checked onchange="onRangeCheckboxChange(this)"> 全部範圍</label>
+  </div>
 
 <span style="color: #00ff99; font-weight: bold; margin-left: 15px; margin-right: 10px;">題型:</span>
   <!-- 題型下拉選單：中選英 或 英選中 -->
@@ -532,15 +532,41 @@ function shuffleArray(array) {
     }
 }
 
-// 更新測驗範圍下拉選單（由 loadWordsFromFile 在載入成功後呼叫）
+// 更新測驗範圍核取方塊（由 loadWordsFromFile 在載入成功後呼叫）
+// 為每個載入的單字區塊新增一個可勾選的選項，支援複選
 function updateQuizRangeUI(catName) {
-    const sel = document.getElementById("quizRange");
-    // 若該選項尚未存在才新增，避免重複
-    if (!Array.from(sel.options).some(opt => opt.value === catName)) {
-        const opt = document.createElement("option");
-        opt.value = catName;
-        opt.textContent = catName;
-        sel.appendChild(opt);
+    const box = document.getElementById("quizRange");
+    // 若該範圍尚未存在才新增，避免重複
+    const exists = Array.from(box.querySelectorAll('input[type="checkbox"]')).some(c => c.value === catName);
+    if (exists) return;
+
+    const label = document.createElement("label");
+    label.className = "range-item";
+
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.value = catName;
+    cb.addEventListener("change", () => onRangeCheckboxChange(cb));
+
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(" " + catName));
+    box.appendChild(label);
+}
+
+// 處理測驗範圍核取方塊的互動邏輯（讓「全部範圍」與「特定範圍」彼此排斥）
+function onRangeCheckboxChange(cb) {
+    const box = document.getElementById("quizRange");
+    const allCb = box.querySelector('input[value="all"]');
+    const others = Array.from(box.querySelectorAll('input[type="checkbox"]')).filter(c => c.value !== "all");
+
+    if (cb.value === "all") {
+        // 勾選「全部範圍」→ 取消其餘所有特定範圍
+        if (cb.checked) others.forEach(c => c.checked = false);
+    } else {
+        // 勾任何一個特定範圍 → 取消「全部範圍」
+        if (cb.checked && allCb) allCb.checked = false;
+        // 若所有特定範圍都被取消，則自動勾回「全部範圍」，避免一個都沒選
+        if (allCb && !others.some(c => c.checked)) allCb.checked = true;
     }
 }
 
@@ -549,16 +575,22 @@ function updateQuizRangeUI(catName) {
 // 為了保險起見，這裡提供一個「自動修復版」的測驗範圍初始化
 // openQuiz：按下「開始抽考」時呼叫，準備題目並開啟測驗彈窗
 function openQuiz() {
-    const range = document.getElementById("quizRange").value;        // 選定範圍
+    const box = document.getElementById("quizRange");
+    const checked = Array.from(box.querySelectorAll('input[type="checkbox"]:checked')); // 所有勾選的範圍
     currentQuizType = document.getElementById("quizMode").value;     // 選定題型
     currentQuizList = [];
 
-    if(range === "all") {
+    // 勾了「全部範圍」或一個都沒勾 → 使用全部
+    const useAll = checked.length === 0 || checked.some(c => c.value === "all");
+
+    if(useAll) {
         // 全部範圍：把測驗池裡所有區塊的單字合併
         Object.values(quizPool).forEach(list => currentQuizList.push(...list));
     } else {
-        // 指定範圍：只取該區塊（複製一份以免影響原資料）
-        currentQuizList = quizPool[range] ? [...quizPool[range]] : [];
+        // 複選的特定範圍：把每個被勾選範圍的單字合併進來
+        checked.forEach(c => {
+            if (quizPool[c.value]) currentQuizList.push(...quizPool[c.value]);
+        });
     }
 
     // 至少要 4 個單字才能湊出「1 正解 + 3 干擾項」
