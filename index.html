@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=8"><!-- 外部樣式表（?v=8 為破快取版本號） -->
-<script defer src="index.js?v=8"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=9"><!-- 外部樣式表（?v=9 為破快取版本號） -->
+<script defer src="index.js?v=9"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -341,78 +341,76 @@ updateQuizRangeUI(sectionTitleText); // 同步把此區塊加進「測驗範圍�
 
 // ---------------- 以下為原功能微調 ----------------
 // ---------------- 發音功能核心 ----------------
-// speakWord：用 Google Text-to-Speech 雲端 API 朗讀單字（真人音質）
+//
+// ⚠️ 重要：Google TTS 金鑰「不再」寫在前端，已改走 Cloudflare Worker 代理。
+//   前端只會把要唸的字送到你的代理網址，並附上一組「通行碼 token」；
+//   真正的 Google 金鑰存在 Worker 的 Secret 裡，不會出現在這份原始碼中。
+//   部署與設定方式見專案內的 tts-proxy/README.md。
+//
+// TTS_PROXY_URL：你的 Cloudflare Worker 代理網址（部署後請改成自己的）。
+const TTS_PROXY_URL = "https://toeic-tts.YOUR-SUBDOMAIN.workers.dev";
+
+// getTtsToken：取得發音通行碼。第一次會跳出輸入框，輸入後記在瀏覽器 localStorage，
+//   之後同一台裝置不必再輸入。通行碼錯誤時會被清掉以便重新輸入。
+function getTtsToken() {
+    let token = localStorage.getItem("ttsToken");
+    if (!token) {
+        token = prompt("請輸入發音服務通行碼（只需輸入一次）：");
+        if (token) {
+            token = token.trim();
+            localStorage.setItem("ttsToken", token);
+        }
+    }
+    return token ? token.trim() : "";
+}
+
+// speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
 // 參數：word=要唸的字、lang=語系(en-GB/en-US)、callback=播放結束後要執行的函式
 async function speakWord(word, lang, callback) {
-  /*GOOGLE API 適用jzx2930那隻帳號
-  https://console.cloud.google.com/apis/library?project=my-toeic-app-492606*/
-
-    // 1. Google API 金鑰
-    //    ⚠️ 安全提醒：金鑰寫在前端原始碼會被任何人看到，建議改用「HTTP 來源限制」
-    //       或改走後端代理，以免被盜用造成費用。
-    const GOOGLE_API_KEY = "AIzaSyB9jqgbVynCg1Y5_bzBO-Tug_ROPkZ_vmA";
-    const url = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_API_KEY}`;
-
-    // 2. 先停掉目前正在播放的任何聲音，避免重疊
+    // 先停掉目前正在播放的任何聲音，避免重疊
     window.speechSynthesis.cancel();
 
-    // 3. 判斷要美式還是英式發音
-    const isUS = lang.toUpperCase().includes("US");
-
-
-
-    // 組出要送給 Google API 的請求內容
-    const requestBody = {
-        input: { text: word },
-        voice: {
-            languageCode: isUS ? "en-US" : "en-GB",
-
-        /*語音類型每月免費額度超過後的費用(EX:apple為5個字元)
-        Standard 語音前 400 萬 字元免費$4.00美金
-        Wavenet 語音前 100 萬 字元免費$16.00 美金
-        下面則一
-         // 將 Wavenet 改為 Standard，這就是最經典的 Google 翻譯女聲
-         // 使用 Wavenet 系列聲音，這才是真正的真人音質
-        */
-
-                name: isUS ? "en-US-Standard-C" : "en-GB-Standard-A", // 目前使用 Standard 女聲
-              // name: isUS ? "en-US-Wavenet-F" : "en-GB-Wavenet-A", // （備用）Wavenet 更逼真但較貴
-             ssmlGender: "FEMALE"// 女聲
-
-        },
-        audioConfig: {
-            audioEncoding: "MP3",
-            pitch: 0,
-            speakingRate: 1.0 // 語速（1.0 為正常，可依喜好調整）
-        }
-    };
-
-
+    const token = getTtsToken();
+    if (!token) {
+        console.warn("未輸入發音通行碼，略過發音。");
+        if (callback) callback(); // 沒發音也讓流程（例如抽考下一題）繼續
+        return;
+    }
 
     try {
-        // 呼叫 Google API（POST，內容為上面的 requestBody）
-        const response = await fetch(url, {
+        // 呼叫你的 Cloudflare Worker 代理（金鑰在 Worker 那端，前端看不到）
+        const response = await fetch(TTS_PROXY_URL, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(requestBody)
+            headers: {
+                "Content-Type": "application/json",
+                "x-access-token": token // 通行碼放在標頭，供代理驗證
+            },
+            body: JSON.stringify({ text: word, lang })
         });
+
+        // 通行碼錯誤：清掉本機記住的通行碼，提示重輸
+        if (response.status === 401) {
+            localStorage.removeItem("ttsToken");
+            alert("發音通行碼錯誤，請重新整理頁面後再輸入一次。");
+            if (callback) callback();
+            return;
+        }
 
         const data = await response.json();
 
         if (data.audioContent) {
-            // 4. 回傳的是 Base64 編碼的 MP3，轉成可播放的音訊並播放
+            // 代理回傳 Base64 的 MP3，轉成可播放的音訊並播放
             const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
             audio.play();
-
-            // 5. 播放結束後，若有傳入 callback 就執行（例如抽考時自動跳下一題）
-            audio.onended = () => {
-                if (callback) callback();
-            };
+            // 播放結束後執行 callback（例如抽考時自動跳下一題）
+            audio.onended = () => { if (callback) callback(); };
         } else {
-            console.error("Google TTS 沒回傳音訊內容，請檢查金鑰權限。");
+            console.error("代理沒回傳音訊內容：", data);
+            if (callback) callback();
         }
     } catch (error) {
-        console.error("呼叫 Google API 失敗:", error);
+        console.error("呼叫發音代理失敗：", error);
+        if (callback) callback(); // 失敗也讓流程繼續，避免抽考卡住
     }
 }
 /* （已停用的舊版本）改用瀏覽器內建語音合成 SpeechSynthesis：
