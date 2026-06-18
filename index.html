@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=5"><!-- 外部樣式表（?v=5 為破快取版本號） -->
-<script defer src="index.js?v=5"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=7"><!-- 外部樣式表（?v=7 為破快取版本號） -->
+<script defer src="index.js?v=7"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -44,9 +44,10 @@
        抽考控制列：選擇測驗範圍與題型，按「開始抽考」啟動測驗
        ============================================================ -->
   <div class="quiz-controls" style="text-align: center; margin-bottom: 20px; padding: 15px; background: #222; border-radius: 8px; border: 1px solid #00ff99;">
-  <span style="color: #00ff99; font-weight: bold; margin-right: 10px;">測驗範圍（可複選）:</span>
-  <!-- 測驗範圍核取方塊群組：預設勾「全部範圍」，其餘選項由 JS 依載入的單字檔動態加入；可複選多個範圍 -->
-  <div id="quizRange" class="quiz-range-group">
+  <!-- 測驗範圍：可折疊。點按鈕展開／收合下方的核取方塊群組，預設為收合 -->
+  <button type="button" id="quizRangeToggle" class="range-toggle" onclick="toggleQuizRange()"><span class="range-arrow">▶</span> 測驗範圍（可複選）</button>
+  <!-- 測驗範圍核取方塊群組：預設勾「全部範圍」，其餘選項由 JS 依載入的單字檔動態加入；可複選多個範圍。預設加上 collapsed 收合 -->
+  <div id="quizRange" class="quiz-range-group collapsed">
     <label class="range-item"><input type="checkbox" value="all" checked onchange="onRangeCheckboxChange(this)"> 全部範圍</label>
   </div>
 
@@ -233,6 +234,9 @@ async function loadWordsFromFile(fileName) {
   loopBtn.style.backgroundColor = "transparent";
   loopBtn.style.color = "#00ff99";
   loopBtn.innerText = "🔁 循環播放區塊";
+
+  // 記錄此區塊對應的循環按鈕，供「繼續循環」時更新按鈕外觀用
+  sectionLoopButtons[sectionTitleText] = loopBtn;
 
   // 點擊循環按鈕時執行循環邏輯
   loopBtn.addEventListener("click", (e) => {
@@ -551,6 +555,14 @@ function updateQuizRangeUI(catName) {
     label.appendChild(cb);
     label.appendChild(document.createTextNode(" " + catName));
     box.appendChild(label);
+}
+
+// 切換測驗範圍核取方塊群組的展開／收合（預設收合）
+function toggleQuizRange() {
+    const box = document.getElementById("quizRange");
+    const arrow = document.querySelector("#quizRangeToggle .range-arrow");
+    const collapsed = box.classList.toggle("collapsed"); // 切換後是否為收合
+    if (arrow) arrow.textContent = collapsed ? "▶" : "▼"; // ▶=收合、▼=展開
 }
 
 // 處理測驗範圍核取方塊的互動邏輯（讓「全部範圍」與「特定範圍」彼此排斥）
@@ -915,74 +927,120 @@ function toggleNote(btn) {
   // sectionLoopStatus：記錄各區塊是否正在循環朗讀（key = 區塊名稱）
 const sectionLoopStatus = {};
 
-// 🎯 停止循環播放的全域函數（由「停止循環」跟隨鈕呼叫）
+// sectionLoopButtons：記錄各區塊標題列的循環按鈕（key = 區塊名稱），供「繼續循環」更新外觀
+const sectionLoopButtons = {};
+
+// 🎯 完全停止循環播放（由區塊標題的停止鈕、或發音錯誤時呼叫）
+//    會清除狀態、移除所有高亮與跟隨鈕（不保留續播位置）
 function stopLoopPlayback() {
     if (currentLoopingSection) {
         sectionLoopStatus[currentLoopingSection] = false; // 標記停止
-        window.speechSynthesis.cancel();                  // 停掉發音
-
-        // 把所有區塊的循環按鈕外觀重置回「未播放」
-        document.querySelectorAll(".section-title .control-button").forEach(btn => {
-            btn.innerText = "🔁 循環播放區塊";
-            btn.style.backgroundColor = "transparent";
-            btn.style.color = "#00ff99";
-        });
-
-        // 移除所有卡片的高亮效果
-        document.querySelectorAll(".term-card.loop-highlight").forEach(card => {
-            card.classList.remove("loop-highlight");
-        });
-
-        // 移除附著在卡片上的「停止循環」跟隨鈕
-        removeFollowStopBtn();
-
-        currentLoopingSection = null; // 清除目前循環中的區塊記錄
     }
+    window.speechSynthesis.cancel(); // 停掉發音
+
+    // 把所有區塊的循環按鈕外觀重置回「未播放」
+    document.querySelectorAll(".section-title .control-button").forEach(btn => {
+        btn.innerText = "🔁 循環播放區塊";
+        btn.style.backgroundColor = "transparent";
+        btn.style.color = "#00ff99";
+    });
+
+    // 移除所有卡片的高亮效果
+    document.querySelectorAll(".term-card.loop-highlight").forEach(card => {
+        card.classList.remove("loop-highlight");
+    });
+
+    // 移除附著在卡片上的跟隨鈕
+    removeFollowStopBtn();
+
+    currentLoopingSection = null; // 清除目前循環中的區塊記錄
 }
 
-// toggleSectionLoop：切換某個區塊的「循環朗讀」開/關
-function toggleSectionLoop(sectionName, btnElement) {
-    // 若該區塊正在播放 → 這次點擊視為「停止」
-    if (sectionLoopStatus[sectionName]) {
-        sectionLoopStatus[sectionName] = false;
-        window.speechSynthesis.cancel();
-        btnElement.innerText = "🔁 循環播放區塊";
-        btnElement.style.backgroundColor = "transparent";
-        btnElement.style.color = "#00ff99";
-        currentLoopingSection = null;
+// 🎯 暫停循環播放（由卡片上的「停止循環」跟隨鈕呼叫）
+//    與「完全停止」不同：保留目前卡片的高亮與跟隨鈕，並把鈕變成「繼續循環」，
+//    使用者之後可從這張卡片續播。
+function pauseLoopPlayback() {
+    if (!currentLoopingSection) return;
+    const section = currentLoopingSection;
 
-        // 移除跟隨停止鈕
-        removeFollowStopBtn();
+    // 以跟隨鈕所在的卡片作為「停在哪裡」的依據（即使在單字間的空檔也準確）
+    const btn = document.getElementById("followStopBtn");
+    const card = btn ? btn.closest(".term-card") : null;
+    const word = card ? card.dataset.word : null;
+
+    // 先更新狀態再取消發音，讓 onend/onerror 的防護判斷看到最新狀態
+    sectionLoopStatus[section] = false;
+    currentLoopingSection = null;
+    window.speechSynthesis.cancel();
+
+    // 重置所有區塊標題按鈕外觀
+    document.querySelectorAll(".section-title .control-button").forEach(b => {
+        b.innerText = "🔁 循環播放區塊";
+        b.style.backgroundColor = "transparent";
+        b.style.color = "#00ff99";
+    });
+
+    // 保留該卡片高亮，標示停在哪一張
+    if (card) card.classList.add("loop-highlight");
+
+    // 把跟隨鈕改成「繼續循環」（留在原卡片），點下可從這張卡片續播
+    if (btn) setFollowBtnPaused(btn, section, word);
+}
+
+// 🎯 繼續循環播放：從指定單字開始，重新啟動該區塊的循環
+function resumeLoopPlayback(sectionName, startWord) {
+    startSectionLoop(sectionName, startWord);
+}
+
+// toggleSectionLoop：切換某個區塊的「循環朗讀」開/關（由區塊標題的按鈕呼叫）
+function toggleSectionLoop(sectionName, btnElement) {
+    // 若該區塊正在播放 → 這次點擊視為「完全停止」
+    if (sectionLoopStatus[sectionName]) {
+        stopLoopPlayback();
         return;
     }
+    // 否則：從該區塊的第一個單字開始循環
+    startSectionLoop(sectionName, null);
+}
+
+// startSectionLoop：實際啟動某區塊的循環朗讀
+//   sectionName：要播放的區塊名稱
+//   startWord：從哪個英文單字開始（null = 從頭；用於「繼續循環」從某張卡片續播）
+function startSectionLoop(sectionName, startWord) {
+    const btnElement = sectionLoopButtons[sectionName]; // 該區塊標題的循環按鈕
 
     // 開始前：停掉其他正在進行的發音
     window.speechSynthesis.cancel();
-    // 把「其他」區塊的循環按鈕外觀重置（確保畫面一致）
+
+    // 把所有區塊的循環按鈕外觀重置（確保一次只有一個顯示為播放中）
     document.querySelectorAll(".section-title .control-button").forEach(btn => {
-        if (btn !== btnElement) {
-            btn.innerText = "🔁 循環播放區塊";
-            btn.style.backgroundColor = "transparent";
-            btn.style.color = "#00ff99";
-        }
+        btn.innerText = "🔁 循環播放區塊";
+        btn.style.backgroundColor = "transparent";
+        btn.style.color = "#00ff99";
     });
 
-    // 標記目前區塊為播放中
-    // 先把所有狀態清空，確保一次只有一個區塊在循環
+    // 清空狀態，確保一次只有一個區塊在循環
     for (let key in sectionLoopStatus) sectionLoopStatus[key] = false;
     sectionLoopStatus[sectionName] = true;
     currentLoopingSection = sectionName;
 
-    // 把被點的按鈕改成「停止」外觀（綠底黑字）
-    btnElement.innerText = "⏹ 停止播放";
-    btnElement.style.backgroundColor = "#00ff99";
-    btnElement.style.color = "#000";
+    // 把這個區塊的按鈕改成「停止」外觀（綠底黑字）
+    if (btnElement) {
+        btnElement.innerText = "⏹ 停止播放";
+        btnElement.style.backgroundColor = "#00ff99";
+        btnElement.style.color = "#000";
+    }
 
     // 取出該區塊的單字清單
     const words = quizPool[sectionName];
     if (!words || words.length === 0) return;
 
-    let currentIndex = 0; // 目前唸到第幾個單字
+    // 決定起始索引：從指定單字開始，找不到（或未指定）就從 0
+    let currentIndex = 0;
+    if (startWord) {
+        const idx = words.findIndex(w => w.en === startWord);
+        if (idx >= 0) currentIndex = idx;
+    }
 
     // playNext：唸出目前單字，唸完後自動換下一個（遞迴形成循環）
     function playNext() {
@@ -990,7 +1048,7 @@ function toggleSectionLoop(sectionName, btnElement) {
 
         const wordObj = words[currentIndex];
 
-        // 🎯 找到該單字對應的卡片並加上高亮（同時附著停止鈕、捲動到畫面中央）
+        // 找到該單字對應的卡片並加上高亮（同時附著跟隨鈕、捲動到畫面中央）
         const card = findCardByWord(wordObj.en);
         if (card) {
             highlightCard(card);
@@ -1012,15 +1070,10 @@ function toggleSectionLoop(sectionName, btnElement) {
             }
         };
 
-        // 發音發生錯誤時：停止循環並復原狀態
+        // 發音錯誤時：只有「仍是目前循環中的區塊」才復原，避免暫停/切換時誤清除
         utterance.onerror = () => {
-            sectionLoopStatus[sectionName] = false;
-            btnElement.innerText = "🔁 循環播放區塊";
-            if (card) {
-                removeHighlightCard(card);
-            }
-            removeFollowStopBtn();
-            currentLoopingSection = null;
+            if (currentLoopingSection !== sectionName) return; // 已被停止/暫停，忽略
+            stopLoopPlayback();
         };
 
         window.speechSynthesis.speak(utterance);
@@ -1060,26 +1113,44 @@ function highlightCard(card) {
     card.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
-// 🎯 取得（或建立）「停止循環」跟隨鈕，並附著到指定卡片
-//    這顆鈕只建立一次（用 id 重複取用），會跟著目前朗讀的卡片移動
+// 🎯 取得（或建立）跟隨鈕，並附著到指定卡片
+//    這顆鈕只建立一次（用 id 重複取用），會跟著目前朗讀的卡片移動。
+//    每次附著（即朗讀中）都會把它設回「停止循環」狀態。
 function attachFollowStopBtn(card) {
     let btn = document.getElementById("followStopBtn");
     if (!btn) {
-        // 第一次：建立按鈕並綁定點擊事件
+        // 第一次：建立按鈕
         btn = document.createElement("button");
         btn.id = "followStopBtn";
         btn.className = "follow-stop-btn"; // 樣式（直書、綠色）在 CSS
-        btn.textContent = "停止循環";
-        btn.addEventListener("click", (e) => {
-            e.stopPropagation();   // 阻止冒泡，避免誤觸卡片其他事件
-            stopLoopPlayback();    // 點下即停止循環
-        });
     }
+    setFollowBtnPlaying(btn); // 朗讀中 → 設為「停止循環」狀態
+
     // 附著到卡片右側的英/中按鈕容器（.eye-controls）下方；找不到就退回卡片本身
     const target = card ? (card.querySelector(".eye-controls") || card) : null;
     if (target && btn.parentElement !== target) {
         target.appendChild(btn); // appendChild 會把同一顆鈕「搬移」到新卡片，達成跟隨
     }
+}
+
+// 設定跟隨鈕為「播放中」狀態：顯示「停止循環」，點擊會暫停（保留位置可續播）
+function setFollowBtnPlaying(btn) {
+    btn.textContent = "停止循環";
+    btn.classList.remove("paused");
+    btn.onclick = (e) => {
+        e.stopPropagation();   // 阻止冒泡，避免誤觸卡片其他事件
+        pauseLoopPlayback();   // 點下即暫停
+    };
+}
+
+// 設定跟隨鈕為「已暫停」狀態：顯示「繼續循環」，點擊會從該卡片續播
+function setFollowBtnPaused(btn, sectionName, startWord) {
+    btn.textContent = "繼續循環";
+    btn.classList.add("paused");
+    btn.onclick = (e) => {
+        e.stopPropagation();
+        resumeLoopPlayback(sectionName, startWord); // 從這張卡片續播
+    };
 }
 
 // 🎯 移除「停止循環」跟隨鈕

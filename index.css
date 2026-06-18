@@ -182,6 +182,36 @@ h3 {
   box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
 }
 
+/* 測驗範圍折疊按鈕：點擊展開／收合下方的核取方塊群組 */
+.range-toggle {
+  padding: 8px 14px;
+  border: 2px solid var(--bright-green);
+  border-radius: 6px;
+  background-color: rgba(17, 17, 17, 0.9);
+  color: var(--bright-green);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 10px;
+  transition: all var(--transition-speed);
+}
+
+.range-toggle:hover {
+  background-color: rgba(0, 255, 153, 0.12);
+  box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
+}
+
+/* 折疊箭頭（▶ 收合 / ▼ 展開） */
+.range-toggle .range-arrow {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* 收合狀態：隱藏整個核取方塊群組 */
+.quiz-range-group.collapsed {
+  display: none;
+}
+
 /* 測驗範圍核取方塊群組（可複選多個範圍）：外觀比照輸入框，內部選項可換行 */
 .quiz-range-group {
   display: inline-flex;
@@ -376,10 +406,21 @@ h3 {
   animation: popIn 0.4s ease-out; /* 出現時的彈入動畫 */
 }
 
+/* 跟隨鈕「已暫停」狀態（顯示「繼續循環」）：改用琥珀色與綠色區隔 */
+.follow-stop-btn.paused {
+  background: rgba(255, 170, 0, 0.95);
+  border-color: var(--orange);
+  box-shadow: 0 6px 20px rgba(255, 170, 0, 0.5);
+}
+
 /* 跟隨鈕 hover：放大 + 加強光暈 */
 .follow-stop-btn:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 30px rgba(0, 255, 153, 0.8);
+}
+
+.follow-stop-btn.paused:hover {
+  box-shadow: 0 8px 30px rgba(255, 170, 0, 0.8);
 }
 
 /* 按下回饋 */
