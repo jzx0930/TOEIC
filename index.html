@@ -521,6 +521,8 @@ let correctCount = 0;         // 答對題數
 let wrongCount = 0;           // 答錯題數
 let isAnswering = false;      // 是否正在處理作答（避免一題重複點擊）
 let currentQuizType = "cn-en";// 目前題型（cn-en 中選英 / en-cn 英選中）
+let wrongWords = [];          // 本次測驗答錯的單字清單（[{en, cn}, ...]），測驗結束可匯出
+let unfamiliarFileHandle = null; // 記住使用者選定的 Unfamiliar.json 檔案handle（同一次開啟頁面內只需選一次）
 
 // 洗牌演算法（Fisher–Yates）：把陣列順序隨機打亂
 function shuffleArray(array) {
@@ -570,6 +572,7 @@ function openQuiz() {
     quizIndex = 0;
     correctCount = 0;
     wrongCount = 0;
+    wrongWords = []; // 清空上一次測驗的錯誤單字紀錄
     document.getElementById("correctList").innerHTML = "";
     document.getElementById("wrongList").innerHTML = "";
     document.getElementById("quizCorrect").textContent = "0";
@@ -586,8 +589,24 @@ function closeQuiz() {
     if(quizIndex < currentQuizList.length && quizIndex > 0) {
         if(!confirm("測驗尚未結束，確定要提前離開嗎？")) return;
     }
-    document.getElementById("quizModal").style.display = "none";
     speechSynthesis.cancel(); // 停止可能正在播放的發音
+
+    // 中途離開時，若已有答錯的單字，先顯示存檔畫面（讓使用者選擇是否存檔），而非直接關閉
+    // 之所以用按鈕讓使用者再點一次，是因為「直接寫檔」需要使用者的點擊手勢才能觸發
+    if (wrongWords.length > 0) {
+        document.getElementById("quizQuestionCN").textContent = "⏹ 已提前結束";
+        document.getElementById("quizOptions").innerHTML = `
+            <div style="color:#fff; font-size: 18px; margin: 20px 0;">
+                目前正確：${correctCount}　錯誤：${wrongCount}
+            </div>
+            <button class="search-button" style="margin-top:10px;" onclick="saveWrongWords(this)">💾 儲存錯誤單字（${wrongWords.length}）到 Unfamiliar.json</button>
+            <button class="search-button" onclick="document.getElementById('quizModal').style.display='none'">關閉</button>
+        `;
+        document.getElementById("quizFeedback").textContent = "";
+        return;
+    }
+
+    document.getElementById("quizModal").style.display = "none";
 }
 // nextQuestion：出下一題（產生題目與四個選項）
 function nextQuestion() {
@@ -667,6 +686,11 @@ function handleAnswer(selectedObj, targetObj, btnElement) {
 
         updateSideList("wrongList", targetObj, "wrong");
 
+        // 記錄答錯的單字（供測驗結束時匯出）；以英文去重，避免同一字重複多筆
+        if (!wrongWords.some(w => w.en === targetObj.en)) {
+            wrongWords.push({ en: targetObj.en, cn: targetObj.cn });
+        }
+
         // 同時把正確的那個選項也標綠，讓使用者看到答案
         Array.from(document.querySelectorAll(".option-btn")).forEach(b => {
             if(b.textContent === correctText) b.classList.add("option-correct");
@@ -704,15 +728,109 @@ function updateSideList(listId, wordObj, type) {
 
 // finishQuiz：所有題目作答完畢，顯示結算結果
 function finishQuiz() {
+    // 若本次有答錯的單字，就多顯示一顆「儲存錯誤單字」按鈕
+    const saveBtnHtml = (wrongWords.length > 0)
+        ? `<button class="search-button" style="margin-top:10px;" onclick="saveWrongWords(this)">💾 儲存錯誤單字（${wrongWords.length}）到 Unfamiliar.json</button>`
+        : "";
+
     document.getElementById("quizQuestionCN").textContent = "🎊 測驗完成！";
     document.getElementById("quizOptions").innerHTML = `
         <div style="color:#fff; font-size: 20px; margin: 20px 0;">
             正確題數：${correctCount} <br>
             錯誤題數：${wrongCount}
         </div>
+        ${saveBtnHtml}
         <button class="search-button" onclick="document.getElementById('quizModal').style.display='none'">關閉結果</button>
     `;
     document.getElementById("quizFeedback").textContent = "";
+}
+
+// ============================================================
+// saveWrongWords：把本次測驗答錯的單字存進 Unfamiliar.json
+// ------------------------------------------------------------
+// 機制：
+//  - 支援 File System Access API 的瀏覽器（Chrome / Edge）：
+//      使用者選定本機的 Unfamiliar.json 一次後，直接讀取→去重附加→寫回該檔。
+//      （同一次開啟頁面內會記住檔案 handle，不必每次重選）
+//  - 不支援的瀏覽器（Firefox / Safari 等）：
+//      自動退回「下載一個 JSON 檔」，內容為本次新增的單字（需自行併入）。
+// 產生的單字物件格式與 word/*.json 完全相同：
+//   { word, kk, translation, part_of_speech, note }
+// ============================================================
+async function saveWrongWords(btn) {
+    if (!wrongWords.length) { alert("本次沒有答錯的單字！"); return; }
+
+    // 把答錯單字轉成與 word/*.json 相同的物件格式（音標/詞性/筆記先留空）
+    const newEntries = wrongWords.map(w => ({
+        word: w.en,
+        kk: "",
+        translation: w.cn,
+        part_of_speech: "",
+        note: ""
+    }));
+
+    // ---------- 路線 A：支援 File System Access API → 直接寫回本機檔 ----------
+    if (window.showOpenFilePicker) {
+        try {
+            // 若這次開頁尚未選過檔案，請使用者選定 Unfamiliar.json（之後沿用）
+            if (!unfamiliarFileHandle) {
+                [unfamiliarFileHandle] = await window.showOpenFilePicker({
+                    types: [{ description: "JSON 單字檔", accept: { "application/json": [".json"] } }],
+                    multiple: false
+                });
+            }
+
+            // 確認對該檔有「讀寫」權限，沒有就請求
+            let perm = await unfamiliarFileHandle.queryPermission({ mode: "readwrite" });
+            if (perm !== "granted") {
+                perm = await unfamiliarFileHandle.requestPermission({ mode: "readwrite" });
+            }
+            if (perm !== "granted") { alert("沒有取得寫入權限，已取消。"); return; }
+
+            // 讀取檔案現有內容並解析成陣列
+            const file = await unfamiliarFileHandle.getFile();
+            const text = (await file.text()).trim();
+            let arr = [];
+            if (text) {
+                try { arr = JSON.parse(text); } catch (e) { arr = []; }
+            }
+            if (!Array.isArray(arr)) arr = [];
+
+            // 以 word（小寫）去重：已存在的單字就略過，只加新的
+            const existing = new Set(arr.map(o => (o.word || "").toLowerCase()));
+            let added = 0;
+            newEntries.forEach(e => {
+                if (!existing.has(e.word.toLowerCase())) {
+                    arr.push(e);
+                    existing.add(e.word.toLowerCase());
+                    added++;
+                }
+            });
+
+            // 寫回檔案（用 2 空格縮排，維持可讀性）
+            const writable = await unfamiliarFileHandle.createWritable();
+            await writable.write(JSON.stringify(arr, null, 2));
+            await writable.close();
+
+            if (btn) { btn.textContent = `✓ 已寫入 ${added} 個新單字`; btn.disabled = true; }
+            alert(`已寫入 ${added} 個新單字到 ${unfamiliarFileHandle.name}（重複的已自動略過）。`);
+            return;
+        } catch (err) {
+            if (err && err.name === "AbortError") return; // 使用者按取消，不算錯誤
+            console.error("寫入失敗，改用下載：", err);
+            // 失敗則往下走，改用下載備援
+        }
+    }
+
+    // ---------- 路線 B：備援 → 下載一個 JSON 檔 ----------
+    const blob = new Blob([JSON.stringify(newEntries, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "Unfamiliar_新增.json";
+    a.click();
+    URL.revokeObjectURL(url);
+    alert("你的瀏覽器不支援直接寫檔，已改為下載 JSON 檔，請手動併入 word/Unfamiliar.json。");
 }
 
   // 切換單個單字的顯示/隱藏
