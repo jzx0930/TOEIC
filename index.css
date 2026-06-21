@@ -719,6 +719,55 @@ h3 {
   padding: 4px 10px;
 }
 
+/* 區塊標題右側控制區：速度拖曳桿 + 循環播放按鈕（橫向排列） */
+.section-right-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* 速度控制（文字「速度」+ 拖曳桿 + 數值） */
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bright-green);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.speed-control .speed-text {
+  opacity: 0.85;
+}
+
+/* 拖曳桿本體：細長、亮綠把手 */
+.speed-control .speed-slider {
+  width: 90px;
+  accent-color: var(--bright-green);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* 目前速度數值：固定寬度避免左右跳動 */
+.speed-control .speed-value {
+  display: inline-block;
+  min-width: 34px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 小螢幕把拖曳桿縮短一點 */
+@media (max-width: 768px) {
+  .speed-control .speed-slider {
+    width: 70px;
+  }
+  .speed-control .speed-text {
+    display: none; /* 手機上省略「速度」字樣，只留拖曳桿與數值 */
+  }
+}
+
 /* 收合狀態：高度歸零、隱藏、淡出（搭配 slideUp 動畫） */
 .collapsed {
   max-height: 0;
