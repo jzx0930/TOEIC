@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=14"><!-- 外部樣式表（?v=14 為破快取版本號） -->
-<script defer src="index.js?v=14"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=15"><!-- 外部樣式表（?v=15 為破快取版本號） -->
+<script defer src="index.js?v=15"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1035,6 +1035,8 @@ function toggleSectionLoop(sectionName, btnElement) {
 //   startWord：從哪個英文單字開始（null = 從頭；用於「繼續循環」從某張卡片續播）
 function startSectionLoop(sectionName, startWord) {
     const btnElement = sectionLoopButtons[sectionName]; // 該區塊標題的循環按鈕
+    // 此區塊的 <section> 容器：之後找卡片只在這個範圍內找，避免抓到「其他區塊的同名單字」
+    const sectionEl = btnElement ? btnElement.closest("section") : null;
 
     // 開始前：停掉其他正在進行的發音
     window.speechSynthesis.cancel();
@@ -1076,7 +1078,8 @@ function startSectionLoop(sectionName, startWord) {
         const wordObj = words[currentIndex];
 
         // 找到該單字對應的卡片並加上高亮（同時附著跟隨鈕、捲動到畫面中央）
-        const card = findCardByWord(wordObj.en);
+        // 只在「目前這個區塊」內找，避免抓到其他區塊的同名單字而捲到別處
+        const card = findCardByWord(wordObj.en, sectionEl);
         if (card) {
             highlightCard(card);
         }
@@ -1110,7 +1113,15 @@ function startSectionLoop(sectionName, startWord) {
 }
 
 // 🎯 根據單字（英文）找到對應的單字卡 DOM 元素
-function findCardByWord(word) {
+//    scope：可選的搜尋範圍（例如某個 <section>）。有給就先在範圍內找，
+//    避免不同區塊有同名單字時抓錯卡片；範圍內找不到才退回全頁搜尋。
+function findCardByWord(word, scope) {
+    if (scope) {
+        const inScope = scope.querySelectorAll(".term-card");
+        for (let card of inScope) {
+            if (card.dataset.word === word) return card;
+        }
+    }
     const cards = document.querySelectorAll(".term-card");
     for (let card of cards) {
         if (card.dataset.word === word) { // 比對 data-word
