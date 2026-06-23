@@ -254,28 +254,31 @@ h3 {
 }
 
 /* ==================== 控制按鈕區域（四行置中 + 優化間距） ==================== */
-/* 批次控制列的外層容器：縱向四行、置中 */
+/* 批次控制列的外層容器：縱向四行；縮到內容寬度後置中（讓各行靠左對齊） */
 .controls {
   margin: 30px auto 60px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;        /* 各行同寬，內部靠左對齊 */
   gap: 14px;
-  max-width: 650px;
+  width: fit-content;          /* 縮到內容寬度，再由 margin auto 置中 */
+  max-width: 95%;
 }
 
-/* 每一行（橫向排列、置中、可換行） */
+/* 每一行（橫向排列、靠左、可換行）；靠左才能讓四行的按鈕欄位對齊 */
 .controls > div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
-  width: 100%;
   flex-wrap: wrap;
 }
 
-/* 每行前的標籤文字（英文：/中文：/筆記：） */
+/* 每行前的標籤文字（章節：/英文：/中文：/筆記：）：固定寬度＋右對齊，讓按鈕起點一致 */
 .controls > div span {
+  width: 56px;
+  text-align: right;
+  flex-shrink: 0;
   font-weight: 700;
   font-size: 14px;
   white-space: nowrap;
