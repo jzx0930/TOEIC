@@ -159,5 +159,139 @@
 "translation": "（公司等的）合併",
 "part_of_speech": "n.",
 "note": "多益商業財經板塊核心字。常與 acquisition（收購）並用組成：mergers and acquisitions (M&A，企業併購)。"
+},
+{
+"word": "expenses",
+"kk": "[ɪkˈspɛnsɪz]",
+"translation": "費用、開支",
+"part_of_speech": "n.",
+"note": "多益常見：travel expenses（差旅費）、operating expenses（營運開銷）。"
+},
+{
+"word": "attended",
+"kk": "[əˈtɛndɪd]",
+"translation": "出席、參加",
+"part_of_speech": "v.",
+"note": "多益高頻動詞過去式。常用搭配：attend a seminar（參加研討會）、attend a meeting（參加會議）。"
+},
+{
+"word": "ceremony",
+"kk": "[ˈsɛrəˌmoni]",
+"translation": "典禮、儀式",
+"part_of_speech": "n.",
+"note": "多益常見：award ceremony（頒獎典禮）、opening ceremony（開幕典禮）。"
+},
+{
+"word": "population",
+"kk": "[ˌpɑpjəˈleʃən]",
+"translation": "人口",
+"part_of_speech": "n.",
+"note": "常出現在多益測驗圖表分析題，描述區域人口變化。"
+},
+{
+"word": "island",
+"kk": "[ˈaɪlənd]",
+"translation": "島嶼",
+"part_of_speech": "n.",
+"note": "注意字母 s 不發音。常出現在多益聽力第一部分照片描述或旅遊行程。"
+},
+{
+"word": "seminar",
+"kk": "[ˈsɛməˌnɑr]",
+"translation": "研討會、專題討論會",
+"part_of_speech": "n.",
+"note": "多益核心字。常用動詞搭配：conduct a seminar（舉辦研討會）、register for a seminar（報名研討會）。"
+},
+{
+"word": "gain",
+"kk": "[ɡen]",
+"translation": "獲得、增加",
+"part_of_speech": "v. / n.",
+"note": "多益常用於利益或數據：gain experience（獲得經驗）、financial gain（財務收益）。"
+},
+{
+"word": "absent",
+"kk": "[ˈæbsənt]",
+"translation": "缺席的",
+"part_of_speech": "adj.",
+"note": "多益常用句型：be absent from...（從...缺席）。反義詞為 present（出席的）。"
+},
+{
+"word": "activity",
+"kk": "[ækˈtɪvəti]",
+"translation": "活動",
+"part_of_speech": "n.",
+"note": "多益常見：outdoor activity（戶外活動）、marketing activity（行銷活動）。"
+},
+{
+"word": "compare",
+"kk": "[kəmˈpɛr]",
+"translation": "比較",
+"part_of_speech": "v.",
+"note": "多益常規文法搭配：compare A with/to B（將A與B做比較）。"
+},
+{
+"word": "comparison",
+"kk": "[kəmˈpærəsn]",
+"translation": "比較、對照",
+"part_of_speech": "n.",
+"note": "常用搭配：by comparison（相比之下）、make a comparison（進行比較）。"
+},
+{
+"word": "parents",
+"kk": "[ˈpɛrənts]",
+"translation": "父母、雙親",
+"part_of_speech": "n.",
+"note": "多益有時出現在家庭福利政策或員工活動通知中。"
+},
+{
+"word": "rarely",
+"kk": "[ˈrɛrli]",
+"translation": "很少、難得",
+"part_of_speech": "adv.",
+"note": "多益常考否定副詞，置於句首時後面子句須倒裝。近義詞：seldom, scarcely。"
+},
+{
+"word": "simply",
+"kk": "[ˈsɪmpli]",
+"translation": "僅僅、簡單地",
+"part_of_speech": "adv.",
+"note": "常用於行銷廣告文宣：simply fill out the form（只需填妥表格）。"
+},
+{
+"word": "taxes",
+"kk": "[ˈtæksɪz]",
+"translation": "稅、稅金",
+"part_of_speech": "n.",
+"note": "多益財務與會計情境高頻字。常用：tax return（報稅單）、income tax（所得稅）。"
+},
+{
+"word": "laws",
+"kk": "[lɔz]",
+"translation": "法律、法規",
+"part_of_speech": "n.",
+"note": "多益常見於合約與法規遵循情境。近義詞：regulations。常用：abide by the laws（遵守法律）。"
+},
+{
+"word": "obeying",
+"kk": "[oˈbeɪŋ]",
+"translation": "服從、遵守",
+"part_of_speech": "v.",
+"note": "obey 的現在分詞。多益常考遵守規定片語：obey the safety regulations（遵守安全規範）。"
+},
+{
+"word": "honest",
+"kk": "[ˈɑnɪst]",
+"translation": "誠實的、正直的",
+"part_of_speech": "adj.",
+"note": "注意字母 h 不發音。多益商務倫理情境。常用：honest feedback（誠實的反饋）。"
+},
+{
+"word": "citizens",
+"kk": "[ˈsɪtəzənz]",
+"translation": "公民、市民",
+"part_of_speech": "n.",
+"note": "多益公共政策或地方新聞廣播情境常見：local citizens（當地居民）。"
 }
+
 ]
