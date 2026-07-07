@@ -730,6 +730,39 @@ h3 {
   flex-shrink: 0;
 }
 
+/* 重複次數控制（文字「次數」+ 2 / 3 兩個核取方塊） */
+.repeat-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--bright-green);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.repeat-control .repeat-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.repeat-control .repeat-cb {
+  accent-color: var(--bright-green);
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+/* 小螢幕：省略「次數」字樣，只留 2 / 3 勾選框 */
+@media (max-width: 768px) {
+  .repeat-control .repeat-text {
+    display: none;
+  }
+}
+
 /* 速度控制（文字「速度」+ 拖曳桿 + 數值） */
 .speed-control {
   display: flex;

@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=16"><!-- 外部樣式表（?v=16 為破快取版本號） -->
-<script defer src="index.js?v=16"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=17"><!-- 外部樣式表（?v=17 為破快取版本號） -->
+<script defer src="index.js?v=17"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -189,6 +189,29 @@ function setSpeechRateByIndex(idx) {
     document.querySelectorAll(".speed-value").forEach(l => { l.textContent = speechRate.toFixed(1) + "x"; });
 }
 
+// 🎯 重複次數：每張卡片要唸幾次（都不勾＝1 次；可選 2 或 3）。
+//    對「只唸英文」模式＝英文唸幾次；對「英中循環」模式＝(英文+中文) 唸幾遍。
+let repeatCount = 1;
+
+// 目前的循環模式：'en'＝只唸英文；'en-cn'＝英文一遍中文一遍
+let currentLoopMode = "en";
+
+function getRepeatCount() { return repeatCount; }
+
+// 使用者勾選/取消「2」或「3」時呼叫：更新次數並讓兩個選項互斥、全區塊同步
+function onRepeatChange(cb) {
+    const val = parseInt(cb.value, 10);
+    repeatCount = cb.checked ? val : 1; // 勾了就用該值，取消就回到 1
+    syncRepeatCheckboxes();
+}
+
+// 把所有區塊的重複次數勾選狀態同步成目前的 repeatCount（2 與 3 互斥）
+function syncRepeatCheckboxes() {
+    document.querySelectorAll(".repeat-cb").forEach(cb => {
+        cb.checked = (parseInt(cb.value, 10) === repeatCount);
+    });
+}
+
 // 初始化：先抓取 list.json 索引檔，再依序載入清單裡的每個單字檔
 async function init() {
   container.innerHTML = "正在讀取索引檔...";
@@ -243,9 +266,39 @@ async function loadWordsFromFile(fileName) {
   titleText.innerHTML = `<span class="arrow">▶</span> ${sectionTitleText}`;
   title.appendChild(titleText);
 
-  // 右側控制區：速度拖曳桿 + 「循環播放區塊」按鈕
+  // 右側控制區：重複次數 + 速度拖曳桿 + 兩種循環按鈕
   const rightControls = document.createElement("div");
   rightControls.className = "section-right-controls";
+
+  // ---- 重複次數（2 / 3；都不勾＝1 次）：放在速度拖曳桿左邊 ----
+  const repeatWrap = document.createElement("div");
+  repeatWrap.className = "repeat-control";
+  repeatWrap.title = "每張卡片重複幾次（都不勾＝1 次）";
+
+  const repeatText = document.createElement("span");
+  repeatText.className = "repeat-text";
+  repeatText.textContent = "次數";
+  repeatWrap.appendChild(repeatText);
+
+  [2, 3].forEach(n => {
+    const lbl = document.createElement("label");
+    lbl.className = "repeat-item";
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.className = "repeat-cb";
+    cb.value = String(n);
+    cb.checked = (repeatCount === n);
+    cb.addEventListener("change", (e) => { e.stopPropagation(); onRepeatChange(cb); });
+    // 阻止勾選框上的點擊/按下冒泡到標題，避免誤觸折疊
+    ["click", "mousedown", "touchstart", "pointerdown"].forEach(evt =>
+      cb.addEventListener(evt, (e) => e.stopPropagation())
+    );
+    lbl.addEventListener("click", (e) => e.stopPropagation());
+    lbl.appendChild(cb);
+    lbl.appendChild(document.createTextNode(String(n)));
+    repeatWrap.appendChild(lbl);
+  });
+  rightControls.appendChild(repeatWrap);
 
   // 速度拖曳桿（只停在 0.1x / 0.5x / 1.0x / 1.5x / 2.0x 這 5 格，預設 1.0x）：同時控制「重複播放」與「循環播放」速度
   const speedWrap = document.createElement("div");
@@ -283,9 +336,27 @@ async function loadWordsFromFile(fileName) {
   speedWrap.appendChild(speedLabel);
   rightControls.appendChild(speedWrap);
 
-  // 「循環播放區塊」按鈕
+  // 「英中循環」按鈕（英文一遍→中文一遍）：放在原循環按鈕左邊
+  const loopEnCnBtn = document.createElement("button");
+  loopEnCnBtn.className = "control-button loop-btn";
+  loopEnCnBtn.style.fontSize = "12px";
+  loopEnCnBtn.style.padding = "2px 8px";
+  loopEnCnBtn.style.margin = "0";
+  loopEnCnBtn.style.borderColor = "#00ff99";
+  loopEnCnBtn.style.backgroundColor = "transparent";
+  loopEnCnBtn.style.color = "#00ff99";
+  loopEnCnBtn.innerText = "🔁 英中循環";
+  loopEnCnBtn.dataset.mode = "en-cn";
+  loopEnCnBtn.dataset.defaultLabel = "🔁 英中循環";
+  loopEnCnBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleSectionLoop(sectionTitleText, "en-cn");
+  });
+  rightControls.appendChild(loopEnCnBtn);
+
+  // 原「循環播放區塊」按鈕（只唸英文）
   const loopBtn = document.createElement("button");
-  loopBtn.className = "control-button";
+  loopBtn.className = "control-button loop-btn";
   loopBtn.style.fontSize = "12px";
   loopBtn.style.padding = "2px 8px";
   loopBtn.style.margin = "0";
@@ -293,17 +364,17 @@ async function loadWordsFromFile(fileName) {
   loopBtn.style.backgroundColor = "transparent";
   loopBtn.style.color = "#00ff99";
   loopBtn.innerText = "🔁 循環播放區塊";
-
-  // 記錄此區塊對應的循環按鈕，供「繼續循環」時更新按鈕外觀用
-  sectionLoopButtons[sectionTitleText] = loopBtn;
-
-  // 點擊循環按鈕時執行循環邏輯
+  loopBtn.dataset.mode = "en";
+  loopBtn.dataset.defaultLabel = "🔁 循環播放區塊";
   loopBtn.addEventListener("click", (e) => {
     e.stopPropagation(); // 阻止事件冒泡，避免同時觸發標題的「折疊／展開」
-    toggleSectionLoop(sectionTitleText, loopBtn);
+    toggleSectionLoop(sectionTitleText, "en");
   });
-
   rightControls.appendChild(loopBtn);
+
+  // 記錄此區塊的兩個循環按鈕（供啟動/繼續時更新外觀）
+  sectionLoopButtons[sectionTitleText] = { "en": loopBtn, "en-cn": loopEnCnBtn };
+
   title.appendChild(rightControls);
 
     // 區塊內容列（放單字卡）。預設加上 collapsed = 一開始為收合
@@ -958,6 +1029,16 @@ const sectionLoopStatus = {};
 // sectionLoopButtons：記錄各區塊標題列的循環按鈕（key = 區塊名稱），供「繼續循環」更新外觀
 const sectionLoopButtons = {};
 
+// 🎯 把所有循環按鈕外觀重置回各自的預設標籤（未播放狀態）
+//    因為現在每個區塊有兩顆循環鈕（英文 / 英中），各自用 dataset.defaultLabel 還原
+function resetAllLoopButtons() {
+    document.querySelectorAll(".section-title .loop-btn").forEach(btn => {
+        btn.innerText = btn.dataset.defaultLabel || "🔁 循環播放區塊";
+        btn.style.backgroundColor = "transparent";
+        btn.style.color = "#00ff99";
+    });
+}
+
 // 🎯 完全停止循環播放（由區塊標題的停止鈕、或發音錯誤時呼叫）
 //    會清除狀態、移除所有高亮與跟隨鈕（不保留續播位置）
 function stopLoopPlayback() {
@@ -966,12 +1047,7 @@ function stopLoopPlayback() {
     }
     window.speechSynthesis.cancel(); // 停掉發音
 
-    // 把所有區塊的循環按鈕外觀重置回「未播放」
-    document.querySelectorAll(".section-title .control-button").forEach(btn => {
-        btn.innerText = "🔁 循環播放區塊";
-        btn.style.backgroundColor = "transparent";
-        btn.style.color = "#00ff99";
-    });
+    resetAllLoopButtons(); // 兩顆循環鈕都還原成預設外觀
 
     // 移除所有卡片的高亮效果
     document.querySelectorAll(".term-card.loop-highlight").forEach(card => {
@@ -986,10 +1062,11 @@ function stopLoopPlayback() {
 
 // 🎯 暫停循環播放（由卡片上的「停止循環」跟隨鈕呼叫）
 //    與「完全停止」不同：保留目前卡片的高亮與跟隨鈕，並把鈕變成「繼續循環」，
-//    使用者之後可從這張卡片續播。
+//    使用者之後可從這張卡片、用原本的模式續播。
 function pauseLoopPlayback() {
     if (!currentLoopingSection) return;
     const section = currentLoopingSection;
+    const mode = currentLoopMode; // 記住目前模式，續播時沿用
 
     // 以跟隨鈕所在的卡片作為「停在哪裡」的依據（即使在單字間的空檔也準確）
     const btn = document.getElementById("followStopBtn");
@@ -1001,67 +1078,67 @@ function pauseLoopPlayback() {
     currentLoopingSection = null;
     window.speechSynthesis.cancel();
 
-    // 重置所有區塊標題按鈕外觀
-    document.querySelectorAll(".section-title .control-button").forEach(b => {
-        b.innerText = "🔁 循環播放區塊";
-        b.style.backgroundColor = "transparent";
-        b.style.color = "#00ff99";
-    });
+    resetAllLoopButtons(); // 兩顆循環鈕都還原成預設外觀
 
     // 保留該卡片高亮，標示停在哪一張
     if (card) card.classList.add("loop-highlight");
 
-    // 把跟隨鈕改成「繼續循環」（留在原卡片），點下可從這張卡片續播
-    if (btn) setFollowBtnPaused(btn, section, word);
+    // 把跟隨鈕改成「繼續循環」（留在原卡片），點下可用原本模式從這張卡片續播
+    if (btn) setFollowBtnPaused(btn, section, word, mode);
 }
 
-// 🎯 繼續循環播放：從指定單字開始，重新啟動該區塊的循環
-function resumeLoopPlayback(sectionName, startWord) {
-    startSectionLoop(sectionName, startWord);
+// 🎯 繼續循環播放：從指定單字、用原本的模式重新啟動該區塊的循環
+function resumeLoopPlayback(sectionName, startWord, mode) {
+    startSectionLoop(sectionName, startWord, mode);
 }
 
-// toggleSectionLoop：切換某個區塊的「循環朗讀」開/關（由區塊標題的按鈕呼叫）
-function toggleSectionLoop(sectionName, btnElement) {
-    // 若該區塊正在播放 → 這次點擊視為「完全停止」
+// toggleSectionLoop：切換某區塊某模式的循環（由兩顆循環按鈕呼叫）
+//   mode：'en'＝只唸英文；'en-cn'＝英文一遍中文一遍
+function toggleSectionLoop(sectionName, mode) {
+    // 若該區塊正在播放
     if (sectionLoopStatus[sectionName]) {
+        const wasMode = currentLoopMode;
         stopLoopPlayback();
+        // 點的是「同一模式」→ 視為停止；點的是「另一種模式」→ 改用新模式重新開始
+        if (wasMode !== mode) {
+            startSectionLoop(sectionName, null, mode);
+        }
         return;
     }
-    // 否則：從該區塊的第一個單字開始循環
-    startSectionLoop(sectionName, null);
+    // 否則：從該區塊第一個單字開始，用指定模式循環
+    startSectionLoop(sectionName, null, mode);
 }
 
 // startSectionLoop：實際啟動某區塊的循環朗讀
 //   sectionName：要播放的區塊名稱
 //   startWord：從哪個英文單字開始（null = 從頭；用於「繼續循環」從某張卡片續播）
-function startSectionLoop(sectionName, startWord) {
-    const btnElement = sectionLoopButtons[sectionName]; // 該區塊標題的循環按鈕
-    // 此區塊的 <section> 容器：之後找卡片只在這個範圍內找，避免抓到「其他區塊的同名單字」
+//   mode：'en' 只唸英文 / 'en-cn' 英文一遍中文一遍
+function startSectionLoop(sectionName, startWord, mode) {
+    mode = mode || "en";
+    currentLoopMode = mode; // 記住目前模式，供暫停/續播使用
+
+    const btnMap = sectionLoopButtons[sectionName] || {}; // { en: 按鈕, "en-cn": 按鈕 }
+    const btnElement = btnMap[mode];                       // 目前模式對應的按鈕
+    // 此區塊的 <section> 容器：找卡片只在這範圍內找，避免抓到「其他區塊的同名單字」
     const sectionEl = btnElement ? btnElement.closest("section") : null;
 
-    // 開始前：停掉其他正在進行的發音
+    // 開始前：停掉其他正在進行的發音，並把所有循環按鈕還原
     window.speechSynthesis.cancel();
-
-    // 把所有區塊的循環按鈕外觀重置（確保一次只有一個顯示為播放中）
-    document.querySelectorAll(".section-title .control-button").forEach(btn => {
-        btn.innerText = "🔁 循環播放區塊";
-        btn.style.backgroundColor = "transparent";
-        btn.style.color = "#00ff99";
-    });
+    resetAllLoopButtons();
 
     // 清空狀態，確保一次只有一個區塊在循環
     for (let key in sectionLoopStatus) sectionLoopStatus[key] = false;
     sectionLoopStatus[sectionName] = true;
     currentLoopingSection = sectionName;
 
-    // 把這個區塊的按鈕改成「停止」外觀（綠底黑字）
+    // 把這個模式的按鈕改成「停止」外觀（綠底黑字）
     if (btnElement) {
         btnElement.innerText = "⏹ 停止播放";
         btnElement.style.backgroundColor = "#00ff99";
         btnElement.style.color = "#000";
     }
 
-    // 取出該區塊的單字清單
+    // 取出該區塊的單字清單（每個元素含 en 英文、cn 中文）
     const words = quizPool[sectionName];
     if (!words || words.length === 0) return;
 
@@ -1072,45 +1149,59 @@ function startSectionLoop(sectionName, startWord) {
         if (idx >= 0) currentIndex = idx;
     }
 
-    // playNext：唸出目前單字，唸完後自動換下一個（遞迴形成循環）
-    function playNext() {
-        if (!sectionLoopStatus[sectionName]) return; // 狀態被切成 false 就停止遞迴
+    // speakCard：唸「目前這張卡片」的內容（依模式與重複次數），唸完再換下一張
+    function speakCard() {
+        if (!sectionLoopStatus[sectionName]) return; // 已停止就結束
 
         const wordObj = words[currentIndex];
 
-        // 找到該單字對應的卡片並加上高亮（同時附著跟隨鈕、捲動到畫面中央）
-        // 只在「目前這個區塊」內找，避免抓到其他區塊的同名單字而捲到別處
+        // 找到該卡片並高亮（只在目前區塊內找，避免捲到別的同名卡片）
         const card = findCardByWord(wordObj.en, sectionEl);
-        if (card) {
-            highlightCard(card);
+        if (card) highlightCard(card);
+
+        // 依「重複次數」與「模式」組出這張卡片要唸的序列（queue）
+        // en 模式：英文 ×reps；en-cn 模式：(英文→中文) ×reps
+        const reps = getRepeatCount(); // 1 / 2 / 3
+        const queue = [];
+        for (let r = 0; r < reps; r++) {
+            queue.push({ text: wordObj.en, lang: "en-US" });
+            if (mode === "en-cn" && wordObj.cn) {
+                queue.push({ text: wordObj.cn, lang: "zh-TW" });
+            }
         }
 
-        // 用瀏覽器內建語音合成唸出單字
-        const utterance = new SpeechSynthesisUtterance(wordObj.en);
-        utterance.lang = 'en-US';
-        utterance.rate = getSpeechRate(); // 依速度拖曳桿的值決定語速（0 = 正常）
+        // 依序唸出 queue 裡的每一段
+        let qi = 0;
+        function speakNext() {
+            if (!sectionLoopStatus[sectionName]) return;
 
-        // 唸完一個字後：移除高亮、索引 +1（到底就回到 0）、隔 1 秒唸下一個
-        utterance.onend = () => {
-            if (sectionLoopStatus[sectionName]) {
-                if (card) {
-                    removeHighlightCard(card);
-                }
-                currentIndex = (currentIndex + 1) % words.length; // 取餘數以循環
-                setTimeout(playNext, 1000); // 單字之間間隔 1 秒
+            if (qi >= queue.length) {
+                // 這張卡片唸完 → 移除高亮、換下一張（間隔 1 秒）
+                if (card) removeHighlightCard(card);
+                currentIndex = (currentIndex + 1) % words.length;
+                setTimeout(speakCard, 1000);
+                return;
             }
-        };
 
-        // 發音錯誤時：只有「仍是目前循環中的區塊」才復原，避免暫停/切換時誤清除
-        utterance.onerror = () => {
-            if (currentLoopingSection !== sectionName) return; // 已被停止/暫停，忽略
-            stopLoopPlayback();
-        };
+            const item = queue[qi++];
+            const u = new SpeechSynthesisUtterance(item.text);
+            u.lang = item.lang;                // 英文 en-US；中文 zh-TW
+            u.rate = getSpeechRate();          // 依速度拖曳桿決定語速
 
-        window.speechSynthesis.speak(utterance);
+            u.onend = () => {
+                if (sectionLoopStatus[sectionName]) setTimeout(speakNext, 300); // 同卡片內每段間隔 0.3 秒
+            };
+            u.onerror = () => {
+                if (currentLoopingSection !== sectionName) return; // 已停止/暫停就忽略
+                stopLoopPlayback();
+            };
+            window.speechSynthesis.speak(u);
+        }
+
+        speakNext();
     }
 
-    playNext(); // 啟動循環
+    speakCard(); // 啟動循環
 }
 
 // 🎯 根據單字（英文）找到對應的單字卡 DOM 元素
@@ -1182,13 +1273,13 @@ function setFollowBtnPlaying(btn) {
     };
 }
 
-// 設定跟隨鈕為「已暫停」狀態：顯示「繼續循環」，點擊會從該卡片續播
-function setFollowBtnPaused(btn, sectionName, startWord) {
+// 設定跟隨鈕為「已暫停」狀態：顯示「繼續循環」，點擊會用原本模式從該卡片續播
+function setFollowBtnPaused(btn, sectionName, startWord, mode) {
     btn.textContent = "繼續循環";
     btn.classList.add("paused");
     btn.onclick = (e) => {
         e.stopPropagation();
-        resumeLoopPlayback(sectionName, startWord); // 從這張卡片續播
+        resumeLoopPlayback(sectionName, startWord, mode); // 用原本模式從這張卡片續播
     };
 }
 
