@@ -1,0 +1,69 @@
+[
+  {
+    "category": "時態",
+    "topics": [
+      { "title": "現在簡單式", "desc": "現在簡單式 ≠ 正在發生的事！小心別用錯～" },
+      { "title": "現在進行式", "desc": "多益聽力必考的時態，看懂關鍵不再掉分！" },
+      { "title": "現在完成式", "desc": "多益高頻時態！for 跟 since 怎麼用才正確？" },
+      { "title": "過去、未來簡單式", "desc": "used to 跟 be used to 怎麼分？will 跟 be going to 一樣嗎？" },
+      { "title": "過去、未來進行式", "desc": "進行式不只表達「正在發生」？和簡單式有什麼不同？" },
+      { "title": "過去、未來完成式", "desc": "動作已完成？還是在持續？用圖解一次看懂！" },
+      { "title": "現在、過去、未來完成進行式", "desc": "學會這個時態，表達「持續進行的動作」更精準～" },
+      { "title": "過去簡單式 vs. 現在完成式", "desc": "「吃過了」是 I ate 還是 I've eaten？你會區分嗎？" },
+      { "title": "過去簡單式 vs. 過去完成式", "desc": "It started 跟 It had started 都是「開始了」，差別在哪裡？" }
+    ]
+  },
+  {
+    "category": "動詞",
+    "topics": [
+      { "title": "助動詞", "desc": "助動詞是什麼？could、would、should 怎麼用才正確？" },
+      { "title": "分詞 (1)", "desc": "「我好無聊」是 I am boring 還是 I am bored？" },
+      { "title": "分詞 (2)", "desc": "有些句子可以省略主詞？分詞構句讓句子更精簡！" },
+      { "title": "動名詞與不定詞", "desc": "到底什麼時候用 V-ing？什麼時候用 to V？" },
+      { "title": "感官動詞與使役動詞", "desc": "look、see、watch 的差別在哪？make、let、have 怎麼用？" },
+      { "title": "被動語態", "desc": "多益必考文法！一次學會所有動詞時態的被動用法～" }
+    ]
+  },
+  {
+    "category": "名詞",
+    "topics": [
+      { "title": "名詞子句", "desc": "that、whether、if 子句怎麼用？什麼時候加 or not？" },
+      { "title": "人稱代名詞", "desc": "you、your、yours、yourself、yourselves 有什麼差別？" },
+      { "title": "數量詞", "desc": "few 和 a few 差在哪？one、another、others 怎麼用？" }
+    ]
+  },
+  {
+    "category": "形容詞與副詞",
+    "topics": [
+      { "title": "比較級與最高級", "desc": "比較級加 -er 還是 more？as ... as 怎麼用？" },
+      { "title": "程度副詞", "desc": "very hot、so hot、too hot、hot enough 差別在哪？" },
+      { "title": "頻率副詞", "desc": "always、sometimes、never 要放在句子的哪裡？" },
+      { "title": "連接副詞", "desc": "therefore、however、moreover 和其他多益高頻連接副詞的用法" }
+    ]
+  },
+  {
+    "category": "介系詞與連接詞",
+    "topics": [
+      { "title": "對等連接詞", "desc": "both、either、neither 怎麼用？這些對等連接詞的搭配一定要會！" },
+      { "title": "從屬連接詞", "desc": "although、though 怎麼用？because、because of 差在哪？" },
+      { "title": "介系詞", "desc": "介系詞超容易搞混？一次搞懂介系詞的不同用法！" },
+      { "title": "因果與轉折", "desc": "despite、although、however 都表達轉折，但用法差很多？" }
+    ]
+  },
+  {
+    "category": "句型",
+    "topics": [
+      { "title": "詞性判斷", "desc": "用空格位置判斷詞性，答題效率大提升！" },
+      { "title": "祈使句", "desc": "祈使句原來不一定是命令？這些日常用法你一定會用到～" },
+      { "title": "疑問句", "desc": "多益 Part 2 必考！遇到 Yes / No 以及 Wh- 問句該如何選答案？" },
+      { "title": "條件句 (1)", "desc": "「如果下雨，地就會濕」描述常態和真理" },
+      { "title": "條件句 (2)", "desc": "「如果明天下雨，我就宅在家」描述可能的未來事件" },
+      { "title": "條件句 (3)", "desc": "「假如中樂透，我就不用工作了」描述與現在事實不符的假設" },
+      { "title": "條件句 (4)", "desc": "「要是昨天沒下雨，我就去爬山了」描述與過去事實不符的假設" },
+      { "title": "關係子句 (1)", "desc": "「這是我想要的書」怎麼說？關係子句這樣用～" },
+      { "title": "關係子句 (2)", "desc": "that 跟 which 差別在哪？哪些情況只能用 which？" },
+      { "title": "關係子句 (3)", "desc": "who 跟 whom 差別在哪？whose 怎麼用？" },
+      { "title": "關係子句 (4)", "desc": "where、when、why 怎麼用？跟 that、which 差別在哪？" }
+    ]
+  }
+]

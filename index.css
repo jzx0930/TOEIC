@@ -67,6 +67,158 @@ body {
   margin: 0 auto;
 }
 
+/* ==================== 分頁列（單字 / 文法） ==================== */
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 24px 0;
+}
+
+.tab-btn {
+  padding: 10px 24px;
+  border: 2px solid var(--bright-green);
+  border-radius: 8px;
+  background-color: rgba(17, 17, 17, 0.9);
+  color: var(--bright-green);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.tab-btn:hover {
+  background-color: rgba(0, 255, 153, 0.12);
+}
+
+/* 目前選中的分頁：亮綠底黑字 */
+.tab-btn.active {
+  background-color: var(--bright-green);
+  color: var(--dark-bg);
+  box-shadow: 0 0 12px rgba(0, 255, 153, 0.5);
+}
+
+/* 分頁內容：預設隱藏，只有 .active 的顯示 */
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* ==================== 文法分頁 ==================== */
+/* 文法大類別（可折疊） */
+.grammar-section {
+  margin-bottom: 20px;
+  border: 1px solid var(--border-dark);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(51, 51, 51, 0.3);
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* 類別標題列（漸層底、亮綠字，可點擊折疊） */
+.grammar-cat-title {
+  background: linear-gradient(135deg, rgba(51, 51, 51, 0.8), rgba(0, 255, 153, 0.08));
+  color: var(--bright-green);
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition-speed);
+}
+
+.grammar-cat-title:hover {
+  background: linear-gradient(135deg, rgba(51, 51, 51, 1), rgba(0, 255, 153, 0.15));
+  padding-left: 22px;
+}
+
+/* 類別右邊的子項數量小標 */
+.grammar-cat-title .grammar-count {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark-bg);
+  background: var(--bright-green);
+  border-radius: 20px;
+  padding: 1px 10px;
+}
+
+/* 子項清單容器 */
+.grammar-list {
+  padding: 14px 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+/* 收合狀態：隱藏子項清單 */
+.grammar-list.collapsed {
+  display: none;
+}
+
+/* 單一子項卡片 */
+.grammar-item {
+  border: 1px solid var(--border-dark);
+  border-left: 3px solid var(--bright-green);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.grammar-item:hover {
+  border-color: var(--bright-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 255, 153, 0.25);
+}
+
+/* 子項標題（含 › 箭頭） */
+.grammar-item-title {
+  color: var(--primary-green);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.grammar-item-title .grammar-item-arrow {
+  color: var(--bright-green);
+  font-size: 18px;
+}
+
+/* 子項說明文字 */
+.grammar-item-desc {
+  color: var(--text-gray);
+  font-size: 13px;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* 子項「詳細內容」佔位區：預設隱藏，點卡片後（.open）才顯示 */
+.grammar-item-detail {
+  display: none;
+  color: var(--yellow);
+  font-size: 13px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-dark);
+}
+
+.grammar-item.open .grammar-item-detail {
+  display: block;
+  animation: slideDown 0.3s ease-out;
+}
+
 /* ==================== 標題樣式 ==================== */
 /* 主標題 h2（例如「📘 TOEIC 單字」） */
 h2 {

@@ -27,13 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<<<<<<< HEAD
-<link rel="stylesheet" href="index.css?v=17"><!-- 外部樣式表（?v=17 為破快取版本號） -->
-<script defer src="index.js?v=17"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
-=======
-<link rel="stylesheet" href="index.css?v=17"><!-- 外部樣式表（?v=16 為破快取版本號） -->
-<script defer src="index.js?v=16"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
->>>>>>> 8ead6598de41e2a7d8cf2cf99dbf190413cc19b0
+<link rel="stylesheet" href="index.css?v=18"><!-- 外部樣式表（?v=18 為破快取版本號） -->
+<script defer src="index.js?v=18"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -43,6 +38,15 @@
 <div class="content-wrapper">
 
  <!-- <a href="index.html" class="back-button">🏠 返回主頁</a> --><!-- （保留）返回主頁按鈕，目前停用 -->
+
+  <!-- 分頁列：單字 / 文法 -->
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="vocab" onclick="switchTab('vocab')">📘 單字</button>
+    <button class="tab-btn" data-tab="grammar" onclick="switchTab('grammar')">📖 文法</button>
+  </div>
+
+  <!-- ========================= 單字分頁 ========================= -->
+  <div id="tab-vocab" class="tab-panel active">
 
 
   <!-- ============================================================
@@ -161,6 +165,14 @@
 
   <!-- 所有單字卡（依各 JSON/TXT 檔分成多個可折疊區塊）會被 JS 動態塞進這裡 -->
   <div id="word-container"></div>
+  </div><!-- /#tab-vocab 單字分頁 -->
+
+  <!-- ========================= 文法分頁 ========================= -->
+  <div id="tab-grammar" class="tab-panel">
+    <h2>📖 TOEIC 文法</h2>
+    <!-- 文法各大類別與子項由 JS 依 Grammar/grammar.json 動態產生 -->
+    <div id="grammar-container">正在載入文法…</div>
+  </div>
 </div>
 
 <!-- =====================================================================
@@ -620,6 +632,84 @@ function searchWord() {
 // 執行載入
 // 執行載入（程式進入點：頁面一載入就抓資料、建立所有單字卡）
 init();
+
+// ========================= 分頁切換（單字 / 文法） =========================
+// 由分頁列的按鈕呼叫，tab = "vocab" 或 "grammar"
+function switchTab(tab) {
+    // 切換分頁按鈕的 active 樣式
+    document.querySelectorAll(".tab-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.tab === tab);
+    });
+    // 切換分頁內容的顯示（只顯示對應的 panel）
+    document.querySelectorAll(".tab-panel").forEach(p => {
+        p.classList.toggle("active", p.id === "tab-" + tab);
+    });
+    // 第一次切到「文法」時才載入文法資料（延遲載入，省一次不必要的抓取）
+    if (tab === "grammar") initGrammar();
+}
+
+// ========================= 文法分頁：載入與渲染 =========================
+let grammarLoaded = false; // 是否已載入過文法資料
+async function initGrammar() {
+    if (grammarLoaded) return; // 只載入一次
+    grammarLoaded = true;
+    const box = document.getElementById("grammar-container");
+    try {
+        // 讀取文法架構（6 大類，每類含多個子項）
+        const res = await fetch("Grammar/grammar.json");
+        if (!res.ok) throw new Error("無法讀取 Grammar/grammar.json");
+        const data = await res.json();
+        renderGrammar(data);
+    } catch (err) {
+        grammarLoaded = false; // 失敗允許之後重試
+        console.error(err);
+        box.innerHTML = `<p style="color:red">文法載入失敗：${err.message}</p>`;
+    }
+}
+
+// 把文法資料渲染成「可折疊的大類別 + 子項卡片」
+function renderGrammar(data) {
+    const box = document.getElementById("grammar-container");
+    box.innerHTML = "";
+
+    data.forEach(cat => {
+        const sec = document.createElement("section");
+        sec.className = "grammar-section";
+
+        // 類別標題（可點擊折疊；右邊顯示子項數量）
+        const head = document.createElement("div");
+        head.className = "grammar-cat-title";
+        head.innerHTML = `<span class="arrow">▶</span> ${cat.category} <span class="grammar-count">${cat.topics.length}</span>`;
+
+        // 子項清單容器（預設收合）
+        const list = document.createElement("div");
+        list.className = "grammar-list collapsed";
+
+        // 點類別標題 → 展開/收合該類別，箭頭旋轉
+        head.addEventListener("click", () => {
+            list.classList.toggle("collapsed");
+            head.querySelector(".arrow").classList.toggle("rotate");
+        });
+
+        // 逐一建立子項（標題 + 說明 + 佔位的詳細內容）
+        cat.topics.forEach(t => {
+            const item = document.createElement("div");
+            item.className = "grammar-item";
+            item.innerHTML = `
+                <div class="grammar-item-title">${t.title} <span class="grammar-item-arrow">›</span></div>
+                <div class="grammar-item-desc">${t.desc}</div>
+                <div class="grammar-item-detail">🚧 詳細內容製作中，敬請期待～</div>
+            `;
+            // 點子項 → 展開/收合「詳細內容」佔位區（日後可在此放課程內容）
+            item.addEventListener("click", () => item.classList.toggle("open"));
+            list.appendChild(item);
+        });
+
+        sec.appendChild(head);
+        sec.appendChild(list);
+        box.appendChild(sec);
+    });
+}
 
 // --- 測驗功能專用的全域變數 ---
 let quizPool = {};            // 測驗池：{ 區塊名稱: [ {en, cn}, ... ] }，由 loadWordsFromFile 填入
