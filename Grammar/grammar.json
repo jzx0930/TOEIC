@@ -2,68 +2,571 @@
   {
     "category": "時態",
     "topics": [
-      { "title": "現在簡單式", "desc": "現在簡單式 ≠ 正在發生的事！小心別用錯～" },
-      { "title": "現在進行式", "desc": "多益聽力必考的時態，看懂關鍵不再掉分！" },
-      { "title": "現在完成式", "desc": "多益高頻時態！for 跟 since 怎麼用才正確？" },
-      { "title": "過去、未來簡單式", "desc": "used to 跟 be used to 怎麼分？will 跟 be going to 一樣嗎？" },
-      { "title": "過去、未來進行式", "desc": "進行式不只表達「正在發生」？和簡單式有什麼不同？" },
-      { "title": "過去、未來完成式", "desc": "動作已完成？還是在持續？用圖解一次看懂！" },
-      { "title": "現在、過去、未來完成進行式", "desc": "學會這個時態，表達「持續進行的動作」更精準～" },
-      { "title": "過去簡單式 vs. 現在完成式", "desc": "「吃過了」是 I ate 還是 I've eaten？你會區分嗎？" },
-      { "title": "過去簡單式 vs. 過去完成式", "desc": "It started 跟 It had started 都是「開始了」，差別在哪裡？" }
+      {
+        "title": "現在簡單式",
+        "desc": "現在簡單式 ≠ 正在發生的事！小心別用錯～",
+        "content": {
+          "blocks": [
+            { "type": "p", "text": "英文的動詞變化很豐富，有時我們說「I eat」，有時候又說「I am eating」或「I have eaten」，到底為什麼要有這麼多時態呢？其實，動詞除了表達「做了什麼」或「發生了什麼」，動詞的時態也對整個句子的語意有很大的影響呢！" },
+            { "type": "p", "text": "動詞總共有 12 個時態：" },
+            { "type": "list", "items": ["現在簡單式、過去簡單式、未來簡單式", "現在進行式、過去進行式、未來進行式", "現在完成式、過去完成式、未來完成式", "現在完成進行式、過去完成進行式、未來完成進行式"] },
+            { "type": "p", "text": "這些時態乍看之下好像很複雜，但不要緊張！接下來的單元會一步步講解各種時態。首先，我們先來看看最基本的現在簡單式吧～" },
+
+            { "type": "h", "text": "現在簡單式的結構" },
+            { "type": "p", "text": "先來看看兩個句子吧！" },
+            { "type": "examples", "items": [
+              { "en": "I love strawberry ice cream, and she loves it too.", "zh": "我很愛草莓冰淇淋，她也很愛。" },
+              { "en": "We don't travel abroad because she doesn't want to.", "zh": "我們都不出國旅遊，因為她不想去。" }
+            ] },
+            { "type": "p", "text": "句子裡的四個動詞都是現在簡單式，看起來不太一樣是因為「主詞人稱不同」，以及「肯定跟否定」的差異。" },
+            { "type": "p", "text": "當主詞是第一人稱（I）、第二人稱（you）、複數（we／you／they）時，現在簡單式動詞的型態跟原形一樣，像是第一句的「I love」；否定語意則會用助動詞 don't ＋原形動詞，如第二句的「We don't travel」。" },
+            { "type": "p", "text": "但是，如果主詞為第三人稱單數（she／he／it 等）時，現在簡單式動詞的字尾則要加上 -s 或 -es 哦！像是第一句的「she loves」；否定語氣的助動詞則為 doesn't，如第二句的「she doesn't want」。" },
+            { "type": "note", "text": "人名、產品名稱、公司名稱等都是第三人稱唷～" },
+
+            { "type": "h", "text": "現在簡單式的使用時機" },
+            { "type": "p", "text": "現在簡單式很常用來表達「現在的狀態」：" },
+            { "type": "examples", "items": [
+              { "en": "I feel a bit tired but satisfied.", "zh": "我覺得有點累但也挺滿意的。", "note": "現在簡單式動詞：feel，表達當下的情緒與感受" },
+              { "en": "Do you understand?", "zh": "你有聽懂嗎？", "note": "現在簡單式問句：(do) understand 詢問當下的理解狀況" }
+            ] },
+            { "type": "p", "text": "也能表達不變的「真理與既定事實」：" },
+            { "type": "examples", "items": [
+              { "en": "Everyone ages. No one stays young forever.", "zh": "每個人都會變老。沒人能永遠保持年輕。", "note": "現在簡單式動詞：ages、stays，表達「人會變老」的真理" },
+              { "en": "It gets hotter and hotter every year.", "zh": "每年都越來越熱。", "note": "現在簡單式動詞：gets，表達「越來越熱」的既定事實" }
+            ] },
+            { "type": "p", "text": "另外，現在簡單式也能表達「常態與習慣」：" },
+            { "type": "examples", "items": [
+              { "en": "Shuttle buses arrive every 15 minutes.", "zh": "接駁車每十五分鐘會來一班。", "note": "現在簡單式動詞：arrive，表達「每十五分鐘一班」的常態" },
+              { "en": "Lily usually goes to bed before 2 AM. She doesn't stay up later than that.", "zh": "Lily 通常都在半夜兩點前睡覺，不會比那晚睡。", "note": "現在簡單式動詞：goes、doesn't stay up，表達個人的常態作息及習慣" },
+              { "en": "I don't eat sea cucumbers. I dislike their look and texture.", "zh": "我不吃海參，我不喜歡牠的樣子跟口感。", "note": "現在簡單式動詞：don't eat、dislike，表達個人喜好及習慣" }
+            ] },
+            { "type": "note", "text": "描述常態或習慣時，常常會用到 usually（通常）、often（經常）、seldom（很少）等頻率副詞～" },
+            { "type": "p", "text": "值得注意的是，雖然名為「現在」簡單式，卻也能用來描述未來哦！通常用來表達已定好明確時間的事項，如時刻表上的規劃。例如：" },
+            { "type": "examples", "items": [
+              { "en": "My train leaves in half an hour. I don't have time to buy breakfast.", "zh": "我的火車半小時後就要開了，我沒時間買早餐。" },
+              { "en": "Your first class starts at 8:10 AM. Please don't be late.", "zh": "你的第一堂課是早上八點十分，請不要遲到。" },
+              { "en": "What time do you land in Taoyuan?", "zh": "你的班機幾點在桃園降落？" }
+            ] },
+
+            { "type": "h", "text": "現在簡單式的常見錯誤" },
+            { "type": "p", "text": "很多人會認為，既然叫做「現在」簡單式，那就也可以表達現在的「動作」吧？比方說，「我正在喝水」是不是「I drink water now」呢？" },
+            { "type": "p", "text": "答案是不行哦！現在簡單式的使用時機是：" },
+            { "type": "list", "items": ["現在的狀態", "真理與既定事實", "常態與習慣", "定好時間的行程規劃"] },
+            { "type": "p", "text": "要記得，現在簡單式不能描述「現在的動作」哦！要描述「現在的動作」，正確的文法是用現在進行式來表達：" },
+            { "type": "examples", "items": [
+              { "en": "I am drinking water.", "zh": "我正在喝水。", "note": "現在進行式描述當下「正在喝」的動作" }
+            ] },
+            { "type": "p", "text": "至於現在進行式又有哪些用法跟要注意的地方，我們就來看下一堂：現在進行式吧！" }
+          ]
+        }
+      },
+      {
+        "title": "現在進行式",
+        "desc": "多益聽力必考的時態，看懂關鍵不再掉分！",
+        "content": {
+          "point": "現在進行式表達「此刻正在進行」的動作，也可表「已安排好的近期計畫」。",
+          "structure": ["肯定：主詞 + am/is/are + Ving", "否定：主詞 + be + not + Ving"],
+          "examples": [
+            { "en": "He is talking on the phone.", "zh": "他正在講電話。" },
+            { "en": "They are meeting the client tomorrow.", "zh": "他們明天要見客戶。（近期計畫）" }
+          ],
+          "tip": "聽力 Part 1 描述照片常用進行式（is holding、are walking）；狀態動詞（know、like、want、have「擁有」）通常不用進行式。"
+        }
+      },
+      {
+        "title": "現在完成式",
+        "desc": "多益高頻時態！for 跟 since 怎麼用才正確？",
+        "content": {
+          "point": "現在完成式連接「過去到現在」：從過去持續到現在、剛完成、或人生經驗，強調對現在的影響。",
+          "structure": ["主詞 + have/has + 過去分詞（p.p.）"],
+          "examples": [
+            { "en": "I have worked here for five years.", "zh": "我在這裡工作五年了。（for + 一段時間）" },
+            { "en": "She has lived here since 2020.", "zh": "她從 2020 年住到現在。（since + 時間點）" },
+            { "en": "Have you ever been to Japan?", "zh": "你去過日本嗎？（經驗）" }
+          ],
+          "tip": "for + 一段時間長度；since + 過去的時間點。若句中有明確過去時間（yesterday、last year、ago）就要用過去式，不能用現在完成式。"
+        }
+      },
+      {
+        "title": "過去、未來簡單式",
+        "desc": "used to 跟 be used to 怎麼分？will 跟 be going to 一樣嗎？",
+        "content": {
+          "point": "過去簡單式＝過去發生且已結束的動作；未來簡單式用 will 或 be going to 表未來。",
+          "structure": ["過去：主詞 + 動詞過去式", "未來：will + 原形 / be going to + 原形"],
+          "examples": [
+            { "en": "I used to smoke.", "zh": "我以前抽菸（現在不抽了）。（used to + 原形＝過去習慣）" },
+            { "en": "I am used to the weather.", "zh": "我習慣這天氣了。（be used to + 名詞/Ving＝習慣於）" },
+            { "en": "It's going to rain.", "zh": "要下雨了。（有跡象/計畫用 be going to；當下臨時決定用 will）" }
+          ],
+          "tip": "used to V（過去習慣）≠ be used to Ving（習慣於某事）。will 多為說話當下的決定，be going to 多為已有的打算或有徵兆。"
+        }
+      },
+      {
+        "title": "過去、未來進行式",
+        "desc": "進行式不只表達「正在發生」？和簡單式有什麼不同？",
+        "content": {
+          "point": "表達過去或未來某個時間點「正在進行中」的動作，常當作另一件事發生時的背景。",
+          "structure": ["過去進行：was/were + Ving", "未來進行：will be + Ving"],
+          "examples": [
+            { "en": "I was cooking when he called.", "zh": "他打來時我正在煮飯。" },
+            { "en": "This time tomorrow I will be flying to Tokyo.", "zh": "明天這時候我將在飛往東京的途中。" }
+          ],
+          "tip": "進行式強調「動作進行中的背景」，常與過去簡單式（短暫、打斷的動作）一起出現。"
+        }
+      },
+      {
+        "title": "過去、未來完成式",
+        "desc": "動作已完成？還是在持續？用圖解一次看懂！",
+        "content": {
+          "point": "過去完成式＝過去某動作「之前」就已完成（過去的過去）；未來完成式＝未來某時間點「之前」將完成。",
+          "structure": ["過去完成：had + p.p.", "未來完成：will have + p.p."],
+          "examples": [
+            { "en": "The train had left before I arrived.", "zh": "我到之前火車已經開走了。" },
+            { "en": "By next year, I will have graduated.", "zh": "到明年我就已經畢業了。" }
+          ],
+          "tip": "未來完成式常搭配 by + 未來時間點（by 2030、by then）。"
+        }
+      },
+      {
+        "title": "現在、過去、未來完成進行式",
+        "desc": "學會這個時態，表達「持續進行的動作」更精準～",
+        "content": {
+          "point": "完成進行式強調「從過去持續到某時間點、而且還在進行」的動作，重點在「持續了多久」。",
+          "structure": ["現在完成進行：have/has been + Ving", "過去完成進行：had been + Ving", "未來完成進行：will have been + Ving"],
+          "examples": [
+            { "en": "I have been studying for three hours.", "zh": "我已經讀三小時了（還在讀）。" },
+            { "en": "She had been waiting for an hour before the bus came.", "zh": "公車來之前她已經等了一小時。" }
+          ],
+          "tip": "現在完成（看結果/數量）vs 現在完成進行（看持續過程）：I've written 3 reports（完成 3 份）vs I've been writing reports（一直在寫）。"
+        }
+      },
+      {
+        "title": "過去簡單式 vs. 現在完成式",
+        "desc": "「吃過了」是 I ate 還是 I've eaten？你會區分嗎？",
+        "content": {
+          "point": "過去式指「明確的過去時間、與現在無關」；現在完成式「不指明時間、和現在有連結（經驗/影響）」。",
+          "structure": ["過去式：動詞過去式 + 明確過去時間", "現在完成式：have/has + p.p.（沒有明確過去時間）"],
+          "examples": [
+            { "en": "I ate sushi yesterday.", "zh": "我昨天吃了壽司。（明確過去時間）" },
+            { "en": "I have eaten sushi.", "zh": "我吃過壽司。（經驗，沒說何時）" }
+          ],
+          "tip": "看到 ago、last、in 2020、yesterday → 用過去式；看到 ever、never、already、yet、just、且沒明確時間 → 用現在完成式。"
+        }
+      },
+      {
+        "title": "過去簡單式 vs. 過去完成式",
+        "desc": "It started 跟 It had started 都是「開始了」，差別在哪裡？",
+        "content": {
+          "point": "當有兩個過去動作時，「先發生」的用過去完成式（had + p.p.），「後發生」的用過去簡單式，凸顯先後順序。",
+          "structure": ["先發生：had + p.p.", "後發生：動詞過去式"],
+          "examples": [
+            { "en": "When I arrived, the meeting had started.", "zh": "我到的時候，會議已經開始了。（had started 較早、arrived 較晚）" },
+            { "en": "It had started before we noticed.", "zh": "在我們注意到之前它就已經開始了。" }
+          ],
+          "tip": "It started＝單純敘述過去；It had started＝強調「在另一個過去動作之前就已開始」。"
+        }
+      }
     ]
   },
   {
     "category": "動詞",
     "topics": [
-      { "title": "助動詞", "desc": "助動詞是什麼？could、would、should 怎麼用才正確？" },
-      { "title": "分詞 (1)", "desc": "「我好無聊」是 I am boring 還是 I am bored？" },
-      { "title": "分詞 (2)", "desc": "有些句子可以省略主詞？分詞構句讓句子更精簡！" },
-      { "title": "動名詞與不定詞", "desc": "到底什麼時候用 V-ing？什麼時候用 to V？" },
-      { "title": "感官動詞與使役動詞", "desc": "look、see、watch 的差別在哪？make、let、have 怎麼用？" },
-      { "title": "被動語態", "desc": "多益必考文法！一次學會所有動詞時態的被動用法～" }
+      {
+        "title": "助動詞",
+        "desc": "助動詞是什麼？could、would、should 怎麼用才正確？",
+        "content": {
+          "point": "助動詞放在主要動詞前，表達能力、可能、義務、禮貌等語氣，後面一律接原形動詞。",
+          "structure": ["主詞 + 助動詞（can/could/will/would/should/must/may）+ 原形動詞"],
+          "examples": [
+            { "en": "You should see a doctor.", "zh": "你應該去看醫生。（建議）" },
+            { "en": "Could you help me?", "zh": "可以幫我嗎？（禮貌請求）" },
+            { "en": "It would be better to leave now.", "zh": "現在離開會比較好。（委婉）" }
+          ],
+          "tip": "助動詞後永遠接原形動詞；could/would/should 雖是過去形，卻常用來表委婉語氣，不一定是過去時間。"
+        }
+      },
+      {
+        "title": "分詞 (1)",
+        "desc": "「我好無聊」是 I am boring 還是 I am bored？",
+        "content": {
+          "point": "現在分詞（Ving）表「令人…的」（描述事物的性質）；過去分詞（p.p.）表「感到…的」（描述人的感受）。",
+          "structure": ["事物性質：be + Ving（boring、interesting、exciting）", "人的感受：be + p.p.（bored、interested、excited）"],
+          "examples": [
+            { "en": "The movie is boring.", "zh": "這部電影很無聊。（它讓人無聊）" },
+            { "en": "I am bored.", "zh": "我覺得無聊。（我被弄得無聊）" }
+          ],
+          "tip": "形容「事物本身」用 Ving，形容「人的感受」用 p.p.。多益高頻：interested/interesting、tired/tiring、surprised/surprising。"
+        }
+      },
+      {
+        "title": "分詞 (2)",
+        "desc": "有些句子可以省略主詞？分詞構句讓句子更精簡！",
+        "content": {
+          "point": "當兩個子句主詞相同時，可用分詞構句省略連接詞與主詞，讓句子更精簡：主動用 Ving、被動用 p.p.。",
+          "structure": ["主動：Ving, 主句（= While/Because + 主詞 + 主動動詞）", "被動：p.p., 主句（= Because/When + 主詞 + be + p.p.）"],
+          "examples": [
+            { "en": "Walking down the street, I saw an accident.", "zh": "走在街上時，我看到一場車禍。（= While I was walking）" },
+            { "en": "Written in English, the report is easy to read.", "zh": "用英文寫的，這份報告很好讀。（= Because it is written）" }
+          ],
+          "tip": "分詞的隱含主詞要和主句主詞一致，否則就是錯誤的「懸垂分詞」。"
+        }
+      },
+      {
+        "title": "動名詞與不定詞",
+        "desc": "到底什麼時候用 V-ing？什麼時候用 to V？",
+        "content": {
+          "point": "有些動詞後面接動名詞（Ving），有些接不定詞（to V），少數兩者都可但意思不同。",
+          "structure": ["接 Ving：enjoy、finish、avoid、mind、keep、practice", "接 to V：want、decide、hope、plan、agree、offer", "介系詞後一律接 Ving"],
+          "examples": [
+            { "en": "I enjoy reading.", "zh": "我喜歡閱讀。" },
+            { "en": "I decided to leave.", "zh": "我決定離開。" },
+            { "en": "Remember to lock the door. / I remember locking the door.", "zh": "記得去鎖門。/ 我記得鎖過門了。（意思不同）" }
+          ],
+          "tip": "介系詞後接 Ving（good at swimming）。stop to V（停下來去做別的）vs stop Ving（停止正在做的事）。"
+        }
+      },
+      {
+        "title": "感官動詞與使役動詞",
+        "desc": "look、see、watch 的差別在哪？make、let、have 怎麼用？",
+        "content": {
+          "point": "感官動詞（see/hear/watch/feel）與使役動詞（make/let/have）後接「受詞 + 原形動詞」（表整個過程）或「受詞 + Ving」（表正在進行）。",
+          "structure": ["感官/使役 + 受詞 + 原形V（主動、看到全程）", "感官/使役 + 受詞 + Ving（強調進行中）", "被動：主詞 + be + made/seen + to V"],
+          "examples": [
+            { "en": "I saw him leave.", "zh": "我看到他離開（全程）。" },
+            { "en": "The boss made us work late.", "zh": "老闆叫我們加班。" },
+            { "en": "He was made to work late.", "zh": "他被要求加班。（被動要補回 to）" }
+          ],
+          "tip": "look（有意識地看）、see（看到）、watch（持續觀看）。使役 make（強迫）、let（允許）、have（要求/請）。"
+        }
+      },
+      {
+        "title": "被動語態",
+        "desc": "多益必考文法！一次學會所有動詞時態的被動用法～",
+        "content": {
+          "point": "當主詞是「動作的承受者」時用被動語態：be + 過去分詞，時態變化改在 be 動詞上。",
+          "structure": ["現在：am/is/are + p.p.", "過去：was/were + p.p.", "完成：have/has been + p.p.", "情態：will/should be + p.p.", "進行：am/is/are being + p.p."],
+          "examples": [
+            { "en": "The report was written by Tom.", "zh": "報告是 Tom 寫的。" },
+            { "en": "The office is being renovated.", "zh": "辦公室正在整修中。" }
+          ],
+          "tip": "只有及物動詞才有被動；動作者不重要或不明時常省略 by 片語。多益常考各時態的被動變化。"
+        }
+      }
     ]
   },
   {
     "category": "名詞",
     "topics": [
-      { "title": "名詞子句", "desc": "that、whether、if 子句怎麼用？什麼時候加 or not？" },
-      { "title": "人稱代名詞", "desc": "you、your、yours、yourself、yourselves 有什麼差別？" },
-      { "title": "數量詞", "desc": "few 和 a few 差在哪？one、another、others 怎麼用？" }
+      {
+        "title": "名詞子句",
+        "desc": "that、whether、if 子句怎麼用？什麼時候加 or not？",
+        "content": {
+          "point": "名詞子句可當主詞、受詞或補語，由 that / whether / if / wh- 疑問詞引導。",
+          "structure": ["that + 子句（確定的事）", "whether/if + 子句（是否）", "wh- 疑問詞 + 子句"],
+          "examples": [
+            { "en": "I know that he is busy.", "zh": "我知道他很忙。" },
+            { "en": "I don't know whether/if she will come.", "zh": "我不知道她會不會來。" },
+            { "en": "Whether or not it rains, we'll go.", "zh": "不管下不下雨，我們都去。" }
+          ],
+          "tip": "whether 可加 or not、也可放句首當主詞；if 通常只放在動詞後面，且不會緊接 or not。"
+        }
+      },
+      {
+        "title": "人稱代名詞",
+        "desc": "you、your、yours、yourself、yourselves 有什麼差別？",
+        "content": {
+          "point": "人稱代名詞依在句中的角色分為：主格、受格、所有格、所有代名詞、反身代名詞。",
+          "structure": ["主格（you 當主詞）", "所有格（your + 名詞）", "所有代名詞（yours ＝ your + 名詞）", "反身（yourself / yourselves）"],
+          "examples": [
+            { "en": "This is your book.", "zh": "這是你的書。（所有格 + 名詞）" },
+            { "en": "This book is yours.", "zh": "這本書是你的。（所有代名詞）" },
+            { "en": "You did it yourself.", "zh": "你自己做的。（反身/強調）" }
+          ],
+          "tip": "反身代名詞用於「主詞和受詞相同」（I hurt myself）或「強調」（I did it myself）。單數 yourself、複數 yourselves。"
+        }
+      },
+      {
+        "title": "數量詞",
+        "desc": "few 和 a few 差在哪？one、another、others 怎麼用？",
+        "content": {
+          "point": "few/little 帶否定（幾乎沒有），a few/a little 帶肯定（有一些）；可數用 few/a few，不可數用 little/a little。",
+          "structure": ["可數：(a) few + 複數名詞", "不可數：(a) little + 不可數名詞", "one…another…the others（一個…另一個…其餘全部）"],
+          "examples": [
+            { "en": "I have a few friends here.", "zh": "我在這裡有幾個朋友。（肯定）" },
+            { "en": "I have few friends here.", "zh": "我在這裡幾乎沒朋友。（否定）" },
+            { "en": "I'll take this one; show me another.", "zh": "我要這個；再給我看另一個。" }
+          ],
+          "tip": "another + 單數可數名詞；other + 複數名詞；the other（兩者中的另一個）；others ＝ other + 複數名詞。"
+        }
+      }
     ]
   },
   {
     "category": "形容詞與副詞",
     "topics": [
-      { "title": "比較級與最高級", "desc": "比較級加 -er 還是 more？as ... as 怎麼用？" },
-      { "title": "程度副詞", "desc": "very hot、so hot、too hot、hot enough 差別在哪？" },
-      { "title": "頻率副詞", "desc": "always、sometimes、never 要放在句子的哪裡？" },
-      { "title": "連接副詞", "desc": "therefore、however、moreover 和其他多益高頻連接副詞的用法" }
+      {
+        "title": "比較級與最高級",
+        "desc": "比較級加 -er 還是 more？as ... as 怎麼用？",
+        "content": {
+          "point": "短音節形容詞加 -er/-est，長音節（多為三音節以上）用 more/most；as ... as 表示「同等程度」。",
+          "structure": ["比較級：-er + than / more + 形容詞 + than", "最高級：the + -est / the most + 形容詞", "同等：as + 原級 + as"],
+          "examples": [
+            { "en": "She is taller than me.", "zh": "她比我高。" },
+            { "en": "This is the most important point.", "zh": "這是最重要的一點。" },
+            { "en": "He is as tall as his brother.", "zh": "他和他哥哥一樣高。" }
+          ],
+          "tip": "比較級可用 much/far/a lot 加強（much better），但不能用 very；最高級前面要加 the。"
+        }
+      },
+      {
+        "title": "程度副詞",
+        "desc": "very hot、so hot、too hot、hot enough 差別在哪？",
+        "content": {
+          "point": "very（很）、so（如此，常接 that 子句）、too（太…以致於，含負面）、enough（足夠，放形容詞後面）。",
+          "structure": ["too + 形容詞 + to V（太…而不能）", "形容詞 + enough（夠…）", "so + 形容詞 + that + 子句"],
+          "examples": [
+            { "en": "It's too hot to drink.", "zh": "太燙了不能喝。" },
+            { "en": "It's hot enough.", "zh": "已經夠熱了。" },
+            { "en": "I'm so tired that I can't move.", "zh": "我累到動不了。" }
+          ],
+          "tip": "enough 放在形容詞後面（hot enough）、但放在名詞前面（enough time）；too 常含負面含義。"
+        }
+      },
+      {
+        "title": "頻率副詞",
+        "desc": "always、sometimes、never 要放在句子的哪裡？",
+        "content": {
+          "point": "頻率副詞的位置規則：放在「一般動詞前面」、但放在「be 動詞與助動詞後面」。",
+          "structure": ["主詞 + 頻率副詞 + 一般動詞", "主詞 + be 動詞 + 頻率副詞"],
+          "examples": [
+            { "en": "She always arrives early.", "zh": "她總是早到。（一般動詞前）" },
+            { "en": "He is never late.", "zh": "他從不遲到。（be 動詞後）" }
+          ],
+          "tip": "常見頻率由高到低：always > usually > often > sometimes > rarely > never。"
+        }
+      },
+      {
+        "title": "連接副詞",
+        "desc": "therefore、however、moreover 和其他多益高頻連接副詞的用法",
+        "content": {
+          "point": "連接副詞連接兩個句子、表邏輯關係，前面通常用分號或句號，後面常加逗號。它「不是連接詞」，不能像 and/but 直接連兩個子句。",
+          "structure": ["子句一；連接副詞, 子句二", "常見：however（然而）、therefore（因此）、moreover/furthermore（而且）"],
+          "examples": [
+            { "en": "It was raining; therefore, we stayed home.", "zh": "下雨了，所以我們待在家。" },
+            { "en": "The plan is risky; however, it may work.", "zh": "計畫有風險，然而可能行得通。" }
+          ],
+          "tip": "連接副詞不能用逗號直接連兩個完整句子（逗點連綴錯誤），要用分號或分成兩句。"
+        }
+      }
     ]
   },
   {
     "category": "介系詞與連接詞",
     "topics": [
-      { "title": "對等連接詞", "desc": "both、either、neither 怎麼用？這些對等連接詞的搭配一定要會！" },
-      { "title": "從屬連接詞", "desc": "although、though 怎麼用？because、because of 差在哪？" },
-      { "title": "介系詞", "desc": "介系詞超容易搞混？一次搞懂介系詞的不同用法！" },
-      { "title": "因果與轉折", "desc": "despite、although、however 都表達轉折，但用法差很多？" }
+      {
+        "title": "對等連接詞",
+        "desc": "both、either、neither 怎麼用？這些對等連接詞的搭配一定要會！",
+        "content": {
+          "point": "成對相關連接詞：both A and B、either A or B、neither A nor B、not only A but also B，A 與 B 詞性要對稱。",
+          "structure": ["both A and B（A 和 B 都）", "either A or B（不是 A 就是 B）", "neither A nor B（A 和 B 都不）"],
+          "examples": [
+            { "en": "Both Tom and Jack are here.", "zh": "Tom 和 Jack 都在。" },
+            { "en": "Either you or he is wrong.", "zh": "不是你錯就是他錯。" },
+            { "en": "Neither he nor I am ready.", "zh": "他和我都還沒準備好。" }
+          ],
+          "tip": "either…or、neither…nor、not only…but also 的動詞跟「最靠近的主詞」一致（就近原則）。"
+        }
+      },
+      {
+        "title": "從屬連接詞",
+        "desc": "although、though 怎麼用？because、because of 差在哪？",
+        "content": {
+          "point": "從屬連接詞引導副詞子句（後接「主詞 + 動詞」）；because of 是介系詞片語（後接名詞）。",
+          "structure": ["because + 子句（因為…）", "because of + 名詞（因為…）", "although/though + 子句（雖然…）"],
+          "examples": [
+            { "en": "We stayed home because it rained.", "zh": "因為下雨，我們待在家。（because + 子句）" },
+            { "en": "We stayed home because of the rain.", "zh": "因為雨，我們待在家。（because of + 名詞）" },
+            { "en": "Although it was raining, we went out.", "zh": "雖然下雨，我們還是出去了。" }
+          ],
+          "tip": "although/though（雖然）後接子句、且不與 but 連用；because 接子句、because of 接名詞。"
+        }
+      },
+      {
+        "title": "介系詞",
+        "desc": "介系詞超容易搞混？一次搞懂介系詞的不同用法！",
+        "content": {
+          "point": "介系詞後接名詞或動名詞，表時間、地點、方向等；多益很愛考「固定搭配」。",
+          "structure": ["時間：at（時刻）< on（日子）< in（月/年）", "地點：at（點）< on（表面）< in（範圍內）", "常見搭配：interested in、good at、responsible for"],
+          "examples": [
+            { "en": "The meeting is at 3 p.m. on Monday.", "zh": "會議在星期一下午 3 點。" },
+            { "en": "She is good at negotiating.", "zh": "她很擅長談判。（介系詞後接 Ving）" }
+          ],
+          "tip": "時間由小到大 at → on → in；地點由點到面到內 at → on → in。動詞 + 介系詞的固定搭配要多背。"
+        }
+      },
+      {
+        "title": "因果與轉折",
+        "desc": "despite、although、however 都表達轉折，但用法差很多？",
+        "content": {
+          "point": "三者都表「讓步/轉折」，但詞性不同：although 接子句、despite/in spite of 接名詞、however 是連接副詞。",
+          "structure": ["although/though + 子句", "despite / in spite of + 名詞（或 Ving）", "…; however, …（連接副詞）"],
+          "examples": [
+            { "en": "Although he was tired, he kept working.", "zh": "雖然他很累，仍繼續工作。" },
+            { "en": "Despite the rain, we went out.", "zh": "儘管下雨，我們仍外出。（despite + 名詞）" },
+            { "en": "It was late; however, she stayed.", "zh": "已經很晚了，然而她留了下來。" }
+          ],
+          "tip": "despite / in spite of 後面只能接名詞或動名詞，不能接子句；要接子句請改用 although。"
+        }
+      }
     ]
   },
   {
     "category": "句型",
     "topics": [
-      { "title": "詞性判斷", "desc": "用空格位置判斷詞性，答題效率大提升！" },
-      { "title": "祈使句", "desc": "祈使句原來不一定是命令？這些日常用法你一定會用到～" },
-      { "title": "疑問句", "desc": "多益 Part 2 必考！遇到 Yes / No 以及 Wh- 問句該如何選答案？" },
-      { "title": "條件句 (1)", "desc": "「如果下雨，地就會濕」描述常態和真理" },
-      { "title": "條件句 (2)", "desc": "「如果明天下雨，我就宅在家」描述可能的未來事件" },
-      { "title": "條件句 (3)", "desc": "「假如中樂透，我就不用工作了」描述與現在事實不符的假設" },
-      { "title": "條件句 (4)", "desc": "「要是昨天沒下雨，我就去爬山了」描述與過去事實不符的假設" },
-      { "title": "關係子句 (1)", "desc": "「這是我想要的書」怎麼說？關係子句這樣用～" },
-      { "title": "關係子句 (2)", "desc": "that 跟 which 差別在哪？哪些情況只能用 which？" },
-      { "title": "關係子句 (3)", "desc": "who 跟 whom 差別在哪？whose 怎麼用？" },
-      { "title": "關係子句 (4)", "desc": "where、when、why 怎麼用？跟 that、which 差別在哪？" }
+      {
+        "title": "詞性判斷",
+        "desc": "用空格位置判斷詞性，答題效率大提升！",
+        "content": {
+          "point": "多益 Part 5 常靠「空格在句中的位置」判斷要填名詞/動詞/形容詞/副詞，不必看懂整句也能作答。",
+          "structure": ["冠詞/形容詞後、當主詞或受詞 → 名詞", "be 動詞後、名詞前 → 形容詞", "修飾動詞/形容詞/整句 → 副詞"],
+          "examples": [
+            { "en": "We need a detailed ___ . (report)", "zh": "形容詞後面要填名詞。" },
+            { "en": "She works ___ . (efficiently)", "zh": "修飾動詞要填副詞。" }
+          ],
+          "tip": "字尾也能幫判斷：-tion/-ment/-ness（名詞）、-ous/-ful/-ive（形容詞）、-ly（副詞）。"
+        }
+      },
+      {
+        "title": "祈使句",
+        "desc": "祈使句原來不一定是命令？這些日常用法你一定會用到～",
+        "content": {
+          "point": "祈使句以原形動詞開頭，主詞（you）省略，可表命令、請求、建議、指示、警告。",
+          "structure": ["肯定：原形動詞 + …", "否定：Don't + 原形動詞", "加 please 更禮貌"],
+          "examples": [
+            { "en": "Please have a seat.", "zh": "請坐。" },
+            { "en": "Don't be late.", "zh": "別遲到。" },
+            { "en": "Turn left at the corner.", "zh": "在轉角左轉。" }
+          ],
+          "tip": "多益的指示、廣播、注意事項常用祈使句；否定用 Don't + 原形。"
+        }
+      },
+      {
+        "title": "疑問句",
+        "desc": "多益 Part 2 必考！遇到 Yes / No 以及 Wh- 問句該如何選答案？",
+        "content": {
+          "point": "Yes/No 問句用助動詞或 be 動詞開頭，可用 yes/no 回答；Wh- 問句問的是資訊，不能只用 yes/no 回答。",
+          "structure": ["Yes/No：Do/Does/Did/Be/Can… + 主詞…？", "Wh-：What/Where/When/Who/Why/How… + …？"],
+          "examples": [
+            { "en": "Do you have time? — Yes, I do.", "zh": "你有空嗎？——有。" },
+            { "en": "Where is the meeting? — In Room 3.", "zh": "會議在哪？——在 3 號會議室。" }
+          ],
+          "tip": "Part 2 聽「開頭的疑問詞」最關鍵；Wh- 問句用 yes/no 回答通常是陷阱選項。"
+        }
+      },
+      {
+        "title": "條件句 (1)",
+        "desc": "「如果下雨，地就會濕」描述常態和真理",
+        "content": {
+          "point": "零條件句表達「一定會發生的真理或常態」：If + 現在式, 主句也用現在式。",
+          "structure": ["If + 主詞 + 現在式, 主詞 + 現在式"],
+          "examples": [
+            { "en": "If it rains, the ground gets wet.", "zh": "如果下雨，地就會濕。" },
+            { "en": "If you heat ice, it melts.", "zh": "冰加熱就會融化。" }
+          ],
+          "tip": "零條件的 if 可用 when 替換，因為都表示「必然、每次都這樣」。"
+        }
+      },
+      {
+        "title": "條件句 (2)",
+        "desc": "「如果明天下雨，我就宅在家」描述可能的未來事件",
+        "content": {
+          "point": "第一類條件句表達「可能發生的未來」：If + 現在式, 主句用 will + 原形。",
+          "structure": ["If + 主詞 + 現在式, 主詞 + will + 原形動詞"],
+          "examples": [
+            { "en": "If it rains tomorrow, I will stay home.", "zh": "如果明天下雨，我就待在家。" }
+          ],
+          "tip": "if 子句要用現在式表未來，不能寫成 will；will 只放在主句。"
+        }
+      },
+      {
+        "title": "條件句 (3)",
+        "desc": "「假如中樂透，我就不用工作了」描述與現在事實不符的假設",
+        "content": {
+          "point": "第二類條件句（假設語氣）表達「與現在事實相反」的假設：If + 過去式, 主句 would/could + 原形。",
+          "structure": ["If + 主詞 + 過去式, 主詞 + would/could + 原形動詞"],
+          "examples": [
+            { "en": "If I won the lottery, I wouldn't work.", "zh": "假如中樂透，我就不用工作了。（事實是沒中）" },
+            { "en": "If I were you, I would apologize.", "zh": "我要是你，就會道歉。" }
+          ],
+          "tip": "假設語氣中，be 動詞一律用 were（If I were…, If he were…）。"
+        }
+      },
+      {
+        "title": "條件句 (4)",
+        "desc": "「要是昨天沒下雨，我就去爬山了」描述與過去事實不符的假設",
+        "content": {
+          "point": "第三類條件句表達「與過去事實相反」的假設（常帶後悔）：If + had + p.p., 主句 would have + p.p.。",
+          "structure": ["If + 主詞 + had + p.p., 主詞 + would/could have + p.p."],
+          "examples": [
+            { "en": "If it hadn't rained, I would have gone hiking.", "zh": "要是昨天沒下雨，我就去爬山了。（事實是下雨了）" }
+          ],
+          "tip": "對「過去」的假設、後悔用第三類條件句；注意兩邊都要有完成式（had p.p. / would have p.p.）。"
+        }
+      },
+      {
+        "title": "關係子句 (1)",
+        "desc": "「這是我想要的書」怎麼說？關係子句這樣用～",
+        "content": {
+          "point": "關係代名詞代替先行詞，引導形容詞子句來修飾名詞；人用 who/that，物用 which/that。",
+          "structure": ["先行詞（人）+ who/that + 子句", "先行詞（物）+ which/that + 子句"],
+          "examples": [
+            { "en": "This is the book that I want.", "zh": "這是我想要的書。" },
+            { "en": "The man who called is my boss.", "zh": "打電話來的人是我老闆。" }
+          ],
+          "tip": "關係代名詞在子句中若當「受詞」，通常可以省略（the book (that) I want）。"
+        }
+      },
+      {
+        "title": "關係子句 (2)",
+        "desc": "that 跟 which 差別在哪？哪些情況只能用 which？",
+        "content": {
+          "point": "限定用法（沒有逗號）that 與 which 都可用；非限定用法（有逗號，補充說明）只能用 which，不能用 that。",
+          "structure": ["限定：先行詞 + that/which + 子句", "非限定：先行詞, which + 子句", "介系詞後：介系詞 + which（不可用 that）"],
+          "examples": [
+            { "en": "The report that/which he wrote is good.", "zh": "他寫的那份報告很好。（限定）" },
+            { "en": "The report, which was long, took hours.", "zh": "那份報告（很長）花了好幾小時。（非限定）" }
+          ],
+          "tip": "逗號後、介系詞後（如 in which）只能用 which，不能用 that。"
+        }
+      },
+      {
+        "title": "關係子句 (3)",
+        "desc": "who 跟 whom 差別在哪？whose 怎麼用？",
+        "content": {
+          "point": "who 當主格、whom 當受格、whose 表所有格（…的）。",
+          "structure": ["who + 動詞（主格）", "whom + 主詞 + 動詞（受格）", "whose + 名詞（所有格）"],
+          "examples": [
+            { "en": "The man who lives here is friendly.", "zh": "住在這裡的人很友善。（主格）" },
+            { "en": "The man whom I met is a doctor.", "zh": "我遇到的那個人是醫生。（受格，口語常用 who 或省略）" },
+            { "en": "The man whose car is red is my uncle.", "zh": "車子是紅色的那個人是我叔叔。（所有格）" }
+          ],
+          "tip": "whose + 名詞表「…的」，人或物皆可用；受格 whom 在口語中常用 who 或直接省略。"
+        }
+      },
+      {
+        "title": "關係子句 (4)",
+        "desc": "where、when、why 怎麼用？跟 that、which 差別在哪？",
+        "content": {
+          "point": "關係副詞 where（地點）、when（時間）、why（原因）引導關係子句，相當於「介系詞 + which」，後面接完整句子。",
+          "structure": ["地點：先行詞 + where（= in/at which）", "時間：先行詞 + when（= on/in which）", "原因：the reason + why"],
+          "examples": [
+            { "en": "This is the office where I work.", "zh": "這是我工作的辦公室。（= in which）" },
+            { "en": "I remember the day when we met.", "zh": "我記得我們相遇的那天。（= on which）" },
+            { "en": "That's the reason why he left.", "zh": "那就是他離開的原因。" }
+          ],
+          "tip": "關係副詞後面接「完整句子」（不缺主詞或受詞）；關係代名詞 which/that 後面的句子會缺主詞或受詞。"
+        }
+      }
     ]
   }
 ]

@@ -219,6 +219,143 @@ body {
   animation: slideDown 0.3s ease-out;
 }
 
+/* ----- 文法教學內容排版 ----- */
+/* 重點說明 */
+.grammar-item-detail .g-point {
+  color: var(--text-white);
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* 每個小區塊（結構 / 例句） */
+.grammar-item-detail .g-block {
+  margin-bottom: 10px;
+}
+
+/* 小標籤（結構 / 例句） */
+.grammar-item-detail .g-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dark-bg);
+  background: var(--bright-green);
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-bottom: 6px;
+}
+
+/* 結構條列 */
+.grammar-item-detail .g-structure {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-gray);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* 例句（英文一行、中文一行） */
+.grammar-item-detail .g-ex {
+  margin-bottom: 6px;
+  padding-left: 8px;
+  border-left: 2px solid var(--border-dark);
+}
+
+.grammar-item-detail .g-en {
+  display: block;
+  color: var(--primary-green);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.grammar-item-detail .g-zh {
+  display: block;
+  color: var(--text-gray);
+  font-size: 12.5px;
+}
+
+/* 多益提醒 */
+.grammar-item-detail .g-tip {
+  color: var(--yellow);
+  font-size: 12.5px;
+  line-height: 1.6;
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: rgba(255, 204, 0, 0.08);
+  border-radius: 6px;
+}
+
+/* ----- 完整教學文章（blocks）排版 ----- */
+/* 小節標題（原圖的藍色標題） */
+.grammar-item-detail .g-h {
+  color: var(--dark-bg);
+  background: linear-gradient(135deg, var(--bright-green), var(--primary-green));
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 16px 0 10px 0;
+}
+
+/* 內文段落 */
+.grammar-item-detail .g-p {
+  color: var(--text-white);
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin: 8px 0;
+}
+
+/* 條列 */
+.grammar-item-detail .g-list {
+  margin: 8px 0;
+  padding-left: 22px;
+  color: var(--text-gray);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* 黃色提示框（原圖的黃色對話框） */
+.grammar-item-detail .g-note {
+  color: var(--yellow);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 12px 0;
+  padding: 10px 12px;
+  background: rgba(255, 204, 0, 0.1);
+  border: 1px dashed var(--yellow);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* 例句框（原圖的白色例句卡） */
+.grammar-item-detail .g-exbox {
+  margin: 10px 0;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+}
+
+.grammar-item-detail .g-exbox .g-ex {
+  border-left: none;
+  padding-left: 0;
+  margin-bottom: 14px;
+}
+
+.grammar-item-detail .g-exbox .g-ex:last-child {
+  margin-bottom: 0;
+}
+
+/* 例句下方的「➤ 說明」 */
+.grammar-item-detail .g-exnote {
+  display: block;
+  color: var(--bright-green);
+  font-size: 12.5px;
+  font-style: italic;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
 /* ==================== 標題樣式 ==================== */
 /* 主標題 h2（例如「📘 TOEIC 單字」） */
 h2 {

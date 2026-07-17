@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=18"><!-- 外部樣式表（?v=18 為破快取版本號） -->
-<script defer src="index.js?v=18"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=20"><!-- 外部樣式表（?v=20 為破快取版本號） -->
+<script defer src="index.js?v=20"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -667,6 +667,46 @@ async function initGrammar() {
     }
 }
 
+// 把單一文法子項的 content 物件組成教學內容 HTML
+//   兩種格式：
+//   (A) 完整教學文章：{ blocks: [ {type:"h"|"p"|"list"|"note"|"examples", ...} ] }
+//   (B) 精簡格式（佔位用）：{ point, structure[], examples[{en,zh}], tip }
+function grammarDetailHtml(c) {
+    if (!c) return "🚧 詳細內容製作中，敬請期待～";
+
+    // (A) 完整文章：依 blocks 逐段渲染
+    if (c.blocks) {
+        return c.blocks.map(b => {
+            if (b.type === "h") return `<div class="g-h">${b.text}</div>`;
+            if (b.type === "p") return `<p class="g-p">${b.text}</p>`;
+            if (b.type === "list") return `<ul class="g-list">${b.items.map(i => `<li>${i}</li>`).join("")}</ul>`;
+            if (b.type === "note") return `<div class="g-note">${b.text}</div>`;
+            if (b.type === "examples") {
+                return `<div class="g-exbox">` + b.items.map(e =>
+                    `<div class="g-ex"><span class="g-en">${e.en}</span><span class="g-zh">${e.zh}</span>` +
+                    (e.note ? `<span class="g-exnote">➤ ${e.note}</span>` : "") + `</div>`
+                ).join("") + `</div>`;
+            }
+            return "";
+        }).join("");
+    }
+
+    // (B) 精簡格式
+    let html = "";
+    if (c.point) html += `<p class="g-point">${c.point}</p>`;
+    if (c.structure && c.structure.length) {
+        html += `<div class="g-block"><div class="g-label">結構</div><ul class="g-structure">` +
+            c.structure.map(s => `<li>${s}</li>`).join("") + `</ul></div>`;
+    }
+    if (c.examples && c.examples.length) {
+        html += `<div class="g-block"><div class="g-label">例句</div>` +
+            c.examples.map(e => `<div class="g-ex"><span class="g-en">${e.en}</span><span class="g-zh">${e.zh}</span></div>`).join("") +
+            `</div>`;
+    }
+    if (c.tip) html += `<div class="g-tip">💡 ${c.tip}</div>`;
+    return html;
+}
+
 // 把文法資料渲染成「可折疊的大類別 + 子項卡片」
 function renderGrammar(data) {
     const box = document.getElementById("grammar-container");
@@ -691,16 +731,16 @@ function renderGrammar(data) {
             head.querySelector(".arrow").classList.toggle("rotate");
         });
 
-        // 逐一建立子項（標題 + 說明 + 佔位的詳細內容）
+        // 逐一建立子項（標題 + 說明 + 可展開的詳細教學內容）
         cat.topics.forEach(t => {
             const item = document.createElement("div");
             item.className = "grammar-item";
             item.innerHTML = `
                 <div class="grammar-item-title">${t.title} <span class="grammar-item-arrow">›</span></div>
                 <div class="grammar-item-desc">${t.desc}</div>
-                <div class="grammar-item-detail">🚧 詳細內容製作中，敬請期待～</div>
+                <div class="grammar-item-detail">${grammarDetailHtml(t.content)}</div>
             `;
-            // 點子項 → 展開/收合「詳細內容」佔位區（日後可在此放課程內容）
+            // 點子項 → 展開/收合詳細教學內容
             item.addEventListener("click", () => item.classList.toggle("open"));
             list.appendChild(item);
         });
