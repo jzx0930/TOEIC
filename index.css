@@ -356,6 +356,86 @@ body {
   line-height: 1.5;
 }
 
+/* ==================== 文法全螢幕教學視窗 ==================== */
+.grammar-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  z-index: 9999;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.grammar-modal.show {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 內容盒：滿版高度、寬度置中限寬，方便閱讀 */
+.grammar-modal-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* 視窗標題列（固定在上方） */
+.grammar-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 2px solid var(--bright-green);
+  background: var(--dark-bg);
+  flex-shrink: 0;
+}
+
+.grammar-modal-title {
+  color: var(--primary-green);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.grammar-modal-close {
+  padding: 8px 16px;
+  border: 2px solid var(--bright-green);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--bright-green);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-speed);
+}
+
+.grammar-modal-close:hover {
+  background: var(--bright-green);
+  color: var(--dark-bg);
+}
+
+/* 內容區（可捲動） */
+.grammar-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 22px 40px 22px;
+  text-align: left;
+}
+
+/* 讓教學內容在視窗中顯示（覆蓋 .grammar-item-detail 預設的 display:none） */
+.grammar-modal-body .grammar-item-detail {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .grammar-modal-header { padding: 12px 14px; }
+  .grammar-modal-title { font-size: 18px; }
+  .grammar-modal-body { padding: 14px 14px 32px 14px; }
+}
+
 /* ==================== 標題樣式 ==================== */
 /* 主標題 h2（例如「📘 TOEIC 單字」） */
 h2 {
