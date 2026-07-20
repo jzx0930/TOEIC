@@ -667,7 +667,8 @@ async function initGrammar() {
     const box = document.getElementById("grammar-container");
     try {
         // 讀取文法架構（6 大類，每類含多個子項）
-        const res = await fetch("Grammar/grammar.json");
+        // 加上時間戳避免瀏覽器/GitHub Pages 快取舊的 grammar.json（內容更新後才看得到）
+        const res = await fetch("Grammar/grammar.json?t=" + Date.now());
         if (!res.ok) throw new Error("無法讀取 Grammar/grammar.json");
         const data = await res.json();
         renderGrammar(data);
