@@ -64,13 +64,64 @@
         "title": "現在進行式",
         "desc": "多益聽力必考的時態，看懂關鍵不再掉分！",
         "content": {
-          "point": "現在進行式表達「此刻正在進行」的動作，也可表「已安排好的近期計畫」。",
-          "structure": ["肯定：主詞 + am/is/are + Ving", "否定：主詞 + be + not + Ving"],
-          "examples": [
-            { "en": "He is talking on the phone.", "zh": "他正在講電話。" },
-            { "en": "They are meeting the client tomorrow.", "zh": "他們明天要見客戶。（近期計畫）" }
-          ],
-          "tip": "聽力 Part 1 描述照片常用進行式（is holding、are walking）；狀態動詞（know、like、want、have「擁有」）通常不用進行式。"
+          "blocks": [
+            { "type": "p", "text": "在前一堂課「現在簡單式」中我們學到，現在的「狀態」可以用現在簡單式表達，但現在的「動作」則要用現在進行式來表達～" },
+            { "type": "p", "text": "接下來這堂課，我們就來看看現在進行式有哪些使用時機吧！" },
+
+            { "type": "h", "text": "現在進行式的結構" },
+            { "type": "p", "text": "現在進行式的結構是：<b>am / are / is</b> ＋ <k>V-ing</k>" },
+            { "type": "p", "text": "比如說這個句子：" },
+            { "type": "examples", "items": [
+              { "en": "You <b>are</b> <k>reading</k> this line right now.", "zh": "你正在讀這個句子。" }
+            ] },
+            { "type": "p", "text": "現在進行式的組成是「<b>現在式 be 動詞</b>＋<k>現在分詞（V-ing）</k>」，如例句中的「are reading」。" },
+            { "type": "note", "text": "be 動詞和 V-ing 都是進行式的必要元素，單單 V-ing 本身不是進行式哦！" },
+
+            { "type": "h", "text": "現在進行式的使用時機" },
+            { "type": "p", "text": "就如其名，現在進行式通常描述「當下正在進行的動作」，例如：" },
+            { "type": "examples", "items": [
+              { "en": "I <k>am putting on</k> some clothes.", "zh": "我正在穿衣服。", "note": "現在進行式動詞：am putting on，表達「正在穿上」的動作" },
+              { "en": "Lily <k>is</k> not <k>talking</k> on the phone right now.", "zh": "Lily 現在沒在講電話。", "note": "現在進行式動詞：is talking，表達「正在講」的動作" }
+            ] },
+            { "type": "p", "text": "有少數的動詞可以用現在進行式描述「當下的狀態」，如 feel（感受）和 wear（穿著）：" },
+            { "type": "examples", "items": [
+              { "en": "I <k>am feeling</k> a bit cold.", "zh": "我覺得有點冷。", "note": "現在進行式動詞：am feeling，表達當下「正覺得……」的狀態" },
+              { "en": "She <k>is wearing</k> a white fur coat.", "zh": "她穿著一件白色的毛皮大衣。", "note": "現在進行式動詞：is wearing，表達「身穿」的狀態，非「穿上」的動作" }
+            ] },
+            { "type": "p", "text": "現在進行式也能描述「近期的常態」，例如：" },
+            { "type": "examples", "items": [
+              { "en": "I <k>am</k> currently <k>preparing for</k> the TOEIC test.", "zh": "我最近在準備考多益。", "note": "現在進行式動詞：am preparing for，表達「最近在準備」的近期常態" },
+              { "en": "Ashley <k>is working</k> part-time at a library while she <k>is staying</k> in New York.", "zh": "Ashley 待在紐約的這段時間有在圖書館打工。", "note": "現在進行式動詞：is working、is staying，表達「最近在工作」、「最近住在」的近期常態" }
+            ] },
+            { "type": "p", "text": "最後，跟現在簡單式一樣，現在進行式也可以用來描述未來哦！描述未來時，現在簡單式通常只表達「已定好時間的規劃」，使用比較侷限，但現在進行式則幾乎可以表達任何「未來的計畫」唷！例如：" },
+            { "type": "examples", "items": [
+              { "en": "I <k>am moving</k> to Banqiao sometime next year.", "zh": "我明年會搬去板橋住。" },
+              { "en": "We <k>are having</k> a meeting this afternoon.", "zh": "我們下午要開會。" },
+              { "en": "When <k>are</k> you <k>traveling</k> to Rome?", "zh": "你什麼時候要去羅馬？" }
+            ] },
+
+            { "type": "h", "text": "多益裡的現在進行式" },
+            { "type": "p", "text": "現在進行式在多益考試的閱讀部分無處不在，但因為用法、語意都較簡單，通常不是直接的考點。" },
+            { "type": "p", "text": "然而，在聽力的 Part 1，現在進行式卻常常是判斷答案的關鍵呢！我們來看個例子（Part 1 照片：一名女子躺在沙發上看書，後方一名男子坐在書桌前）：" },
+            { "type": "examples", "items": [
+              { "en": "(A) Some plants are being placed by a window.", "zh": "" },
+              { "en": "(B) Some pillows are being arranged on a sofa.", "zh": "" },
+              { "en": "(C) A woman <k>is reading</k> a book.", "zh": "（正解）" },
+              { "en": "(D) A man is opening the curtains.", "zh": "" }
+            ] },
+            { "type": "p", "text": "有沒有覺得好幾個選項感覺都是對的呢？如果有，那可就落入多益 Part 1 的常見陷阱啦！" },
+            { "type": "p", "text": "從「be＋V-ing」的結構，可以判斷四個選項的動詞都是現在進行式。其中 (A)、(B) 選項的 are being placed、are being arranged 是「被動」的現在進行式動詞，我們會在「被動語態」一課學到所有時態的被動用法！" },
+            { "type": "p", "text": "現在進行式通常描述「正在進行的動作」，(A)、(B)、(D) 三個選項中，動詞 place（放置）、arrange（擺放）、open（拉開）都是動作，但是 (A) 植物沒有「正在被放到」窗戶旁、(B) 枕頭沒有「正在被擺放」到沙發上、(D) 男子也沒有「正在拉開」窗簾，所以都不應使用現在進行式，只有 (C)「女子正在讀書」是符合圖片的敘述。" },
+            { "type": "p", "text": "總結來說：如果 Part 1 用現在進行式描述「動作」，那該動作在圖片中必須「正在進行」才行～" },
+            { "type": "note", "text": "舉 (A) 為例，很多人聽到 plants（植物）、place（放置）、by a window（在窗邊）就以為是對的了，但動詞是用什麼「時態」可是很重要的呢！" },
+
+            { "type": "h", "text": "小試身手" },
+            { "type": "examples", "items": [
+              { "en": "To fill three vacant positions, Cool Corp. ______ employees who are ready for a challenge.", "zh": "為了填滿三個職缺，Cool 企業 ______ 準備好接受挑戰的員工。" }
+            ] },
+            { "type": "list", "items": ["(A) seeking（現在分詞；動名詞）", "(B) is seeking（動詞現在進行式）", "(C) is sought（動詞現在簡單式，被動語態）", "(D) has been sought（動詞現在完成式，被動語態）"] },
+            { "type": "note", "text": "答案：<k>(B) is seeking</k>。句子的主詞 Cool Corp. 後缺少動詞，所以要選動詞——(A) 不是動詞，刪去；從文意判斷，Cool 企業是在「尋找」員工而非「被尋找」，應搭配主動語態，(C)、(D) 被動語態刪去；答案選現在進行式 (B)，表達公司現在「正在尋找」的語意。" }
+          ]
         }
       },
       {

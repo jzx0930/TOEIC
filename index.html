@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=21"><!-- 外部樣式表（?v=21 為破快取版本號） -->
-<script defer src="index.js?v=21"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=22"><!-- 外部樣式表（?v=22 為破快取版本號） -->
+<script defer src="index.js?v=22"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -692,7 +692,10 @@ function grammarDetailHtml(c) {
             if (b.type === "p") return `<p class="g-p">${b.text}</p>`;
             if (b.type === "list") return `<ul class="g-list">${b.items.map(i => `<li>${i}</li>`).join("")}</ul>`;
             if (b.type === "note") return `<div class="g-note">${b.text}</div>`;
+            // 時態時間軸／關係圖等圖片
+            if (b.type === "image") return `<img class="g-img" src="${b.src}" alt="${b.alt || ""}" loading="lazy">`;
             if (b.type === "examples") {
+                // 例句的 en/zh 允許用 <k>（綠色）、<b>（藍色）標記關鍵字，白字為底凸顯重點
                 return `<div class="g-exbox">` + b.items.map(e =>
                     `<div class="g-ex"><span class="g-en">${e.en}</span><span class="g-zh">${e.zh}</span>` +
                     (e.note ? `<span class="g-exnote">➤ ${e.note}</span>` : "") + `</div>`

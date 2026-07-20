@@ -263,9 +263,34 @@ body {
 
 .grammar-item-detail .g-en {
   display: block;
-  color: var(--primary-green);
+  color: var(--text-white);   /* 白字為底，關鍵字才用顏色凸顯 */
   font-size: 13.5px;
   font-weight: 600;
+}
+
+/* 例句關鍵字標記：<k> 綠色（V-ing / 重點動詞）、<b> 藍色（be 動詞等），與圖片配色一致 */
+.grammar-item-detail .g-en k,
+.grammar-item-detail .g-zh k {
+  color: var(--bright-green);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grammar-item-detail .g-en b,
+.grammar-item-detail .g-zh b {
+  color: #4da3ff;
+  font-weight: 700;
+}
+
+/* 時態時間軸／關係圖等圖片 */
+.grammar-item-detail .g-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 12px auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  background: #fff;
 }
 
 .grammar-item-detail .g-zh {
