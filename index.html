@@ -27,8 +27,8 @@
 <title>TOEIC單字卡</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=24"><!-- 外部樣式表（?v=24 為破快取版本號） -->
-<script defer src="index.js?v=24"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=25"><!-- 外部樣式表（?v=25 為破快取版本號） -->
+<script defer src="index.js?v=25"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -246,7 +246,7 @@ async function init() {
 
   try {
     // 讀取 word/list.json，取得要載入的檔案清單（陣列）
-    const listResponse = await fetch("word/list.json");
+    const listResponse = await fetch("word/list.json?t=" + Date.now());
     if (!listResponse.ok) throw new Error("無法讀取 list.json 索引檔");
 
     const fileList = await listResponse.json();
@@ -273,7 +273,7 @@ async function init() {
 // 載入單一單字檔，並建立一個「可折疊的章節區塊」
 async function loadWordsFromFile(fileName) {
   try {
-    const response = await fetch(`word/${fileName}`);
+    const response = await fetch(`word/${fileName}?t=` + Date.now());
     if (!response.ok) throw new Error(`找不到檔案: ${fileName}`);
 
     // 區塊標題 = 檔名去掉副檔名（例如「Word UP1.json」→「Word UP1」）
