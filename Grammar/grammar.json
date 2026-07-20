@@ -7,66 +7,56 @@
         "desc": "現在簡單式 ≠ 正在發生的事！小心別用錯～",
         "content": {
           "blocks": [
-            { "type": "p", "text": "英文有十二種時態，這一課先從最基礎的「現在簡單式」開始。名字雖然有「現在」，卻要特別小心——它其實很少用來描述「此刻正在做的動作」，而是用在習慣、事實、狀態與時刻表上。" },
+            { "type": "p", "text": "英文的動詞變化很豐富，有時我們說「I eat」，有時候又說「I am eating」或「I have eaten」，到底為什麼要有這麼多時態呢？其實，動詞除了表達「做了什麼」或「發生了什麼」，動詞的時態也對整個句子的語意有很大的影響呢！" },
+            { "type": "p", "text": "動詞總共有 12 個時態：" },
+            { "type": "list", "items": ["現在簡單式、過去簡單式、未來簡單式", "現在進行式、過去進行式、未來進行式", "現在完成式、過去完成式、未來完成式", "現在完成進行式、過去完成進行式、未來完成進行式"] },
+            { "type": "p", "text": "這些時態乍看之下好像很複雜，但不要緊張！接下來的單元會一步步講解各種時態。首先，我們先來看看最基本的現在簡單式吧～" },
 
             { "type": "h", "text": "現在簡單式的結構" },
-            { "type": "p", "text": "基本結構是 <k>主詞 ＋ 原形動詞</k>。但主詞是「第三人稱單數」（he／she／it、單一人名、單一事物、公司名／產品名）時，動詞字尾要加 <k>-s／-es</k>。" },
-            { "type": "list", "items": ["一般動詞：直接加 -s（work → works）", "字尾是 s／sh／ch／x／o：加 -es（go → goes、watch → watches）", "字尾「子音＋y」：去 y 加 -ies（study → studies）"] },
+            { "type": "p", "text": "先來看看兩個句子吧！" },
             { "type": "examples", "items": [
-              { "en": "I <k>work</k> from home.", "zh": "我在家工作。" },
-              { "en": "She <k>works</k> at a bank.", "zh": "她在銀行上班。", "note": "第三人稱單數 → work 加 -s" },
-              { "en": "He <k>watches</k> the news every night.", "zh": "他每晚看新聞。", "note": "watch 字尾 ch → 加 -es" }
+              { "en": "I <k>love</k> strawberry ice cream, and she <k>loves</k> it too.", "zh": "我很愛草莓冰淇淋，她也很愛。" },
+              { "en": "We <k>don't travel</k> abroad because she <k>doesn't want</k> to.", "zh": "我們都不出國旅遊，因為她不想去。" }
             ] },
-            { "type": "p", "text": "否定與疑問要借助助動詞 <b>do／does</b>（第三人稱單數用 does），而且後面的動詞要回到原形。" },
-            { "type": "examples", "items": [
-              { "en": "They <b>don't</b> <k>work</k> on weekends.", "zh": "他們週末不上班。" },
-              { "en": "She <b>doesn't</b> <k>drink</k> coffee.", "zh": "她不喝咖啡。", "note": "已用 does，動詞回原形 drink（不加 -s）" },
-              { "en": "<b>Do</b> you <k>speak</k> English?", "zh": "你會說英文嗎？" }
-            ] },
-            { "type": "note", "text": "第三人稱單數的 -s 只加一處：要嘛在助動詞 does、要嘛在主要動詞，不會兩邊都加（doesn't drinks ✗）。" },
+            { "type": "p", "text": "句子裡的四個動詞都是現在簡單式，看起來不太一樣是因為「主詞人稱不同」，以及「肯定跟否定」的差異。" },
+            { "type": "p", "text": "當主詞是第一人稱（I）、第二人稱（you）、複數（we／you／they）時，現在簡單式動詞的型態跟原形一樣，像是第一句的「I love」；否定語意則會用助動詞 don't ＋原形動詞，如第二句的「We don't travel」。" },
+            { "type": "p", "text": "但是，如果主詞為第三人稱單數（she／he／it 等）時，現在簡單式動詞的字尾則要加上 -s 或 -es 哦！像是第一句的「she loves」；否定語氣的助動詞則為 doesn't，如第二句的「she doesn't want」。" },
+            { "type": "note", "text": "人名、產品名稱、公司名稱等都是第三人稱唷～" },
 
             { "type": "h", "text": "現在簡單式的使用時機" },
-            { "type": "p", "text": "用法一：表達「習慣或反覆發生的事」，常搭配 always／usually／often／sometimes／every day 等頻率詞。" },
+            { "type": "p", "text": "現在簡單式很常用來表達「現在的狀態」：" },
             { "type": "examples", "items": [
-              { "en": "He <k>goes</k> to the gym three times a week.", "zh": "他一週上健身房三次。" },
-              { "en": "We usually <k>hold</k> a meeting every Monday.", "zh": "我們通常每週一開會。" },
-              { "en": "I <b>don't</b> often <k>eat</k> out.", "zh": "我不常外食。" }
+              { "en": "I <k>feel</k> a bit tired but satisfied.", "zh": "我覺得有點累但也挺滿意的。", "note": "現在簡單式動詞：feel，表達當下的情緒與感受" },
+              { "en": "<b>Do</b> you <k>understand</k>?", "zh": "你有聽懂嗎？", "note": "現在簡單式問句：(do) understand 詢問當下的理解狀況" }
             ] },
-            { "type": "p", "text": "用法二：表達「事實、真理、恆常的狀態」。" },
+            { "type": "p", "text": "也能表達不變的「真理與既定事實」：" },
             { "type": "examples", "items": [
-              { "en": "Water <k>boils</k> at 100°C.", "zh": "水在攝氏一百度沸騰。" },
-              { "en": "The Earth <k>revolves</k> around the Sun.", "zh": "地球繞著太陽轉。" },
-              { "en": "Our office <k>opens</k> at nine and <k>closes</k> at six.", "zh": "我們辦公室九點開、六點關。" }
+              { "en": "Everyone <k>ages</k>. No one <k>stays</k> young forever.", "zh": "每個人都會變老。沒人能永遠保持年輕。", "note": "現在簡單式動詞：ages、stays，表達「人會變老」的真理" },
+              { "en": "It <k>gets</k> hotter and hotter every year.", "zh": "每年都越來越熱。", "note": "現在簡單式動詞：gets，表達「越來越熱」的既定事實" }
             ] },
-            { "type": "p", "text": "用法三：表達「現在的狀態、想法或感受」，常見於「狀態動詞」——like、love、hate、know、believe、want、need、own、seem 等。" },
+            { "type": "p", "text": "另外，現在簡單式也能表達「常態與習慣」：" },
             { "type": "examples", "items": [
-              { "en": "I <k>know</k> the answer.", "zh": "我知道答案。" },
-              { "en": "She <k>wants</k> a cup of tea.", "zh": "她想要一杯茶。" },
-              { "en": "This plan <k>seems</k> reasonable.", "zh": "這個計畫看起來合理。" }
+              { "en": "Shuttle buses <k>arrive</k> every 15 minutes.", "zh": "接駁車每十五分鐘會來一班。", "note": "現在簡單式動詞：arrive，表達「每十五分鐘一班」的常態" },
+              { "en": "Lily usually <k>goes</k> to bed before 2 AM. She <k>doesn't stay up</k> later than that.", "zh": "Lily 通常都在半夜兩點前睡覺，不會比那晚睡。", "note": "現在簡單式動詞：goes、doesn't stay up，表達個人的常態作息及習慣" },
+              { "en": "I <k>don't eat</k> sea cucumbers. I <k>dislike</k> their look and texture.", "zh": "我不吃海參，我不喜歡牠的樣子跟口感。", "note": "現在簡單式動詞：don't eat、dislike，表達個人喜好及習慣" }
             ] },
-            { "type": "p", "text": "用法四：表達「已排定時刻表的未來」，像班機、車次、課表、節目表。" },
+            { "type": "note", "text": "描述常態或習慣時，常常會用到 usually（通常）、often（經常）、seldom（很少）等頻率副詞～" },
+            { "type": "p", "text": "值得注意的是，雖然名為「現在」簡單式，卻也能用來描述未來哦！通常用來表達已定好明確時間的事項，如時刻表上的規劃。例如：" },
             { "type": "examples", "items": [
-              { "en": "The train <k>leaves</k> at 6:30 tomorrow morning.", "zh": "火車明天早上六點半發車。" },
-              { "en": "The conference <k>starts</k> next Monday.", "zh": "研討會下週一開始。" }
+              { "en": "My train <k>leaves</k> in half an hour. I don't have time to buy breakfast.", "zh": "我的火車半小時後就要開了，我沒時間買早餐。" },
+              { "en": "Your first class <k>starts</k> at 8:10 AM. Please don't be late.", "zh": "你的第一堂課是早上八點十分，請不要遲到。" },
+              { "en": "What time <b>do</b> you <k>land</k> in Taoyuan?", "zh": "你的班機幾點在桃園降落？" }
             ] },
 
-            { "type": "h", "text": "常見錯誤" },
-            { "type": "p", "text": "第一個大錯：用現在簡單式描述「此刻正在進行的動作」。「我正在喝水」不是 I drink water now，而要用現在進行式：" },
+            { "type": "h", "text": "現在簡單式的常見錯誤" },
+            { "type": "p", "text": "很多人會認為，既然叫做「現在」簡單式，那就也可以表達現在的「動作」吧？比方說，「我正在喝水」是不是「I drink water now」呢？" },
+            { "type": "p", "text": "答案是不行哦！現在簡單式的使用時機是：" },
+            { "type": "list", "items": ["現在的狀態", "真理與既定事實", "常態與習慣", "定好時間的行程規劃"] },
+            { "type": "p", "text": "要記得，現在簡單式不能描述「現在的動作」哦！要描述「現在的動作」，正確的文法是用現在進行式來表達：" },
             { "type": "examples", "items": [
-              { "en": "I <k>am drinking</k> water right now.", "zh": "我現在正在喝水。", "note": "「正在進行」→ 現在進行式（be ＋ V-ing）" }
+              { "en": "I <k>am drinking</k> water.", "zh": "我正在喝水。", "note": "現在進行式描述當下「正在喝」的動作" }
             ] },
-            { "type": "p", "text": "第二個大錯：忘了第三人稱單數要加 -s／-es，或否定、疑問時忘了把動詞變回原形。" },
-            { "type": "examples", "items": [
-              { "en": "The system <k>updates</k> automatically.", "zh": "系統會自動更新。", "note": "第三人稱單數 → updates（不是 update）" }
-            ] },
-            { "type": "note", "text": "狀態動詞（know、like、want、believe…）通常不用進行式：說 I want，不說 I am wanting。" },
-
-            { "type": "h", "text": "小試身手" },
-            { "type": "examples", "items": [
-              { "en": "The museum ______ at 5 p.m. on weekdays.", "zh": "這間博物館平日下午五點 ______。" }
-            ] },
-            { "type": "list", "items": ["(A) close", "(B) closes", "(C) is closing", "(D) closed"] },
-            { "type": "note", "text": "答案：<k>(B) closes</k>。主詞 The museum 是第三人稱單數，且描述「平日的固定開放時間（常態／時刻表）」，用現在簡單式、動詞加 -s。" }
+            { "type": "p", "text": "至於現在進行式又有哪些用法跟要注意的地方，我們就來看下一堂：現在進行式吧！" }
           ]
         }
       },
@@ -75,37 +65,62 @@
         "desc": "多益聽力必考的時態，看懂關鍵不再掉分！",
         "content": {
           "blocks": [
-            { "type": "p", "text": "現在進行式專門用來表達「此刻正在進行的動作」，正好補上現在簡單式做不到的地方。" },
+            { "type": "p", "text": "在前一堂課「現在簡單式」中我們學到，現在的「狀態」可以用現在簡單式表達，但現在的「動作」則要用現在進行式來表達～" },
+            { "type": "p", "text": "接下來這堂課，我們就來看看現在進行式有哪些使用時機吧！" },
 
             { "type": "h", "text": "現在進行式的結構" },
-            { "type": "p", "text": "結構是 <b>am／is／are</b> ＋ <k>V-ing</k>。be 動詞和 V-ing 缺一不可——只有 V-ing、沒有 be 動詞，就不是進行式。" },
+            { "type": "p", "text": "現在進行式的結構是：<b>am / are / is</b> ＋ <k>V-ing</k>" },
+            { "type": "p", "text": "比如說這個句子：" },
             { "type": "examples", "items": [
-              { "en": "She <b>is</b> <k>writing</k> an email.", "zh": "她正在寫電子郵件。" },
-              { "en": "They <b>are</b> not <k>listening</k>.", "zh": "他們沒在聽。" }
+              { "en": "You <b>are</b> <k>reading</k> this line right now.", "zh": "你正在讀這個句子。" }
             ] },
+            { "type": "p", "text": "現在進行式的組成是「<b>現在式 be 動詞</b>＋<k>現在分詞（V-ing）</k>」，如例句中的「are reading」。" },
+            { "type": "note", "text": "be 動詞和 V-ing 都是進行式的必要元素，單單 V-ing 本身不是進行式哦！" },
 
             { "type": "h", "text": "現在進行式的使用時機" },
-            { "type": "p", "text": "用法一：說話「當下正在進行」的動作。" },
+            { "type": "p", "text": "就如其名，現在進行式通常描述「當下正在進行的動作」，例如：" },
             { "type": "examples", "items": [
-              { "en": "Please be quiet. The baby <b>is</b> <k>sleeping</k>.", "zh": "請安靜，寶寶正在睡覺。" }
+              { "en": "I <k>am putting on</k> some clothes.", "zh": "我正在穿衣服。", "note": "現在進行式動詞：am putting on，表達「正在穿上」的動作" },
+              { "en": "Lily <k>is</k> not <k>talking</k> on the phone right now.", "zh": "Lily 現在沒在講電話。", "note": "現在進行式動詞：is talking，表達「正在講」的動作" }
             ] },
-            { "type": "p", "text": "用法二：「最近一段時間」的狀態或趨勢（不一定是此刻）。" },
+            { "type": "p", "text": "有少數的動詞可以用現在進行式描述「當下的狀態」，如 feel（感受）和 wear（穿著）：" },
             { "type": "examples", "items": [
-              { "en": "I <b>am</b> <k>studying</k> for the TOEIC these days.", "zh": "我最近在準備多益。" }
+              { "en": "I <k>am feeling</k> a bit cold.", "zh": "我覺得有點冷。", "note": "現在進行式動詞：am feeling，表達當下「正覺得……」的狀態" },
+              { "en": "She <k>is wearing</k> a white fur coat.", "zh": "她穿著一件白色的毛皮大衣。", "note": "現在進行式動詞：is wearing，表達「身穿」的狀態，非「穿上」的動作" }
             ] },
-            { "type": "p", "text": "用法三：「已安排好的近期計畫」，用來表達未來。" },
+            { "type": "p", "text": "現在進行式也能描述「近期的常態」，例如：" },
             { "type": "examples", "items": [
-              { "en": "We <b>are</b> <k>meeting</k> the client tomorrow at three.", "zh": "我們明天三點要跟客戶碰面。" }
+              { "en": "I <k>am</k> currently <k>preparing for</k> the TOEIC test.", "zh": "我最近在準備考多益。", "note": "現在進行式動詞：am preparing for，表達「最近在準備」的近期常態" },
+              { "en": "Ashley <k>is working</k> part-time at a library while she <k>is staying</k> in New York.", "zh": "Ashley 待在紐約的這段時間有在圖書館打工。", "note": "現在進行式動詞：is working、is staying，表達「最近在工作」、「最近住在」的近期常態" }
             ] },
-            { "type": "note", "text": "表「狀態」的動詞（know、like、want、believe、own）通常不用進行式：說 I know，不說 I am knowing。" },
-            { "type": "p", "text": "多益小提醒：聽力 Part 1 描述照片幾乎都用現在進行式（is holding、are walking），判斷「動作是不是正在發生」往往是選答案的關鍵。" },
+            { "type": "p", "text": "最後，跟現在簡單式一樣，現在進行式也可以用來描述未來哦！描述未來時，現在簡單式通常只表達「已定好時間的規劃」，使用比較侷限，但現在進行式則幾乎可以表達任何「未來的計畫」唷！例如：" },
+            { "type": "examples", "items": [
+              { "en": "I <k>am moving</k> to Banqiao sometime next year.", "zh": "我明年會搬去板橋住。" },
+              { "en": "We <k>are having</k> a meeting this afternoon.", "zh": "我們下午要開會。" },
+              { "en": "When <k>are</k> you <k>traveling</k> to Rome?", "zh": "你什麼時候要去羅馬？" }
+            ] },
+
+            { "type": "h", "text": "多益裡的現在進行式" },
+            { "type": "p", "text": "現在進行式在多益考試的閱讀部分無處不在，但因為用法、語意都較簡單，通常不是直接的考點。" },
+            { "type": "p", "text": "然而，在聽力的 Part 1，現在進行式卻常常是判斷答案的關鍵呢！我們來看個例子（Part 1 照片：一名女子躺在沙發上看書，後方一名男子坐在書桌前）：" },
+            { "type": "examples", "items": [
+              { "en": "(A) Some plants are being placed by a window.", "zh": "" },
+              { "en": "(B) Some pillows are being arranged on a sofa.", "zh": "" },
+              { "en": "(C) A woman <k>is reading</k> a book.", "zh": "（正解）" },
+              { "en": "(D) A man is opening the curtains.", "zh": "" }
+            ] },
+            { "type": "p", "text": "有沒有覺得好幾個選項感覺都是對的呢？如果有，那可就落入多益 Part 1 的常見陷阱啦！" },
+            { "type": "p", "text": "從「be＋V-ing」的結構，可以判斷四個選項的動詞都是現在進行式。其中 (A)、(B) 選項的 are being placed、are being arranged 是「被動」的現在進行式動詞，我們會在「被動語態」一課學到所有時態的被動用法！" },
+            { "type": "p", "text": "現在進行式通常描述「正在進行的動作」，(A)、(B)、(D) 三個選項中，動詞 place（放置）、arrange（擺放）、open（拉開）都是動作，但是 (A) 植物沒有「正在被放到」窗戶旁、(B) 枕頭沒有「正在被擺放」到沙發上、(D) 男子也沒有「正在拉開」窗簾，所以都不應使用現在進行式，只有 (C)「女子正在讀書」是符合圖片的敘述。" },
+            { "type": "p", "text": "總結來說：如果 Part 1 用現在進行式描述「動作」，那該動作在圖片中必須「正在進行」才行～" },
+            { "type": "note", "text": "舉 (A) 為例，很多人聽到 plants（植物）、place（放置）、by a window（在窗邊）就以為是對的了，但動詞是用什麼「時態」可是很重要的呢！" },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
-              { "en": "Look! The technicians ______ the new machine right now.", "zh": "你看！技術人員現在正在 ______ 新機器。" }
+              { "en": "To fill three vacant positions, Cool Corp. ______ employees who are ready for a challenge.", "zh": "為了填滿三個職缺，Cool 企業 ______ 準備好接受挑戰的員工。" }
             ] },
-            { "type": "list", "items": ["(A) install", "(B) installs", "(C) are installing", "(D) installed"] },
-            { "type": "note", "text": "答案：<k>(C) are installing</k>。Look!、right now 表示「此刻正在進行」，主詞複數 → are ＋ V-ing。" }
+            { "type": "list", "items": ["(A) seeking（現在分詞；動名詞）", "(B) is seeking（動詞現在進行式）", "(C) is sought（動詞現在簡單式，被動語態）", "(D) has been sought（動詞現在完成式，被動語態）"] },
+            { "type": "note", "text": "答案：<k>(B) is seeking</k>。句子的主詞 Cool Corp. 後缺少動詞，所以要選動詞——(A) 不是動詞，刪去；從文意判斷，Cool 企業是在「尋找」員工而非「被尋找」，應搭配主動語態，(C)、(D) 被動語態刪去；答案選現在進行式 (B)，表達公司現在「正在尋找」的語意。" }
           ]
         }
       },
