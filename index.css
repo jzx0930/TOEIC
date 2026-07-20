@@ -282,7 +282,7 @@ body {
   font-weight: 700;
 }
 
-/* 時態時間軸／關係圖等圖片 */
+/* 時態時間軸／關係圖等圖片（備用） */
 .grammar-item-detail .g-img {
   display: block;
   max-width: 100%;
@@ -291,6 +291,22 @@ body {
   border-radius: 8px;
   border: 1px solid var(--border-dark);
   background: #fff;
+}
+
+/* 自製 SVG 圖表（時態時間軸／關係圖）容器 */
+.grammar-item-detail .g-diagram {
+  margin: 14px 0;
+  padding: 14px 10px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.grammar-item-detail .g-diagram svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .grammar-item-detail .g-zh {

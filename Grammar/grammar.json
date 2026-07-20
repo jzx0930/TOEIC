@@ -169,13 +169,55 @@
         "title": "過去、未來完成式",
         "desc": "動作已完成？還是在持續？用圖解一次看懂！",
         "content": {
-          "point": "過去完成式＝過去某動作「之前」就已完成（過去的過去）；未來完成式＝未來某時間點「之前」將完成。",
-          "structure": ["過去完成：had + p.p.", "未來完成：will have + p.p."],
-          "examples": [
-            { "en": "The train had left before I arrived.", "zh": "我到之前火車已經開走了。" },
-            { "en": "By next year, I will have graduated.", "zh": "到明年我就已經畢業了。" }
-          ],
-          "tip": "未來完成式常搭配 by + 未來時間點（by 2030、by then）。"
+          "blocks": [
+            { "type": "p", "text": "學過「現在完成式」後，這一課再看另外兩種完成式：過去完成式與未來完成式。它們的結構和現在完成式很像，差別在於「基準時間點」不同——現在完成式以「現在」為基準，過去完成式以「過去某個時間點」為基準，未來完成式則以「未來某個時間點」為基準。" },
+
+            { "type": "h", "text": "過去完成式的結構" },
+            { "type": "p", "text": "過去完成式的結構是：<b>had</b> ＋ <k>過去分詞（Vp.p.）</k>——不管主詞是什麼人稱，助動詞都用 had。" },
+            { "type": "examples", "items": [
+              { "en": "The train <b>had</b> already <k>left</k> when we got to the station.", "zh": "我們到車站時，火車已經開走了。" },
+              { "en": "She <b>had</b> <k>finished</k> dinner before the guests arrived.", "zh": "客人到之前，她已經吃完晚餐了。" }
+            ] },
+            { "type": "note", "text": "had ＋ 過去分詞常和另一個「過去動作／時間點」一起出現，用來標示「更早發生」的那一件事。" },
+
+            { "type": "h", "text": "過去完成式的使用時機" },
+            { "type": "p", "text": "過去完成式表達的是「過去的過去」。和現在完成式對照：現在完成式算到「現在」，過去完成式只算到「另一個過去的時間點」，不會延續到現在。" },
+            { "type": "diagram", "svg": "<svg viewBox='0 0 600 165' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='148' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='40' width='240' height='30' rx='4' fill='#ffaa00'/><text x='180' y='60' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>現在完成式</text><rect x='60' y='82' width='165' height='30' rx='4' fill='#ff5555'/><text x='142' y='102' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>過去完成式</text><line x1='40' y1='138' x2='300' y2='138' stroke='#888' stroke-width='2'/><line x1='300' y1='138' x2='558' y2='138' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,138 550,132 550,144' fill='#888'/></svg>" },
+            { "type": "p", "text": "常見用法有三種。第一，表達「在某個過去時間點之前，一直持續的動作」：" },
+            { "type": "examples", "items": [
+              { "en": "He <b>had</b> <k>worked</k> at the company for ten years before he resigned.", "zh": "他辭職前，已在那家公司工作了十年。", "note": "「工作」持續了十年，直到「辭職」這個過去時間點" }
+            ] },
+            { "type": "p", "text": "第二，表達「在某個過去時間點之前，就已經完成或發生的動作」：" },
+            { "type": "examples", "items": [
+              { "en": "By the time I called, they <b>had</b> already <k>gone</k> home.", "zh": "我打電話時，他們已經回家了。", "note": "「回家」在「我打電話」之前就已發生" }
+            ] },
+            { "type": "p", "text": "第三，表達「在某個過去時間點之前，曾有過的經驗」：" },
+            { "type": "examples", "items": [
+              { "en": "I <b>had</b> never <k>tried</k> sushi before that trip.", "zh": "那趟旅行前，我從沒吃過壽司。", "note": "「吃過壽司」是在「那趟旅行」之前的經驗" }
+            ] },
+
+            { "type": "h", "text": "未來完成式的結構" },
+            { "type": "p", "text": "未來完成式的結構是：<b>will</b> ＋ <b>have</b> ＋ <k>過去分詞（Vp.p.）</k>。兩個助動詞 will、have 連用，have 後面固定接過去分詞。" },
+            { "type": "examples", "items": [
+              { "en": "By 9 p.m., I <b>will have</b> <k>finished</k> the report.", "zh": "到晚上九點，我就會把報告寫完。" }
+            ] },
+
+            { "type": "h", "text": "未來完成式的使用時機" },
+            { "type": "p", "text": "未來完成式表達「到未來某個時間點之前，會完成、或會一路持續到的事」，時間範圍會涵蓋到那個未來點（也包含現在）。" },
+            { "type": "diagram", "svg": "<svg viewBox='0 0 600 165' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='148' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='40' width='240' height='30' rx='4' fill='#ffaa00'/><text x='180' y='60' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>現在完成式</text><rect x='60' y='82' width='420' height='30' rx='4' fill='#4da3ff'/><text x='260' y='102' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>未來完成式</text><line x1='480' y1='76' x2='480' y2='118' stroke='#4da3ff' stroke-width='2'/><line x1='40' y1='138' x2='300' y2='138' stroke='#888' stroke-width='2'/><line x1='300' y1='138' x2='558' y2='138' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,138 550,132 550,144' fill='#888'/></svg>" },
+            { "type": "examples", "items": [
+              { "en": "By next Friday, we <b>will have</b> <k>launched</k> the new product.", "zh": "到下週五，我們就會推出新產品了。" },
+              { "en": "By December, she <b>will have</b> <k>worked</k> here for five years.", "zh": "到十二月，她在這裡就滿五年了。" }
+            ] },
+            { "type": "note", "text": "未來完成式很常搭配 <k>by + 未來時間點</k>（by then、by 2030、by the time…），表示「到那時就已經…」。" },
+
+            { "type": "h", "text": "小試身手" },
+            { "type": "examples", "items": [
+              { "en": "By the time the manager arrived, the team ______ the presentation.", "zh": "經理到的時候，團隊 ______ 簡報。" }
+            ] },
+            { "type": "list", "items": ["(A) finishes", "(B) has finished", "(C) had finished", "(D) will finish"] },
+            { "type": "note", "text": "答案：<k>(C) had finished</k>。「完成簡報」發生在「經理到達」這個過去時間點之前，屬於「過去的過去」，所以用過去完成式 had ＋ 過去分詞。" }
+          ]
         }
       },
       {
