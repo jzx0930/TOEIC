@@ -148,39 +148,60 @@
         "desc": "多益高頻時態！for 跟 since 怎麼用才正確？",
         "content": {
           "blocks": [
-            { "type": "p", "text": "現在完成式把「過去」和「現在」連起來——它談的不是單純的過去，而是「從過去延續到現在」或「對現在造成影響」的事，是多益超高頻的時態。" },
+            { "type": "p", "text": "現在完成式把「過去」和「現在」連起來——它談的不是單純的過去，而是「從過去延續到現在」，或「過去的動作對現在造成的結果／影響」。它是多益超高頻的時態，也是中文母語者最容易用錯的時態之一。" },
 
             { "type": "h", "text": "現在完成式的結構" },
-            { "type": "p", "text": "結構是 <b>have／has</b> ＋ <k>過去分詞（p.p.）</k>。第三人稱單數用 has，其餘用 have。" },
+            { "type": "p", "text": "結構是 <b>have／has</b> ＋ <k>過去分詞（p.p.）</k>。主詞第三人稱單數用 has，其餘用 have。過去分詞：規則動詞加 -ed（finish → finished），不規則動詞要背（go → gone、see → seen、write → written、do → done）。" },
             { "type": "examples", "items": [
               { "en": "I <b>have</b> <k>finished</k> my report.", "zh": "我已經寫完報告了。" },
               { "en": "She <b>has</b> <k>lived</k> here for ten years.", "zh": "她已經在這裡住了十年。" }
             ] },
+            { "type": "p", "text": "口語常用縮寫（I've、she's…）；否定用 <b>haven't／hasn't</b>，疑問把 have／has 移到句首。" },
+            { "type": "examples", "items": [
+              { "en": "I<b>'ve</b> <k>seen</k> that movie twice.", "zh": "那部電影我看過兩次。" },
+              { "en": "He <b>hasn't</b> <k>replied</k> yet.", "zh": "他還沒回覆。" },
+              { "en": "<b>Have</b> you <k>finished</k> the task?", "zh": "你完成任務了嗎？" }
+            ] },
 
             { "type": "h", "text": "現在完成式的使用時機" },
             { "type": "diagram", "svg": "<svg viewBox='0 0 600 125' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='108' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='44' width='240' height='30' rx='4' fill='#ffaa00'/><text x='180' y='64' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>現在完成式</text><line x1='40' y1='98' x2='300' y2='98' stroke='#888' stroke-width='2'/><line x1='300' y1='98' x2='558' y2='98' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,98 550,92 550,104' fill='#888'/></svg>" },
-            { "type": "p", "text": "用法一：「從過去持續到現在」的狀態或動作，常搭配 <k>for</k>（一段時間）和 <k>since</k>（時間起點）。" },
+            { "type": "p", "text": "用法一：「從過去持續到現在」的狀態或動作（現在仍在繼續），常搭配 <k>for</k>（一段時間）與 <k>since</k>（時間起點）。" },
             { "type": "examples", "items": [
               { "en": "We <b>have</b> <k>worked</k> together <k>for</k> five years.", "zh": "我們已經一起共事五年了。" },
-              { "en": "He <b>has</b> <k>been</k> busy <k>since</k> Monday.", "zh": "他從星期一忙到現在。" }
+              { "en": "He <b>has</b> <k>been</k> busy <k>since</k> Monday.", "zh": "他從星期一忙到現在。" },
+              { "en": "How long <b>have</b> you <k>known</k> her?", "zh": "你認識她多久了？" }
             ] },
-            { "type": "note", "text": "<k>for</k> 後接「一段時間長度」（for two hours）；<k>since</k> 後接「過去的時間點」（since 2020）。" },
-            { "type": "p", "text": "用法二：「人生經驗」（做過沒），常搭配 ever、never。" },
+            { "type": "note", "text": "<k>for</k> 後接「一段時間長度」（for two hours、for a week）；<k>since</k> 後接「過去的時間點」（since 2020、since Monday）。" },
+            { "type": "p", "text": "用法二：「人生經驗」——到目前為止做過或沒做過某事，不強調何時，常搭配 ever、never、before、次數。" },
             { "type": "examples", "items": [
-              { "en": "<b>Have</b> you <k>ever visited</k> Japan?", "zh": "你去過日本嗎？" }
+              { "en": "<b>Have</b> you <k>ever visited</k> Japan?", "zh": "你去過日本嗎？" },
+              { "en": "I<b>'ve</b> <k>never eaten</k> durian.", "zh": "我從沒吃過榴槤。" }
             ] },
-            { "type": "p", "text": "用法三：「剛完成、且影響到現在」，常搭配 just、already、yet。" },
+            { "type": "note", "text": "「去過（已回來）」用 have been to；「去了（還沒回來）」用 have gone to。She has been to Paris（去過、人在這）vs She has gone to Paris（去了、人在巴黎）。" },
+            { "type": "p", "text": "用法三：「剛完成、且結果影響到現在」，常搭配 just、already、yet、recently。" },
             { "type": "examples", "items": [
-              { "en": "The bus <b>has</b> <k>just left</k>.", "zh": "公車剛開走。", "note": "所以現在搭不到了（影響到現在）" }
+              { "en": "The bus <b>has</b> <k>just left</k>.", "zh": "公車剛開走。", "note": "結果：現在搭不到了" },
+              { "en": "I<b>'ve</b> <k>already sent</k> the email.", "zh": "我已經把 email 寄出去了。" },
+              { "en": "<b>Have</b> they <k>arrived</k> yet?", "zh": "他們到了嗎？" }
             ] },
-            { "type": "note", "text": "句中若有明確的過去時間（yesterday、last week、…ago）就要用過去簡單式，不能用現在完成式。" },
+
+            { "type": "h", "text": "常見錯誤" },
+            { "type": "p", "text": "最大的錯誤：句中有「明確的過去時間」（yesterday、last week、…ago、in 2019）時，要用過去簡單式，不能用現在完成式。" },
+            { "type": "examples", "items": [
+              { "en": "I <k>finished</k> it <b>yesterday</b>.", "zh": "我昨天完成的。", "note": "有 yesterday → 過去簡單式；不能說 have finished it yesterday" }
+            ] },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
               { "en": "Ms. Chen ______ for this company since 2015.", "zh": "陳女士從 2015 年起就在這家公司 ______。" }
             ] },
             { "type": "list", "items": ["(A) works", "(B) worked", "(C) has worked", "(D) is working"] },
-            { "type": "note", "text": "答案：<k>(C) has worked</k>。since 2015 表示「從過去某點持續到現在」，用現在完成式 has ＋ p.p.。" }
+            { "type": "note", "text": "答案：<k>(C) has worked</k>。since 2015 表示「從過去某點持續到現在」，用現在完成式 has ＋ p.p.。" },
+            { "type": "examples", "items": [
+              { "en": "The shipment ______ yet, so we can't start the inspection.", "zh": "貨還沒 ______，所以我們還不能開始檢驗。" }
+            ] },
+            { "type": "list", "items": ["(A) doesn't arrive", "(B) didn't arrive", "(C) hasn't arrived", "(D) won't arrive"] },
+            { "type": "note", "text": "答案：<k>(C) hasn't arrived</k>。yet ＋「到目前為止還沒發生、且影響到現在」→ 現在完成式否定 hasn't ＋ p.p.。" }
           ]
         }
       },
@@ -189,31 +210,50 @@
         "desc": "used to 跟 be used to 怎麼分？will 跟 be going to 一樣嗎？",
         "content": {
           "blocks": [
-            { "type": "p", "text": "這一課一次看兩個「簡單式」：過去簡單式（講已經結束的過去）和未來簡單式（講還沒發生的未來）。" },
+            { "type": "p", "text": "這一課一次看兩個「簡單式」：過去簡單式（描述已經結束的過去）和未來簡單式（描述還沒發生的未來）。兩者都只是「單純陳述一個時間點的事」，不強調過程或持續。" },
+            { "type": "diagram", "svg": "<svg viewBox='0 0 600 140' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='115' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><circle cx='120' cy='110' r='7' fill='#ff5555'/><text x='120' y='95' fill='#ff5555' font-size='13' font-weight='700' text-anchor='middle'>過去簡單式</text><circle cx='470' cy='110' r='7' fill='#4da3ff'/><text x='470' y='95' fill='#4da3ff' font-size='13' font-weight='700' text-anchor='middle'>未來簡單式</text><line x1='40' y1='110' x2='300' y2='110' stroke='#888' stroke-width='2'/><line x1='300' y1='110' x2='558' y2='110' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,110 550,104 550,116' fill='#888'/></svg>" },
 
             { "type": "h", "text": "過去簡單式的結構" },
-            { "type": "p", "text": "結構是 <k>主詞 ＋ 動詞過去式</k>（規則動詞加 -ed，不規則動詞要背）。否定、疑問用 <b>did</b> ＋ 原形。" },
+            { "type": "p", "text": "結構是 <k>主詞 ＋ 動詞過去式</k>。規則動詞加 -ed（work → worked），不規則動詞要背（go → went、see → saw、buy → bought、take → took）。否定、疑問要用 <b>did</b> ＋ 原形動詞。" },
             { "type": "examples", "items": [
               { "en": "We <k>launched</k> the product last month.", "zh": "我們上個月推出了那項產品。" },
-              { "en": "I <b>didn't</b> <k>see</k> your message.", "zh": "我沒看到你的訊息。" }
+              { "en": "I <b>didn't</b> <k>see</k> your message.", "zh": "我沒看到你的訊息。", "note": "已有 did，動詞回原形 see（不是 saw）" },
+              { "en": "<b>Did</b> you <k>call</k> the client?", "zh": "你打電話給客戶了嗎？" }
             ] },
-            { "type": "p", "text": "用法：表達「過去某個時間發生、且已經結束」的動作，常搭配 yesterday、last…、…ago、in 2020 等明確過去時間。" },
-            { "type": "note", "text": "講「過去的習慣」可用 <k>used to ＋ 原形</k>（I used to smoke，現在不抽了）；別和 <k>be used to ＋ 名詞／V-ing</k>（習慣於某事）搞混。" },
+            { "type": "p", "text": "用法：表達「過去某個時間發生、且已經結束」的動作，常搭配明確的過去時間詞 yesterday、last week／month／year、…ago、in 2020。" },
+            { "type": "examples", "items": [
+              { "en": "She <k>joined</k> the company in 2019.", "zh": "她 2019 年進公司的。" },
+              { "en": "They <k>finished</k> the project two days ago.", "zh": "他們兩天前完成了那個專案。" }
+            ] },
+            { "type": "note", "text": "講「過去的習慣（現在已不這樣）」用 <k>used to ＋ 原形</k>（I used to smoke）；別和 <k>be used to ＋ 名詞／V-ing</k>（習慣於某事，I'm used to the noise）搞混。" },
 
             { "type": "h", "text": "未來簡單式的結構" },
-            { "type": "p", "text": "兩種常見說法：<b>will</b> ＋ <k>原形動詞</k>，或 <b>be going to</b> ＋ <k>原形動詞</k>。" },
+            { "type": "p", "text": "兩種常見說法：<b>will</b> ＋ <k>原形動詞</k>，或 <b>be going to</b> ＋ <k>原形動詞</k>。否定分別是 won't 和 be not going to。" },
             { "type": "examples", "items": [
               { "en": "I <b>will</b> <k>call</k> you when I arrive.", "zh": "我到了會打給你。" },
-              { "en": "It <b>is going to</b> <k>rain</k>. Look at those clouds.", "zh": "要下雨了，你看那些雲。" }
+              { "en": "It <b>is going to</b> <k>rain</k>. Look at those clouds.", "zh": "要下雨了，你看那些雲。" },
+              { "en": "We <b>won't</b> <k>finish</k> on time at this rate.", "zh": "照這個速度我們不會準時完成。" }
             ] },
-            { "type": "note", "text": "<b>will</b> 多用於「說話當下才決定」或單純預測；<b>be going to</b> 多用於「已有的打算」或「有明顯徵兆」。" },
+            { "type": "note", "text": "<b>will</b> 多用於「說話當下才決定」、承諾、提議或單純預測；<b>be going to</b> 多用於「早就有的打算」或「眼前有明顯徵兆」。" },
+
+            { "type": "h", "text": "常見錯誤" },
+            { "type": "p", "text": "錯誤一：will 之類的助動詞後面直接接原形，別多一個 to（will to go ✗、will go ✓）。錯誤二：把 used to（過去習慣）和 be used to（習慣於）搞混。" },
+            { "type": "examples", "items": [
+              { "en": "He <k>used to</k> <k>work</k> here.", "zh": "他以前在這裡工作。", "note": "used to ＋ 原形＝過去習慣" },
+              { "en": "She <k>is used to</k> <k>working</k> under pressure.", "zh": "她習慣在壓力下工作。", "note": "be used to ＋ V-ing＝習慣於某事" }
+            ] },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
               { "en": "The manager ______ the contract two days ago.", "zh": "經理兩天前 ______ 那份合約。" }
             ] },
             { "type": "list", "items": ["(A) signs", "(B) will sign", "(C) signed", "(D) has signed"] },
-            { "type": "note", "text": "答案：<k>(C) signed</k>。two days ago 是明確的過去時間，用過去簡單式（動詞過去式）。" }
+            { "type": "note", "text": "答案：<k>(C) signed</k>。two days ago 是明確的過去時間，用過去簡單式（動詞過去式）。" },
+            { "type": "examples", "items": [
+              { "en": "The board ______ the new budget at next week's meeting.", "zh": "董事會 ______ 在下週的會議上通過新預算。" }
+            ] },
+            { "type": "list", "items": ["(A) approved", "(B) will approve", "(C) has approved", "(D) approving"] },
+            { "type": "note", "text": "答案：<k>(B) will approve</k>。next week's meeting 是未來、尚未發生的事，用未來簡單式 will ＋ 原形動詞。" }
           ]
         }
       },
@@ -222,29 +262,49 @@
         "desc": "進行式不只表達「正在發生」？和簡單式有什麼不同？",
         "content": {
           "blocks": [
-            { "type": "p", "text": "進行式表達「正在進行中」的動作。把時間點放到過去，就是過去進行式；放到未來，就是未來進行式。" },
+            { "type": "p", "text": "進行式表達「在某個時間點正在進行中」的動作，強調「過程」而非結果。把這個時間點放到過去，就是過去進行式；放到未來，就是未來進行式。" },
+            { "type": "diagram", "svg": "<svg viewBox='0 0 600 125' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='108' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='70' y='44' width='150' height='30' rx='4' fill='#ff5555'/><text x='145' y='64' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>過去進行式</text><rect x='390' y='44' width='150' height='30' rx='4' fill='#4da3ff'/><text x='465' y='64' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>未來進行式</text><line x1='40' y1='98' x2='300' y2='98' stroke='#888' stroke-width='2'/><line x1='300' y1='98' x2='558' y2='98' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,98 550,92 550,104' fill='#888'/></svg>" },
 
             { "type": "h", "text": "過去進行式的結構" },
-            { "type": "p", "text": "結構是 <b>was／were</b> ＋ <k>V-ing</k>。" },
+            { "type": "p", "text": "結構是 <b>was／were</b> ＋ <k>V-ing</k>。主詞 I／he／she／it 用 was，you／we／they 用 were；否定加 not（wasn't／weren't）。" },
             { "type": "examples", "items": [
-              { "en": "I <b>was</b> <k>cooking</k> when the phone rang.", "zh": "電話響的時候，我正在煮飯。" }
+              { "en": "I <b>was</b> <k>cooking</k> when the phone rang.", "zh": "電話響的時候，我正在煮飯。" },
+              { "en": "They <b>were</b> <k>discussing</k> the budget all morning.", "zh": "他們整個早上都在討論預算。" }
             ] },
-            { "type": "p", "text": "用法：表達「過去某個時間點正在進行的動作」，常當作另一件短暫事件發生時的背景，用 when／while 連接。" },
-            { "type": "note", "text": "when ＋ 過去簡單式（短暫、打斷的動作）；while ＋ 過去進行式（當背景、持續中的動作）。" },
+            { "type": "p", "text": "用法一：表達「過去某個時間點正在進行的動作」，常當作另一件短暫事件發生時的背景，用 when／while 連接。" },
+            { "type": "note", "text": "口訣：<k>when ＋ 過去簡單式</k>（短暫、突然打斷的動作）；<k>while ＋ 過去進行式</k>（當背景、持續中的動作）。When the phone rang（打斷），I was cooking（背景）。" },
+            { "type": "p", "text": "用法二：兩個動作在過去「同時進行」，兩邊都用過去進行式，常用 while 連接。" },
+            { "type": "examples", "items": [
+              { "en": "While I <b>was</b> <k>writing</k> the report, she <b>was</b> <k>preparing</k> the slides.", "zh": "我在寫報告的時候，她在準備投影片。" }
+            ] },
 
             { "type": "h", "text": "未來進行式的結構" },
             { "type": "p", "text": "結構是 <b>will be</b> ＋ <k>V-ing</k>。" },
             { "type": "examples", "items": [
               { "en": "This time tomorrow, I <b>will be</b> <k>flying</k> to Tokyo.", "zh": "明天這個時候，我將在飛往東京的途中。" }
             ] },
-            { "type": "p", "text": "用法：表達「未來某個時間點正在進行的動作」。" },
+            { "type": "p", "text": "用法：表達「未來某個時間點正在進行的動作」，也常用來委婉地探詢對方的既定安排。" },
+            { "type": "examples", "items": [
+              { "en": "<b>Will</b> you <b>be</b> <k>using</k> the meeting room at 3 p.m.?", "zh": "你三點會在用會議室嗎？", "note": "比 Will you use…? 更委婉，探詢對方安排" }
+            ] },
+
+            { "type": "h", "text": "常見錯誤" },
+            { "type": "p", "text": "狀態動詞（know、like、want、have＝擁有、believe）通常不用進行式。表達「當時的狀態」用過去簡單式，不用過去進行式。" },
+            { "type": "examples", "items": [
+              { "en": "I <k>knew</k> the answer.", "zh": "我當時知道答案。", "note": "✗ I was knowing the answer" }
+            ] },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
               { "en": "While the guests ______, the staff prepared the meeting room.", "zh": "賓客們正在 ______ 的時候，工作人員把會議室準備好了。" }
             ] },
             { "type": "list", "items": ["(A) arrive", "(B) arrived", "(C) were arriving", "(D) will arrive"] },
-            { "type": "note", "text": "答案：<k>(C) were arriving</k>。While 引導「過去正在進行的背景動作」，用過去進行式 were ＋ V-ing。" }
+            { "type": "note", "text": "答案：<k>(C) were arriving</k>。While 引導「過去正在進行的背景動作」，用過去進行式 were ＋ V-ing。" },
+            { "type": "examples", "items": [
+              { "en": "Don't call me at 8 tonight—I ______ dinner with a client then.", "zh": "今晚八點別打給我，那時我 ______ 和客戶吃晚餐。" }
+            ] },
+            { "type": "list", "items": ["(A) have", "(B) had", "(C) will be having", "(D) was having"] },
+            { "type": "note", "text": "答案：<k>(C) will be having</k>。at 8 tonight 是未來某個時間點正在進行的事，用未來進行式 will be ＋ V-ing。" }
           ]
         }
       },
@@ -308,30 +368,45 @@
         "desc": "學會這個時態，表達「持續進行的動作」更精準～",
         "content": {
           "blocks": [
-            { "type": "p", "text": "完成進行式 ＝ 完成式 ＋ 進行式，重點在「一段時間內一直持續、到某個時間點都還在進行」，強調「持續了多久」。" },
+            { "type": "p", "text": "完成進行式 ＝ 完成式 ＋ 進行式。它的重點在「一段時間內一直持續、到某個基準時間點都還在進行（或剛停下）」，回答的是『持續了多久』。" },
 
             { "type": "h", "text": "結構（三種基準時間）" },
-            { "type": "list", "items": ["現在完成進行式：have／has been ＋ V-ing", "過去完成進行式：had been ＋ V-ing", "未來完成進行式：will have been ＋ V-ing"] },
+            { "type": "p", "text": "三種完成進行式差在 be 的形態，動詞一律用 <k>been ＋ V-ing</k>：" },
+            { "type": "list", "items": ["現在完成進行式：have／has been ＋ V-ing（到現在為止一直…）", "過去完成進行式：had been ＋ V-ing（到過去某點為止一直…）", "未來完成進行式：will have been ＋ V-ing（到未來某點為止將已持續…）"] },
             { "type": "examples", "items": [
               { "en": "I <b>have been</b> <k>waiting</k> for an hour.", "zh": "我已經等了一個小時（而且還在等）。" },
+              { "en": "She was tired because she <b>had been</b> <k>working</k> all night.", "zh": "她很累，因為她整晚都在工作。" },
               { "en": "By 6 p.m., they <b>will have been</b> <k>working</k> for ten hours.", "zh": "到下午六點，他們就已經連續工作十小時了。" }
             ] },
             { "type": "diagram", "svg": "<svg viewBox='0 0 600 125' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='108' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='44' width='224' height='30' rx='4' fill='#4da3ff'/><polygon points='300,59 284,49 284,69' fill='#4da3ff'/><text x='168' y='64' fill='#111' font-size='13' font-weight='700' text-anchor='middle'>完成進行式（持續中）</text><line x1='40' y1='98' x2='300' y2='98' stroke='#888' stroke-width='2'/><line x1='300' y1='98' x2='558' y2='98' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,98 550,92 550,104' fill='#888'/></svg>" },
 
             { "type": "h", "text": "使用時機" },
-            { "type": "p", "text": "和「完成式」的差別：完成式看「結果／完成的量」，完成進行式看「持續的過程」。" },
+            { "type": "p", "text": "用法一：強調「動作持續的過程與時間長度」，常搭配 for ＋ 一段時間、since、all day／morning、how long。" },
+            { "type": "examples", "items": [
+              { "en": "How long <b>have</b> you <b>been</b> <k>learning</k> English?", "zh": "你學英文多久了？" }
+            ] },
+            { "type": "p", "text": "用法二：用「一直在進行的過程」來解釋「現在看得到的結果」。" },
+            { "type": "examples", "items": [
+              { "en": "Your eyes are red. <b>Have</b> you <b>been</b> <k>crying</k>?", "zh": "你眼睛紅紅的，你剛剛在哭嗎？", "note": "由眼睛紅（結果）推測一直在哭（過程）" }
+            ] },
+            { "type": "p", "text": "和「完成式」的差別：完成式看『結果／完成的量』，完成進行式看『持續的過程』。" },
             { "type": "examples", "items": [
               { "en": "I <b>have</b> <k>written</k> three reports.", "zh": "我（已）寫了三份報告。", "note": "看結果／數量 → 用完成式" },
               { "en": "I <b>have been</b> <k>writing</k> reports all morning.", "zh": "我整個早上都在寫報告。", "note": "看持續過程 → 用完成進行式" }
             ] },
-            { "type": "note", "text": "常搭配 for ＋ 一段時間、all day、how long。表狀態的動詞（know、like）一般不用這個時態。" },
+            { "type": "note", "text": "表狀態的動詞（know、like、own）一般不用進行式，也就不用完成進行式；「認識多久」用現在完成式 I've known him for years，不說 been knowing。" },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
               { "en": "She ______ Spanish for three years, and she still practices every day.", "zh": "她學西班牙文已經三年了，現在每天都還在練。" }
             ] },
             { "type": "list", "items": ["(A) learns", "(B) learned", "(C) has been learning", "(D) will learn"] },
-            { "type": "note", "text": "答案：<k>(C) has been learning</k>。for three years ＋ 到現在還持續，強調「一直在學」→ 現在完成進行式 has been ＋ V-ing。" }
+            { "type": "note", "text": "答案：<k>(C) has been learning</k>。for three years ＋ 到現在還持續，強調「一直在學」→ 現在完成進行式 has been ＋ V-ing。" },
+            { "type": "examples", "items": [
+              { "en": "By next month, I ______ at this company for exactly five years.", "zh": "到下個月，我在這家公司就正好滿五年了。" }
+            ] },
+            { "type": "list", "items": ["(A) work", "(B) have worked", "(C) will have been working", "(D) had worked"] },
+            { "type": "note", "text": "答案：<k>(C) will have been working</k>。By next month 是未來的基準點，強調到那時「持續滿五年」→ 未來完成進行式 will have been ＋ V-ing。" }
           ]
         }
       },
@@ -343,25 +418,36 @@
             { "type": "p", "text": "這兩個時態都在講「過去發生的事」，但視角不同，多益很愛考。關鍵是：句中「有沒有明確的過去時間」，以及「跟現在有沒有連結」。" },
             { "type": "diagram", "svg": "<svg viewBox='0 0 600 145' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='120' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='40' width='240' height='28' rx='4' fill='#ffaa00'/><text x='180' y='59' fill='#111' font-size='13' font-weight='700' text-anchor='middle'>現在完成式（連到現在）</text><circle cx='150' cy='118' r='7' fill='#ff5555'/><text x='150' y='103' fill='#ff5555' font-size='13' font-weight='700' text-anchor='middle'>過去簡單式</text><line x1='40' y1='118' x2='300' y2='118' stroke='#888' stroke-width='2'/><line x1='300' y1='118' x2='558' y2='118' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,118 550,112 550,124' fill='#888'/></svg>" },
 
-            { "type": "h", "text": "過去簡單式：明確的過去、與現在無關" },
-            { "type": "p", "text": "有明確過去時間詞（yesterday、last week、…ago、in 2019）時用過去簡單式，只是單純陳述那件過去的事。" },
+            { "type": "h", "text": "過去簡單式：明確的過去、與現在切斷" },
+            { "type": "p", "text": "有明確過去時間詞（yesterday、last week、…ago、in 2019）時用過去簡單式，只是單純陳述那件已經結束、和現在沒有連結的過去事件。" },
             { "type": "examples", "items": [
-              { "en": "I <k>ate</k> sushi <b>yesterday</b>.", "zh": "我昨天吃了壽司。", "note": "yesterday 是明確過去時間" }
+              { "en": "I <k>ate</k> sushi <b>yesterday</b>.", "zh": "我昨天吃了壽司。", "note": "yesterday 是明確過去時間" },
+              { "en": "We <k>signed</k> the deal <b>last Friday</b>.", "zh": "我們上週五簽了那筆生意。" }
             ] },
 
             { "type": "h", "text": "現在完成式：不指明時間、連到現在" },
-            { "type": "p", "text": "沒有明確過去時間、而是強調「經驗」或「對現在的影響」時，用現在完成式，常搭配 ever、never、already、just、yet。" },
+            { "type": "p", "text": "沒有明確過去時間、而是強調「人生經驗」或「對現在的影響／結果」時，用現在完成式，常搭配 ever、never、already、just、yet、for、since。" },
             { "type": "examples", "items": [
-              { "en": "I <b>have</b> <k>eaten</k> sushi before.", "zh": "我（以前）吃過壽司。", "note": "經驗，沒說何時" }
+              { "en": "I <b>have</b> <k>eaten</k> sushi before.", "zh": "我（以前）吃過壽司。", "note": "經驗，沒說何時" },
+              { "en": "I <b>have</b> <k>lost</k> my keys.", "zh": "我把鑰匙弄丟了。", "note": "影響到現在：現在進不了門" }
             ] },
             { "type": "note", "text": "判斷法：出現 ago／last／in＋年份／yesterday → 過去簡單式；出現 ever／never／already／yet／just／for／since 且沒明確時間 → 現在完成式。" },
+            { "type": "p", "text": "同一個動作，兩種時態常一起出現：先用現在完成式「開話題」，再用過去簡單式「補細節」。" },
+            { "type": "examples", "items": [
+              { "en": "I<b>'ve</b> <k>been</k> to Japan. I <k>went</k> there in 2018.", "zh": "我去過日本，我 2018 年去的。", "note": "先講經驗（完成式），再補時間（過去式）" }
+            ] },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
               { "en": "— Where's your report?  — I ______ it to you an hour ago.", "zh": "——你的報告呢？ ——我一小時前就 ______ 給你了。" }
             ] },
             { "type": "list", "items": ["(A) send", "(B) sent", "(C) have sent", "(D) had sent"] },
-            { "type": "note", "text": "答案：<k>(B) sent</k>。an hour ago 是明確的過去時間，用過去簡單式 sent。" }
+            { "type": "note", "text": "答案：<k>(B) sent</k>。an hour ago 是明確的過去時間，用過去簡單式 sent。" },
+            { "type": "examples", "items": [
+              { "en": "Our sales ______ significantly since the new campaign launched.", "zh": "自從新的行銷活動上線後，我們的業績 ______ 顯著成長。" }
+            ] },
+            { "type": "list", "items": ["(A) increased", "(B) have increased", "(C) increase", "(D) will increase"] },
+            { "type": "note", "text": "答案：<k>(B) have increased</k>。since ＋「從過去持續影響到現在」、沒有明確結束時間，用現在完成式 have ＋ p.p.。" }
           ]
         }
       },
@@ -374,19 +460,31 @@
             { "type": "diagram", "svg": "<svg viewBox='0 0 600 145' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='120' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><text x='110' y='58' fill='#ff5555' font-size='12' font-weight='700' text-anchor='middle'>①先</text><circle cx='110' cy='118' r='7' fill='#ff5555'/><text x='110' y='103' fill='#ff5555' font-size='13' font-weight='700' text-anchor='middle'>過去完成式</text><text x='235' y='58' fill='#ffaa00' font-size='12' font-weight='700' text-anchor='middle'>②後</text><circle cx='235' cy='118' r='7' fill='#ffaa00'/><text x='235' y='103' fill='#ffaa00' font-size='13' font-weight='700' text-anchor='middle'>過去簡單式</text><line x1='40' y1='118' x2='300' y2='118' stroke='#888' stroke-width='2'/><line x1='300' y1='118' x2='558' y2='118' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,118 550,112 550,124' fill='#888'/></svg>" },
 
             { "type": "h", "text": "概念" },
-            { "type": "p", "text": "過去完成式 <b>had</b> ＋ <k>p.p.</k> 表示「更早的那件事（過去的過去）」；過去簡單式表示「較晚發生的那件事」。" },
+            { "type": "p", "text": "過去完成式 <b>had</b> ＋ <k>p.p.</k> 表示「更早的那件事（過去的過去）」；過去簡單式表示「較晚發生的那件事」。had 不分人稱，主詞是誰都用 had。" },
             { "type": "examples", "items": [
               { "en": "When we <k>arrived</k>, the movie <b>had</b> already <k>started</k>.", "zh": "我們到的時候，電影已經開始了。", "note": "had started 較早、arrived 較晚" },
               { "en": "She <b>had</b> <k>left</k> before I <k>called</k>.", "zh": "我打電話之前，她已經離開了。" }
             ] },
-            { "type": "note", "text": "看到 by the time…、before…、after… 連接兩個過去動作，「先完成」的那個常用 had ＋ p.p.。" },
+            { "type": "note", "text": "看到 by the time…、before…、after…、when… 連接兩個過去動作，「先完成」的那個常用 had ＋ p.p.。" },
+
+            { "type": "h", "text": "什麼時候「不需要」過去完成式" },
+            { "type": "p", "text": "若兩個動作是「照順序、接連發生」，而且已用 and、then、after、before 等把先後講清楚了，通常兩個都用過去簡單式即可，不必刻意用過去完成式。" },
+            { "type": "examples", "items": [
+              { "en": "I <k>got</k> up and <k>brushed</k> my teeth.", "zh": "我起床然後刷牙。", "note": "順序已清楚，兩個都用過去式" }
+            ] },
+            { "type": "note", "text": "過去完成式是為了「凸顯某件事更早發生、且與後面那件事有關」；單純流水帳式的先後不用它。" },
 
             { "type": "h", "text": "小試身手" },
             { "type": "examples", "items": [
               { "en": "By the time the firefighters arrived, the fire ______ the whole building.", "zh": "消防員趕到時，大火 ______ 整棟大樓。" }
             ] },
             { "type": "list", "items": ["(A) destroys", "(B) destroyed", "(C) had destroyed", "(D) will destroy"] },
-            { "type": "note", "text": "答案：<k>(C) had destroyed</k>。「燒毀」發生在「消防員趕到」這個過去時間點之前，用過去完成式 had ＋ p.p.。" }
+            { "type": "note", "text": "答案：<k>(C) had destroyed</k>。「燒毀」發生在「消防員趕到」這個過去時間點之前，用過去完成式 had ＋ p.p.。" },
+            { "type": "examples", "items": [
+              { "en": "When I opened the email, I realized the client ______ the meeting to Monday.", "zh": "我打開信才發現，客戶已經把會議 ______ 到星期一了。" }
+            ] },
+            { "type": "list", "items": ["(A) moves", "(B) moved", "(C) had moved", "(D) has moved"] },
+            { "type": "note", "text": "答案：<k>(C) had moved</k>。「改期」發生在「我打開信」這個過去動作之前，是過去的過去，用過去完成式 had ＋ p.p.。" }
           ]
         }
       }
