@@ -2,8 +2,14 @@ https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%
 
 
 https://jsbin.com/tamuzur/edit?html,css,output
+
+
+
 //託管
 https://dash.cloudflare.com/f409b6c75ac2823d45e39b64aee8d607/workers/services/edit/toeic-tts/production
+
+//語音api
+https://console.cloud.google.com/billing/0122D6-3B8F48-3AB313?project=my-toeic-app-492606
 
 //網頁連結
 https://jzx0930.github.io/TOEIC/
