@@ -97,10 +97,25 @@ export default {
       });
       const data = await gRes.json();
 
-      // 只回傳前端需要的 audioContent
-      return json({ audioContent: data.audioContent || null }, gRes.ok ? 200 : 502, cors);
+      // Google 回錯時：記到 log 並把原因透給前端，方便除錯
+      if (!gRes.ok) {
+        console.error("Google TTS error:", gRes.status, JSON.stringify(data));
+        return json(
+          {
+            audioContent: null,
+            googleStatus: gRes.status,
+            googleError: (data && data.error) ? data.error : data,
+          },
+          502,
+          cors
+        );
+      }
+
+      // 成功：只回傳前端需要的 audioContent
+      return json({ audioContent: data.audioContent || null }, 200, cors);
     } catch (err) {
-      return json({ error: "google_request_failed" }, 502, cors);
+      console.error("google_request_failed:", err && err.message);
+      return json({ error: "google_request_failed", detail: err && err.message }, 502, cors);
     }
   },
 };
