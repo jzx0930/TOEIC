@@ -1396,10 +1396,15 @@ h3 {
 }
 
 /* 選項 hover（尚未判定對錯時）：右移 + 綠光，提示可點 */
-.option-btn:hover:not(.option-correct):not(.option-wrong) {
-  background: rgba(68, 68, 68, 0.9);
-  transform: translateX(8px);
-  box-shadow: 0 4px 12px rgba(0, 255, 153, 0.3);
+/* 只在「真的有滑鼠 hover」的裝置（桌機）才套用位移效果；
+   觸控裝置的 :hover 會「黏著」在剛點過的位置，導致下一題同位置的按鈕被
+   套上 translateX 而歪掉，故用 @media (hover: hover) 排除手機/平板。 */
+@media (hover: hover) and (pointer: fine) {
+  .option-btn:hover:not(.option-correct):not(.option-wrong) {
+    background: rgba(68, 68, 68, 0.9);
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(0, 255, 153, 0.3);
+  }
 }
 
 .option-btn:active:not(.option-correct):not(.option-wrong) {
