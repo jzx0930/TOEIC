@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=34"><!-- 外部樣式表（?v=34 為破快取版本號） -->
-<script defer src="index.js?v=34"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=35"><!-- 外部樣式表（?v=35 為破快取版本號） -->
+<script defer src="index.js?v=35"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -468,6 +468,8 @@ async function loadWordsFromFile(fileName) {
     <div class="main-text">${word}</div>
     <div class="sub-text" style="color: #00ff99; font-family: Arial; margin-bottom: 4px;">${kk}</div>
 
+    <div class="sub-text translation">${translation}</div>
+
     <!-- 四顆發音按鈕：英式/美式單次發音、英式/美式循環發音 -->
     <div class="button-group">
         <button class="speak-button" onclick="speakWord('${safeWord}','en-GB')">🇬🇧 英式</button>
@@ -475,8 +477,6 @@ async function loadWordsFromFile(fileName) {
         <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-GB')">🔁 英式</button>
         <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式</button>
     </div>
-
-    <div class="sub-text translation">${translation}</div>
     ${noteContentHtml}
 `;
       row.appendChild(card); // 把卡片加入內容列
