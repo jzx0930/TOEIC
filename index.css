@@ -948,15 +948,13 @@ h3 {
   font-style: italic;
 }
 
-/* 中文翻譯：白字、正體，上方加一條虛線分隔，與單字區隔開 */
+/* 中文翻譯：白字、正體，位於虛線之上（虛線改標在發音按鈕區上方） */
 .sub-text.translation {
   color: var(--text-white);
   font-size: 1em;
   font-style: normal;
   margin-top: 12px;
   margin-left: 0;
-  padding-top: 8px;
-  border-top: 1px dashed var(--border-dark);
   transition: all var(--transition-speed);
 }
 
@@ -968,9 +966,11 @@ h3 {
 }
 
 /* ==================== 發音按鈕區域 ==================== */
-/* 四顆發音鈕的容器：橫向、可換行 */
+/* 四顆發音鈕的容器：橫向、可換行；上方加一條虛線與中文區隔開 */
 .button-group {
   margin: 14px 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-dark);
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
