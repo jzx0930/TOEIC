@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=38"><!-- 外部樣式表（?v=38 為破快取版本號） -->
-<script defer src="index.js?v=38"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=39"><!-- 外部樣式表（?v=39 為破快取版本號） -->
+<script defer src="index.js?v=39"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -41,9 +41,10 @@
 
  <!-- <a href="index.html" class="back-button">🏠 返回主頁</a> --><!-- （保留）返回主頁按鈕，目前停用 -->
 
-  <!-- 分頁列：單字 / 文法 -->
+  <!-- 分頁列：單字 / 發音 / 文法 -->
   <div class="tab-bar">
     <button class="tab-btn active" data-tab="vocab" onclick="switchTab('vocab')">📘 單字</button>
+    <button class="tab-btn" data-tab="pronounce" onclick="switchTab('pronounce')">🗣️ 發音</button>
     <button class="tab-btn" data-tab="grammar" onclick="switchTab('grammar')">📖 文法</button>
   </div>
 
@@ -168,6 +169,13 @@
   <!-- 所有單字卡（依各 JSON/TXT 檔分成多個可折疊區塊）會被 JS 動態塞進這裡 -->
   <div id="word-container"></div>
   </div><!-- /#tab-vocab 單字分頁 -->
+
+  <!-- ========================= 發音分頁 ========================= -->
+  <div id="tab-pronounce" class="tab-panel">
+    <h2>🗣️ 發音拆解</h2>
+    <!-- 每個單字的音節拆解由 JS 依 Pronunciation/pronunciation.json 動態產生 -->
+    <div id="pronounce-container">正在載入發音…</div>
+  </div>
 
   <!-- ========================= 文法分頁 ========================= -->
   <div id="tab-grammar" class="tab-panel">
@@ -667,6 +675,79 @@ function switchTab(tab) {
     });
     // 第一次切到「文法」時才載入文法資料（延遲載入，省一次不必要的抓取）
     if (tab === "grammar") initGrammar();
+    // 第一次切到「發音」時才載入發音拆解資料
+    if (tab === "pronounce") initPronounce();
+}
+
+// ========================= 發音分頁：載入與渲染 =========================
+let pronounceLoaded = false; // 是否已載入過發音資料
+async function initPronounce() {
+    if (pronounceLoaded) return; // 只載入一次
+    pronounceLoaded = true;
+    const box = document.getElementById("pronounce-container");
+    try {
+        // 加時間戳避免快取舊的 pronunciation.json（新增單字後才立刻看得到）
+        const res = await fetch("Pronunciation/pronunciation.json?t=" + Date.now());
+        if (!res.ok) throw new Error("無法讀取 Pronunciation/pronunciation.json");
+        const data = await res.json();
+        renderPronounce(data);
+    } catch (err) {
+        pronounceLoaded = false; // 失敗允許之後重試
+        console.error(err);
+        box.innerHTML = `<p style="color:red">發音載入失敗：${err.message}</p>`;
+    }
+}
+
+// 把發音資料渲染成一張張「音節拆解卡」
+function renderPronounce(data) {
+    const box = document.getElementById("pronounce-container");
+    const words = (data && data.words) ? data.words : [];
+    if (!words.length) {
+        box.innerHTML = `<p style="opacity:.7">還沒有發音拆解，之後問 Claude「某個字怎麼拆分」就會整理進來。</p>`;
+        return;
+    }
+    box.innerHTML = words.map(w => {
+        const sylChips = (w.syllables || []).map(s => {
+            const cls = s.stress === "primary" ? "pr-syl pr-primary"
+                      : s.stress === "secondary" ? "pr-syl pr-secondary"
+                      : "pr-syl";
+            return `<span class="${cls}">${s.text}</span>`;
+        }).join('<span class="pr-dot">·</span>');
+
+        const rows = (w.syllables || []).map(s => {
+            const badge = s.stress === "primary" ? `<span class="pr-tag pr-tag-primary">主重音</span>`
+                        : s.stress === "secondary" ? `<span class="pr-tag pr-tag-secondary">次重音</span>`
+                        : "";
+            return `<tr>
+                <td class="pr-td-syl">${s.text}</td>
+                <td class="pr-td-sound">${s.sound || ""}</td>
+                <td class="pr-td-note">${badge}${s.note ? `<span class="pr-note-text">${s.note}</span>` : ""}</td>
+            </tr>`;
+        }).join("");
+
+        const safeW = (w.word || "").replace(/'/g, "\\'");
+        const readAs = w.readAs ? `<div class="pr-readas">唸起來像：<b>${w.readAs}</b></div>` : "";
+        const tip = w.tip ? `<div class="pr-tip">💡 ${w.tip}</div>` : "";
+
+        return `
+        <div class="pr-card">
+          <div class="pr-head">
+            <div>
+              <span class="pr-word">${w.word || ""}</span>
+              ${w.kk ? `<span class="pr-kk">${w.kk}</span>` : ""}
+              ${(w.syllables && w.syllables.length) ? `<span class="pr-count">${w.syllables.length} 音節</span>` : ""}
+            </div>
+            <div class="pr-speak">
+              <button class="speak-button" onclick="speakWord('${safeW}','en-GB')">🇬🇧 英式</button>
+              <button class="speak-button" onclick="speakWord('${safeW}','en-US')">🇺🇸 美式</button>
+            </div>
+          </div>
+          <div class="pr-chips">${sylChips}</div>
+          <table class="pr-table"><tbody>${rows}</tbody></table>
+          ${readAs}
+          ${tip}
+        </div>`;
+    }).join("");
 }
 
 // ========================= 文法分頁：載入與渲染 =========================

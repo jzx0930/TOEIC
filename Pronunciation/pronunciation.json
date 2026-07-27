@@ -1,0 +1,16 @@
+{
+  "words": [
+    {
+      "word": "negotiate",
+      "kk": "[nɪˈɡoʃɪˌet]",
+      "syllables": [
+        { "text": "ne", "sound": "/nɪ/", "stress": "none", "note": "" },
+        { "text": "go", "sound": "/ˈɡo/", "stress": "primary", "note": "" },
+        { "text": "ti", "sound": "/ʃɪ/", "stress": "none", "note": "ti 在這裡發 sh 的音" },
+        { "text": "ate", "sound": "/ˌet/", "stress": "secondary", "note": "" }
+      ],
+      "readAs": "ni-GO-shi-eit",
+      "tip": "ti 發 /ʃ/（sh）的音，常見於 -tiate、-tion 結尾（initiate、pronunciation）。重拍落在第二音節 go。"
+    }
+  ]
+}
