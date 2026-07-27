@@ -3,14 +3,67 @@
     {
       "word": "negotiate",
       "kk": "[nɪˈɡoʃɪˌet]",
+      "desc": "動詞「談判、協商」。共 4 個音節，主重音落在第二音節 go，前後音節都唸輕、含糊帶過。",
       "syllables": [
-        { "text": "ne", "sound": "/nɪ/", "stress": "none", "note": "" },
-        { "text": "go", "sound": "/ˈɡo/", "stress": "primary", "note": "" },
-        { "text": "ti", "sound": "/ʃɪ/", "stress": "none", "note": "ti 在這裡發 sh 的音" },
-        { "text": "ate", "sound": "/ˌet/", "stress": "secondary", "note": "" }
+        { "text": "ne", "sound": "/nɪ/", "stress": "none", "note": "唸近似「ni」，輕聲帶過" },
+        { "text": "go", "sound": "/ˈɡo/", "stress": "primary", "note": "主重音，唸「GO」最大聲" },
+        { "text": "ti", "sound": "/ʃɪ/", "stress": "none", "note": "不唸「踢」，發 /ʃ/（sh）＋輕「i」，像「shi」" },
+        { "text": "ate", "sound": "/ˌet/", "stress": "secondary", "note": "次重音，唸「欸特」" }
       ],
       "readAs": "ni-GO-shi-eit",
-      "tip": "ti 發 /ʃ/（sh）的音，常見於 -tiate、-tion 結尾（initiate、pronunciation）。重拍落在第二音節 go。"
+      "tip": "關鍵是 ti 發 /ʃ/（sh），常見於 -tiate、-tion 結尾（initiate、pronunciation）。重拍在 go，前後音節都輕。"
+    },
+    {
+      "word": "proficiency",
+      "kk": "[prəˈfɪʃənsɪ]",
+      "desc": "名詞「熟練、精通」。共 4 個音節，主重音在第二音節 fi，開頭的 pro 唸輕、含糊。",
+      "syllables": [
+        { "text": "pro", "sound": "/prə/", "stress": "none", "note": "唸近似「pruh」，輕、含糊的母音" },
+        { "text": "fi", "sound": "/ˈfɪ/", "stress": "primary", "note": "主重音，和 cien 連起來像「FISH」" },
+        { "text": "cien", "sound": "/ʃən/", "stress": "none", "note": "ci 發 /ʃ/（sh）＋「uhn」，像「shun」" },
+        { "text": "cy", "sound": "/sɪ/", "stress": "none", "note": "唸「see」，c 發 /s/" }
+      ],
+      "readAs": "pruh-FISH-uhn-see",
+      "tip": "ci 發 sh，跟 -cient、-cious 同一類（efficient、delicious）。重拍在 fi（FISH）。"
+    },
+    {
+      "word": "orientation",
+      "kk": "[ˌorɪɛnˈteʃən]",
+      "desc": "名詞「方向、定位、迎新訓練」。共 5 個音節，是長字要抓兩個重音：主重音在第四音節 ta，第一音節 o 有次重音。",
+      "syllables": [
+        { "text": "o", "sound": "/ˌo/", "stress": "secondary", "note": "次重音，唸「or」" },
+        { "text": "ri", "sound": "/rɪ/", "stress": "none", "note": "唸近似「ee」，輕帶" },
+        { "text": "en", "sound": "/ɛn/", "stress": "none", "note": "唸「en」" },
+        { "text": "ta", "sound": "/ˈte/", "stress": "primary", "note": "主重音，唸「TAY」最大聲" },
+        { "text": "tion", "sound": "/ʃən/", "stress": "none", "note": "-tion 發 /ʃən/，像「shun」" }
+      ],
+      "readAs": "or-ee-en-TAY-shun",
+      "tip": "主重音 ta（TAY）、次重音 o。字尾 -tion 一律發 /ʃən/（shun），是多益長單字的常見結尾。"
+    },
+    {
+      "word": "reception",
+      "kk": "[rɪˈsɛpʃən]",
+      "desc": "名詞「接待、接待處、招待會」。共 3 個音節，主重音在第二音節 cep。",
+      "syllables": [
+        { "text": "re", "sound": "/rɪ/", "stress": "none", "note": "唸近似「rih」，輕帶" },
+        { "text": "cep", "sound": "/ˈsɛp/", "stress": "primary", "note": "主重音，唸「SEP」，c 發 /s/" },
+        { "text": "tion", "sound": "/ʃən/", "stress": "none", "note": "-tion 發 /ʃən/，像「shun」" }
+      ],
+      "readAs": "rih-SEP-shun",
+      "tip": "由動詞 receive 變來，c 發 /s/、字尾 -tion 發 shun。重拍在 cep（SEP）。"
+    },
+    {
+      "word": "prioritize",
+      "kk": "[praɪˈɔrəˌtaɪz]",
+      "desc": "動詞「排定優先順序」。共 4 個音節，主重音在第二音節 or，字尾 -tize 帶次重音。",
+      "syllables": [
+        { "text": "pri", "sound": "/praɪ/", "stress": "none", "note": "唸「拍」/praɪ/，不是「prɪ」" },
+        { "text": "or", "sound": "/ˈɔr/", "stress": "primary", "note": "主重音，唸「OR」最大聲" },
+        { "text": "i", "sound": "/ə/", "stress": "none", "note": "輕聲，含糊的「uh」" },
+        { "text": "tize", "sound": "/ˌtaɪz/", "stress": "secondary", "note": "次重音，唸「taɪz」（tie＋z）" }
+      ],
+      "readAs": "pry-OR-uh-tize",
+      "tip": "和 priority 同字根。注意 pri 發 /praɪ/（拍）不是 /prɪ/，主重音在 or。"
     }
   ]
 }

@@ -1818,6 +1818,15 @@ h3 {
   flex-wrap: wrap;
 }
 
+/* 總說明：單字意思與重音概觀 */
+.pr-desc {
+  color: var(--text-white);
+  font-size: 0.95em;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  opacity: 0.92;
+}
+
 /* 音節籤：ne · go · ti · ate */
 .pr-chips {
   display: flex;
