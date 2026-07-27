@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=37"><!-- 外部樣式表（?v=37 為破快取版本號） -->
-<script defer src="index.js?v=37"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=38"><!-- 外部樣式表（?v=38 為破快取版本號） -->
+<script defer src="index.js?v=38"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -300,6 +300,14 @@ async function loadWordsFromFile(fileName) {
   const rightControls = document.createElement("div");
   rightControls.className = "section-right-controls";
 
+  // 分兩列：第一列＝次數＋速度；第二列＝兩顆循環按鈕（與「次數」左緣對齊）
+  const controlsRow1 = document.createElement("div");
+  controlsRow1.className = "section-controls-row";
+  const controlsRow2 = document.createElement("div");
+  controlsRow2.className = "section-controls-row";
+  rightControls.appendChild(controlsRow1);
+  rightControls.appendChild(controlsRow2);
+
   // ---- 重複次數（2 / 3；都不勾＝1 次）：放在速度拖曳桿左邊 ----
   const repeatWrap = document.createElement("div");
   repeatWrap.className = "repeat-control";
@@ -328,7 +336,7 @@ async function loadWordsFromFile(fileName) {
     lbl.appendChild(document.createTextNode(String(n)));
     repeatWrap.appendChild(lbl);
   });
-  rightControls.appendChild(repeatWrap);
+  controlsRow1.appendChild(repeatWrap);
 
   // 速度拖曳桿（只停在 0.1x / 0.5x / 1.0x / 1.5x / 2.0x 這 5 格，預設 1.0x）：同時控制「重複播放」與「循環播放」速度
   const speedWrap = document.createElement("div");
@@ -364,7 +372,7 @@ async function loadWordsFromFile(fileName) {
   speedWrap.appendChild(speedText);
   speedWrap.appendChild(speedSlider);
   speedWrap.appendChild(speedLabel);
-  rightControls.appendChild(speedWrap);
+  controlsRow1.appendChild(speedWrap);
 
   // 「英中循環」按鈕（英文一遍→中文一遍）：放在原循環按鈕左邊
   const loopEnCnBtn = document.createElement("button");
@@ -382,7 +390,7 @@ async function loadWordsFromFile(fileName) {
     e.stopPropagation();
     toggleSectionLoop(sectionTitleText, "en-cn");
   });
-  rightControls.appendChild(loopEnCnBtn);
+  controlsRow2.appendChild(loopEnCnBtn);
 
   // 原「循環播放區塊」按鈕（只唸英文）
   const loopBtn = document.createElement("button");
@@ -400,7 +408,7 @@ async function loadWordsFromFile(fileName) {
     e.stopPropagation(); // 阻止事件冒泡，避免同時觸發標題的「折疊／展開」
     toggleSectionLoop(sectionTitleText, "en");
   });
-  rightControls.appendChild(loopBtn);
+  controlsRow2.appendChild(loopBtn);
 
   // 記錄此區塊的兩個循環按鈕（供啟動/繼續時更新外觀）
   sectionLoopButtons[sectionTitleText] = { "en": loopBtn, "en-cn": loopEnCnBtn };

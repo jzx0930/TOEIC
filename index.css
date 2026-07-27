@@ -1135,9 +1135,17 @@ h3 {
 /* 區塊標題右側控制區：速度拖曳桿 + 循環播放按鈕（橫向排列） */
 .section-right-controls {
   display: flex;
+  flex-direction: column;   /* 兩列：上＝次數＋速度，下＝兩顆循環按鈕 */
+  align-items: flex-start;   /* 兩列一律靠左對齊，讓循環按鈕與「次數」左緣對齊 */
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* 控制列的每一列：橫向排列 */
+.section-controls-row {
+  display: flex;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0;
 }
 
 /* 重複次數控制（文字「次數」+ 2 / 3 兩個核取方塊） */
