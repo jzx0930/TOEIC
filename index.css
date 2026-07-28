@@ -98,6 +98,27 @@ body {
   box-shadow: 0 0 12px rgba(0, 255, 153, 0.5);
 }
 
+/* 手機：三個分頁等分填滿、縮小字級與內距，避免英文字太寬超出畫面 */
+@media (max-width: 600px) {
+  .tab-bar {
+    gap: 6px;
+    padding: 0 4px;
+  }
+  .tab-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 9px 6px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 380px) {
+  .tab-btn {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+}
+
 /* 分頁內容：預設隱藏，只有 .active 的顯示 */
 .tab-panel {
   display: none;
