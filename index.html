@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=45"><!-- 外部樣式表（?v=45 為破快取版本號） -->
-<script defer src="index.js?v=45"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=46"><!-- 外部樣式表（?v=46 為破快取版本號） -->
+<script defer src="index.js?v=46"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -43,9 +43,9 @@
 
   <!-- 分頁列：單字 / 發音 / 文法 -->
   <div class="tab-bar">
-    <button class="tab-btn active" data-tab="vocab" onclick="switchTab('vocab')">📘 單字</button>
-    <button class="tab-btn" data-tab="pronounce" onclick="switchTab('pronounce')">🗣️ 發音</button>
-    <button class="tab-btn" data-tab="grammar" onclick="switchTab('grammar')">📖 文法</button>
+    <button class="tab-btn active" data-tab="vocab" onclick="switchTab('vocab')">Vocabulary</button>
+    <button class="tab-btn" data-tab="pronounce" onclick="switchTab('pronounce')">Pronunciation</button>
+    <button class="tab-btn" data-tab="grammar" onclick="switchTab('grammar')">Grammar</button>
   </div>
 
   <!-- ========================= 單字分頁 ========================= -->
@@ -655,6 +655,33 @@ async function speakWord(word, lang, callback) {
         if (callback) callback(); // 失敗也讓流程繼續，避免抽考卡住
     }
 }
+// playKKSound：用 SSML <phoneme>（IPA）唸出「單一 KK 音素」本身（發音表用）
+// 例：ph="i" → 唸母音 /i/ 的音；子音塞音等以輕 ə 讓它聽得到（見 kk-chart.json 的 ipa）
+async function playKKSound(ipa) {
+    window.speechSynthesis.cancel();
+    if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
+    // ph 會覆蓋內文發音；內文放佔位字即可
+    const ssml = `<speak><phoneme alphabet="ipa" ph="${ipa}">-</phoneme></speak>`;
+    try {
+        const response = await fetch(TTS_PROXY_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ssml, lang: "en-US" })
+        });
+        const data = await response.json();
+        if (data.audioContent) {
+            const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
+            currentAudio = audio;
+            audio.play();
+            audio.onended = () => { if (audio === currentAudio) currentAudio = null; };
+        } else {
+            console.error("KK 音播放失敗：", data);
+        }
+    } catch (error) {
+        console.error("呼叫發音代理失敗：", error);
+    }
+}
+
 /* （已停用的舊版本）改用瀏覽器內建語音合成 SpeechSynthesis：
 function speakWord(word, lang) {
   speechSynthesis.cancel();
@@ -802,20 +829,20 @@ function renderPronounce(data) {
         box.innerHTML = `<p style="color:red">發音表格式有誤。</p>`;
         return;
     }
-    // 產生單一格：符號、例字、播放鈕（唸例字）
+    // 產生單一格：符號、例字（參考）、播放鈕（唸「這個音素本身」）
     const cell = it => {
-        const ex = (it.example || "").replace(/'/g, "\\'");
+        const ipa = (it.ipa || it.symbol || "").replace(/'/g, "\\'");
         return `<div class="kk-cell">
             <span class="kk-symbol">[${it.symbol}]</span>
             <span class="kk-example">${it.example || ""}</span>
-            <button class="kk-play" title="播放發音（例字）" onclick="speakWord('${ex}','en-US')">🔊</button>
+            <button class="kk-play" title="播放這個 KK 音" onclick="playKKSound('${ipa}')">🔊</button>
         </div>`;
     };
     const grid = arr => `<div class="kk-grid">${(arr || []).map(cell).join("")}</div>`;
 
     const v = data.vowels || {};
     box.innerHTML = `
-        <p class="kk-intro">點各音標的 🔊 會唸出對應的英文例字，幫你聽出這個 KK 音的發音。</p>
+        <p class="kk-intro">點各音標的 🔊 會唸出「這個 KK 音」本身；右邊的英文只是例字參考。</p>
 
         <div class="kk-block-title">母音 Vowels</div>
         <div class="kk-sub-label">單母音</div>
@@ -1190,8 +1217,7 @@ function handleAnswer(selectedObj, targetObj, btnElement) {
         });
     }
 
-    // 唸出正解（不等它唸完，加快節奏），並在短暫停頓後直接進下一題
-    speakWord(targetObj.en, 'en-US');
+    // 作答後「不」再唸發音（避免和下一題自動朗讀重疊），短暫停頓後直接進下一題
     quizIndex++;
     setTimeout(nextQuestion, 500); // 停頓 0.5 秒即進下一題
 }

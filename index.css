@@ -1381,13 +1381,14 @@ h3 {
 .main-quiz-area {
   flex: 1.6;
   background: rgba(34, 34, 34, 0.9);
-  padding: 35px;
+  padding: 28px 35px;
   border-radius: 15px;
   text-align: center;
   border: 2px solid var(--bright-green);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start; /* 內容往上排，不再被 space-around 撐開留大空格 */
+  gap: 16px;
   box-shadow: 0 8px 32px rgba(0, 255, 153, 0.2);
 }
 
@@ -1403,7 +1404,7 @@ h3 {
 #quizQuestionCN {
   font-size: 32px;
   color: var(--text-white);
-  margin-bottom: 30px;
+  margin-bottom: 0; /* 間距改由 .main-quiz-area 的 gap 控制，避免過大空格 */
   font-weight: 700;
   line-height: 1.4;
   animation: fadeIn 0.4s ease-out;

@@ -69,8 +69,9 @@ export default {
     }
 
     const text = (body.text || "").toString().slice(0, 500); // 限長，避免濫用
+    const ssml = (body.ssml || "").toString().slice(0, 800);  // 支援 SSML（例如 <phoneme> 唸單一音素）
     const isUS = (body.lang || "en-US").toString().toUpperCase().includes("US");
-    if (!text) {
+    if (!text && !ssml) {
       return json({ error: "no_text" }, 400, cors);
     }
 
@@ -80,7 +81,7 @@ export default {
       env.GOOGLE_API_KEY;
 
     const reqBody = {
-      input: { text },
+      input: ssml ? { ssml } : { text }, // 有 SSML 就用 ssml，否則用純文字
       voice: {
         languageCode: isUS ? "en-US" : "en-GB",
         name: isUS ? "en-US-Standard-C" : "en-GB-Standard-A", // Standard 女聲
