@@ -948,6 +948,34 @@ h3 {
   font-style: italic;
 }
 
+/* 第一行單字後面的 KK 音標：綠色、較小、正體，緊接在單字後 */
+.main-kk {
+  color: #00ff99;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 0.55em;
+  font-weight: 400;
+  vertical-align: middle;
+  margin-left: 6px;
+  opacity: 0.9;
+}
+
+/* 第二行：拆解後的單字 + 拆解後的 KK（以 · 分隔音節） */
+.sub-text.syl-line {
+  margin-left: 1em;
+  margin-bottom: 4px;
+  color: var(--text-white);
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+/* 第二行末尾：拆解後的 KK 音標，綠字 */
+.syl-line .syl-kk {
+  color: #00ff99;
+  font-family: Arial, sans-serif;
+  margin-left: 8px;
+}
+
 /* 中文翻譯：白字、正體，位於虛線之上（虛線改標在發音按鈕區上方） */
 .sub-text.translation {
   color: var(--text-white);

@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=42"><!-- 外部樣式表（?v=42 為破快取版本號） -->
-<script defer src="index.js?v=42"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=43"><!-- 外部樣式表（?v=43 為破快取版本號） -->
+<script defer src="index.js?v=43"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -225,6 +225,76 @@ function setSpeechRateByIndex(idx) {
     speechRate = SPEED_STEPS[idx] ?? 1.0;
     document.querySelectorAll(".speed-slider").forEach(s => { s.value = String(idx); });
     document.querySelectorAll(".speed-value").forEach(l => { l.textContent = speechRate.toFixed(1) + "x"; });
+}
+
+// ========================= 音節自動拆解（可被單字檔的手動欄位覆蓋） =========================
+// 注意：英文拼寫的自動切音節本來就不完全準（尤其相鄰母音、silent-e、不規則字），
+//       之後可在單字 JSON 加 "sylWord" / "sylKK" 欄位（以 · 分隔）手動覆蓋正確拆法。
+
+// KK 音節：以母音核心 + 重音記號（ˈ ˌ）切分
+const KK_VOWELS = ['aɪ','aʊ','ɔɪ','ɝ','ɚ','ɪ','i','e','ɛ','æ','ə','ʌ','u','ʊ','o','ɔ','ɑ','a'];
+function splitKK(kk){
+  if(!kk) return [];
+  const s = kk.replace(/[\[\]\/]/g,'').trim();
+  const toks=[];
+  for(let i=0;i<s.length;){
+    let v=null;
+    for(const vv of KK_VOWELS){ if(s.startsWith(vv,i)){ v=vv; break; } }
+    if(v){ toks.push({t:v,vowel:true}); i+=v.length; }
+    else { toks.push({t:s[i],vowel:false,stress:(s[i]==='ˈ'||s[i]==='ˌ')}); i++; }
+  }
+  const vIdx=[]; toks.forEach((t,i)=>{ if(t.vowel) vIdx.push(i); });
+  if(vIdx.length<=1) return [toks.map(t=>t.t).join('')];
+  const cuts=new Set();
+  for(let k=1;k<vIdx.length;k++){
+    const prevV=vIdx[k-1], curV=vIdx[k], between=curV-prevV-1;
+    let cut;
+    if(between<=0) cut=curV;
+    else if(between===1) cut=curV-1;
+    else cut=prevV+1+Math.floor(between/2);
+    // 重音記號應作為「下一音節的起點」：若兩母音間有重音記號，切點設在它身上
+    for(let j=prevV+1;j<curV;j++){ if(toks[j].stress){ cut=j; break; } }
+    cuts.add(cut);
+  }
+  const parts=[]; let cur='';
+  for(let i=0;i<toks.length;i++){ if(cuts.has(i)&&cur){ parts.push(cur); cur=''; } cur+=toks[i].t; }
+  if(cur) parts.push(cur);
+  return parts;
+}
+
+// 英文拼寫音節：母音群啟發式 + silent-e 處理
+function splitWord(original){
+  if(!original) return [];
+  const w=original.toLowerCase();
+  const isV=ch=>'aeiouy'.indexOf(ch)>=0;
+  const n=w.length, runs=[];
+  for(let i=0;i<n;i++){ const v=isV(w[i]); if(runs.length&&runs[runs.length-1].v===v) runs[runs.length-1].end=i+1; else runs.push({v,start:i,end:i+1}); }
+  const vowelRuns=runs.filter(r=>r.v);
+  const cuts=[];
+  for(let r=0;r<runs.length;r++){
+    if(runs[r].v) continue;
+    const prevV=r>0&&runs[r-1].v, nextV=r<runs.length-1&&runs[r+1].v;
+    if(prevV&&nextV){
+      const nr=runs[r+1];
+      // silent-e：字尾「子音+e」、且非唯一母音 → 不切（併入前一音節）
+      const isFinalSilentE=(nr.end===n)&&(w.slice(nr.start,nr.end)==='e')&&(vowelRuns.length>=2);
+      if(isFinalSilentE) continue;
+      const len=runs[r].end-runs[r].start;
+      cuts.push(len===1 ? runs[r].start : runs[r].start+1);
+    }
+  }
+  cuts.sort((a,b)=>a-b);
+  const parts=[]; let prev=0;
+  for(const c of cuts){ parts.push(original.slice(prev,c)); prev=c; }
+  parts.push(original.slice(prev));
+  return parts.filter(p=>p.length);
+}
+
+// 取得某單字要顯示的「拆解後單字」與「拆解後 KK」；優先用手動欄位
+function getSyllableParts(item){
+  const sylWord = item.sylWord ? item.sylWord : splitWord(item.word || "").join('·');
+  const kkCore  = item.sylKK ? item.sylKK.replace(/[\[\]]/g,'') : splitKK(item.kk || "").join('·');
+  return { sylWord, sylKK: kkCore };
 }
 
 // 🎯 重複次數：每張卡片要唸幾次（都不勾＝1 次；可選 2 或 3）。
@@ -477,6 +547,10 @@ async function loadWordsFromFile(fileName) {
       const noteButtonHtml = hasNote ? `<button class="note-btn" onclick="toggleNote(this)" title="查看筆記">📝</button>` : "";
       const noteContentHtml = hasNote ? `<div class="note-content">${note}</div>` : "";
 
+      // 音節拆解（第二行用）：自動產生，可被單字檔的 sylWord / sylKK 手動覆蓋
+      const { sylWord, sylKK } = getSyllableParts(item);
+      const sylKKDisp = sylKK ? `[${sylKK}]` : ""; // 拆解後 KK 加中括號，與上方 KK 一致
+
   // 用樣板字串組出整張卡片的內部 HTML
   card.innerHTML = `
     ${noteButtonHtml}
@@ -487,8 +561,10 @@ async function loadWordsFromFile(fileName) {
         <button class="toggle-btn toggle-cn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文">中</button>
     </div>
 
-    <div class="main-text">${word}</div>
-    <div class="sub-text" style="color: #00ff99; font-family: Arial; margin-bottom: 4px;">${kk}</div>
+    <!-- 第一行：單字 + KK 音標（KK 放在單字後面） -->
+    <div class="main-text">${word}${kk ? ` <span class="main-kk">${kk}</span>` : ""}</div>
+    <!-- 第二行：依 KK 拆解的單字 + 拆解後的 KK 音標 -->
+    <div class="sub-text syl-line">${sylWord}${sylKKDisp ? ` <span class="syl-kk">${sylKKDisp}</span>` : ""}</div>
 
     <div class="sub-text translation">${translation}</div>
 
