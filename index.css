@@ -1403,10 +1403,35 @@ h3 {
 #quizQuestionCN {
   font-size: 32px;
   color: var(--text-white);
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-weight: 700;
   line-height: 1.4;
   animation: fadeIn 0.4s ease-out;
+}
+
+/* 題目框：預設中性綠邊；作答後整框變綠(對)/紅(錯)當作主要回饋 */
+.quiz-question-box {
+  border: 2px solid rgba(0, 255, 153, 0.35);
+  border-radius: 12px;
+  padding: 22px 20px;
+  background: rgba(0, 0, 0, 0.25);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.quiz-question-box.correct {
+  border-color: var(--bright-green);
+  background: rgba(0, 255, 153, 0.16);
+}
+.quiz-question-box.wrong {
+  border-color: var(--red-error);
+  background: rgba(255, 85, 85, 0.16);
+}
+
+/* 提前結束鈕：放題目框外、主測驗區最上方、靠右 */
+.quiz-exit-top {
+  align-self: flex-end;
+  padding: 6px 14px !important;
+  font-size: 13px !important;
+  margin-bottom: 6px;
 }
 
 /* 選項容器：單欄格線 */
@@ -1589,23 +1614,24 @@ h3 {
   }
 
   .quiz-layout {
-    flex-direction: column;
+    flex-flow: row wrap;   /* 改用可換行的橫向排列 */
     height: auto;
     max-height: 90vh;
   }
 
-  .quiz-sidebar {
-    max-height: 200px;
-    order: 2; /* 側欄移到主測驗區下方 */
+  .main-quiz-area {
+    order: 1;              /* 主測驗區佔滿第一列 */
+    flex: 1 1 100%;
   }
 
-  .main-quiz-area {
-    order: 1; /* 主測驗區排最上面 */
-    flex: 1;
+  .quiz-sidebar {
+    order: 2;              /* 正確清單：第二列左欄 */
+    flex: 1 1 46%;         /* 兩個清單各約一半 → 左右並排 */
+    max-height: 200px;
   }
 
   .quiz-sidebar:last-child {
-    order: 3; /* 錯誤清單排最後 */
+    order: 3;              /* 錯誤清單：第二列右欄 */
   }
 }
 

@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=43"><!-- 外部樣式表（?v=43 為破快取版本號） -->
-<script defer src="index.js?v=43"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=44"><!-- 外部樣式表（?v=44 為破快取版本號） -->
+<script defer src="index.js?v=44"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -94,21 +94,23 @@
 
     <!-- 中間：主測驗區（分數、題目、四個選項、回饋訊息、提前結束鈕） -->
     <div class="main-quiz-area">
-      <div style="margin-bottom: 20px;">
+      <!-- 提前結束：放最上面、題目框之外 -->
+      <button class="exit-btn quiz-exit-top" onclick="closeQuiz()">⏹ 提前結束</button>
+
+      <div style="margin-bottom: 16px;">
         <span style="color:#00ff99;">正確: <span id="quizCorrect">0</span></span> |
         <span style="color:#ff5555;">錯誤: <span id="quizWrong">0</span></span>
         <div id="quizProgress" style="font-size: 12px; color: #888; margin-top: 5px;">進度: 0 / 0</div>
       </div>
 
-      <h3 id="quizQuestionCN" style="font-size: 28px; color:#fff; margin-bottom: 30px;">題目</h3>
+      <!-- 題目框：作答後整框變綠(對)/變紅(錯) 當作對錯回饋 -->
+      <h3 id="quizQuestionCN" class="quiz-question-box">題目</h3>
 
       <!-- 選項按鈕由 JS 動態塞入此格線容器 -->
       <div id="quizOptions" style="display:grid; grid-template-columns:1fr; gap:12px;"></div>
 
-      <!-- 作答後顯示 Correct/Wrong 的回饋訊息 -->
-      <p id="quizFeedback" style="margin-top:20px; font-weight:bold; height:24px;"></p>
-
-      <button class="exit-btn" onclick="closeQuiz()">提前結束測驗</button>
+      <!-- 回饋改用題目框變色，此列留作備用（答錯時顯示正解） -->
+      <p id="quizFeedback" style="margin-top:12px; font-weight:bold; height:20px;"></p>
     </div>
 
     <!-- 右側：答錯的單字會即時加進來 -->
@@ -270,7 +272,7 @@ function splitWord(original){
   const n=w.length, runs=[];
   for(let i=0;i<n;i++){ const v=isV(w[i]); if(runs.length&&runs[runs.length-1].v===v) runs[runs.length-1].end=i+1; else runs.push({v,start:i,end:i+1}); }
   const vowelRuns=runs.filter(r=>r.v);
-  const cuts=[];
+  let cuts=[];
   for(let r=0;r<runs.length;r++){
     if(runs[r].v) continue;
     const prevV=r>0&&runs[r-1].v, nextV=r<runs.length-1&&runs[r+1].v;
@@ -283,9 +285,18 @@ function splitWord(original){
       cuts.push(len===1 ? runs[r].start : runs[r].start+1);
     }
   }
-  cuts.sort((a,b)=>a-b);
+  // digraph 保護：不要把 sh/ch/th/ph/wh/gh/ck/ng/dg/tch 這些雙字母切開
+  const DIGRAPHS=new Set(['sh','ch','th','ph','wh','gh','ck','ng','dg','tch']);
+  cuts=cuts.map(c=>{
+    let cut=c;
+    for(let g=0; g<3 && cut>0; g++){
+      if(DIGRAPHS.has(w.slice(cut-1,cut+1)) || DIGRAPHS.has(w.slice(cut-1,cut+2))) cut--; else break;
+    }
+    return cut;
+  });
+  cuts=[...new Set(cuts)].filter(c=>c>0&&c<n).sort((a,b)=>a-b);
   const parts=[]; let prev=0;
-  for(const c of cuts){ parts.push(original.slice(prev,c)); prev=c; }
+  for(const c of cuts){ if(c>prev){ parts.push(original.slice(prev,c)); prev=c; } }
   parts.push(original.slice(prev));
   return parts.filter(p=>p.length);
 }
@@ -612,9 +623,11 @@ const TTS_PROXY_URL = "https://toeic-tts.fuli62.workers.dev";
 
 // speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
 // 參數：word=要唸的字、lang=語系(en-GB/en-US)、callback=播放結束後要執行的函式
+let currentAudio = null; // 目前正在播放的 Google 語音（用來在下一次發音前先停掉，避免重疊）
 async function speakWord(word, lang, callback) {
     // 先停掉目前正在播放的任何聲音，避免重疊
     window.speechSynthesis.cancel();
+    if (currentAudio) { try { currentAudio.pause(); } catch(e){} currentAudio = null; }
 
     try {
         // 呼叫你的 Cloudflare Worker 代理（金鑰在 Worker 那端，前端看不到）
@@ -629,9 +642,10 @@ async function speakWord(word, lang, callback) {
         if (data.audioContent) {
             // 代理回傳 Base64 的 MP3，轉成可播放的音訊並播放
             const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
+            currentAudio = audio;
             audio.play();
             // 播放結束後執行 callback（例如抽考時自動跳下一題）
-            audio.onended = () => { if (callback) callback(); };
+            audio.onended = () => { if (audio === currentAudio) currentAudio = null; if (callback) callback(); };
         } else {
             console.error("代理沒回傳音訊內容：", data);
             if (callback) callback();
@@ -1106,6 +1120,8 @@ function nextQuestion() {
 
     isAnswering = false; // 解除作答鎖
     document.getElementById("quizFeedback").textContent = "";
+    // 清掉上一題題目框的綠/紅回饋色
+    document.getElementById("quizQuestionCN").classList.remove("correct", "wrong");
     document.getElementById("quizProgress").textContent = `進度: ${quizIndex + 1} / ${currentQuizList.length}`;
 
     const optionsBox = document.getElementById("quizOptions");
@@ -1160,25 +1176,26 @@ function handleAnswer(selectedObj, targetObj, btnElement) {
     isAnswering = true;
 
     const isCorrect = selectedObj.en === targetObj.en; // 以英文為準判斷對錯
+    const qBox = document.getElementById("quizQuestionCN"); // 題目框（用它變色回饋）
+    const feedback = document.getElementById("quizFeedback");
 
     if(isCorrect) {
-        // 答對：加分、按鈕標綠、顯示回饋、加入左側正確清單
+        // 答對：加分、按鈕標綠、題目框變綠、加入左側正確清單
         correctCount++;
         document.getElementById("quizCorrect").textContent = correctCount;
         btnElement.classList.add("option-correct");
-        document.getElementById("quizFeedback").style.color = "#00ff99";
-        document.getElementById("quizFeedback").textContent = "Correct! ✓";
+        qBox.classList.add("correct");   // ← 主要回饋：題目框變綠
+        feedback.textContent = "";
         updateSideList("correctList", targetObj, "correct");
     } else {
-        // 答錯：加錯誤數、按鈕標紅、顯示正確答案、加入右側錯誤清單
+        // 答錯：加錯誤數、按鈕標紅、題目框變紅、加入右側錯誤清單
         wrongCount++;
         document.getElementById("quizWrong").textContent = wrongCount;
         btnElement.classList.add("option-wrong");
-        document.getElementById("quizFeedback").style.color = "#ff5555";
+        qBox.classList.add("wrong");     // ← 主要回饋：題目框變紅
+        feedback.textContent = "";
 
         const correctText = (currentQuizType === "cn-en") ? targetObj.en : targetObj.cn;
-        document.getElementById("quizFeedback").textContent = `Wrong! 正確答案是: ${correctText}`;
-
         updateSideList("wrongList", targetObj, "wrong");
 
         // 記錄答錯的單字（供測驗結束時匯出）；以英文去重，避免同一字重複多筆
@@ -1186,18 +1203,16 @@ function handleAnswer(selectedObj, targetObj, btnElement) {
             wrongWords.push({ en: targetObj.en, cn: targetObj.cn });
         }
 
-        // 同時把正確的那個選項也標綠，讓使用者看到答案
+        // 把正確的那個選項標綠，讓使用者看到答案
         Array.from(document.querySelectorAll(".option-btn")).forEach(b => {
             if(b.textContent === correctText) b.classList.add("option-correct");
         });
     }
 
-    // --- 關鍵：作答後用高品質發音唸出正解，唸完才跳下一題 ---
-    // 透過 callback 確保「先聽完發音，再進入下一題」
-    speakWord(targetObj.en, 'en-US', () => {
-        quizIndex++;
-        setTimeout(nextQuestion, 800); // 停頓 0.8 秒再出下一題
-    });
+    // 唸出正解（不等它唸完，加快節奏），並在短暫停頓後直接進下一題
+    speakWord(targetObj.en, 'en-US');
+    quizIndex++;
+    setTimeout(nextQuestion, 500); // 停頓 0.5 秒即進下一題
 }
 
 // updateSideList：把單字加入左（正確）或右（錯誤）側清單，最新的排最上面
@@ -1228,7 +1243,9 @@ function finishQuiz() {
         ? `<button class="search-button" style="margin-top:10px;" onclick="saveWrongWords(this)">💾 儲存錯誤單字（${wrongWords.length}）到 Unfamiliar.json</button>`
         : "";
 
-    document.getElementById("quizQuestionCN").textContent = "🎊 測驗完成！";
+    const qBoxEnd = document.getElementById("quizQuestionCN");
+    qBoxEnd.classList.remove("correct", "wrong"); // 清掉最後一題的綠/紅色
+    qBoxEnd.textContent = "🎊 測驗完成！";
     document.getElementById("quizOptions").innerHTML = `
         <div style="color:#fff; font-size: 20px; margin: 20px 0;">
             正確題數：${correctCount} <br>

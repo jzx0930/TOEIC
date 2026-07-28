@@ -1,0 +1,9 @@
+# Node 相關（跑 tools/check-kk.mjs 或 .bat 時本機才會產生，不需推上 GitHub）
+node_modules/
+package.json
+package-lock.json
+npm-debug.log*
+
+# 作業系統雜項
+Thumbs.db
+.DS_Store
