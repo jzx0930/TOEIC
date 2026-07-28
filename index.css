@@ -1319,7 +1319,7 @@ h3 {
 
 /* 測驗側邊欄（正確 / 錯誤清單）容器 */
 .quiz-sidebar {
-  flex: 0.9;
+  flex: 1.15;
   background: rgba(17, 17, 17, 0.9);
   border: 2px solid var(--bright-green);
   border-radius: 12px;
@@ -1400,7 +1400,7 @@ h3 {
 
 /* 主測驗區域（題目與選項） */
 .main-quiz-area {
-  flex: 1.6;
+  flex: 1.2;
   background: rgba(34, 34, 34, 0.9);
   padding: 28px 35px;
   border-radius: 15px;
@@ -1649,7 +1649,7 @@ h3 {
   .quiz-sidebar {
     order: 2;              /* 正確清單：第二列左欄 */
     flex: 1 1 46%;         /* 兩個清單各約一半 → 左右並排 */
-    max-height: 200px;
+    max-height: 42vh;      /* 給清單更多顯示空間 */
   }
 
   .quiz-sidebar:last-child {
@@ -1719,13 +1719,13 @@ h3 {
   }
 
   .quiz-sidebar {
-    max-height: 150px;
+    max-height: 42vh;      /* 清單顯示更多 */
     flex: 1 !important;
   }
 
   .main-quiz-area {
     padding: 20px;
-    min-height: 400px;
+    min-height: auto;      /* 不再強制撐高，題目下方多的空間讓給清單 */
   }
 
   #quizQuestionCN {

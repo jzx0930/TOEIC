@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=47"><!-- 外部樣式表（?v=47 為破快取版本號） -->
-<script defer src="index.js?v=47"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=48"><!-- 外部樣式表（?v=48 為破快取版本號） -->
+<script defer src="index.js?v=48"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1096,26 +1096,9 @@ function openQuiz() {
 
 // closeQuiz：關閉測驗彈窗（中途離開會先確認）
 function closeQuiz() {
-    if(quizIndex < currentQuizList.length && quizIndex > 0) {
-        if(!confirm("測驗尚未結束，確定要提前離開嗎？")) return;
-    }
+    // 提前結束：不再確認、直接離開
     speechSynthesis.cancel(); // 停止可能正在播放的發音
-
-    // 中途離開時，若已有答錯的單字，先顯示存檔畫面（讓使用者選擇是否存檔），而非直接關閉
-    // 之所以用按鈕讓使用者再點一次，是因為「直接寫檔」需要使用者的點擊手勢才能觸發
-    if (wrongWords.length > 0) {
-        document.getElementById("quizQuestionCN").textContent = "⏹ 已提前結束";
-        document.getElementById("quizOptions").innerHTML = `
-            <div style="color:#fff; font-size: 18px; margin: 20px 0;">
-                目前正確：${correctCount}　錯誤：${wrongCount}
-            </div>
-            <button class="search-button" style="margin-top:10px;" onclick="saveWrongWords(this)">💾 儲存錯誤單字（${wrongWords.length}）到 Unfamiliar.json</button>
-            <button class="search-button" onclick="document.getElementById('quizModal').style.display='none'">關閉</button>
-        `;
-        document.getElementById("quizFeedback").textContent = "";
-        return;
-    }
-
+    if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
     document.getElementById("quizModal").style.display = "none";
 }
 // nextQuestion：出下一題（產生題目與四個選項）
