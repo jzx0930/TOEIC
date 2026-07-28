@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=41"><!-- 外部樣式表（?v=41 為破快取版本號） -->
-<script defer src="index.js?v=41"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=42"><!-- 外部樣式表（?v=42 為破快取版本號） -->
+<script defer src="index.js?v=42"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -452,6 +452,12 @@ async function loadWordsFromFile(fileName) {
         }
         return null; // 沒有分隔符號的行視為無效
       }).filter(item => item !== null); // 濾掉無效行
+    }
+
+    // --- 隨機打亂本區塊單字的順序（每次載入排列都不同，避免每次只看到最上面幾個） ---
+    for (let i = wordList.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [wordList[i], wordList[j]] = [wordList[j], wordList[i]];
     }
 
    // --- 渲染單字卡（含筆記功能） ---
