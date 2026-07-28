@@ -34,12 +34,12 @@ index.css         全站樣式
 index.js          通用 UI（章節展開/收合、複製、英中/筆記切換）
 word/             單字資料：list.json 定義載入順序與清單；其餘為各單字 .json
 Grammar/          文法資料：grammar.json
-Pronunciation/    發音資料：kk-chart.json（KK 音標表）
+Pronunciation/    發音資料：kk-chart.json（KK 音標表）＋ kk 音標.pdf（KK 符號參考）
 tts-proxy/        Cloudflare Worker（Google TTS 代理）程式與說明
-tools/            check-kk.mjs（用 CMUdict 檢查 KK / 補 KK / 產音節拆解，本機執行）
-note/             筆記與參考資料（含 kk 音標.pdf）
-檢查KK-報告.bat        雙擊：跑 CMUdict 檢查，印報告（唯讀）
-檢查KK-寫回拆解.bat    雙擊：補缺 KK、寫回 sylWord/sylKK（會改 word/*.json）
+tools/            check-kk.mjs ＋ 兩支 .bat（雙擊跑：檢查/補 KK、產音節拆解，本機執行）
+                    ├ 檢查KK-報告.bat      雙擊：跑 CMUdict 檢查，印報告（唯讀）
+                    └ 檢查KK-寫回拆解.bat  雙擊：補缺 KK、寫回 sylWord/sylKK（會改 word/*.json）
+note/             其他筆記
 ```
 
 > `node_modules/`、`package.json`、`package-lock.json` 只有在本機跑工具時才會產生，已由 `.gitignore` 排除、不會推上 GitHub。
@@ -57,7 +57,7 @@ note/             筆記與參考資料（含 kk 音標.pdf）
 ]
 ```
 
-- `kk`：KK 音標（用標準 KK 符號，見 `note/kk 音標.pdf`）。
+- `kk`：KK 音標（用標準 KK 符號，見 `Pronunciation/kk 音標.pdf`）。
 - `sylWord` / `sylKK`（選填）：音節拆解，以 `·` 分隔。**沒填時網頁會自動拆**；填了就以你的為準。
 - 新增單字檔後，要把檔名加進 `word/list.json` 才會載入。
 

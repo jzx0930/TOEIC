@@ -38,7 +38,7 @@ REM --- 4. Run the checker (report only) ---
 echo.
 echo Running check ...
 echo.
-node "%~dp0tools\check-kk.mjs"
+node "%~dp0check-kk.mjs"
 
 echo.
 echo Done. Review the report above.

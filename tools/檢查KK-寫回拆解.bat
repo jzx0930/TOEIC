@@ -47,7 +47,7 @@ REM --- 4. Run the checker with --write ---
 echo.
 echo Running check + write ...
 echo.
-node "%~dp0tools\check-kk.mjs" --write
+node "%~dp0check-kk.mjs" --write
 
 echo.
 echo Done. sylWord / sylKK written back to word\*.json.

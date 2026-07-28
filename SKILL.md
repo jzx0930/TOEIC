@@ -22,11 +22,10 @@ index.css    全站樣式
 index.js     通用 UI（展開/收合、複製、英中/筆記切換）；defer 載入，同名函式以此為準
 word/        單字：list.json 定義載入清單與順序；其餘各單字 .json（★ 一律 JSON，已淘汰 .txt）
 Grammar/     文法：grammar.json（6 大類、37 主題）
-Pronunciation/ 發音：kk-chart.json（KK 音標一覽表）
+Pronunciation/ 發音：kk-chart.json（KK 音標一覽表）＋ kk 音標.pdf（KK 符號參考）
 tts-proxy/   Cloudflare Worker（Google TTS 代理）
-tools/       check-kk.mjs（CMUdict 檢查/補 KK/產拆解，本機執行）
-note/        筆記與參考（含 kk 音標.pdf）
-*.bat        檢查KK-報告.bat / 檢查KK-寫回拆解.bat（雙擊跑 tools）
+tools/       check-kk.mjs ＋ 兩支 .bat（檢查KK-報告.bat / 檢查KK-寫回拆解.bat，雙擊執行）
+note/        其他筆記
 ```
 `node_modules/`、`package.json`、`package-lock.json` 由 `.gitignore` 排除（跑工具才產生，不推 GitHub）。
 
@@ -65,7 +64,7 @@ block 型別：`h`(綠標題)、`p`(段)、`list`、`note`(提示框)、`example
 例句上色：`<k>…</k>` 綠（主要動詞/V-ing/p.p.）、`<b>…</b>` 藍（be/助動詞）；SVG 屬性用單引號保 JSON 有效。
 
 ## 6. KK 音標與音節拆解
-- KK 用**標準 KK 符號**（見 `note/kk 音標.pdf`）：母音 `e`(name)/`o`(no)、`ɝ`(bird)/`ɚ`(sister)、雙母音 `aɪ/aʊ/ɔɪ`；子音 `g`(good)、`ŋ`、`tʃ`、`dʒ` 等。**不要**用 IPA 的 `oʊ/eɪ/ː` 或手寫體 `ɡ`。
+- KK 用**標準 KK 符號**（見 `Pronunciation/kk 音標.pdf`）：母音 `e`(name)/`o`(no)、`ɝ`(bird)/`ɚ`(sister)、雙母音 `aɪ/aʊ/ɔɪ`；子音 `g`(good)、`ŋ`、`tʃ`、`dʒ` 等。**不要**用 IPA 的 `oʊ/eɪ/ː` 或手寫體 `ɡ`。
 - **拆解顯示是即時的**：只要單字有 `kk`，第二行自動出現拆解，照 KK 表符號。
 - **工具 `tools/check-kk.mjs`**（本機跑，沙盒裝不了套件）：`node tools/check-kk.mjs` 用 CMUdict 檢查 KK；`--write` 幫缺 KK 的字補 KK、寫回 `sylWord`/`sylKK`。用 `cmu-pronouncing-dictionary` + `hyphen`。CMUdict 是美式、OOV 需人工補。兩支 `.bat` 是雙擊入口（純 ASCII 內容）。
 
