@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=40"><!-- 外部樣式表（?v=40 為破快取版本號） -->
-<script defer src="index.js?v=40"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=41"><!-- 外部樣式表（?v=41 為破快取版本號） -->
+<script defer src="index.js?v=41"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -587,18 +587,18 @@ function repeatSpeak(word, lang) {
 
   repeatStatus[key] = true; // 標記此按鈕為「重複中」
 
-  const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = lang;
-  utterance.rate = getSpeechRate(); // 依速度拖曳桿的值決定語速（0 = 正常）
-
-  // 每次唸完就再唸一次，形成循環（直到狀態被設為 false）
-  utterance.onend = () => {
-    if (repeatStatus[key]) {
-      speechSynthesis.speak(utterance);
-    }
+  // 每一次重播都「重新建立」utterance 並讀取當下的速度桿數值，
+  // 這樣在重複播放途中拖曳速度桿，語速也會即時跟著改變。
+  const speakOnce = () => {
+    if (!repeatStatus[key]) return; // 已被停止就不再唸
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = lang;
+    u.rate = getSpeechRate(); // 依「當下」的速度拖曳桿數值決定語速
+    u.onend = () => { if (repeatStatus[key]) speakOnce(); }; // 唸完再唸下一次
+    speechSynthesis.speak(u);
   };
 
-  speechSynthesis.speak(utterance);
+  speakOnce();
 }
 
 
