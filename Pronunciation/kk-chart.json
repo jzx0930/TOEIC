@@ -1,0 +1,51 @@
+{
+  "vowels": {
+    "single": [
+      { "symbol": "i",  "example": "tea" },
+      { "symbol": "ɪ",  "example": "it" },
+      { "symbol": "e",  "example": "name" },
+      { "symbol": "ɛ",  "example": "pen" },
+      { "symbol": "æ",  "example": "cat" },
+      { "symbol": "ɑ",  "example": "box" },
+      { "symbol": "o",  "example": "no" },
+      { "symbol": "ɔ",  "example": "dog" },
+      { "symbol": "u",  "example": "too" },
+      { "symbol": "ʊ",  "example": "book" },
+      { "symbol": "ʌ",  "example": "bus" },
+      { "symbol": "ə",  "example": "about" },
+      { "symbol": "ɚ",  "example": "sister" },
+      { "symbol": "ɝ",  "example": "bird" }
+    ],
+    "diphthong": [
+      { "symbol": "aɪ", "example": "fine" },
+      { "symbol": "aʊ", "example": "how" },
+      { "symbol": "ɔɪ", "example": "boy" }
+    ]
+  },
+  "consonants": [
+    { "symbol": "p",  "example": "pet" },
+    { "symbol": "b",  "example": "bad" },
+    { "symbol": "t",  "example": "ten" },
+    { "symbol": "d",  "example": "desk" },
+    { "symbol": "k",  "example": "key" },
+    { "symbol": "g",  "example": "good" },
+    { "symbol": "f",  "example": "food" },
+    { "symbol": "v",  "example": "vest" },
+    { "symbol": "θ",  "example": "thank" },
+    { "symbol": "ð",  "example": "this" },
+    { "symbol": "s",  "example": "seat" },
+    { "symbol": "z",  "example": "zoo" },
+    { "symbol": "ʃ",  "example": "short" },
+    { "symbol": "ʒ",  "example": "garage" },
+    { "symbol": "tʃ", "example": "chair" },
+    { "symbol": "dʒ", "example": "joke" },
+    { "symbol": "l",  "example": "leg" },
+    { "symbol": "r",  "example": "red" },
+    { "symbol": "m",  "example": "mom" },
+    { "symbol": "n",  "example": "noon" },
+    { "symbol": "ŋ",  "example": "sing" },
+    { "symbol": "j",  "example": "yes" },
+    { "symbol": "w",  "example": "we" },
+    { "symbol": "h",  "example": "hat" }
+  ]
+}

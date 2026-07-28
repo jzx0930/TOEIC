@@ -5,7 +5,8 @@ echo ============================================
 echo    TOEIC - Check KK + WRITE syllables
 echo ============================================
 echo.
-echo This will ADD "sylWord" / "sylKK" fields into word\*.json.
+echo This will fill missing "kk" (via CMUdict) and add "sylWord" / "sylKK"
+echo syllable fields into word\*.json.
 echo Make a commit/backup first if you want to be safe.
 echo.
 set /p GO=Type Y to continue:

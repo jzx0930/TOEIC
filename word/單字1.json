@@ -1,0 +1,6981 @@
+[
+  {
+    "word": "Expert",
+    "kk": "",
+    "translation": "專家",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Expert",
+    "kk": "",
+    "translation": "專家的 / 熟練的",
+    "part_of_speech": "形容詞",
+    "note": ""
+  },
+  {
+    "word": "Expect",
+    "kk": "",
+    "translation": "期待 / 預期",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Except",
+    "kk": "",
+    "translation": "除了...之外",
+    "part_of_speech": "介係詞",
+    "note": ""
+  },
+  {
+    "word": "Aspect",
+    "kk": "",
+    "translation": "方面 / 層面",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Adapt",
+    "kk": "",
+    "translation": "適應 / 改編",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Adopt",
+    "kk": "",
+    "translation": "收養 / 採用",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Adept",
+    "kk": "",
+    "translation": "熟練的",
+    "part_of_speech": "形容詞",
+    "note": ""
+  },
+  {
+    "word": "Affect",
+    "kk": "",
+    "translation": "影響",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Effect",
+    "kk": "",
+    "translation": "效果 / 影響",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Exit",
+    "kk": "",
+    "translation": "出口",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Exist",
+    "kk": "",
+    "translation": "存在",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Expand",
+    "kk": "",
+    "translation": "擴張 / 膨脹",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Expend",
+    "kk": "",
+    "translation": "花費 / 消耗",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Extensive",
+    "kk": "",
+    "translation": "廣泛的 / 大規模的",
+    "part_of_speech": "形容詞",
+    "note": ""
+  },
+  {
+    "word": "Extent",
+    "kk": "",
+    "translation": "程度 / 範圍",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Expose",
+    "kk": "",
+    "translation": "暴露 / 揭露",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Explore",
+    "kk": "",
+    "translation": "探索 / 探險",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Explode",
+    "kk": "",
+    "translation": "爆炸",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Loose",
+    "kk": "",
+    "translation": "鬆的",
+    "part_of_speech": "形容詞",
+    "note": ""
+  },
+  {
+    "word": "Lose",
+    "kk": "",
+    "translation": "失去 / 輸",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Desert",
+    "kk": "",
+    "translation": "沙漠",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Dessert",
+    "kk": "",
+    "translation": "甜點",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "Complement",
+    "kk": "",
+    "translation": "補充 / 補足",
+    "part_of_speech": "動詞 / 名詞",
+    "note": ""
+  },
+  {
+    "word": "Compliment",
+    "kk": "",
+    "translation": "稱讚",
+    "part_of_speech": "動詞 / 名詞",
+    "note": ""
+  },
+  {
+    "word": "Quite",
+    "kk": "",
+    "translation": "相當地 / 非常",
+    "part_of_speech": "副詞",
+    "note": ""
+  },
+  {
+    "word": "Quiet",
+    "kk": "",
+    "translation": "安靜的",
+    "part_of_speech": "形容詞",
+    "note": ""
+  },
+  {
+    "word": "Quit",
+    "kk": "",
+    "translation": "停止 / 辭職",
+    "part_of_speech": "動詞",
+    "note": ""
+  },
+  {
+    "word": "Stationary",
+    "kk": "",
+    "translation": "靜止的 / 不動的",
+    "part_of_speech": "形容詞",
+    "note": ""
+  },
+  {
+    "word": "Stationery",
+    "kk": "",
+    "translation": "文具",
+    "part_of_speech": "名詞",
+    "note": ""
+  },
+  {
+    "word": "patience",
+    "kk": "",
+    "translation": "耐心、毅力",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "practice",
+    "kk": "",
+    "translation": "實行、練習、(醫生/律師)執業",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "pregnant",
+    "kk": "",
+    "translation": "懷孕的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "figure out",
+    "kk": "",
+    "translation": "想出、弄懂、計算出",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "debate",
+    "kk": "",
+    "translation": "辯論、討論",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "lazy",
+    "kk": "",
+    "translation": "懶惰的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sweep",
+    "kk": "",
+    "translation": "打掃、清掃",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "permitted",
+    "kk": "",
+    "translation": "被允許的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "recruiting",
+    "kk": "",
+    "translation": "招募、徵才",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "seldom",
+    "kk": "",
+    "translation": "很少、不常",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "by no means",
+    "kk": "",
+    "translation": "絕不、一點也不",
+    "part_of_speech": "adv phr.",
+    "note": ""
+  },
+  {
+    "word": "hardly",
+    "kk": "",
+    "translation": "幾乎不",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "scarcely",
+    "kk": "",
+    "translation": "幾乎不",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "on no account",
+    "kk": "",
+    "translation": "絕不、絕對不可以",
+    "part_of_speech": "adv phr.",
+    "note": ""
+  },
+  {
+    "word": "not until",
+    "kk": "",
+    "translation": "直到...才",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "versatile",
+    "kk": "",
+    "translation": "多功能的、多才多藝的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "precaution",
+    "kk": "",
+    "translation": "預防措施、防備",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "incentive",
+    "kk": "",
+    "translation": "獎勵、動機、刺激",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "substantial",
+    "kk": "",
+    "translation": "大量的、實質的、重大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "unanimously",
+    "kk": "",
+    "translation": "全體一致地、無異議地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "closure",
+    "kk": "",
+    "translation": "倒閉、終止、(路面)封閉",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "reliable",
+    "kk": "",
+    "translation": "可靠的、可信賴的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "deliver",
+    "kk": "",
+    "translation": "遞送、發表(演講)、達成(承諾)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "revenue",
+    "kk": "",
+    "translation": "營收、稅收",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "steadily",
+    "kk": "",
+    "translation": "穩定地、持續地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "remarkable",
+    "kk": "",
+    "translation": "非凡的、顯著的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "incredibly",
+    "kk": "",
+    "translation": "極其、難以置信地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "convey",
+    "kk": "",
+    "translation": "傳達、表達、運送",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "legislation",
+    "kk": "",
+    "translation": "立法、法規",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "greatest",
+    "kk": "",
+    "translation": "最大的、最偉大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "narrow",
+    "kk": "",
+    "translation": "狹窄的、縮減、勉強的",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "pre-existing",
+    "kk": "",
+    "translation": "先前存在的、既有的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "meanwhile",
+    "kk": "",
+    "translation": "與此同時",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "hence",
+    "kk": "",
+    "translation": "因此、由此可知",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "scholarships",
+    "kk": "",
+    "translation": "獎學金",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "enormous",
+    "kk": "",
+    "translation": "巨大的、龐大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "anticipated",
+    "kk": "",
+    "translation": "預期的、期望中的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "organic",
+    "kk": "",
+    "translation": "有機的、器官的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "voucher",
+    "kk": "",
+    "translation": "兌換券、票券、憑證",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "attendee",
+    "kk": "",
+    "translation": "出席者、參加者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "quote",
+    "kk": "",
+    "translation": "報價、引用",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "crisis",
+    "kk": "",
+    "translation": "危機",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "assume",
+    "kk": "",
+    "translation": "假設、承擔(責任)、就任",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "regardless",
+    "kk": "",
+    "translation": "無論如何、不管怎樣",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "leaking",
+    "kk": "",
+    "translation": "洩漏、漏出",
+    "part_of_speech": "v. / adj.",
+    "note": ""
+  },
+  {
+    "word": "reward",
+    "kk": "",
+    "translation": "報酬、獎勵、酬報",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "innovation",
+    "kk": "",
+    "translation": "創新、革新",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "scenario",
+    "kk": "",
+    "translation": "情況、情境、可能發生的事態",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "stable",
+    "kk": "",
+    "translation": "穩定的、牢固的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "physical",
+    "kk": "",
+    "translation": "身體的、物質的、實體的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "amendments",
+    "kk": "",
+    "translation": "(法律、條款)修正、修訂",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "appearance",
+    "kk": "",
+    "translation": "外貌、出現、出席",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "restricted",
+    "kk": "",
+    "translation": "受限的、限制的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "situated",
+    "kk": "",
+    "translation": "位於...的、坐落在...的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "intersection",
+    "kk": "",
+    "translation": "十字路口、交叉口",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "credentials",
+    "kk": "",
+    "translation": "證書、資歷、憑據",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "evaluate",
+    "kk": "",
+    "translation": "評估、評價",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "talented",
+    "kk": "",
+    "translation": "有才華的、天才的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "funds",
+    "kk": "",
+    "translation": "資金、專款、經費",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "campus",
+    "kk": "",
+    "translation": "校園、校區",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "apparently",
+    "kk": "",
+    "translation": "顯然地、表面上地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "formerly",
+    "kk": "",
+    "translation": "以前、從前",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "exact",
+    "kk": "",
+    "translation": "精確的、確切的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "take advantage of",
+    "kk": "",
+    "translation": "利用、善用",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "obstacles",
+    "kk": "",
+    "translation": "障礙、阻礙",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "flaws",
+    "kk": "",
+    "translation": "缺點、瑕疵、缺陷",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "contribute",
+    "kk": "",
+    "translation": "貢獻、捐助、導致",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "intermission",
+    "kk": "",
+    "translation": "中場休息、間歇",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "please note that",
+    "kk": "",
+    "translation": "請注意...",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "discourage",
+    "kk": "",
+    "translation": "勸阻、使洩氣、阻礙",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "tidy",
+    "kk": "",
+    "translation": "整潔的、整理",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "affected",
+    "kk": "",
+    "translation": "受影響的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "restore",
+    "kk": "",
+    "translation": "恢復、修復",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "ignore",
+    "kk": "",
+    "translation": "忽略、不理會",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "courteous",
+    "kk": "",
+    "translation": "有禮貌的、謙恭的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "polite",
+    "kk": "",
+    "translation": "有禮貌的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "relatively",
+    "kk": "",
+    "translation": "相對地、比較而言",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "duration",
+    "kk": "",
+    "translation": "持續時間、期間",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "treated",
+    "kk": "",
+    "translation": "處理、對待",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "dangerous",
+    "kk": "",
+    "translation": "危險的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "evacuation",
+    "kk": "",
+    "translation": "疏散、撤離",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "exercises",
+    "kk": "",
+    "translation": "練習、運動、演習",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "drill",
+    "kk": "",
+    "translation": "演習、訓練",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "suspended",
+    "kk": "",
+    "translation": "暫停、中止、懸掛",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "moisturizing",
+    "kk": "",
+    "translation": "保濕的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "combine",
+    "kk": "",
+    "translation": "結合、合併",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "performs",
+    "kk": "",
+    "translation": "執行、表演、運作",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "rumor",
+    "kk": "",
+    "translation": "謠言、傳聞",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "dramatic",
+    "kk": "",
+    "translation": "戲劇性的、顯著的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "population",
+    "kk": "",
+    "translation": "人口、(特定)族群",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "eligible",
+    "kk": "",
+    "translation": "有資格的、符合條件的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "tight",
+    "kk": "",
+    "translation": "緊的、(預算/時間)吃緊的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "squeeze",
+    "kk": "",
+    "translation": "擠壓、榨取、擠進",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "absence",
+    "kk": "",
+    "translation": "缺席、缺少",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "bride",
+    "kk": "",
+    "translation": "新娘",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "coworker",
+    "kk": "",
+    "translation": "同事、共同工作者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "registration",
+    "kk": "",
+    "translation": "登記、註冊、報名",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Academic",
+    "kk": "",
+    "translation": "學術的、學院的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "semester",
+    "kk": "",
+    "translation": "學期",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "reusable",
+    "kk": "",
+    "translation": "可重複使用的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Utility",
+    "kk": "",
+    "translation": "公共設施(電/水/瓦斯)、效用",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "fabrics",
+    "kk": "",
+    "translation": "布料、織物",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "supposed",
+    "kk": "",
+    "translation": "應當的、預計的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "shipped",
+    "kk": "",
+    "translation": "運送、出貨",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "industrial",
+    "kk": "",
+    "translation": "工業的、產業的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "tiles",
+    "kk": "",
+    "translation": "磁磚、瓦片",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "relocating",
+    "kk": "",
+    "translation": "搬遷、遷徙",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "driveway",
+    "kk": "",
+    "translation": "私人車道",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "trails",
+    "kk": "",
+    "translation": "小徑、步道、痕跡",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "commonly",
+    "kk": "",
+    "translation": "通常、一般地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "pave",
+    "kk": "",
+    "translation": "鋪設(路面)、鋪砌",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "multinational",
+    "kk": "",
+    "translation": "多國的、跨國的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "matters",
+    "kk": "",
+    "translation": "事項、問題、事件",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "diverse",
+    "kk": "",
+    "translation": "多樣的、多元的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "passionate",
+    "kk": "",
+    "translation": "熱情的、熱愛的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "diplomatically",
+    "kk": "",
+    "translation": "外交地、委婉地、圓滑地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "tendency",
+    "kk": "",
+    "translation": "傾向、趨勢",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "imperative",
+    "kk": "",
+    "translation": "至關重要的、迫切的、必要的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "chronological",
+    "kk": "",
+    "translation": "按時間順序的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "orderly",
+    "kk": "",
+    "translation": "整齊的、有條理的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "determination",
+    "kk": "",
+    "translation": "決心、判定",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "combination",
+    "kk": "",
+    "translation": "結合、組合",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "component",
+    "kk": "",
+    "translation": "零件、成分、組成部分",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "inclination",
+    "kk": "",
+    "translation": "傾向、意願、愛好",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "exaggerated",
+    "kk": "",
+    "translation": "誇張的、言過其實的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sink",
+    "kk": "",
+    "translation": "水槽；下沉",
+    "part_of_speech": "N., V.",
+    "note": ""
+  },
+  {
+    "word": "weed",
+    "kk": "",
+    "translation": "雜草；清除雜草",
+    "part_of_speech": "N., V.",
+    "note": ""
+  },
+  {
+    "word": "temporary",
+    "kk": "",
+    "translation": "暫時的；臨時的",
+    "part_of_speech": "Adj.",
+    "note": ""
+  },
+  {
+    "word": "metro",
+    "kk": "",
+    "translation": "大眾捷運系統；地鐵",
+    "part_of_speech": "N.",
+    "note": ""
+  },
+  {
+    "word": "prescription",
+    "kk": "",
+    "translation": "處方籤；藥方",
+    "part_of_speech": "N.",
+    "note": ""
+  },
+  {
+    "word": "premiere",
+    "kk": "",
+    "translation": "首映；首次公演",
+    "part_of_speech": "N., V.",
+    "note": ""
+  },
+  {
+    "word": "directions",
+    "kk": "",
+    "translation": "指示；方向",
+    "part_of_speech": "N. (Pl.)",
+    "note": ""
+  },
+  {
+    "word": "strictly",
+    "kk": "",
+    "translation": "嚴格地；完全地",
+    "part_of_speech": "Adv.",
+    "note": ""
+  },
+  {
+    "word": "reasonable",
+    "kk": "",
+    "translation": "合理的；公道的",
+    "part_of_speech": "Adj.",
+    "note": ""
+  },
+  {
+    "word": "dated",
+    "kk": "",
+    "translation": "過時的；陳舊的",
+    "part_of_speech": "Adj.",
+    "note": ""
+  },
+  {
+    "word": "permanent",
+    "kk": "",
+    "translation": "永久的；固定的",
+    "part_of_speech": "Adj.",
+    "note": ""
+  },
+  {
+    "word": "valuable",
+    "kk": "",
+    "translation": "有價值的；寶貴的",
+    "part_of_speech": "Adj.",
+    "note": ""
+  },
+  {
+    "word": "comments",
+    "kk": "",
+    "translation": "評論；意見",
+    "part_of_speech": "N. (Pl.)",
+    "note": ""
+  },
+  {
+    "word": "assessment",
+    "kk": "",
+    "translation": "評估；考核",
+    "part_of_speech": "N.",
+    "note": ""
+  },
+  {
+    "word": "conventional",
+    "kk": "",
+    "translation": "傳統的、慣例的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "marginal",
+    "kk": "",
+    "translation": "微小的、邊緣的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "memorable",
+    "kk": "",
+    "translation": "值得紀念的、難忘的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "prosperous",
+    "kk": "",
+    "translation": "繁榮的、興旺的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "general",
+    "kk": "",
+    "translation": "一般的、普遍的、總體的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "console",
+    "kk": "",
+    "translation": "慰問、安撫",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "ideal",
+    "kk": "",
+    "translation": "理想的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "inferior",
+    "kk": "",
+    "translation": "較差的、次等的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "factual",
+    "kk": "",
+    "translation": "事實的、真實的 (你筆記中的 favtual 應為此字)",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "polite",
+    "kk": "",
+    "translation": "有禮貌的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "succinct",
+    "kk": "",
+    "translation": "簡潔的、扼要的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "competent",
+    "kk": "",
+    "translation": "有能力的、勝任的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "given that",
+    "kk": "",
+    "translation": "考慮到、鑒於",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "as well as",
+    "kk": "",
+    "translation": "以及、還有",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "upon",
+    "kk": "",
+    "translation": "在...之上、一...就...",
+    "part_of_speech": "prep.",
+    "note": ""
+  },
+  {
+    "word": "densely",
+    "kk": "",
+    "translation": "稠密地、密集地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "evenly",
+    "kk": "",
+    "translation": "均勻地、平均地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "conclude",
+    "kk": "",
+    "translation": "結論、結束、推斷",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "consequently",
+    "kk": "",
+    "translation": "因此、結果",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "conversely",
+    "kk": "",
+    "translation": "相反地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "disrupts",
+    "kk": "",
+    "translation": "打斷、中斷、擾亂",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "on behalf of",
+    "kk": "",
+    "translation": "代表...",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "anonymous",
+    "kk": "",
+    "translation": "匿名的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "consumption",
+    "kk": "",
+    "translation": "消耗、消費",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "assume",
+    "kk": "",
+    "translation": "假設、承擔",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "career expo",
+    "kk": "",
+    "translation": "就業博覽會",
+    "part_of_speech": "n phr.",
+    "note": ""
+  },
+  {
+    "word": "skiers",
+    "kk": "",
+    "translation": "滑雪者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "helmet",
+    "kk": "",
+    "translation": "安全帽、頭盔",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "slopes",
+    "kk": "",
+    "translation": "斜坡、山坡、滑雪道",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "settled",
+    "kk": "",
+    "translation": "解決、定居、付清",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "paid",
+    "kk": "",
+    "translation": "已付款的",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "demanded",
+    "kk": "",
+    "translation": "要求、需求",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "established",
+    "kk": "",
+    "translation": "已建立的、確定的、知名的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "implied",
+    "kk": "",
+    "translation": "暗示的、含蓄的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "rental",
+    "kk": "",
+    "translation": "出租、租賃",
+    "part_of_speech": "n. / adj.",
+    "note": ""
+  },
+  {
+    "word": "estate",
+    "kk": "",
+    "translation": "地產、資產",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "flexible",
+    "kk": "",
+    "translation": "有彈性的、靈活的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "enrollment",
+    "kk": "",
+    "translation": "登記、報名、註冊人數",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "moisture",
+    "kk": "",
+    "translation": "濕氣、水分",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "detergent",
+    "kk": "",
+    "translation": "清潔劑、洗衣粉",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "borrow",
+    "kk": "",
+    "translation": "借、借入",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "occupancy",
+    "kk": "",
+    "translation": "居住、佔用、(飯店)入住率",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "capacity",
+    "kk": "",
+    "translation": "容量、能力、生產量",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "thrilled",
+    "kk": "",
+    "translation": "非常興奮的、欣喜若狂的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "amenities",
+    "kk": "",
+    "translation": "便利設施、娛樂設施",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "beachgoers",
+    "kk": "",
+    "translation": "去海邊玩的人",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "shore",
+    "kk": "",
+    "translation": "海岸、濱",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "attribute",
+    "kk": "",
+    "translation": "歸因於、特質、屬性",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "an abundance of",
+    "kk": "",
+    "translation": "大量的、豐富的",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "scouting",
+    "kk": "",
+    "translation": "偵查、搜索、尋找(人才/地點)",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "long overdue",
+    "kk": "",
+    "translation": "早就該發生的、拖延很久的",
+    "part_of_speech": "adj phr.",
+    "note": ""
+  },
+  {
+    "word": "stages",
+    "kk": "",
+    "translation": "階段、舞台",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "interactive",
+    "kk": "",
+    "translation": "互動的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "phases",
+    "kk": "",
+    "translation": "階段、時期",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "compliment",
+    "kk": "",
+    "translation": "稱讚、讚美",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "auditions",
+    "kk": "",
+    "translation": "試鏡、試演",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "baking",
+    "kk": "",
+    "translation": "烘焙",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "pastry",
+    "kk": "",
+    "translation": "糕點、點心",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "enormous",
+    "kk": "",
+    "translation": "巨大的、極大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "amateur",
+    "kk": "",
+    "translation": "業餘的",
+    "part_of_speech": "adj. / n.",
+    "note": ""
+  },
+  {
+    "word": "promising",
+    "kk": "",
+    "translation": "有前途的、大有可為的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "invitation",
+    "kk": "",
+    "translation": "邀請、請帖",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "intensive",
+    "kk": "",
+    "translation": "密集的、強烈的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "finalists",
+    "kk": "",
+    "translation": "決賽選手",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "enthusiastic",
+    "kk": "",
+    "translation": "熱情的、熱心的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "teenagers",
+    "kk": "",
+    "translation": "青少年",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "supposed",
+    "kk": "",
+    "translation": "應當的、預計的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "odorless",
+    "kk": "",
+    "translation": "無嗅的、無氣味的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "cruise",
+    "kk": "",
+    "translation": "郵輪、巡航",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "mini-coach",
+    "kk": "",
+    "translation": "小型巴士、中型客車",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "magnificent",
+    "kk": "",
+    "translation": "宏偉的、壯麗的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "notable",
+    "kk": "",
+    "translation": "顯著的、值得注意的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "accomplishments",
+    "kk": "",
+    "translation": "成就、成績",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "artifacts",
+    "kk": "",
+    "translation": "文物、手工藝品",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "examine",
+    "kk": "",
+    "translation": "檢查、審查、檢驗",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "revolving",
+    "kk": "",
+    "translation": "旋轉的、循環的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "ferry",
+    "kk": "",
+    "translation": "渡輪",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "prior",
+    "kk": "",
+    "translation": "先前的、優先的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "racks",
+    "kk": "",
+    "translation": "架子、置物架",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "e-commerce",
+    "kk": "",
+    "translation": "電子商務",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Perhaps",
+    "kk": "",
+    "translation": "也許、可能",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "collections",
+    "kk": "",
+    "translation": "收藏品、系列(服裝)、催繳款項",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "continent",
+    "kk": "",
+    "translation": "洲、大陸",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "prestigious",
+    "kk": "",
+    "translation": "有聲望的、聲譽卓著的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "deliberate",
+    "kk": "",
+    "translation": "故意的、謹慎的、深思熟慮的",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "provided that",
+    "kk": "",
+    "translation": "只要...、在...條件下",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "as though",
+    "kk": "",
+    "translation": "彷彿、好像",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "except for",
+    "kk": "",
+    "translation": "除了...之外",
+    "part_of_speech": "prep phr.",
+    "note": ""
+  },
+  {
+    "word": "resist",
+    "kk": "",
+    "translation": "抵抗、抗拒、耐(磨/熱)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "silently",
+    "kk": "",
+    "translation": "沉默地、安靜地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "awkwardly",
+    "kk": "",
+    "translation": "尷尬地、笨拙地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "solidly",
+    "kk": "",
+    "translation": "堅固地、可靠地、一致地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "sharply",
+    "kk": "",
+    "translation": "大幅地、劇烈地、銳利地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "terminated",
+    "kk": "",
+    "translation": "被終止、被解僱",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "conserve",
+    "kk": "",
+    "translation": "節約、保存、保護",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "to the extent of",
+    "kk": "",
+    "translation": "到...的程度",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "in preference to",
+    "kk": "",
+    "translation": "優於...、而非...",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "occupation",
+    "kk": "",
+    "translation": "職業、佔用",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "blade",
+    "kk": "",
+    "translation": "葉片、刀刃",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "motor",
+    "kk": "",
+    "translation": "馬達、發動機",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "grade",
+    "kk": "",
+    "translation": "等級、成績、評分",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "reassurance",
+    "kk": "",
+    "translation": "放心、保證、寬慰",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "recreation",
+    "kk": "",
+    "translation": "娛樂、消遣",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "boutique",
+    "kk": "",
+    "translation": "精品店、專賣店",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "engages",
+    "kk": "",
+    "translation": "從事、參與、吸引",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "essential",
+    "kk": "",
+    "translation": "必要的、不可或缺的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "stylus",
+    "kk": "",
+    "translation": "觸控筆、觸控針",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "stamped",
+    "kk": "",
+    "translation": "蓋章的、壓印的",
+    "part_of_speech": "adj. / v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "serial",
+    "kk": "",
+    "translation": "序號、連續的",
+    "part_of_speech": "n. / adj.",
+    "note": ""
+  },
+  {
+    "word": "annually",
+    "kk": "",
+    "translation": "每年地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "stainless",
+    "kk": "",
+    "translation": "不鏽的、無暇的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "steel",
+    "kk": "",
+    "translation": "鋼、鋼鐵",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "dispenser",
+    "kk": "",
+    "translation": "販賣機、分配器、給料器",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "doubt",
+    "kk": "",
+    "translation": "懷疑、不確定",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "strength",
+    "kk": "",
+    "translation": "力量、優點、強度",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "forced",
+    "kk": "",
+    "translation": "強迫的、被迫的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "precipitation",
+    "kk": "",
+    "translation": "降雨量、降水",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "subsidizing",
+    "kk": "",
+    "translation": "補貼、資助",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "affiliated",
+    "kk": "",
+    "translation": "附屬的、隸屬的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "subtracted",
+    "kk": "",
+    "translation": "減去的、扣除的",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "sufficient",
+    "kk": "",
+    "translation": "充足的、足夠的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "consecutive",
+    "kk": "",
+    "translation": "連續的、接連的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "evaluate",
+    "kk": "",
+    "translation": "評估、評價",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "extensive",
+    "kk": "",
+    "translation": "廣泛的、大規模的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "categories",
+    "kk": "",
+    "translation": "類別、範疇",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "emerged",
+    "kk": "",
+    "translation": "浮現、出現、脫穎而出",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "nationwide",
+    "kk": "",
+    "translation": "全國性的",
+    "part_of_speech": "adj. / adv.",
+    "note": ""
+  },
+  {
+    "word": "backlash",
+    "kk": "",
+    "translation": "強烈反對、集體反彈",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "leisure",
+    "kk": "",
+    "translation": "閒暇、悠閒",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "reluctant",
+    "kk": "",
+    "translation": "不情願的、勉強的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "elaborate",
+    "kk": "",
+    "translation": "詳盡闡述、精心製作的",
+    "part_of_speech": "v. / adj.",
+    "note": ""
+  },
+  {
+    "word": "separately",
+    "kk": "",
+    "translation": "分別地、個別地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "suffer",
+    "kk": "",
+    "translation": "遭受、蒙受、受苦",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "reputations",
+    "kk": "",
+    "translation": "名聲、聲望",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "credibility",
+    "kk": "",
+    "translation": "可信度、信用",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "toothpaste",
+    "kk": "",
+    "translation": "牙膏 (原筆記 ctoothpaste 應為此字)",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "attended",
+    "kk": "",
+    "translation": "出席、參加 (原筆記 attenoted 應為此字)",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "nonetheless",
+    "kk": "",
+    "translation": "儘管如此、然而",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "likewise",
+    "kk": "",
+    "translation": "同樣地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "veteran",
+    "kk": "",
+    "translation": "資深人士、老兵",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "owing to",
+    "kk": "",
+    "translation": "因為、由於",
+    "part_of_speech": "prep phr.",
+    "note": ""
+  },
+  {
+    "word": "spotless",
+    "kk": "",
+    "translation": "一塵不染的、無暇的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "achieving",
+    "kk": "",
+    "translation": "達成、實現",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "animator",
+    "kk": "",
+    "translation": "動畫師",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "narrator",
+    "kk": "",
+    "translation": "旁白、敘述者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "audience",
+    "kk": "",
+    "translation": "觀眾、聽眾",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "recurring",
+    "kk": "",
+    "translation": "循環的、反覆出現的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "multiday",
+    "kk": "",
+    "translation": "為期多日的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "multilingual",
+    "kk": "",
+    "translation": "多種語言的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "revitalize",
+    "kk": "",
+    "translation": "使恢復生氣、振興",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "brighten",
+    "kk": "",
+    "translation": "使明亮、使更愉快",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "artistic",
+    "kk": "",
+    "translation": "藝術的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "murals",
+    "kk": "",
+    "translation": "壁畫",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "grant",
+    "kk": "",
+    "translation": "撥款、補助金、同意",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "eager",
+    "kk": "",
+    "translation": "渴望的、熱切的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sets",
+    "kk": "",
+    "translation": "佈景、套組、建立",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "take part in",
+    "kk": "",
+    "translation": "參加、參與",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "visibility",
+    "kk": "",
+    "translation": "能見度、知名度",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "trial",
+    "kk": "",
+    "translation": "試用、試驗、審判",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "establishing affiliations",
+    "kk": "",
+    "translation": "建立隸屬關係/合作關係",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "attempt",
+    "kk": "",
+    "translation": "嘗試、企圖",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "account for",
+    "kk": "",
+    "translation": "佔...比例、解釋、說明",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "contribute to",
+    "kk": "",
+    "translation": "貢獻、促成、導致",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "lease",
+    "kk": "",
+    "translation": "租約、租賃",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "square feet",
+    "kk": "",
+    "translation": "平方英尺 (原筆記 fsquaer feet 應為此字)",
+    "part_of_speech": "n phr.",
+    "note": ""
+  },
+  {
+    "word": "journalist",
+    "kk": "",
+    "translation": "記者、新聞工作者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "desired",
+    "kk": "",
+    "translation": "渴望的、理想的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "district",
+    "kk": "",
+    "translation": "地區、行政區",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "boulevard",
+    "kk": "",
+    "translation": "大道",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "distinction",
+    "kk": "",
+    "translation": "區別、卓越、殊榮",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "unaffected",
+    "kk": "",
+    "translation": "未受影響的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "affected",
+    "kk": "",
+    "translation": "受影響的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "association",
+    "kk": "",
+    "translation": "協會、關聯",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "signage",
+    "kk": "",
+    "translation": "標誌、告示牌",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "optional",
+    "kk": "",
+    "translation": "選修",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "vehicular",
+    "kk": "",
+    "translation": "車輛的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "commended",
+    "kk": "",
+    "translation": "受到表揚的、稱讚的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "stagnant",
+    "kk": "",
+    "translation": "停滯的、不景氣的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sustain",
+    "kk": "",
+    "translation": "維持、支撐、遭受",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "critically",
+    "kk": "",
+    "translation": "批判性地、嚴重地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "downturn",
+    "kk": "",
+    "translation": "(經濟)衰退、低迷",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "precisely",
+    "kk": "",
+    "translation": "精確地、準確地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "exponential",
+    "kk": "",
+    "translation": "指數級的、倍數成長的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "continuously",
+    "kk": "",
+    "translation": "持續不斷地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "innovate",
+    "kk": "",
+    "translation": "創新、革新",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "unveiled",
+    "kk": "",
+    "translation": "揭幕、發表(新產品)",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "capitalize",
+    "kk": "",
+    "translation": "利用、獲利、使資本化",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "promptly",
+    "kk": "",
+    "translation": "迅速地、準時地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "impact",
+    "kk": "",
+    "translation": "影響、衝擊",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "policies",
+    "kk": "",
+    "translation": "政策、規定、保險單",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "compliance",
+    "kk": "",
+    "translation": "遵守、服從(法規)",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "safeguarding sensitive",
+    "kk": "",
+    "translation": "保護敏感(資訊)",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "compromised",
+    "kk": "",
+    "translation": "妥協的、受損的、(資安)被洩漏的",
+    "part_of_speech": "adj. / v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "criticized",
+    "kk": "",
+    "translation": "受到批評的",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "commended",
+    "kk": "",
+    "translation": "受到表揚的",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "driven",
+    "kk": "",
+    "translation": "受...驅動的、有急迫感的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "figuratively",
+    "kk": "",
+    "translation": "比喻地、象徵性地 adv.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "greatly",
+    "kk": "",
+    "translation": "極大地、非常 adv.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "receptively",
+    "kk": "",
+    "translation": "善於接受地、虛心地 adv.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "conversely",
+    "kk": "",
+    "translation": "相反地 adv.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "in light of",
+    "kk": "",
+    "translation": "考慮到、鑒於 phr.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "in contrast to",
+    "kk": "",
+    "translation": "與...相比、與...截然不同 phr.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "Committed",
+    "kk": "",
+    "translation": "致力於...的、承諾的 adj.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "fewer",
+    "kk": "",
+    "translation": "較少的(接可數名詞) adj.",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "amassing",
+    "kk": "",
+    "translation": "累積、積聚 v. (ing)",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "embracing",
+    "kk": "",
+    "translation": "擁抱、欣然接受 v. (ing)",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "grabbing",
+    "kk": "",
+    "translation": "抓住、奪取 v. (ing)",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "encircling",
+    "kk": "",
+    "translation": "環繞、圍繞 v. (ing)",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "rapid",
+    "kk": "",
+    "translation": "快速的、急速的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "thanks to",
+    "kk": "",
+    "translation": "由於、多虧了 (原筆記 thank to 應為此)",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "irreversible",
+    "kk": "",
+    "translation": "不可逆轉的、不可挽回的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "deductible",
+    "kk": "",
+    "translation": "可扣除的、(保險)自負額",
+    "part_of_speech": "adj. / n.",
+    "note": ""
+  },
+  {
+    "word": "receptively",
+    "kk": "",
+    "translation": "善於接受地、虛心地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "exceptional",
+    "kk": "",
+    "translation": "卓越的、例外的、非凡的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "glitches",
+    "kk": "",
+    "translation": "(電腦、系統)小故障、小紕漏",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "no wonder",
+    "kk": "",
+    "translation": "難怪、不足為奇",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "volatile",
+    "kk": "",
+    "translation": "不穩定的、易變的、易揮發的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "theoretical",
+    "kk": "",
+    "translation": "理論上的、假設的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "surge",
+    "kk": "",
+    "translation": "激增、湧動",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "pollution",
+    "kk": "",
+    "translation": "汙染 (原筆記 opllution 應為此)",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "airborne",
+    "kk": "",
+    "translation": "空氣傳播的、在大氣中的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "in order to",
+    "kk": "",
+    "translation": "為了... (原筆記 in oder to 應為此)",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "halt",
+    "kk": "",
+    "translation": "停止、終止",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "courtyard",
+    "kk": "",
+    "translation": "庭院、天井",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "aggressive",
+    "kk": "",
+    "translation": "積極進取的、具侵略性的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "respective",
+    "kk": "",
+    "translation": "各自的、各別的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sequence",
+    "kk": "",
+    "translation": "順序、次序",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "timely",
+    "kk": "",
+    "translation": "及時的、適時的",
+    "part_of_speech": "adj. / adv.",
+    "note": ""
+  },
+  {
+    "word": "deny",
+    "kk": "",
+    "translation": "否認、拒絕給予",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "facilitate",
+    "kk": "",
+    "translation": "促進、使便利 (原筆記 faciliate 應為此)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "specialization",
+    "kk": "",
+    "translation": "專業化、專長",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "integral",
+    "kk": "",
+    "translation": "不可或缺的、整體的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "unexpectedly",
+    "kk": "",
+    "translation": "出乎意料地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "nearly",
+    "kk": "",
+    "translation": "幾乎、將近",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "productive",
+    "kk": "",
+    "translation": "富有成效的、多產的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "persuade",
+    "kk": "",
+    "translation": "說服、勸服",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "unfavorable",
+    "kk": "",
+    "translation": "不利的、不理想的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "transition",
+    "kk": "",
+    "translation": "轉換、過渡期",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "foremost",
+    "kk": "",
+    "translation": "最重要的、領先的",
+    "part_of_speech": "adj. / adv.",
+    "note": ""
+  },
+  {
+    "word": "designated",
+    "kk": "",
+    "translation": "指定的、選定的",
+    "part_of_speech": "adj. / v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "lorries",
+    "kk": "",
+    "translation": "大貨車、卡車",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "eliminated",
+    "kk": "",
+    "translation": "排除、淘汰、消除",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "apparent",
+    "kk": "",
+    "translation": "明顯的、顯而易見的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "attire",
+    "kk": "",
+    "translation": "服裝、衣著",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "insulation",
+    "kk": "",
+    "translation": "隔熱、絕緣、隔音",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "be accounted for",
+    "kk": "",
+    "translation": "被解釋、被列入計算、(人)確認安全",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "enlarge",
+    "kk": "",
+    "translation": "擴大、放大",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "exclusively",
+    "kk": "",
+    "translation": "專門地、獨家地、排他地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "outstanding",
+    "kk": "",
+    "translation": "傑出的、未償付的(帳單)",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "rationale",
+    "kk": "",
+    "translation": "根本原因、邏輯依據",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "regain",
+    "kk": "",
+    "translation": "恢復、重新獲得",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "staff lounge",
+    "kk": "",
+    "translation": "員工休息室",
+    "part_of_speech": "n phr.",
+    "note": ""
+  },
+  {
+    "word": "tentative",
+    "kk": "",
+    "translation": "暫定的、試驗性的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "understaffed",
+    "kk": "",
+    "translation": "人手不足的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "masterminded",
+    "kk": "",
+    "translation": "策劃、主導",
+    "part_of_speech": "",
+    "note": ""
+  },
+  {
+    "word": "template",
+    "kk": "",
+    "translation": "範本、模板",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "diverse",
+    "kk": "",
+    "translation": "多樣的、多元的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "revision",
+    "kk": "",
+    "translation": "修訂、修正",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "imperative",
+    "kk": "",
+    "translation": "至關重要的、必要的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "insufficient",
+    "kk": "",
+    "translation": "不足的、不夠的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "reproduce",
+    "kk": "",
+    "translation": "複製、翻印、繁殖",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "subsequent to",
+    "kk": "",
+    "translation": "在...之後",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "hookups",
+    "kk": "",
+    "translation": "連接、接頭、設施連接",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "wires",
+    "kk": "",
+    "translation": "電線、線路",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "fuel",
+    "kk": "",
+    "translation": "燃料 (原筆記 fule 應為此)",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "failure",
+    "kk": "",
+    "translation": "故障、失敗、衰竭",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "separate",
+    "kk": "",
+    "translation": "分開、獨立的 (原筆記 sparate 應為此)",
+    "part_of_speech": "v. / adj.",
+    "note": ""
+  },
+  {
+    "word": "storing",
+    "kk": "",
+    "translation": "儲存、存放",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "waive",
+    "kk": "",
+    "translation": "免除、放棄(權利/費用)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "instead",
+    "kk": "",
+    "translation": "反而、替代 (原筆記 instrad 應為此)",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "invalid",
+    "kk": "",
+    "translation": "無效的、作廢的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Favor",
+    "kk": "",
+    "translation": "偏愛、贊同、恩惠",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "Withstand",
+    "kk": "",
+    "translation": "承受、頂住、經得起",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Retain",
+    "kk": "",
+    "translation": "保留、保有",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Informal approach",
+    "kk": "",
+    "translation": "非正式的方法、非正式途徑",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "Sort out",
+    "kk": "",
+    "translation": "整理、解決、分類",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "Allocate",
+    "kk": "",
+    "translation": "分配、撥給",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "patrons",
+    "kk": "",
+    "translation": "老顧客、贊助者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "aerobics",
+    "kk": "",
+    "translation": "有氧運動",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "county",
+    "kk": "",
+    "translation": "縣、郡",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "dispatch",
+    "kk": "",
+    "translation": "派遣、調度、發送",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "electricity",
+    "kk": "",
+    "translation": "電、電力",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "electric",
+    "kk": "",
+    "translation": "電的、用電的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Charities",
+    "kk": "",
+    "translation": "慈善機構、慈善事業",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Fixed",
+    "kk": "",
+    "translation": "固定的、不變的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Glowing",
+    "kk": "",
+    "translation": "讚揚的、熾熱的、發光的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Rigid",
+    "kk": "",
+    "translation": "堅固的、死板的、嚴格的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Make a commitment",
+    "kk": "",
+    "translation": "做出承諾、致力於",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "forbidden",
+    "kk": "",
+    "translation": "禁止的、嚴禁的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "congestion",
+    "kk": "",
+    "translation": "擁擠、堵塞",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "philanthropic",
+    "kk": "",
+    "translation": "慈善的、博愛的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Impressive",
+    "kk": "",
+    "translation": "令人印象深刻的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Declined",
+    "kk": "",
+    "translation": "下降、婉拒",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "Tailoring",
+    "kk": "",
+    "translation": "裁縫、調整(計畫等)以適應",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "Embroidery",
+    "kk": "",
+    "translation": "刺繡",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Autonomy",
+    "kk": "",
+    "translation": "自治權、自主性",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Perspective",
+    "kk": "",
+    "translation": "觀點、遠景、透視圖",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "accountable",
+    "kk": "",
+    "translation": "應負責任的、有解釋義務的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "acquaint",
+    "kk": "",
+    "translation": "使認識、使熟悉",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "accordingly",
+    "kk": "",
+    "translation": "因此、相應地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "count on",
+    "kk": "",
+    "translation": "依靠、指望",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "directory",
+    "kk": "",
+    "translation": "工商名錄、目錄、電話簿",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "periodically",
+    "kk": "",
+    "translation": "定期地、週期性地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "pertinent",
+    "kk": "",
+    "translation": "相關的、中肯的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "provisionally",
+    "kk": "",
+    "translation": "臨時地、暫時地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "reliable",
+    "kk": "",
+    "translation": "可靠的、可信賴的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "solidify",
+    "kk": "",
+    "translation": "鞏固、使凝固",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "superb",
+    "kk": "",
+    "translation": "極好的、一流的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "surpass",
+    "kk": "",
+    "translation": "超過、勝過",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "bachelor's degree",
+    "kk": "",
+    "translation": "學士學位",
+    "part_of_speech": "n phr.",
+    "note": ""
+  },
+  {
+    "word": "clerical",
+    "kk": "",
+    "translation": "文書的、辦公室事務的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "compensation",
+    "kk": "",
+    "translation": "報酬、薪酬、補償",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "confidential",
+    "kk": "",
+    "translation": "機密的、保密的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "consistently",
+    "kk": "",
+    "translation": "一貫地、始終如一地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "electronically",
+    "kk": "",
+    "translation": "電子化地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "ethic",
+    "kk": "",
+    "translation": "道德、倫理",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "evident",
+    "kk": "",
+    "translation": "明顯的、明白的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "familiarity",
+    "kk": "",
+    "translation": "熟悉、精通",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "fill",
+    "kk": "",
+    "translation": "遞補、填充(職缺)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "fit",
+    "kk": "",
+    "translation": "適合、合適",
+    "part_of_speech": "v. / adj.",
+    "note": ""
+  },
+  {
+    "word": "ideal",
+    "kk": "",
+    "translation": "理想的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "proficiency",
+    "kk": "",
+    "translation": "精通、熟練",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "prospective",
+    "kk": "",
+    "translation": "預期的、潛在的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "architecture",
+    "kk": "",
+    "translation": "建築學、建築風格",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "insist",
+    "kk": "",
+    "translation": "堅持、強調",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "related",
+    "kk": "",
+    "translation": "相關的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "suited",
+    "kk": "",
+    "translation": "合適的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "workforce",
+    "kk": "",
+    "translation": "勞動力、全體員工",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Dominant",
+    "kk": "",
+    "translation": "佔優勢的、支配的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Fridge",
+    "kk": "",
+    "translation": "冰箱",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "directive",
+    "kk": "",
+    "translation": "指令、方針、指導的",
+    "part_of_speech": "n. / adj.",
+    "note": ""
+  },
+  {
+    "word": "prohibiting",
+    "kk": "",
+    "translation": "禁止、阻止",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "directness",
+    "kk": "",
+    "translation": "直接、坦率",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Recognized",
+    "kk": "",
+    "translation": "被認可的、公認的",
+    "part_of_speech": "adj. / v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "expertise",
+    "kk": "",
+    "translation": "專業知識、專長",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "prompted",
+    "kk": "",
+    "translation": "促使、導致、激起",
+    "part_of_speech": "v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "comprehensible",
+    "kk": "",
+    "translation": "可理解的、易懂的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "regarded",
+    "kk": "",
+    "translation": "被視為...、受尊敬的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "Assure",
+    "kk": "",
+    "translation": "向...保證、使確信",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Insure",
+    "kk": "",
+    "translation": "投保、確保",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "concerning",
+    "kk": "",
+    "translation": "關於 (等於 about)",
+    "part_of_speech": "prep.",
+    "note": ""
+  },
+  {
+    "word": "prolong",
+    "kk": "",
+    "translation": "延長、拉長",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "broaden",
+    "kk": "",
+    "translation": "拓寬、擴大",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "cautioned on spending",
+    "kk": "",
+    "translation": "告誡(關於支出)",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "Acquire",
+    "kk": "",
+    "translation": "收購、獲得、習得",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Tremendous",
+    "kk": "",
+    "translation": "巨大的、極好的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Harmonious",
+    "kk": "",
+    "translation": "和諧的、融洽的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Hilarious",
+    "kk": "",
+    "translation": "極好笑的、滑稽的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Consumer",
+    "kk": "",
+    "translation": "消費者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Detrimental",
+    "kk": "",
+    "translation": "有害的、不利的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Sentimental",
+    "kk": "",
+    "translation": "多愁善感的、情感上的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Optimistically",
+    "kk": "",
+    "translation": "樂觀地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "haphazardly",
+    "kk": "",
+    "translation": "隨意地、雜亂無章地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "precautions",
+    "kk": "",
+    "translation": "預防措施、防範",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Praised",
+    "kk": "",
+    "translation": "受到讚揚的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "Engage",
+    "kk": "",
+    "translation": "從事、參與、吸引",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Abandoned",
+    "kk": "",
+    "translation": "被遺棄的、廢棄的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Abandon",
+    "kk": "",
+    "translation": "放棄、拋棄",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Abandoning",
+    "kk": "",
+    "translation": "放棄、拋棄",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "Predecessor",
+    "kk": "",
+    "translation": "前任、前輩、原先的東西",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "deductible",
+    "kk": "",
+    "translation": "可扣除的、(保險)自負額",
+    "part_of_speech": "adj. / n.",
+    "note": ""
+  },
+  {
+    "word": "constantly",
+    "kk": "",
+    "translation": "不斷地、時常地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "belongings",
+    "kk": "",
+    "translation": "個人物品、財產",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "disaster",
+    "kk": "",
+    "translation": "災難、大禍",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "contaminated",
+    "kk": "",
+    "translation": "被汙染的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "accomplished",
+    "kk": "",
+    "translation": "熟練的、有造詣的、完成的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "chopped",
+    "kk": "",
+    "translation": "切碎的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "immense",
+    "kk": "",
+    "translation": "巨大的、廣大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "pressurize",
+    "kk": "",
+    "translation": "密封、加壓",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Recipients",
+    "kk": "",
+    "translation": "接受者、收件人",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Qualification",
+    "kk": "",
+    "translation": "資格、條件",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Manner",
+    "kk": "",
+    "translation": "方式、態度",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Liable",
+    "kk": "",
+    "translation": "應負責任的、易於...的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Steep",
+    "kk": "",
+    "translation": "陡峭的、(價格)急劇升降的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Verbal",
+    "kk": "",
+    "translation": "口頭的、言詞的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Markedly",
+    "kk": "",
+    "translation": "顯著地、明顯地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Reactions",
+    "kk": "",
+    "translation": "反應、回饋",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Turn",
+    "kk": "",
+    "translation": "輪流、轉變",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "May face",
+    "kk": "",
+    "translation": "可能面臨",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "Slot",
+    "kk": "",
+    "translation": "時段、狹槽",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Chain",
+    "kk": "",
+    "translation": "連鎖、鏈條",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Establishment",
+    "kk": "",
+    "translation": "機構、企業、建立",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Chain establishments",
+    "kk": "",
+    "translation": "連鎖機構/商店",
+    "part_of_speech": "n phr.",
+    "note": ""
+  },
+  {
+    "word": "As of",
+    "kk": "",
+    "translation": "起、自...起",
+    "part_of_speech": "prep phr.",
+    "note": ""
+  },
+  {
+    "word": "Affordable",
+    "kk": "",
+    "translation": "負擔得起的、平價的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Stylist",
+    "kk": "",
+    "translation": "造型師、設計師",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Stylish",
+    "kk": "",
+    "translation": "時髦的、有風格的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Adjacent",
+    "kk": "",
+    "translation": "鄰近的、隔壁的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Determines",
+    "kk": "",
+    "translation": "決定、判定",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Preserve",
+    "kk": "",
+    "translation": "保存、保護",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Premises",
+    "kk": "",
+    "translation": "(企業或機構的)場區、經營場所",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Savory",
+    "kk": "",
+    "translation": "鹹的、美味可口的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sequential",
+    "kk": "",
+    "translation": "按次序的、連續的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "impartial",
+    "kk": "",
+    "translation": "公正的、無偏見的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "prides",
+    "kk": "",
+    "translation": "以...自豪 (通常用 pride oneself on)",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "stadium",
+    "kk": "",
+    "translation": "體育場、露天運動場",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "massive",
+    "kk": "",
+    "translation": "巨大的、大量的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "tablet",
+    "kk": "",
+    "translation": "平板電腦、藥片",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "congratulate",
+    "kk": "",
+    "translation": "祝賀、恭喜",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "momentarily",
+    "kk": "",
+    "translation": "瞬間、短暫地、立刻",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "so that",
+    "kk": "",
+    "translation": "為了、以便",
+    "part_of_speech": "conj.",
+    "note": ""
+  },
+  {
+    "word": "as for",
+    "kk": "",
+    "translation": "至於、關於",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "as",
+    "kk": "",
+    "translation": "如同、按照、當作",
+    "part_of_speech": "prep. / conj.",
+    "note": ""
+  },
+  {
+    "word": "obligation",
+    "kk": "",
+    "translation": "義務、責任",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "neatly",
+    "kk": "",
+    "translation": "整潔地、乾淨利落地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "unwanted",
+    "kk": "",
+    "translation": "不需要 的、多餘的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "accept",
+    "kk": "",
+    "translation": "接受、認可",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "resistance",
+    "kk": "",
+    "translation": "抵抗、阻力",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "streamlines",
+    "kk": "",
+    "translation": "簡化、使效率更高",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "haphazardly",
+    "kk": "",
+    "translation": "隨意地、雜亂無章地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "precautions",
+    "kk": "",
+    "translation": "預防措施、防範",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Praised",
+    "kk": "",
+    "translation": "受到讚揚的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "Engage",
+    "kk": "",
+    "translation": "從事、參與、吸引",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Abandoned",
+    "kk": "",
+    "translation": "被遺棄的、廢棄的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Abandon",
+    "kk": "",
+    "translation": "放棄、拋棄",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Abandoning",
+    "kk": "",
+    "translation": "放棄、拋棄",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "Predecessor",
+    "kk": "",
+    "translation": "前任、前輩",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "deductible",
+    "kk": "",
+    "translation": "可扣除的、(保險)自負額",
+    "part_of_speech": "adj. / n.",
+    "note": ""
+  },
+  {
+    "word": "constantly",
+    "kk": "",
+    "translation": "不斷地、時常地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "belongings",
+    "kk": "",
+    "translation": "個人物品、財產",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "disaster",
+    "kk": "",
+    "translation": "災難、大禍",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "contaminated",
+    "kk": "",
+    "translation": "被汙染的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "accomplished",
+    "kk": "",
+    "translation": "熟練的、有造詣的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "chopped",
+    "kk": "",
+    "translation": "切碎的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "immense",
+    "kk": "",
+    "translation": "巨大的、廣大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "pressurize",
+    "kk": "",
+    "translation": "密封、加壓",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Popularity",
+    "kk": "",
+    "translation": "受歡迎、流行",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Capable",
+    "kk": "",
+    "translation": "有能力的、足以...的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Restoring",
+    "kk": "",
+    "translation": "恢復、修復",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "Retaining",
+    "kk": "",
+    "translation": "保留、保持",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "Prohibit",
+    "kk": "",
+    "translation": "禁止、阻止",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Just as",
+    "kk": "",
+    "translation": "正如、正當...之時",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "Indirectly",
+    "kk": "",
+    "translation": "間接地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Trays",
+    "kk": "",
+    "translation": "托盤、置物盤",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Impartially",
+    "kk": "",
+    "translation": "公正地、無偏見地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Opposing",
+    "kk": "",
+    "translation": "相反的、對抗的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Broadcast",
+    "kk": "",
+    "translation": "廣播、播放",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "Acclaimed",
+    "kk": "",
+    "translation": "受到讚揚的、廣受好評的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Distinctive",
+    "kk": "",
+    "translation": "獨特的、有特色的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Approximately",
+    "kk": "",
+    "translation": "大約、大概",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Appropriately",
+    "kk": "",
+    "translation": "適當地、妥善地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Prospective",
+    "kk": "",
+    "translation": "預期的、潛在的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Repetitive",
+    "kk": "",
+    "translation": "重複的、反覆的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Inevitably",
+    "kk": "",
+    "translation": "必然地、不可避免地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Geared",
+    "kk": "",
+    "translation": "為了...而準備的、適合...的",
+    "part_of_speech": "adj. / v. (p.p.)",
+    "note": ""
+  },
+  {
+    "word": "Confined",
+    "kk": "",
+    "translation": "受限制的、封閉的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "carton",
+    "kk": "",
+    "translation": "紙盒",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "allergic",
+    "kk": "",
+    "translation": "過敏的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "voluntary",
+    "kk": "",
+    "translation": "自願的、自發的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "mislabeled",
+    "kk": "",
+    "translation": "標籤標示錯誤的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "indicate",
+    "kk": "",
+    "translation": "顯示、指出",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "unprecedented",
+    "kk": "",
+    "translation": "史無前例的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "regret",
+    "kk": "",
+    "translation": "遺憾、抱歉",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "Piracy",
+    "kk": "",
+    "translation": "盜版、侵權行為",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Currency",
+    "kk": "",
+    "translation": "貨幣、流通",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Literacy",
+    "kk": "",
+    "translation": "識字、(特定領域的) 知識能力",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "athletes",
+    "kk": "",
+    "translation": "運動員",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "marriage",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "婚姻；結婚",
+    "note": ""
+  },
+  {
+    "word": "barrier",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "障礙；屏障",
+    "note": ""
+  },
+  {
+    "word": "compound",
+    "kk": "",
+    "translation": "n./v./adj.",
+    "part_of_speech": "混合物；混合；複合的",
+    "note": ""
+  },
+  {
+    "word": "prize",
+    "kk": "",
+    "translation": "n./v./adj.",
+    "part_of_speech": "獎品；重視；得獎的",
+    "note": ""
+  },
+  {
+    "word": "illustration",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "插圖；說明",
+    "note": ""
+  },
+  {
+    "word": "lack",
+    "kk": "",
+    "translation": "n./v.",
+    "part_of_speech": "缺乏；沒有",
+    "note": ""
+  },
+  {
+    "word": "portfolio",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "文件夾；作品集；投資組合",
+    "note": ""
+  },
+  {
+    "word": "interior",
+    "kk": "",
+    "translation": "n./adj.",
+    "part_of_speech": "室內；內部的",
+    "note": ""
+  },
+  {
+    "word": "build",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "建造；建立",
+    "note": ""
+  },
+  {
+    "word": "wonder",
+    "kk": "",
+    "translation": "v./n.",
+    "part_of_speech": "想知道；驚奇",
+    "note": ""
+  },
+  {
+    "word": "income",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "收入",
+    "note": ""
+  },
+  {
+    "word": "anniversary",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "週年紀念日",
+    "note": ""
+  },
+  {
+    "word": "blossom",
+    "kk": "",
+    "translation": "n./v.",
+    "part_of_speech": "花；開花；繁榮",
+    "note": ""
+  },
+  {
+    "word": "society",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "社會；協會",
+    "note": ""
+  },
+  {
+    "word": "derive",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "起源於；衍生",
+    "note": ""
+  },
+  {
+    "word": "disappoint",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "使失望",
+    "note": ""
+  },
+  {
+    "word": "franchise",
+    "kk": "",
+    "translation": "n./v.",
+    "part_of_speech": "特許經營權；授權",
+    "note": ""
+  },
+  {
+    "word": "margin",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "邊緣；利潤；頁邊空白",
+    "note": ""
+  },
+  {
+    "word": "briefly",
+    "kk": "",
+    "translation": "adv.",
+    "part_of_speech": "簡短地；短暫地",
+    "note": ""
+  },
+  {
+    "word": "spacious",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "寬敞的",
+    "note": ""
+  },
+  {
+    "word": "maintenance",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "維修；保養；維持",
+    "note": ""
+  },
+  {
+    "word": "renovation",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "裝修；翻新",
+    "note": ""
+  },
+  {
+    "word": "wrap",
+    "kk": "",
+    "translation": "v./n.",
+    "part_of_speech": "包裝；圍繞；包裹物",
+    "note": ""
+  },
+  {
+    "word": "lane",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "小路；車道",
+    "note": ""
+  },
+  {
+    "word": "resign",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "辭職；放棄",
+    "note": ""
+  },
+  {
+    "word": "description",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "描述；說明",
+    "note": ""
+  },
+  {
+    "word": "strict",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "嚴格的",
+    "note": ""
+  },
+  {
+    "word": "notice",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "注意到",
+    "note": ""
+  },
+  {
+    "word": "aware",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "意識到的；知道的",
+    "note": ""
+  },
+  {
+    "word": "commitment",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "承諾；責任",
+    "note": ""
+  },
+  {
+    "word": "besides",
+    "kk": "",
+    "translation": "prep./adv.",
+    "part_of_speech": "除了…之外；此外",
+    "note": ""
+  },
+  {
+    "word": "overdue",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "過期的；延誤的",
+    "note": ""
+  },
+  {
+    "word": "itinerary",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "行程表；旅程",
+    "note": ""
+  },
+  {
+    "word": "complicated",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "複雜的",
+    "note": ""
+  },
+  {
+    "word": "curator",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "館長；策展人",
+    "note": ""
+  },
+  {
+    "word": "surround",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "包圍；圍繞",
+    "note": ""
+  },
+  {
+    "word": "element",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "要素；成分",
+    "note": ""
+  },
+  {
+    "word": "fierce",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "激烈的；兇猛的",
+    "note": ""
+  },
+  {
+    "word": "manipulate",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "操控；巧妙處理",
+    "note": ""
+  },
+  {
+    "word": "unless",
+    "kk": "",
+    "translation": "conj.",
+    "part_of_speech": "除非",
+    "note": ""
+  },
+  {
+    "word": "polish",
+    "kk": "",
+    "translation": "v./n.",
+    "part_of_speech": "擦亮；磨光；光澤",
+    "note": ""
+  },
+  {
+    "word": "bond",
+    "kk": "",
+    "translation": "n./v.",
+    "part_of_speech": "聯繫；結合；黏合",
+    "note": ""
+  },
+  {
+    "word": "stack",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "堆疊；堆放",
+    "note": ""
+  },
+  {
+    "word": "omission",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "省略；疏忽",
+    "note": ""
+  },
+  {
+    "word": "transaction",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "交易；業務往來",
+    "note": ""
+  },
+  {
+    "word": "pedestrian",
+    "kk": "",
+    "translation": "n./adj.",
+    "part_of_speech": "行人；平凡的",
+    "note": ""
+  },
+  {
+    "word": "consensus",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "共識；一致意見",
+    "note": ""
+  },
+  {
+    "word": "extension",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "延長；分機",
+    "note": ""
+  },
+  {
+    "word": "merit",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "優點；價值",
+    "note": ""
+  },
+  {
+    "word": "refreshment",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "茶點；飲料",
+    "note": ""
+  },
+  {
+    "word": "auditorium",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "禮堂；大會堂",
+    "note": ""
+  },
+  {
+    "word": "trim",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "修剪；整理",
+    "note": ""
+  },
+  {
+    "word": "possession",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "擁有；所有物",
+    "note": ""
+  },
+  {
+    "word": "involvement",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "參與；牽連",
+    "note": ""
+  },
+  {
+    "word": "hesitate",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "猶豫；遲疑",
+    "note": ""
+  },
+  {
+    "word": "deserve",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "值得；應得",
+    "note": ""
+  },
+  {
+    "word": "specialty",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "專長；特產",
+    "note": ""
+  },
+  {
+    "word": "casual",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "非正式的；隨意的",
+    "note": ""
+  },
+  {
+    "word": "exhibition",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "展覽；展示會",
+    "note": ""
+  },
+  {
+    "word": "candidate",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "候選人；應徵者",
+    "note": ""
+  },
+  {
+    "word": "critical",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "批評的；關鍵的",
+    "note": ""
+  },
+  {
+    "word": "investigation",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "調查；研究",
+    "note": ""
+  },
+  {
+    "word": "facility",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "設施；設備",
+    "note": ""
+  },
+  {
+    "word": "parade",
+    "kk": "",
+    "translation": "n./v.",
+    "part_of_speech": "遊行；列隊行進",
+    "note": ""
+  },
+  {
+    "word": "obligation",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "義務；責任",
+    "note": ""
+  },
+  {
+    "word": "significant",
+    "kk": "",
+    "translation": "adj.",
+    "part_of_speech": "重要的；顯著的",
+    "note": ""
+  },
+  {
+    "word": "ambition",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "志向；雄心",
+    "note": ""
+  },
+  {
+    "word": "unfortunately",
+    "kk": "",
+    "translation": "adv.",
+    "part_of_speech": "不幸地；可惜地",
+    "note": ""
+  },
+  {
+    "word": "clinic",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "診所",
+    "note": ""
+  },
+  {
+    "word": "receptionist",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "接待員；櫃檯人員",
+    "note": ""
+  },
+  {
+    "word": "variety",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "各種；多樣性",
+    "note": ""
+  },
+  {
+    "word": "recession",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "蕭條；景氣衰退",
+    "note": ""
+  },
+  {
+    "word": "conduct",
+    "kk": "",
+    "translation": "v.",
+    "part_of_speech": "指揮；進行",
+    "note": ""
+  },
+  {
+    "word": "appliance",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "家電用品；器具",
+    "note": ""
+  },
+  {
+    "word": "ceremony",
+    "kk": "",
+    "translation": "n.",
+    "part_of_speech": "儀式；典禮",
+    "note": ""
+  },
+  {
+    "word": "crack",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "裂縫、破裂",
+    "note": ""
+  },
+  {
+    "word": "inventory",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "庫存",
+    "note": ""
+  },
+  {
+    "word": "dispute",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "爭議、爭執",
+    "note": ""
+  },
+  {
+    "word": "distinguish",
+    "kk": "",
+    "translation": "v",
+    "part_of_speech": "區分",
+    "note": ""
+  },
+  {
+    "word": "oven",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "烤箱",
+    "note": ""
+  },
+  {
+    "word": "souvenirs",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "紀念品",
+    "note": ""
+  },
+  {
+    "word": "expert",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "專家",
+    "note": ""
+  },
+  {
+    "word": "excerpt",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "節錄",
+    "note": ""
+  },
+  {
+    "word": "gallery",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "畫廊",
+    "note": ""
+  },
+  {
+    "word": "regarding",
+    "kk": "",
+    "translation": "prep",
+    "part_of_speech": "關於",
+    "note": ""
+  },
+  {
+    "word": "manufacturing",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "製造業",
+    "note": ""
+  },
+  {
+    "word": "contact",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "聯絡、聯繫",
+    "note": ""
+  },
+  {
+    "word": "outage",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "中斷",
+    "note": ""
+  },
+  {
+    "word": "boost",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "提高、增加、改善",
+    "note": ""
+  },
+  {
+    "word": "bid",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "投標、出價",
+    "note": ""
+  },
+  {
+    "word": "pamphlets",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "宣傳冊",
+    "note": ""
+  },
+  {
+    "word": "petrol",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "汽油",
+    "note": ""
+  },
+  {
+    "word": "discrepancy",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "差異",
+    "note": ""
+  },
+  {
+    "word": "accessible",
+    "kk": "",
+    "translation": "adj",
+    "part_of_speech": "可進入的",
+    "note": ""
+  },
+  {
+    "word": "malfunction",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "故障、發生故障",
+    "note": ""
+  },
+  {
+    "word": "heatedly",
+    "kk": "",
+    "translation": "adv",
+    "part_of_speech": "激烈地",
+    "note": ""
+  },
+  {
+    "word": "compatible",
+    "kk": "",
+    "translation": "adj",
+    "part_of_speech": "相容的",
+    "note": ""
+  },
+  {
+    "word": "commensurate",
+    "kk": "",
+    "translation": "adj",
+    "part_of_speech": "相稱的",
+    "note": ""
+  },
+  {
+    "word": "instrument",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "儀器",
+    "note": ""
+  },
+  {
+    "word": "evacuated",
+    "kk": "",
+    "translation": "v",
+    "part_of_speech": "撤離",
+    "note": ""
+  },
+  {
+    "word": "character",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "性格",
+    "note": ""
+  },
+  {
+    "word": "quite",
+    "kk": "",
+    "translation": "adv",
+    "part_of_speech": "相當",
+    "note": ""
+  },
+  {
+    "word": "procedures",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "程序",
+    "note": ""
+  },
+  {
+    "word": "decisively",
+    "kk": "",
+    "translation": "adv",
+    "part_of_speech": "果斷地",
+    "note": ""
+  },
+  {
+    "word": "graduate",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "畢業、研究生",
+    "note": ""
+  },
+  {
+    "word": "invention",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "發明",
+    "note": ""
+  },
+  {
+    "word": "comedy",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "喜劇",
+    "note": ""
+  },
+  {
+    "word": "regret",
+    "kk": "",
+    "translation": "n/v",
+    "part_of_speech": "後悔",
+    "note": ""
+  },
+  {
+    "word": "properly",
+    "kk": "",
+    "translation": "adv",
+    "part_of_speech": "適當地",
+    "note": ""
+  },
+  {
+    "word": "property",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "財產",
+    "note": ""
+  },
+  {
+    "word": "secretary",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "秘書",
+    "note": ""
+  },
+  {
+    "word": "present",
+    "kk": "",
+    "translation": "n/v/adj",
+    "part_of_speech": "禮物、呈現、目前的",
+    "note": ""
+  },
+  {
+    "word": "comprehensive",
+    "kk": "",
+    "translation": "adj",
+    "part_of_speech": "全面的",
+    "note": ""
+  },
+  {
+    "word": "relieve",
+    "kk": "",
+    "translation": "v",
+    "part_of_speech": "緩解",
+    "note": ""
+  },
+  {
+    "word": "keynote",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "主旨演講",
+    "note": ""
+  },
+  {
+    "word": "into account",
+    "kk": "",
+    "translation": "phr",
+    "part_of_speech": "考慮到",
+    "note": ""
+  },
+  {
+    "word": "efficiency",
+    "kk": "",
+    "translation": "n",
+    "part_of_speech": "效率",
+    "note": ""
+  },
+  {
+    "word": "tenant",
+    "kk": "",
+    "translation": "房客、承租人",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "recruiter",
+    "kk": "",
+    "translation": "招募人員、招聘者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "impression",
+    "kk": "",
+    "translation": "印象",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "pier",
+    "kk": "",
+    "translation": "碼頭、棧橋",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "heater",
+    "kk": "",
+    "translation": "暖氣機、加熱器",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "gratitude",
+    "kk": "",
+    "translation": "感激、感謝",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "customary",
+    "kk": "",
+    "translation": "慣例的、習俗的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "climate",
+    "kk": "",
+    "translation": "氣候、形勢",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "pleased",
+    "kk": "",
+    "translation": "高興的、滿意的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "poetry",
+    "kk": "",
+    "translation": "詩歌",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Volume",
+    "kk": "",
+    "translation": "音量、容量、(書)冊",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "attentive",
+    "kk": "",
+    "translation": "專心的、留心的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "executive",
+    "kk": "",
+    "translation": "高階主管、管理階層",
+    "part_of_speech": "n. / adj.",
+    "note": ""
+  },
+  {
+    "word": "merger",
+    "kk": "",
+    "translation": "(公司)合併",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "alphabetically",
+    "kk": "",
+    "translation": "依字母順序地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "expense",
+    "kk": "",
+    "translation": "費用、支出",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "field",
+    "kk": "",
+    "translation": "領域、範圍",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "previous",
+    "kk": "",
+    "translation": "先前的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Probation",
+    "kk": "",
+    "translation": "試用期",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "article",
+    "kk": "",
+    "translation": "文章、物品",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "inconvenience",
+    "kk": "",
+    "translation": "不便、困擾",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "reserve",
+    "kk": "",
+    "translation": "預約、保留",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "forward",
+    "kk": "",
+    "translation": "轉寄、向前",
+    "part_of_speech": "v. / adv.",
+    "note": ""
+  },
+  {
+    "word": "admission",
+    "kk": "",
+    "translation": "入場費、准許進入",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "intermission",
+    "kk": "",
+    "translation": "中場休息",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "contemporary",
+    "kk": "",
+    "translation": "當代的、現代的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "plates",
+    "kk": "",
+    "translation": "盤子、車牌",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "appealing",
+    "kk": "",
+    "translation": "有吸引力的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "granted",
+    "kk": "",
+    "translation": "被准許的、假定",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "session",
+    "kk": "",
+    "translation": "會議、(授課)期間",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "essence",
+    "kk": "",
+    "translation": "本質、精髓",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "section",
+    "kk": "",
+    "translation": "部門、部分",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "quality",
+    "kk": "",
+    "translation": "品質、特性",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "cartridges",
+    "kk": "",
+    "translation": "(印表機)墨水匣",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "structure",
+    "kk": "",
+    "translation": "結構、建築物",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "inspection",
+    "kk": "",
+    "translation": "檢查、視察",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "metropolitan",
+    "kk": "",
+    "translation": "大都會的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "retrieve",
+    "kk": "",
+    "translation": "取回、檢索",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "interaction",
+    "kk": "",
+    "translation": "互動",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "exert",
+    "kk": "",
+    "translation": "施加、運用",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "founded",
+    "kk": "",
+    "translation": "創立、成立",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "encounter",
+    "kk": "",
+    "translation": "遇到、遭遇",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "appendix",
+    "kk": "",
+    "translation": "附錄",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "crowded",
+    "kk": "",
+    "translation": "擁擠的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "honorable",
+    "kk": "",
+    "translation": "值得尊敬的、光榮的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "registration",
+    "kk": "",
+    "translation": "登記、註冊",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "auditing",
+    "kk": "",
+    "translation": "審計、查帳",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Orientation",
+    "kk": "",
+    "translation": "新進員工培訓、迎新說明會",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "approximately",
+    "kk": "",
+    "translation": "大約、約莫",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Election",
+    "kk": "",
+    "translation": "選舉",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "demeanor",
+    "kk": "",
+    "translation": "舉止、風度",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "valid",
+    "kk": "",
+    "translation": "有效的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "appropriate",
+    "kk": "",
+    "translation": "適當的、合適的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "preservative",
+    "kk": "",
+    "translation": "防腐劑",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "guard",
+    "kk": "",
+    "translation": "警衛、看守",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "thorough",
+    "kk": "",
+    "translation": "徹底的、詳盡的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "aside",
+    "kk": "",
+    "translation": "在旁邊、撇開...不談",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "Instructions",
+    "kk": "",
+    "translation": "指示、用法說明",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "ladder",
+    "kk": "",
+    "translation": "梯子",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "law",
+    "kk": "",
+    "translation": "法律",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Specification",
+    "kk": "",
+    "translation": "規格、詳細說明書",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "surcharge",
+    "kk": "",
+    "translation": "附加費、額外費用",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "expedited",
+    "kk": "",
+    "translation": "加急的、加速的",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "scattered",
+    "kk": "",
+    "translation": "分散的、零星的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "publisher",
+    "kk": "",
+    "translation": "出版商",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "shuttle bus",
+    "kk": "",
+    "translation": "接駁車",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "examining",
+    "kk": "",
+    "translation": "檢查、審查",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "earlier",
+    "kk": "",
+    "translation": "較早的、先前的",
+    "part_of_speech": "adj. / adv.",
+    "note": ""
+  },
+  {
+    "word": "adverse weather",
+    "kk": "",
+    "translation": "惡劣天氣",
+    "part_of_speech": "n. phr.",
+    "note": ""
+  },
+  {
+    "word": "remaining",
+    "kk": "",
+    "translation": "剩餘的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "departure",
+    "kk": "",
+    "translation": "出發、離開",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "fines",
+    "kk": "",
+    "translation": "罰款",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "ticketed",
+    "kk": "",
+    "translation": "被開罰單的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "compete",
+    "kk": "",
+    "translation": "競爭",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "vacancies",
+    "kk": "",
+    "translation": "空缺、職缺",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "regularly",
+    "kk": "",
+    "translation": "規律地、經常地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "culprit",
+    "kk": "",
+    "translation": "罪魁禍首、肇事者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "occur",
+    "kk": "",
+    "translation": "發生、出現",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "supper",
+    "kk": "",
+    "translation": "晚餐",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "orphan",
+    "kk": "",
+    "translation": "孤兒",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "adopt",
+    "kk": "",
+    "translation": "採用、收養",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "delight",
+    "kk": "",
+    "translation": "使愉快、令人高興",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "bloke",
+    "kk": "",
+    "translation": "男人、傢伙",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "interrogate",
+    "kk": "",
+    "translation": "審問、詢問",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "owl",
+    "kk": "",
+    "translation": "貓頭鷹",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "flee",
+    "kk": "",
+    "translation": "逃離、逃走",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "resist",
+    "kk": "",
+    "translation": "抵抗、抗拒",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "deny",
+    "kk": "",
+    "translation": "否認、拒絕",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "risk",
+    "kk": "",
+    "translation": "冒...風險",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "dread",
+    "kk": "",
+    "translation": "害怕、畏懼",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "tolerate",
+    "kk": "",
+    "translation": "容忍、忍受",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "quit",
+    "kk": "",
+    "translation": "辭職、停止",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "admit",
+    "kk": "",
+    "translation": "承認、准許進入",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "escape",
+    "kk": "",
+    "translation": "逃離、避開",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "recollect",
+    "kk": "",
+    "translation": "回想、回憶",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "anticipate",
+    "kk": "",
+    "translation": "預期、預料",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "observe",
+    "kk": "",
+    "translation": "觀察、遵守",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "perceive",
+    "kk": "",
+    "translation": "察覺、認為",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "imply",
+    "kk": "",
+    "translation": "暗示",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "shelf",
+    "kk": "",
+    "translation": "架子",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "traffic",
+    "kk": "",
+    "translation": "交通",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "informative",
+    "kk": "",
+    "translation": "提供資訊的、增廣見聞的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "caught",
+    "kk": "",
+    "translation": "捕捉(catch的過去式/分詞)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "substances",
+    "kk": "",
+    "translation": "物質、材料",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "spine",
+    "kk": "",
+    "translation": "脊椎",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "pleasurable",
+    "kk": "",
+    "translation": "愉快的、帶來享受的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "treatments",
+    "kk": "",
+    "translation": "治療、處理、療法",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "relieves",
+    "kk": "",
+    "translation": "減輕、緩解",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "aching",
+    "kk": "",
+    "translation": "疼痛的、酸痛的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "muscles",
+    "kk": "",
+    "translation": "肌肉",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "widespread",
+    "kk": "",
+    "translation": "廣泛的、普遍的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "disgust",
+    "kk": "",
+    "translation": "厭惡、反感",
+    "part_of_speech": "n. / v.",
+    "note": ""
+  },
+  {
+    "word": "circulate",
+    "kk": "",
+    "translation": "循環、流通",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "alternative",
+    "kk": "",
+    "translation": "可替代的、非傳統的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "sensation",
+    "kk": "",
+    "translation": "感覺、知覺",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "technique",
+    "kk": "",
+    "translation": "技術、方法",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "relaxed",
+    "kk": "",
+    "translation": "放鬆的、輕鬆的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "soothing",
+    "kk": "",
+    "translation": "慰藉的、使人平靜的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "stunning",
+    "kk": "",
+    "translation": "極美的、令人震驚的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "extremely",
+    "kk": "",
+    "translation": "非常地、極度地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "climate",
+    "kk": "",
+    "translation": "氣候",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "generally",
+    "kk": "",
+    "translation": "一般來說、通常",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "wander",
+    "kk": "",
+    "translation": "漫步、閒逛",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "reaches",
+    "kk": "",
+    "translation": "區域、範圍",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "exert yourself",
+    "kk": "",
+    "translation": "努力、費勁",
+    "part_of_speech": "phr v.",
+    "note": ""
+  },
+  {
+    "word": "attractions",
+    "kk": "",
+    "translation": "景點、吸引人的事物",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "poetic",
+    "kk": "",
+    "translation": "詩意的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "charm",
+    "kk": "",
+    "translation": "魅力、魔力",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "scenery",
+    "kk": "",
+    "translation": "風景、景色",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "entire",
+    "kk": "",
+    "translation": "全部的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Oversight",
+    "kk": "",
+    "translation": "監督、管理",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Oversee",
+    "kk": "",
+    "translation": "監督、監管",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Competence",
+    "kk": "",
+    "translation": "能力、勝任",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Dexterity",
+    "kk": "",
+    "translation": "靈巧、熟練",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Affirmation",
+    "kk": "",
+    "translation": "肯定、確認",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Discretion",
+    "kk": "",
+    "translation": "謹慎、裁量權",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "No less than",
+    "kk": "",
+    "translation": "不亞於、至少",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "As long as",
+    "kk": "",
+    "translation": "只要",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "Even though",
+    "kk": "",
+    "translation": "即使、雖然",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "Only to",
+    "kk": "",
+    "translation": "結果卻是、不料",
+    "part_of_speech": "phr.",
+    "note": ""
+  },
+  {
+    "word": "forfeiture",
+    "kk": "",
+    "translation": "(權利)喪失、沒收",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "placement",
+    "kk": "",
+    "translation": "安置、職位安排",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Diligence",
+    "kk": "",
+    "translation": "勤奮、努力",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Reimburse",
+    "kk": "",
+    "translation": "報銷、償還",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Mandatory",
+    "kk": "",
+    "translation": "強制性的、義務的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Foreclosure",
+    "kk": "",
+    "translation": "房屋止贖、喪失抵押品贖回權",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Implement",
+    "kk": "",
+    "translation": "實施、執行",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Convene",
+    "kk": "",
+    "translation": "召集、開會",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Vigilant",
+    "kk": "",
+    "translation": "警惕的、警覺的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Indemnify",
+    "kk": "",
+    "translation": "保障、賠償",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Scrutinize",
+    "kk": "",
+    "translation": "詳細檢查、細查",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Incur",
+    "kk": "",
+    "translation": "招致、遭受(費用/債務)",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "distributing",
+    "kk": "",
+    "translation": "分發、經銷",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "biggest",
+    "kk": "",
+    "translation": "最大的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "thoroughly",
+    "kk": "",
+    "translation": "徹底地、完全地、仔細地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "relatively",
+    "kk": "",
+    "translation": "相對地、比較起來",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "nearly",
+    "kk": "",
+    "translation": "幾乎、差不多",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "direct",
+    "kk": "",
+    "translation": "直接的、直達的、指導",
+    "part_of_speech": "adj. / v.",
+    "note": ""
+  },
+  {
+    "word": "unimaginative",
+    "kk": "",
+    "translation": "缺乏想像力的、單調的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "now that",
+    "kk": "",
+    "translation": "既然、由於",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "in case",
+    "kk": "",
+    "translation": "以防萬一、假如",
+    "part_of_speech": "conj phr.",
+    "note": ""
+  },
+  {
+    "word": "against",
+    "kk": "",
+    "translation": "反對、與...相反、依著",
+    "part_of_speech": "prep.",
+    "note": ""
+  },
+  {
+    "word": "era",
+    "kk": "",
+    "translation": "時代、紀元",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "interval",
+    "kk": "",
+    "translation": "間隔、休息時間、距離",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "period",
+    "kk": "",
+    "translation": "期間、一段時間、時期",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "energy",
+    "kk": "",
+    "translation": "精力、活力、能源",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "willing",
+    "kk": "",
+    "translation": "樂意的、情願的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "either",
+    "kk": "",
+    "translation": "(兩者中)任一、或者",
+    "part_of_speech": "adv. / pron. / conj.",
+    "note": ""
+  },
+  {
+    "word": "neither",
+    "kk": "",
+    "translation": "(兩者中)兩者皆非、也不",
+    "part_of_speech": "adv. / pron. / conj.",
+    "note": ""
+  },
+  {
+    "word": "throughout",
+    "kk": "",
+    "translation": "遍及、在...期間",
+    "part_of_speech": "prep. / adv.",
+    "note": ""
+  },
+  {
+    "word": "claim",
+    "kk": "",
+    "translation": "聲稱、主張、要求(賠償)、索賠",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "filing",
+    "kk": "",
+    "translation": "歸檔、提交(文件)",
+    "part_of_speech": "n. / v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "diagnosing",
+    "kk": "",
+    "translation": "診斷(問題或故障)",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "preventing",
+    "kk": "",
+    "translation": "阻止、預防",
+    "part_of_speech": "v. (ing)",
+    "note": ""
+  },
+  {
+    "word": "please",
+    "kk": "",
+    "translation": "使...高興、請",
+    "part_of_speech": "v. / int.",
+    "note": ""
+  },
+  {
+    "word": "considered",
+    "kk": "",
+    "translation": "被考慮的、經過深思熟慮的",
+    "part_of_speech": "v. (p.p.) / adj.",
+    "note": ""
+  },
+  {
+    "word": "along with",
+    "kk": "",
+    "translation": "連同、與...一起",
+    "part_of_speech": "prep phr.",
+    "note": ""
+  },
+  {
+    "word": "through",
+    "kk": "",
+    "translation": "穿過、藉由、透過",
+    "part_of_speech": "prep. / adv.",
+    "note": ""
+  },
+  {
+    "word": "boost",
+    "kk": "",
+    "translation": "提高、促進、增加",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "soar",
+    "kk": "",
+    "translation": "(價格、數量)驟升、飛漲",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "exclusively",
+    "kk": "",
+    "translation": "獨家地、專門地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "prominent",
+    "kk": "",
+    "translation": "卓越的、著名的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "furthermore",
+    "kk": "",
+    "translation": "此外、而且",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "seemingly",
+    "kk": "",
+    "translation": "表面上、看樣子",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "significance",
+    "kk": "",
+    "translation": "重要性、意義",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "wherein",
+    "kk": "",
+    "translation": "在其中",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "exchange",
+    "kk": "",
+    "translation": "交換、交流",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "certain",
+    "kk": "",
+    "translation": "特定的、確定的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "especially",
+    "kk": "",
+    "translation": "尤其、特別是",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "crucial",
+    "kk": "",
+    "translation": "至關重要的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "qualified",
+    "kk": "",
+    "translation": "有資格的、勝任的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "specialize",
+    "kk": "",
+    "translation": "專攻、專門從事",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "individual",
+    "kk": "",
+    "translation": "個人、個體",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "determine",
+    "kk": "",
+    "translation": "決定、判定",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "underlying",
+    "kk": "",
+    "translation": "潛在的、基礎的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "treatment",
+    "kk": "",
+    "translation": "治療、對待",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "administer",
+    "kk": "",
+    "translation": "管理、執行、給藥",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "enforcement",
+    "kk": "",
+    "translation": "執行、強制",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "crime",
+    "kk": "",
+    "translation": "罪行",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "similarly",
+    "kk": "",
+    "translation": "同樣地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "extinguish",
+    "kk": "",
+    "translation": "撲滅、熄滅",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "crop",
+    "kk": "",
+    "translation": "農作物",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "intention",
+    "kk": "",
+    "translation": "意圖、打算",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "venue",
+    "kk": "",
+    "translation": "場地、會場",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "ultimately",
+    "kk": "",
+    "translation": "最終、最後",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "scientific",
+    "kk": "",
+    "translation": "科學的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "cafeteria",
+    "kk": "",
+    "translation": "自助餐廳、食堂",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "accountant",
+    "kk": "",
+    "translation": "會計師",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "prevents",
+    "kk": "",
+    "translation": "預防、阻止",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "investing",
+    "kk": "",
+    "translation": "投資",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "organized",
+    "kk": "",
+    "translation": "組織、籌備",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "beneficial",
+    "kk": "",
+    "translation": "有益的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "as soon as",
+    "kk": "",
+    "translation": "一...就...",
+    "part_of_speech": "conj.",
+    "note": ""
+  },
+  {
+    "word": "acceptance",
+    "kk": "",
+    "translation": "接受、贊同",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "choose",
+    "kk": "",
+    "translation": "選擇",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "satisfactory",
+    "kk": "",
+    "translation": "令人滿意的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "helpful",
+    "kk": "",
+    "translation": "有幫助的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Commuting",
+    "kk": "",
+    "translation": "通勤",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Gathering",
+    "kk": "",
+    "translation": "聚集",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "secure",
+    "kk": "",
+    "translation": "保護、使安全",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "adviser",
+    "kk": "",
+    "translation": "顧問",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "unauthorized",
+    "kk": "",
+    "translation": "未經授權的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "direct",
+    "kk": "",
+    "translation": "引導、寄送",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "authorize",
+    "kk": "",
+    "translation": "授權、批准",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "Vital",
+    "kk": "",
+    "translation": "極重要的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Crucial",
+    "kk": "",
+    "translation": "決定性的、至關重要的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Prominent",
+    "kk": "",
+    "translation": "卓越的、著名的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Critical",
+    "kk": "",
+    "translation": "批評的、關鍵的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Treatment",
+    "kk": "",
+    "translation": "治療、對待",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Remedy",
+    "kk": "",
+    "translation": "補救、治療",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Culprit",
+    "kk": "",
+    "translation": "罪犯、禍根",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Criminal",
+    "kk": "",
+    "translation": "罪犯",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Ruler",
+    "kk": "",
+    "translation": "統治者",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Compass",
+    "kk": "",
+    "translation": "羅盤、圓規",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Plowman",
+    "kk": "",
+    "translation": "農夫",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Farmer",
+    "kk": "",
+    "translation": "農夫",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Plowmen",
+    "kk": "",
+    "translation": "農夫（複數）",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Culture",
+    "kk": "",
+    "translation": "文化",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Cultural",
+    "kk": "",
+    "translation": "文化的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Agriculture",
+    "kk": "",
+    "translation": "農業",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Agricultural",
+    "kk": "",
+    "translation": "農業的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "Aquaculture",
+    "kk": "",
+    "translation": "水產養殖",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Livestock",
+    "kk": "",
+    "translation": "家畜",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Poem",
+    "kk": "",
+    "translation": "詩（可數）",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "Poetry",
+    "kk": "",
+    "translation": "詩歌（不可數）",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "spray",
+    "kk": "",
+    "translation": "噴灑、噴霧",
+    "part_of_speech": "v. / n.",
+    "note": ""
+  },
+  {
+    "word": "debris",
+    "kk": "",
+    "translation": "碎片、殘骸",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "systematic",
+    "kk": "",
+    "translation": "有系統的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "systematically",
+    "kk": "",
+    "translation": "有系統地",
+    "part_of_speech": "adv.",
+    "note": ""
+  },
+  {
+    "word": "systemized",
+    "kk": "",
+    "translation": "系統化的",
+    "part_of_speech": "adj.",
+    "note": ""
+  },
+  {
+    "word": "in spite of",
+    "kk": "",
+    "translation": "儘管",
+    "part_of_speech": "prep phr.",
+    "note": ""
+  },
+  {
+    "word": "commence",
+    "kk": "",
+    "translation": "開始",
+    "part_of_speech": "v.",
+    "note": ""
+  },
+  {
+    "word": "intrusion",
+    "kk": "",
+    "translation": "侵入、闖入",
+    "part_of_speech": "n.",
+    "note": ""
+  },
+  {
+    "word": "importance",
+    "kk": "",
+    "translation": "重要性",
+    "part_of_speech": "n.",
+    "note": ""
+  }
+]

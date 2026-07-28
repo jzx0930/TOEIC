@@ -52,7 +52,7 @@ const WORD_DIR = path.join(__dir, "..", "word");
 const WRITE = process.argv.includes("--write");
 
 // ---------- ARPAbet → KK 對照 ----------
-const ARP_CONS = { B:"b",CH:"tʃ",D:"d",DH:"ð",F:"f",G:"ɡ",HH:"h",JH:"dʒ",K:"k",
+const ARP_CONS = { B:"b",CH:"tʃ",D:"d",DH:"ð",F:"f",G:"g",HH:"h",JH:"dʒ",K:"k",
   L:"l",M:"m",N:"n",NG:"ŋ",P:"p",R:"r",S:"s",SH:"ʃ",T:"t",TH:"θ",V:"v",W:"w",Y:"j",Z:"z",ZH:"ʒ" };
 // 母音：依重音（1 主、2 次、0 無）給不同符號者用函式
 const ARP_VOWEL = (base, stress) => {
@@ -168,6 +168,8 @@ for (const file of files) {
     }
 
     if (WRITE) {
+      // 缺 KK 的字（例如舊 txt 轉來的）→ 用 CMUdict 補上（照 KK 音標表符號）
+      if (!item.kk && kkSylls) item.kk = "[" + kkSylls.join("") + "]";
       item.sylWord = splitWordSpelling(word);
       if (kkSylls) item.sylKK = kkSylls.join("·");
       changed = true;
@@ -178,8 +180,8 @@ for (const file of files) {
 
 console.log(`\n===== 檢查完成：共 ${total} 字 =====`);
 console.log(`\n[1] CMUdict 查不到（OOV，需人工或英式來源）：${oob.length} 字`);
-oob.slice(0, 60).forEach(x => console.log("   - " + x));
+oob.slice(0, 200).forEach(x => console.log("   - " + x));
 console.log(`\n[2] KK 疑似不一致（請人工複核）：${mismatch.length} 字`);
-mismatch.slice(0, 80).forEach(x => console.log("   - " + x));
-if (WRITE) console.log("\n✓ 已把 sylWord / sylKK 寫回各單字檔（--write）。");
-else console.log("\n（加 --write 可把音節拆解寫回單字檔。）");
+mismatch.slice(0, 120).forEach(x => console.log("   - " + x));
+if (WRITE) console.log("\n✓ 已用 CMUdict 補上缺少的 KK，並把 sylWord / sylKK 寫回各單字檔（--write）。");
+else console.log("\n（加 --write 可補上缺少的 KK 並寫回音節拆解。）");

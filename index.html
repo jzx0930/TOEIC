@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=44"><!-- 外部樣式表（?v=44 為破快取版本號） -->
-<script defer src="index.js?v=44"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=45"><!-- 外部樣式表（?v=45 為破快取版本號） -->
+<script defer src="index.js?v=45"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -175,7 +175,7 @@
   <!-- ========================= 發音分頁 ========================= -->
   <div id="tab-pronounce" class="tab-panel">
     <h2>🗣️ 發音拆解</h2>
-    <!-- 每個單字的音節拆解由 JS 依 Pronunciation/pronunciation.json 動態產生 -->
+    <!-- KK 音標一覽表由 JS 依 Pronunciation/kk-chart.json 動態產生 -->
     <div id="pronounce-container">正在載入發音…</div>
   </div>
 
@@ -775,76 +775,57 @@ function switchTab(tab) {
     if (tab === "pronounce") initPronounce();
 }
 
-// ========================= 發音分頁：載入與渲染 =========================
+// ========================= 發音分頁：KK 音標一覽表 =========================
 let pronounceLoaded = false; // 是否已載入過發音資料
 async function initPronounce() {
     if (pronounceLoaded) return; // 只載入一次
     pronounceLoaded = true;
     const box = document.getElementById("pronounce-container");
     try {
-        // 加時間戳避免快取舊的 pronunciation.json（新增單字後才立刻看得到）
-        const res = await fetch("Pronunciation/pronunciation.json?t=" + Date.now());
-        if (!res.ok) throw new Error("無法讀取 Pronunciation/pronunciation.json");
+        // 加時間戳避免快取舊的 kk-chart.json
+        const res = await fetch("Pronunciation/kk-chart.json?t=" + Date.now());
+        if (!res.ok) throw new Error("無法讀取 Pronunciation/kk-chart.json");
         const data = await res.json();
         renderPronounce(data);
     } catch (err) {
         pronounceLoaded = false; // 失敗允許之後重試
         console.error(err);
-        box.innerHTML = `<p style="color:red">發音載入失敗：${err.message}</p>`;
+        box.innerHTML = `<p style="color:red">發音表載入失敗：${err.message}</p>`;
     }
 }
 
 // 把發音資料渲染成一張張「音節拆解卡」
+// 渲染 KK 音標一覽表：每格＝[符號] + 英文例字 + 發音鈕（播放例字示範該音）
 function renderPronounce(data) {
     const box = document.getElementById("pronounce-container");
-    const words = (data && data.words) ? data.words : [];
-    if (!words.length) {
-        box.innerHTML = `<p style="opacity:.7">還沒有發音拆解，之後問 Claude「某個字怎麼拆分」就會整理進來。</p>`;
+    if (!data || (!data.vowels && !data.consonants)) {
+        box.innerHTML = `<p style="color:red">發音表格式有誤。</p>`;
         return;
     }
-    box.innerHTML = words.map(w => {
-        const sylChips = (w.syllables || []).map(s => {
-            const cls = s.stress === "primary" ? "pr-syl pr-primary"
-                      : s.stress === "secondary" ? "pr-syl pr-secondary"
-                      : "pr-syl";
-            return `<span class="${cls}">${s.text}</span>`;
-        }).join('<span class="pr-dot">·</span>');
-
-        const rows = (w.syllables || []).map(s => {
-            const badge = s.stress === "primary" ? `<span class="pr-tag pr-tag-primary">主重音</span>`
-                        : s.stress === "secondary" ? `<span class="pr-tag pr-tag-secondary">次重音</span>`
-                        : "";
-            return `<tr>
-                <td class="pr-td-syl">${s.text}</td>
-                <td class="pr-td-sound">${s.sound || ""}</td>
-                <td class="pr-td-note">${badge}${s.note ? `<span class="pr-note-text">${s.note}</span>` : ""}</td>
-            </tr>`;
-        }).join("");
-
-        const safeW = (w.word || "").replace(/'/g, "\\'");
-        const readAs = w.readAs ? `<div class="pr-readas">唸起來像：<b>${w.readAs}</b></div>` : "";
-        const tip = w.tip ? `<div class="pr-tip">💡 ${w.tip}</div>` : "";
-
-        return `
-        <div class="pr-card">
-          <div class="pr-head">
-            <div>
-              <span class="pr-word">${w.word || ""}</span>
-              ${w.kk ? `<span class="pr-kk">${w.kk}</span>` : ""}
-              ${(w.syllables && w.syllables.length) ? `<span class="pr-count">${w.syllables.length} 音節</span>` : ""}
-            </div>
-            <div class="pr-speak">
-              <button class="speak-button" onclick="speakWord('${safeW}','en-GB')">🇬🇧 英式</button>
-              <button class="speak-button" onclick="speakWord('${safeW}','en-US')">🇺🇸 美式</button>
-            </div>
-          </div>
-          ${w.desc ? `<div class="pr-desc">${w.desc}</div>` : ""}
-          <div class="pr-chips">${sylChips}</div>
-          <table class="pr-table"><tbody>${rows}</tbody></table>
-          ${readAs}
-          ${tip}
+    // 產生單一格：符號、例字、播放鈕（唸例字）
+    const cell = it => {
+        const ex = (it.example || "").replace(/'/g, "\\'");
+        return `<div class="kk-cell">
+            <span class="kk-symbol">[${it.symbol}]</span>
+            <span class="kk-example">${it.example || ""}</span>
+            <button class="kk-play" title="播放發音（例字）" onclick="speakWord('${ex}','en-US')">🔊</button>
         </div>`;
-    }).join("");
+    };
+    const grid = arr => `<div class="kk-grid">${(arr || []).map(cell).join("")}</div>`;
+
+    const v = data.vowels || {};
+    box.innerHTML = `
+        <p class="kk-intro">點各音標的 🔊 會唸出對應的英文例字，幫你聽出這個 KK 音的發音。</p>
+
+        <div class="kk-block-title">母音 Vowels</div>
+        <div class="kk-sub-label">單母音</div>
+        ${grid(v.single)}
+        <div class="kk-sub-label">雙母音</div>
+        ${grid(v.diphthong)}
+
+        <div class="kk-block-title">子音 Consonants</div>
+        ${grid(data.consonants)}
+    `;
 }
 
 // ========================= 文法分頁：載入與渲染 =========================

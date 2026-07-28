@@ -1821,179 +1821,65 @@ h3 {
   }
 }
 
-/* ==================== 發音拆解分頁 ==================== */
-/* 每個單字一張卡 */
-.pr-card {
+/* ==================== 發音分頁：KK 音標一覽表 ==================== */
+.kk-intro {
+  color: var(--text-gray);
+  font-size: 0.95em;
+  margin-bottom: 18px;
+}
+.kk-block-title {
+  color: var(--bright-green);
+  font-size: 1.15em;
+  font-weight: 700;
+  margin: 22px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-dark);
+}
+.kk-sub-label {
+  color: var(--text-gray);
+  font-size: 0.9em;
+  margin: 12px 0 8px;
+}
+.kk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+.kk-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
   background: rgba(20, 20, 20, 0.85);
   border: 1px solid var(--border-dark);
-  border-left: 4px solid var(--bright-green);
-  border-radius: 10px;
-  padding: 16px 18px;
-  margin-bottom: 16px;
-}
-
-/* 卡片頂列：單字資訊 + 發音按鈕 */
-.pr-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.pr-word {
-  color: var(--bright-green);
-  font-size: 1.6em;
-  font-weight: 700;
-  margin-right: 10px;
-}
-
-.pr-kk {
-  color: var(--bright-green);
-  font-family: Arial, sans-serif;
-  font-style: italic;
-  opacity: 0.85;
-  margin-right: 10px;
-}
-
-.pr-count {
-  display: inline-block;
-  font-size: 12px;
-  color: var(--text-gray);
-  border: 1px solid var(--border-dark);
-  border-radius: 999px;
-  padding: 1px 8px;
-}
-
-.pr-speak {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-/* 總說明：單字意思與重音概觀 */
-.pr-desc {
-  color: var(--text-white);
-  font-size: 0.95em;
-  line-height: 1.7;
-  margin-bottom: 12px;
-  opacity: 0.92;
-}
-
-/* 音節籤：ne · go · ti · ate */
-.pr-chips {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin-bottom: 14px;
-}
-
-.pr-syl {
-  display: inline-block;
-  padding: 4px 12px;
-  border: 1px solid var(--border-dark);
+  border-left: 3px solid var(--bright-green);
   border-radius: 8px;
-  color: var(--text-white);
-  font-size: 1.05em;
-  font-weight: 600;
 }
-
-/* 主重音：亮綠實心 */
-.pr-primary {
-  background: var(--bright-green);
-  border-color: var(--bright-green);
-  color: #062b1e;
-  font-weight: 700;
-}
-
-/* 次重音：綠框 */
-.pr-secondary {
-  border-color: var(--bright-green);
-  color: var(--bright-green);
-}
-
-.pr-dot {
-  color: var(--text-gray);
-  font-weight: 700;
-}
-
-/* 音節對照表 */
-.pr-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.pr-table td {
-  padding: 7px 8px;
-  border-bottom: 1px dashed var(--border-dark);
-  vertical-align: middle;
-}
-
-.pr-table tr:last-child td {
-  border-bottom: none;
-}
-
-.pr-td-syl {
-  color: var(--text-white);
-  font-weight: 700;
-  width: 22%;
-}
-
-.pr-td-sound {
+.kk-symbol {
   color: var(--bright-green);
   font-family: Arial, sans-serif;
-  width: 28%;
-}
-
-.pr-td-note {
-  color: var(--text-gray);
-  font-size: 0.92em;
-}
-
-.pr-tag {
-  display: inline-block;
-  font-size: 11px;
   font-weight: 700;
-  border-radius: 4px;
-  padding: 1px 6px;
-  margin-right: 6px;
+  font-size: 1.1em;
+  min-width: 42px;
 }
-
-.pr-tag-primary {
-  background: var(--bright-green);
-  color: #062b1e;
+.kk-example {
+  color: var(--text-white);
+  flex: 1;
 }
-
-.pr-tag-secondary {
+.kk-play {
+  background: transparent;
   border: 1px solid var(--bright-green);
   color: var(--bright-green);
+  border-radius: 6px;
+  padding: 4px 9px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all var(--transition-speed);
 }
-
-.pr-note-text {
-  color: var(--text-gray);
+.kk-play:hover {
+  background: var(--bright-green);
+  color: var(--dark-bg);
 }
-
-/* 「唸起來像」 */
-.pr-readas {
-  margin-top: 12px;
-  color: var(--text-white);
-}
-
-.pr-readas b {
-  color: var(--bright-green);
-  letter-spacing: 0.5px;
-}
-
-/* 小提示框 */
-.pr-tip {
-  margin-top: 10px;
-  padding: 10px 12px;
-  background: rgba(0, 255, 153, 0.08);
-  border: 1px solid rgba(0, 255, 153, 0.25);
-  border-radius: 8px;
-  color: var(--text-white);
-  font-size: 0.92em;
-  line-height: 1.6;
+@media (max-width: 480px) {
+  .kk-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
 }
