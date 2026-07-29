@@ -1864,7 +1864,7 @@ h3 {
 }
 .kk-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
   gap: 10px;
 }
 .kk-cell {
@@ -1888,6 +1888,14 @@ h3 {
   color: var(--text-white);
   flex: 1;
 }
+/* 例字後面的 KK 音標（綠色、較小） */
+.kk-ex-kk {
+  color: var(--bright-green);
+  font-family: Arial, sans-serif;
+  font-size: 0.85em;
+  opacity: 0.9;
+  margin-left: 2px;
+}
 .kk-play {
   background: transparent;
   border: 1px solid var(--bright-green);
@@ -1903,5 +1911,5 @@ h3 {
   color: var(--dark-bg);
 }
 @media (max-width: 480px) {
-  .kk-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .kk-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 }
