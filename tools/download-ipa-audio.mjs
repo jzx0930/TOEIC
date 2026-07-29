@@ -26,10 +26,11 @@ const __dir = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(__dir, "..", "Pronunciation", "audio");
 const UA = "TOEIC-KK-study/1.0 (personal learning project; contact: github)";
 
-// 代號(slug) → Commons 檔名（File: 之後、底線代空白）
-// 只列有「乾淨單音錄音」的音素；雙母音(ai/au/oi)、r 音化(er/err) 沒列 → 網頁退回唸例字
+// 代號(slug) → Commons 檔名（File: 之後、底線代空白）；值可為字串或「候選清單」
+// 單母音／子音用 IPA 單音錄音；雙母音(ai/au/oi)與 r 音化(er/err) 沒有乾淨單音錄音，
+// 改用維基詞典的「真人例字錄音」(En-us-單字.ogg)，聲音與畫面顯示的例字一致。
 const COMMONS = {
-  // 母音
+  // 單母音（IPA 單音）
   i:  "Close_front_unrounded_vowel.ogg",
   ih: "Near-close_near-front_unrounded_vowel.ogg",
   e:  "Close-mid_front_unrounded_vowel.ogg",
@@ -42,6 +43,13 @@ const COMMONS = {
   uu: "Near-close_near-back_rounded_vowel.ogg",
   uh: "Open-mid_back_unrounded_vowel.ogg",
   schwa: "Mid-central_vowel.ogg",
+  // r 音化母音（用真人例字）
+  er:  "En-us-sister.ogg",
+  err: "En-us-bird.ogg",
+  // 雙母音（用真人例字）
+  ai:  "En-us-fine.ogg",
+  au:  "En-us-how.ogg",
+  oi:  "En-us-boy.ogg",
   // 子音
   p:  "Voiceless_bilabial_plosive.ogg",
   b:  "Voiced_bilabial_plosive.ogg",
