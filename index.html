@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=49"><!-- 外部樣式表（?v=49 為破快取版本號） -->
-<script defer src="index.js?v=49"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=50"><!-- 外部樣式表（?v=50 為破快取版本號） -->
+<script defer src="index.js?v=50"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -829,20 +829,20 @@ function renderPronounce(data) {
         box.innerHTML = `<p style="color:red">發音表格式有誤。</p>`;
         return;
     }
-    // 產生單一格：符號、例字＋例字的 KK、播放鈕（唸「這個音素本身」）
+    // 產生單一格：符號、例字＋例字的 KK、播放鈕（唸例字，自然發音示範該音）
     const cell = it => {
-        const ipa = (it.ipa || it.symbol || "").replace(/'/g, "\\'");
+        const ex = (it.example || "").replace(/'/g, "\\'");
         return `<div class="kk-cell">
             <span class="kk-symbol">[${it.symbol}]</span>
             <span class="kk-example">${it.example || ""}${it.exampleKK ? ` <span class="kk-ex-kk">${it.exampleKK}</span>` : ""}</span>
-            <button class="kk-play" title="播放這個 KK 音" onclick="playKKSound('${ipa}')">🔊</button>
+            <button class="kk-play" title="播放例字發音" onclick="speakWord('${ex}','en-US')">🔊</button>
         </div>`;
     };
     const grid = arr => `<div class="kk-grid">${(arr || []).map(cell).join("")}</div>`;
 
     const v = data.vowels || {};
     box.innerHTML = `
-        <p class="kk-intro">點各音標的 🔊 會唸出「這個 KK 音」本身；右邊的英文只是例字參考。</p>
+        <p class="kk-intro">點各音標的 🔊 會唸出該音的英文例字（自然發音示範這個 KK 音）。</p>
 
         <div class="kk-block-title">母音 Vowels</div>
         <div class="kk-sub-label">單母音</div>
