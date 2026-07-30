@@ -147,128 +147,112 @@
       "example": "pet",
       "ipa": "pə",
       "exampleKK": "[pɛt]",
-      "audio": "p",
-      "synth": true
+      "audio": "p"
     },
     {
       "symbol": "b",
       "example": "bad",
       "ipa": "bə",
       "exampleKK": "[bæd]",
-      "audio": "b",
-      "synth": true
+      "audio": "b"
     },
     {
       "symbol": "t",
       "example": "ten",
       "ipa": "tə",
       "exampleKK": "[tɛn]",
-      "audio": "t",
-      "synth": true
+      "audio": "t"
     },
     {
       "symbol": "d",
       "example": "desk",
       "ipa": "də",
       "exampleKK": "[dɛsk]",
-      "audio": "d",
-      "synth": true
+      "audio": "d"
     },
     {
       "symbol": "k",
       "example": "key",
       "ipa": "kə",
       "exampleKK": "[ki]",
-      "audio": "k",
-      "synth": true
+      "audio": "k"
     },
     {
       "symbol": "g",
       "example": "good",
       "ipa": "ɡə",
       "exampleKK": "[gʊd]",
-      "audio": "g",
-      "synth": true
+      "audio": "g"
     },
     {
       "symbol": "f",
       "example": "food",
       "ipa": "f",
       "exampleKK": "[fud]",
-      "audio": "f",
-      "synth": true
+      "audio": "f"
     },
     {
       "symbol": "v",
       "example": "vest",
       "ipa": "v",
       "exampleKK": "[vɛst]",
-      "audio": "v",
-      "synth": true
+      "audio": "v"
     },
     {
       "symbol": "θ",
       "example": "thank",
       "ipa": "θ",
       "exampleKK": "[θæŋk]",
-      "audio": "th",
-      "synth": true
+      "audio": "th"
     },
     {
       "symbol": "ð",
       "example": "this",
       "ipa": "ð",
       "exampleKK": "[ðɪs]",
-      "audio": "dh",
-      "synth": true
+      "audio": "dh"
     },
     {
       "symbol": "s",
       "example": "seat",
       "ipa": "s",
       "exampleKK": "[sit]",
-      "audio": "s",
-      "synth": true
+      "audio": "s"
     },
     {
       "symbol": "z",
       "example": "zoo",
       "ipa": "z",
       "exampleKK": "[zu]",
-      "audio": "z",
-      "synth": true
+      "audio": "z"
     },
     {
       "symbol": "ʃ",
       "example": "short",
       "ipa": "ʃ",
       "exampleKK": "[ʃɔrt]",
-      "audio": "sh",
-      "synth": true
+      "audio": "sh"
     },
     {
       "symbol": "ʒ",
       "example": "garage",
       "ipa": "ʒ",
       "exampleKK": "[gəˈrɑʒ]",
-      "audio": "zh",
-      "synth": true
+      "audio": "zh"
     },
     {
       "symbol": "tʃ",
       "example": "chair",
       "ipa": "tʃə",
       "exampleKK": "[tʃɛr]",
-      "audio": "ch",
-      "synth": true
+      "audio": "ch"
     },
     {
       "symbol": "dʒ",
       "example": "joke",
       "ipa": "dʒə",
       "exampleKK": "[dʒok]",
-      "audio": "j",
-      "synth": true
+      "audio": "j"
     },
     {
       "symbol": "l",
@@ -315,24 +299,21 @@
       "example": "yes",
       "ipa": "jə",
       "exampleKK": "[jɛs]",
-      "audio": "y",
-      "synth": true
+      "audio": "y"
     },
     {
       "symbol": "w",
       "example": "we",
       "ipa": "wə",
       "exampleKK": "[wi]",
-      "audio": "w",
-      "synth": true
+      "audio": "w"
     },
     {
       "symbol": "h",
       "example": "hat",
       "ipa": "h",
       "exampleKK": "[hæt]",
-      "audio": "h",
-      "synth": true
+      "audio": "h"
     }
   ]
 }
