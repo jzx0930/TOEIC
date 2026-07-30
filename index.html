@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=55"><!-- 外部樣式表（?v=55 為破快取版本號） -->
-<script defer src="index.js?v=55"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=56"><!-- 外部樣式表（?v=56 為破快取版本號） -->
+<script defer src="index.js?v=56"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -656,31 +656,14 @@ async function speakWord(word, lang, callback) {
     }
 }
 // playKKAudio：發音表播放
-//   synth=1（雙母音）→ 用 Google TTS 的 SSML <phoneme> 合成「單音」；
-//   否則先試本地音檔 <代號>.mp3 → .ogg，都沒有才退回唸例字。
+//   synth=1 → 用 Google TTS 的 SSML <phoneme> 合成「單音」（母音、m/n/ŋ/l/r）；
+//   其餘（摩擦音/塞音/塞擦音/滑音）→ 直接唸英文例字。
 function playKKAudio(slug, example, ipa, synth) {
     window.speechSynthesis.cancel();
     if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
 
-    if (synth && ipa) { playSSMLPhoneme(ipa, example); return; } // 雙母音：合成單音
-
-    const sources = slug
-        ? ["Pronunciation/audio/" + slug + ".mp3", "Pronunciation/audio/" + slug + ".ogg"]
-        : [];
-    let i = 0, settled = false;
-    const next = () => {
-        if (settled) return;
-        if (i >= sources.length) { settled = true; if (example) speakWord(example, 'en-US'); return; }
-        const src = sources[i++];
-        const a = new Audio(src);
-        currentAudio = a;
-        let advanced = false;
-        const fail = () => { if (advanced) return; advanced = true; next(); }; // 這個來源失敗 → 試下一個
-        a.onerror = fail;
-        a.onended = () => { if (a === currentAudio) currentAudio = null; };
-        a.play().then(() => { settled = true; }).catch(fail);
-    };
-    next();
+    if (synth && ipa) { playSSMLPhoneme(ipa, example); return; } // 有 synth：合成單音
+    if (example) speakWord(example, 'en-US');                    // 其餘：唸例字
 }
 
 // playSSMLPhoneme：用 SSML <phoneme>(IPA) 合成單一音素；放慢(rate=slow)讓氣音/摩擦音更清楚。失敗退回唸例字
