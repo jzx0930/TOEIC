@@ -1,86 +1,732 @@
 [
-{"word": "stacked", "kk": "[stækt]", "translation": "堆疊、堆積", "part_of_speech": "adj.", "note": "多益聽力 Part 1 照片描述高頻字。常考情境：貨物擺放、倉庫整頓。常見搭配：be stacked next to the door (堆放在門旁)、be stacked in a pile (堆成一疊)。同義詞：piled。"},
-{"word": "ticket", "kk": "[ˈtɪkɪt]", "translation": "門票、票券", "part_of_speech": "n.", "note": "多益商務娛樂、交通情境。常見搭配：admission ticket (入場券)、traffic ticket (交通罰單)、complimentary ticket (贈券)。"},
-{"word": "exhibition", "kk": "[ˌɛksəˈbɪʃən]", "translation": "展覽、展覽會", "part_of_speech": "n.", "note": "多益活動與行銷情境。常考情境：藝文活動、商展。常見搭配：art exhibition (藝術展)、hold an exhibition (舉辦展覽)。動詞型態為 exhibit。"},
-{"word": "mad", "kk": "[mæd]", "translation": "生氣的、憤怒的", "part_of_speech": "adj.", "note": "多益聽力 Part 3/4 職場不滿或客訴情境。常見搭配：be mad at someone/something (對某人/某事生氣)。同義詞：angry, furious。"},
-{"word": "result", "kk": "[rɪˈzʌlt]", "translation": "結果、成果", "part_of_speech": "n.", "note": "多益業績、調查與數據分析情境。常見搭配：survey result (調查結果)、as a result of (由於...)。動詞片語：result in (導致)、result from (起因於)。"},
-{"word": "satisfaction", "kk": "[ˌsætɪsˈfækʃən]", "translation": "滿意、滿足", "part_of_speech": "n.", "note": "多益客戶服務與產品反饋情境。常見搭配：customer satisfaction (客戶滿意度)、satisfaction survey (滿意度調查)。動詞為 satisfy，形容詞為 satisfactory。"},
-{"word": "survey", "kk": "[ˈsɝve]", "translation": "調查、意見調查", "part_of_speech": "n.", "note": "多益市場營銷、客訴與人事回饋情境。常見搭配：conduct a survey (進行調查)、respond to a survey (填寫調查)。同義詞：questionnaire。"},
-{"word": "press", "kk": "[prɛs]", "translation": "媒體、新聞界", "part_of_speech": "n.", "note": "多益公關與行銷發表會情境。常見搭配：press release (新聞稿)、press conference (記者會)。"},
-{"word": "conference", "kk": "[ˈkɑnfərəns]", "translation": "會議、研討會", "part_of_speech": "n.", "note": "多益商務會議與大型活動情境。常見搭配：annual conference (年度大會)、conference room (會議室)。同義詞：convention, meeting。"},
-{"word": "scheduled", "kk": "[ˈskɛdʒuld]", "translation": "預定的、排定的", "part_of_speech": "adj.", "note": "多益日程與專案管理核心詞。常見搭配：be scheduled to do something (預定要做某事)、ahead of schedule (提前)、behind schedule (落後)。"},
-{"word": "held on", "kk": "[hɛld ɑn]", "translation": "舉辦於（特定日期）", "part_of_speech": "v. phr.", "note": "多益活動與商務會議情境。原型為 hold on，在多益中常用被動態 be held on/at/in 表示會議或展覽在何時/何地舉辦。"},
-{"word": "head of management", "kk": "[hɛd ʌv ˈmænɪdʒmənt]", "translation": "管理部主管、管理階層負責人", "part_of_speech": "n. phr.", "note": "多益人事與組織架構情境。head 在此指「負責人、首長」。類似結構如 head of marketing (行銷主管)。"},
-{"word": "replaced", "kk": "[rɪˈplest]", "translation": "被取代的、被更換的", "part_of_speech": "v. / adj.", "note": "多益人事異動、設備更新情境。常見搭配：be replaced by/with (被...取代)。名詞型態為 replacement (替代人選/物品)。"},
-{"word": "our", "kk": "[aʊr]", "translation": "我們的", "part_of_speech": "pron.", "note": "多益商務聽力中代表公司方的所有格。常出現於內部會議：our company (我們公司)、our net profit (我們的淨利)。"},
-{"word": "net profit", "kk": "[nɛt ˈprɑfɪt]", "translation": "淨利、純利", "part_of_speech": "n. phr.", "note": "多益財務與業績報告情境。相對於 gross profit (毛利)。常見搭配：increase net profit (增加淨利)、net profit margin (淨利潤率)。"},
-{"word": "quarter", "kk": "[ˈkwɔrtɚ]", "translation": "季度；四分之一", "part_of_speech": "n.", "note": "多益財報與銷售分析核心字。一整年分為四個季度（first/second/third/fourth quarter）。常見搭配：fiscal quarter (財政季度)。"},
-{"word": "deposit", "kk": "[dɪˈpɑzɪt]", "translation": "存（款）、付押金；存款、押金", "part_of_speech": "v. / n.", "note": "多益銀行金融與租屋情境。常見搭配：deposit a paycheck (存入薪資支票)、security deposit (保證金/押金)。"},
-{"word": "paycheck", "kk": "[ˈpeˌtʃɛk]", "translation": "薪資支票、薪水", "part_of_speech": "n.", "note": "多益人事與財務情境。常見搭配：receive a paycheck (領薪水)、direct deposit of paycheck (薪資直接匯款)。"},
-{"word": "savings account", "kk": "[ˈsevɪŋz əˈkaʊnt]", "translation": "儲蓄帳戶", "part_of_speech": "n. phr.", "note": "多益銀行金融情境。相對於 checking account (支票帳戶)。常見搭配：open a savings account (開立儲蓄帳戶)。"},
-{"word": "head of accounting", "kk": "[hɛd ʌv əˈkaʊntɪŋ]", "translation": "會計部主管", "part_of_speech": "n. phr.", "note": "多益人事與公司架構情境。負責審核財報與預算支出。常考同義字：accounting manager (會計經理)。"},
-{"word": "seminar", "kk": "[ˈsɛməˌnɑr]", "translation": "研討會、專題講座", "part_of_speech": "n.", "note": "多益員工培訓與商務活動高頻詞。常見搭配：attend a seminar (參加研討會)、conduct a seminar (主持研討會)。同義詞：workshop, webinar。"},
-{"word": "dut to", "kk": "[du tu]", "translation": "由於、因為（清單原文為 dut to，應為 due to 之誤）", "part_of_speech": "prep. phr.", "note": "多益商務書信、公告中表示原因的核心片語。後接名詞或動名詞。同義片語：because of, owing to, on account of。"},
-{"word": "enrollment", "kk": "[ɪnˈrolmənt]", "translation": "報名人數、註冊、登記", "part_of_speech": "n.", "note": "多益培訓課程、學校招募情境。常見搭配：low enrollment (報名人數過低)、enrollment fee (報名費)。動詞型態為 enroll (in)。"},
-{"word": "workers", "kk": "[ˈwɝkɚz]", "translation": "工人、員工", "part_of_speech": "n.", "note": "多益聽力 Part 1/3/4 常見詞。常見搭配：factory workers (工廠員工)、construction workers (建築工人)。同義詞：employee, staff。"},
-{"word": "hanging", "kk": "[ˈhæŋɪŋ]", "translation": "懸掛、掛著", "part_of_speech": "v. / adj.", "note": "多益聽力 Part 1 照片描述極高頻字。常用於描述辦公室、街道或店鋪景物。常見搭配：be hanging on the wall (掛在牆上)。"},
-{"word": "television", "kk": "[ˈtɛləˌvɪʒən]", "translation": "電視、電視機", "part_of_speech": "n.", "note": "多益日常辦公與廣告媒體情境。簡寫為 TV。常見搭配：television commercial (電視廣告)。"},
-{"word": "contacted", "kk": "[ˈkɑnˌtæktɪd]", "translation": "聯絡、聯繫", "part_of_speech": "v.", "note": "多益商務溝通核心字。常考搭配：contact a client (聯絡客戶)。注意 contact 當動詞時為及物動詞，後面直接加受詞，不加 prep. (如 with)。"},
-{"word": "caterer", "kk": "[ˈketərɚ]", "translation": "外燴業者、餐飲承包商", "part_of_speech": "n.", "note": "多益商務宴會、年會會議籌辦情境超高頻單字。常見搭配：hire a caterer (僱用外燴公司)。動詞型態為 cater (提供餐飲/迎合)。"},
-{"word": "on business", "kk": "[ɑn ˈbɪznɪs]", "translation": "出差、因公出辦", "part_of_speech": "prep. phr.", "note": "多益商務出差情境核心片語。常見搭配：go to [place] on business (到某地出差)。同義片語：on a business trip。"},
-{"word": "parking meters", "kk": "[ˈpɑrkɪŋ ˈmitɚz]", "translation": "停車收費錶", "part_of_speech": "n. phr.", "note": "多益聽力 Part 1 與戶外交通情境。常見於路邊停車描述。常見搭配：along the roadside (沿著路邊)。"},
-{"word": "along", "kk": "[əˈlɔŋ]", "translation": "沿著、順著", "part_of_speech": "prep.", "note": "多益聽力 Part 1 空間方位描述高頻詞。常見搭配：along the street (沿著街道)、along the wall (沿著牆壁)。"},
-{"word": "roadside", "kk": "[ˈrodˌsaɪd]", "translation": "路邊、路旁", "part_of_speech": "n. / adj.", "note": "多益交通、戶外環境描述情境。常見搭配：parked on the roadside (停在路邊)。"},
-{"word": "company", "kk": "[ˈkʌmpənɪ]", "translation": "公司", "part_of_speech": "n.", "note": "多益商務最基本核心詞。常見搭配：work for a company (在公司工作)、parent company (母公司)。同義詞：corporation, firm。"},
-{"word": "found", "kk": "[faʊnd]", "translation": "被發現、被找到（find 的過去分詞）", "part_of_speech": "v.", "note": "多益常見被動結構。常見搭配：be found in the materials (在材料中被發現)。注意與動詞原型 found (創立，過去式為 founded) 區別。"},
-{"word": "materials", "kk": "[məˈtɪrɪəlz]", "translation": "材料、資料、素材", "part_of_speech": "n.", "note": "多益辦公室、會議與生產情境。常見搭配：meeting materials (會議資料)、promotional materials (宣傳資料)、raw materials (原材料)。"},
-{"word": "upcoming", "kk": "[ˈʌpˌkʌmɪŋ]", "translation": "即將到來的", "part_of_speech": "adj.", "note": "多益活動、日程安排高頻詞。常見搭配：upcoming event (即將舉辦的活動)、upcoming orientation (即將舉行的培訓)。同義詞：approaching, forthcoming。"},
-{"word": "orientation", "kk": "[ˌorɪɛnˈteʃən]", "translation": "新進員工培訓、迎新說明會", "part_of_speech": "n.", "note": "多益人事招募與員工培訓情境核心字。常見搭配：attend an orientation (參加培訓會)、orientation session (說明會/培訓課程)。"},
-{"word": "stationery", "kk": "[ˈsteʃəˌnɛrɪ]", "translation": "辦公用品、文具", "part_of_speech": "n.", "note": "多益辦公室行政與採購情境。不可數名詞。常考混淆字：stationary (形容詞，靜止的、不動的)。"},
-{"word": "their shift", "kk": "[ðɛr ʃɪft]", "translation": "他們的輪班、班次", "part_of_speech": "n. phr.", "note": "多益工廠生產、客服排班情境。shift 指「輪班的時間」。常見搭配：work a shift (值班)、finish a shift (下班)、night shift (夜班)。"},
-{"word": "took off", "kk": "[tʊk ɔf]", "translation": "脫下（衣物）；起飛；休假", "part_of_speech": "v. phr.", "note": "多益多義片語。聽力 Part 1 常考「脫下」（動作，相對於 wear 表示狀態）。聽力 Part 3/4 常考飛機起飛或請假 (take a day off)。"},
-{"word": "uniforms", "kk": "[ˈjunəˌfɔrmz]", "translation": "制服", "part_of_speech": "n.", "note": "多益聽力 Part 1 及人事規範情境。常見搭配：wear a uniform (穿制服)。可作形容詞表示「一致的、相同的」。"},
-{"word": "pretty sure", "kk": "[ˈprɪtɪ ʃʊr]", "translation": "相當確定、很有把握", "part_of_speech": "adj. phr.", "note": "多益聽力口語對話常用表達。pretty 在此為副詞，意為「相當、頗」。常用於對某項商務決定或資訊表達信心。"},
-{"word": "reputation", "kk": "[ˌrɛpjəˈteʃən]", "translation": "名聲、聲譽", "part_of_speech": "n.", "note": "多益企業形象、飯店與餐飲評價情境。常見搭配：have a good reputation (享有良好聲譽)、build a reputation (建立名聲)。"},
-{"word": "prices", "kk": "[ˈpraɪsɪz]", "translation": "價格", "part_of_speech": "n.", "note": "多益採購與銷售情境。常見搭配：competitive prices (有競爭力的價格)、reasonable prices (合理的價格)。"},
-{"word": "quite", "kk": "[kwaɪt]", "translation": "相當、非常", "part_of_speech": "adv.", "note": "多益修飾形容詞或副詞的常用程度副詞。常見搭配：quite reasonable (相當合理)、quite substantial (相當可觀)。清單重複字已過濾。"},
-{"word": "reasonable", "kk": "[ˈrizənəbəl]", "translation": "合理的、適度的（指價格不高）", "part_of_speech": "adj.", "note": "多益採購、預算、餐旅情境極高頻詞。常修飾價格。同義詞：affordable, inexpensive。"},
-{"word": "confirm", "kk": "[kənˈfɝm]", "translation": "確認、證實", "part_of_speech": "v.", "note": "多益商務書信、訂單與預約確認核心字。常見搭配：confirm a reservation (確認預訂)、confirm a transaction (確認交易)。名詞為 confirmation。"},
-{"word": "large", "kk": "[lɑrdʒ]", "translation": "大的、大量的", "part_of_speech": "adj.", "note": "多益商務情境。常見搭配：large transaction (大筆交易)、large scale (大規模)。"},
-{"word": "transactions", "kk": "[trænˈzækʃənz]", "translation": "交易、款項變動", "part_of_speech": "n.", "note": "多益金融銀行、商務合約核心字。常見搭配：online transaction (線上交易)、credit card transaction (信用卡交易)。"},
-{"word": "statement", "kk": "[ˈstetmənt]", "translation": "對帳單、聲明、陳述", "part_of_speech": "n.", "note": "多益多義字。金融情境指對帳單，如 bank statement (銀行對帳單)；公關情境指官方聲明，如 issue a statement (發表聲明)。"},
-{"word": "service", "kk": "[ˈsɝvɪs]", "translation": "服務、維修", "part_of_speech": "n.", "note": "多益客戶服務核心詞。常見搭配：customer service (客服)、service charge (服務費)。動詞可表示「維修（機器）」。"},
-{"word": "charge", "kk": "[tʃɑrdʒ]", "translation": "費用；收費；負責", "part_of_speech": "n. / v.", "note": "多益多義字。名詞/動詞收費，如 free of charge (免費)；名詞負責，如 be in charge of (負責...)。"},
-{"word": "wiring", "kk": "[ˈwaɪərɪŋ]", "translation": "匯款、電匯；線路系統", "part_of_speech": "v. / n.", "note": "多益金融與辦公設備情境。動詞 wire money 表示電匯。名詞 wiring 可指建築物內的電路配置。"},
-{"word": "electricity", "kk": "[ɪˌlɛkˈtrɪsətɪ]", "translation": "電、電力", "part_of_speech": "n.", "note": "多益辦公營運與公共設施情境。常見搭配：electricity bill (電費帳單)、electricity consumption (耗電量)。"},
-{"word": "bill", "kk": "[bɪl]", "translation": "帳單；法案", "part_of_speech": "n.", "note": "多益日常行政、餐飲、金融情境。常見搭配：pay a bill (付帳單)、utility bill (水電瓦斯費帳單)。"},
-{"word": "substantial", "kk": "[səbˈstænʃəl]", "translation": "大量的、可觀的、實質的", "part_of_speech": "adj.", "note": "多益財務、數據報告高頻核心字。常修飾金額或數量的增加。常見搭配：substantial amount (巨大數量)、substantial increase (大幅增加)。同義詞：significant, considerable。"},
-{"word": "ways", "kk": "[wez]", "translation": "方法、途徑", "part_of_speech": "n.", "note": "多益解決問題與管理情境。常見搭配：look for ways to do something (尋找做某事的方法)。同義詞：methods, approaches。"},
-{"word": "cut energy cost", "kk": "[kʌt ˈɛnɚdʒɪ kɔst]", "translation": "削減能源成本", "part_of_speech": "v. phr.", "note": "多益企業營運與成本控制情境。cut 在此作動詞「縮減、降低」。同義詞組：reduce energy expenses。"},
-{"word": "section", "kk": "[ˈsɛkʃən]", "translation": "部分、區段、(會議的)環環節", "part_of_speech": "n.", "note": "多益會議或文件結構情境。常見搭配：Q&A section (問答環節)、technical section (技術章節)。"},
-{"word": "extension", "kk": "[ɪkˈstɛnʃən]", "translation": "展期、延長；分機號碼", "part_of_speech": "n.", "note": "多益多義高頻字。合約/保固情境指延長：warranty extension (保固延長)；辦公室電話情境指分機：Reach me at extension 101。"},
-{"word": "included", "kk": "[ɪnˈkludɪd]", "translation": "包含在內的", "part_of_speech": "adj. / v.", "note": "多益報價、帳單明細情境。常置於名詞後修飾，如 tax included (含稅)。動詞原型為 include。反義詞：excluded。"},
-{"word": "cost", "kk": "[kɔst]", "translation": "費用、成本；花費", "part_of_speech": "n. / v.", "note": "多益商務營運與財報核心字。常見搭配：at no extra cost (不需額外費用)、operating costs (營運成本)。"},
-{"word": "fill out", "kk": "[fɪl aʊt]", "translation": "填寫（表格、文件）", "part_of_speech": "v. phr.", "note": "多益行政、申請流程必考片語。後接表格名詞。常見搭配：fill out an application form (填寫申請表)。同義詞組：fill in, complete。"},
-{"word": "form", "kk": "[fɔrm]", "translation": "表格、形式", "part_of_speech": "n.", "note": "多益辦公室與行政流程核心詞。常見搭配：application form (申請表)、order form (訂購單)。"},
-{"word": "TV commercial", "kk": "[ˌtiˈvi kəˈmɝʃəl]", "translation": "電視廣告", "part_of_speech": "n. phr.", "note": "多益行銷與媒體廣告情境。commercial 專指廣播或電視上的商業廣告，不同於一般的 advertisement (涵蓋平面、網路等)。"},
-{"word": "launched", "kk": "[lɔntʃt]", "translation": "上市、發起、開辦", "part_of_speech": "v.", "note": "多益產品行銷、企業專案高頻動詞。常見搭配：launch a new product (發表新產品)、launch a marketing campaign (發起行銷活動)。"},
-{"word": "marketing department", "kk": "[ˈmɑrkɪtɪŋ dɪˈpɑrtmənt]", "translation": "行銷部門", "part_of_speech": "n. phr.", "note": "多益公司組織架構高頻詞。負責市場調查、廣告投放及產品促銷。相關部門：sales department (業務部)。"},
-{"word": "consider", "kk": "[kənˈsɪdɚ]", "translation": "考慮、思考", "part_of_speech": "v.", "note": "多益決策情境核心動詞。文法重點：後面若接動詞，必須使用動名詞形式（consider doing something）。常見搭配：consider canceling the event (考慮取消活動)。"},
-{"word": "residents", "kk": "[ˈrɛzədənts]", "translation": "居民、住戶", "part_of_speech": "n.", "note": "多益社區公告、物業管理情境。常見搭配：local residents (當地居民)。同義詞：inhabitants, citizens。"},
-{"word": "advised", "kk": "[ədˈvaɪzd]", "translation": "被建議的、受勸告的", "part_of_speech": "v.", "note": "多益公告與商務書信常見被動用法。常見搭配：be advised to do something (被建議做某事)。動詞原型 advise。"},
-{"word": "public transportation", "kk": "[ˈpʌblɪk ˌtrænspɚˈteʃən]", "translation": "大眾運輸、公共交通", "part_of_speech": "n. phr.", "note": "多益商務出差與活動公告高頻字。常見搭配：take public transportation (搭乘大眾運輸)。"},
-{"word": "event", "kk": "[ɪˈvɛnt]", "translation": "活動、事件", "part_of_speech": "n.", "note": "多益商務、社交活動情境。常見搭配：upcoming event (即將到來的活動)、corporate event (公司活動)。"},
-{"word": "although", "kk": "[ɔlˈðo]", "translation": "雖然、儘管", "part_of_speech": "conj.", "note": "多益閱讀 Part 5 必考連接詞。引導讓步狀語從句。注意 although 不能與 but 連用。同義詞：even though, though。"},
-{"word": "behind", "kk": "[bɪˈhaɪnd]", "translation": "在...後面；落後", "part_of_speech": "prep. / adv.", "note": "多益進度管理核心詞。最常考片語：behind schedule (進度落後)。反義片語：ahead of schedule (進度超前)。"},
-{"word": "interns", "kk": "[ˈɪntɝnz]", "translation": "實習生", "part_of_speech": "n.", "note": "多益人事招募與校園招聘情境。常見搭配：hire an intern (僱用實習生)。名詞 internship 表示「實習職位」。"},
-{"word": "enough", "kk": "[ɪˈnʌf]", "translation": "足夠的、充足的", "part_of_speech": "adj. / adv.", "note": "多益資源或人力評估情境。作形容詞時修飾名詞放在前面（enough workers）；作副詞時修飾形容詞放在後面（good enough）。"},
-{"word": "to meet", "kk": "[tu mit]", "translation": "以滿足、以達到（標準/需求）", "part_of_speech": "v. phr.", "note": "多益經典用法，meet 在此不作「遇見」，而作「滿足、符合」。常見搭配：meet the orders (滿足訂單需求)、meet the deadline (趕上截止日期)。"},
-{"word": "orders", "kk": "[ˈɔrdɚz]", "translation": "訂單；指示", "part_of_speech": "n.", "note": "多益採購與物流核心字。常見搭配：place an order (下訂單)、process an order (處理訂單)、fill an order (出貨)。"},
-{"word": "manufacturer", "kk": "[ˌmænjəˈfæktʃərɚ]", "translation": "製造商、廠商", "part_of_speech": "n.", "note": "多益生產與供應鏈情境高頻詞。動詞型態為 manufacture (製造)。常見搭配：car manufacturer (汽車製造商)。同義詞：producer。"},
-{"word": "fit", "kk": "[fɪt]", "translation": "適合的人選/事物；適合的", "part_of_speech": "n. / adj.", "note": "多益人事招募情境。常用片語：be a good fit for the position (非常適合該職位)。"},
-{"word": "position", "kk": "[pəˈzɪʃən]", "translation": "職位、位置", "part_of_speech": "n.", "note": "多益人事招募情境核心字。常見搭配：open position (職缺)、apply for a position (申請職位)。同義詞：job opening。"},
-{"word": "impressed", "kk": "[ɪmˈprɛst]", "translation": "留下深刻印象的", "part_of_speech": "adj.", "note": "多益面試與績效考核情境。常見搭配：be impressed with/by someone's qualifications (對某人的資歷印象深刻)。名詞為 impression。"},
-{"word": "qualifications", "kk": "[ˌkwɑləfəˈkeʃənz]", "translation": "資歷、資格、條件", "part_of_speech": "n.", "note": "多益人事招募核心詞。通常指學歷、工作經驗及證照等總和。常見搭配：job qualifications (職位要求資格)。動詞為 qualify。"}
+  {
+    "word": "stacked",
+    "kk": "[stækt]",
+    "translation": "堆疊、堆積",
+    "part_of_speech": "adj.",
+    "note": "多益聽力 Part 1 照片描述高頻字。常考情境：貨物擺放、倉庫整頓。常見搭配：be stacked next to the door (堆放在門旁)、be stacked in a pile (堆成一疊)。同義詞：piled。",
+    "sylWord": "stac·ked",
+    "sylKK": "ˈstækt"
+  },
+  {
+    "word": "ticket",
+    "kk": "[ˈtɪkɪt]",
+    "translation": "門票、票券",
+    "part_of_speech": "n.",
+    "note": "多益商務娛樂、交通情境。常見搭配：admission ticket (入場券)、traffic ticket (交通罰單)、complimentary ticket (贈券)。",
+    "sylWord": "tick·et",
+    "sylKK": "ˈtɪ·kət"
+  },
+  {
+    "word": "exhibition",
+    "kk": "[ˌɛksəˈbɪʃən]",
+    "translation": "展覽、展覽會",
+    "part_of_speech": "n.",
+    "note": "多益活動與行銷情境。常考情境：藝文活動、商展。常見搭配：art exhibition (藝術展)、hold an exhibition (舉辦展覽)。動詞型態為 exhibit。",
+    "sylWord": "ex·hi·bi·tion",
+    "sylKK": "ˌɛk·sə·ˈbɪ·ʃən"
+  },
+  {
+    "word": "mad",
+    "kk": "[mæd]",
+    "translation": "生氣的、憤怒的",
+    "part_of_speech": "adj.",
+    "note": "多益聽力 Part 3/4 職場不滿或客訴情境。常見搭配：be mad at someone/something (對某人/某事生氣)。同義詞：angry, furious。",
+    "sylWord": "mad",
+    "sylKK": "ˈmæd"
+  },
+  {
+    "word": "result",
+    "kk": "[rɪˈzʌlt]",
+    "translation": "結果、成果",
+    "part_of_speech": "n.",
+    "note": "多益業績、調查與數據分析情境。常見搭配：survey result (調查結果)、as a result of (由於...)。動詞片語：result in (導致)、result from (起因於)。",
+    "sylWord": "re·sult",
+    "sylKK": "rɪ·ˈzʌlt"
+  },
+  {
+    "word": "satisfaction",
+    "kk": "[ˌsætɪsˈfækʃən]",
+    "translation": "滿意、滿足",
+    "part_of_speech": "n.",
+    "note": "多益客戶服務與產品反饋情境。常見搭配：customer satisfaction (客戶滿意度)、satisfaction survey (滿意度調查)。動詞為 satisfy，形容詞為 satisfactory。",
+    "sylWord": "sat·is·fac·tion",
+    "sylKK": "ˌsæ·təs·ˈfæk·ʃən"
+  },
+  {
+    "word": "survey",
+    "kk": "[ˈsɝve]",
+    "translation": "調查、意見調查",
+    "part_of_speech": "n.",
+    "note": "多益市場營銷、客訴與人事回饋情境。常見搭配：conduct a survey (進行調查)、respond to a survey (填寫調查)。同義詞：questionnaire。",
+    "sylWord": "sur·vey",
+    "sylKK": "sɚ·ˈve"
+  },
+  {
+    "word": "press",
+    "kk": "[prɛs]",
+    "translation": "媒體、新聞界",
+    "part_of_speech": "n.",
+    "note": "多益公關與行銷發表會情境。常見搭配：press release (新聞稿)、press conference (記者會)。",
+    "sylWord": "press",
+    "sylKK": "ˈprɛs"
+  },
+  {
+    "word": "conference",
+    "kk": "[ˈkɑnfərəns]",
+    "translation": "會議、研討會",
+    "part_of_speech": "n.",
+    "note": "多益商務會議與大型活動情境。常見搭配：annual conference (年度大會)、conference room (會議室)。同義詞：convention, meeting。",
+    "sylWord": "con·fer·ence",
+    "sylKK": "ˈkɑn·fɚ·əns"
+  },
+  {
+    "word": "scheduled",
+    "kk": "[ˈskɛdʒuld]",
+    "translation": "預定的、排定的",
+    "part_of_speech": "adj.",
+    "note": "多益日程與專案管理核心詞。常見搭配：be scheduled to do something (預定要做某事)、ahead of schedule (提前)、behind schedule (落後)。",
+    "sylWord": "sched·uled",
+    "sylKK": "ˈskɛ·dʒʊld"
+  },
+  {
+    "word": "held on",
+    "kk": "[hɛld ɑn]",
+    "translation": "舉辦於（特定日期）",
+    "part_of_speech": "v. phr.",
+    "note": "多益活動與商務會議情境。原型為 hold on，在多益中常用被動態 be held on/at/in 表示會議或展覽在何時/何地舉辦。",
+    "sylWord": "hel·d on"
+  },
+  {
+    "word": "head of management",
+    "kk": "[hɛd ʌv ˈmænɪdʒmənt]",
+    "translation": "管理部主管、管理階層負責人",
+    "part_of_speech": "n. phr.",
+    "note": "多益人事與組織架構情境。head 在此指「負責人、首長」。類似結構如 head of marketing (行銷主管)。",
+    "sylWord": "head of man·age·ment"
+  },
+  {
+    "word": "replaced",
+    "kk": "[rɪˈplest]",
+    "translation": "被取代的、被更換的",
+    "part_of_speech": "v. / adj.",
+    "note": "多益人事異動、設備更新情境。常見搭配：be replaced by/with (被...取代)。名詞型態為 replacement (替代人選/物品)。",
+    "sylWord": "re·placed",
+    "sylKK": "ˌrip·ˈlest"
+  },
+  {
+    "word": "our",
+    "kk": "[aʊr]",
+    "translation": "我們的",
+    "part_of_speech": "pron.",
+    "note": "多益商務聽力中代表公司方的所有格。常出現於內部會議：our company (我們公司)、our net profit (我們的淨利)。",
+    "sylWord": "our",
+    "sylKK": "ˈaʊ·ɚ"
+  },
+  {
+    "word": "net profit",
+    "kk": "[nɛt ˈprɑfɪt]",
+    "translation": "淨利、純利",
+    "part_of_speech": "n. phr.",
+    "note": "多益財務與業績報告情境。相對於 gross profit (毛利)。常見搭配：increase net profit (增加淨利)、net profit margin (淨利潤率)。",
+    "sylWord": "net prof·it"
+  },
+  {
+    "word": "quarter",
+    "kk": "[ˈkwɔrtɚ]",
+    "translation": "季度；四分之一",
+    "part_of_speech": "n.",
+    "note": "多益財報與銷售分析核心字。一整年分為四個季度（first/second/third/fourth quarter）。常見搭配：fiscal quarter (財政季度)。",
+    "sylWord": "quar·ter",
+    "sylKK": "ˈkwɔr·tɚ"
+  },
+  {
+    "word": "deposit",
+    "kk": "[dɪˈpɑzɪt]",
+    "translation": "存（款）、付押金；存款、押金",
+    "part_of_speech": "v. / n.",
+    "note": "多益銀行金融與租屋情境。常見搭配：deposit a paycheck (存入薪資支票)、security deposit (保證金/押金)。",
+    "sylWord": "de·posit",
+    "sylKK": "də·ˈpɑ·zɪt"
+  },
+  {
+    "word": "paycheck",
+    "kk": "[ˈpeˌtʃɛk]",
+    "translation": "薪資支票、薪水",
+    "part_of_speech": "n.",
+    "note": "多益人事與財務情境。常見搭配：receive a paycheck (領薪水)、direct deposit of paycheck (薪資直接匯款)。",
+    "sylWord": "pay·check",
+    "sylKK": "ˈpe·ˌtʃɛk"
+  },
+  {
+    "word": "savings account",
+    "kk": "[ˈsevɪŋz əˈkaʊnt]",
+    "translation": "儲蓄帳戶",
+    "part_of_speech": "n. phr.",
+    "note": "多益銀行金融情境。相對於 checking account (支票帳戶)。常見搭配：open a savings account (開立儲蓄帳戶)。",
+    "sylWord": "sav·ings ac·count"
+  },
+  {
+    "word": "head of accounting",
+    "kk": "[hɛd ʌv əˈkaʊntɪŋ]",
+    "translation": "會計部主管",
+    "part_of_speech": "n. phr.",
+    "note": "多益人事與公司架構情境。負責審核財報與預算支出。常考同義字：accounting manager (會計經理)。",
+    "sylWord": "head of ac·count·ing"
+  },
+  {
+    "word": "seminar",
+    "kk": "[ˈsɛməˌnɑr]",
+    "translation": "研討會、專題講座",
+    "part_of_speech": "n.",
+    "note": "多益員工培訓與商務活動高頻詞。常見搭配：attend a seminar (參加研討會)、conduct a seminar (主持研討會)。同義詞：workshop, webinar。",
+    "sylWord": "sem·i·nar",
+    "sylKK": "ˈsɛ·mə·ˌnɑr"
+  },
+  {
+    "word": "dut to",
+    "kk": "[du tu]",
+    "translation": "由於、因為（清單原文為 dut to，應為 due to 之誤）",
+    "part_of_speech": "prep. phr.",
+    "note": "多益商務書信、公告中表示原因的核心片語。後接名詞或動名詞。同義片語：because of, owing to, on account of。",
+    "sylWord": "dut· to"
+  },
+  {
+    "word": "enrollment",
+    "kk": "[ɪnˈrolmənt]",
+    "translation": "報名人數、註冊、登記",
+    "part_of_speech": "n.",
+    "note": "多益培訓課程、學校招募情境。常見搭配：low enrollment (報名人數過低)、enrollment fee (報名費)。動詞型態為 enroll (in)。",
+    "sylWord": "en·roll·ment",
+    "sylKK": "ɛn·ˈrol·mənt"
+  },
+  {
+    "word": "workers",
+    "kk": "[ˈwɝkɚz]",
+    "translation": "工人、員工",
+    "part_of_speech": "n.",
+    "note": "多益聽力 Part 1/3/4 常見詞。常見搭配：factory workers (工廠員工)、construction workers (建築工人)。同義詞：employee, staff。",
+    "sylWord": "work·ers",
+    "sylKK": "ˈwɝ·kɚz"
+  },
+  {
+    "word": "hanging",
+    "kk": "[ˈhæŋɪŋ]",
+    "translation": "懸掛、掛著",
+    "part_of_speech": "v. / adj.",
+    "note": "多益聽力 Part 1 照片描述極高頻字。常用於描述辦公室、街道或店鋪景物。常見搭配：be hanging on the wall (掛在牆上)。",
+    "sylWord": "hang·ing",
+    "sylKK": "ˈhæ·ŋɪŋ"
+  },
+  {
+    "word": "television",
+    "kk": "[ˈtɛləˌvɪʒən]",
+    "translation": "電視、電視機",
+    "part_of_speech": "n.",
+    "note": "多益日常辦公與廣告媒體情境。簡寫為 TV。常見搭配：television commercial (電視廣告)。",
+    "sylWord": "tele·vi·sion",
+    "sylKK": "ˈtɛ·lə·ˌvɪ·ʒən"
+  },
+  {
+    "word": "contacted",
+    "kk": "[ˈkɑnˌtæktɪd]",
+    "translation": "聯絡、聯繫",
+    "part_of_speech": "v.",
+    "note": "多益商務溝通核心字。常考搭配：contact a client (聯絡客戶)。注意 contact 當動詞時為及物動詞，後面直接加受詞，不加 prep. (如 with)。",
+    "sylWord": "con·tact·ed",
+    "sylKK": "ˈkɑn·ˌtæk·tɪd"
+  },
+  {
+    "word": "caterer",
+    "kk": "[ˈketərɚ]",
+    "translation": "外燴業者、餐飲承包商",
+    "part_of_speech": "n.",
+    "note": "多益商務宴會、年會會議籌辦情境超高頻單字。常見搭配：hire a caterer (僱用外燴公司)。動詞型態為 cater (提供餐飲/迎合)。",
+    "sylWord": "cater·er",
+    "sylKK": "ˈke·tɚ·ɚ"
+  },
+  {
+    "word": "on business",
+    "kk": "[ɑn ˈbɪznɪs]",
+    "translation": "出差、因公出辦",
+    "part_of_speech": "prep. phr.",
+    "note": "多益商務出差情境核心片語。常見搭配：go to [place] on business (到某地出差)。同義片語：on a business trip。",
+    "sylWord": "on busi·ness"
+  },
+  {
+    "word": "parking meters",
+    "kk": "[ˈpɑrkɪŋ ˈmitɚz]",
+    "translation": "停車收費錶",
+    "part_of_speech": "n. phr.",
+    "note": "多益聽力 Part 1 與戶外交通情境。常見於路邊停車描述。常見搭配：along the roadside (沿著路邊)。",
+    "sylWord": "park·ing me·ters"
+  },
+  {
+    "word": "along",
+    "kk": "[əˈlɔŋ]",
+    "translation": "沿著、順著",
+    "part_of_speech": "prep.",
+    "note": "多益聽力 Part 1 空間方位描述高頻詞。常見搭配：along the street (沿著街道)、along the wall (沿著牆壁)。",
+    "sylWord": "a·long",
+    "sylKK": "ə·ˈlɔŋ"
+  },
+  {
+    "word": "roadside",
+    "kk": "[ˈrodˌsaɪd]",
+    "translation": "路邊、路旁",
+    "part_of_speech": "n. / adj.",
+    "note": "多益交通、戶外環境描述情境。常見搭配：parked on the roadside (停在路邊)。",
+    "sylWord": "road·side",
+    "sylKK": "ˈrod·ˌsaɪd"
+  },
+  {
+    "word": "company",
+    "kk": "[ˈkʌmpənɪ]",
+    "translation": "公司",
+    "part_of_speech": "n.",
+    "note": "多益商務最基本核心詞。常見搭配：work for a company (在公司工作)、parent company (母公司)。同義詞：corporation, firm。",
+    "sylWord": "com·pa·ny",
+    "sylKK": "ˈkʌm·pə·ˌni"
+  },
+  {
+    "word": "found",
+    "kk": "[faʊnd]",
+    "translation": "被發現、被找到（find 的過去分詞）",
+    "part_of_speech": "v.",
+    "note": "多益常見被動結構。常見搭配：be found in the materials (在材料中被發現)。注意與動詞原型 found (創立，過去式為 founded) 區別。",
+    "sylWord": "found",
+    "sylKK": "ˈfaʊnd"
+  },
+  {
+    "word": "materials",
+    "kk": "[məˈtɪrɪəlz]",
+    "translation": "材料、資料、素材",
+    "part_of_speech": "n.",
+    "note": "多益辦公室、會議與生產情境。常見搭配：meeting materials (會議資料)、promotional materials (宣傳資料)、raw materials (原材料)。",
+    "sylWord": "ma·te·ri·als",
+    "sylKK": "mə·ˈtɪ·ri·əlz"
+  },
+  {
+    "word": "upcoming",
+    "kk": "[ˈʌpˌkʌmɪŋ]",
+    "translation": "即將到來的",
+    "part_of_speech": "adj.",
+    "note": "多益活動、日程安排高頻詞。常見搭配：upcoming event (即將舉辦的活動)、upcoming orientation (即將舉行的培訓)。同義詞：approaching, forthcoming。",
+    "sylWord": "up·com·ing",
+    "sylKK": "ˈʌp·ˌkʌ·mɪŋ"
+  },
+  {
+    "word": "orientation",
+    "kk": "[ˌorɪɛnˈteʃən]",
+    "translation": "新進員工培訓、迎新說明會",
+    "part_of_speech": "n.",
+    "note": "多益人事招募與員工培訓情境核心字。常見搭配：attend an orientation (參加培訓會)、orientation session (說明會/培訓課程)。",
+    "sylWord": "ori·en·ta·tion",
+    "sylKK": "ˌɔ·ri·ɛn·ˈte·ʃən"
+  },
+  {
+    "word": "stationery",
+    "kk": "[ˈsteʃəˌnɛrɪ]",
+    "translation": "辦公用品、文具",
+    "part_of_speech": "n.",
+    "note": "多益辦公室行政與採購情境。不可數名詞。常考混淆字：stationary (形容詞，靜止的、不動的)。",
+    "sylWord": "sta·tionery",
+    "sylKK": "ˈste·ʃə·ˌnɛ·ri"
+  },
+  {
+    "word": "their shift",
+    "kk": "[ðɛr ʃɪft]",
+    "translation": "他們的輪班、班次",
+    "part_of_speech": "n. phr.",
+    "note": "多益工廠生產、客服排班情境。shift 指「輪班的時間」。常見搭配：work a shift (值班)、finish a shift (下班)、night shift (夜班)。",
+    "sylWord": "their· shift"
+  },
+  {
+    "word": "took off",
+    "kk": "[tʊk ɔf]",
+    "translation": "脫下（衣物）；起飛；休假",
+    "part_of_speech": "v. phr.",
+    "note": "多益多義片語。聽力 Part 1 常考「脫下」（動作，相對於 wear 表示狀態）。聽力 Part 3/4 常考飛機起飛或請假 (take a day off)。",
+    "sylWord": "took· off"
+  },
+  {
+    "word": "uniforms",
+    "kk": "[ˈjunəˌfɔrmz]",
+    "translation": "制服",
+    "part_of_speech": "n.",
+    "note": "多益聽力 Part 1 及人事規範情境。常見搭配：wear a uniform (穿制服)。可作形容詞表示「一致的、相同的」。",
+    "sylWord": "uni·forms",
+    "sylKK": "ˈju·nə·ˌfɔrmz"
+  },
+  {
+    "word": "pretty sure",
+    "kk": "[ˈprɪtɪ ʃʊr]",
+    "translation": "相當確定、很有把握",
+    "part_of_speech": "adj. phr.",
+    "note": "多益聽力口語對話常用表達。pretty 在此為副詞，意為「相當、頗」。常用於對某項商務決定或資訊表達信心。",
+    "sylWord": "pret·ty sure"
+  },
+  {
+    "word": "reputation",
+    "kk": "[ˌrɛpjəˈteʃən]",
+    "translation": "名聲、聲譽",
+    "part_of_speech": "n.",
+    "note": "多益企業形象、飯店與餐飲評價情境。常見搭配：have a good reputation (享有良好聲譽)、build a reputation (建立名聲)。",
+    "sylWord": "rep·u·ta·tion",
+    "sylKK": "ˌrɛp·jə·ˈte·ʃən"
+  },
+  {
+    "word": "prices",
+    "kk": "[ˈpraɪsɪz]",
+    "translation": "價格",
+    "part_of_speech": "n.",
+    "note": "多益採購與銷售情境。常見搭配：competitive prices (有競爭力的價格)、reasonable prices (合理的價格)。",
+    "sylWord": "pri·ces",
+    "sylKK": "ˈpraɪ·səz"
+  },
+  {
+    "word": "quite",
+    "kk": "[kwaɪt]",
+    "translation": "相當、非常",
+    "part_of_speech": "adv.",
+    "note": "多益修飾形容詞或副詞的常用程度副詞。常見搭配：quite reasonable (相當合理)、quite substantial (相當可觀)。清單重複字已過濾。",
+    "sylWord": "quite",
+    "sylKK": "ˈkwaɪt"
+  },
+  {
+    "word": "reasonable",
+    "kk": "[ˈrizənəbəl]",
+    "translation": "合理的、適度的（指價格不高）",
+    "part_of_speech": "adj.",
+    "note": "多益採購、預算、餐旅情境極高頻詞。常修飾價格。同義詞：affordable, inexpensive。",
+    "sylWord": "rea·son·able",
+    "sylKK": "ˈri·zə·nə·bəl"
+  },
+  {
+    "word": "confirm",
+    "kk": "[kənˈfɝm]",
+    "translation": "確認、證實",
+    "part_of_speech": "v.",
+    "note": "多益商務書信、訂單與預約確認核心字。常見搭配：confirm a reservation (確認預訂)、confirm a transaction (確認交易)。名詞為 confirmation。",
+    "sylWord": "con·firm",
+    "sylKK": "kən·ˈfɝm"
+  },
+  {
+    "word": "large",
+    "kk": "[lɑrdʒ]",
+    "translation": "大的、大量的",
+    "part_of_speech": "adj.",
+    "note": "多益商務情境。常見搭配：large transaction (大筆交易)、large scale (大規模)。",
+    "sylWord": "large",
+    "sylKK": "ˈlɑrdʒ"
+  },
+  {
+    "word": "transactions",
+    "kk": "[trænˈzækʃənz]",
+    "translation": "交易、款項變動",
+    "part_of_speech": "n.",
+    "note": "多益金融銀行、商務合約核心字。常見搭配：online transaction (線上交易)、credit card transaction (信用卡交易)。",
+    "sylWord": "trans·ac·tions",
+    "sylKK": "træn·ˈzæk·ʃənz"
+  },
+  {
+    "word": "statement",
+    "kk": "[ˈstetmənt]",
+    "translation": "對帳單、聲明、陳述",
+    "part_of_speech": "n.",
+    "note": "多益多義字。金融情境指對帳單，如 bank statement (銀行對帳單)；公關情境指官方聲明，如 issue a statement (發表聲明)。",
+    "sylWord": "state·ment",
+    "sylKK": "ˈstet·mənt"
+  },
+  {
+    "word": "service",
+    "kk": "[ˈsɝvɪs]",
+    "translation": "服務、維修",
+    "part_of_speech": "n.",
+    "note": "多益客戶服務核心詞。常見搭配：customer service (客服)、service charge (服務費)。動詞可表示「維修（機器）」。",
+    "sylWord": "ser·vice",
+    "sylKK": "ˈsɝ·vəs"
+  },
+  {
+    "word": "charge",
+    "kk": "[tʃɑrdʒ]",
+    "translation": "費用；收費；負責",
+    "part_of_speech": "n. / v.",
+    "note": "多益多義字。名詞/動詞收費，如 free of charge (免費)；名詞負責，如 be in charge of (負責...)。",
+    "sylWord": "charge",
+    "sylKK": "ˈtʃɑrdʒ"
+  },
+  {
+    "word": "wiring",
+    "kk": "[ˈwaɪərɪŋ]",
+    "translation": "匯款、電匯；線路系統",
+    "part_of_speech": "v. / n.",
+    "note": "多益金融與辦公設備情境。動詞 wire money 表示電匯。名詞 wiring 可指建築物內的電路配置。",
+    "sylWord": "wi·ring",
+    "sylKK": "ˈwaɪ·rɪŋ"
+  },
+  {
+    "word": "electricity",
+    "kk": "[ɪˌlɛkˈtrɪsətɪ]",
+    "translation": "電、電力",
+    "part_of_speech": "n.",
+    "note": "多益辦公營運與公共設施情境。常見搭配：electricity bill (電費帳單)、electricity consumption (耗電量)。",
+    "sylWord": "elec·tric·i·ty",
+    "sylKK": "ɪ·ˌlɛkt·ˈrɪ·sə·ti"
+  },
+  {
+    "word": "bill",
+    "kk": "[bɪl]",
+    "translation": "帳單；法案",
+    "part_of_speech": "n.",
+    "note": "多益日常行政、餐飲、金融情境。常見搭配：pay a bill (付帳單)、utility bill (水電瓦斯費帳單)。",
+    "sylWord": "bill",
+    "sylKK": "ˈbɪl"
+  },
+  {
+    "word": "substantial",
+    "kk": "[səbˈstænʃəl]",
+    "translation": "大量的、可觀的、實質的",
+    "part_of_speech": "adj.",
+    "note": "多益財務、數據報告高頻核心字。常修飾金額或數量的增加。常見搭配：substantial amount (巨大數量)、substantial increase (大幅增加)。同義詞：significant, considerable。",
+    "sylWord": "sub·stan·tial",
+    "sylKK": "səbs·ˈtæn·ʃəl"
+  },
+  {
+    "word": "ways",
+    "kk": "[wez]",
+    "translation": "方法、途徑",
+    "part_of_speech": "n.",
+    "note": "多益解決問題與管理情境。常見搭配：look for ways to do something (尋找做某事的方法)。同義詞：methods, approaches。",
+    "sylWord": "ways",
+    "sylKK": "ˈwez"
+  },
+  {
+    "word": "cut energy cost",
+    "kk": "[kʌt ˈɛnɚdʒɪ kɔst]",
+    "translation": "削減能源成本",
+    "part_of_speech": "v. phr.",
+    "note": "多益企業營運與成本控制情境。cut 在此作動詞「縮減、降低」。同義詞組：reduce energy expenses。",
+    "sylWord": "cut en·er·gy cost"
+  },
+  {
+    "word": "section",
+    "kk": "[ˈsɛkʃən]",
+    "translation": "部分、區段、(會議的)環環節",
+    "part_of_speech": "n.",
+    "note": "多益會議或文件結構情境。常見搭配：Q&A section (問答環節)、technical section (技術章節)。",
+    "sylWord": "sec·tion",
+    "sylKK": "ˈsɛk·ʃən"
+  },
+  {
+    "word": "extension",
+    "kk": "[ɪkˈstɛnʃən]",
+    "translation": "展期、延長；分機號碼",
+    "part_of_speech": "n.",
+    "note": "多益多義高頻字。合約/保固情境指延長：warranty extension (保固延長)；辦公室電話情境指分機：Reach me at extension 101。",
+    "sylWord": "ex·ten·sion",
+    "sylKK": "ɪks·ˈtɛn·ʃən"
+  },
+  {
+    "word": "included",
+    "kk": "[ɪnˈkludɪd]",
+    "translation": "包含在內的",
+    "part_of_speech": "adj. / v.",
+    "note": "多益報價、帳單明細情境。常置於名詞後修飾，如 tax included (含稅)。動詞原型為 include。反義詞：excluded。",
+    "sylWord": "in·clud·ed",
+    "sylKK": "ˌɪnk·ˈlu·dəd"
+  },
+  {
+    "word": "cost",
+    "kk": "[kɔst]",
+    "translation": "費用、成本；花費",
+    "part_of_speech": "n. / v.",
+    "note": "多益商務營運與財報核心字。常見搭配：at no extra cost (不需額外費用)、operating costs (營運成本)。",
+    "sylWord": "cost",
+    "sylKK": "ˈkɑst"
+  },
+  {
+    "word": "fill out",
+    "kk": "[fɪl aʊt]",
+    "translation": "填寫（表格、文件）",
+    "part_of_speech": "v. phr.",
+    "note": "多益行政、申請流程必考片語。後接表格名詞。常見搭配：fill out an application form (填寫申請表)。同義詞組：fill in, complete。",
+    "sylWord": "fil·l out"
+  },
+  {
+    "word": "form",
+    "kk": "[fɔrm]",
+    "translation": "表格、形式",
+    "part_of_speech": "n.",
+    "note": "多益辦公室與行政流程核心詞。常見搭配：application form (申請表)、order form (訂購單)。",
+    "sylWord": "form",
+    "sylKK": "ˈfɔrm"
+  },
+  {
+    "word": "TV commercial",
+    "kk": "[ˌtiˈvi kəˈmɝʃəl]",
+    "translation": "電視廣告",
+    "part_of_speech": "n. phr.",
+    "note": "多益行銷與媒體廣告情境。commercial 專指廣播或電視上的商業廣告，不同於一般的 advertisement (涵蓋平面、網路等)。",
+    "sylWord": "TV com·mer·cial"
+  },
+  {
+    "word": "launched",
+    "kk": "[lɔntʃt]",
+    "translation": "上市、發起、開辦",
+    "part_of_speech": "v.",
+    "note": "多益產品行銷、企業專案高頻動詞。常見搭配：launch a new product (發表新產品)、launch a marketing campaign (發起行銷活動)。",
+    "sylWord": "laun·ched",
+    "sylKK": "ˈlɔntʃt"
+  },
+  {
+    "word": "marketing department",
+    "kk": "[ˈmɑrkɪtɪŋ dɪˈpɑrtmənt]",
+    "translation": "行銷部門",
+    "part_of_speech": "n. phr.",
+    "note": "多益公司組織架構高頻詞。負責市場調查、廣告投放及產品促銷。相關部門：sales department (業務部)。",
+    "sylWord": "mar·ket·ing de·part·ment"
+  },
+  {
+    "word": "consider",
+    "kk": "[kənˈsɪdɚ]",
+    "translation": "考慮、思考",
+    "part_of_speech": "v.",
+    "note": "多益決策情境核心動詞。文法重點：後面若接動詞，必須使用動名詞形式（consider doing something）。常見搭配：consider canceling the event (考慮取消活動)。",
+    "sylWord": "con·sid·er",
+    "sylKK": "kən·ˈsɪ·dɚ"
+  },
+  {
+    "word": "residents",
+    "kk": "[ˈrɛzədənts]",
+    "translation": "居民、住戶",
+    "part_of_speech": "n.",
+    "note": "多益社區公告、物業管理情境。常見搭配：local residents (當地居民)。同義詞：inhabitants, citizens。",
+    "sylWord": "res·i·dents",
+    "sylKK": "ˈrɛ·zɪ·dənts"
+  },
+  {
+    "word": "advised",
+    "kk": "[ədˈvaɪzd]",
+    "translation": "被建議的、受勸告的",
+    "part_of_speech": "v.",
+    "note": "多益公告與商務書信常見被動用法。常見搭配：be advised to do something (被建議做某事)。動詞原型 advise。",
+    "sylWord": "ad·vised",
+    "sylKK": "æd·ˈvaɪzd"
+  },
+  {
+    "word": "public transportation",
+    "kk": "[ˈpʌblɪk ˌtrænspɚˈteʃən]",
+    "translation": "大眾運輸、公共交通",
+    "part_of_speech": "n. phr.",
+    "note": "多益商務出差與活動公告高頻字。常見搭配：take public transportation (搭乘大眾運輸)。",
+    "sylWord": "pub·lic trans·porta·tion"
+  },
+  {
+    "word": "event",
+    "kk": "[ɪˈvɛnt]",
+    "translation": "活動、事件",
+    "part_of_speech": "n.",
+    "note": "多益商務、社交活動情境。常見搭配：upcoming event (即將到來的活動)、corporate event (公司活動)。",
+    "sylWord": "e·vent",
+    "sylKK": "ɪ·ˈvɛnt"
+  },
+  {
+    "word": "although",
+    "kk": "[ɔlˈðo]",
+    "translation": "雖然、儘管",
+    "part_of_speech": "conj.",
+    "note": "多益閱讀 Part 5 必考連接詞。引導讓步狀語從句。注意 although 不能與 but 連用。同義詞：even though, though。",
+    "sylWord": "al·though",
+    "sylKK": "ˌɔl·ˈðo"
+  },
+  {
+    "word": "behind",
+    "kk": "[bɪˈhaɪnd]",
+    "translation": "在...後面；落後",
+    "part_of_speech": "prep. / adv.",
+    "note": "多益進度管理核心詞。最常考片語：behind schedule (進度落後)。反義片語：ahead of schedule (進度超前)。",
+    "sylWord": "be·hind",
+    "sylKK": "bɪ·ˈhaɪnd"
+  },
+  {
+    "word": "interns",
+    "kk": "[ˈɪntɝnz]",
+    "translation": "實習生",
+    "part_of_speech": "n.",
+    "note": "多益人事招募與校園招聘情境。常見搭配：hire an intern (僱用實習生)。名詞 internship 表示「實習職位」。",
+    "sylWord": "in·terns",
+    "sylKK": "ˈɪn·tɚnz"
+  },
+  {
+    "word": "enough",
+    "kk": "[ɪˈnʌf]",
+    "translation": "足夠的、充足的",
+    "part_of_speech": "adj. / adv.",
+    "note": "多益資源或人力評估情境。作形容詞時修飾名詞放在前面（enough workers）；作副詞時修飾形容詞放在後面（good enough）。",
+    "sylWord": "e·nough",
+    "sylKK": "ɪ·ˈnʌf"
+  },
+  {
+    "word": "to meet",
+    "kk": "[tu mit]",
+    "translation": "以滿足、以達到（標準/需求）",
+    "part_of_speech": "v. phr.",
+    "note": "多益經典用法，meet 在此不作「遇見」，而作「滿足、符合」。常見搭配：meet the orders (滿足訂單需求)、meet the deadline (趕上截止日期)。",
+    "sylWord": "to ·meet"
+  },
+  {
+    "word": "orders",
+    "kk": "[ˈɔrdɚz]",
+    "translation": "訂單；指示",
+    "part_of_speech": "n.",
+    "note": "多益採購與物流核心字。常見搭配：place an order (下訂單)、process an order (處理訂單)、fill an order (出貨)。",
+    "sylWord": "or·ders",
+    "sylKK": "ˈɔr·dɚz"
+  },
+  {
+    "word": "manufacturer",
+    "kk": "[ˌmænjəˈfæktʃərɚ]",
+    "translation": "製造商、廠商",
+    "part_of_speech": "n.",
+    "note": "多益生產與供應鏈情境高頻詞。動詞型態為 manufacture (製造)。常見搭配：car manufacturer (汽車製造商)。同義詞：producer。",
+    "sylWord": "man·u·fac·tur·er",
+    "sylKK": "ˌmæn·jə·ˈfæk·tʃɚ·ɚ"
+  },
+  {
+    "word": "fit",
+    "kk": "[fɪt]",
+    "translation": "適合的人選/事物；適合的",
+    "part_of_speech": "n. / adj.",
+    "note": "多益人事招募情境。常用片語：be a good fit for the position (非常適合該職位)。",
+    "sylWord": "fit",
+    "sylKK": "ˈfɪt"
+  },
+  {
+    "word": "position",
+    "kk": "[pəˈzɪʃən]",
+    "translation": "職位、位置",
+    "part_of_speech": "n.",
+    "note": "多益人事招募情境核心字。常見搭配：open position (職缺)、apply for a position (申請職位)。同義詞：job opening。",
+    "sylWord": "po·si·tion",
+    "sylKK": "pə·ˈzɪ·ʃən"
+  },
+  {
+    "word": "impressed",
+    "kk": "[ɪmˈprɛst]",
+    "translation": "留下深刻印象的",
+    "part_of_speech": "adj.",
+    "note": "多益面試與績效考核情境。常見搭配：be impressed with/by someone's qualifications (對某人的資歷印象深刻)。名詞為 impression。",
+    "sylWord": "im·pressed",
+    "sylKK": "ˌɪmp·ˈrɛst"
+  },
+  {
+    "word": "qualifications",
+    "kk": "[ˌkwɑləfəˈkeʃənz]",
+    "translation": "資歷、資格、條件",
+    "part_of_speech": "n.",
+    "note": "多益人事招募核心詞。通常指學歷、工作經驗及證照等總和。常見搭配：job qualifications (職位要求資格)。動詞為 qualify。",
+    "sylWord": "qual·i·fi·ca·tions",
+    "sylKK": "ˌkwɑ·lə·fə·ˈke·ʃənz"
+  }
 ]
-

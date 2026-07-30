@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=51"><!-- 外部樣式表（?v=51 為破快取版本號） -->
-<script defer src="index.js?v=51"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=52"><!-- 外部樣式表（?v=52 為破快取版本號） -->
+<script defer src="index.js?v=52"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -656,11 +656,14 @@ async function speakWord(word, lang, callback) {
     }
 }
 // playKKAudio：發音表播放
-//   先試本地音素音檔 Pronunciation/audio/<代號>.mp3，再試 .ogg；
-//   兩個都沒有（或瀏覽器不支援）就退回用 Google TTS 唸例字，確保一定有聲。
-function playKKAudio(slug, example) {
+//   synth=1（雙母音）→ 用 Google TTS 的 SSML <phoneme> 合成「單音」；
+//   否則先試本地音檔 <代號>.mp3 → .ogg，都沒有才退回唸例字。
+function playKKAudio(slug, example, ipa, synth) {
     window.speechSynthesis.cancel();
     if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
+
+    if (synth && ipa) { playSSMLPhoneme(ipa, example); return; } // 雙母音：合成單音
+
     const sources = slug
         ? ["Pronunciation/audio/" + slug + ".mp3", "Pronunciation/audio/" + slug + ".ogg"]
         : [];
@@ -678,6 +681,31 @@ function playKKAudio(slug, example) {
         a.play().then(() => { settled = true; }).catch(fail);
     };
     next();
+}
+
+// playSSMLPhoneme：用 SSML <phoneme>(IPA) 合成單一音素（雙母音用）；失敗退回唸例字
+async function playSSMLPhoneme(ipa, example) {
+    const ssml = `<speak><phoneme alphabet="ipa" ph="${ipa}">-</phoneme></speak>`;
+    try {
+        const res = await fetch(TTS_PROXY_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ssml, lang: "en-US" })
+        });
+        const data = await res.json();
+        if (data.audioContent) {
+            const a = new Audio("data:audio/mp3;base64," + data.audioContent);
+            currentAudio = a;
+            a.play();
+            a.onended = () => { if (a === currentAudio) currentAudio = null; };
+        } else {
+            console.error("雙母音合成失敗：", data);
+            if (example) speakWord(example, 'en-US');
+        }
+    } catch (e) {
+        console.error("雙母音合成失敗：", e);
+        if (example) speakWord(example, 'en-US');
+    }
 }
 
 /* （已停用的舊版本）改用瀏覽器內建語音合成 SpeechSynthesis：
@@ -828,14 +856,16 @@ function renderPronounce(data) {
         return;
     }
     // 產生單一格：符號、例字＋例字的 KK、播放鈕
-    // 🔊 優先播「本地音素音檔」(Pronunciation/audio/<代號>.mp3/.ogg)，沒有才退回唸例字
+    // 🔊 播放規則：synth=用 TTS 合成單音(雙母音)；否則優先播本地音檔，沒有才唸例字
     const cell = it => {
         const ex = (it.example || "").replace(/'/g, "\\'");
         const au = (it.audio || "").replace(/'/g, "\\'");
+        const ip = (it.ipa || "").replace(/'/g, "\\'");
+        const synth = it.synth ? "1" : "";
         return `<div class="kk-cell">
             <span class="kk-symbol">[${it.symbol}]</span>
             <span class="kk-example">${it.example || ""}${it.exampleKK ? ` <span class="kk-ex-kk">${it.exampleKK}</span>` : ""}</span>
-            <button class="kk-play" title="播放這個 KK 音" onclick="playKKAudio('${au}','${ex}')">🔊</button>
+            <button class="kk-play" title="播放這個 KK 音" onclick="playKKAudio('${au}','${ex}','${ip}','${synth}')">🔊</button>
         </div>`;
     };
     const grid = arr => `<div class="kk-grid">${(arr || []).map(cell).join("")}</div>`;

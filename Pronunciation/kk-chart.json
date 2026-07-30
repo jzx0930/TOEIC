@@ -106,21 +106,24 @@
         "example": "fine",
         "ipa": "aɪ",
         "exampleKK": "[faɪn]",
-        "audio": "ai"
+        "audio": "ai",
+        "synth": true
       },
       {
         "symbol": "aʊ",
         "example": "how",
         "ipa": "aʊ",
         "exampleKK": "[haʊ]",
-        "audio": "au"
+        "audio": "au",
+        "synth": true
       },
       {
         "symbol": "ɔɪ",
         "example": "boy",
         "ipa": "ɔɪ",
         "exampleKK": "[bɔɪ]",
-        "audio": "oi"
+        "audio": "oi",
+        "synth": true
       }
     ]
   },

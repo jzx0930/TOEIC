@@ -43,13 +43,9 @@ const COMMONS = {
   uu: "Near-close_near-back_rounded_vowel.ogg",
   uh: "Open-mid_back_unrounded_vowel.ogg",
   schwa: "Mid-central_vowel.ogg",
-  // r 音化母音（用真人例字）
-  er:  "En-us-sister.ogg",
-  err: "En-us-bird.ogg",
-  // 雙母音（用真人例字）
-  ai:  "En-us-fine.ogg",
-  au:  "En-us-how.ogg",
-  oi:  "En-us-boy.ogg",
+  // r 音化母音（真人「單音」錄音，非例字）
+  er:  "PR-r-coloured_open-mid_central_unrounded_vowel.ogg",
+  err: "PR-r-coloured_open-mid_central_unrounded_vowel.ogg",
   // 子音
   p:  "Voiceless_bilabial_plosive.ogg",
   b:  "Voiced_bilabial_plosive.ogg",

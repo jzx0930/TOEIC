@@ -4,349 +4,449 @@
     "kk": "[nɪˈgoʃiˌet]",
     "translation": "協商",
     "part_of_speech": "v.",
-    "note": "多益商務合約或談判情境常見：negotiate terms（協商條款）。"
+    "note": "多益商務合約或談判情境常見：negotiate terms（協商條款）。",
+    "sylWord": "ne·go·ti·ate",
+    "sylKK": "nə·ˈgo·ʃi·ˌet"
   },
   {
     "word": "evaluate",
     "kk": "[ɪˈvæljʊˌet]",
     "translation": "評估",
     "part_of_speech": "v.",
-    "note": "多益績效考核情境常見：evaluate performance（評估表現）。"
+    "note": "多益績效考核情境常見：evaluate performance（評估表現）。",
+    "sylWord": "eval·u·ate",
+    "sylKK": "ɪ·ˈvæl·ju·ˌet"
   },
   {
     "word": "finalize",
     "kk": "[ˈfaɪnəlˌaɪz]",
     "translation": "敲定",
     "part_of_speech": "v.",
-    "note": "多益專案管理情境常見：finalize the project（敲定專案）。"
+    "note": "多益專案管理情境常見：finalize the project（敲定專案）。",
+    "sylWord": "fi·nal·ize",
+    "sylKK": "ˈfaɪ·nə·ˌlaɪz"
   },
   {
     "word": "upcoming",
     "kk": "[ˈʌpˌkʌmɪŋ]",
     "translation": "即將到來的",
     "part_of_speech": "adj.",
-    "note": "多益會議通知情境常見：upcoming meeting（即將到來的會議）。"
+    "note": "多益會議通知情境常見：upcoming meeting（即將到來的會議）。",
+    "sylWord": "up·com·ing",
+    "sylKK": "ˈʌp·ˌkʌ·mɪŋ"
   },
   {
     "word": "refreshment",
     "kk": "[rɪˈfrɛʃmənt]",
     "translation": "茶點",
     "part_of_speech": "n.",
-    "note": "多益研討會或社交招待情境常見：serve refreshments（提供茶點）。"
+    "note": "多益研討會或社交招待情境常見：serve refreshments（提供茶點）。",
+    "sylWord": "re·fresh·ment",
+    "sylKK": "rəf·ˈrɛʃ·mənt"
   },
   {
     "word": "inventory",
     "kk": "[ˈɪnvənˌtori]",
     "translation": "庫存",
     "part_of_speech": "n.",
-    "note": "多益零售與倉儲物流情境常見：take inventory（盤點庫存）。"
+    "note": "多益零售與倉儲物流情境常見：take inventory（盤點庫存）。",
+    "sylWord": "in·ven·to·ry",
+    "sylKK": "ˌɪn·vən·ˈtɔ·ri"
   },
   {
     "word": "postpone",
     "kk": "[postˈpon]",
     "translation": "延後",
     "part_of_speech": "v.",
-    "note": "多益日程變更情境常見：postpone until next week（延後至下週）。"
+    "note": "多益日程變更情境常見：postpone until next week（延後至下週）。",
+    "sylWord": "post·pone",
+    "sylKK": "post·ˈpon"
   },
   {
     "word": "outstanding",
     "kk": "[aʊtˈstændɪŋ]",
     "translation": "優秀的、未完成的",
     "part_of_speech": "adj.",
-    "note": "多益績效評估或帳務催收情境常見：outstanding performance（優秀表現）。"
+    "note": "多益績效評估或帳務催收情境常見：outstanding performance（優秀表現）。",
+    "sylWord": "out·stand·ing",
+    "sylKK": "ˌaʊts·ˈtæn·dɪŋ"
   },
   {
     "word": "applicant",
     "kk": "[ˈæplɪkənt]",
     "translation": "申請人",
     "part_of_speech": "n.",
-    "note": "多益求職招募情境常見：applicants for this position（該職位的申請人）。"
+    "note": "多益求職招募情境常見：applicants for this position（該職位的申請人）。",
+    "sylWord": "ap·pli·cant",
+    "sylKK": "ˈæp·lɪ·kənt"
   },
   {
     "word": "proficiency",
     "kk": "[prəˈfɪʃənsi]",
     "translation": "專業能力",
     "part_of_speech": "n.",
-    "note": "多益求職門檻情境常見：proficiency in languages（語言精通能力）。"
+    "note": "多益求職門檻情境常見：proficiency in languages（語言精通能力）。",
+    "sylWord": "pro·fi·cien·cy",
+    "sylKK": "prə·ˈfɪ·ʃən·si"
   },
   {
     "word": "reimburse",
     "kk": "[ˌriɪmˈbɝs]",
     "translation": "補償",
     "part_of_speech": "v.",
-    "note": "多益差旅費用核銷情境常見：reimburse travel expenses（核銷差旅費用）。"
+    "note": "多益差旅費用核銷情境常見：reimburse travel expenses（核銷差旅費用）。",
+    "sylWord": "re·im·burse",
+    "sylKK": "ˌri·ɪm·ˈbɝs"
   },
   {
     "word": "recipient",
     "kk": "[rɪˈsɪpɪənt]",
     "translation": "收件者",
     "part_of_speech": "n.",
-    "note": "多益書信郵寄或郵件通知情境常見：recipient's address（收件者地址）。"
+    "note": "多益書信郵寄或郵件通知情境常見：recipient's address（收件者地址）。",
+    "sylWord": "re·cip·i·ent",
+    "sylKK": "rə·ˈsɪ·pi·ənt"
   },
   {
     "word": "confirmation",
     "kk": "[ˌkɑnfɚˈmeʃən]",
     "translation": "確認",
     "part_of_speech": "n.",
-    "note": "多益預訂行程情境常見：booking confirmation（預訂確認）。"
+    "note": "多益預訂行程情境常見：booking confirmation（預訂確認）。",
+    "sylWord": "con·fir·ma·tion",
+    "sylKK": "ˌkɑn·fɚ·ˈme·ʃən"
   },
   {
     "word": "defective",
     "kk": "[dɪˈfɛktɪv]",
     "translation": "瑕疵的",
     "part_of_speech": "adj.",
-    "note": "多益售後服務或退換貨情境常見：defective product（有瑕疵的產品）。"
+    "note": "多益售後服務或退換貨情境常見：defective product（有瑕疵的產品）。",
+    "sylWord": "de·fec·tive",
+    "sylKK": "dɪ·ˈfɛk·tɪv"
   },
   {
     "word": "warranty",
     "kk": "[ˈwɔrənti]",
     "translation": "保固",
     "part_of_speech": "n.",
-    "note": "多益電子產品或設備採購情境常見：two-year warranty（兩年保固）。"
+    "note": "多益電子產品或設備採購情境常見：two-year warranty（兩年保固）。",
+    "sylWord": "war·ran·ty",
+    "sylKK": "ˈwɔ·rən·ti"
   },
   {
     "word": "replacement",
     "kk": "[rɪˈplesmənt]",
     "translation": "更換",
     "part_of_speech": "n.",
-    "note": "多益售後服務或人資職缺情境常見：replacement for the damaged item（損壞物品的替代品）。"
+    "note": "多益售後服務或人資職缺情境常見：replacement for the damaged item（損壞物品的替代品）。",
+    "sylWord": "re·place·ment",
+    "sylKK": "rɪp·ˈles·mənt"
   },
   {
     "word": "refund",
     "kk": "[ˈriˌfʌnd]",
     "translation": "退款",
     "part_of_speech": "n.",
-    "note": "多益消費者權益與客服情境常見：request a refund（申請退款）。"
+    "note": "多益消費者權益與客服情境常見：request a refund（申請退款）。",
+    "sylWord": "re·fund",
+    "sylKK": "rɪ·ˈfʌnd"
   },
   {
     "word": "mandatory",
     "kk": "[ˈmændəˌtori]",
     "translation": "強制性的",
     "part_of_speech": "adj.",
-    "note": "多益公司規章或員工培訓情境常見：attendance is mandatory（必須出席）。"
+    "note": "多益公司規章或員工培訓情境常見：attendance is mandatory（必須出席）。",
+    "sylWord": "manda·to·ry",
+    "sylKK": "ˈmæn·də·ˌtɔ·ri"
   },
   {
     "word": "orientation",
     "kk": "[ˌorjɛnˈteʃən]",
     "translation": "新人訓練",
     "part_of_speech": "n.",
-    "note": "多益人事資源情境常見：attend an orientation（參加新人訓練）。"
+    "note": "多益人事資源情境常見：attend an orientation（參加新人訓練）。",
+    "sylWord": "ori·en·ta·tion",
+    "sylKK": "ˌɔ·ri·ɛn·ˈte·ʃən"
   },
   {
     "word": "duration",
     "kk": "[dʊˈreʃən]",
     "translation": "時長",
     "part_of_speech": "n.",
-    "note": "多益行程安排或會議通知情境常見：duration of the meeting（會議時長）。"
+    "note": "多益行程安排或會議通知情境常見：duration of the meeting（會議時長）。",
+    "sylWord": "du·ra·tion",
+    "sylKK": "ˈdʊ·ˈre·ʃən"
   },
   {
     "word": "reception",
     "kk": "[rɪˈsɛpʃən]",
     "translation": "招待會、接待處",
     "part_of_speech": "n.",
-    "note": "多益商務社交或飯店入住情境常見：reception desk（接待櫃檯）。"
+    "note": "多益商務社交或飯店入住情境常見：reception desk（接待櫃檯）。",
+    "sylWord": "re·cep·tion",
+    "sylKK": "rɪ·ˈsɛp·ʃən"
   },
   {
     "word": "accountant",
     "kk": "[əˈkaʊntənt]",
     "translation": "會計師",
     "part_of_speech": "n.",
-    "note": "多益財務與稅務情境常見：accountant prepares tax returns（會計師準備報稅文件）。"
+    "note": "多益財務與稅務情境常見：accountant prepares tax returns（會計師準備報稅文件）。",
+    "sylWord": "ac·coun·tant",
+    "sylKK": "ə·ˈkaʊn·tənt"
   },
   {
     "word": "precise",
     "kk": "[prɪˈsaɪs]",
     "translation": "精確的",
     "part_of_speech": "adj.",
-    "note": "多益物流或生產數據情境常見：precise information（準確資訊）。"
+    "note": "多益物流或生產數據情境常見：precise information（準確資訊）。",
+    "sylWord": "pre·cise",
+    "sylKK": "prɪ·ˈsaɪs"
   },
   {
     "word": "manual",
     "kk": "[ˈmænjuəl]",
     "translation": "手動的",
     "part_of_speech": "adj.",
-    "note": "多益辦公流程或工程操作情境常見：manual data entry（手動輸入數據）。"
+    "note": "多益辦公流程或工程操作情境常見：manual data entry（手動輸入數據）。",
+    "sylWord": "man·u·al",
+    "sylKK": "ˈmæn·ju·əl"
   },
   {
     "word": "inspection",
     "kk": "[ɪnˈspɛkʃən]",
     "translation": "審查",
     "part_of_speech": "n.",
-    "note": "多益工廠品管或安全檢查情境常見：quality inspection（品質檢驗）。"
+    "note": "多益工廠品管或安全檢查情境常見：quality inspection（品質檢驗）。",
+    "sylWord": "in·spec·tion",
+    "sylKK": "ˌɪns·ˈpɛk·ʃən"
   },
   {
     "word": "recruit",
     "kk": "[rɪˈkrut]",
     "translation": "招募",
     "part_of_speech": "v.",
-    "note": "多益公司擴充或組織調整情境常見：recruit new employees（招募新員工）。"
+    "note": "多益公司擴充或組織調整情境常見：recruit new employees（招募新員工）。",
+    "sylWord": "re·cruit",
+    "sylKK": "rək·ˈrut"
   },
   {
     "word": "inquire",
     "kk": "[ɪnˈkwaɪr]",
     "translation": "詢問",
     "part_of_speech": "v.",
-    "note": "多益客戶服務或求職進度追蹤情境常見：inquire about the status（詢問狀態）。"
+    "note": "多益客戶服務或求職進度追蹤情境常見：inquire about the status（詢問狀態）。",
+    "sylWord": "in·quire",
+    "sylKK": "ˌɪnk·ˈwaɪr"
   },
   {
     "word": "accomplishment",
     "kk": "[əˈkɑmplɪʃmənt]",
     "translation": "成就",
     "part_of_speech": "n.",
-    "note": "多益績效審查或專案表揚情境常見：significant accomplishment（重大成就）。"
+    "note": "多益績效審查或專案表揚情境常見：significant accomplishment（重大成就）。",
+    "sylWord": "ac·com·plish·ment",
+    "sylKK": "ə·ˈkɑmp·lɪʃ·mənt"
   },
   {
     "word": "eligible",
     "kk": "[ˈɛlɪdʒəbəl]",
     "translation": "符合資格的",
     "part_of_speech": "adj.",
-    "note": "多益員工福利或獎勵資格情境常見：eligible for additional benefits（符合獲得額外福利的資格）。"
+    "note": "多益員工福利或獎勵資格情境常見：eligible for additional benefits（符合獲得額外福利的資格）。",
+    "sylWord": "el·i·gi·ble",
+    "sylKK": "ˈɛ·lə·dʒə·bəl"
   },
   {
     "word": "contradict",
     "kk": "[ˌkɑntrəˈdɪkt]",
     "translation": "抵觸",
     "part_of_speech": "v.",
-    "note": "多益公關聲明或合約爭議情境常見：contradict previous announcement（與先前公告相抵觸）。"
+    "note": "多益公關聲明或合約爭議情境常見：contradict previous announcement（與先前公告相抵觸）。",
+    "sylWord": "con·tra·dict",
+    "sylKK": "ˌkɑnt·rə·ˈdɪkt"
   },
   {
     "word": "terminate",
     "kk": "[ˈtɝməˌnet]",
     "translation": "終止",
     "part_of_speech": "v.",
-    "note": "多益合約管理與法務情境常見：terminate the contract early（提前終止合約）。"
+    "note": "多益合約管理與法務情境常見：terminate the contract early（提前終止合約）。",
+    "sylWord": "ter·mi·nate",
+    "sylKK": "ˈtɝ·mə·ˌnet"
   },
   {
     "word": "verify",
     "kk": "[ˈvɛrəˌfaɪ]",
     "translation": "核實",
     "part_of_speech": "v.",
-    "note": "多益資安、帳號註冊或報表審核情境常見：verify information（確認資訊正確）。"
+    "note": "多益資安、帳號註冊或報表審核情境常見：verify information（確認資訊正確）。",
+    "sylWord": "ver·i·fy",
+    "sylKK": "ˈvɛ·rə·ˌfaɪ"
   },
   {
     "word": "merger",
     "kk": "[ˈmɝdʒɚ]",
     "translation": "公司合併",
     "part_of_speech": "n.",
-    "note": "多益商業財經新聞情境常見：merger between companies（公司合併）。"
+    "note": "多益商業財經新聞情境常見：merger between companies（公司合併）。",
+    "sylWord": "merg·er",
+    "sylKK": "ˈmɝ·dʒɚ"
   },
   {
     "word": "respondent",
     "kk": "[rɪˈspɑndənt]",
     "translation": "受訪者",
     "part_of_speech": "n.",
-    "note": "多益市場調查報告情境常見：respondents in the survey（調查中的受訪者）。"
+    "note": "多益市場調查報告情境常見：respondents in the survey（調查中的受訪者）。",
+    "sylWord": "re·spon·dent",
+    "sylKK": "rɪs·ˈpɑn·dənt"
   },
   {
     "word": "cooperate",
     "kk": "[koˈɑpəret]",
     "translation": "合作",
     "part_of_speech": "v.",
-    "note": "多益跨部門專案情境常見：cooperate with the marketing team（與行銷團隊合作）。"
+    "note": "多益跨部門專案情境常見：cooperate with the marketing team（與行銷團隊合作）。",
+    "sylWord": "co·op·er·ate",
+    "sylKK": "ko·ˈɑ·pɚ·ˌet"
   },
   {
     "word": "annually",
     "kk": "[ˈænjuəli]",
     "translation": "年度地",
     "part_of_speech": "adv.",
-    "note": "多益企業年報、常態考核情境常見：conduct employee surveys annually（每年進行調查）。"
+    "note": "多益企業年報、常態考核情境常見：conduct employee surveys annually（每年進行調查）。",
+    "sylWord": "an·nu·al·ly",
+    "sylKK": "ˈæn·ju·ə·li"
   },
   {
     "word": "valid",
     "kk": "[ˈvælɪd]",
     "translation": "有效的",
     "part_of_speech": "adj.",
-    "note": "多益會員資格、優惠券或護照效期情境常見：membership is valid until...（會員資格有效至...）。"
+    "note": "多益會員資格、優惠券或護照效期情境常見：membership is valid until...（會員資格有效至...）。",
+    "sylWord": "va·lid",
+    "sylKK": "ˈvæ·lɪd"
   },
   {
     "word": "infer",
     "kk": "[ɪnˈfɝ]",
     "translation": "推斷",
     "part_of_speech": "v.",
-    "note": "多益閱讀測驗題型或數據分析情境常見：infer from these figures（根據數據推斷）。"
+    "note": "多益閱讀測驗題型或數據分析情境常見：infer from these figures（根據數據推斷）。",
+    "sylWord": "in·fer",
+    "sylKK": "ˌɪn·ˈfɝ"
   },
   {
     "word": "innovative",
     "kk": "[ˈɪnəˌvetɪv]",
     "translation": "創新的",
     "part_of_speech": "adj.",
-    "note": "多益產品發表、研發獎項情境常見：innovative product design（創新的產品設計）。"
+    "note": "多益產品發表、研發獎項情境常見：innovative product design（創新的產品設計）。",
+    "sylWord": "in·no·v·a·tive",
+    "sylKK": "ˈɪ·nə·ˌve·tɪv"
   },
   {
     "word": "brochure",
     "kk": "[broˈʃʊr]",
     "translation": "小冊子",
     "part_of_speech": "n.",
-    "note": "多益業務推廣或展覽推銷情境常見：send company brochure（寄送公司宣傳冊）。"
+    "note": "多益業務推廣或展覽推銷情境常見：send company brochure（寄送公司宣傳冊）。",
+    "sylWord": "broc·hure",
+    "sylKK": "bro·ˈʃʊr"
   },
   {
     "word": "renew",
     "kk": "[rɪˈnu]",
     "translation": "更新",
     "part_of_speech": "v.",
-    "note": "多益期刊訂閱、合約續約情境常見：renew subscription（更新訂閱）。"
+    "note": "多益期刊訂閱、合約續約情境常見：renew subscription（更新訂閱）。",
+    "sylWord": "re·new",
+    "sylKK": "rɪ·ˈnu"
   },
   {
     "word": "automatically",
     "kk": "[ˌɔtəˈmætɪkli]",
     "translation": "自動地",
     "part_of_speech": "adv.",
-    "note": "多益系統自動化通知情境常見：automatically send a confirmation email（自動發送確認信）。"
+    "note": "多益系統自動化通知情境常見：automatically send a confirmation email（自動發送確認信）。",
+    "sylWord": "au·to·mat·i·cal·ly",
+    "sylKK": "ˌɔ·tə·ˈmæ·tɪk·li"
   },
   {
     "word": "administrator",
     "kk": "[ədˈmɪnəˌstretɚ]",
     "translation": "行政人員、管理人員",
     "part_of_speech": "n.",
-    "note": "多益辦公室 IT 技術支援情境常見：contact the system administrator（聯繫系統管理員）。"
+    "note": "多益辦公室 IT 技術支援情境常見：contact the system administrator（聯繫系統管理員）。",
+    "sylWord": "ad·min·is·tra·tor",
+    "sylKK": "əd·ˈmɪ·nəst·ˌre·tɚ"
   },
   {
     "word": "prioritize",
     "kk": "[praɪˈɔrəˌtaɪz]",
     "translation": "優先處理",
     "part_of_speech": "v.",
-    "note": "多益工作效率或時間管理情境常見：prioritize urgent tasks（優先處理緊急任務）。"
+    "note": "多益工作效率或時間管理情境常見：prioritize urgent tasks（優先處理緊急任務）。",
+    "sylWord": "pri·or·i·tize",
+    "sylKK": "praɪ·ˈɔ·rə·ˌtaɪz"
   },
   {
     "word": "coordinate",
     "kk": "[koˈɔrdɪnet]",
     "translation": "協調",
     "part_of_speech": "v.",
-    "note": "多益專案管理跨部門活動常見：coordinate activities between departments（協調部門間活動）。"
+    "note": "多益專案管理跨部門活動常見：coordinate activities between departments（協調部門間活動）。",
+    "sylWord": "co·or·di·nate",
+    "sylKK": "ko·ˈɔr·də·nət"
   },
   {
     "word": "efficiently",
     "kk": "[ɪˈfɪʃəntli]",
     "translation": "有效率地",
     "part_of_speech": "adv.",
-    "note": "多益辦公設備或系統升級情境常見：work more efficiently（工作更有效率）。"
+    "note": "多益辦公設備或系統升級情境常見：work more efficiently（工作更有效率）。",
+    "sylWord": "ef·fi·cient·ly",
+    "sylKK": "ɪ·ˈfɪ·ʃənt·li"
   },
   {
     "word": "voucher",
     "kk": "[ˈvaʊtʃɚ]",
     "translation": "票券",
     "part_of_speech": "n.",
-    "note": "多益客戶促銷或消費折扣情境常見：voucher entitles a discount（票券享有折扣）。"
+    "note": "多益客戶促銷或消費折扣情境常見：voucher entitles a discount（票券享有折扣）。",
+    "sylWord": "vouch·er",
+    "sylKK": "ˈvaʊ·tʃɚ"
   },
   {
     "word": "expired",
     "kk": "[ɪkˈspaɪrd]",
     "translation": "過期的",
     "part_of_speech": "adj.",
-    "note": "多益促銷活動或優惠券情境常見：coupon has expired（優惠券已過期）。"
+    "note": "多益促銷活動或優惠券情境常見：coupon has expired（優惠券已過期）。",
+    "sylWord": "ex·pired",
+    "sylKK": "ɪks·ˈpaɪrd"
   },
   {
     "word": "notify",
     "kk": "[ˈnotɪfaɪ]",
     "translation": "通知",
     "part_of_speech": "v.",
-    "note": "多益物流或到貨通知情境常見：notify when ready for pickup（準備好取貨時通知）。"
+    "note": "多益物流或到貨通知情境常見：notify when ready for pickup（準備好取貨時通知）。",
+    "sylWord": "no·ti·fy",
+    "sylKK": "ˈno·tə·ˌfaɪ"
   },
   {
     "word": "reschedule",
     "kk": "[riˈskedʒul]",
     "translation": "重新安排",
     "part_of_speech": "v.",
-    "note": "多益商務會議變更行程情境常見：reschedule the meeting（重新安排會議）。"
+    "note": "多益商務會議變更行程情境常見：reschedule the meeting（重新安排會議）。",
+    "sylWord": "resched·ule",
+    "sylKK": "ris·ˈkɛ·dʒul"
   }
 ]

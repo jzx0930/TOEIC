@@ -1,30 +1,252 @@
 [
-  { "word": "distributor", "kk": "[dɪˈstrɪbjətɚ]", "translation": "分銷商、批發商", "part_of_speech": "n.", "note": "供應鏈中的發行角色" },
-  { "word": "dealer", "kk": "[ˈdilɚ]", "translation": "業者、商人、代理商", "part_of_speech": "n.", "note": "通常指特定產品的經銷商" },
-  { "word": "merchant", "kk": "[ˈmɝtʃənt]", "translation": "商人、零售商、商人的", "part_of_speech": "n./adj.", "note": "" },
-  { "word": "consignee", "kk": "[ˌkɑnsaɪˈni]", "translation": "收貨人、受託人", "part_of_speech": "n.", "note": "" },
-  { "word": "broker", "kk": "[ˈbrokɚ]", "translation": "經紀人、中間人", "part_of_speech": "n.", "note": "" },
-  { "word": "stockbroker", "kk": "[ˈstɑkˌbrokɚ]", "translation": "股票經紀人", "part_of_speech": "n.", "note": "" },
-  { "word": "agent", "kk": "[ˈedʒənt]", "translation": "代理人、代理商", "part_of_speech": "n.", "note": "" },
-  { "word": "investor", "kk": "[ɪnˈvɛstɚ]", "translation": "投資者", "part_of_speech": "n.", "note": "" },
-  { "word": "accountant", "kk": "[əˈkaʊntənt]", "translation": "會計師", "part_of_speech": "n.", "note": "" },
-  { "word": "debit", "kk": "[ˈdɛbɪt]", "translation": "借方、借項/扣除", "part_of_speech": "n./v.", "note": "與會計、銀行業務相關" },
-  { "word": "employer", "kk": "[ɪmˈplɔɪɚ]", "translation": "雇主、老闆", "part_of_speech": "n.", "note": "" },
-  { "word": "employee", "kk": "[ɪmˈplɔɪi]", "translation": "員工、受雇者", "part_of_speech": "n.", "note": "" },
-  { "word": "staff", "kk": "[stæf]", "translation": "全體職員、員工", "part_of_speech": "n.", "note": "集合名詞" },
-  { "word": "crew", "kk": "[kru]", "translation": "全體工作人員、船員、機組人員", "part_of_speech": "n.", "note": "" },
-  { "word": "chief", "kk": "[tʃif]", "translation": "首領、長官/主要的、最高層級的", "part_of_speech": "n./adj.", "note": "" },
-  { "word": "board of directors", "kk": "[bɔrd ʌv dəˈrɛktɚz]", "translation": "董事會", "part_of_speech": "n.", "note": "" },
-  { "word": "assistant", "kk": "[əˈsɪstənt]", "translation": "助理、助手", "part_of_speech": "n.", "note": "" },
-  { "word": "applicant", "kk": "[ˈæplɪkənt]", "translation": "申請人、應徵者", "part_of_speech": "n.", "note": "" },
-  { "word": "expert", "kk": "[ˈɛkspɚt]", "translation": "專家", "part_of_speech": "n.", "note": "" },
-  { "word": "specialist", "kk": "[ˈspɛʃəlɪst]", "translation": "專家、專科醫生", "part_of_speech": "n.", "note": "" },
-  { "word": "inspector", "kk": "[ɪnˈspɛktɚ]", "translation": "檢查員、督察", "part_of_speech": "n.", "note": "" },
-  { "word": "dentist", "kk": "[ˈdɛntɪst]", "translation": "牙科醫生", "part_of_speech": "n.", "note": "" },
-  { "word": "surgeon", "kk": "[ˈsɝdʒən]", "translation": "外科醫生", "part_of_speech": "n.", "note": "" },
-  { "word": "advocate", "kk": "[ˈædvəkɪt]", "translation": "擁護者、提倡者/主張", "part_of_speech": "n./v.", "note": "" },
-  { "word": "patron", "kk": "[ˈpetrən]", "translation": "贊助人、老顧客", "part_of_speech": "n.", "note": "" },
-  { "word": "sponsorship", "kk": "[ˈspɑnsɚˌʃɪp]", "translation": "贊助金、贊助身分", "part_of_speech": "n.", "note": "" },
-  { "word": "landlord", "kk": "[ˈlændˌlɔrd]", "translation": "房東、地主", "part_of_speech": "n.", "note": "" },
-  { "word": "housekeeper", "kk": "[ˈhaʊsˌkipɚ]", "translation": "管家、家管服務員", "part_of_speech": "n.", "note": "" }
+  {
+    "word": "distributor",
+    "kk": "[dɪˈstrɪbjətɚ]",
+    "translation": "分銷商、批發商",
+    "part_of_speech": "n.",
+    "note": "供應鏈中的發行角色",
+    "sylWord": "dis·trib·u·tor",
+    "sylKK": "dɪst·ˈrɪb·jə·tɚ"
+  },
+  {
+    "word": "dealer",
+    "kk": "[ˈdilɚ]",
+    "translation": "業者、商人、代理商",
+    "part_of_speech": "n.",
+    "note": "通常指特定產品的經銷商",
+    "sylWord": "deal·er",
+    "sylKK": "ˈdi·lɚ"
+  },
+  {
+    "word": "merchant",
+    "kk": "[ˈmɝtʃənt]",
+    "translation": "商人、零售商、商人的",
+    "part_of_speech": "n./adj.",
+    "note": "",
+    "sylWord": "mer·chant",
+    "sylKK": "ˈmɝ·tʃənt"
+  },
+  {
+    "word": "consignee",
+    "kk": "[ˌkɑnsaɪˈni]",
+    "translation": "收貨人、受託人",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "con·signee"
+  },
+  {
+    "word": "broker",
+    "kk": "[ˈbrokɚ]",
+    "translation": "經紀人、中間人",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "bro·ker",
+    "sylKK": "ˈbro·kɚ"
+  },
+  {
+    "word": "stockbroker",
+    "kk": "[ˈstɑkˌbrokɚ]",
+    "translation": "股票經紀人",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "stock·bro·ker",
+    "sylKK": "ˈstɑkb·ˌro·kɚ"
+  },
+  {
+    "word": "agent",
+    "kk": "[ˈedʒənt]",
+    "translation": "代理人、代理商",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "a·gent",
+    "sylKK": "ˈe·dʒənt"
+  },
+  {
+    "word": "investor",
+    "kk": "[ɪnˈvɛstɚ]",
+    "translation": "投資者",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "in·vestor",
+    "sylKK": "ˌɪn·ˈvɛs·tɚ"
+  },
+  {
+    "word": "accountant",
+    "kk": "[əˈkaʊntənt]",
+    "translation": "會計師",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "ac·coun·tant",
+    "sylKK": "ə·ˈkaʊn·tənt"
+  },
+  {
+    "word": "debit",
+    "kk": "[ˈdɛbɪt]",
+    "translation": "借方、借項/扣除",
+    "part_of_speech": "n./v.",
+    "note": "與會計、銀行業務相關",
+    "sylWord": "deb·it",
+    "sylKK": "ˈdɛ·bɪt"
+  },
+  {
+    "word": "employer",
+    "kk": "[ɪmˈplɔɪɚ]",
+    "translation": "雇主、老闆",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "em·ploy·er",
+    "sylKK": "ɛmp·ˈlɔɪ·ɚ"
+  },
+  {
+    "word": "employee",
+    "kk": "[ɪmˈplɔɪi]",
+    "translation": "員工、受雇者",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "em·ploy·ee",
+    "sylKK": "ɛmp·ˈlɔɪ·i"
+  },
+  {
+    "word": "staff",
+    "kk": "[stæf]",
+    "translation": "全體職員、員工",
+    "part_of_speech": "n.",
+    "note": "集合名詞",
+    "sylWord": "staff",
+    "sylKK": "ˈstæf"
+  },
+  {
+    "word": "crew",
+    "kk": "[kru]",
+    "translation": "全體工作人員、船員、機組人員",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "crew",
+    "sylKK": "ˈkru"
+  },
+  {
+    "word": "chief",
+    "kk": "[tʃif]",
+    "translation": "首領、長官/主要的、最高層級的",
+    "part_of_speech": "n./adj.",
+    "note": "",
+    "sylWord": "chief",
+    "sylKK": "ˈtʃif"
+  },
+  {
+    "word": "board of directors",
+    "kk": "[bɔrd ʌv dəˈrɛktɚz]",
+    "translation": "董事會",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "board of di·rec·tors"
+  },
+  {
+    "word": "assistant",
+    "kk": "[əˈsɪstənt]",
+    "translation": "助理、助手",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "as·sis·tant",
+    "sylKK": "ə·ˈsɪs·tənt"
+  },
+  {
+    "word": "applicant",
+    "kk": "[ˈæplɪkənt]",
+    "translation": "申請人、應徵者",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "ap·pli·cant",
+    "sylKK": "ˈæp·lɪ·kənt"
+  },
+  {
+    "word": "expert",
+    "kk": "[ˈɛkspɚt]",
+    "translation": "專家",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "ex·pert",
+    "sylKK": "ˈɛks·pɚt"
+  },
+  {
+    "word": "specialist",
+    "kk": "[ˈspɛʃəlɪst]",
+    "translation": "專家、專科醫生",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "spe·cial·ist",
+    "sylKK": "ˈspɛ·ʃə·ləst"
+  },
+  {
+    "word": "inspector",
+    "kk": "[ɪnˈspɛktɚ]",
+    "translation": "檢查員、督察",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "in·spec·tor",
+    "sylKK": "ˌɪns·ˈpɛk·tɚ"
+  },
+  {
+    "word": "dentist",
+    "kk": "[ˈdɛntɪst]",
+    "translation": "牙科醫生",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "den·tist",
+    "sylKK": "ˈdɛn·təst"
+  },
+  {
+    "word": "surgeon",
+    "kk": "[ˈsɝdʒən]",
+    "translation": "外科醫生",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "sur·geon",
+    "sylKK": "ˈsɝ·dʒən"
+  },
+  {
+    "word": "advocate",
+    "kk": "[ˈædvəkɪt]",
+    "translation": "擁護者、提倡者/主張",
+    "part_of_speech": "n./v.",
+    "note": "",
+    "sylWord": "ad·vo·cate",
+    "sylKK": "ˈæd·və·kət"
+  },
+  {
+    "word": "patron",
+    "kk": "[ˈpetrən]",
+    "translation": "贊助人、老顧客",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "pa·tron",
+    "sylKK": "ˈpet·rən"
+  },
+  {
+    "word": "sponsorship",
+    "kk": "[ˈspɑnsɚˌʃɪp]",
+    "translation": "贊助金、贊助身分",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "spon·sor·ship",
+    "sylKK": "ˈspɑn·sɚ·ˌʃɪp"
+  },
+  {
+    "word": "landlord",
+    "kk": "[ˈlændˌlɔrd]",
+    "translation": "房東、地主",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "land·lord",
+    "sylKK": "ˈlænd·ˌlɔrd"
+  },
+  {
+    "word": "housekeeper",
+    "kk": "[ˈhaʊsˌkipɚ]",
+    "translation": "管家、家管服務員",
+    "part_of_speech": "n.",
+    "note": "",
+    "sylWord": "house·keep·er",
+    "sylKK": "ˈhaʊs·ˌki·pɚ"
+  }
 ]

@@ -3,372 +3,489 @@
     "word": "overture",
     "kk": "[ˈovɚtʃɚ]",
     "translation": "序曲",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "over·ture",
+    "sylKK": "ˈo·vɚ·tʃɚ"
   },
   {
     "word": "premiere",
     "kk": "[prɪˈmɪr]",
     "translation": "首映",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "pre·miere",
+    "sylKK": "prɛ·ˈmɪr"
   },
   {
     "word": "intermission",
     "kk": "[ˌɪntɚˈmɪʃən]",
     "translation": "中場休息",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "in·ter·mis·sion",
+    "sylKK": "ˌɪn·tɚ·ˈmɪ·ʃən"
   },
   {
     "word": "advance ticket",
     "kk": "[ədˈvæns ˈtɪkɪt]",
     "translation": "預售票",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ad·vance tick·et"
   },
   {
     "word": "critic",
     "kk": "[ˈkrɪtɪk]",
     "translation": "評論家",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "crit·ic",
+    "sylKK": "ˈkrɪ·tɪk"
   },
   {
     "word": "reservation",
     "kk": "[ˌrɛzɚˈveʃən]",
     "translation": "預約／保留",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "reser·va·tion",
+    "sylKK": "ˌrɛ·zɚ·ˈve·ʃən"
   },
   {
     "word": "dress code",
     "kk": "[drɛs kod]",
     "translation": "服裝規定",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "dres·s code"
   },
   {
     "word": "vegan",
     "kk": "[ˈvigən]",
     "translation": "純素食者",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ve·g·an",
+    "sylKK": "ˈvɛ·gən"
   },
   {
     "word": "ovo-lacto vegetarian",
     "kk": "[ˌovoˌlækto ˌvɛdʒəˈtɛrɪən]",
     "translation": "蛋奶素食者",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ovo-lac·to veg·e·tar·i·an"
   },
   {
     "word": "check",
     "kk": "[tʃɛk]",
     "translation": "結帳買單",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "check",
+    "sylKK": "ˈtʃɛk"
   },
   {
     "word": "customs",
     "kk": "[ˈkʌstəmz]",
     "translation": "海關",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "cus·toms",
+    "sylKK": "ˈkʌs·təmz"
   },
   {
     "word": "arrivals",
     "kk": "[əˈraɪvəlz]",
     "translation": "入境",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ar·rivals",
+    "sylKK": "ɚ·ˈaɪ·vəlz"
   },
   {
     "word": "departures",
     "kk": "[dɪˈpɑrtʃɚz]",
     "translation": "出境",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "de·par·tures",
+    "sylKK": "dɪ·ˈpɑr·tʃɚz"
   },
   {
     "word": "declare",
     "kk": "[dɪˈklɛr]",
     "translation": "申報",
-    "part_of_speech": "v."
+    "part_of_speech": "v.",
+    "sylWord": "de·clare",
+    "sylKK": "dɪk·ˈlɛr"
   },
   {
     "word": "boarding pass",
     "kk": "[ˈbɔrdɪŋ pæs]",
     "translation": "登機證",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "board·ing pass"
   },
   {
     "word": "foundation",
     "kk": "[faʊnˈdeʃən]",
     "translation": "房屋地基",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "foun·da·tion",
+    "sylKK": "faʊn·ˈde·ʃən"
   },
   {
     "word": "landlord",
     "kk": "[ˈlændˌlɔrd]",
     "translation": "房東",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "land·lord",
+    "sylKK": "ˈlænd·ˌlɔrd"
   },
   {
     "word": "tenant",
     "kk": "[ˈtɛnənt]",
     "translation": "房客",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ten·ant",
+    "sylKK": "ˈtɛ·nənt"
   },
   {
     "word": "property",
     "kk": "[ˈprɑpɚti]",
     "translation": "財產",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "prop·er·ty",
+    "sylKK": "ˈprɑ·pɚ·ti"
   },
   {
     "word": "urban",
     "kk": "[ˈɝbən]",
     "translation": "都市區",
-    "part_of_speech": "adj."
+    "part_of_speech": "adj.",
+    "sylWord": "ur·ban",
+    "sylKK": "ˈɝ·bən"
   },
   {
     "word": "allergic",
     "kk": "[əˈlɝdʒɪk]",
     "translation": "過敏",
-    "part_of_speech": "adj."
+    "part_of_speech": "adj.",
+    "sylWord": "al·ler·gic",
+    "sylKK": "ə·ˈlɝ·dʒɪk"
   },
   {
     "word": "diagnosis",
     "kk": "[ˌdaɪəgˈnosɪs]",
     "translation": "診斷",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "di·ag·no·sis",
+    "sylKK": "ˌdaɪ·əg·ˈno·səs"
   },
   {
     "word": "ward",
     "kk": "[wɔrd]",
     "translation": "病房",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ward",
+    "sylKK": "ˈwɔrd"
   },
   {
     "word": "saline",
     "kk": "[ˈselin]",
     "translation": "生理食鹽水",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "sa·line",
+    "sylKK": "sə·ˈlin"
   },
   {
     "word": "sunstroke",
     "kk": "[ˈsʌnˌstrok]",
     "translation": "中暑",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "sun·stroke"
   },
   {
     "word": "patented",
     "kk": "[ˈpætəntɪd]",
     "translation": "專利",
-    "part_of_speech": "adj."
+    "part_of_speech": "adj.",
+    "sylWord": "patent·ed",
+    "sylKK": "ˈpæ·tən·tɪd"
   },
   {
     "word": "exploration",
     "kk": "[ˌɛkspləˈreʃən]",
     "translation": "探勘",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ex·plo·ration",
+    "sylKK": "ˌɛksp·lɚ·ˈe·ʃən"
   },
   {
     "word": "export",
     "kk": "[ˈɛksport]",
     "translation": "出口",
-    "part_of_speech": "n./v."
+    "part_of_speech": "n./v.",
+    "sylWord": "ex·port",
+    "sylKK": "ˈɛks·pɔrt"
   },
   {
     "word": "scheme",
     "kk": "[skim]",
     "translation": "計畫",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "scheme",
+    "sylKK": "ˈskim"
   },
   {
     "word": "inspect",
     "kk": "[ɪnˈspɛkt]",
     "translation": "檢查",
-    "part_of_speech": "v."
+    "part_of_speech": "v.",
+    "sylWord": "in·spect",
+    "sylKK": "ˌɪns·ˈpɛkt"
   },
   {
     "word": "deliver",
     "kk": "[dɪˈlɪvɚ]",
     "translation": "運送",
-    "part_of_speech": "v."
+    "part_of_speech": "v.",
+    "sylWord": "de·liv·er",
+    "sylKK": "dɪ·ˈlɪ·vɚ"
   },
   {
     "word": "manual",
     "kk": "[ˈmænjuəl]",
     "translation": "手冊指南",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "man·u·al",
+    "sylKK": "ˈmæn·ju·əl"
   },
   {
     "word": "platform",
     "kk": "[ˈplætˌfɔrm]",
     "translation": "平台",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "plat·form",
+    "sylKK": "ˈplæt·ˌfɔrm"
   },
   {
     "word": "purchase",
     "kk": "[ˈpɝtʃəs]",
     "translation": "採購",
-    "part_of_speech": "v./n."
+    "part_of_speech": "v./n.",
+    "sylWord": "pur·chase",
+    "sylKK": "ˈpɝ·tʃəs"
   },
   {
     "word": "quote",
     "kk": "[kwot]",
     "translation": "報價",
-    "part_of_speech": "v./n."
+    "part_of_speech": "v./n.",
+    "sylWord": "quote",
+    "sylKK": "ˈkwot"
   },
   {
     "word": "takeover",
     "kk": "[ˈtekˌovɚ]",
     "translation": "收購",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "ta·keo·ver",
+    "sylKK": "ˈte·ˌko·vɚ"
   },
   {
     "word": "supplier",
     "kk": "[səˈplaɪɚ]",
     "translation": "供應商",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "sup·pli·er",
+    "sylKK": "səp·ˈlaɪ·ɚ"
   },
   {
     "word": "discharge",
     "kk": "[dɪsˈtʃɑrdʒ]",
     "translation": "解僱",
-    "part_of_speech": "v./n."
+    "part_of_speech": "v./n.",
+    "sylWord": "dis·charge",
+    "sylKK": "dɪs·ˈtʃɑrdʒ"
   },
   {
     "word": "internship",
     "kk": "[ˈɪntɝnˌʃɪp]",
     "translation": "實習",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "in·tern·ship",
+    "sylKK": "ˈɪn·tɚn·ˌʃɪp"
   },
   {
     "word": "recruit",
     "kk": "[rɪˈkrut]",
     "translation": "招募",
-    "part_of_speech": "v./n."
+    "part_of_speech": "v./n.",
+    "sylWord": "re·cruit",
+    "sylKK": "rək·ˈrut"
   },
   {
     "word": "employee",
     "kk": "[ɪmˈplɔɪi]",
     "translation": "員工",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "em·ploy·ee",
+    "sylKK": "ɛmp·ˈlɔɪ·i"
   },
   {
     "word": "interview",
     "kk": "[ˈɪntɚˌvju]",
     "translation": "面試",
-    "part_of_speech": "n./v."
+    "part_of_speech": "n./v.",
+    "sylWord": "in·ter·view",
+    "sylKK": "ˈɪn·tɚv·ˌju"
   },
   {
     "word": "fax",
     "kk": "[fæks]",
     "translation": "傳真",
-    "part_of_speech": "n./v."
+    "part_of_speech": "n./v.",
+    "sylWord": "fax",
+    "sylKK": "ˈfæks"
   },
   {
     "word": "human resources",
     "kk": "[ˈhjumən ˈrisɔrsɪz]",
     "translation": "人資部門",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "hu·man re·sources"
   },
   {
     "word": "head office",
     "kk": "[hɛd ˈɑfɪs]",
     "translation": "總公司",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "head of·fice"
   },
   {
     "word": "procurement",
     "kk": "[proˈkjʊrmənt]",
     "translation": "採購",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "pro·cure·ment",
+    "sylKK": "prok·ˈjʊr·mənt"
   },
   {
     "word": "salary",
     "kk": "[ˈsæləri]",
     "translation": "薪水",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "sa·la·ry",
+    "sylKK": "ˈsæ·lɚ·i"
   },
   {
     "word": "further",
     "kk": "[ˈfɝðɚ]",
     "translation": "推動／更進一步",
-    "part_of_speech": "v./adv."
+    "part_of_speech": "v./adv.",
+    "sylWord": "fur·ther",
+    "sylKK": "ˈfɝ·ðɚ"
   },
   {
     "word": "failure",
     "kk": "[ˈfeljɚ]",
     "translation": "失敗",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "fail·ure",
+    "sylKK": "ˈfel·jɚ"
   },
   {
     "word": "transition",
     "kk": "[trænˈzɪʃən]",
     "translation": "過渡期",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "tran·si·tion",
+    "sylKK": "træn·ˈzɪ·ʃən"
   },
   {
     "word": "expire",
     "kk": "[ɪkˈspaɪr]",
     "translation": "到期",
-    "part_of_speech": "v."
+    "part_of_speech": "v.",
+    "sylWord": "ex·pire",
+    "sylKK": "ɪks·ˈpaɪr"
   },
   {
     "word": "merger",
     "kk": "[ˈmɝdʒɚ]",
     "translation": "合併",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "merg·er",
+    "sylKK": "ˈmɝ·dʒɚ"
   },
   {
     "word": "assets",
     "kk": "[ˈæsɛts]",
     "translation": "資產",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "as·sets",
+    "sylKK": "ˈæ·ˌsɛts"
   },
   {
     "word": "allocate",
     "kk": "[ˈæləˌket]",
     "translation": "撥款",
-    "part_of_speech": "v."
+    "part_of_speech": "v.",
+    "sylWord": "al·lo·cate",
+    "sylKK": "ˈæ·lə·ˌket"
   },
   {
     "word": "budget",
     "kk": "[ˈbʌdʒɪt]",
     "translation": "預算",
-    "part_of_speech": "n./v."
+    "part_of_speech": "n./v.",
+    "sylWord": "bud·get",
+    "sylKK": "ˈbʌ·dʒɪt"
   },
   {
     "word": "capital",
     "kk": "[ˈkæpətəl]",
     "translation": "資本",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "cap·i·tal",
+    "sylKK": "ˈkæ·pə·təl"
   },
   {
     "word": "debt",
     "kk": "[dɛt]",
     "translation": "債務",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "debt",
+    "sylKK": "ˈdɛt"
   },
   {
     "word": "consultation",
     "kk": "[ˌkɑnsəlˈteʃən]",
     "translation": "協商",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "con·sul·ta·tion",
+    "sylKK": "ˌkɑn·səl·ˈte·ʃən"
   },
   {
     "word": "accurate",
     "kk": "[ˈækjərɪt]",
     "translation": "準確",
-    "part_of_speech": "adj."
+    "part_of_speech": "adj.",
+    "sylWord": "ac·cu·rate",
+    "sylKK": "ˈæk·jɚ·ət"
   },
   {
     "word": "deadline",
     "kk": "[ˈdɛdˌlaɪn]",
     "translation": "期限／截止日",
-    "part_of_speech": "n."
+    "part_of_speech": "n.",
+    "sylWord": "dead·line",
+    "sylKK": "ˈdɛd·ˌlaɪn"
   },
   {
     "word": "estimate",
     "kk": "[ˈɛstəˌmet]",
     "translation": "評估／衡量",
-    "part_of_speech": "v./n."
+    "part_of_speech": "v./n.",
+    "sylWord": "es·ti·mate",
+    "sylKK": "ˈɛs·tə·mət"
   },
   {
     "word": "profitable",
     "kk": "[ˈprɑfɪtəbəl]",
     "translation": "具有利潤",
-    "part_of_speech": "adj."
+    "part_of_speech": "adj.",
+    "sylWord": "prof·itable",
+    "sylKK": "ˈprɑ·fə·tə·bəl"
   }
 ]

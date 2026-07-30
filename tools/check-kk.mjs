@@ -31,21 +31,65 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-// --- 載入 CMUdict ---
+// --- 載入 CMUdict（v3 是具名匯出 dictionary；也相容其他格式）---
 let CMU;
 try {
-  CMU = (await import("cmu-pronouncing-dictionary")).default;
+  const m = await import("cmu-pronouncing-dictionary");
+  CMU = m.dictionary || m.default || (m.default && m.default.dictionary) || m;
 } catch {
   console.error("✗ 找不到 cmu-pronouncing-dictionary，請先： npm install cmu-pronouncing-dictionary hyphen");
   process.exit(1);
 }
+if (!CMU || typeof CMU !== "object" || (!CMU["hello"] && !CMU["HELLO"])) {
+  console.error("✗ CMUdict 載入格式異常（取不到字典物件）。請確認套件版本，或把此訊息回報。");
+  process.exit(1);
+}
+// 大小寫皆試，回傳該字的 ARPAbet 字串
+const cmuLookup = (word) => {
+  const w = word.toLowerCase();
+  return CMU[w] || CMU[word] || CMU[word.toUpperCase()] || null;
+};
+console.log("CMUdict 載入 OK（約 " + Object.keys(CMU).length + " 字）");
 
-// --- 連字號（拼寫音節），載入失敗則用簡單後備 ---
-let hyphenate = null;
-try {
-  const mod = await import("hyphen/en");
-  hyphenate = mod.hyphenateSync || (mod.default && mod.default.hyphenateSync) || null;
-} catch { /* 後備見 splitWordFallback */ }
+// --- 連字號（拼寫音節）：多策略嘗試（子路徑具名／工廠函式），全記錄下來方便診斷 ---
+let hyphenateFn = null, hyphenAsync = false;
+async function loadHyphen() {
+  const tried = [];
+  // 策略 1：ESM 需指定到 /index.js（不支援資料夾匯入）
+  for (const spec of ["hyphen/en-us/index.js", "hyphen/en/index.js"]) {
+    try {
+      const m = await import(spec);
+      const sync = m.hyphenateSync || (m.default && m.default.hyphenateSync);
+      if (typeof sync === "function") return { fn: sync, async: false, how: spec + " hyphenateSync" };
+      const asy = m.hyphenate || (m.default && m.default.hyphenate);
+      if (typeof asy === "function") return { fn: asy, async: true, how: spec + " hyphenate(async)" };
+      tried.push(spec + "：載入但找不到 hyphenate 函式");
+    } catch (e) { tried.push(spec + "：" + e.message); }
+  }
+  // 策略 2：工廠函式 createHyphenator(patterns)；patterns 檔要帶 .js
+  try {
+    const cm = await import("hyphen/hyphen.js");
+    const create = (typeof cm.default === "function" ? cm.default : null) || cm.createHyphenator;
+    const pm = await import("hyphen/patterns/en-us.js");
+    const patterns = pm.default || pm;
+    if (typeof create === "function" && patterns) {
+      const fn = create(patterns); // 預設同步
+      if (typeof fn === "function") return { fn, async: false, how: "createHyphenator(patterns)" };
+    }
+    tried.push("factory：createHyphenator 或 patterns 取得失敗");
+  } catch (e) { tried.push("factory：" + e.message); }
+  return { fn: null, async: false, how: "未載入 → " + tried.join(" ; ") };
+}
+const H = await loadHyphen();
+hyphenateFn = H.fn; hyphenAsync = H.async;
+console.log("hyphen 連字號：" + (hyphenateFn ? "OK（" + H.how + "）" : H.how));
+if (hyphenateFn) {
+  try {
+    let t = hyphenateFn("replacement", { hyphenChar: "·" });
+    if (hyphenAsync) t = await t;
+    console.log("  自我測試 replacement → " + String(t).replace(/­/g, "·"));
+  } catch (e) { console.log("  自我測試失敗：" + e.message); }
+}
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const WORD_DIR = path.join(__dir, "..", "word");
@@ -115,12 +159,16 @@ function normKK(kk) {
     .replace(/ɡ/g, "g");
 }
 
-// 拼寫音節：優先 hyphen，否則簡易後備
-function splitWordSpelling(word) {
-  if (hyphenate) {
+// 拼寫音節：優先 hyphen（sync 或 async 皆可），否則簡易後備
+async function splitWordSpelling(word) {
+  if (hyphenateFn) {
     try {
-      const h = hyphenate(word, { hyphenChar: "·" });
-      if (h && h.includes("·")) return h;
+      let h = hyphenateFn(word, { hyphenChar: "·" });
+      if (hyphenAsync) h = await h;
+      if (h) {
+        if (h.includes("·")) return h;                              // 有用我們指定的 ·
+        if (h.includes("­")) return h.split("­").join("·"); // 預設軟連字號 → 換成 ·
+      }
     } catch { /* 落到後備 */ }
   }
   // 後備啟發式（與網頁相同，母音群 + silent-e）
@@ -159,7 +207,7 @@ for (const file of files) {
     const word = (item.word || "").trim();
     if (!word) continue;
     total++;
-    const arpa = CMU[word.toLowerCase()];
+    const arpa = cmuLookup(word);
     const kkSylls = arpa ? arpaToKK(arpa) : null;
 
     if (!arpa) { oob.push(`${file} : ${word}`); }
@@ -170,7 +218,7 @@ for (const file of files) {
     if (WRITE) {
       // 缺 KK 的字（例如舊 txt 轉來的）→ 用 CMUdict 補上（照 KK 音標表符號）
       if (!item.kk && kkSylls) item.kk = "[" + kkSylls.join("") + "]";
-      item.sylWord = splitWordSpelling(word);
+      item.sylWord = await splitWordSpelling(word);
       if (kkSylls) item.sylKK = kkSylls.join("·");
       changed = true;
     }

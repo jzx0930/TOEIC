@@ -17,11 +17,8 @@
 | uu | [Near-close_near-back_rounded_vowel.ogg](https://commons.wikimedia.org/wiki/File:Near-close_near-back_rounded_vowel.ogg) | No machine-readable author provided. Denelson83 assumed (based on copyright claims). | CC BY-SA 3.0 |
 | uh | [Open-mid_back_unrounded_vowel.ogg](https://commons.wikimedia.org/wiki/File:Open-mid_back_unrounded_vowel.ogg) | No machine-readable author provided. Denelson83 assumed (based on copyright claims). | CC BY-SA 3.0 |
 | schwa | [Mid-central_vowel.ogg](https://commons.wikimedia.org/wiki/File:Mid-central_vowel.ogg) | No machine-readable author provided. Denelson83 assumed (based on copyright claims). | CC BY-SA 3.0 |
-| er | [En-us-sister.ogg](https://commons.wikimedia.org/wiki/File:En-us-sister.ogg) | Dvortygirl | CC BY-SA 3.0 |
-| err | [En-us-bird.ogg](https://commons.wikimedia.org/wiki/File:En-us-bird.ogg) | Dvortygirl | CC BY-SA 3.0 |
-| ai | [En-us-fine.ogg](https://commons.wikimedia.org/wiki/File:En-us-fine.ogg) | Dvortygirl | CC BY-SA 3.0 |
-| au | [En-us-how.ogg](https://commons.wikimedia.org/wiki/File:En-us-how.ogg) | Dvortygirl | CC BY-SA 3.0 |
-| oi | [En-us-boy.ogg](https://commons.wikimedia.org/wiki/File:En-us-boy.ogg) | Dvortygirl | CC BY-SA 3.0 |
+| er | [PR-r-coloured_open-mid_central_unrounded_vowel.ogg](https://commons.wikimedia.org/wiki/File:PR-r-coloured_open-mid_central_unrounded_vowel.ogg) | RoachPeter | CC BY-SA 4.0 |
+| err | [PR-r-coloured_open-mid_central_unrounded_vowel.ogg](https://commons.wikimedia.org/wiki/File:PR-r-coloured_open-mid_central_unrounded_vowel.ogg) | RoachPeter | CC BY-SA 4.0 |
 | p | [Voiceless_bilabial_plosive.ogg](https://commons.wikimedia.org/wiki/File:Voiceless_bilabial_plosive.ogg) | Wikimedia Commons contributor | CC BY-SA 3.0 |
 | b | [Voiced_bilabial_plosive.ogg](https://commons.wikimedia.org/wiki/File:Voiced_bilabial_plosive.ogg) | Wikimedia Commons contributor | CC BY-SA 3.0 |
 | t | [Voiceless_alveolar_plosive.ogg](https://commons.wikimedia.org/wiki/File:Voiceless_alveolar_plosive.ogg) | Wikimedia Commons contributor | CC BY-SA 3.0 |
