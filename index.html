@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=52"><!-- 外部樣式表（?v=52 為破快取版本號） -->
-<script defer src="index.js?v=52"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=53"><!-- 外部樣式表（?v=53 為破快取版本號） -->
+<script defer src="index.js?v=53"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -683,9 +683,9 @@ function playKKAudio(slug, example, ipa, synth) {
     next();
 }
 
-// playSSMLPhoneme：用 SSML <phoneme>(IPA) 合成單一音素（雙母音用）；失敗退回唸例字
+// playSSMLPhoneme：用 SSML <phoneme>(IPA) 合成單一音素；放慢(rate=slow)讓氣音/摩擦音更清楚。失敗退回唸例字
 async function playSSMLPhoneme(ipa, example) {
-    const ssml = `<speak><phoneme alphabet="ipa" ph="${ipa}">-</phoneme></speak>`;
+    const ssml = `<speak><prosody rate="slow"><phoneme alphabet="ipa" ph="${ipa}">-</phoneme></prosody></speak>`;
     try {
         const res = await fetch(TTS_PROXY_URL, {
             method: "POST",

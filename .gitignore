@@ -4,6 +4,9 @@ package.json
 package-lock.json
 npm-debug.log*
 
+# 待刪除的舊檔（已改用 TTS 合成，不需推上 GitHub）
+delete/
+
 # 作業系統雜項
 Thumbs.db
 .DS_Store
