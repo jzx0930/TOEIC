@@ -193,7 +193,7 @@
     {
       "symbol": "f",
       "example": "food",
-      "ipa": "fə",
+      "ipa": "f",
       "exampleKK": "[fud]",
       "audio": "f",
       "synth": true
@@ -201,7 +201,7 @@
     {
       "symbol": "v",
       "example": "vest",
-      "ipa": "və",
+      "ipa": "v",
       "exampleKK": "[vɛst]",
       "audio": "v",
       "synth": true
@@ -209,7 +209,7 @@
     {
       "symbol": "θ",
       "example": "thank",
-      "ipa": "θə",
+      "ipa": "θ",
       "exampleKK": "[θæŋk]",
       "audio": "th",
       "synth": true
@@ -217,7 +217,7 @@
     {
       "symbol": "ð",
       "example": "this",
-      "ipa": "ðə",
+      "ipa": "ð",
       "exampleKK": "[ðɪs]",
       "audio": "dh",
       "synth": true
@@ -225,7 +225,7 @@
     {
       "symbol": "s",
       "example": "seat",
-      "ipa": "sə",
+      "ipa": "s",
       "exampleKK": "[sit]",
       "audio": "s",
       "synth": true
@@ -233,7 +233,7 @@
     {
       "symbol": "z",
       "example": "zoo",
-      "ipa": "zə",
+      "ipa": "z",
       "exampleKK": "[zu]",
       "audio": "z",
       "synth": true
@@ -241,7 +241,7 @@
     {
       "symbol": "ʃ",
       "example": "short",
-      "ipa": "ʃə",
+      "ipa": "ʃ",
       "exampleKK": "[ʃɔrt]",
       "audio": "sh",
       "synth": true
@@ -249,7 +249,7 @@
     {
       "symbol": "ʒ",
       "example": "garage",
-      "ipa": "ʒə",
+      "ipa": "ʒ",
       "exampleKK": "[gəˈrɑʒ]",
       "audio": "zh",
       "synth": true
@@ -329,7 +329,7 @@
     {
       "symbol": "h",
       "example": "hat",
-      "ipa": "hə",
+      "ipa": "h",
       "exampleKK": "[hæt]",
       "audio": "h",
       "synth": true
