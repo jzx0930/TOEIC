@@ -102,12 +102,25 @@
               "type": "formula",
               "lines": [
                 {
-                  "label": "否定",
-                  "text": "主詞　＋　<b>don't / doesn't</b>　＋　動詞原形"
+                  "label": "否定・一般主詞",
+                  "text": "主詞　＋　<b>don't</b>　＋　動詞原形"
                 },
                 {
-                  "label": "疑問",
-                  "text": "<b>Do / Does</b>　＋　主詞　＋　動詞原形　?"
+                  "label": "否定・第三人稱單數",
+                  "text": "主詞　＋　<b>doesn't</b>　＋　動詞原形"
+                }
+              ]
+            },
+            {
+              "type": "formula",
+              "lines": [
+                {
+                  "label": "疑問・一般主詞",
+                  "text": "<b>Do</b>　＋　主詞　＋　動詞原形　?"
+                },
+                {
+                  "label": "疑問・第三人稱單數",
+                  "text": "<b>Does</b>　＋　主詞　＋　動詞原形　?"
                 }
               ]
             },
@@ -115,9 +128,17 @@
               "type": "examples",
               "items": [
                 {
+                  "en": "They <b>don't</b> <k>work</k> on weekends.",
+                  "zh": "他們週末不上班。"
+                },
+                {
                   "en": "She <b>doesn't</b> <k>drink</k> coffee.",
                   "zh": "她不喝咖啡。",
-                  "note": "已經有 does，動詞回原形 drink（不是 drinks）"
+                  "note": "已經有 doesn't，動詞回原形 drink（不是 drinks）"
+                },
+                {
+                  "en": "<b>Do</b> you <k>speak</k> English?",
+                  "zh": "你會說英文嗎？"
                 },
                 {
                   "en": "<b>Does</b> he <k>know</k> the answer?",
