@@ -418,6 +418,120 @@ body {
   line-height: 1.5;
 }
 
+/* ==================== 新版式：公式區塊 + 表格 ==================== */
+/* 公式區塊：綠框、多行同樣大 */
+.grammar-item-detail .g-formula {
+  border: 2px solid var(--bright-green);
+  border-radius: 12px;
+  background: rgba(0, 255, 153, 0.06);
+  padding: 18px 20px;
+  margin: 14px 0;
+}
+.grammar-item-detail .gf-lbl {
+  color: var(--primary-green);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.grammar-item-detail .gf-row { text-align: center; margin: 8px 0; }
+.grammar-item-detail .gf-tag {
+  display: block;
+  color: var(--primary-green);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.grammar-item-detail .gf-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.5;
+}
+.grammar-item-detail .gf-main k {
+  color: var(--bright-green);
+  font-weight: 700;
+  font-style: normal;
+}
+.grammar-item-detail .gf-main b { color: #4da3ff; font-weight: 700; }
+.grammar-item-detail .gf-div {
+  border-top: 1px dashed var(--border-dark);
+  margin: 12px 0;
+}
+
+/* 通用表格（規則表／用法表／錯誤表） */
+.grammar-item-detail .g-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 14px 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+.grammar-item-detail .g-tbl th,
+.grammar-item-detail .g-tbl td {
+  padding: 11px 13px;
+  border-bottom: 1px solid var(--border-dark);
+  vertical-align: top;
+  text-align: left;
+}
+.grammar-item-detail .g-tbl tr:last-child td { border-bottom: none; }
+.grammar-item-detail .g-tbl th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-gray);
+  font-size: 12px;
+  font-weight: 600;
+}
+/* 例句格：白句 + 灰中文 + 綠➤說明 */
+.grammar-item-detail .grt-ex .g-en { display: block; }
+.grammar-item-detail .grt-ex .g-zh { display: block; }
+.grammar-item-detail .grt-ex .g-arrow {
+  display: block;
+  color: var(--bright-green);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.grammar-item-detail .grt-ex .g-exsep { display: block; height: 12px; }
+.grammar-item-detail .grt-ex .g-en k { color: var(--bright-green); font-weight: 700; font-style: normal; }
+.grammar-item-detail .grt-ex .g-en b { color: #4da3ff; font-weight: 700; }
+/* 規則表：規則欄 */
+.grammar-item-detail .grt-hrule { width: 38%; }
+.grammar-item-detail .grt-rule { width: 38%; }
+.grammar-item-detail .grt-name { display: block; color: var(--text-white); font-weight: 600; }
+.grammar-item-detail .grt-chg { display: block; color: var(--bright-green); font-weight: 700; margin-top: 3px; }
+.grammar-item-detail .grt-sub { display: block; color: var(--text-gray); font-size: 12px; margin-top: 3px; }
+/* 用法／錯誤：編號徽章欄 */
+.grammar-item-detail .gc-hn { width: 72px; }
+.grammar-item-detail .gc-hnote { width: 38%; }
+.grammar-item-detail .gc-n { width: 72px; }
+.grammar-item-detail .g-badge {
+  display: inline-block;
+  background: var(--bright-green);
+  color: #062b1e;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 2px 9px;
+  white-space: nowrap;
+}
+.grammar-item-detail .g-badge.err { background: var(--red-error); color: #2b0606; }
+.grammar-item-detail .gc-note { color: var(--text-white); font-size: 13px; }
+.grammar-item-detail .gc-note .gc-hint {
+  display: block;
+  color: var(--text-gray);
+  font-size: 12px;
+  margin-top: 3px;
+}
+.grammar-item-detail .g-bad { color: var(--red-error); }
+.grammar-item-detail .g-good { color: var(--bright-green); }
+
+/* 手機：表格內距縮小、規則欄不要太窄 */
+@media (max-width: 600px) {
+  .grammar-item-detail .g-tbl th,
+  .grammar-item-detail .g-tbl td { padding: 9px 8px; }
+  .grammar-item-detail .gf-main { font-size: 17px; }
+}
+
 /* ==================== 文法全螢幕教學視窗 ==================== */
 .grammar-modal {
   display: none;

@@ -60,8 +60,23 @@ note/        其他筆記
 
 ### 文法 `Grammar/grammar.json`
 陣列，每大類 `{ category, topics[] }`；每 topic `{ title, desc, content:{ blocks:[…] } }`。
-block 型別：`h`(綠標題)、`p`(段)、`list`、`note`(提示框)、`examples`(items{en,zh,note})、`diagram`(自製 SVG)。
-例句上色：`<k>…</k>` 綠（主要動詞/V-ing/p.p.）、`<b>…</b>` 藍（be/助動詞）；SVG 屬性用單引號保 JSON 有效。
+例句上色（所有含例句的 block 都適用）：`<k>…</k>` 綠（主要動詞/V-ing/p.p.）、`<b>…</b>` 藍（be/助動詞）；白字為底。SVG 屬性用單引號保 JSON 有效。
+
+**block 型別**：
+- `h`（綠標題）、`p`（段）、`list`、`note`（黃提示框）、`examples`（items{en,zh,note}）、`diagram`（自製 SVG）。
+- `formula`（★公式區塊）：`{ "type":"formula", "lines":[ { "label":"一般主詞", "text":"主詞　＋　動詞原形" }, … ] }`。綠框、多行**同樣大**、置中；label 是上方小字；text 內可用 `<k>`(綠)/`<b>`(藍) 標關鍵變化。用來把「結構／公式」獨立醒目呈現。
+- `ruletable`（★變化規則表，規則↔例句對齊）：`{ "type":"ruletable", "head":["變化規則","例句"], "rows":[ { "name":"一般動詞", "change":"直接 ＋ -s", "sub":"work → works", "ex":{ "en":"…", "zh":"…", "note":"➤說明" } } ] }`。左欄規則（name 白／change 綠／sub 灰），右欄完整例句（en白／zh灰／note綠➤）。`ex` 可為單一物件或陣列（多句）。
+- `usetable`（★使用時機，編號徽章）：`{ "type":"usetable", "rows":[ { "n":"用法一", "note":"說明", "hint":"（選填）補充", "ex":[ {en,zh,note} ] } ] }`。左綠色徽章、中說明、右例句。head 預設 `["用法","說明","例句"]`。
+- `errtable`（★常見錯誤）：`{ "type":"errtable", "rows":[ { "n":"錯誤一", "note":"說明", "wrong":"He work.", "right":"He <k>works</k>." } ] }`。紅色徽章；右欄自動排成 `✗ wrong → ✓ right`。
+
+**版式慣例（做每個文法主題都照這個）**：
+1. 開場用 `p`（＋必要 `list`）交代這個時態/文法解決什麼。
+2. 「結構」用 **`formula`** 呈現（肯定/否定/疑問可各一個 formula）；拼寫或形態變化用 **`ruletable`**（規則配例句對齊）。
+3. 「使用時機」的 用法一/二/三… 一律用 **`usetable`**（編號徽章＋說明＋例句）。
+4. 「常見錯誤」的 錯誤一/二… 一律用 **`errtable`**（✗→✓）。
+5. 需要時穿插 `note`（黃框重點）、`diagram`（自製 SVG 時間軸）。
+6. 結尾「小試身手」用 `examples`(題目)＋`list`(選項)＋`note`(答案，答案用 `<k>` 標綠)。
+（範本見「現在簡單式」。舊的純 `p`+`list`+`examples` 仍可渲染，但新主題與改版一律採用上面的 formula/表格版式。）
 
 ## 6. KK 音標與音節拆解
 - KK 用**標準 KK 符號**（見 `Pronunciation/kk 音標.pdf`）：母音 `e`(name)/`o`(no)、`ɝ`(bird)/`ɚ`(sister)、雙母音 `aɪ/aʊ/ɔɪ`；子音 `g`(good)、`ŋ`、`tʃ`、`dʒ` 等。**不要**用 IPA 的 `oʊ/eɪ/ː` 或手寫體 `ɡ`。

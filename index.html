@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=56"><!-- 外部樣式表（?v=56 為破快取版本號） -->
-<script defer src="index.js?v=56"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=57"><!-- 外部樣式表（?v=57 為破快取版本號） -->
+<script defer src="index.js?v=57"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -895,6 +895,17 @@ async function initGrammar() {
 function grammarDetailHtml(c) {
     if (!c) return "🚧 詳細內容製作中，敬請期待～";
 
+    // 例句格子：ex 可為單一物件或陣列 {en,zh,note}；en/zh 支援 <k>(綠)/<b>(藍) 標記
+    const exCell = ex => {
+        if (!ex) return "";
+        const arr = Array.isArray(ex) ? ex : [ex];
+        return arr.map(e =>
+            `<span class="g-en">${e.en || ""}</span>` +
+            (e.zh ? `<span class="g-zh">${e.zh}</span>` : "") +
+            (e.note ? `<span class="g-arrow">➤ ${e.note}</span>` : "")
+        ).join(`<span class="g-exsep"></span>`);
+    };
+
     // (A) 完整文章：依 blocks 逐段渲染
     if (c.blocks) {
         return c.blocks.map(b => {
@@ -902,6 +913,46 @@ function grammarDetailHtml(c) {
             if (b.type === "p") return `<p class="g-p">${b.text}</p>`;
             if (b.type === "list") return `<ul class="g-list">${b.items.map(i => `<li>${i}</li>`).join("")}</ul>`;
             if (b.type === "note") return `<div class="g-note">${b.text}</div>`;
+
+            // ── 新版式：公式區塊（多行同樣大，green 框）──
+            if (b.type === "formula") {
+                const rows = (b.lines || []).map((ln, i) =>
+                    (i > 0 ? `<div class="gf-div"></div>` : "") +
+                    `<div class="gf-row">${ln.label ? `<span class="gf-tag">${ln.label}</span>` : ""}<div class="gf-main">${ln.text || ""}</div></div>`
+                ).join("");
+                return `<div class="g-formula"><div class="gf-lbl">FORMULA</div>${rows}</div>`;
+            }
+            // ── 新版式：變化規則表（規則｜例句）──
+            if (b.type === "ruletable") {
+                const head = b.head || ["變化規則", "例句"];
+                const rows = (b.rows || []).map(r =>
+                    `<tr><td class="grt-rule"><span class="grt-name">${r.name || ""}</span>` +
+                    (r.change ? `<span class="grt-chg">${r.change}</span>` : "") +
+                    (r.sub ? `<span class="grt-sub">${r.sub}</span>` : "") + `</td>` +
+                    `<td class="grt-ex">${exCell(r.ex)}</td></tr>`
+                ).join("");
+                return `<table class="g-tbl grt"><thead><tr><th class="grt-hrule">${head[0]}</th><th>${head[1]}</th></tr></thead><tbody>${rows}</tbody></table>`;
+            }
+            // ── 新版式：使用時機表（用法徽章｜說明｜例句）──
+            if (b.type === "usetable") {
+                const head = b.head || ["用法", "說明", "例句"];
+                const rows = (b.rows || []).map(r =>
+                    `<tr><td class="gc-n"><span class="g-badge">${r.n || ""}</span></td>` +
+                    `<td class="gc-note">${r.note || ""}${r.hint ? `<span class="gc-hint">${r.hint}</span>` : ""}</td>` +
+                    `<td class="grt-ex">${exCell(r.ex)}</td></tr>`
+                ).join("");
+                return `<table class="g-tbl"><thead><tr><th class="gc-hn">${head[0]}</th><th class="gc-hnote">${head[1]}</th><th>${head[2]}</th></tr></thead><tbody>${rows}</tbody></table>`;
+            }
+            // ── 新版式：常見錯誤表（錯誤徽章｜說明｜✗→✓）──
+            if (b.type === "errtable") {
+                const head = b.head || ["錯誤", "說明", "對照"];
+                const rows = (b.rows || []).map(r =>
+                    `<tr><td class="gc-n"><span class="g-badge err">${r.n || ""}</span></td>` +
+                    `<td class="gc-note">${r.note || ""}</td>` +
+                    `<td class="grt-ex"><span class="g-en"><span class="g-bad">✗ ${r.wrong || ""}</span> → <span class="g-good">✓ ${r.right || ""}</span></span></td></tr>`
+                ).join("");
+                return `<table class="g-tbl"><thead><tr><th class="gc-hn">${head[0]}</th><th class="gc-hnote">${head[1]}</th><th>${head[2]}</th></tr></thead><tbody>${rows}</tbody></table>`;
+            }
             // 時態時間軸／關係圖：一律用自製 SVG（不可用來源圖片），直接內嵌
             if (b.type === "diagram") return `<div class="g-diagram">${b.svg || ""}</div>`;
             // （備用）自製的圖片檔

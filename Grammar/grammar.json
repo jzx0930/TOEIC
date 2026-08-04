@@ -10,62 +10,63 @@
             { "type": "p", "text": "英文的動詞總共有十二種時態，這一課先從最基礎、也最常用的「現在簡單式」開始。它的名字雖然有「現在」，卻要特別小心——它幾乎不用來描述「此刻正在做的動作」，而是用在習慣、事實、狀態，甚至是排定好的未來上。" },
             { "type": "p", "text": "先鳥瞰一下全貌：十二種時態，是由四種「型態」（簡單式、進行式、完成式、完成進行式）分別搭配三個「時間點」（現在、過去、未來）組合而成的：" },
             { "type": "list", "items": ["簡單式：現在簡單式、過去簡單式、未來簡單式", "進行式：現在進行式、過去進行式、未來進行式", "完成式：現在完成式、過去完成式、未來完成式", "完成進行式：現在完成進行式、過去完成進行式、未來完成進行式"] },
-            { "type": "p", "text": "接下來的每一課會逐一講解，這一課就先從最基本的現在簡單式看起。" },
 
             { "type": "h", "text": "現在簡單式的結構" },
-            { "type": "p", "text": "肯定句的基本結構就是 <k>主詞 ＋ 原形動詞</k>。唯一的變化在於：當主詞是「第三人稱單數」（he／she／it、單一人名、公司名、產品名）時，動詞字尾要加 <k>-s／-es</k>。" },
-            { "type": "list", "items": ["一般動詞：直接加 -s（work → works、run → runs）", "字尾是 s／sh／ch／x／o：加 -es（pass → passes、watch → watches、go → goes）", "「子音 ＋ y」結尾：去 y 加 -ies（study → studies、try → tries）", "特殊：have → has"] },
-            { "type": "examples", "items": [
-              { "en": "I <k>work</k> from home on Fridays.", "zh": "我週五在家工作。" },
-              { "en": "She <k>works</k> at a bank downtown.", "zh": "她在市區的一家銀行上班。", "note": "第三人稱單數 → work 加 -s" },
-              { "en": "He <k>watches</k> the news every night.", "zh": "他每晚看新聞。", "note": "watch 字尾 ch → 加 -es" },
-              { "en": "Our company <k>has</k> three branches.", "zh": "我們公司有三個分部。", "note": "have 的第三人稱單數是 has" }
+            { "type": "formula", "lines": [
+              { "label": "一般主詞", "text": "主詞　＋　動詞原形" },
+              { "label": "第三人稱單數（he / she / it、人名、公司名）", "text": "主詞　＋　動詞<k>-s / -es</k>" }
             ] },
-            { "type": "p", "text": "否定句和疑問句要借助助動詞 <b>do／does</b>（第三人稱單數用 does），而且後面的主要動詞要「回到原形」。" },
+            { "type": "ruletable", "head": ["第三人稱單數的動詞變化", "例句"], "rows": [
+              { "name": "一般動詞", "change": "直接 ＋ -s", "sub": "work → works、run → runs",
+                "ex": { "en": "She <k>works</k> at a bank downtown.", "zh": "她在市區的一家銀行上班。", "note": "第三人稱單數 → work 加 -s" } },
+              { "name": "字尾 s / sh / ch / x / o", "change": "＋ -es", "sub": "pass → passes、watch → watches、go → goes",
+                "ex": { "en": "He <k>watches</k> the news every night.", "zh": "他每晚看新聞。", "note": "watch 字尾 ch → 加 -es" } },
+              { "name": "子音 ＋ y 結尾", "change": "去 y ＋ -ies", "sub": "study → studies、try → tries",
+                "ex": { "en": "She <k>studies</k> English every day.", "zh": "她每天讀英文。", "note": "study → 去 y 加 -ies" } },
+              { "name": "特殊", "change": "have → has",
+                "ex": { "en": "Our company <k>has</k> three branches.", "zh": "我們公司有三個分部。", "note": "have 的第三人稱單數是 has" } }
+            ] },
+            { "type": "formula", "lines": [
+              { "label": "否定", "text": "主詞　＋　<b>don't / doesn't</b>　＋　動詞原形" },
+              { "label": "疑問", "text": "<b>Do / Does</b>　＋　主詞　＋　動詞原形　?" }
+            ] },
             { "type": "examples", "items": [
-              { "en": "They <b>don't</b> <k>work</k> on weekends.", "zh": "他們週末不上班。" },
               { "en": "She <b>doesn't</b> <k>drink</k> coffee.", "zh": "她不喝咖啡。", "note": "已經有 does，動詞回原形 drink（不是 drinks）" },
-              { "en": "<b>Do</b> you <k>speak</k> English?", "zh": "你會說英文嗎？" },
               { "en": "<b>Does</b> he <k>know</k> the answer?", "zh": "他知道答案嗎？" }
             ] },
             { "type": "note", "text": "第三人稱單數的 -s 只會出現在「一個地方」：要嘛在助動詞 does、要嘛在主要動詞，絕不會兩邊都加（doesn't drinks ✗）。" },
 
-            { "type": "h", "text": "現在簡單式的使用時機" },
-            { "type": "p", "text": "用法一：表達「習慣、規律、反覆發生的事」，常搭配 always、usually、often、sometimes、rarely、every day、on Mondays 等頻率／時間詞。" },
-            { "type": "examples", "items": [
-              { "en": "He <k>goes</k> to the gym three times a week.", "zh": "他一週上健身房三次。" },
-              { "en": "We usually <k>hold</k> a team meeting every Monday.", "zh": "我們通常每週一開團隊會議。" },
-              { "en": "I <b>don't</b> often <k>eat</k> out during the week.", "zh": "我平日不常外食。" }
+            { "type": "h", "text": "使用時機" },
+            { "type": "usetable", "rows": [
+              { "n": "用法一", "note": "習慣、規律、反覆發生的動作", "hint": "常配 always／usually／often／every day",
+                "ex": [
+                  { "en": "He <k>goes</k> to the gym three times a week.", "zh": "他一週上健身房三次。" },
+                  { "en": "We usually <k>hold</k> a team meeting every Monday.", "zh": "我們通常每週一開團隊會議。" }
+                ] },
+              { "n": "用法二", "note": "事實、科學真理、恆常不變的狀態",
+                "ex": [
+                  { "en": "Water <k>boils</k> at 100°C.", "zh": "水在攝氏一百度沸騰。" },
+                  { "en": "The Earth <k>revolves</k> around the Sun.", "zh": "地球繞著太陽公轉。" }
+                ] },
+              { "n": "用法三", "note": "現在的狀態、想法、感受、擁有", "hint": "狀態動詞 like／know／want／own／cost…",
+                "ex": [
+                  { "en": "I <k>know</k> the answer.", "zh": "我知道答案。" },
+                  { "en": "She <k>wants</k> a cup of tea.", "zh": "她想要一杯茶。" }
+                ] },
+              { "n": "用法四", "note": "已排定時刻表的未來", "hint": "班機、車次、課表、營業時間",
+                "ex": [
+                  { "en": "The train <k>leaves</k> at 6:30 tomorrow.", "zh": "火車明天早上六點半發車。" },
+                  { "en": "The conference <k>starts</k> next Monday.", "zh": "研討會下週一開始。" }
+                ] }
             ] },
             { "type": "note", "text": "頻率副詞的位置：放在「一般動詞前面」、但放在「be 動詞後面」。例如 She often works late；She is often late。" },
-            { "type": "p", "text": "用法二：表達「事實、科學真理、恆常不變的狀態」。" },
-            { "type": "examples", "items": [
-              { "en": "Water <k>boils</k> at 100°C.", "zh": "水在攝氏一百度沸騰。" },
-              { "en": "The Earth <k>revolves</k> around the Sun.", "zh": "地球繞著太陽公轉。" },
-              { "en": "Our office <k>opens</k> at nine and <k>closes</k> at six.", "zh": "我們辦公室九點開、六點關。" }
-            ] },
-            { "type": "p", "text": "用法三：表達「現在的狀態、想法、感受、擁有」，這類「狀態動詞」如 like、love、hate、know、understand、believe、want、need、own、seem、cost 等。" },
-            { "type": "examples", "items": [
-              { "en": "I <k>know</k> the answer.", "zh": "我知道答案。" },
-              { "en": "She <k>wants</k> a cup of tea.", "zh": "她想要一杯茶。" },
-              { "en": "This plan <k>seems</k> reasonable to me.", "zh": "這個計畫在我看來蠻合理的。" },
-              { "en": "The laptop <k>costs</k> 30,000 dollars.", "zh": "這台筆電要三萬元。" }
-            ] },
-            { "type": "p", "text": "用法四：表達「已排定時刻表的未來」，像班機、車次、課表、節目表、營業時間。" },
-            { "type": "examples", "items": [
-              { "en": "The train <k>leaves</k> at 6:30 tomorrow morning.", "zh": "火車明天早上六點半發車。" },
-              { "en": "The conference <k>starts</k> next Monday and <k>ends</k> on Wednesday.", "zh": "研討會下週一開始、週三結束。" }
-            ] },
 
-            { "type": "h", "text": "現在簡單式的常見錯誤" },
-            { "type": "p", "text": "錯誤一：拿現在簡單式描述「此刻正在進行的動作」。這是最常見的誤用。「我正在喝水」不是 I drink water now，而要用現在進行式：" },
-            { "type": "examples", "items": [
-              { "en": "I <k>am drinking</k> water right now.", "zh": "我現在正在喝水。", "note": "「正在進行」→ 現在進行式（be ＋ V-ing），不是現在簡單式" }
-            ] },
-            { "type": "p", "text": "錯誤二：忘了第三人稱單數要加 -s／-es，或在否定、疑問時忘了把動詞變回原形。" },
-            { "type": "examples", "items": [
-              { "en": "The system <k>updates</k> automatically.", "zh": "系統會自動更新。", "note": "第三人稱單數 → updates（不是 update）" },
-              { "en": "He <b>doesn't</b> <k>need</k> help.", "zh": "他不需要幫忙。", "note": "有 doesn't，動詞用原形 need（不是 needs）" }
+            { "type": "h", "text": "常見錯誤" },
+            { "type": "errtable", "rows": [
+              { "n": "錯誤一", "note": "拿現在簡單式描述「此刻正在進行」的動作（最常見誤用）",
+                "wrong": "I drink water now.", "right": "I <k>am drinking</k> water now." },
+              { "n": "錯誤二", "note": "第三人稱漏加 -s，或否定/疑問時動詞沒回原形",
+                "wrong": "He don't needs help.", "right": "He <b>doesn't</b> <k>need</k> help." }
             ] },
             { "type": "note", "text": "狀態動詞（know、like、want、believe…）通常不放進行式：說 I want a coffee，不說 I am wanting a coffee。" },
 
