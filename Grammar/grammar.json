@@ -32,13 +32,22 @@
               "type": "formula",
               "lines": [
                 {
-                  "label": "一般主詞",
+                  "label": "一般主詞（I / you / we / they、複數名詞）",
                   "text": "主詞　＋　動詞原形"
                 },
                 {
                   "label": "第三人稱單數（he / she / it、人名、公司名）",
                   "text": "主詞　＋　動詞<k>-s / -es</k>"
                 }
+              ]
+            },
+            {
+              "type": "examples",
+              "items": [
+                { "en": "I <k>work</k> from home on Fridays.", "zh": "我週五在家工作。" },
+                { "en": "We <k>hold</k> a team meeting every Monday.", "zh": "我們每週一開團隊會議。" },
+                { "en": "You <k>need</k> a visa to enter.", "zh": "你需要簽證才能入境。" },
+                { "en": "They <k>live</k> near the office.", "zh": "他們住在辦公室附近。" }
               ]
             },
             {
