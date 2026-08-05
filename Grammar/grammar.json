@@ -1,5 +1,288 @@
 [
   {
+    "category": "文法基礎",
+    "topics": [
+      {
+        "title": "主詞、動詞、受詞",
+        "desc": "看懂任何句子前，先認識句子的骨架。",
+        "content": {
+          "blocks": [
+            {
+              "type": "p",
+              "text": "一個英文句子最少要有「主詞」和「動詞」。主詞是「誰／什麼」，動詞是「做什麼／是什麼狀態」，受詞則是動作作用的對象。先認得這三個成分，後面所有文法規則才看得懂。"
+            },
+            {
+              "type": "h",
+              "text": "句子的基本結構"
+            },
+            {
+              "type": "formula",
+              "lines": [
+                {
+                  "label": "最常見的句型",
+                  "text": "主詞　＋　動詞　＋　受詞"
+                }
+              ]
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "句子成分",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "主詞（Subject）",
+                  "change": "動作或狀態的主角",
+                  "sub": "通常放在句首，回答「誰／什麼」",
+                  "ex": {
+                    "en": "<k>Tom</k> eats an apple.",
+                    "zh": "湯姆吃一顆蘋果。",
+                    "note": "➤ Tom 是主詞（做動作的人）"
+                  }
+                },
+                {
+                  "name": "動詞（Verb）",
+                  "change": "表示動作或狀態",
+                  "sub": "回答「做什麼／是什麼」",
+                  "ex": {
+                    "en": "Tom <k>eats</k> an apple.",
+                    "zh": "湯姆吃一顆蘋果。",
+                    "note": "➤ eats 是動詞（動作）"
+                  }
+                },
+                {
+                  "name": "受詞（Object）",
+                  "change": "動作作用的對象",
+                  "sub": "通常放在動詞後面",
+                  "ex": {
+                    "en": "Tom eats <k>an apple</k>.",
+                    "zh": "湯姆吃一顆蘋果。",
+                    "note": "➤ an apple 是受詞（被吃的東西）"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "不是每個句子都有受詞：有些動詞後面不接對象（She sleeps. 她睡覺。）；有些句子動詞是 be 動詞，後面接的是「補語」而非受詞（He is a teacher. 他是老師。）。"
+            }
+          ]
+        }
+      },
+      {
+        "title": "名詞、動詞、形容詞、副詞",
+        "desc": "每個單字都有「詞性」，決定它在句子裡的角色。",
+        "content": {
+          "blocks": [
+            {
+              "type": "p",
+              "text": "詞性就是「一個字屬於哪一類」。同一個概念，換了詞性用法就不同。最常見、多益最常考的四種是：名詞、動詞、形容詞、副詞。"
+            },
+            {
+              "type": "h",
+              "text": "四大詞性"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "詞性",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "名詞（n.）",
+                  "change": "人、事、物、地方的名稱",
+                  "sub": "例：dog、teacher、Taipei、success",
+                  "ex": {
+                    "en": "The <k>manager</k> signed the <k>contract</k>.",
+                    "zh": "經理簽了合約。",
+                    "note": "➤ manager、contract 都是名詞"
+                  }
+                },
+                {
+                  "name": "動詞（v.）",
+                  "change": "表示動作或狀態",
+                  "sub": "例：run、eat、is、have",
+                  "ex": {
+                    "en": "She <k>works</k> in Taipei.",
+                    "zh": "她在台北工作。",
+                    "note": "➤ works 是動詞"
+                  }
+                },
+                {
+                  "name": "形容詞（adj.）",
+                  "change": "修飾名詞，描述樣子",
+                  "sub": "例：happy、big、red、useful",
+                  "ex": {
+                    "en": "This is a <k>useful</k> tool.",
+                    "zh": "這是個好用的工具。",
+                    "note": "➤ useful 形容 tool（名詞）"
+                  }
+                },
+                {
+                  "name": "副詞（adv.）",
+                  "change": "修飾動詞、形容詞或整句",
+                  "sub": "說明「怎麼樣、多常、多麼」，例：quickly、very、often",
+                  "ex": {
+                    "en": "He speaks English <k>fluently</k>.",
+                    "zh": "他英文說得很流利。",
+                    "note": "➤ fluently 形容 speaks（動詞）"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "簡單分辨：形容詞修飾「名詞」（a red car 一台紅車），副詞修飾「動詞」（drive slowly 開得慢）。很多副詞是形容詞加 -ly（quick → quickly、careful → carefully）。"
+            }
+          ]
+        }
+      },
+      {
+        "title": "什麼是 be 動詞",
+        "desc": "am／is／are／was／were——最常用卻最容易搞混的動詞。",
+        "content": {
+          "blocks": [
+            {
+              "type": "p",
+              "text": "be 動詞就是表示「是／在」的動詞，用來連接主詞和它的身分、狀態或位置。它不是「動作」，而是「等於」的概念（A 是 B、A 在某處）。中文常翻成「是」「在」。"
+            },
+            {
+              "type": "h",
+              "text": "be 動詞隨主詞和時態變化"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → be 動詞",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "I（我）",
+                  "change": "現在 am ／ 過去 was",
+                  "sub": "",
+                  "ex": {
+                    "en": "I <b>am</b> a student.",
+                    "zh": "我是學生。"
+                  }
+                },
+                {
+                  "name": "he／she／it、單數名詞",
+                  "change": "現在 is ／ 過去 was",
+                  "sub": "例：He、Mary、the box",
+                  "ex": {
+                    "en": "She <b>is</b> happy today.",
+                    "zh": "她今天很開心。"
+                  }
+                },
+                {
+                  "name": "you／we／they、複數名詞",
+                  "change": "現在 are ／ 過去 were",
+                  "sub": "例：you、we、the books",
+                  "ex": {
+                    "en": "They <b>are</b> at the office.",
+                    "zh": "他們在辦公室。"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "be 動詞後面通常接「名詞、形容詞或地點」，不接一般動詞原形。She is happy ✓、He is at home ✓；但 She is play ✗（要嘛 She plays 現在簡單式，要嘛 She is playing 現在進行式）。"
+            },
+            {
+              "type": "errtable",
+              "rows": [
+                {
+                  "n": "錯誤一",
+                  "note": "主詞後面漏掉 be 動詞",
+                  "wrong": "He a doctor.",
+                  "right": "He <b>is</b> a doctor."
+                },
+                {
+                  "n": "錯誤二",
+                  "note": "be 動詞和一般動詞不能同時當主要動詞",
+                  "wrong": "I am like coffee.",
+                  "right": "I <k>like</k> coffee."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "什麼是第三人稱單數",
+        "desc": "搞懂它，動詞加 -s 的規則就不再混亂。",
+        "content": {
+          "blocks": [
+            {
+              "type": "p",
+              "text": "說話時牽涉到的對象分三種「人稱」：第一人稱（說話的人）、第二人稱（聽話的人）、第三人稱（被談論的人或物）。再看「單數或複數」，就能定位每個主詞。"
+            },
+            {
+              "type": "h",
+              "text": "三種人稱"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "人稱（單數 ／ 複數）",
+                "說明"
+              ],
+              "rows": [
+                {
+                  "name": "第一人稱",
+                  "change": "I（我） ／ we（我們）",
+                  "sub": "說話的那一方"
+                },
+                {
+                  "name": "第二人稱",
+                  "change": "you（你） ／ you（你們）",
+                  "sub": "聽話的那一方"
+                },
+                {
+                  "name": "第三人稱",
+                  "change": "he／she／it、單數名詞 ／ they、複數名詞",
+                  "sub": "被談論的人或物"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "「第三人稱單數」＝第三人稱裡「只有一個」的：he、she、it，以及任何單數名詞、人名、單數的公司或地名（Tom、my boss、the company 都算）。"
+            },
+            {
+              "type": "note",
+              "text": "為什麼重要？在現在簡單式裡，主詞是第三人稱單數時，動詞要加 -s／-es（She <k>works</k>、He <k>goes</k>、It <k>rains</k>）。這是多益最常考的細節之一。"
+            },
+            {
+              "type": "examples",
+              "items": [
+                {
+                  "en": "He <k>works</k> at a bank.",
+                  "zh": "他在銀行上班。",
+                  "note": "he 是第三人稱單數 → work 加 -s"
+                },
+                {
+                  "en": "My manager <k>needs</k> the file.",
+                  "zh": "我的主管需要那份檔案。",
+                  "note": "my manager（單數名詞）也是第三人稱單數"
+                },
+                {
+                  "en": "They <k>work</k> at a bank.",
+                  "zh": "他們在銀行上班。",
+                  "note": "they 是複數 → 動詞用原形，不加 -s"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     "category": "時態",
     "topics": [
       {
@@ -121,6 +404,37 @@
                 {
                   "label": "疑問・第三人稱單數",
                   "text": "<b>Does</b>　＋　主詞　＋　動詞原形　?"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "do 還是 does？只看主詞：一般主詞（I／you／we／they、複數名詞）用 don't／Do；第三人稱單數（he／she／it、單數名詞、人名）用 doesn't／Does。加了助動詞之後，主要動詞一律回原形。"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → 用 do 或 does",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "I／you／we／they、複數名詞",
+                  "change": "do／don't",
+                  "sub": "例：I、we、the workers",
+                  "ex": {
+                    "en": "<b>Do</b> they <k>work</k> here?",
+                    "zh": "他們在這裡工作嗎？"
+                  }
+                },
+                {
+                  "name": "he／she／it、單數名詞、人名",
+                  "change": "does／doesn't",
+                  "sub": "例：He、Mary、the manager",
+                  "ex": {
+                    "en": "She <b>doesn't</b> <k>drink</k> coffee.",
+                    "zh": "她不喝咖啡。"
+                  }
                 }
               ]
             },
@@ -353,6 +667,46 @@
               ]
             },
             {
+              "type": "note",
+              "text": "be 動詞怎麼挑？只看主詞：I 用 am、單數（he／she／it、單數名詞）用 is、複數（you／we／they、複數名詞）用 are。後面一定接動詞的 V-ing 形。"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → 用哪個 be 動詞",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "I（我）",
+                  "change": "am",
+                  "sub": "只有 I 用 am",
+                  "ex": {
+                    "en": "I <b>am</b> <k>working</k> right now.",
+                    "zh": "我現在正在工作。"
+                  }
+                },
+                {
+                  "name": "he／she／it、單數名詞、人名",
+                  "change": "is",
+                  "sub": "例：He、Mary、the manager",
+                  "ex": {
+                    "en": "She <b>is</b> <k>reading</k> a report.",
+                    "zh": "她正在看一份報告。"
+                  }
+                },
+                {
+                  "name": "you／we／they、複數名詞",
+                  "change": "are",
+                  "sub": "例：you、we、the students",
+                  "ex": {
+                    "en": "They <b>are</b> <k>waiting</k> outside.",
+                    "zh": "他們正在外面等。"
+                  }
+                }
+              ]
+            },
+            {
               "type": "ruletable",
               "head": [
                 "V-ing 的拼寫變化",
@@ -575,6 +929,37 @@
                 {
                   "label": "疑問・第三人稱單數",
                   "text": "<b>Has</b>　＋　主詞　＋　<k>p.p.</k>　?"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "have 還是 has？只看主詞：一般主詞（I／you／we／they、複數名詞）用 have；第三人稱單數（he／she／it、單數名詞、人名）用 has。後面接的過去分詞（p.p.）形式不變。"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → have 或 has",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "I／you／we／they、複數名詞",
+                  "change": "have",
+                  "sub": "例：I、we、the workers",
+                  "ex": {
+                    "en": "They <b>have</b> <k>arrived</k>.",
+                    "zh": "他們已經到了。"
+                  }
+                },
+                {
+                  "name": "he／she／it、單數名詞、人名",
+                  "change": "has",
+                  "sub": "例：He、Mary、the company",
+                  "ex": {
+                    "en": "He <b>has</b> <k>arrived</k>.",
+                    "zh": "他已經到了。"
+                  }
                 }
               ]
             },
@@ -1381,6 +1766,37 @@
                 {
                   "label": "未來完成進行式",
                   "text": "主詞　＋　<b>will have been</b>　＋　<k>V-ing</k>"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "現在完成進行式的 have 還是 has？只看主詞：一般主詞（I／you／we／they、複數名詞）用 have been；第三人稱單數（he／she／it、單數名詞）用 has been。（過去完成進行式一律 had been、未來一律 will have been，不隨主詞變。）"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → have been 或 has been",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "I／you／we／they、複數名詞",
+                  "change": "have been ＋ V-ing",
+                  "sub": "例：I、we、the staff",
+                  "ex": {
+                    "en": "They <b>have been</b> <k>waiting</k> for an hour.",
+                    "zh": "他們已經等了一個小時了。"
+                  }
+                },
+                {
+                  "name": "he／she／it、單數名詞、人名",
+                  "change": "has been ＋ V-ing",
+                  "sub": "例：He、Mary、the team",
+                  "ex": {
+                    "en": "She <b>has been</b> <k>working</k> all morning.",
+                    "zh": "她整個早上都在工作。"
+                  }
                 }
               ]
             },
@@ -2639,6 +3055,55 @@
                 {
                   "label": "核心公式",
                   "text": "主詞　＋　<b>be</b>　＋　<k>過去分詞 (p.p.)</k>"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "這個 be 動詞用哪個？由「主詞單複數」＋「時態」一起決定：現在式，單數（he／she／it、單數名詞）用 is、複數（you／we／they、複數名詞）用 are；過去式，單數用 was、複數用 were。後面的過去分詞（p.p.）永遠不變。"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → 用哪個 be",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "單數主詞・現在（he／she／it、單數名詞）",
+                  "change": "is ＋ p.p.",
+                  "sub": "例：The report、the office",
+                  "ex": {
+                    "en": "The report <b>is</b> <k>reviewed</k> every week.",
+                    "zh": "這份報告每週都會被審查。"
+                  }
+                },
+                {
+                  "name": "複數主詞・現在（you／we／they、複數名詞）",
+                  "change": "are ＋ p.p.",
+                  "sub": "例：The documents、all files",
+                  "ex": {
+                    "en": "The documents <b>are</b> <k>checked</k> daily.",
+                    "zh": "這些文件每天都會被檢查。"
+                  }
+                },
+                {
+                  "name": "單數主詞・過去",
+                  "change": "was ＋ p.p.",
+                  "sub": "例：The policy、the contract",
+                  "ex": {
+                    "en": "The policy <b>was</b> <k>approved</k> last month.",
+                    "zh": "這項政策上個月被核准。"
+                  }
+                },
+                {
+                  "name": "複數主詞・過去",
+                  "change": "were ＋ p.p.",
+                  "sub": "例：The samples、the letters",
+                  "ex": {
+                    "en": "The samples <b>were</b> <k>tested</k> yesterday.",
+                    "zh": "這些樣本昨天被檢測了。"
+                  }
                 }
               ]
             },
@@ -4870,6 +5335,46 @@
             {
               "type": "note",
               "text": "Part 2 陷阱：Wh- 問句不能用 yes／no 回答，一聽到開頭疑問詞，就先排除以 Yes／No 開頭的選項。"
+            },
+            {
+              "type": "note",
+              "text": "Yes/No 問句開頭要用 Do 還是 Does？（現在式）只看主詞：一般主詞（I／you／we／they、複數名詞）用 Do；第三人稱單數（he／she／it、單數名詞）用 Does。過去式一律用 Did，不隨主詞變。加了助動詞後，主要動詞一律回原形。"
+            },
+            {
+              "type": "ruletable",
+              "head": [
+                "主詞 → 用 Do 或 Does",
+                "例句"
+              ],
+              "rows": [
+                {
+                  "name": "I／you／we／they、複數名詞",
+                  "change": "Do",
+                  "sub": "例：you、we、the staff",
+                  "ex": {
+                    "en": "<b>Do</b> they <k>work</k> on weekends?",
+                    "zh": "他們週末上班嗎？"
+                  }
+                },
+                {
+                  "name": "he／she／it、單數名詞、人名",
+                  "change": "Does",
+                  "sub": "例：he、the store、Mary",
+                  "ex": {
+                    "en": "<b>Does</b> the store <k>open</k> on Sundays?",
+                    "zh": "這家店週日開門嗎？"
+                  }
+                },
+                {
+                  "name": "任何主詞・過去式",
+                  "change": "Did（不隨主詞變）",
+                  "sub": "過去式不分人稱",
+                  "ex": {
+                    "en": "<b>Did</b> you <k>call</k> the client?",
+                    "zh": "你打電話給客戶了嗎？"
+                  }
+                }
+              ]
             },
             {
               "type": "h",
