@@ -315,16 +315,40 @@
               "type": "formula",
               "lines": [
                 {
-                  "label": "肯定",
-                  "text": "主詞　＋　<b>am／is／are</b>　＋　<k>V-ing</k>"
+                  "label": "肯定・I",
+                  "text": "I　＋　<b>am</b>　＋　<k>V-ing</k>"
                 },
                 {
-                  "label": "否定",
-                  "text": "主詞　＋　<b>am／is／are</b>　not　＋　<k>V-ing</k>"
+                  "label": "肯定・he／she／it、單數名詞",
+                  "text": "主詞　＋　<b>is</b>　＋　<k>V-ing</k>"
                 },
                 {
-                  "label": "疑問",
-                  "text": "<b>Am／Is／Are</b>　＋　主詞　＋　<k>V-ing</k>　?"
+                  "label": "肯定・you／we／they、複數名詞",
+                  "text": "主詞　＋　<b>are</b>　＋　<k>V-ing</k>"
+                },
+                {
+                  "label": "否定・I",
+                  "text": "I　＋　<b>am not</b>　＋　<k>V-ing</k>"
+                },
+                {
+                  "label": "否定・he／she／it、單數名詞",
+                  "text": "主詞　＋　<b>isn't</b>　＋　<k>V-ing</k>"
+                },
+                {
+                  "label": "否定・you／we／they、複數名詞",
+                  "text": "主詞　＋　<b>aren't</b>　＋　<k>V-ing</k>"
+                },
+                {
+                  "label": "疑問・I",
+                  "text": "<b>Am</b>　＋　I　＋　<k>V-ing</k>　?"
+                },
+                {
+                  "label": "疑問・he／she／it、單數名詞",
+                  "text": "<b>Is</b>　＋　主詞　＋　<k>V-ing</k>　?"
+                },
+                {
+                  "label": "疑問・you／we／they、複數名詞",
+                  "text": "<b>Are</b>　＋　主詞　＋　<k>V-ing</k>　?"
                 }
               ]
             },
@@ -364,14 +388,22 @@
                   "zh": "他們沒在聽我說話。"
                 },
                 {
+                  "en": "He <b>isn't</b> <k>working</k> today.",
+                  "zh": "他今天沒上班。"
+                },
+                {
                   "en": "<b>Am</b> I <k>talking</k> too fast?",
                   "zh": "我講太快了嗎？"
+                },
+                {
+                  "en": "<b>Are</b> you <k>joining</k> the call?",
+                  "zh": "你要加入這通會議嗎？"
                 }
               ]
             },
             {
               "type": "note",
-              "text": "少了 be 動詞就不成立：She writing ✗、She is writing ✓。"
+              "text": "少了 be 動詞（be 動詞＝am／is／are／was／were，表示『是／在』的動詞）就不成立：She writing ✗、She is writing ✓。"
             },
             {
               "type": "h",
@@ -521,16 +553,28 @@
               "type": "formula",
               "lines": [
                 {
-                  "label": "肯定",
-                  "text": "主詞　＋　<b>have／has</b>　＋　<k>過去分詞 (p.p.)</k>"
+                  "label": "肯定・一般主詞（I／you／we／they、複數名詞）",
+                  "text": "主詞　＋　<b>have</b>　＋　<k>過去分詞 (p.p.)</k>"
                 },
                 {
-                  "label": "否定",
-                  "text": "主詞　＋　<b>haven't／hasn't</b>　＋　<k>p.p.</k>"
+                  "label": "肯定・第三人稱單數（he／she／it、人名、公司名）",
+                  "text": "主詞　＋　<b>has</b>　＋　<k>過去分詞 (p.p.)</k>"
                 },
                 {
-                  "label": "疑問",
-                  "text": "<b>Have／Has</b>　＋　主詞　＋　<k>p.p.</k>　?"
+                  "label": "否定・一般主詞",
+                  "text": "主詞　＋　<b>haven't</b>　＋　<k>p.p.</k>"
+                },
+                {
+                  "label": "否定・第三人稱單數",
+                  "text": "主詞　＋　<b>hasn't</b>　＋　<k>p.p.</k>"
+                },
+                {
+                  "label": "疑問・一般主詞",
+                  "text": "<b>Have</b>　＋　主詞　＋　<k>p.p.</k>　?"
+                },
+                {
+                  "label": "疑問・第三人稱單數",
+                  "text": "<b>Has</b>　＋　主詞　＋　<k>p.p.</k>　?"
                 }
               ]
             },
@@ -568,7 +612,7 @@
             },
             {
               "type": "p",
-              "text": "口語常用縮寫（I've、she's…）；否定用 <b>haven't／hasn't</b>，疑問把 have／has 移到句首。"
+              "text": "過去分詞（p.p.＝動詞的第三態，如 finish→finished、go→gone、write→written）。口語常用縮寫（I've、she's…）；否定用 <b>haven't／hasn't</b>，疑問把 have／has 移到句首。"
             },
             {
               "type": "examples",
@@ -578,12 +622,20 @@
                   "zh": "那部電影我看過兩次。"
                 },
                 {
+                  "en": "We <b>haven't</b> <k>decided</k> yet.",
+                  "zh": "我們還沒決定。"
+                },
+                {
                   "en": "He <b>hasn't</b> <k>replied</k> yet.",
                   "zh": "他還沒回覆。"
                 },
                 {
                   "en": "<b>Have</b> you <k>finished</k> the task?",
                   "zh": "你完成任務了嗎？"
+                },
+                {
+                  "en": "<b>Has</b> she <k>left</k> already?",
+                  "zh": "她已經離開了嗎？"
                 }
               ]
             },
@@ -1170,7 +1222,7 @@
             },
             {
               "type": "note",
-              "text": "had ＋ 過去分詞常和另一個「過去動作／時間點」一起出現，用來標示「更早發生」的那一件事。"
+              "text": "had ＋ 過去分詞（過去分詞＝動詞第三態，如 finish→finished、go→gone、write→written）常和另一個「過去動作／時間點」一起出現，用來標示「更早發生」的那一件事。"
             },
             {
               "type": "h",
@@ -2575,7 +2627,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "當我們想把焦點放在「動作的承受者」，或動作者不重要／不知道時，用被動語態。公式核心：<b>be</b> ＋ <k>過去分詞（p.p.）</k>，時態的變化通通做在 be 動詞上，p.p. 本身不變。"
+              "text": "當我們想把焦點放在「動作的承受者」，或動作者不重要／不知道時，用被動語態（被動語態＝主詞是「被做動作」的那一方）。公式核心：<b>be</b> ＋ <k>過去分詞（p.p.）</k>，時態的變化通通做在 be 動詞上，p.p. 本身不變。（過去分詞＝動詞第三態，如 build→built、write→written；be 動詞＝am／is／are／was／were。）"
             },
             {
               "type": "h",
@@ -3583,7 +3635,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "頻率副詞表「多常做某事」（always、usually、often…）。多益最愛考的是它的「位置」——放在一般動詞前面、be 動詞與助動詞後面。"
+              "text": "頻率副詞表「多常做某事」（always、usually、often…）。多益最愛考的是它的「位置」——放在一般動詞前面、be 動詞與助動詞後面。（一般動詞＝work、eat、go 這類表示動作的動詞；be 動詞＝am／is／are／was／were；助動詞＝do／does／will／can 等。）"
             },
             {
               "type": "h",
@@ -4757,7 +4809,7 @@
           "blocks": [
             {
               "type": "p",
-              "text": "疑問句分兩大類：Yes/No 問句（用助動詞或 be 動詞開頭，可用 yes／no 回答）和 Wh- 問句（用疑問詞開頭，問的是具體資訊，不能只用 yes／no 回答）。多益 Part 2 必考。"
+              "text": "疑問句分兩大類：Yes/No 問句（用助動詞或 be 動詞開頭，可用 yes／no 回答）和 Wh- 問句（用疑問詞開頭，問的是具體資訊，不能只用 yes／no 回答）。多益 Part 2 必考。（助動詞＝do／does／did／will／can 等幫忙構成疑問的動詞；be 動詞＝am／is／are／was／were，表示『是／在』的動詞。）"
             },
             {
               "type": "usetable",
@@ -5144,7 +5196,7 @@
             },
             {
               "type": "note",
-              "text": "假設語氣中，be 動詞一律用 were（不分人稱）：If I <k>were</k> you, I <b>would</b> apologize."
+              "text": "假設語氣中，be 動詞（＝am／is／are／was／were，表示『是／在』的動詞）一律用 were（不分人稱）：If I <k>were</k> you, I <b>would</b> apologize."
             },
             {
               "type": "h",
