@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=59"><!-- 外部樣式表（?v=59 為破快取版本號） -->
-<script defer src="index.js?v=59"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=60"><!-- 外部樣式表（?v=60 為破快取版本號） -->
+<script defer src="index.js?v=60"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -106,8 +106,8 @@
       <!-- 題目框：作答後整框變綠(對)/變紅(錯) 當作對錯回饋 -->
       <h3 id="quizQuestionCN" class="quiz-question-box">題目</h3>
 
-      <!-- 選項按鈕由 JS 動態塞入此格線容器 -->
-      <div id="quizOptions" style="display:grid; grid-template-columns:1fr; gap:12px;"></div>
+      <!-- 選項按鈕由 JS 動態塞入此格線容器：2×2 四宮格（左上/右上/左下/右下） -->
+      <div id="quizOptions" class="quiz-options-grid"></div>
 
       <!-- 回饋改用題目框變色，此列留作備用（答錯時顯示正解） -->
       <p id="quizFeedback" style="margin-top:12px; font-weight:bold; height:20px;"></p>
