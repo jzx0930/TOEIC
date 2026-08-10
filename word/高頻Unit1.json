@@ -1,7 +1,7 @@
 [
   {
     "word": "film",
-    "kk": "[fɪlm]",
+    "kk": "[ˈfɪlm]",
     "translation": "底片、電影、拍攝",
     "part_of_speech": "n. / v.",
     "note": "多益常見於「拍攝廣告或宣傳片」情境。常用搭配：film a commercial（拍攝廣告）。",
@@ -10,7 +10,7 @@
   },
   {
     "word": "paid",
-    "kk": "[ped]",
+    "kk": "[ˈped]",
     "translation": "已付清的、有薪的",
     "part_of_speech": "adj.",
     "note": "多益核心詞彙，常出現在福利與人事政策中。常用搭配：paid leave（有薪假）、paid vacation（有薪假期）。",
@@ -28,7 +28,7 @@
   },
   {
     "word": "difficulties",
-    "kk": "[ˈdɪfəˌkʌltɪz]",
+    "kk": "[ˈdɪfəkəltiz]",
     "translation": "困難、費勁",
     "part_of_speech": "n.",
     "note": "多益常見句型：have difficulty (in) v-ing（做某事有困難）。複數型態常指各類具體的難關。",
@@ -46,7 +46,7 @@
   },
   {
     "word": "fame",
-    "kk": "[fem]",
+    "kk": "[ˈfem]",
     "translation": "名聲、聲譽",
     "part_of_speech": "n.",
     "note": "同義詞為 reputation。衍生形容詞為 famous（著名的），多益常考 be famous for...（以...聞名）。",
@@ -55,7 +55,7 @@
   },
   {
     "word": "service",
-    "kk": "[ˈsɝvɪs]",
+    "kk": "[ˈsɝvəs]",
     "translation": "服務、維修、保養",
     "part_of_speech": "n. / v.",
     "note": "多益核心高頻字。名詞常用：customer service（客服）；動詞常用於售後保養：service a vehicle（維修車輛）。",
@@ -64,7 +64,7 @@
   },
   {
     "word": "scandal",
-    "kk": "[ˈskændl]",
+    "kk": "[ˈskændəl]",
     "translation": "醜聞、醜事",
     "part_of_speech": "n.",
     "note": "多益較常出現在新聞報導或企業公關危機（PR crisis）情境中。常用：corporate scandal（企業醜聞）。",
@@ -82,7 +82,7 @@
   },
   {
     "word": "received",
-    "kk": "[rɪˈsivd]",
+    "kk": "[rəˈsivd]",
     "translation": "收到、接到",
     "part_of_speech": "v.",
     "note": "商務書信核心字。常用搭配：receive a confirmation（收到確認信）、receive an award（獲獎）。",
@@ -91,7 +91,7 @@
   },
   {
     "word": "hearty",
-    "kk": "[ˈhɑrtɪ]",
+    "kk": "[ˈhɑrti]",
     "translation": "衷心的、豐盛的",
     "part_of_speech": "adj.",
     "note": "多益餐飲、社交或歡迎會情境常見。常用：a hearty meal（豐盛的一餐）、hearty welcome（熱烈歡迎）。",
@@ -100,7 +100,7 @@
   },
   {
     "word": "province",
-    "kk": "[ˈprɑvɪns]",
+    "kk": "[ˈprɑvəns]",
     "translation": "省、省份",
     "part_of_speech": "n.",
     "note": "常用於多益聽力或閱讀中的地理位置與分支機構描述。衍生形容詞為 provincial（省級的、地方的）。",
@@ -118,7 +118,7 @@
   },
   {
     "word": "coal",
-    "kk": "[kol]",
+    "kk": "[ˈkol]",
     "translation": "煤、煤炭",
     "part_of_speech": "n.",
     "note": "多益能源、環保或工業製造話題常見字。相關搭配：coal mining（採煤）、coal-fired power plant（燃煤發電廠）。",
@@ -127,7 +127,7 @@
   },
   {
     "word": "spend",
-    "kk": "[spɛnd]",
+    "kk": "[ˈspɛnd]",
     "translation": "花費（時間、金錢）",
     "part_of_speech": "v.",
     "note": "核心文法句型必考：spend time/money on something 或 spend time/money (in) v-ing。",
@@ -145,7 +145,7 @@
   },
   {
     "word": "store",
-    "kk": "[stɔr]",
+    "kk": "[ˈstɔr]",
     "translation": "商店、儲存",
     "part_of_speech": "n. / v.",
     "note": "多益雙棲字。名詞常用：department store（百貨公司）；動詞常用：store data/merchandise（儲存資料/商品）。",
@@ -163,7 +163,7 @@
   },
   {
     "word": "spread",
-    "kk": "[sprɛd]",
+    "kk": "[ˈsprɛd]",
     "translation": "傳播、散佈、蔓延",
     "part_of_speech": "v. / n.",
     "note": "多益安全與健康情境常見。常用搭配：prevent the spread of disease（防止疾病傳播）。動詞三態同形（spread-spread-spread）。",
@@ -181,7 +181,7 @@
   },
   {
     "word": "solve",
-    "kk": "[sɑlv]",
+    "kk": "[ˈsɑlv]",
     "translation": "解決、解答",
     "part_of_speech": "v.",
     "note": "多益辦公室問題解決情境。常用搭配：solve a problem（解決問題）。名詞為 solution（解決方案），常接 prep. to。",
@@ -190,7 +190,7 @@
   },
   {
     "word": "reached",
-    "kk": "[ritʃt]",
+    "kk": "[ˈritʃt]",
     "translation": "到達、達到、與...取得聯繫",
     "part_of_speech": "v.",
     "note": "商務談判常用：reach an agreement（達成協議）。電話英語常用被動：can be reached at [電話號碼]（撥打...可聯絡到某人）。",
@@ -208,7 +208,7 @@
   },
   {
     "word": "expenses",
-    "kk": "[ɪkˈspɛnsɪz]",
+    "kk": "[ɪksˈpɛnsəz]",
     "translation": "費用、開支",
     "part_of_speech": "n.",
     "note": "多益常見：travel expenses（差旅費）、operating expenses（營運開銷）。",
@@ -262,7 +262,7 @@
   },
   {
     "word": "gain",
-    "kk": "[gen]",
+    "kk": "[ˈgen]",
     "translation": "獲得、增加",
     "part_of_speech": "v. / n.",
     "note": "多益常用於利益或數據：gain experience（獲得經驗）、financial gain（財務收益）。",
@@ -298,7 +298,7 @@
   },
   {
     "word": "comparison",
-    "kk": "[kəmˈpærəsn]",
+    "kk": "[kəmˈpɛrəsən]",
     "translation": "比較、對照",
     "part_of_speech": "n.",
     "note": "常用搭配：by comparison（相比之下）、make a comparison（進行比較）。",
@@ -334,7 +334,7 @@
   },
   {
     "word": "taxes",
-    "kk": "[ˈtæksɪz]",
+    "kk": "[ˈtæksəz]",
     "translation": "稅、稅金",
     "part_of_speech": "n.",
     "note": "多益財務與會計情境高頻字。常用：tax return（報稅單）、income tax（所得稅）。",
@@ -343,7 +343,7 @@
   },
   {
     "word": "laws",
-    "kk": "[lɔz]",
+    "kk": "[ˈlɔz]",
     "translation": "法律、法規",
     "part_of_speech": "n.",
     "note": "多益常見於合約與法規遵循情境。近義詞：regulations。常用：abide by the laws（遵守法律）。",
@@ -352,7 +352,7 @@
   },
   {
     "word": "obeying",
-    "kk": "[oˈbeŋ]",
+    "kk": "[oˈbeɪŋ]",
     "translation": "服從、遵守",
     "part_of_speech": "v.",
     "note": "obey 的現在分詞。多益常考遵守規定片語：obey the safety regulations（遵守安全規範）。",
@@ -361,7 +361,7 @@
   },
   {
     "word": "honest",
-    "kk": "[ˈɑnɪst]",
+    "kk": "[ˈɑnəst]",
     "translation": "誠實的、正直的",
     "part_of_speech": "adj.",
     "note": "注意字母 h 不發音。多益商務倫理情境。常用：honest feedback（誠實的反饋）。",

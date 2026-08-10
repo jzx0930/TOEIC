@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=58"><!-- 外部樣式表（?v=58 為破快取版本號） -->
-<script defer src="index.js?v=58"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=59"><!-- 外部樣式表（?v=59 為破快取版本號） -->
+<script defer src="index.js?v=59"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -642,6 +642,7 @@ async function speakWord(word, lang, callback) {
         if (data.audioContent) {
             // 代理回傳 Base64 的 MP3，轉成可播放的音訊並播放
             const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
+            audio.playbackRate = getSpeechRate(); // 🇺🇸/🇬🇧 發音也跟著速度拖曳桿
             currentAudio = audio;
             audio.play();
             // 播放結束後執行 callback（例如抽考時自動跳下一題）

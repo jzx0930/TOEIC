@@ -9,7 +9,7 @@
   },
   {
     "word": "bricks",
-    "kk": "[brɪks]",
+    "kk": "[ˈbrɪks]",
     "translation": "磚塊",
     "part_of_speech": "n.",
     "note": "多益聽力 Part 1 常考物品。常見於建築工地或步道背景。常見搭配：brick wall (磚牆)、stacked bricks (堆疊的磚塊)。",
@@ -36,7 +36,7 @@
   },
   {
     "word": "cord",
-    "kk": "[kɔrd]",
+    "kk": "[ˈkɔrd]",
     "translation": "電線、繩索",
     "part_of_speech": "n.",
     "note": "多益聽力 Part 1 辦公室或工廠設施常見物品。常見搭配：power cord (電源線)、extension cord (延長線)、untangle a cord (解開電線)。",
@@ -53,7 +53,7 @@
   },
   {
     "word": "equipment",
-    "kk": "[ɪˈkwɪpmənt]",
+    "kk": "[ɪkˈwɪpmənt]",
     "translation": "設備、器材",
     "part_of_speech": "n.",
     "note": "多益全大考極核心字（不可數名詞，不可加 s）。常見情境包含辦公設備、工廠器材。常見搭配：office equipment (辦公設備)、laboratory equipment (實驗室設備)。",
@@ -80,7 +80,7 @@
   },
   {
     "word": "placed",
-    "kk": "[plest]",
+    "kk": "[ˈplest]",
     "translation": "放置、被放置的",
     "part_of_speech": "v.",
     "note": "多益聽力 Part 1 靜態物品題最愛用被動語態 be placed。另外在 Part 3/4 中 place an order (下訂單) 為核心商務片語。",
@@ -98,7 +98,7 @@
   },
   {
     "word": "passengers",
-    "kk": "[ˈpæsndʒɚz]",
+    "kk": "[ˈpæsəndʒɚz]",
     "translation": "乘客、旅客",
     "part_of_speech": "n.",
     "note": "多益交通運輸情境（機場、車站、大眾運輸）必考字。常見搭配：passenger terminal (客運航廈)、commuter (通勤者)。",
@@ -107,7 +107,7 @@
   },
   {
     "word": "across",
-    "kk": "[əˈkrɔs]",
+    "kk": "[əkˈrɔs]",
     "translation": "橫過、在...對面",
     "part_of_speech": "prep. / adv.",
     "note": "多益聽力 Part 1 常見空間位置介係詞。常見搭配：walk across the street (穿過馬路)、across from the station (在車站正對面)。",
@@ -116,7 +116,7 @@
   },
   {
     "word": "served",
-    "kk": "[sɝvd]",
+    "kk": "[ˈsɝvd]",
     "translation": "供應（餐點）、服務",
     "part_of_speech": "v.",
     "note": "多益餐飲或機艙情境常用字。常見搭配：food is being served (食物正被供應)、serve as a consultant (擔任顧問職務)。",
@@ -125,7 +125,7 @@
   },
   {
     "word": "meal",
-    "kk": "[mil]",
+    "kk": "[ˈmil]",
     "translation": "餐點、一餐",
     "part_of_speech": "n.",
     "note": "多益餐飲與商務社交情境字。常見搭配：complimentary meal (免費贈送的餐點)、business meal (商務聚餐)。",
@@ -134,7 +134,7 @@
   },
   {
     "word": "left",
-    "kk": "[lɛft]",
+    "kk": "[ˈlɛft]",
     "translation": "留下、遺留、離開",
     "part_of_speech": "v. / adj.",
     "note": "多益聽力與閱讀常見字（leave的過去式/過去分詞）。常見搭配：items left unattended (無人看管的物品，多益機場廣播必考)、leave a message (留言)。",
@@ -143,7 +143,7 @@
   },
   {
     "word": "cartridges",
-    "kk": "[ˈhɑrtrɪdʒɪz]",
+    "kk": "[ˈkɑrtrədʒəz]",
     "translation": "墨水匣、碳粉匣",
     "part_of_speech": "n.",
     "note": "多益辦公室設備故障或行政補給情境核心詞。常見搭配：ink cartridge (墨水匣)、toner cartridge (碳粉匣)、replace a cartridge (更換墨水匣)。",
@@ -152,7 +152,7 @@
   },
   {
     "word": "installed",
-    "kk": "[ɪnˈstɔld]",
+    "kk": "[ˌɪnsˈtɔld]",
     "translation": "安裝（的）",
     "part_of_speech": "v.",
     "note": "多益 IT 資訊科技與設備維護情境核心字。常見搭配：install software (安裝軟體)、installation guide (安裝指南)。",
@@ -161,7 +161,7 @@
   },
   {
     "word": "went",
-    "kk": "[wɛnt]",
+    "kk": "[ˈwɛnt]",
     "translation": "去、進展（go的過去式）",
     "part_of_speech": "v.",
     "note": "常出現在多益聽力 Part 3/4 過去事件敘述。常見搭配：went wrong (出錯、進展不順)、went smoothly (進展順利)。",
@@ -170,7 +170,7 @@
   },
   {
     "word": "departmental",
-    "kk": "[ˌdipɑrtˈmɛntl]",
+    "kk": "[dɪˌpɑrtˈmɛnəl]",
     "translation": "部門的",
     "part_of_speech": "adj.",
     "note": "多益企業人事與內部管理情境常用形容詞。常見搭配：departmental meeting (部門會議)、departmental budget (部門預算)。",
@@ -179,7 +179,7 @@
   },
   {
     "word": "bring",
-    "kk": "[brɪŋ]",
+    "kk": "[ˈbrɪŋ]",
     "translation": "帶來、攜帶",
     "part_of_speech": "v.",
     "note": "多益聽力商務對話中常考的指令動作。常見搭配：bring up a topic (提出討論話題)、bring to a close (結束、收尾)。",
@@ -188,7 +188,7 @@
   },
   {
     "word": "portfolio",
-    "kk": "[portˈfolɪo]",
+    "kk": "[pɔrtˈfoliˌo]",
     "translation": "作品集、投資組合",
     "part_of_speech": "n.",
     "note": "多益人事招募（設計/行銷崗位）或金融投資情境高頻字。常考搭配：investment portfolio (投資組合)、submit a portfolio (提交作品集)。",
@@ -197,7 +197,7 @@
   },
   {
     "word": "petrol",
-    "kk": "[ˈpɛtrəl]",
+    "kk": "[ˈpɛtrol]",
     "translation": "汽油",
     "part_of_speech": "n.",
     "note": "多益英澳美式用語對比考點。此為英式用法，美式為 gasoline 或 gas。常考情境為出差交通費核銷或加油站。",
@@ -206,7 +206,7 @@
   },
   {
     "word": "definitely",
-    "kk": "[ˈdɛfənɪtli]",
+    "kk": "[ˈdɛfənətli]",
     "translation": "肯定地、毫無疑問地",
     "part_of_speech": "adv.",
     "note": "多益聽力 Part 3/4 對話中常用於表示強烈贊同對方提議。同義詞：absolutely, certainly。",
@@ -232,7 +232,7 @@
   },
   {
     "word": "bought",
-    "kk": "[bɔt]",
+    "kk": "[ˈbɑt]",
     "translation": "購買（buy的過去式與過去分詞）",
     "part_of_speech": "v.",
     "note": "聽力對話高頻交易字。同義詞：purchased。常用於確認訂單細節、發票內容或消費糾紛。",
@@ -250,7 +250,7 @@
   },
   {
     "word": "experiencing",
-    "kk": "[ɪkˈspɪrɪənsɪŋ]",
+    "kk": "[ɪksˈpɪriənsɪŋ]",
     "translation": "經歷、體驗、遭受",
     "part_of_speech": "v.",
     "note": "多益常考於系統故障、服務中斷或交通延誤公告。常見搭配：experiencing technical difficulties (正遭遇技術故障)。",
@@ -302,7 +302,7 @@
   },
   {
     "word": "completely",
-    "kk": "[kəmˈplitli]",
+    "kk": "[kəmpˈlitli]",
     "translation": "完全地、徹底地",
     "part_of_speech": "adv.",
     "note": "多益閱讀常考的程度副詞，用以修飾形容詞。同義詞：entirely, thoroughly。常見搭配：completely satisfied (完全滿意)。",
@@ -311,7 +311,7 @@
   },
   {
     "word": "preservatives",
-    "kk": "[prɪˈzɝvətɪvz]",
+    "kk": "[prəˈzɝvətɪvz]",
     "translation": "防腐劑",
     "part_of_speech": "n.",
     "note": "多益食品、健康餐飲或產品行銷文案常考字。常見搭配：free of artificial preservatives (不含人工防腐劑)。",
@@ -395,7 +395,7 @@
   },
   {
     "word": "coupon",
-    "kk": "[ˈkupɑn]",
+    "kk": "[ˈkuˌpɔn]",
     "translation": "優惠券",
     "part_of_speech": "n.",
     "note": "零售、行銷與客戶回饋高頻詞。發音注意。常見搭配：redeem a coupon (兌換優惠券)、discount coupon (折扣券)。",
@@ -404,7 +404,7 @@
   },
   {
     "word": "ticket",
-    "kk": "[ˈtɪkɪt]",
+    "kk": "[ˈtɪkət]",
     "translation": "票、罰單、工單",
     "part_of_speech": "n.",
     "note": "多益多義字。除交通與娛樂情境（plane ticket）外，在 IT 技術支援情境中特指「問題回報單、客服工單」（如 submit a support ticket）。",
@@ -422,7 +422,7 @@
   },
   {
     "word": "since",
-    "kk": "[sɪns]",
+    "kk": "[ˈsɪns]",
     "translation": "自從、因為",
     "part_of_speech": "conj. / prep.",
     "note": "多益閱讀 Part 5 複句連接詞常考。若解釋為「因為」，後面接原因子句，用法與 because 或 as 相同。",
@@ -440,7 +440,7 @@
   },
   {
     "word": "kinds",
-    "kk": "[kaɪndz]",
+    "kk": "[ˈkaɪndz]",
     "translation": "種類",
     "part_of_speech": "n.",
     "note": "常用於聽力與分類敘述。常見搭配：all kinds of (各種各樣的)、different kinds of (不同種類的)。同義詞：types, categories。",
@@ -474,7 +474,7 @@
   },
   {
     "word": "february",
-    "kk": "[ˈfɛbruˌɛri]",
+    "kk": "[ˈfɛbjəˌwɛri]",
     "translation": "二月",
     "part_of_speech": "n.",
     "note": "商務日程表、合約截止日期（deadline）與財務季度報告中常考的月份單字，注意發音。",
@@ -483,7 +483,7 @@
   },
   {
     "word": "overdue",
-    "kk": "[ˌovɚˈdu]",
+    "kk": "[ˈovɚˈdu]",
     "translation": "逾期的、延誤的",
     "part_of_speech": "adj.",
     "note": "多益財務催繳、圖書館借閱或專案進度控管核心詞。常見搭配：overdue invoice (逾期發票)、overdue library books (逾期未還的書)。",
@@ -509,7 +509,7 @@
   },
   {
     "word": "research",
-    "kk": "[rɪˈsɝtʃ]",
+    "kk": "[riˈsɝtʃ]",
     "translation": "研究、調查",
     "part_of_speech": "n. / v.",
     "note": "多益產品研發（R&D）與市調核心詞（作名詞時不可數）。常見搭配：market research (市場研究)、conduct research (進行研究)。",
@@ -518,7 +518,7 @@
   },
   {
     "word": "analysis",
-    "kk": "[əˈnæləsɪs]",
+    "kk": "[əˈnæləsəs]",
     "translation": "分析",
     "part_of_speech": "n.",
     "note": "多益數據評估與財務審查高頻字（複數形為 analyses，動詞為 analyze）。常見搭配：data analysis (數據分析)、financial analysis (財務分析)。",
@@ -586,7 +586,7 @@
   },
   {
     "word": "sell",
-    "kk": "[sɛl]",
+    "kk": "[ˈsɛl]",
     "translation": "銷售、出賣",
     "part_of_speech": "v.",
     "note": "商務基本字。名詞為 sale，複數 sales 常用作形容詞修飾（如 sales department 銷售部門、sales figures 銷售額）。",
@@ -613,7 +613,7 @@
   },
   {
     "word": "workplace",
-    "kk": "[ˈwɝkˌples]",
+    "kk": "[ˈwɝkpˌles]",
     "translation": "工作場所、職場",
     "part_of_speech": "n.",
     "note": "多益人資管理、企業政策與文化核心詞。常見搭配：workplace safety (職場安全)、workplace diversity (職場多元化)。",

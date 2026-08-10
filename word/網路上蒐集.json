@@ -9,7 +9,7 @@
   },
   {
     "word": "premiere",
-    "kk": "[prɪˈmɪr]",
+    "kk": "[prɛˈmɪr]",
     "translation": "首映",
     "part_of_speech": "n.",
     "sylWord": "pre·miere",
@@ -55,7 +55,7 @@
   },
   {
     "word": "vegan",
-    "kk": "[ˈvigən]",
+    "kk": "[ˈvɛgən]",
     "translation": "純素食者",
     "part_of_speech": "n.",
     "sylWord": "ve·g·an",
@@ -70,7 +70,7 @@
   },
   {
     "word": "check",
-    "kk": "[tʃɛk]",
+    "kk": "[ˈtʃɛk]",
     "translation": "結帳買單",
     "part_of_speech": "n.",
     "sylWord": "check",
@@ -90,7 +90,7 @@
     "translation": "入境",
     "part_of_speech": "n.",
     "sylWord": "ar·rivals",
-    "sylKK": "ɚ·ˈaɪ·vəlz"
+    "sylKK": "ə·ˈraɪ·vəlz"
   },
   {
     "word": "departures",
@@ -102,7 +102,7 @@
   },
   {
     "word": "declare",
-    "kk": "[dɪˈklɛr]",
+    "kk": "[dɪkˈlɛr]",
     "translation": "申報",
     "part_of_speech": "v.",
     "sylWord": "de·clare",
@@ -165,7 +165,7 @@
   },
   {
     "word": "diagnosis",
-    "kk": "[ˌdaɪəgˈnosɪs]",
+    "kk": "[ˌdaɪəgˈnosəs]",
     "translation": "診斷",
     "part_of_speech": "n.",
     "sylWord": "di·ag·no·sis",
@@ -173,7 +173,7 @@
   },
   {
     "word": "ward",
-    "kk": "[wɔrd]",
+    "kk": "[ˈwɔrd]",
     "translation": "病房",
     "part_of_speech": "n.",
     "sylWord": "ward",
@@ -181,7 +181,7 @@
   },
   {
     "word": "saline",
-    "kk": "[ˈselin]",
+    "kk": "[səˈlin]",
     "translation": "生理食鹽水",
     "part_of_speech": "n.",
     "sylWord": "sa·line",
@@ -208,11 +208,11 @@
     "translation": "探勘",
     "part_of_speech": "n.",
     "sylWord": "ex·plo·ration",
-    "sylKK": "ˌɛksp·lɚ·ˈe·ʃən"
+    "sylKK": "ˌɛksp·lə·ˈre·ʃən"
   },
   {
     "word": "export",
-    "kk": "[ˈɛksport]",
+    "kk": "[ˈɛkspɔrt]",
     "translation": "出口",
     "part_of_speech": "n./v.",
     "sylWord": "ex·port",
@@ -220,7 +220,7 @@
   },
   {
     "word": "scheme",
-    "kk": "[skim]",
+    "kk": "[ˈskim]",
     "translation": "計畫",
     "part_of_speech": "n.",
     "sylWord": "scheme",
@@ -228,7 +228,7 @@
   },
   {
     "word": "inspect",
-    "kk": "[ɪnˈspɛkt]",
+    "kk": "[ˌɪnsˈpɛkt]",
     "translation": "檢查",
     "part_of_speech": "v.",
     "sylWord": "in·spect",
@@ -268,7 +268,7 @@
   },
   {
     "word": "quote",
-    "kk": "[kwot]",
+    "kk": "[ˈkwot]",
     "translation": "報價",
     "part_of_speech": "v./n.",
     "sylWord": "quote",
@@ -276,7 +276,7 @@
   },
   {
     "word": "takeover",
-    "kk": "[ˈtekˌovɚ]",
+    "kk": "[ˈteˌkovɚ]",
     "translation": "收購",
     "part_of_speech": "n.",
     "sylWord": "ta·keo·ver",
@@ -284,7 +284,7 @@
   },
   {
     "word": "supplier",
-    "kk": "[səˈplaɪɚ]",
+    "kk": "[səpˈlaɪɚ]",
     "translation": "供應商",
     "part_of_speech": "n.",
     "sylWord": "sup·pli·er",
@@ -300,7 +300,7 @@
   },
   {
     "word": "internship",
-    "kk": "[ˈɪntɝnˌʃɪp]",
+    "kk": "[ˈɪntɚnˌʃɪp]",
     "translation": "實習",
     "part_of_speech": "n.",
     "sylWord": "in·tern·ship",
@@ -308,7 +308,7 @@
   },
   {
     "word": "recruit",
-    "kk": "[rɪˈkrut]",
+    "kk": "[rəkˈrut]",
     "translation": "招募",
     "part_of_speech": "v./n.",
     "sylWord": "re·cruit",
@@ -316,7 +316,7 @@
   },
   {
     "word": "employee",
-    "kk": "[ɪmˈplɔɪi]",
+    "kk": "[ɛmpˈlɔɪi]",
     "translation": "員工",
     "part_of_speech": "n.",
     "sylWord": "em·ploy·ee",
@@ -324,7 +324,7 @@
   },
   {
     "word": "interview",
-    "kk": "[ˈɪntɚˌvju]",
+    "kk": "[ˈɪntɚvˌju]",
     "translation": "面試",
     "part_of_speech": "n./v.",
     "sylWord": "in·ter·view",
@@ -332,7 +332,7 @@
   },
   {
     "word": "fax",
-    "kk": "[fæks]",
+    "kk": "[ˈfæks]",
     "translation": "傳真",
     "part_of_speech": "n./v.",
     "sylWord": "fax",
@@ -354,7 +354,7 @@
   },
   {
     "word": "procurement",
-    "kk": "[proˈkjʊrmənt]",
+    "kk": "[prokˈjʊrmənt]",
     "translation": "採購",
     "part_of_speech": "n.",
     "sylWord": "pro·cure·ment",
@@ -366,7 +366,7 @@
     "translation": "薪水",
     "part_of_speech": "n.",
     "sylWord": "sa·la·ry",
-    "sylKK": "ˈsæ·lɚ·i"
+    "sylKK": "ˈsæ·lə·ri"
   },
   {
     "word": "further",
@@ -394,7 +394,7 @@
   },
   {
     "word": "expire",
-    "kk": "[ɪkˈspaɪr]",
+    "kk": "[ɪksˈpaɪr]",
     "translation": "到期",
     "part_of_speech": "v.",
     "sylWord": "ex·pire",
@@ -410,7 +410,7 @@
   },
   {
     "word": "assets",
-    "kk": "[ˈæsɛts]",
+    "kk": "[ˈæˌsɛts]",
     "translation": "資產",
     "part_of_speech": "n.",
     "sylWord": "as·sets",
@@ -442,7 +442,7 @@
   },
   {
     "word": "debt",
-    "kk": "[dɛt]",
+    "kk": "[ˈdɛt]",
     "translation": "債務",
     "part_of_speech": "n.",
     "sylWord": "debt",
@@ -458,11 +458,11 @@
   },
   {
     "word": "accurate",
-    "kk": "[ˈækjərɪt]",
+    "kk": "[ˈækjərət]",
     "translation": "準確",
     "part_of_speech": "adj.",
     "sylWord": "ac·cu·rate",
-    "sylKK": "ˈæk·jɚ·ət"
+    "sylKK": "ˈæk·jə·rət"
   },
   {
     "word": "deadline",
@@ -474,7 +474,7 @@
   },
   {
     "word": "estimate",
-    "kk": "[ˈɛstəˌmet]",
+    "kk": "[ˈɛstəmət]",
     "translation": "評估／衡量",
     "part_of_speech": "v./n.",
     "sylWord": "es·ti·mate",
@@ -482,7 +482,7 @@
   },
   {
     "word": "profitable",
-    "kk": "[ˈprɑfɪtəbəl]",
+    "kk": "[ˈprɑfətəbəl]",
     "translation": "具有利潤",
     "part_of_speech": "adj.",
     "sylWord": "prof·itable",

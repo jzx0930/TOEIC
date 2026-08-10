@@ -1,7 +1,7 @@
 [
   {
     "word": "distributor",
-    "kk": "[dɪˈstrɪbjətɚ]",
+    "kk": "[dɪstˈrɪbjətɚ]",
     "translation": "分銷商、批發商",
     "part_of_speech": "n.",
     "note": "供應鏈中的發行角色",
@@ -45,7 +45,7 @@
   },
   {
     "word": "stockbroker",
-    "kk": "[ˈstɑkˌbrokɚ]",
+    "kk": "[ˈstɑkbˌrokɚ]",
     "translation": "股票經紀人",
     "part_of_speech": "n.",
     "note": "",
@@ -63,7 +63,7 @@
   },
   {
     "word": "investor",
-    "kk": "[ɪnˈvɛstɚ]",
+    "kk": "[ˌɪnˈvɛstɚ]",
     "translation": "投資者",
     "part_of_speech": "n.",
     "note": "",
@@ -90,7 +90,7 @@
   },
   {
     "word": "employer",
-    "kk": "[ɪmˈplɔɪɚ]",
+    "kk": "[ɛmpˈlɔɪɚ]",
     "translation": "雇主、老闆",
     "part_of_speech": "n.",
     "note": "",
@@ -99,7 +99,7 @@
   },
   {
     "word": "employee",
-    "kk": "[ɪmˈplɔɪi]",
+    "kk": "[ɛmpˈlɔɪi]",
     "translation": "員工、受雇者",
     "part_of_speech": "n.",
     "note": "",
@@ -108,7 +108,7 @@
   },
   {
     "word": "staff",
-    "kk": "[stæf]",
+    "kk": "[ˈstæf]",
     "translation": "全體職員、員工",
     "part_of_speech": "n.",
     "note": "集合名詞",
@@ -117,7 +117,7 @@
   },
   {
     "word": "crew",
-    "kk": "[kru]",
+    "kk": "[ˈkru]",
     "translation": "全體工作人員、船員、機組人員",
     "part_of_speech": "n.",
     "note": "",
@@ -126,7 +126,7 @@
   },
   {
     "word": "chief",
-    "kk": "[tʃif]",
+    "kk": "[ˈtʃif]",
     "translation": "首領、長官/主要的、最高層級的",
     "part_of_speech": "n./adj.",
     "note": "",
@@ -170,7 +170,7 @@
   },
   {
     "word": "specialist",
-    "kk": "[ˈspɛʃəlɪst]",
+    "kk": "[ˈspɛʃələst]",
     "translation": "專家、專科醫生",
     "part_of_speech": "n.",
     "note": "",
@@ -179,7 +179,7 @@
   },
   {
     "word": "inspector",
-    "kk": "[ɪnˈspɛktɚ]",
+    "kk": "[ˌɪnsˈpɛktɚ]",
     "translation": "檢查員、督察",
     "part_of_speech": "n.",
     "note": "",
@@ -188,7 +188,7 @@
   },
   {
     "word": "dentist",
-    "kk": "[ˈdɛntɪst]",
+    "kk": "[ˈdɛntəst]",
     "translation": "牙科醫生",
     "part_of_speech": "n.",
     "note": "",
@@ -206,7 +206,7 @@
   },
   {
     "word": "advocate",
-    "kk": "[ˈædvəkɪt]",
+    "kk": "[ˈædvəkət]",
     "translation": "擁護者、提倡者/主張",
     "part_of_speech": "n./v.",
     "note": "",

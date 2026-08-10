@@ -89,7 +89,8 @@ note/        其他筆記
 ## 6. KK 音標與音節拆解
 - KK 用**標準 KK 符號**（見 `Pronunciation/kk 音標.pdf`）：母音 `e`(name)/`o`(no)、`ɝ`(bird)/`ɚ`(sister)、雙母音 `aɪ/aʊ/ɔɪ`；子音 `g`(good)、`ŋ`、`tʃ`、`dʒ` 等。**不要**用 IPA 的 `oʊ/eɪ/ː` 或手寫體 `ɡ`。
 - **拆解顯示是即時的**：只要單字有 `kk`，第二行自動出現拆解，照 KK 表符號。
-- **工具 `tools/check-kk.mjs`**（本機跑，沙盒裝不了套件）：`node tools/check-kk.mjs` 用 CMUdict 檢查 KK；`--write` 幫缺 KK 的字補 KK、寫回 `sylWord`/`sylKK`。用 `cmu-pronouncing-dictionary` + `hyphen`。CMUdict 是美式、OOV 需人工補。兩支 `.bat` 是雙擊入口（純 ASCII 內容）。
+- **工具 `tools/check-kk.mjs`**（本機跑或沙盒跑皆可——沙盒 npm registry 被擋裝不了套件，但 repo 內已有 `node_modules/`（gitignore）可直接 `node` 執行）：`node tools/check-kk.mjs` 用 CMUdict 檢查 KK；`--write` 幫缺 KK 的字補 KK、寫回 `sylWord`/`sylKK`；`--write --force` 連「已有 kk」的字也一律用 CMUdict（美式標準）覆蓋，讓 **kk 與 sylKK 完全一致**、且和網頁「🇺🇸 美式」Google TTS 對得起來（OOV 片語/專有名詞/整句不動）。用 `cmu-pronouncing-dictionary` + `hyphen`。CMUdict 是美式、OOV 需人工補。工具內含修正：CMUdict 把非重音 `ER0` 單獨成節又接母音節時（director→dɚˈɛktɚ）會把 r 移到下一節（→dəˈrɛktɚ）。兩支 `.bat` 是雙擊入口（純 ASCII 內容）。
+- **KK 一律以美式為準**：kk 要跟網頁「🇺🇸 美式」發音一致（Google TTS en-US ≈ CMUdict）。若使用者反映 kk 與發音對不上，跑 `node tools/check-kk.mjs --write --force` 重建即可。
 
 ## 7. 發音 / TTS 代理
 - 單次發音、測驗唸題、側欄🔊、發音表🔊 → `speakWord()` → **Cloudflare Worker 代理**（`TTS_PROXY_URL`），Google 金鑰在 Worker Secret。

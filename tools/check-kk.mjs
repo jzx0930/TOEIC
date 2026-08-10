@@ -94,6 +94,9 @@ if (hyphenateFn) {
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const WORD_DIR = path.join(__dir, "..", "word");
 const WRITE = process.argv.includes("--write");
+// --force：連「已經有 kk」的字也一律用 CMUdict（美式標準）覆蓋，讓 kk 與 sylKK 完全一致、
+//          並與網頁「🇺🇸 美式」Google TTS 對得起來。OOV（CMUdict 查不到，如片語/專有名詞）不動。
+const FORCE = process.argv.includes("--force");
 
 // ---------- ARPAbet → KK 對照 ----------
 const ARP_CONS = { B:"b",CH:"tʃ",D:"d",DH:"ð",F:"f",G:"g",HH:"h",JH:"dʒ",K:"k",
@@ -135,6 +138,19 @@ function arpaToKK(arpa) {
     const stress = (phones[vi].match(/(\d)$/) || [,"0"])[1];
     sylls.push({ phones: seg, stress });
     start = end;
+  }
+
+  // 修正：CMUdict 常把「非重音的 r 音化母音 ER0」單獨當一個音節，緊接一個以母音開頭的音節，
+  //       產生像 director→dɚˈɛktɚ、parade→pɚˈed 這種怪拆法。實際上那個 r 是下一音節的起始子音。
+  //       若某音節「最後一個音素是 ER0」且「下一音節以母音開頭」，就把 ER0 降成 ə(AH0)，
+  //       並把 r(R) 移到下一音節開頭 → dəˈrɛktɚ、pəˈred，與美式唸法一致。
+  for (let i = 0; i < sylls.length - 1; i++) {
+    const cur = sylls[i], nxt = sylls[i + 1];
+    if (cur.phones.length && cur.phones[cur.phones.length - 1] === "ER0" &&
+        nxt.phones.length && isVowelArp(nxt.phones[0])) {
+      cur.phones[cur.phones.length - 1] = "AH0"; // ɚ → ə
+      nxt.phones.unshift("R");                    // r 移到下一音節當起始子音
+    }
   }
 
   // 轉成 KK 字串
@@ -215,11 +231,12 @@ for (const file of files) {
       mismatch.push(`${file} : ${word}  你的:${item.kk}   CMUdict:[${kkSylls.join("")}]`);
     }
 
-    if (WRITE) {
-      // 缺 KK 的字（例如舊 txt 轉來的）→ 用 CMUdict 補上（照 KK 音標表符號）
-      if (!item.kk && kkSylls) item.kk = "[" + kkSylls.join("") + "]";
+    if (WRITE && kkSylls) {
+      // 有查到 CMUdict：缺 kk 就補；加 --force 連既有 kk 也覆蓋成美式標準。
+      // 只有查得到的字才動 kk / sylKK / sylWord；OOV（片語、專有名詞、整句）一律不碰，避免產生亂拆。
+      if (!item.kk || FORCE) item.kk = "[" + kkSylls.join("") + "]";
+      item.sylKK = kkSylls.join("·");
       item.sylWord = await splitWordSpelling(word);
-      if (kkSylls) item.sylKK = kkSylls.join("·");
       changed = true;
     }
   }

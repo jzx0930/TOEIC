@@ -46,7 +46,7 @@
   },
   {
     "word": "guest",
-    "kk": "[gɛst]",
+    "kk": "[ˈgɛst]",
     "translation": "客人、訪客",
     "part_of_speech": "n.",
     "note": "",
@@ -82,7 +82,7 @@
   },
   {
     "word": "novice",
-    "kk": "[ˈnɑvɪs]",
+    "kk": "[ˈnɑvəs]",
     "translation": "新手、初學者",
     "part_of_speech": "n.",
     "note": "",
@@ -91,7 +91,7 @@
   },
   {
     "word": "substitute",
-    "kk": "[ˈsʌbstəˌtjut]",
+    "kk": "[ˈsʌbstəˌtut]",
     "translation": "代替者、代理人",
     "part_of_speech": "n.",
     "note": "【音節拆解法】\nsub / sti / tute\n\n1. sub (/sʌb/): 讀起來像「沙」。\n2. sti (/stɪ/): 讀起來像「斯地」。\n3. tute (/tjuːt/): 讀起來像「吐特」。\n\n【隨節奏記憶拼寫】\n1. sub- (S-U-B)\n2. -sti- (S-T-I)\n3. -tute (T-U-T-E)\n\n【記憶小技巧】\n前綴 sub- 有「在下面」或「代理」的意思。中間的 sti 聯想為『站 (stand)』。聯想：『在下面準備站上去替換的人。』注意中間是 i 不是 u，最後以 tute (吐特) 結尾。",
@@ -118,7 +118,7 @@
   },
   {
     "word": "clerk",
-    "kk": "[klɝk]",
+    "kk": "[ˈklɝk]",
     "translation": "辦事員、書記、職員",
     "part_of_speech": "n.",
     "note": "",
@@ -150,7 +150,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "op·er·a·tor",
-    "sylKK": "ˈɑ·pɚ·ˌe·tɚ"
+    "sylKK": "ˈɑ·pə·ˌre·tɚ"
   },
   {
     "word": "conductor",
@@ -163,7 +163,7 @@
   },
   {
     "word": "president",
-    "kk": "[ˈprɛzədənt]",
+    "kk": "[ˈprɛzəˌdɛnt]",
     "translation": "總裁、總統",
     "part_of_speech": "n.",
     "note": "",
@@ -202,7 +202,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "di·rec·tor",
-    "sylKK": "dɚ·ˈɛk·tɚ"
+    "sylKK": "də·ˈrɛk·tɚ"
   },
   {
     "word": "supervisor",
@@ -251,7 +251,7 @@
   },
   {
     "word": "representative",
-    "kk": "[ˌrɛprɪˈzɛntətɪv]",
+    "kk": "[ˌrɛprəˈzɛntətɪv]",
     "translation": "代表、代理人",
     "part_of_speech": "n.",
     "note": "【音節拆解法】\nrep / re / sen / ta / tive\n\n1. rep (/rep/): 讀起來像「瑞普」。\n2. re (/rɪ/): 讀起來像「瑞」。\n3. sen (/zen/): 讀起來像「任」。\n4. ta (/tə/): 讀起來像「特」。\n5. tive (/tɪv/): 讀起來像「體夫」。\n\n【隨節奏記憶拼寫】\n1. rep- (R-E-P)\n2. -re- (R-E)\n3. -sen- (S-E-N)\n4. -ta- (T-A)\n5. -tive (T-I-V-E)\n\n【記憶小技巧】\n這個字很長，但很有規律。先寫 Present (呈現/出席)，前面加 Re- (重複)，後面加 -ative (形容詞/名詞字尾)。聯想：『反覆 (Re) 出面代表大家出席 (present) 的人。』注意中間是 sen 不是 san。",
@@ -260,7 +260,7 @@
   },
   {
     "word": "supplier",
-    "kk": "[səˈplaɪɚ]",
+    "kk": "[səpˈlaɪɚ]",
     "translation": "供應商",
     "part_of_speech": "n.",
     "note": "",
