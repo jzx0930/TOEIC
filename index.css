@@ -1845,11 +1845,20 @@ h3 {
     width: 100%;
     height: auto;
     max-height: 95vh;
+    overflow-y: auto;        /* 內容過高可捲動，確保正確/錯誤清單不被裁掉 */
+    align-content: flex-start;
   }
 
+  /* 手機：正確 / 錯誤清單一律左右並排（各半欄），並保留固定顯示高度 */
   .quiz-sidebar {
-    max-height: 42vh;      /* 清單顯示更多 */
-    flex: 1 !important;
+    flex: 1 1 47% !important;
+    height: 30vh;
+    max-height: 30vh;
+  }
+
+  /* 手機測驗選項維持 2×2 四宮格 */
+  .quiz-options-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .main-quiz-area {
