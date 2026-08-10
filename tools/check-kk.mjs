@@ -115,53 +115,81 @@ const ARP_VOWEL = (base, stress) => {
 };
 const isVowelArp = p => /^(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)/.test(p);
 
-// 把 CMUdict 的 ARPAbet 串轉成「有音節與重音記號的 KK」
+// ---------- 合法的英文「起始子音群」（用來正確切音節：kr/str… 要整組留給下一音節）----------
+// 以 ARPAbet 表示，空白分隔。單一子音一律可當起始，故只列 2、3 個子音的合法群。
+const ONSET3 = new Set(["S P L","S P R","S T R","S K L","S K R","S K W","S P Y","S T Y","S K Y"]);
+const ONSET2 = new Set([
+  "P L","P R","P Y","B L","B R","B Y","T R","T W","T Y","D R","D W","D Y",
+  "K L","K R","K W","K Y","G L","G R","G W","F L","F R","F Y","V Y",
+  "TH R","TH W","SH R","HH Y","M Y","N Y","L Y",
+  "S P","S T","S K","S M","S N","S L","S W","S F"
+]);
+// 回傳「這串子音」尾端有幾個可以合法當下一音節的起始（0~3）
+function maxOnset(cons) {
+  const n = cons.length;
+  if (n === 0) return 0;
+  if (n >= 3 && ONSET3.has(cons.slice(n - 3).join(" "))) return 3;
+  if (n >= 2 && ONSET2.has(cons.slice(n - 2).join(" "))) return 2;
+  return 1; // 單一子音一律可當起始（最大起始原則）
+}
+
+// 把 CMUdict 的 ARPAbet 串轉成「有音節與重音記號的 KK」（對齊劍橋美式）
 function arpaToKK(arpa) {
   const phones = arpa.trim().split(/\s+/);
-  // 先組成音節：以母音為核心，子音用「最大起始」原則盡量歸到後一音節
-  const nuclei = []; // 每個母音的 index
-  phones.forEach((p, i) => { if (isVowelArp(p)) nuclei.push(i); });
+  const n = phones.length;
+  const base = phones.map(p => p.replace(/\d/g, ""));
+  const stressOf = phones.map(p => (p.match(/(\d)$/) || [, "0"])[1]);
+
+  // 先算每個音素的 KK 符號。母音 AO 特別處理：劍橋美式有 cot–caught 合流，
+  //   AO 只有「緊接 r」時唸 ɔ（for→fɔr、north→nɔrθ），其餘一律 ɑ（across→əˈkrɑs、dog→dɑg、thought→θɑt）。
+  const sym = phones.map((p, i) => {
+    if (isVowelArp(base[i])) {
+      if (base[i] === "AO") return (i + 1 < n && base[i + 1] === "R") ? "ɔ" : "ɑ";
+      return ARP_VOWEL(base[i], stressOf[i]);
+    }
+    return ARP_CONS[base[i]] || base[i].toLowerCase();
+  });
+
+  // 母音核心索引
+  const nuclei = [];
+  phones.forEach((p, i) => { if (isVowelArp(base[i])) nuclei.push(i); });
   if (!nuclei.length) return null;
 
-  const sylls = []; // {phones:[], stress:"0/1/2"}
+  // 分音節：母音後的子音，用「最大合法起始」原則（kr/str… 整組留給下一音節，其餘當本節尾音）
+  const sylls = []; // { i0, i1, vi, stress, prefix }
   let start = 0;
   for (let k = 0; k < nuclei.length; k++) {
     const vi = nuclei[k];
-    const nextVi = (k + 1 < nuclei.length) ? nuclei[k + 1] : phones.length;
-    // 這個音節先含到母音；母音後的子音，最後一個之外都先留給下一音節的 onset
+    const nextVi = (k + 1 < nuclei.length) ? nuclei[k + 1] : n;
     let end;
-    const consAfter = nextVi - vi - 1; // 母音到下一母音間的子音數
-    if (k === nuclei.length - 1) end = phones.length;      // 最後一節吃到底
-    else if (consAfter <= 1) end = vi + 1;                  // 0~1 子音 → 全給下一節 onset
-    else end = vi + 1 + (consAfter - 1);                    // 多子音 → 留 1 個 onset 給下一節
-    const seg = phones.slice(start, end);
-    const stress = (phones[vi].match(/(\d)$/) || [,"0"])[1];
-    sylls.push({ phones: seg, stress });
+    const consAfter = nextVi - vi - 1;
+    if (k === nuclei.length - 1) end = n;                 // 最後一節吃到底
+    else if (consAfter <= 1) end = vi + 1;                // 0~1 子音 → 全給下一節起始
+    else {                                                // 多子音 → 只把合法起始群交給下一節，其餘留本節尾音
+      const onset = maxOnset(base.slice(vi + 1, nextVi));
+      end = vi + 1 + (consAfter - onset);
+    }
+    sylls.push({ i0: start, i1: end, vi, stress: stressOf[vi], prefix: "" });
     start = end;
   }
 
-  // 修正：CMUdict 常把「非重音的 r 音化母音 ER0」單獨當一個音節，緊接一個以母音開頭的音節，
-  //       產生像 director→dɚˈɛktɚ、parade→pɚˈed 這種怪拆法。實際上那個 r 是下一音節的起始子音。
-  //       若某音節「最後一個音素是 ER0」且「下一音節以母音開頭」，就把 ER0 降成 ə(AH0)，
-  //       並把 r(R) 移到下一音節開頭 → dəˈrɛktɚ、pəˈred，與美式唸法一致。
-  for (let i = 0; i < sylls.length - 1; i++) {
-    const cur = sylls[i], nxt = sylls[i + 1];
-    if (cur.phones.length && cur.phones[cur.phones.length - 1] === "ER0" &&
-        nxt.phones.length && isVowelArp(nxt.phones[0])) {
-      cur.phones[cur.phones.length - 1] = "AH0"; // ɚ → ə
-      nxt.phones.unshift("R");                    // r 移到下一音節當起始子音
+  // 修正：CMUdict 把「非重音 r 音化母音 ER0」單獨成節又接一個母音開頭的音節（director→dɚˈɛktɚ）時，
+  //       那個 r 其實是下一音節的起始子音。→ 把 ER0 降成 ə，r 移到下一音節開頭（→ dəˈrɛktɚ、pəˈred）。
+  for (let s = 0; s < sylls.length - 1; s++) {
+    const cur = sylls[s], nx = sylls[s + 1];
+    const lastIdx = cur.i1 - 1;
+    if (base[lastIdx] === "ER" && stressOf[lastIdx] === "0" && isVowelArp(base[nx.i0])) {
+      sym[lastIdx] = "ə";       // ɚ → ə（留本節）
+      nx.prefix += "r";          // r 移到下一音節開頭
     }
   }
 
-  // 轉成 KK 字串
+  // 組成 KK 字串
   return sylls.map(s => {
     const mark = s.stress === "1" ? "ˈ" : s.stress === "2" ? "ˌ" : "";
-    const body = s.phones.map(p => {
-      const base = p.replace(/\d/g, "");
-      const st = (p.match(/(\d)$/) || [,""])[1];
-      return isVowelArp(p) ? ARP_VOWEL(base, st) : (ARP_CONS[base] || base.toLowerCase());
-    }).join("");
-    return mark + body;
+    let body = "";
+    for (let i = s.i0; i < s.i1; i++) body += sym[i];
+    return mark + s.prefix + body;
   });
 }
 

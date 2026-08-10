@@ -82,7 +82,7 @@
     "translation": "海關",
     "part_of_speech": "n.",
     "sylWord": "cus·toms",
-    "sylKK": "ˈkʌs·təmz"
+    "sylKK": "ˈkʌ·stəmz"
   },
   {
     "word": "arrivals",
@@ -102,11 +102,11 @@
   },
   {
     "word": "declare",
-    "kk": "[dɪkˈlɛr]",
+    "kk": "[dɪˈklɛr]",
     "translation": "申報",
     "part_of_speech": "v.",
     "sylWord": "de·clare",
-    "sylKK": "dɪk·ˈlɛr"
+    "sylKK": "dɪ·ˈklɛr"
   },
   {
     "word": "boarding pass",
@@ -208,7 +208,7 @@
     "translation": "探勘",
     "part_of_speech": "n.",
     "sylWord": "ex·plo·ration",
-    "sylKK": "ˌɛksp·lə·ˈre·ʃən"
+    "sylKK": "ˌɛk·splə·ˈre·ʃən"
   },
   {
     "word": "export",
@@ -216,7 +216,7 @@
     "translation": "出口",
     "part_of_speech": "n./v.",
     "sylWord": "ex·port",
-    "sylKK": "ˈɛks·pɔrt"
+    "sylKK": "ˈɛk·spɔrt"
   },
   {
     "word": "scheme",
@@ -228,11 +228,11 @@
   },
   {
     "word": "inspect",
-    "kk": "[ˌɪnsˈpɛkt]",
+    "kk": "[ˌɪnˈspɛkt]",
     "translation": "檢查",
     "part_of_speech": "v.",
     "sylWord": "in·spect",
-    "sylKK": "ˌɪns·ˈpɛkt"
+    "sylKK": "ˌɪn·ˈspɛkt"
   },
   {
     "word": "deliver",
@@ -248,7 +248,7 @@
     "translation": "手冊指南",
     "part_of_speech": "n.",
     "sylWord": "man·u·al",
-    "sylKK": "ˈmæn·ju·əl"
+    "sylKK": "ˈmæ·nju·əl"
   },
   {
     "word": "platform",
@@ -284,11 +284,11 @@
   },
   {
     "word": "supplier",
-    "kk": "[səpˈlaɪɚ]",
+    "kk": "[səˈplaɪɚ]",
     "translation": "供應商",
     "part_of_speech": "n.",
     "sylWord": "sup·pli·er",
-    "sylKK": "səp·ˈlaɪ·ɚ"
+    "sylKK": "sə·ˈplaɪ·ɚ"
   },
   {
     "word": "discharge",
@@ -308,27 +308,27 @@
   },
   {
     "word": "recruit",
-    "kk": "[rəkˈrut]",
+    "kk": "[rəˈkrut]",
     "translation": "招募",
     "part_of_speech": "v./n.",
     "sylWord": "re·cruit",
-    "sylKK": "rək·ˈrut"
+    "sylKK": "rə·ˈkrut"
   },
   {
     "word": "employee",
-    "kk": "[ɛmpˈlɔɪi]",
+    "kk": "[ɛmˈplɔɪi]",
     "translation": "員工",
     "part_of_speech": "n.",
     "sylWord": "em·ploy·ee",
-    "sylKK": "ɛmp·ˈlɔɪ·i"
+    "sylKK": "ɛm·ˈplɔɪ·i"
   },
   {
     "word": "interview",
-    "kk": "[ˈɪntɚvˌju]",
+    "kk": "[ˈɪntɚˌvju]",
     "translation": "面試",
     "part_of_speech": "n./v.",
     "sylWord": "in·ter·view",
-    "sylKK": "ˈɪn·tɚv·ˌju"
+    "sylKK": "ˈɪn·tɚ·ˌvju"
   },
   {
     "word": "fax",
@@ -354,11 +354,11 @@
   },
   {
     "word": "procurement",
-    "kk": "[prokˈjʊrmənt]",
+    "kk": "[proˈkjʊrmənt]",
     "translation": "採購",
     "part_of_speech": "n.",
     "sylWord": "pro·cure·ment",
-    "sylKK": "prok·ˈjʊr·mənt"
+    "sylKK": "pro·ˈkjʊr·mənt"
   },
   {
     "word": "salary",
@@ -382,7 +382,7 @@
     "translation": "失敗",
     "part_of_speech": "n.",
     "sylWord": "fail·ure",
-    "sylKK": "ˈfel·jɚ"
+    "sylKK": "ˈfe·ljɚ"
   },
   {
     "word": "transition",
@@ -394,11 +394,11 @@
   },
   {
     "word": "expire",
-    "kk": "[ɪksˈpaɪr]",
+    "kk": "[ɪkˈspaɪr]",
     "translation": "到期",
     "part_of_speech": "v.",
     "sylWord": "ex·pire",
-    "sylKK": "ɪks·ˈpaɪr"
+    "sylKK": "ɪk·ˈspaɪr"
   },
   {
     "word": "merger",
@@ -462,7 +462,7 @@
     "translation": "準確",
     "part_of_speech": "adj.",
     "sylWord": "ac·cu·rate",
-    "sylKK": "ˈæk·jə·rət"
+    "sylKK": "ˈæ·kjə·rət"
   },
   {
     "word": "deadline",
@@ -478,7 +478,7 @@
     "translation": "評估／衡量",
     "part_of_speech": "v./n.",
     "sylWord": "es·ti·mate",
-    "sylKK": "ˈɛs·tə·mət"
+    "sylKK": "ˈɛ·stə·mət"
   },
   {
     "word": "profitable",

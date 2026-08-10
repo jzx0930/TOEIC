@@ -46,12 +46,12 @@
   },
   {
     "word": "satisfaction",
-    "kk": "[ˌsætəsˈfækʃən]",
+    "kk": "[ˌsætəˈsfækʃən]",
     "translation": "滿意、滿足",
     "part_of_speech": "n.",
     "note": "多益客戶服務與產品反饋情境。常見搭配：customer satisfaction (客戶滿意度)、satisfaction survey (滿意度調查)。動詞為 satisfy，形容詞為 satisfactory。",
     "sylWord": "sat·is·fac·tion",
-    "sylKK": "ˌsæ·təs·ˈfæk·ʃən"
+    "sylKK": "ˌsæ·tə·ˈsfæk·ʃən"
   },
   {
     "word": "survey",
@@ -107,12 +107,12 @@
   },
   {
     "word": "replaced",
-    "kk": "[ˌripˈlest]",
+    "kk": "[ˌriˈplest]",
     "translation": "被取代的、被更換的",
     "part_of_speech": "v. / adj.",
     "note": "多益人事異動、設備更新情境。常見搭配：be replaced by/with (被...取代)。名詞型態為 replacement (替代人選/物品)。",
     "sylWord": "re·placed",
-    "sylKK": "ˌrip·ˈlest"
+    "sylKK": "ˌri·ˈplest"
   },
   {
     "word": "our",
@@ -263,12 +263,12 @@
   },
   {
     "word": "along",
-    "kk": "[əˈlɔŋ]",
+    "kk": "[əˈlɑŋ]",
     "translation": "沿著、順著",
     "part_of_speech": "prep.",
     "note": "多益聽力 Part 1 空間方位描述高頻詞。常見搭配：along the street (沿著街道)、along the wall (沿著牆壁)。",
     "sylWord": "a·long",
-    "sylKK": "ə·ˈlɔŋ"
+    "sylKK": "ə·ˈlɑŋ"
   },
   {
     "word": "roadside",
@@ -373,7 +373,7 @@
     "part_of_speech": "n.",
     "note": "多益企業形象、飯店與餐飲評價情境。常見搭配：have a good reputation (享有良好聲譽)、build a reputation (建立名聲)。",
     "sylWord": "rep·u·ta·tion",
-    "sylKK": "ˌrɛp·jə·ˈte·ʃən"
+    "sylKK": "ˌrɛ·pjə·ˈte·ʃən"
   },
   {
     "word": "prices",
@@ -467,12 +467,12 @@
   },
   {
     "word": "electricity",
-    "kk": "[ɪˌlɛktˈrɪsəti]",
+    "kk": "[ɪˌlɛkˈtrɪsəti]",
     "translation": "電、電力",
     "part_of_speech": "n.",
     "note": "多益辦公營運與公共設施情境。常見搭配：electricity bill (電費帳單)、electricity consumption (耗電量)。",
     "sylWord": "elec·tric·i·ty",
-    "sylKK": "ɪ·ˌlɛkt·ˈrɪ·sə·ti"
+    "sylKK": "ɪ·ˌlɛk·ˈtrɪ·sə·ti"
   },
   {
     "word": "bill",
@@ -485,12 +485,12 @@
   },
   {
     "word": "substantial",
-    "kk": "[səbsˈtænʃəl]",
+    "kk": "[səbˈstænʃəl]",
     "translation": "大量的、可觀的、實質的",
     "part_of_speech": "adj.",
     "note": "多益財務、數據報告高頻核心字。常修飾金額或數量的增加。常見搭配：substantial amount (巨大數量)、substantial increase (大幅增加)。同義詞：significant, considerable。",
     "sylWord": "sub·stan·tial",
-    "sylKK": "səbs·ˈtæn·ʃəl"
+    "sylKK": "səb·ˈstæn·ʃəl"
   },
   {
     "word": "ways",
@@ -520,21 +520,21 @@
   },
   {
     "word": "extension",
-    "kk": "[ɪksˈtɛnʃən]",
+    "kk": "[ɪkˈstɛnʃən]",
     "translation": "展期、延長；分機號碼",
     "part_of_speech": "n.",
     "note": "多益多義高頻字。合約/保固情境指延長：warranty extension (保固延長)；辦公室電話情境指分機：Reach me at extension 101。",
     "sylWord": "ex·ten·sion",
-    "sylKK": "ɪks·ˈtɛn·ʃən"
+    "sylKK": "ɪk·ˈstɛn·ʃən"
   },
   {
     "word": "included",
-    "kk": "[ˌɪnkˈludəd]",
+    "kk": "[ˌɪnˈkludəd]",
     "translation": "包含在內的",
     "part_of_speech": "adj. / v.",
     "note": "多益報價、帳單明細情境。常置於名詞後修飾，如 tax included (含稅)。動詞原型為 include。反義詞：excluded。",
     "sylWord": "in·clud·ed",
-    "sylKK": "ˌɪnk·ˈlu·dəd"
+    "sylKK": "ˌɪn·ˈklu·dəd"
   },
   {
     "word": "cost",
@@ -572,12 +572,12 @@
   },
   {
     "word": "launched",
-    "kk": "[ˈlɔntʃt]",
+    "kk": "[ˈlɑntʃt]",
     "translation": "上市、發起、開辦",
     "part_of_speech": "v.",
     "note": "多益產品行銷、企業專案高頻動詞。常見搭配：launch a new product (發表新產品)、launch a marketing campaign (發起行銷活動)。",
     "sylWord": "laun·ched",
-    "sylKK": "ˈlɔntʃt"
+    "sylKK": "ˈlɑntʃt"
   },
   {
     "word": "marketing department",
@@ -633,12 +633,12 @@
   },
   {
     "word": "although",
-    "kk": "[ˌɔlˈðo]",
+    "kk": "[ˌɑlˈðo]",
     "translation": "雖然、儘管",
     "part_of_speech": "conj.",
     "note": "多益閱讀 Part 5 必考連接詞。引導讓步狀語從句。注意 although 不能與 but 連用。同義詞：even though, though。",
     "sylWord": "al·though",
-    "sylKK": "ˌɔl·ˈðo"
+    "sylKK": "ˌɑl·ˈðo"
   },
   {
     "word": "behind",
@@ -691,7 +691,7 @@
     "part_of_speech": "n.",
     "note": "多益生產與供應鏈情境高頻詞。動詞型態為 manufacture (製造)。常見搭配：car manufacturer (汽車製造商)。同義詞：producer。",
     "sylWord": "man·u·fac·tur·er",
-    "sylKK": "ˌmæn·jə·ˈfæk·tʃə·rɚ"
+    "sylKK": "ˌmæ·njə·ˈfæk·tʃə·rɚ"
   },
   {
     "word": "fit",
@@ -713,12 +713,12 @@
   },
   {
     "word": "impressed",
-    "kk": "[ˌɪmpˈrɛst]",
+    "kk": "[ˌɪmˈprɛst]",
     "translation": "留下深刻印象的",
     "part_of_speech": "adj.",
     "note": "多益面試與績效考核情境。常見搭配：be impressed with/by someone's qualifications (對某人的資歷印象深刻)。名詞為 impression。",
     "sylWord": "im·pressed",
-    "sylKK": "ˌɪmp·ˈrɛst"
+    "sylKK": "ˌɪm·ˈprɛst"
   },
   {
     "word": "qualifications",

@@ -87,7 +87,7 @@
     "part_of_speech": "動詞 (v. 過去式/過去分詞)",
     "note": "",
     "sylWord": "rep·re·sent·ed",
-    "sylKK": "ˌrɛp·rɪ·ˈzɛn·tɪd"
+    "sylKK": "ˌrɛ·prɪ·ˈzɛn·tɪd"
   },
   {
     "word": "trend",
@@ -105,7 +105,7 @@
     "part_of_speech": "名詞 (n.)",
     "note": "",
     "sylWord": "pa·trons",
-    "sylKK": "ˈpet·rənz"
+    "sylKK": "ˈpe·trənz"
   },
   {
     "word": "signify",
@@ -123,7 +123,7 @@
     "part_of_speech": "動詞 (v.)",
     "note": "",
     "sylWord": "stim·u·late",
-    "sylKK": "ˈstɪm·jə·ˌlet"
+    "sylKK": "ˈstɪ·mjə·ˌlet"
   },
   {
     "word": "competitive",
@@ -141,16 +141,16 @@
     "part_of_speech": "形容詞 (adj.)",
     "note": "",
     "sylWord": "con·stant",
-    "sylKK": "ˈkɑns·tənt"
+    "sylKK": "ˈkɑn·stənt"
   },
   {
     "word": "celebrated",
-    "kk": "[ˈsɛləbˌretɪd]",
+    "kk": "[ˈsɛləˌbretɪd]",
     "translation": "著名的",
     "part_of_speech": "形容詞 (adj.)",
     "note": "",
     "sylWord": "cel·e·brat·ed",
-    "sylKK": "ˈsɛ·ləb·ˌre·tɪd"
+    "sylKK": "ˈsɛ·lə·ˌbre·tɪd"
   },
   {
     "word": "wordy",
@@ -181,12 +181,12 @@
   },
   {
     "word": "external",
-    "kk": "[ɪksˈtɝnəl]",
+    "kk": "[ɪkˈstɝnəl]",
     "translation": "外部的",
     "part_of_speech": "形容詞 (adj.)",
     "note": "",
     "sylWord": "ex·ter·nal",
-    "sylKK": "ɪks·ˈtɝ·nəl"
+    "sylKK": "ɪk·ˈstɝ·nəl"
   },
   {
     "word": "divided",
@@ -222,16 +222,16 @@
     "part_of_speech": "副詞 (adv.)",
     "note": "",
     "sylWord": "con·sis·tent·ly",
-    "sylKK": "kən·ˈsɪs·tənt·li"
+    "sylKK": "kən·ˈsɪ·stənt·li"
   },
   {
     "word": "respectively",
-    "kk": "[rɪsˈpɛktɪvli]",
+    "kk": "[rɪˈspɛktɪvli]",
     "translation": "分別地",
     "part_of_speech": "副詞 (adv.)",
     "note": "",
     "sylWord": "re·spec·tive·ly",
-    "sylKK": "rɪs·ˈpɛk·tɪv·li"
+    "sylKK": "rɪ·ˈspɛk·tɪv·li"
   },
   {
     "word": "Slightly",
@@ -253,12 +253,12 @@
   },
   {
     "word": "Exposure",
-    "kk": "[ɪksˈpoʒɚ]",
+    "kk": "[ɪkˈspoʒɚ]",
     "translation": "暴露、接觸、(媒體)曝光",
     "part_of_speech": "名詞 (n.)",
     "note": "",
     "sylWord": "Ex·po·sure",
-    "sylKK": "ɪks·ˈpo·ʒɚ"
+    "sylKK": "ɪk·ˈspo·ʒɚ"
   },
   {
     "word": "Annoying",
@@ -298,12 +298,12 @@
   },
   {
     "word": "frustrating",
-    "kk": "[ˈfrʌstˌretɪŋ]",
+    "kk": "[ˈfrʌˌstretɪŋ]",
     "translation": "令人沮喪的",
     "part_of_speech": "形容詞",
     "note": "",
     "sylWord": "frus·trat·ing",
-    "sylKK": "ˈfrʌst·ˌre·tɪŋ"
+    "sylKK": "ˈfrʌ·ˌstre·tɪŋ"
   },
   {
     "word": "victorious",
@@ -334,12 +334,12 @@
   },
   {
     "word": "despite",
-    "kk": "[dɪsˈpaɪt]",
+    "kk": "[dɪˈspaɪt]",
     "translation": "儘管",
     "part_of_speech": "介系詞",
     "note": "",
     "sylWord": "de·spite",
-    "sylKK": "dɪs·ˈpaɪt"
+    "sylKK": "dɪ·ˈspaɪt"
   },
   {
     "word": "efforts",
@@ -431,21 +431,21 @@
   },
   {
     "word": "comply",
-    "kk": "[kəmpˈlaɪ]",
+    "kk": "[kəmˈplaɪ]",
     "translation": "遵守",
     "part_of_speech": "動詞",
     "note": "",
     "sylWord": "com·ply",
-    "sylKK": "kəmp·ˈlaɪ"
+    "sylKK": "kəm·ˈplaɪ"
   },
   {
     "word": "declined",
-    "kk": "[dɪkˈlaɪnd]",
+    "kk": "[dɪˈklaɪnd]",
     "translation": "下降/婉拒",
     "part_of_speech": "動詞",
     "note": "",
     "sylWord": "de·clined",
-    "sylKK": "dɪk·ˈlaɪnd"
+    "sylKK": "dɪ·ˈklaɪnd"
   },
   {
     "word": "monetary",
@@ -503,12 +503,12 @@
   },
   {
     "word": "publicity",
-    "kk": "[pəbˈlɪsəti]",
+    "kk": "[pəˈblɪsəti]",
     "translation": "宣傳、知名度",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "pub·lic·i·ty",
-    "sylKK": "pəb·ˈlɪ·sə·ti"
+    "sylKK": "pə·ˈblɪ·sə·ti"
   },
   {
     "word": "run an ad",
@@ -586,7 +586,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "tes·ti·mo·ni·al",
-    "sylKK": "ˌtɛs·tə·ˈmo·ni·əl"
+    "sylKK": "ˌtɛ·stə·ˈmo·ni·əl"
   },
   {
     "word": "suitable",
@@ -599,12 +599,12 @@
   },
   {
     "word": "inexperienced",
-    "kk": "[ɪnɪksˈpɪriənst]",
+    "kk": "[ɪnɪkˈspɪriənst]",
     "translation": "經驗不足的",
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "in·ex·pe·ri·enced",
-    "sylKK": "ɪ·nɪks·ˈpɪ·ri·ənst"
+    "sylKK": "ɪ·nɪk·ˈspɪ·ri·ənst"
   },
   {
     "word": "praise",
@@ -617,12 +617,12 @@
   },
   {
     "word": "completion",
-    "kk": "[kəmpˈliʃən]",
+    "kk": "[kəmˈpliʃən]",
     "translation": "完成、結束",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "com·ple·tion",
-    "sylKK": "kəmp·ˈli·ʃən"
+    "sylKK": "kəm·ˈpli·ʃən"
   },
   {
     "word": "dependable",
@@ -649,7 +649,7 @@
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "re·source·ful",
-    "sylKK": "ri·ˈsɔrs·fəl"
+    "sylKK": "ri·ˈsɔr·sfəl"
   },
   {
     "word": "expertise",
@@ -658,7 +658,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "ex·per·tise",
-    "sylKK": "ˌɛks·pɚ·ˈtiz"
+    "sylKK": "ˌɛk·spɚ·ˈtiz"
   },
   {
     "word": "eligible",
@@ -680,12 +680,12 @@
   },
   {
     "word": "appraisal",
-    "kk": "[əpˈrezəl]",
+    "kk": "[əˈprezəl]",
     "translation": "評價、考核",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "ap·praisal",
-    "sylKK": "əp·ˈre·zəl"
+    "sylKK": "ə·ˈpre·zəl"
   },
   {
     "word": "particularly",
@@ -694,7 +694,7 @@
     "part_of_speech": "adv.",
     "note": "",
     "sylWord": "par·tic·u·lar·ly",
-    "sylKK": "ˌpɑr·ˈtɪk·jə·lɚ·li"
+    "sylKK": "ˌpɑr·ˈtɪ·kjə·lɚ·li"
   },
   {
     "word": "managerial",
@@ -716,12 +716,12 @@
   },
   {
     "word": "extensive",
-    "kk": "[ɪksˈtɛnsɪv]",
+    "kk": "[ɪkˈstɛnsɪv]",
     "translation": "廣泛的、大量的",
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "ex·ten·sive",
-    "sylKK": "ɪks·ˈtɛn·sɪv"
+    "sylKK": "ɪk·ˈstɛn·sɪv"
   },
   {
     "word": "predecessor",
@@ -766,7 +766,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "te·nure",
-    "sylKK": "ˈtɛn·jɚ"
+    "sylKK": "ˈtɛ·njɚ"
   },
   {
     "word": "recognition",
@@ -779,12 +779,12 @@
   },
   {
     "word": "transfer",
-    "kk": "[trænsˈfɝ]",
+    "kk": "[trænˈsfɝ]",
     "translation": "轉移、調職",
     "part_of_speech": "v. / n.",
     "note": "",
     "sylWord": "trans·fer",
-    "sylKK": "træns·ˈfɝ"
+    "sylKK": "træn·ˈsfɝ"
   },
   {
     "word": "Discharges",
@@ -802,16 +802,16 @@
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "Com·pli·cat·ed",
-    "sylKK": "ˈkɑmp·lə·ˌke·təd"
+    "sylKK": "ˈkɑm·plə·ˌke·təd"
   },
   {
     "word": "Dismissive",
-    "kk": "[dɪsˈmɪsɪv]",
+    "kk": "[dɪˈsmɪsɪv]",
     "translation": "輕蔑的、不屑一顧的",
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "Dis·mis·sive",
-    "sylKK": "dɪs·ˈmɪ·sɪv"
+    "sylKK": "dɪ·ˈsmɪ·sɪv"
   },
   {
     "word": "Avenue",
@@ -833,21 +833,21 @@
   },
   {
     "word": "Exhausted",
-    "kk": "[ɪgˈzɔstɪd]",
+    "kk": "[ɪgˈzɑstɪd]",
     "translation": "筋疲力竭的",
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "Ex·haust·ed",
-    "sylKK": "ɪg·ˈzɔs·tɪd"
+    "sylKK": "ɪg·ˈzɑ·stɪd"
   },
   {
     "word": "Prolonged",
-    "kk": "[prəˈlɔŋd]",
+    "kk": "[prəˈlɑŋd]",
     "translation": "延長的、長期的",
     "part_of_speech": "adj.",
     "note": "",
     "sylWord": "Pro·longed",
-    "sylKK": "prə·ˈlɔŋd"
+    "sylKK": "prə·ˈlɑŋd"
   },
   {
     "word": "Fall into the latter",

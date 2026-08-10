@@ -1,12 +1,12 @@
 [
   {
     "word": "distributor",
-    "kk": "[dɪstˈrɪbjətɚ]",
+    "kk": "[dɪˈstrɪbjətɚ]",
     "translation": "分銷商、批發商",
     "part_of_speech": "n.",
     "note": "供應鏈中的發行角色",
     "sylWord": "dis·trib·u·tor",
-    "sylKK": "dɪst·ˈrɪb·jə·tɚ"
+    "sylKK": "dɪ·ˈstrɪ·bjə·tɚ"
   },
   {
     "word": "dealer",
@@ -45,12 +45,12 @@
   },
   {
     "word": "stockbroker",
-    "kk": "[ˈstɑkbˌrokɚ]",
+    "kk": "[ˈstɑkˌbrokɚ]",
     "translation": "股票經紀人",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "stock·bro·ker",
-    "sylKK": "ˈstɑkb·ˌro·kɚ"
+    "sylKK": "ˈstɑk·ˌbro·kɚ"
   },
   {
     "word": "agent",
@@ -68,7 +68,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "in·vestor",
-    "sylKK": "ˌɪn·ˈvɛs·tɚ"
+    "sylKK": "ˌɪn·ˈvɛ·stɚ"
   },
   {
     "word": "accountant",
@@ -90,21 +90,21 @@
   },
   {
     "word": "employer",
-    "kk": "[ɛmpˈlɔɪɚ]",
+    "kk": "[ɛmˈplɔɪɚ]",
     "translation": "雇主、老闆",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "em·ploy·er",
-    "sylKK": "ɛmp·ˈlɔɪ·ɚ"
+    "sylKK": "ɛm·ˈplɔɪ·ɚ"
   },
   {
     "word": "employee",
-    "kk": "[ɛmpˈlɔɪi]",
+    "kk": "[ɛmˈplɔɪi]",
     "translation": "員工、受雇者",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "em·ploy·ee",
-    "sylKK": "ɛmp·ˈlɔɪ·i"
+    "sylKK": "ɛm·ˈplɔɪ·i"
   },
   {
     "word": "staff",
@@ -148,7 +148,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "as·sis·tant",
-    "sylKK": "ə·ˈsɪs·tənt"
+    "sylKK": "ə·ˈsɪ·stənt"
   },
   {
     "word": "applicant",
@@ -157,7 +157,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "ap·pli·cant",
-    "sylKK": "ˈæp·lɪ·kənt"
+    "sylKK": "ˈæ·plɪ·kənt"
   },
   {
     "word": "expert",
@@ -166,7 +166,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "ex·pert",
-    "sylKK": "ˈɛks·pɚt"
+    "sylKK": "ˈɛk·spɚt"
   },
   {
     "word": "specialist",
@@ -179,12 +179,12 @@
   },
   {
     "word": "inspector",
-    "kk": "[ˌɪnsˈpɛktɚ]",
+    "kk": "[ˌɪnˈspɛktɚ]",
     "translation": "檢查員、督察",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "in·spec·tor",
-    "sylKK": "ˌɪns·ˈpɛk·tɚ"
+    "sylKK": "ˌɪn·ˈspɛk·tɚ"
   },
   {
     "word": "dentist",
@@ -220,7 +220,7 @@
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "pa·tron",
-    "sylKK": "ˈpet·rən"
+    "sylKK": "ˈpe·trən"
   },
   {
     "word": "sponsorship",
@@ -242,11 +242,11 @@
   },
   {
     "word": "housekeeper",
-    "kk": "[ˈhaʊsˌkipɚ]",
+    "kk": "[ˈhaʊˌskipɚ]",
     "translation": "管家、家管服務員",
     "part_of_speech": "n.",
     "note": "",
     "sylWord": "house·keep·er",
-    "sylKK": "ˈhaʊs·ˌki·pɚ"
+    "sylKK": "ˈhaʊ·ˌski·pɚ"
   }
 ]
