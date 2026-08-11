@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=65"><!-- 外部樣式表（?v=65 為破快取版本號） -->
-<script defer src="index.js?v=65"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=66"><!-- 外部樣式表（?v=66 為破快取版本號） -->
+<script defer src="index.js?v=66"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1265,13 +1265,15 @@ function handleAnswer(selectedObj, targetObj, btnElement) {
         });
     }
 
-    // 中選英：作答後唸出正確答案（英文），順便讓使用者學正確發音。
-    //   語音會延續到下一題（下一題題目是中文、不會朗讀，不衝突），所以操作速度維持和英選中一樣快。
-    if (currentQuizType === "cn-en") speakWord(targetObj.en, 'en-US');
-
-    // 停頓後進下一題（兩種題型都 0.5 秒，操作一樣快速）
+    // 中選英：作答後「馬上」唸出正確答案（英文）並「馬上」進下一題。
+    //   語音會延續播放到下一題（下一題題目是中文、不會朗讀，不衝突），所以立刻換題也聽得到發音。
     quizIndex++;
-    setTimeout(nextQuestion, 500);
+    if (currentQuizType === "cn-en") {
+        speakWord(targetObj.en, 'en-US'); // 馬上唸正確答案
+        nextQuestion();                    // 馬上進下一題
+    } else {
+        setTimeout(nextQuestion, 500);     // 英選中：維持 0.5 秒停頓
+    }
 }
 
 // updateSideList：把單字加入左（正確）或右（錯誤）側清單，最新的排最上面
