@@ -1580,10 +1580,11 @@ h3 {
 
 /* 選項按鈕外觀 */
 /* 選項容器：2×2 四宮格（左上 / 右上 / 左下 / 右下），加大點擊區、避免點錯 */
+/* align-items:stretch（預設）→ 同一列的兩顆按鈕會等高：左上＝右上、左下＝右下。 */
 .quiz-options-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
+  align-items: stretch;
   gap: 14px;
 }
 
