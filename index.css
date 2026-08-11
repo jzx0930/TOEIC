@@ -1443,6 +1443,11 @@ h3 {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
+/* 右側「錯誤清單」外框改紅色（與綠色的正確清單區隔） */
+.quiz-sidebar:last-child {
+  border-color: var(--red-error);
+}
+
 /* 側邊欄標題（✓ 正確清單 / ✗ 錯誤清單） */
 .sidebar-title {
   padding: 14px;
@@ -1515,6 +1520,7 @@ h3 {
 /* 主測驗區域（題目與選項） */
 .main-quiz-area {
   flex: 1.2;
+  align-self: center;         /* 高度只到內容、垂直置中；不再與左右清單一樣高 */
   background: rgba(34, 34, 34, 0.9);
   padding: 28px 35px;
   border-radius: 15px;
