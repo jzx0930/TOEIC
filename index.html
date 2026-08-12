@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=66"><!-- 外部樣式表（?v=66 為破快取版本號） -->
-<script defer src="index.js?v=66"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=67"><!-- 外部樣式表（?v=67 為破快取版本號） -->
+<script defer src="index.js?v=67"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -68,6 +68,7 @@
   <select id="quizMode" class="search-input" style="width: auto; margin-bottom: 10px;">
     <option value="en-cn" selected>英選中 (看英文選中文)</option>
     <option value="cn-en">中選英 (看中文選英文)</option>
+    <option value="listen-cn">聽選中 (聽發音選中文)</option>
   </select>
 
 
@@ -105,6 +106,9 @@
 
       <!-- 題目框：作答後整框變綠(對)/變紅(錯) 當作對錯回饋 -->
       <h3 id="quizQuestionCN" class="quiz-question-box">題目</h3>
+
+      <!-- 「聽選中」題型專用：再唸一次（其餘題型隱藏） -->
+      <button id="quizReplayBtn" class="search-button" style="display:none; margin:0 auto 4px;" onclick="replayQuizAudio()">🔊 再唸一次</button>
 
       <!-- 選項按鈕由 JS 動態塞入此格線容器：2×2 四宮格（左上/右上/左下/右下） -->
       <div id="quizOptions" class="quiz-options-grid"></div>
@@ -1184,11 +1188,19 @@ function nextQuestion() {
     optionsBox.innerHTML = ""; // 清空上一題的選項
 
     const target = currentQuizList[quizIndex]; // 本題正解
+    currentQuizTarget = target;                // 供「再唸一次」按鈕重播用
 
     // --- 根據題型決定題目顯示哪一面 ---
-    // 中選英：題目顯示中文；英選中：題目顯示英文
-    document.getElementById("quizQuestionCN").textContent =
-        (currentQuizType === "cn-en") ? target.cn : target.en;
+    // 中選英：顯示中文；英選中：顯示英文；聽選中：不顯示英文（只聽發音），顯示提示字
+    const qBox = document.getElementById("quizQuestionCN");
+    if (currentQuizType === "listen-cn") {
+        qBox.textContent = "🔊 聽發音，選出正確的中文";
+    } else {
+        qBox.textContent = (currentQuizType === "cn-en") ? target.cn : target.en;
+    }
+    // 「再唸一次」按鈕只在聽選中出現
+    document.getElementById("quizReplayBtn").style.display =
+        (currentQuizType === "listen-cn") ? "block" : "none";
 
     // 從「所有單字」中抽 3 個當干擾項
     let allFlattened = [];
@@ -1218,12 +1230,17 @@ function nextQuestion() {
         optionsBox.appendChild(btn);
     });
 
-    // --- 一進到新題目就先唸一遍題目給測驗者聽 ---
-    // 只在「英選中」（題目是英文）才唸；「中選英」題目是中文、且英文是答案，
-    // 用英文語音唸中文會壞掉、也會洩題，故略過。
-    if (currentQuizType === "en-cn") {
+    // --- 一進到新題目就先唸一遍英文題目給測驗者聽 ---
+    // 英選中（題目是英文）與聽選中（只靠聽）都唸英文；中選英題目是中文、英文是答案，不唸（會洩題）。
+    if (currentQuizType === "en-cn" || currentQuizType === "listen-cn") {
         speakWord(target.en, 'en-US');
     }
+}
+
+// replayQuizAudio：「聽選中」題型的「🔊 再唸一次」按鈕，重播本題英文
+let currentQuizTarget = null;
+function replayQuizAudio() {
+    if (currentQuizTarget) speakWord(currentQuizTarget.en, 'en-US');
 }
 
 // handleAnswer：處理使用者點選某個選項後的判定與回饋
