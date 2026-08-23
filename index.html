@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=67"><!-- 外部樣式表（?v=67 為破快取版本號） -->
-<script defer src="index.js?v=67"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=68"><!-- 外部樣式表（?v=68 為破快取版本號） -->
+<script defer src="index.js?v=68"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -601,10 +601,10 @@ async function loadWordsFromFile(fileName) {
     container.appendChild(section);
 
     // 同步把這個區塊的單字加入「測驗池」quizPool，供抽考使用
-    // 只取 en（英文）與 cn（中文）兩個欄位
+    // 只取 en（英文）與 cn（中文）兩個欄位；cn 去掉詞性標記（如 adv./n./v.），避免測驗選項洩題、太好猜
    quizPool[sectionTitleText] = wordList.map(item => ({
       en: item.word,
-      cn: item.translation
+      cn: stripPos(item.translation)
     }));
 updateQuizRangeUI(sectionTitleText); // 同步把此區塊加進「測驗範圍」下拉選單
   } catch (err) {
@@ -1050,6 +1050,19 @@ function renderGrammar(data) {
         sec.appendChild(list);
         box.appendChild(sec);
     });
+}
+
+// stripPos：把中文翻譯裡的「詞性標記」拿掉（測驗選項用，避免洩題）。
+//   例："極大地、非常 adv." → "極大地、非常"；"n./v./adj." 這種只有詞性的 → 清空後退回原字（避免空白選項）。
+//   處理：先去掉 (ing)/(過去式) 之類附註，再去掉 n. v. vt. vi. adj. adv. prep. conj. pron. aux. art. abbr. phr. interj.（可用 / 串接），最後修尾。
+function stripPos(s) {
+    if (!s) return s;
+    const POS = "n|v|vt|vi|adj|adv|prep|conj|pron|aux|art|abbr|phr|interj";
+    let t = String(s);
+    t = t.replace(/\s*\((?:ing|過去式|複數|pl\.?)\)/gi, "");
+    t = t.replace(new RegExp("\\s*\\b(?:" + POS + ")\\.(?:\\s*\\/\\s*(?:" + POS + ")\\.?)*", "gi"), "");
+    t = t.replace(/[\s、,\/]+$/g, "").trim();
+    return t || String(s).trim(); // 全被清掉（原本只有詞性、沒中文）→ 退回原字，避免空白
 }
 
 // --- 測驗功能專用的全域變數 ---
