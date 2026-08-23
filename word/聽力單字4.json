@@ -4,14 +4,18 @@
     "kk": "[ˈtaɪpɪŋ]",
     "translation": "打字",
     "part_of_speech": "v.",
-    "note": "多益聽力 Part 1 常考動作。例：typing on a keyboard (在鍵盤上打字)。"
+    "note": "多益聽力 Part 1 常考動作。例：typing on a keyboard (在鍵盤上打字)。",
+    "sylKK": "ˈtaɪ·pɪŋ",
+    "sylWord": "typ·ing"
   },
   {
     "word": "concert",
     "kk": "[ˈkɑnsɚt]",
     "translation": "音樂會",
     "part_of_speech": "n.",
-    "note": "常搭配 hold/attend a concert (舉辦/參加音樂會)。注意與 concert (拼字錯誤) 區分。"
+    "note": "常搭配 hold/attend a concert (舉辦/參加音樂會)。",
+    "sylKK": "ˈkɑn·sɚt",
+    "sylWord": "con·cert"
   },
   {
     "word": "open position",
@@ -22,24 +26,30 @@
   },
   {
     "word": "thought",
-    "kk": "[θɔt]",
+    "kk": "[ˈθɑt]",
     "translation": "想法、思考",
     "part_of_speech": "n. / v.",
-    "note": "think 的過去式與過去分詞。名詞常考：give some thought to (考慮...)。"
+    "note": "think 的過去式與過去分詞。名詞常考：give some thought to (考慮...)。",
+    "sylKK": "ˈθɑt",
+    "sylWord": "thought"
   },
   {
     "word": "gate",
-    "kk": "[ɡet]",
+    "kk": "[ˈget]",
     "translation": "登機門、大門",
     "part_of_speech": "n.",
-    "note": "機場/交通常考。例：boarding gate (登機門)。"
+    "note": "機場/交通常考。例：boarding gate (登機門)。",
+    "sylKK": "ˈget",
+    "sylWord": "gate"
   },
   {
     "word": "candidate",
-    "kk": "[ˈkændədət]",
+    "kk": "[ˈkændədet]",
     "translation": "求職者、候選人",
     "part_of_speech": "n.",
-    "note": "招聘情境極常考。同義詞：applicant。"
+    "note": "招聘情境極常考。同義詞：applicant。",
+    "sylKK": "ˈkæn·də·det",
+    "sylWord": "can·di·date"
   },
   {
     "word": "potted plant",
@@ -53,14 +63,18 @@
     "kk": "[əˈrendʒ]",
     "translation": "安排、排列",
     "part_of_speech": "v.",
-    "note": "Part 1 常考被動語態：be arranged (被排列好)；Part 3/4 常考 arrange a meeting。"
+    "note": "Part 1 常考被動語態：be arranged (被排列好)；Part 3/4 常考 arrange a meeting。",
+    "sylKK": "ə·ˈrendʒ",
+    "sylWord": "ar·range"
   },
   {
     "word": "beside",
     "kk": "[bɪˈsaɪd]",
     "translation": "在...旁邊",
     "part_of_speech": "prep.",
-    "note": "方位介系詞。注意勿混淆 besides (adv. 此外)。"
+    "note": "方位介系詞。注意勿混淆 besides (adv. 此外)。",
+    "sylKK": "bɪ·ˈsaɪd",
+    "sylWord": "be·side"
   },
   {
     "word": "parking lot",
@@ -78,52 +92,66 @@
   },
   {
     "word": "prefer",
-    "kk": "[prɪˈfɝ]",
+    "kk": "[prəˈfɝ]",
     "translation": "偏好、更喜歡",
     "part_of_speech": "v.",
-    "note": "搭配：prefer A to B (喜歡 A 胜於 B)；名詞為 preference。"
+    "note": "搭配：prefer A to B (喜歡 A 勝於 B)；名詞為 preference。",
+    "sylKK": "prə·ˈfɝ",
+    "sylWord": "pre·fer"
   },
   {
     "word": "aisle",
-    "kk": "[aɪl]",
+    "kk": "[ˈaɪl]",
     "translation": "走道",
     "part_of_speech": "n.",
-    "note": "交通/零售情境。常考：aisle seat (靠走道的座位)。"
+    "note": "交通/零售情境。常考：aisle seat (靠走道的座位)。",
+    "sylKK": "ˈaɪl",
+    "sylWord": "aisle"
   },
   {
     "word": "approach",
     "kk": "[əˈprotʃ]",
     "translation": "接近、靠近；方法",
     "part_of_speech": "v. / n.",
-    "note": "動詞表示時間或空間接近；名詞表示處理問題的方法。"
+    "note": "動詞表示時間或空間接近；名詞表示處理問題的方法。",
+    "sylKK": "ə·ˈprotʃ",
+    "sylWord": "ap·proach"
   },
   {
     "word": "dock",
-    "kk": "[dɑk]",
+    "kk": "[ˈdɑk]",
     "translation": "碼頭、船塢",
     "part_of_speech": "n.",
-    "note": "Part 1 聽力常考：be docked at the pier (停靠在碼頭)。"
+    "note": "Part 1 聽力常考：be docked at the pier (停靠在碼頭)。",
+    "sylKK": "ˈdɑk",
+    "sylWord": "dock"
   },
   {
     "word": "retirement",
-    "kk": "[rɪˈtaɪrmənt]",
+    "kk": "[riˈtaɪɚmənt]",
     "translation": "退休",
     "part_of_speech": "n.",
-    "note": "人事活動常考。常見：retirement party (退休派對)。"
+    "note": "人事活動常考。常見：retirement party (退休派對)。",
+    "sylKK": "ri·ˈtaɪ·ɚ·mənt",
+    "sylWord": "re·tire·ment"
   },
   {
     "word": "deliver",
-    "kk": "[dɪˈlɪvɝ]",
+    "kk": "[dɪˈlɪvɚ]",
     "translation": "傳送、遞送；發表(演講)",
     "part_of_speech": "v.",
-    "note": "多義字：deliver a package (寄送包裹) / deliver a speech (發表演講)。"
+    "note": "多義字：deliver a package (寄送包裹) / deliver a speech (發表演講)。",
+    "sylKK": "dɪ·ˈlɪ·vɚ",
+    "sylWord": "de·liv·er"
   },
   {
     "word": "currency",
     "kk": "[ˈkɝənsi]",
     "translation": "貨幣",
     "part_of_speech": "n.",
-    "note": "金融情境。常考搭配：foreign currency (外幣)、currency exchange (外幣兌換)。"
+    "note": "金融情境。常考搭配：foreign currency (外幣)、currency exchange (外幣兌換)。",
+    "sylKK": "ˈkɝ·ən·si",
+    "sylWord": "cur·ren·cy"
   },
   {
     "word": "grocery store",
@@ -137,84 +165,108 @@
     "kk": "[ˈtrævəlɚ]",
     "translation": "旅客、旅行者",
     "part_of_speech": "n.",
-    "note": "旅遊/交通情境。同義詞：passenger (乘客)、tourist (觀光客)。"
+    "note": "旅遊/交通情境。同義詞：passenger (乘客)、tourist (觀光客)。",
+    "sylKK": "ˈtræ·və·lɚ",
+    "sylWord": "trav·el·er"
   },
   {
     "word": "evacuate",
-    "kk": "[ɪˈvækjuˌet]",
+    "kk": "[ɪˈvækjəˌet]",
     "translation": "撤離、疏散",
     "part_of_speech": "v.",
-    "note": "安全廣播常考。名詞形為 evacuation (例：evacuation route 逃生路線)。"
+    "note": "安全廣播常考。名詞形為 evacuation (例：evacuation route 逃生路線)。",
+    "sylKK": "ɪ·ˈvæ·kjə·ˌet",
+    "sylWord": "evac·u·ate"
   },
   {
     "word": "terminal",
-    "kk": "[ˈtɝmənḷ]",
+    "kk": "[ˈtɝmənəl]",
     "translation": "航廈、終點站",
     "part_of_speech": "n.",
-    "note": "機場常用：Terminal 1 (第一航廈)；bus terminal (客運總站)。"
+    "note": "機場常用：Terminal 1 (第一航廈)；bus terminal (客運總站)。",
+    "sylKK": "ˈtɝ·mə·nəl",
+    "sylWord": "ter·mi·nal"
   },
   {
     "word": "drawback",
-    "kk": "[ˈdrɔˌbæk]",
+    "kk": "[ˈdrɑˌbæk]",
     "translation": "缺點、短處",
     "part_of_speech": "n.",
-    "note": "商務討論/比較。同義詞：disadvantage, shortcoming；反義詞：advantage, benefit。"
+    "note": "商務討論/比較。同義詞：disadvantage, shortcoming；反義詞：advantage, benefit。",
+    "sylKK": "ˈdrɑ·ˌbæk",
+    "sylWord": "draw·back"
   },
   {
     "word": "interested",
     "kk": "[ˈɪntrəstɪd]",
     "translation": "感興趣的",
     "part_of_speech": "adj.",
-    "note": "固定搭配：be interested in + N/V-ing (對...感興趣)。"
+    "note": "固定搭配：be interested in + N/V-ing (對...感興趣)。",
+    "sylKK": "ˈɪn·trə·stɪd",
+    "sylWord": "in·ter·est·ed"
   },
   {
     "word": "submit",
     "kk": "[səbˈmɪt]",
     "translation": "提交、遞交",
     "part_of_speech": "v.",
-    "note": "多益高頻詞。常考：submit an application (提交申請表)。同義詞：hand in, turn in。"
+    "note": "多益高頻詞。常考：submit an application (提交申請表)。同義詞：hand in, turn in。",
+    "sylKK": "səb·ˈmɪt",
+    "sylWord": "sub·mit"
   },
   {
     "word": "application",
     "kk": "[ˌæpləˈkeʃən]",
     "translation": "申請、申請書",
     "part_of_speech": "n.",
-    "note": "常用搭配：job application (求職申請)、application form (申請表)。"
+    "note": "常用搭配：job application (求職申請)、application form (申請表)。",
+    "sylKK": "ˌæ·plə·ˈke·ʃən",
+    "sylWord": "ap·pli·ca·tion"
   },
   {
     "word": "advance",
     "kk": "[ədˈvæns]",
     "translation": "預先；進步",
     "part_of_speech": "n. / v. / adj.",
-    "note": "高頻片語：in advance (事先/提前)。例：book in advance (預先預訂)。"
+    "note": "高頻片語：in advance (事先/提前)。例：book in advance (預先預訂)。",
+    "sylKK": "əd·ˈvæns",
+    "sylWord": "ad·vance"
   },
   {
     "word": "organize",
-    "kk": "[ˈɔrɡəˌnaɪz]",
+    "kk": "[ˈɔrgəˌnaɪz]",
     "translation": "組織、籌備、整理",
     "part_of_speech": "v.",
-    "note": "常見搭配：organize an event (舉辦活動)。名詞形為 organization。"
+    "note": "常見搭配：organize an event (舉辦活動)。名詞形為 organization。",
+    "sylKK": "ˈɔr·gə·ˌnaɪz",
+    "sylWord": "or·ga·nize"
   },
   {
     "word": "staff",
-    "kk": "[stæf]",
+    "kk": "[ˈstæf]",
     "translation": "全體員工",
     "part_of_speech": "n.",
-    "note": "集合名詞。形容詞搭配：staff member (單一員工)、staff meeting (員工會議)。"
+    "note": "集合名詞。形容詞搭配：staff member (單一員工)、staff meeting (員工會議)。",
+    "sylKK": "ˈstæf",
+    "sylWord": "staff"
   },
   {
     "word": "hesitate",
-    "kk": "[ˈhɛzətət]",
+    "kk": "[ˈhɛzəˌtet]",
     "translation": "猶豫、遲疑",
     "part_of_speech": "v.",
-    "note": "客服/信件高頻句型：Don't hesitate to contact us. (請毫不猶豫地聯繫我們)。"
+    "note": "客服/信件高頻句型：Don't hesitate to contact us. (請毫不猶豫地聯繫我們)。",
+    "sylKK": "ˈhɛ·zə·ˌtet",
+    "sylWord": "hes·i·tate"
   },
   {
     "word": "actually",
-    "kk": "[ˈæktʃuəlɪ]",
+    "kk": "[ˈækˌtʃuəli]",
     "translation": "實際上、其實",
     "part_of_speech": "adv.",
-    "note": "口語對話轉換話題或澄清事實時常用。"
+    "note": "口語對話轉換話題或澄清事實時常用。",
+    "sylKK": "ˈæk·ˌtʃu·ə·li",
+    "sylWord": "ac·tu·al·ly"
   },
   {
     "word": "job fair",
@@ -225,66 +277,82 @@
   },
   {
     "word": "wait",
-    "kk": "[wet]",
+    "kk": "[ˈwet]",
     "translation": "等待",
     "part_of_speech": "v.",
-    "note": "常見搭配：wait for (等待...)、wait in line (排隊等待)。"
+    "note": "常見搭配：wait for (等待...)、wait in line (排隊等待)。",
+    "sylKK": "ˈwet",
+    "sylWord": "wait"
   },
   {
     "word": "recruiter",
     "kk": "[rɪˈkrutɚ]",
     "translation": "招聘人員、獵頭",
     "part_of_speech": "n.",
-    "note": "動詞為 recruit (招募)。招募情境核心詞。"
+    "note": "動詞為 recruit (招募)。招募情境核心詞。",
+    "sylKK": "rɪ·ˈkru·tɚ",
+    "sylWord": "re·cruiter"
   },
   {
     "word": "pharmaceutical",
-    "kk": "[ˌfɑrməˈsutɪkḷ]",
+    "kk": "[ˌfɑrməˈsutɪkəl]",
     "translation": "製藥的、藥品的",
     "part_of_speech": "adj.",
-    "note": "產業單字。常用：pharmaceutical industry (製藥業)、pharmaceutical company (製藥公司)。"
+    "note": "產業單字。常用：pharmaceutical industry (製藥業)、pharmaceutical company (製藥公司)。",
+    "sylKK": "ˌfɑr·mə·ˈsu·tɪ·kəl",
+    "sylWord": "phar·ma·ceu·ti·cal"
   },
   {
     "word": "industry",
     "kk": "[ˈɪndəstri]",
     "translation": "產業、工業",
     "part_of_speech": "n.",
-    "note": "常搭配各種領域：service industry (服務業)、tech industry (科技業)。"
+    "note": "常搭配各種領域：service industry (服務業)、tech industry (科技業)。",
+    "sylKK": "ˈɪn·də·stri",
+    "sylWord": "in·dus·try"
   },
   {
     "word": "publish",
     "kk": "[ˈpʌblɪʃ]",
     "translation": "出版、發表",
     "part_of_speech": "v.",
-    "note": "出版物情境。名詞為 publisher (出版商) 或 publication (出版物)。"
+    "note": "出版物情境。名詞為 publisher (出版商) 或 publication (出版物)。",
+    "sylKK": "ˈpʌ·blɪʃ",
+    "sylWord": "pub·lish"
   },
   {
     "word": "author",
-    "kk": "[ˈɔθɚ]",
+    "kk": "[ˈɑθɚ]",
     "translation": "作者",
     "part_of_speech": "n.",
-    "note": "書籍/文章常見。同義詞：writer。"
+    "note": "書籍/文章常見。同義詞：writer。",
+    "sylKK": "ˈɑ·θɚ",
+    "sylWord": "au·thor"
   },
   {
     "word": "subject",
     "kk": "[ˈsʌbdʒɪkt]",
     "translation": "主題、科目",
     "part_of_speech": "n.",
-    "note": "電子郵件常考：subject line (主旨欄)。"
+    "note": "電子郵件常考：subject line (主旨欄)。",
+    "sylKK": "ˈsʌb·dʒɪkt",
+    "sylWord": "sub·ject"
   },
   {
     "word": "biology",
     "kk": "[baɪˈɑlədʒi]",
     "translation": "生物學",
     "part_of_speech": "n.",
-    "note": "學術/科普背景詞。衍生詞：biological (adj. 生物的)。"
+    "note": "學術/科普背景詞。衍生詞：biological (adj. 生物的)。",
+    "sylKK": "baɪ·ˈɑ·lə·dʒi",
+    "sylWord": "bi·ol·o·gy"
   },
   {
     "word": "be held",
     "kk": "[bi hɛld]",
     "translation": "舉行、舉辦",
     "part_of_speech": "v. phr.",
-    "note": " hold 的被動形態。高頻用法：The meeting will be held on Monday."
+    "note": "hold 的被動形態。高頻用法：The meeting will be held on Monday."
   },
   {
     "word": "city hall",
@@ -295,31 +363,39 @@
   },
   {
     "word": "proceeds",
-    "kk": "[ˈprosidz]",
+    "kk": "[prəˈsidz]",
     "translation": "收益、收入",
     "part_of_speech": "n.",
-    "note": "多益恆用複數形。常見搭配：proceeds from the event (活動收益)。"
+    "note": "多益恆用複數形。常見搭配：proceeds from the event (活動收益)。",
+    "sylKK": "prə·ˈsidz",
+    "sylWord": "pro·ceeds"
   },
   {
     "word": "charity",
-    "kk": "[ˈtʃærətɪ]",
+    "kk": "[ˈtʃɛrɪti]",
     "translation": "慈善機構、慈善活動",
     "part_of_speech": "n.",
-    "note": "常見搭配：donate to charity (捐款給慈善機構)。"
+    "note": "常見搭配：donate to charity (捐款給慈善機構)。",
+    "sylKK": "ˈtʃɛ·rɪ·ti",
+    "sylWord": "char·i·ty"
   },
   {
     "word": "develop",
     "kk": "[dɪˈvɛləp]",
     "translation": "開發、研發、發展",
     "part_of_speech": "v.",
-    "note": "商業常見：develop a new product (開發新產品)。"
+    "note": "商業常見：develop a new product (開發新產品)。",
+    "sylKK": "dɪ·ˈvɛ·ləp",
+    "sylWord": "de·vel·op"
   },
   {
     "word": "drug",
-    "kk": "[drʌɡ]",
+    "kk": "[ˈdrʌg]",
     "translation": "藥物、藥品",
     "part_of_speech": "n.",
-    "note": "醫療/製藥情境。同義詞：medication, medicine。"
+    "note": "醫療/製藥情境。同義詞：medication, medicine。",
+    "sylKK": "ˈdrʌg",
+    "sylWord": "drug"
   },
   {
     "word": "alleviate symptoms",
@@ -330,38 +406,48 @@
   },
   {
     "word": "regularly",
-    "kk": "[ˈrɛɡjəlɚli]",
+    "kk": "[ˈrɛgjəlɚli]",
     "translation": "定期地、經常地",
     "part_of_speech": "adv.",
-    "note": "時態考點常客（配合現在簡單式）。例：check email regularly。"
+    "note": "時態考點常客（配合現在簡單式）。例：check email regularly。",
+    "sylKK": "ˈrɛg·jə·lɚ·li",
+    "sylWord": "reg·u·lar·ly"
   },
   {
     "word": "decor",
-    "kk": "[deˈkɔr]",
+    "kk": "[dɪˈkɔr]",
     "translation": "裝潢、裝飾風格",
     "part_of_speech": "n.",
-    "note": "飯店/餐廳/裝修情境常用。同義詞：decoration。"
+    "note": "飯店/餐廳/裝修情境常用。同義詞：decoration。",
+    "sylKK": "dɪ·ˈkɔr",
+    "sylWord": "de·cor"
   },
   {
     "word": "provide",
     "kk": "[prəˈvaɪd]",
     "translation": "提供",
     "part_of_speech": "v.",
-    "note": "高頻動詞。搭配：provide sb with sth / provide sth for sb。"
+    "note": "高頻動詞。搭配：provide sb with sth / provide sth for sb。",
+    "sylKK": "prə·ˈvaɪd",
+    "sylWord": "pro·vide"
   },
   {
     "word": "incentive",
-    "kk": "[ɪnˈsɛntɪv]",
+    "kk": "[ˌɪnˈsɛntɪv]",
     "translation": "獎勵、誘因",
     "part_of_speech": "n.",
-    "note": "管理/銷售常見。例：financial incentive (金錢激勵)、incentive program (獎勵計畫)。"
+    "note": "管理/銷售常見。例：financial incentive (金錢激勵)、incentive program (獎勵計畫)。",
+    "sylKK": "ˌɪn·ˈsɛn·tɪv",
+    "sylWord": "in·cen·tive"
   },
   {
     "word": "invest",
-    "kk": "[ɪnˈvɛst]",
+    "kk": "[ˌɪnˈvɛst]",
     "translation": "投資",
     "part_of_speech": "v.",
-    "note": "商業金融。固定搭配：invest in + N (投資於...)。名詞為 investment。"
+    "note": "商業金融。固定搭配：invest in + N (投資於...)。名詞為 investment。",
+    "sylKK": "ˌɪn·ˈvɛst",
+    "sylWord": "in·vest"
   },
   {
     "word": "look through",
@@ -389,7 +475,9 @@
     "kk": "[ˈmɛnʃən]",
     "translation": "提及、說起",
     "part_of_speech": "v.",
-    "note": "聽力測驗高頻提問：What is mentioned about...? (關於...提及了什麼？)"
+    "note": "聽力測驗高頻提問：What is mentioned about...? (關於...提及了什麼？)",
+    "sylKK": "ˈmɛn·ʃən",
+    "sylWord": "men·tion"
   },
   {
     "word": "main course",
@@ -403,7 +491,9 @@
     "kk": "[ˈspɛʃəl]",
     "translation": "特別的；招牌菜/特價商品",
     "part_of_speech": "adj. / n.",
-    "note": "餐廳情境中，作名詞指 today's special (今日特餐)。"
+    "note": "餐廳情境中，作名詞指 today's special (今日特餐)。",
+    "sylKK": "ˈspɛ·ʃəl",
+    "sylWord": "spe·cial"
   },
   {
     "word": "either... or...",
@@ -414,23 +504,29 @@
   },
   {
     "word": "grilled",
-    "kk": "[ɡrɪld]",
+    "kk": "[ˈgrɪld]",
     "translation": "烤的、烤架燒烤的",
     "part_of_speech": "adj.",
-    "note": "菜單常見。例：grilled chicken (烤雞)。"
+    "note": "菜單常見。例：grilled chicken (烤雞)。",
+    "sylKK": "ˈgrɪld",
+    "sylWord": "gril·led"
   },
   {
     "word": "stew",
-    "kk": "[stu]",
+    "kk": "[ˈstu]",
     "translation": "燉菜、燉煮",
     "part_of_speech": "n. / v.",
-    "note": "餐飲常用。例：beef stew (燉牛肉)。"
+    "note": "餐飲常用。例：beef stew (燉牛肉)。",
+    "sylKK": "ˈstu",
+    "sylWord": "stew"
   },
   {
     "word": "interpret",
-    "kk": "[ɪnˈtɝprɪt]",
+    "kk": "[ˌɪnˈtɝprət]",
     "translation": "解釋、詮釋、口譯",
     "part_of_speech": "v.",
-    "note": "名詞形為 interpreter (口譯員) 或 interpretation (解釋)。"
+    "note": "名詞形為 interpreter (口譯員) 或 interpretation (解釋)。",
+    "sylKK": "ˌɪn·ˈtɝ·prət",
+    "sylWord": "in·ter·pret"
   }
 ]
