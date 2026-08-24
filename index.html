@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=69"><!-- 外部樣式表（?v=69 為破快取版本號） -->
-<script defer src="index.js?v=69"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=70"><!-- 外部樣式表（?v=70 為破快取版本號） -->
+<script defer src="index.js?v=70"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -305,6 +305,13 @@
      涵蓋：資料載入、單字卡渲染、發音、循環朗讀、搜尋、抽考測驗
      ===================================================================== -->
 <script>
+// 讓發音音檔與背景音樂「混音、不壓低音量」：把音訊工作階段設為 ambient。
+//   目前只有 iPhone Safari 有實作 navigator.audioSession；其他瀏覽器沒有此屬性 → 自動略過（no-op）。
+//   注意：ambient 音訊會受 iPhone 側邊靜音鍵影響（靜音時發音也會靜音），這是此模式的取捨。
+try {
+  if (navigator.audioSession) navigator.audioSession.type = "ambient";
+} catch (e) { /* 不支援就忽略 */ }
+
 // repeatStatus：記錄每個單字「重複朗讀」按鈕的開關狀態（key = 單字+語系）
 const repeatStatus = {};
 // container：所有單字卡的外層容器（對應上面的 #word-container）
