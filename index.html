@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=72"><!-- 外部樣式表（?v=72 為破快取版本號） -->
-<script defer src="index.js?v=72"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=73"><!-- 外部樣式表（?v=73 為破快取版本號） -->
+<script defer src="index.js?v=73"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -171,6 +171,9 @@
     </div>
 </div>
 
+
+  <!-- 我的最愛：使用者用星星加入的單字（存在瀏覽器 localStorage，換頁/重開仍在） -->
+  <div id="fav-panel" class="fav-panel" style="display:none;"></div>
 
   <!-- 所有單字卡（依各 JSON/TXT 檔分成多個可折疊區塊）會被 JS 動態塞進這裡 -->
   <div id="word-container"></div>
@@ -316,6 +319,43 @@ try {
 const repeatStatus = {};
 // container：所有單字卡的外層容器（對應上面的 #word-container）
 const container = document.getElementById("word-container");
+
+// ===== 我的最愛（★）：使用者自選的單字，存在瀏覽器 localStorage（換頁／重開瀏覽器仍保留） =====
+const FAV_KEY = "toeic_favorites";
+let favorites = (function () { try { return JSON.parse(localStorage.getItem(FAV_KEY)) || {}; } catch (e) { return {}; } })();
+function saveFavs() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favorites)); } catch (e) {} }
+function isFav(word) { return !!favorites[word]; }
+function attrEsc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+function updateStar(btn) { const on = isFav(btn.dataset.word); btn.textContent = on ? "★" : "☆"; btn.classList.toggle("active", on); }
+// 點星星：加入 / 移除最愛，並同步所有同字的星星與上方清單
+function toggleFav(btn) {
+    const word = btn.dataset.word;
+    if (favorites[word]) delete favorites[word];
+    else favorites[word] = { word: word, kk: btn.dataset.kk || "", translation: btn.dataset.cn || "" };
+    saveFavs();
+    document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === word) updateStar(b); });
+    renderFavPanel();
+}
+// 重繪最上方「我的最愛」清單
+function renderFavPanel() {
+    const panel = document.getElementById("fav-panel");
+    if (!panel) return;
+    const items = Object.values(favorites);
+    if (!items.length) { panel.style.display = "none"; panel.innerHTML = ""; return; }
+    panel.style.display = "block";
+    panel.innerHTML =
+        `<div class="fav-head">⭐ 我的最愛（${items.length}）</div><div class="fav-list">` +
+        items.map(it => {
+            const sw = String(it.word).replace(/'/g, "\\'");
+            return `<div class="fav-item">` +
+                `<button class="fav-star active" data-word="${attrEsc(it.word)}" data-kk="${attrEsc(it.kk || "")}" data-cn="${attrEsc(it.translation || "")}" onclick="toggleFav(this)" title="移除我的最愛">★</button>` +
+                `<span class="fav-w">${attrEsc(it.word)}${it.kk ? ` <span class="fav-kk">${attrEsc(it.kk)}</span>` : ""}</span>` +
+                `<span class="fav-cn">${attrEsc(it.translation || "")}</span>` +
+                `<button class="fav-say" onclick="speakWord('${sw}','en-US')" title="發音">🔊</button>` +
+            `</div>`;
+        }).join("") + `</div>`;
+}
+renderFavPanel(); // 初次載入就顯示已收藏的最愛
 
 // 🎯 currentLoopingSection：記錄「目前正在循環朗讀」是哪一個區塊（沒有則為 null）
 let currentLoopingSection = null;
@@ -675,8 +715,9 @@ async function loadWordsFromFile(fileName) {
   card.innerHTML = `
     ${noteButtonHtml}
 
-    <!-- 右側垂直控制按鈕：英／中 顯示隱藏切換 -->
+    <!-- 右側垂直控制按鈕：⭐最愛 + 英／中 顯示隱藏切換 -->
     <div class="eye-controls">
+        <button class="fav-star${isFav(word) ? ' active' : ''}" data-word="${attrEsc(word)}" data-kk="${attrEsc(kk)}" data-cn="${attrEsc(translation)}" onclick="toggleFav(this)" title="加入/移除我的最愛">${isFav(word) ? '★' : '☆'}</button>
         <button class="toggle-btn toggle-en" onclick="toggleSingleWord(this)" title="顯示/隱藏英文">英</button>
         <button class="toggle-btn toggle-cn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文">中</button>
     </div>
