@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=71"><!-- 外部樣式表（?v=71 為破快取版本號） -->
-<script defer src="index.js?v=71"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=72"><!-- 外部樣式表（?v=72 為破快取版本號） -->
+<script defer src="index.js?v=72"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -730,9 +730,11 @@ updateQuizRangeUI(sectionTitleText); // 同步把此區塊加進「測驗範圍�
 // TTS_PROXY_URL：你的 Cloudflare Worker 代理網址（部署後請改成自己的）。
 const TTS_PROXY_URL = "https://toeic-tts.fuli62.workers.dev";
 
-// ── 提高 Google-TTS 發音音量 ──
-// HTMLAudio 的 .volume 上限只有 1.0，無法「放大」；要更大聲得走 Web Audio API 的 GainNode。
-// 這裡：發音音檔 →（放大 GainNode）→（DynamicsCompressor 當限幅器，壓尖峰避免破音）→ 喇叭。
+// ── 提高 Google-TTS 發音音量（走 Web Audio，穩定不受循環播放影響）──
+// HTMLAudio 的 .volume 上限只有 1.0，無法「放大」。這裡把 MP3 解碼成音訊資料，
+// 直接用 AudioBufferSourceNode 播放 →（放大 GainNode）→（DynamicsCompressor 限幅器，壓尖峰避免破音）→ 喇叭。
+// ★ 用「解碼 buffer 播放」而非「擷取 <audio> 元素」：後者在用過瀏覽器語音(循環播放的 SpeechSynthesis)後
+//   會擷取失敗、退回小聲原始輸出且不再恢復；buffer 播放沒有這問題，且每次都會把 AudioContext 喚醒。
 // 注意：最大只能頂到裝置的數位滿刻度（約 0 dBFS），無法比硬體音量本身更大聲。
 const TTS_GAIN = 6; // 發音增益（配合限幅器，實際會頂到接近滿音量）
 let _audioCtx = null, _ttsGain = null;
@@ -748,43 +750,60 @@ function ensureTtsGraph() {
         comp.attack.value = 0.003; comp.release.value = 0.25;
         _ttsGain.connect(comp); comp.connect(_audioCtx.destination);
     }
-    if (_audioCtx.state === "suspended") { try { _audioCtx.resume(); } catch (e) {} }
+    // 只要不是 running（含被 SpeechSynthesis 打斷的 suspended/interrupted）就喚醒
+    if (_audioCtx.state !== "running") { try { _audioCtx.resume(); } catch (e) {} }
     return true;
 }
-// 把一個 <audio> 的輸出改走「放大 → 限幅 → 喇叭」音訊圖；失敗就用原始輸出（音量不變）
-function routeLoud(audio) {
-    try {
-        if (ensureTtsGraph()) _audioCtx.createMediaElementSource(audio).connect(_ttsGain);
-    } catch (e) { /* 某些情況無法建立來源節點，維持原始輸出 */ }
+function _b64ToArrayBuffer(b64) {
+    const bin = atob(b64), len = bin.length, bytes = new Uint8Array(len);
+    for (let i = 0; i < len; i++) bytes[i] = bin.charCodeAt(i);
+    return bytes.buffer;
+}
+
+// 目前正在播放的發音（Web Audio 的 buffer source 或退回用的 HTMLAudio），下一次發音前先停掉避免重疊
+let currentAudio = null, currentSource = null;
+function stopCurrentTts() {
+    if (currentSource) { try { currentSource.onended = null; currentSource.stop(); } catch (e) {} currentSource = null; }
+    if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
+}
+
+// playTtsBase64：把代理回傳的 Base64 MP3 放大播放；解碼失敗才退回 HTMLAudio（原始音量）
+async function playTtsBase64(b64, callback) {
+    if (ensureTtsGraph()) {
+        try {
+            if (_audioCtx.state !== "running") { await _audioCtx.resume(); }
+            const buf = await _audioCtx.decodeAudioData(_b64ToArrayBuffer(b64));
+            const src = _audioCtx.createBufferSource();
+            src.buffer = buf;
+            src.playbackRate.value = getSpeechRate(); // 跟著速度拖曳桿
+            src.connect(_ttsGain);
+            currentSource = src;
+            src.onended = () => { if (src === currentSource) currentSource = null; if (callback) callback(); };
+            src.start();
+            return;
+        } catch (e) { /* 解碼/播放失敗 → 退回 HTMLAudio */ }
+    }
+    const audio = new Audio("data:audio/mp3;base64," + b64);
+    audio.playbackRate = getSpeechRate();
+    currentAudio = audio;
+    audio.onended = () => { if (audio === currentAudio) currentAudio = null; if (callback) callback(); };
+    audio.play();
 }
 
 // speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
 // 參數：word=要唸的字、lang=語系(en-GB/en-US)、callback=播放結束後要執行的函式
-let currentAudio = null; // 目前正在播放的 Google 語音（用來在下一次發音前先停掉，避免重疊）
 async function speakWord(word, lang, callback) {
-    // 先停掉目前正在播放的任何聲音，避免重疊
     window.speechSynthesis.cancel();
-    if (currentAudio) { try { currentAudio.pause(); } catch(e){} currentAudio = null; }
-
+    stopCurrentTts();
     try {
-        // 呼叫你的 Cloudflare Worker 代理（金鑰在 Worker 那端，前端看不到）
         const response = await fetch(TTS_PROXY_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text: word, lang })
         });
-
         const data = await response.json();
-
         if (data.audioContent) {
-            // 代理回傳 Base64 的 MP3，轉成可播放的音訊並播放
-            const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
-            audio.playbackRate = getSpeechRate(); // 🇺🇸/🇬🇧 發音也跟著速度拖曳桿
-            routeLoud(audio);                      // 放大音量（走 Web Audio）
-            currentAudio = audio;
-            audio.play();
-            // 播放結束後執行 callback（例如抽考時自動跳下一題）
-            audio.onended = () => { if (audio === currentAudio) currentAudio = null; if (callback) callback(); };
+            await playTtsBase64(data.audioContent, callback);
         } else {
             console.error("代理沒回傳音訊內容：", data);
             if (callback) callback();
@@ -799,8 +818,7 @@ async function speakWord(word, lang, callback) {
 //   其餘（摩擦音/塞音/塞擦音/滑音）→ 直接唸英文例字。
 function playKKAudio(slug, example, ipa, synth) {
     window.speechSynthesis.cancel();
-    if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
-
+    stopCurrentTts();
     if (synth && ipa) { playSSMLPhoneme(ipa, example); return; } // 有 synth：合成單音
     if (example) speakWord(example, 'en-US');                    // 其餘：唸例字
 }
@@ -816,17 +834,13 @@ async function playSSMLPhoneme(ipa, example) {
         });
         const data = await res.json();
         if (data.audioContent) {
-            const a = new Audio("data:audio/mp3;base64," + data.audioContent);
-            routeLoud(a); // 放大音量（走 Web Audio）
-            currentAudio = a;
-            a.play();
-            a.onended = () => { if (a === currentAudio) currentAudio = null; };
+            await playTtsBase64(data.audioContent);
         } else {
-            console.error("雙母音合成失敗：", data);
+            console.error("單音合成失敗：", data);
             if (example) speakWord(example, 'en-US');
         }
     } catch (e) {
-        console.error("雙母音合成失敗：", e);
+        console.error("單音合成失敗：", e);
         if (example) speakWord(example, 'en-US');
     }
 }
@@ -1315,7 +1329,7 @@ function openQuiz() {
 function closeQuiz() {
     // 提前結束：不再確認、直接離開
     speechSynthesis.cancel(); // 停止可能正在播放的發音
-    if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
+    stopCurrentTts();
     document.getElementById("quizModal").style.display = "none";
 }
 // nextQuestion：出下一題（產生題目與四個選項）
