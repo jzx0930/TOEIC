@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=70"><!-- 外部樣式表（?v=70 為破快取版本號） -->
-<script defer src="index.js?v=70"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=71"><!-- 外部樣式表（?v=71 為破快取版本號） -->
+<script defer src="index.js?v=71"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -730,6 +730,34 @@ updateQuizRangeUI(sectionTitleText); // 同步把此區塊加進「測驗範圍�
 // TTS_PROXY_URL：你的 Cloudflare Worker 代理網址（部署後請改成自己的）。
 const TTS_PROXY_URL = "https://toeic-tts.fuli62.workers.dev";
 
+// ── 提高 Google-TTS 發音音量 ──
+// HTMLAudio 的 .volume 上限只有 1.0，無法「放大」；要更大聲得走 Web Audio API 的 GainNode。
+// 這裡：發音音檔 →（放大 GainNode）→（DynamicsCompressor 當限幅器，壓尖峰避免破音）→ 喇叭。
+// 注意：最大只能頂到裝置的數位滿刻度（約 0 dBFS），無法比硬體音量本身更大聲。
+const TTS_GAIN = 6; // 發音增益（配合限幅器，實際會頂到接近滿音量）
+let _audioCtx = null, _ttsGain = null;
+function ensureTtsGraph() {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return false;
+    if (!_audioCtx) {
+        _audioCtx = new AC();
+        _ttsGain = _audioCtx.createGain();
+        _ttsGain.gain.value = TTS_GAIN;
+        const comp = _audioCtx.createDynamicsCompressor(); // 限幅器：放大後壓住尖峰、避免破音
+        comp.threshold.value = -1; comp.knee.value = 0; comp.ratio.value = 20;
+        comp.attack.value = 0.003; comp.release.value = 0.25;
+        _ttsGain.connect(comp); comp.connect(_audioCtx.destination);
+    }
+    if (_audioCtx.state === "suspended") { try { _audioCtx.resume(); } catch (e) {} }
+    return true;
+}
+// 把一個 <audio> 的輸出改走「放大 → 限幅 → 喇叭」音訊圖；失敗就用原始輸出（音量不變）
+function routeLoud(audio) {
+    try {
+        if (ensureTtsGraph()) _audioCtx.createMediaElementSource(audio).connect(_ttsGain);
+    } catch (e) { /* 某些情況無法建立來源節點，維持原始輸出 */ }
+}
+
 // speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
 // 參數：word=要唸的字、lang=語系(en-GB/en-US)、callback=播放結束後要執行的函式
 let currentAudio = null; // 目前正在播放的 Google 語音（用來在下一次發音前先停掉，避免重疊）
@@ -752,6 +780,7 @@ async function speakWord(word, lang, callback) {
             // 代理回傳 Base64 的 MP3，轉成可播放的音訊並播放
             const audio = new Audio("data:audio/mp3;base64," + data.audioContent);
             audio.playbackRate = getSpeechRate(); // 🇺🇸/🇬🇧 發音也跟著速度拖曳桿
+            routeLoud(audio);                      // 放大音量（走 Web Audio）
             currentAudio = audio;
             audio.play();
             // 播放結束後執行 callback（例如抽考時自動跳下一題）
@@ -788,6 +817,7 @@ async function playSSMLPhoneme(ipa, example) {
         const data = await res.json();
         if (data.audioContent) {
             const a = new Audio("data:audio/mp3;base64," + data.audioContent);
+            routeLoud(a); // 放大音量（走 Web Audio）
             currentAudio = a;
             a.play();
             a.onended = () => { if (a === currentAudio) currentAudio = null; };
