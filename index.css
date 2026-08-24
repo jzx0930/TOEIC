@@ -2064,3 +2064,65 @@ h3 {
 @media (max-width: 480px) {
   .kk-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 }
+
+/* ==================== 拼字→KK 對應速查（發音分頁下方） ==================== */
+.spell-guide { margin-top: 20px; }
+.spell-guide .spell-note {
+  color: var(--text-gray);
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin: 8px 0 14px;
+}
+.spell-guide code {
+  color: var(--bright-green);
+  background: rgba(0, 255, 153, 0.08);
+  border: 1px solid rgba(0, 255, 153, 0.25);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.95em;
+}
+/* 折疊區塊 */
+.spell-guide details {
+  border: 1px solid var(--border-dark);
+  border-radius: 10px;
+  background: var(--card-bg);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.spell-guide summary {
+  cursor: pointer;
+  padding: 14px 16px;
+  font-weight: 700;
+  color: var(--bright-green);
+  background: rgba(0, 255, 153, 0.05);
+  list-style: none;
+  user-select: none;
+}
+.spell-guide summary::-webkit-details-marker { display: none; }
+.spell-guide summary::before { content: "▶ "; font-size: 0.85em; }
+.spell-guide details[open] summary::before { content: "▼ "; }
+.spell-guide summary:hover { background: rgba(0, 255, 153, 0.12); }
+/* 表格 */
+.spell-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--dark-bg);
+}
+.spell-tbl th, .spell-tbl td {
+  border: 1px solid var(--border-dark);
+  padding: 9px 12px;
+  text-align: left;
+  color: var(--text-white);
+  font-size: 0.92em;
+  vertical-align: top;
+}
+.spell-tbl th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-gray);
+  font-weight: 600;
+}
+.spell-guide details > .spell-note { padding: 0 16px 12px; margin: 6px 0 0; }
+@media (max-width: 480px) {
+  .spell-tbl th, .spell-tbl td { padding: 7px 8px; font-size: 0.85em; }
+}

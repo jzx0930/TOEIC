@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=68"><!-- 外部樣式表（?v=68 為破快取版本號） -->
-<script defer src="index.js?v=68"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=69"><!-- 外部樣式表（?v=69 為破快取版本號） -->
+<script defer src="index.js?v=69"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -181,6 +181,104 @@
     <h2>🗣️ 發音拆解</h2>
     <!-- KK 音標一覽表由 JS 依 Pronunciation/kk-chart.json 動態產生 -->
     <div id="pronounce-container">正在載入發音…</div>
+
+    <!-- 拼字 → KK 發音對應速查（靜態內容，放在發音表下方） -->
+    <div class="spell-guide">
+      <h2 style="margin-top:36px;">🔤 拼字 → KK 發音對應速查</h2>
+      <p class="spell-note">大原則：這些是「高頻傾向」不是鐵律；<b>非重音母音常弱化成 <code>ə</code>（schwa）</b>。想驗證某個字，回「單字」分頁按 🇺🇸 聽發音、對照音節拆解最快。</p>
+
+      <details open>
+        <summary>一、單一母音（短音 / 長音 silent-e）</summary>
+        <table class="spell-tbl">
+          <tr><th>字母</th><th>短音</th><th>例</th><th>長音 / 其他</th><th>例</th></tr>
+          <tr><td>a</td><td><code>æ</code></td><td>cat [kæt]</td><td><code>e</code>(/eɪ/) a_e</td><td>name [nem]</td></tr>
+          <tr><td>e</td><td><code>ɛ</code></td><td>bed [bɛd]</td><td><code>i</code></td><td>be [bi]</td></tr>
+          <tr><td>i</td><td><code>ɪ</code></td><td>sit [sɪt]</td><td><code>aɪ</code> i_e</td><td>like [laɪk]</td></tr>
+          <tr><td>o</td><td><code>ɑ</code>／<code>ɔ</code></td><td>hot [hɑt]、dog [dɔg]</td><td><code>o</code>(/oʊ/) o_e</td><td>go [go]、note [not]</td></tr>
+          <tr><td>u</td><td><code>ʌ</code></td><td>cup [kʌp]</td><td><code>ju</code>／<code>u</code></td><td>use [juz]、rule [rul]</td></tr>
+          <tr><td>y</td><td><code>ɪ</code>／<code>aɪ</code></td><td>gym [dʒɪm]、my [maɪ]</td><td>字尾 <code>i</code></td><td>happy [ˈhæpi]</td></tr>
+        </table>
+        <p class="spell-note">KK 易混：<code>e</code>=/eɪ/（name 的音），<code>ɛ</code>=/ɛ/（bed 的音）。</p>
+      </details>
+
+      <details>
+        <summary>二、母音組合（vowel teams）</summary>
+        <table class="spell-tbl">
+          <tr><th>拼法</th><th>KK</th><th>例</th></tr>
+          <tr><td>ai / ay</td><td><code>e</code></td><td>rain [ren]、day [de]</td></tr>
+          <tr><td>ee</td><td><code>i</code></td><td>see [si]、meet [mit]</td></tr>
+          <tr><td>ea</td><td><code>i</code>（也可能 <code>ɛ</code>）</td><td>eat [it]／bread [brɛd]</td></tr>
+          <tr><td>oa</td><td><code>o</code></td><td>boat [bot]</td></tr>
+          <tr><td>ow</td><td><code>o</code>／<code>aʊ</code></td><td>snow [sno]／now [naʊ]</td></tr>
+          <tr><td>oo</td><td><code>u</code>／<code>ʊ</code></td><td>food [fud]／book [bʊk]</td></tr>
+          <tr><td>ou</td><td><code>aʊ</code></td><td>out [aʊt]、house [haʊs]</td></tr>
+          <tr><td>oi / oy</td><td><code>ɔɪ</code></td><td>coin [kɔɪn]、boy [bɔɪ]</td></tr>
+          <tr><td>au / aw</td><td><code>ɔ</code>（美式常 <code>ɑ</code>）</td><td>author [ˈɔθɚ]、saw [sɔ]</td></tr>
+          <tr><td>ew</td><td><code>u</code>／<code>ju</code></td><td>new [nu]、few [fju]</td></tr>
+          <tr><td>igh</td><td><code>aɪ</code></td><td>night [naɪt]、high [haɪ]</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>三、r 控制母音（母音 + r，最重要）</summary>
+        <table class="spell-tbl">
+          <tr><th>拼法</th><th>KK</th><th>例</th></tr>
+          <tr><td>ar</td><td><code>ɑr</code></td><td>car [kɑr]、start [stɑrt]</td></tr>
+          <tr><td>or</td><td><code>ɔr</code></td><td>for [fɔr]、short [ʃɔrt]</td></tr>
+          <tr><td>er / ir / ur</td><td>重音 <code>ɝ</code>／非重音 <code>ɚ</code></td><td>bird [bɝd]、turn [tɝn]、sister [ˈsɪstɚ]</td></tr>
+          <tr><td>air / are / ear</td><td><code>ɛr</code></td><td>hair [hɛr]、care [kɛr]、bear [bɛr]</td></tr>
+          <tr><td>ear / eer</td><td><code>ɪr</code></td><td>hear [hɪr]、deer [dɪr]</td></tr>
+          <tr><td>our</td><td><code>aʊr</code>／<code>ɔr</code></td><td>hour [aʊr]／four [fɔr]</td></tr>
+        </table>
+        <p class="spell-note"><code>ɝ</code>（有重音）和 <code>ɚ</code>（無重音、弱化）是同一個捲舌 ㄦ，差在有沒有重音。</p>
+      </details>
+
+      <details>
+        <summary>四、子音字母與組合</summary>
+        <table class="spell-tbl">
+          <tr><th>拼法</th><th>KK</th><th>例 / 規則</th></tr>
+          <tr><td>c</td><td><code>k</code>／<code>s</code></td><td>cat [kæt]／city [ˈsɪti]（e·i·y 前唸 s）</td></tr>
+          <tr><td>g</td><td><code>g</code>／<code>dʒ</code></td><td>go [go]／gym [dʒɪm]（e·i·y 前常唸 dʒ）</td></tr>
+          <tr><td>s</td><td><code>s</code>／<code>z</code></td><td>sun [sʌn]／rose [roz]</td></tr>
+          <tr><td>x</td><td><code>ks</code>／<code>gz</code></td><td>box [bɑks]／exam [ɪgˈzæm]</td></tr>
+          <tr><td>ch</td><td><code>tʃ</code></td><td>chair [tʃɛr]（也可能 k：school）</td></tr>
+          <tr><td>sh</td><td><code>ʃ</code></td><td>ship [ʃɪp]</td></tr>
+          <tr><td>th</td><td><code>θ</code>／<code>ð</code></td><td>think [θɪŋk]／this [ðɪs]</td></tr>
+          <tr><td>ph</td><td><code>f</code></td><td>phone [fon]</td></tr>
+          <tr><td>gh</td><td><code>f</code> 或不發音</td><td>laugh [læf]／light [laɪt]</td></tr>
+          <tr><td>wh</td><td><code>w</code>／<code>h</code></td><td>what [wɑt]／who [hu]</td></tr>
+          <tr><td>ng / nk</td><td><code>ŋ</code>／<code>ŋk</code></td><td>sing [sɪŋ]／thank [θæŋk]</td></tr>
+          <tr><td>ck / qu</td><td><code>k</code>／<code>kw</code></td><td>back [bæk]／queen [kwin]</td></tr>
+          <tr><td>kn / wr / mb</td><td><code>n</code>／<code>r</code>／<code>m</code>（有字不發音）</td><td>know [no]、write [raɪt]、climb [klaɪm]</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>五、常見字尾</summary>
+        <table class="spell-tbl">
+          <tr><th>字尾</th><th>KK</th><th>例</th></tr>
+          <tr><td>-tion</td><td><code>ʃən</code></td><td>nation [ˈneʃən]</td></tr>
+          <tr><td>-sion</td><td><code>ʒən</code>／<code>ʃən</code></td><td>vision [ˈvɪʒən]／mission [ˈmɪʃən]</td></tr>
+          <tr><td>-ture</td><td><code>tʃɚ</code></td><td>nature [ˈnetʃɚ]</td></tr>
+          <tr><td>-sure</td><td><code>ʒɚ</code></td><td>measure [ˈmɛʒɚ]</td></tr>
+          <tr><td>子音 + le</td><td><code>əl</code></td><td>table [ˈtebəl]、apple [ˈæpəl]</td></tr>
+          <tr><td>-age</td><td><code>ɪdʒ</code></td><td>village [ˈvɪlɪdʒ]</td></tr>
+          <tr><td>-ous</td><td><code>əs</code></td><td>famous [ˈfeməs]</td></tr>
+          <tr><td>字尾 -y</td><td><code>i</code></td><td>happy [ˈhæpi]</td></tr>
+          <tr><td>-ed</td><td><code>t</code>／<code>d</code>／<code>ɪd</code></td><td>walked／played／wanted</td></tr>
+          <tr><td>-s / -es</td><td><code>s</code>／<code>z</code>／<code>ɪz</code></td><td>cats／dogs／boxes</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>六、三條最該記的通則</summary>
+        <table class="spell-tbl">
+          <tr><td>1</td><td>非重音 → 母音弱化成 <code>ə</code>：about [əˈbaʊt]、banana [bəˈnænə]</td></tr>
+          <tr><td>2</td><td>silent-e 拉長前面母音：hop [hɑp] → hope [hop]、cap [kæp] → cape [kep]</td></tr>
+          <tr><td>3</td><td>c/g 遇 e·i·y 變軟音：city→<code>s</code>、gym→<code>dʒ</code>；其餘唸硬音 <code>k</code>、<code>g</code></td></tr>
+        </table>
+      </details>
+    </div>
   </div>
 
   <!-- ========================= 文法分頁 ========================= -->
