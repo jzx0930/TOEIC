@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=73"><!-- 外部樣式表（?v=73 為破快取版本號） -->
-<script defer src="index.js?v=73"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=74"><!-- 外部樣式表（?v=74 為破快取版本號） -->
+<script defer src="index.js?v=74"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -808,27 +808,38 @@ function stopCurrentTts() {
     if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
 }
 
-// playTtsBase64：把代理回傳的 Base64 MP3 放大播放；解碼失敗才退回 HTMLAudio（原始音量）
+// 保底播放：一般 HTMLAudio（音量不放大，但一定會出聲），確保 Web Audio 失敗/逾時也有聲音
+function _playPlainAudio(b64, callback) {
+    try {
+        const audio = new Audio("data:audio/mp3;base64," + b64);
+        audio.playbackRate = getSpeechRate();
+        currentAudio = audio;
+        audio.onended = () => { if (audio === currentAudio) currentAudio = null; if (callback) callback(); };
+        const p = audio.play();
+        if (p && p.catch) p.catch(() => { if (callback) callback(); });
+    } catch (e) { if (callback) callback(); }
+}
+
+// playTtsBase64：優先用 Web Audio 放大播放；★ 用 timeout 保護避免某些瀏覽器 decodeAudioData/resume
+//   不 resolve 造成「完全沒聲音」——只要放大路徑失敗或逾時，就保底用 HTMLAudio 播放（一定有聲）。
 async function playTtsBase64(b64, callback) {
-    if (ensureTtsGraph()) {
-        try {
-            if (_audioCtx.state !== "running") { await _audioCtx.resume(); }
-            const buf = await _audioCtx.decodeAudioData(_b64ToArrayBuffer(b64));
-            const src = _audioCtx.createBufferSource();
-            src.buffer = buf;
-            src.playbackRate.value = getSpeechRate(); // 跟著速度拖曳桿
-            src.connect(_ttsGain);
-            currentSource = src;
-            src.onended = () => { if (src === currentSource) currentSource = null; if (callback) callback(); };
-            src.start();
-            return;
-        } catch (e) { /* 解碼/播放失敗 → 退回 HTMLAudio */ }
+    if (!ensureTtsGraph()) { _playPlainAudio(b64, callback); return; }
+    try {
+        if (_audioCtx.state !== "running") { _audioCtx.resume(); } // 不 await，避免卡住
+        const decoded = await Promise.race([
+            _audioCtx.decodeAudioData(_b64ToArrayBuffer(b64)),
+            new Promise((_, rej) => setTimeout(() => rej(new Error("decode timeout")), 1500))
+        ]);
+        const src = _audioCtx.createBufferSource();
+        src.buffer = decoded;
+        src.playbackRate.value = getSpeechRate(); // 跟著速度拖曳桿
+        src.connect(_ttsGain);
+        currentSource = src;
+        src.onended = () => { if (src === currentSource) currentSource = null; if (callback) callback(); };
+        src.start();
+    } catch (e) {
+        _playPlainAudio(b64, callback); // 放大失敗/逾時 → 保底播放
     }
-    const audio = new Audio("data:audio/mp3;base64," + b64);
-    audio.playbackRate = getSpeechRate();
-    currentAudio = audio;
-    audio.onended = () => { if (audio === currentAudio) currentAudio = null; if (callback) callback(); };
-    audio.play();
 }
 
 // speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
