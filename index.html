@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=74"><!-- 外部樣式表（?v=74 為破快取版本號） -->
-<script defer src="index.js?v=74"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=75"><!-- 外部樣式表（?v=75 為破快取版本號） -->
+<script defer src="index.js?v=75"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -331,31 +331,71 @@ function updateStar(btn) { const on = isFav(btn.dataset.word); btn.textContent =
 function toggleFav(btn) {
     const word = btn.dataset.word;
     if (favorites[word]) delete favorites[word];
-    else favorites[word] = { word: word, kk: btn.dataset.kk || "", translation: btn.dataset.cn || "" };
+    else favorites[word] = { word: word, kk: btn.dataset.kk || "", translation: btn.dataset.cn || "", note: btn.dataset.note || "", part_of_speech: btn.dataset.pos || "" };
     saveFavs();
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === word) updateStar(b); });
     renderFavPanel();
 }
-// 重繪最上方「我的最愛」清單
+// 重繪最上方「我的最愛」清單：用和一般清單「完全相同」的單字卡（buildWordCard），只是外框套金黃色主題
 function renderFavPanel() {
     const panel = document.getElementById("fav-panel");
     if (!panel) return;
     const items = Object.values(favorites);
-    if (!items.length) { panel.style.display = "none"; panel.innerHTML = ""; return; }
+    panel.innerHTML = "";
+    if (!items.length) { panel.style.display = "none"; return; }
     panel.style.display = "block";
-    panel.innerHTML =
-        `<div class="fav-head">⭐ 我的最愛（${items.length}）</div><div class="fav-list">` +
-        items.map(it => {
-            const sw = String(it.word).replace(/'/g, "\\'");
-            return `<div class="fav-item">` +
-                `<button class="fav-star active" data-word="${attrEsc(it.word)}" data-kk="${attrEsc(it.kk || "")}" data-cn="${attrEsc(it.translation || "")}" onclick="toggleFav(this)" title="移除我的最愛">★</button>` +
-                `<span class="fav-w">${attrEsc(it.word)}${it.kk ? ` <span class="fav-kk">${attrEsc(it.kk)}</span>` : ""}</span>` +
-                `<span class="fav-cn">${attrEsc(it.translation || "")}</span>` +
-                `<button class="fav-say" onclick="speakWord('${sw}','en-US')" title="發音">🔊</button>` +
-            `</div>`;
-        }).join("") + `</div>`;
+    const head = document.createElement("div");
+    head.className = "fav-head";
+    head.textContent = `⭐ 我的最愛（${items.length}）`;
+    panel.appendChild(head);
+    const grid = document.createElement("div");
+    grid.className = "content-row fav-cards"; // content-row：沿用一般清單的格線排版；fav-cards：改金黃配色
+    items.forEach(it => grid.appendChild(buildWordCard(it)));
+    panel.appendChild(grid);
 }
-renderFavPanel(); // 初次載入就顯示已收藏的最愛
+
+// buildWordCard：由單字物件產生一張完整單字卡（一般清單與「我的最愛」共用，確保功能一致）
+function buildWordCard(item) {
+    const word = item.word;
+    const translation = item.translation;
+    const kk = item.kk || "";
+    const note = (item.note || "").trim();
+    const pos = item.part_of_speech || "";
+    const safeWord = word.replace(/'/g, "\\'");
+
+    const card = document.createElement("div");
+    card.className = "term-card";
+    card.dataset.word = word;
+
+    const hasNote = note.length > 0;
+    const noteButtonHtml = hasNote ? `<button class="note-btn" onclick="toggleNote(this)" title="查看筆記">📝</button>` : "";
+    const noteContentHtml = hasNote ? `<div class="note-content">${note}</div>` : "";
+    const { sylWord, sylKK } = getSyllableParts(item);
+    const sylKKDisp = sylKK ? `[${sylKK}]` : "";
+
+    card.innerHTML = `
+    ${noteButtonHtml}
+    <div class="eye-controls">
+        <button class="fav-star${isFav(word) ? ' active' : ''}" data-word="${attrEsc(word)}" data-kk="${attrEsc(kk)}" data-cn="${attrEsc(translation)}" data-note="${attrEsc(note)}" data-pos="${attrEsc(pos)}" onclick="toggleFav(this)" title="加入/移除我的最愛">${isFav(word) ? '★' : '☆'}</button>
+        <button class="toggle-btn toggle-en" onclick="toggleSingleWord(this)" title="顯示/隱藏英文">英</button>
+        <button class="toggle-btn toggle-cn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文">中</button>
+    </div>
+    <div class="main-text">${word}${kk ? ` <span class="main-kk">${kk}</span>` : ""}</div>
+    <div class="sub-text syl-line">${sylWord}${sylKKDisp ? ` <span class="syl-kk">${sylKKDisp}</span>` : ""}</div>
+    <div class="sub-text translation">${translation}</div>
+    <div class="button-group">
+        <button class="speak-button" onclick="speakWord('${safeWord}','en-GB')">🇬🇧 英式</button>
+        <button class="speak-button" onclick="speakWord('${safeWord}','en-US')">🇺🇸 美式</button>
+        <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-GB')">🔁 英式</button>
+        <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式</button>
+    </div>
+    ${noteContentHtml}
+`;
+    return card;
+}
+// 初次顯示最愛清單：用 setTimeout 延到整份腳本都定義完再跑，
+// 避免 buildWordCard→getSyllableParts 用到後面才宣告的 const（如 KK_VOWELS）造成 TDZ 錯誤。
+setTimeout(renderFavPanel, 0);
 
 // 🎯 currentLoopingSection：記錄「目前正在循環朗讀」是哪一個區塊（沒有則為 null）
 let currentLoopingSection = null;
@@ -690,56 +730,8 @@ async function loadWordsFromFile(fileName) {
       [wordList[i], wordList[j]] = [wordList[j], wordList[i]];
     }
 
-   // --- 渲染單字卡（含筆記功能） ---
-    wordList.forEach(item => {
-      const word = item.word;
-      const translation = item.translation;
-      const kk = item.kk || "";                 // KK 音標（可能沒有）
-      const note = (item.note || "").trim();    // 記憶筆記（可能沒有），去頭尾空白
-      const safeWord = word.replace(/'/g, "\\'"); // 把單引號跳脫，避免塞進 onclick 字串時出錯
-
-      const card = document.createElement("div");
-      card.className = "term-card";
-      card.dataset.word = word; // 把單字存到 data-word，供搜尋與循環朗讀比對用
-
-      // 只有當這個單字「有筆記」時，才產生筆記按鈕與筆記內容
-      const hasNote = note.length > 0;
-      const noteButtonHtml = hasNote ? `<button class="note-btn" onclick="toggleNote(this)" title="查看筆記">📝</button>` : "";
-      const noteContentHtml = hasNote ? `<div class="note-content">${note}</div>` : "";
-
-      // 音節拆解（第二行用）：自動產生，可被單字檔的 sylWord / sylKK 手動覆蓋
-      const { sylWord, sylKK } = getSyllableParts(item);
-      const sylKKDisp = sylKK ? `[${sylKK}]` : ""; // 拆解後 KK 加中括號，與上方 KK 一致
-
-  // 用樣板字串組出整張卡片的內部 HTML
-  card.innerHTML = `
-    ${noteButtonHtml}
-
-    <!-- 右側垂直控制按鈕：⭐最愛 + 英／中 顯示隱藏切換 -->
-    <div class="eye-controls">
-        <button class="fav-star${isFav(word) ? ' active' : ''}" data-word="${attrEsc(word)}" data-kk="${attrEsc(kk)}" data-cn="${attrEsc(translation)}" onclick="toggleFav(this)" title="加入/移除我的最愛">${isFav(word) ? '★' : '☆'}</button>
-        <button class="toggle-btn toggle-en" onclick="toggleSingleWord(this)" title="顯示/隱藏英文">英</button>
-        <button class="toggle-btn toggle-cn" onclick="toggleSingleChinese(this)" title="顯示/隱藏中文">中</button>
-    </div>
-
-    <!-- 第一行：單字 + KK 音標（KK 放在單字後面） -->
-    <div class="main-text">${word}${kk ? ` <span class="main-kk">${kk}</span>` : ""}</div>
-    <!-- 第二行：依 KK 拆解的單字 + 拆解後的 KK 音標 -->
-    <div class="sub-text syl-line">${sylWord}${sylKKDisp ? ` <span class="syl-kk">${sylKKDisp}</span>` : ""}</div>
-
-    <div class="sub-text translation">${translation}</div>
-
-    <!-- 四顆發音按鈕：英式/美式單次發音、英式/美式循環發音 -->
-    <div class="button-group">
-        <button class="speak-button" onclick="speakWord('${safeWord}','en-GB')">🇬🇧 英式</button>
-        <button class="speak-button" onclick="speakWord('${safeWord}','en-US')">🇺🇸 美式</button>
-        <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-GB')">🔁 英式</button>
-        <button class="speak-button" onclick="repeatSpeak('${safeWord}','en-US')">🔁 美式</button>
-    </div>
-    ${noteContentHtml}
-`;
-      row.appendChild(card); // 把卡片加入內容列
-    });
+   // --- 渲染單字卡（含筆記功能）：用共用的 buildWordCard，一般清單與「我的最愛」卡片一致 ---
+    wordList.forEach(item => { row.appendChild(buildWordCard(item)); });
 
     // 組裝完成：標題 + 內容列 → 放進 section → 放進總容器
     section.appendChild(title);
