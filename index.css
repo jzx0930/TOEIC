@@ -2074,12 +2074,8 @@ h3 {
 .fav-star:hover{color:#ffcf3f;transform:scale(1.15);}
 .fav-star.active{color:#ffcf3f;}
 
-.fav-panel{
-  background:rgba(255,207,63,.06);
-  border:1px solid #ffcf3f;border-radius:12px;
-  padding:14px 16px;margin:0 0 20px;
-}
-.fav-head{color:#ffcf3f;font-weight:700;margin-bottom:12px;font-size:1.1em;}
+.fav-panel{ margin:0 0 20px; }
+#fav-panel .section-title{ color:#ffcf3f; }   /* 我的最愛：可折疊標題也用金黃色 */
 
 /* 「我的最愛」卡片：沿用一般單字卡（.term-card）全部功能，只把綠色主題改成金黃色 */
 .fav-cards{ --primary-green:#ffcf3f; --bright-green:#ffcf3f; }  /* 變數重映射：邊框、單字、發音鈕外框等綠色一次變金 */

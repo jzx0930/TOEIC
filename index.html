@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=75"><!-- 外部樣式表（?v=75 為破快取版本號） -->
-<script defer src="index.js?v=75"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=76"><!-- 外部樣式表（?v=76 為破快取版本號） -->
+<script defer src="index.js?v=76"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -336,7 +336,14 @@ function toggleFav(btn) {
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === word) updateStar(b); });
     renderFavPanel();
 }
-// 重繪最上方「我的最愛」清單：用和一般清單「完全相同」的單字卡（buildWordCard），只是外框套金黃色主題
+// 我的最愛區塊名稱（同時當循環播放/找卡片的 key，需固定不變）
+const FAV_SECTION = "⭐ 我的最愛";
+// 循環播放要用的單字清單來源：一般區塊用 quizPool；「我的最愛」用 favorites（不進 quizPool，避免污染抽考）
+function getSectionWords(sectionName) {
+    if (sectionName === FAV_SECTION) return Object.values(favorites).map(it => ({ en: it.word, cn: stripPos(it.translation || "") }));
+    return quizPool[sectionName];
+}
+// 重繪最上方「我的最愛」：用和一般清單完全相同的「可折疊區塊」(buildWordSection)，含循環播放控制，外框套金黃主題
 function renderFavPanel() {
     const panel = document.getElementById("fav-panel");
     if (!panel) return;
@@ -344,14 +351,7 @@ function renderFavPanel() {
     panel.innerHTML = "";
     if (!items.length) { panel.style.display = "none"; return; }
     panel.style.display = "block";
-    const head = document.createElement("div");
-    head.className = "fav-head";
-    head.textContent = `⭐ 我的最愛（${items.length}）`;
-    panel.appendChild(head);
-    const grid = document.createElement("div");
-    grid.className = "content-row fav-cards"; // content-row：沿用一般清單的格線排版；fav-cards：改金黃配色
-    items.forEach(it => grid.appendChild(buildWordCard(it)));
-    panel.appendChild(grid);
+    panel.appendChild(buildWordSection(FAV_SECTION, items, { expanded: true, rowClass: "fav-cards" }));
 }
 
 // buildWordCard：由單字物件產生一張完整單字卡（一般清單與「我的最愛」共用，確保功能一致）
@@ -393,6 +393,93 @@ function buildWordCard(item) {
 `;
     return card;
 }
+// buildWordSection：建立一個「可折疊的單字區塊」＝標題（可收合）＋ 次數/速度/兩顆循環播放鈕 ＋ 卡片列。
+//   一般清單與「我的最愛」共用；opts.expanded=預設展開、opts.rowClass=額外卡片列 class（如 fav-cards 金黃）。
+function buildWordSection(sectionTitleText, wordList, opts) {
+    opts = opts || {};
+    const section = document.createElement("section");
+    section.className = "section";
+
+    const title = document.createElement("div");
+    title.className = "section-title";
+    title.style.display = "flex";
+    title.style.justifyContent = "space-between";
+    title.style.alignItems = "center";
+
+    const titleText = document.createElement("span");
+    titleText.innerHTML = `<span class="arrow${opts.expanded ? ' rotate' : ''}">▶</span> ${sectionTitleText}`;
+    title.appendChild(titleText);
+
+    const rightControls = document.createElement("div");
+    rightControls.className = "section-right-controls";
+    const controlsRow1 = document.createElement("div"); controlsRow1.className = "section-controls-row";
+    const controlsRow2 = document.createElement("div"); controlsRow2.className = "section-controls-row";
+    rightControls.appendChild(controlsRow1); rightControls.appendChild(controlsRow2);
+
+    // 次數（2/3，都不勾＝1）
+    const repeatWrap = document.createElement("div");
+    repeatWrap.className = "repeat-control";
+    repeatWrap.title = "每張卡片重複幾次（都不勾＝1 次）";
+    const repeatText = document.createElement("span"); repeatText.className = "repeat-text"; repeatText.textContent = "次數";
+    repeatWrap.appendChild(repeatText);
+    [2, 3].forEach(nn => {
+        const lbl = document.createElement("label"); lbl.className = "repeat-item";
+        const cb = document.createElement("input");
+        cb.type = "checkbox"; cb.className = "repeat-cb"; cb.value = String(nn); cb.checked = (repeatCount === nn);
+        cb.addEventListener("change", (e) => { e.stopPropagation(); onRepeatChange(cb); });
+        ["click", "mousedown", "touchstart", "pointerdown"].forEach(evt => cb.addEventListener(evt, (e) => e.stopPropagation()));
+        lbl.addEventListener("click", (e) => e.stopPropagation());
+        lbl.appendChild(cb); lbl.appendChild(document.createTextNode(String(nn)));
+        repeatWrap.appendChild(lbl);
+    });
+    controlsRow1.appendChild(repeatWrap);
+
+    // 速度拖曳桿
+    const speedWrap = document.createElement("div");
+    speedWrap.className = "speed-control"; speedWrap.title = "調整重複/循環播放速度（1.0x = 正常）";
+    const speedText = document.createElement("span"); speedText.className = "speed-text"; speedText.textContent = "速度";
+    const speedSlider = document.createElement("input");
+    speedSlider.type = "range"; speedSlider.className = "speed-slider";
+    speedSlider.min = "0"; speedSlider.max = String(SPEED_STEPS.length - 1); speedSlider.step = "1";
+    speedSlider.value = String(SPEED_STEPS.indexOf(speechRate));
+    const speedLabel = document.createElement("span"); speedLabel.className = "speed-value"; speedLabel.textContent = speechRate.toFixed(1) + "x";
+    speedSlider.addEventListener("input", (e) => { e.stopPropagation(); setSpeechRateByIndex(parseInt(speedSlider.value, 10)); });
+    ["click", "mousedown", "touchstart", "pointerdown"].forEach(evt => speedSlider.addEventListener(evt, (e) => e.stopPropagation()));
+    speedWrap.appendChild(speedText); speedWrap.appendChild(speedSlider); speedWrap.appendChild(speedLabel);
+    controlsRow1.appendChild(speedWrap);
+
+    // 兩顆循環播放鈕
+    const loopEnCnBtn = document.createElement("button");
+    loopEnCnBtn.className = "control-button loop-btn";
+    loopEnCnBtn.style.cssText = "font-size:12px;padding:2px 8px;margin:0;border-color:#00ff99;background-color:transparent;color:#00ff99;";
+    loopEnCnBtn.innerText = "🔁 英中循環"; loopEnCnBtn.dataset.mode = "en-cn"; loopEnCnBtn.dataset.defaultLabel = "🔁 英中循環";
+    loopEnCnBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleSectionLoop(sectionTitleText, "en-cn"); });
+    controlsRow2.appendChild(loopEnCnBtn);
+
+    const loopBtn = document.createElement("button");
+    loopBtn.className = "control-button loop-btn";
+    loopBtn.style.cssText = "font-size:12px;padding:2px 8px;margin:0;border-color:#00ff99;background-color:transparent;color:#00ff99;";
+    loopBtn.innerText = "🔁 循環播放區塊"; loopBtn.dataset.mode = "en"; loopBtn.dataset.defaultLabel = "🔁 循環播放區塊";
+    loopBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleSectionLoop(sectionTitleText, "en"); });
+    controlsRow2.appendChild(loopBtn);
+
+    sectionLoopButtons[sectionTitleText] = { "en": loopBtn, "en-cn": loopEnCnBtn };
+    title.appendChild(rightControls);
+
+    // 內容列（卡片）；預設收合，opts.expanded=true 則展開
+    const row = document.createElement("div");
+    row.className = "content-row" + (opts.expanded ? "" : " collapsed") + (opts.rowClass ? " " + opts.rowClass : "");
+    title.addEventListener("click", () => {
+        row.classList.toggle("collapsed");
+        title.querySelector(".arrow").classList.toggle("rotate");
+    });
+    wordList.forEach(item => row.appendChild(buildWordCard(item)));
+
+    section.appendChild(title);
+    section.appendChild(row);
+    return section;
+}
+
 // 初次顯示最愛清單：用 setTimeout 延到整份腳本都定義完再跑，
 // 避免 buildWordCard→getSyllableParts 用到後面才宣告的 const（如 KK_VOWELS）造成 TDZ 錯誤。
 setTimeout(renderFavPanel, 0);
@@ -1791,8 +1878,8 @@ function startSectionLoop(sectionName, startWord, mode) {
         btnElement.style.color = "#000";
     }
 
-    // 取出該區塊的單字清單（每個元素含 en 英文、cn 中文）
-    const words = quizPool[sectionName];
+    // 取出該區塊的單字清單（每個元素含 en 英文、cn 中文）；「我的最愛」從 favorites 取，其餘從 quizPool
+    const words = getSectionWords(sectionName);
     if (!words || words.length === 0) return;
 
     // 決定起始索引：從指定單字開始，找不到（或未指定）就從 0
