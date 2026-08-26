@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=78"><!-- 外部樣式表（?v=78 為破快取版本號） -->
-<script defer src="index.js?v=78"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=79"><!-- 外部樣式表（?v=79 為破快取版本號） -->
+<script defer src="index.js?v=79"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -334,7 +334,10 @@ function toggleFav(btn) {
     else favorites[word] = { word: word, kk: btn.dataset.kk || "", translation: btn.dataset.cn || "", note: btn.dataset.note || "", part_of_speech: btn.dataset.pos || "" };
     saveFavs();
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === word) updateStar(b); });
+    // 重繪最愛清單時，保留目前捲動位置，避免頂部面板重建造成畫面亂跳
+    const y = window.scrollY, x = window.scrollX;
     renderFavPanel();
+    window.scrollTo(x, y);
 }
 // 我的最愛區塊名稱（同時當循環播放/找卡片的 key，需固定不變）
 const FAV_SECTION = "⭐ 我的最愛";
@@ -351,7 +354,7 @@ function renderFavPanel() {
     panel.innerHTML = "";
     if (!items.length) { panel.style.display = "none"; return; }
     panel.style.display = "block";
-    panel.appendChild(buildWordSection(FAV_SECTION, items, { expanded: true, rowClass: "fav-cards" }));
+    panel.appendChild(buildWordSection(FAV_SECTION, items, { expanded: false, rowClass: "fav-cards" }));
 }
 
 // buildWordCard：由單字物件產生一張完整單字卡（一般清單與「我的最愛」共用，確保功能一致）
