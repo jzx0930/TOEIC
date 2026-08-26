@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=77"><!-- 外部樣式表（?v=77 為破快取版本號） -->
-<script defer src="index.js?v=77"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=78"><!-- 外部樣式表（?v=78 為破快取版本號） -->
+<script defer src="index.js?v=78"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -887,27 +887,42 @@ function stopCurrentTts() {
     if (currentAudio) { try { currentAudio.pause(); } catch (e) {} currentAudio = null; }
 }
 
-// playTtsBase64：★ 以「HTMLAudio 元素」為主要播放方式（一定會出聲、不會靜音），
-//   只有在 AudioContext「已經 running」時，才把它接到放大音訊圖（Gain＋限幅器）讓音量變大。
-//   若 context 尚在 suspended（第一次點擊、或被 SpeechSynthesis 打斷）→ 不擷取、直接播元素本身的聲音（正常音量），
-//   同時 fire resume()，下一次就能走放大路徑。這樣「放大」只是加分，永遠不會因為 Web Audio 出問題而沒聲音。
-async function playTtsBase64(b64, callback) {
+// _playPlainAudio：一般 HTMLAudio（正常音量、開頭不裁切、一定會出聲）
+function _playPlainAudio(b64, callback) {
     const audio = new Audio("data:audio/mp3;base64," + b64);
     audio.playbackRate = getSpeechRate();
     currentAudio = audio;
     audio.onended = () => { if (audio === currentAudio) currentAudio = null; if (callback) callback(); };
-
-    try {
-        if (ensureTtsGraph() && _audioCtx.state === "running") {
-            // context 已就緒 → 走放大：把元素接到 Gain（此時元素聲音由音訊圖輸出，音量放大）
-            _audioCtx.createMediaElementSource(audio).connect(_ttsGain);
-        } else if (_audioCtx && _audioCtx.state !== "running") {
-            _audioCtx.resume().catch(() => {}); // 喚醒供下次使用；本次直接用元素原聲，確保有聲音
-        }
-    } catch (e) { /* 擷取失敗（例如剛用過 SpeechSynthesis）→ 用元素本身輸出，仍有聲音 */ }
-
     const p = audio.play();
     if (p && p.catch) p.catch(() => { if (callback) callback(); });
+}
+
+// playTtsBase64：兼顧「一定有聲、開頭不裁切、盡量放大」
+//   - context 尚未 running（第一次點擊、或被 SpeechSynthesis 打斷）→ 用 HTMLAudio 直接播（正常音量、不裁切）＋喚醒 context。
+//   - context 已 running → 用 decodeAudioData 解出完整 buffer 再播放（★ AudioBufferSourceNode 從第 0 個取樣播起，不會裁掉開頭；
+//     且經過 Gain＋限幅器放大）。用 1.2s timeout 防某些瀏覽器 decodeAudioData 不 resolve，逾時/失敗一律退回 HTMLAudio。
+//   ★ 不要用 createMediaElementSource 擷取 <audio> 來放大：它是「邊串流邊播」，圖形暖機時會吃掉開頭一小段（發音前面聽不到）。
+async function playTtsBase64(b64, callback) {
+    if (!ensureTtsGraph() || _audioCtx.state !== "running") {
+        if (_audioCtx && _audioCtx.state !== "running") _audioCtx.resume().catch(() => {}); // 喚醒供下次放大
+        _playPlainAudio(b64, callback); // 本次：正常音量、開頭完整
+        return;
+    }
+    try {
+        const decoded = await Promise.race([
+            _audioCtx.decodeAudioData(_b64ToArrayBuffer(b64)),
+            new Promise((_, rej) => setTimeout(() => rej(new Error("decode timeout")), 1200))
+        ]);
+        const src = _audioCtx.createBufferSource();
+        src.buffer = decoded;
+        src.playbackRate.value = getSpeechRate();
+        src.connect(_ttsGain);
+        currentSource = src;
+        src.onended = () => { if (src === currentSource) currentSource = null; if (callback) callback(); };
+        src.start(); // 從頭播放完整 buffer → 不裁切、已放大
+    } catch (e) {
+        _playPlainAudio(b64, callback); // 解碼失敗/逾時 → 保底（正常音量、不裁切）
+    }
 }
 
 // speakWord：透過代理用 Google TTS 朗讀單字（真人音質）
