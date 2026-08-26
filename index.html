@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=80"><!-- 外部樣式表（?v=80 為破快取版本號） -->
-<script defer src="index.js?v=80"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=81"><!-- 外部樣式表（?v=81 為破快取版本號） -->
+<script defer src="index.js?v=81"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -332,27 +332,43 @@ function saveFavs() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favorit
 function isFav(word) { return !!favorites[word]; }
 function attrEsc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
 function updateStar(btn) { const on = isFav(btn.dataset.word); btn.textContent = on ? "★" : "☆"; btn.classList.toggle("active", on); }
+// 增量更新最愛面板：只加/移一張卡片，★ 不整段重建 ★——避免收合區塊重建時重播 slideUp 動畫造成「展開又收起」的閃爍
+function updateFavPanelIncremental(word, adding) {
+    const panel = document.getElementById("fav-panel");
+    if (!panel) return;
+    if (!Object.keys(favorites).length) { panel.style.display = "none"; panel.innerHTML = ""; return; }
+    const section = panel.querySelector("section");
+    const row = section && section.querySelector(".content-row");
+    if (!section || !row) { renderFavPanel(); return; } // 從 0→1：第一次才建立整個區塊
+    if (adding) {
+        row.appendChild(buildWordCard(favorites[word]));
+    } else {
+        Array.from(row.querySelectorAll(".term-card")).forEach(c => { if (c.dataset.word === word) c.remove(); });
+    }
+}
 // 點星星：加入 / 移除最愛，並同步所有同字的星星與上方清單
 function toggleFav(btn) {
     const word = btn.dataset.word;
-    if (favorites[word]) delete favorites[word];
-    else favorites[word] = { word: word, kk: btn.dataset.kk || "", translation: btn.dataset.cn || "", note: btn.dataset.note || "", part_of_speech: btn.dataset.pos || "" };
+    const adding = !favorites[word];
+    if (adding) favorites[word] = { word: word, kk: btn.dataset.kk || "", translation: btn.dataset.cn || "", note: btn.dataset.note || "", part_of_speech: btn.dataset.pos || "" };
+    else delete favorites[word];
     saveFavs();
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === word) updateStar(b); });
-    // 重繪最愛清單時，保留目前捲動位置，避免頂部面板重建造成畫面亂跳
+    // 增量更新（不整段重建）＋保留捲動位置，星星不會造成清單閃爍或畫面亂跳
     const y = window.scrollY, x = window.scrollX;
-    renderFavPanel();
+    updateFavPanelIncremental(word, adding);
     window.scrollTo(x, y);
 }
 // 測驗中「加入最愛」：把當前題目的英文單字加進/移出我的最愛
 function toggleQuizFav() {
     if (typeof currentQuizTarget === "undefined" || !currentQuizTarget) return;
     const w = currentQuizTarget.en;
-    if (favorites[w]) delete favorites[w];
-    else favorites[w] = { word: w, kk: "", translation: currentQuizTarget.cn || "", note: "", part_of_speech: "" };
+    const adding = !favorites[w];
+    if (adding) favorites[w] = { word: w, kk: "", translation: currentQuizTarget.cn || "", note: "", part_of_speech: "" };
+    else delete favorites[w];
     saveFavs();
     updateQuizFavStar();
-    renderFavPanel();
+    updateFavPanelIncremental(w, adding);
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === w) updateStar(b); });
 }
 // 依當前題目更新測驗裡那顆星星的外觀（★=已收藏 / ☆=未收藏）
