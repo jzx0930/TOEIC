@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=81"><!-- 外部樣式表（?v=81 為破快取版本號） -->
-<script defer src="index.js?v=81"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=82"><!-- 外部樣式表（?v=82 為破快取版本號） -->
+<script defer src="index.js?v=82"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -398,7 +398,7 @@ function renderFavPanel() {
     panel.innerHTML = "";
     if (!items.length) { panel.style.display = "none"; return; }
     panel.style.display = "block";
-    panel.appendChild(buildWordSection(FAV_SECTION, items, { expanded: false, rowClass: "fav-cards" }));
+    panel.appendChild(buildWordSection(FAV_SECTION, items, { expanded: false, rowClass: "fav-cards", accent: "#ffcf3f", sectionClass: "fav-section" }));
 }
 
 // buildWordCard：由單字物件產生一張完整單字卡（一般清單與「我的最愛」共用，確保功能一致）
@@ -444,8 +444,10 @@ function buildWordCard(item) {
 //   一般清單與「我的最愛」共用；opts.expanded=預設展開、opts.rowClass=額外卡片列 class（如 fav-cards 金黃）。
 function buildWordSection(sectionTitleText, wordList, opts) {
     opts = opts || {};
+    const accent = opts.accent || "#00ff99"; // 循環播放鈕的主色（我的最愛用金黃）
     const section = document.createElement("section");
     section.className = "section";
+    if (opts.sectionClass) section.classList.add(opts.sectionClass);
 
     const title = document.createElement("div");
     title.className = "section-title";
@@ -498,14 +500,14 @@ function buildWordSection(sectionTitleText, wordList, opts) {
     // 兩顆循環播放鈕
     const loopEnCnBtn = document.createElement("button");
     loopEnCnBtn.className = "control-button loop-btn";
-    loopEnCnBtn.style.cssText = "font-size:12px;padding:2px 8px;margin:0;border-color:#00ff99;background-color:transparent;color:#00ff99;";
+    loopEnCnBtn.style.cssText = `font-size:12px;padding:2px 8px;margin:0;border-color:${accent};background-color:transparent;color:${accent};`;
     loopEnCnBtn.innerText = "🔁 英中循環"; loopEnCnBtn.dataset.mode = "en-cn"; loopEnCnBtn.dataset.defaultLabel = "🔁 英中循環";
     loopEnCnBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleSectionLoop(sectionTitleText, "en-cn"); });
     controlsRow2.appendChild(loopEnCnBtn);
 
     const loopBtn = document.createElement("button");
     loopBtn.className = "control-button loop-btn";
-    loopBtn.style.cssText = "font-size:12px;padding:2px 8px;margin:0;border-color:#00ff99;background-color:transparent;color:#00ff99;";
+    loopBtn.style.cssText = `font-size:12px;padding:2px 8px;margin:0;border-color:${accent};background-color:transparent;color:${accent};`;
     loopBtn.innerText = "🔁 循環播放區塊"; loopBtn.dataset.mode = "en"; loopBtn.dataset.defaultLabel = "🔁 循環播放區塊";
     loopBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleSectionLoop(sectionTitleText, "en"); });
     controlsRow2.appendChild(loopBtn);
@@ -1828,7 +1830,9 @@ function resetAllLoopButtons() {
     document.querySelectorAll(".section-title .loop-btn").forEach(btn => {
         btn.innerText = btn.dataset.defaultLabel || "🔁 循環播放區塊";
         btn.style.backgroundColor = "transparent";
-        btn.style.color = "#00ff99";
+        const c = btn.closest(".fav-section") ? "#ffcf3f" : "#00ff99"; // 我的最愛用金黃
+        btn.style.color = c;
+        btn.style.borderColor = c;
     });
 }
 
@@ -1927,7 +1931,7 @@ function startSectionLoop(sectionName, startWord, mode) {
     // 把這個模式的按鈕改成「停止」外觀（綠底黑字）
     if (btnElement) {
         btnElement.innerText = "⏹ 停止播放";
-        btnElement.style.backgroundColor = "#00ff99";
+        btnElement.style.backgroundColor = btnElement.closest(".fav-section") ? "#ffcf3f" : "#00ff99"; // 我的最愛用金黃
         btnElement.style.color = "#000";
     }
 

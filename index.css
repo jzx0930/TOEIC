@@ -2075,7 +2075,11 @@ h3 {
 .fav-star.active{color:#ffcf3f;}
 
 .fav-panel{ margin:0 0 20px; }
-#fav-panel .section-title{ color:#ffcf3f; }   /* 我的最愛：可折疊標題也用金黃色 */
+/* 我的最愛整個可折疊區塊：把綠色系（標題、次數、勾選框、速度桿）一次改成金黃，外框也金黃 */
+.fav-section{ --bright-green:#ffcf3f; --primary-green:#ffcf3f; border-color:#ffcf3f; }
+.fav-section .section-title{ background:linear-gradient(135deg, rgba(51,51,51,.8), rgba(255,207,63,.10)); }
+/* 循環播放鈕 hover/播放中：金黃底黑字（.loop-btn 的 inline 色已由 accent 帶入金黃） */
+.fav-section .loop-btn:hover{ background-color:#ffcf3f !important; color:#111 !important; }
 
 /* 「我的最愛」卡片：沿用一般單字卡（.term-card）全部功能，只把綠色主題改成金黃色 */
 .fav-cards{ --primary-green:#ffcf3f; --bright-green:#ffcf3f; }  /* 變數重映射：邊框、單字、發音鈕外框等綠色一次變金 */
