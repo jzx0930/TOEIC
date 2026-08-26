@@ -1,0 +1,1852 @@
+[
+  {
+    "word": "allocate",
+    "kk": "[ˈæləˌket]",
+    "translation": "撥出、分配、配置",
+    "part_of_speech": "v.",
+    "note": "人事管理。",
+    "sylKK": "ˈæ·lə·ˌket",
+    "sylWord": "al·lo·cate"
+  },
+  {
+    "word": "applicant",
+    "kk": "[ˈæplɪkənt]",
+    "translation": "申請人、應徵者",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ˈæ·plɪ·kənt",
+    "sylWord": "ap·pli·cant"
+  },
+  {
+    "word": "authorize",
+    "kk": "[ˈɑθəˌraɪz]",
+    "translation": "授權、委託",
+    "part_of_speech": "v.",
+    "note": "人事管理。名詞 authorization。",
+    "sylKK": "ˈɑ·θə·ˌraɪz",
+    "sylWord": "au·tho·rize"
+  },
+  {
+    "word": "capability",
+    "kk": "[ˌkepəˈbɪləti]",
+    "translation": "能力、潛力",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ˌke·pə·ˈbɪ·lə·ti",
+    "sylWord": "ca·pa·bil·i·ty"
+  },
+  {
+    "word": "lay off",
+    "kk": "",
+    "translation": "（暫時）解雇、裁員",
+    "part_of_speech": "v. phr.",
+    "note": "人事管理。"
+  },
+  {
+    "word": "collaboration",
+    "kk": "[kəˌlæbəˈreʃən]",
+    "translation": "合作",
+    "part_of_speech": "n.",
+    "note": "人事管理。動詞 collaborate。",
+    "sylKK": "kə·ˌlæ·bə·ˈre·ʃən",
+    "sylWord": "col·lab·o·ra·tion"
+  },
+  {
+    "word": "consultation",
+    "kk": "[ˌkɑnsəlˈteʃən]",
+    "translation": "諮詢、商量",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ˌkɑn·səl·ˈte·ʃən",
+    "sylWord": "con·sul·ta·tion"
+  },
+  {
+    "word": "curriculum vitae",
+    "kk": "",
+    "translation": "履歷（CV）",
+    "part_of_speech": "n. phr.",
+    "note": "人事管理。同義 résumé。"
+  },
+  {
+    "word": "eligible",
+    "kk": "[ˈɛlədʒəbəl]",
+    "translation": "合格的、合適的、有資格的",
+    "part_of_speech": "adj.",
+    "note": "人事管理。",
+    "sylKK": "ˈɛ·lə·dʒə·bəl",
+    "sylWord": "el·i·gi·ble"
+  },
+  {
+    "word": "employer",
+    "kk": "[ɛmˈplɔɪɚ]",
+    "translation": "雇主",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ɛm·ˈplɔɪ·ɚ",
+    "sylWord": "em·ploy·er"
+  },
+  {
+    "word": "executive",
+    "kk": "[ɪgˈzɛkjətɪv]",
+    "translation": "主管、行政/管理人員",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ɪg·ˈzɛ·kjə·tɪv",
+    "sylWord": "ex·ec·u·tive"
+  },
+  {
+    "word": "appoint",
+    "kk": "[əˈpɔɪnt]",
+    "translation": "任命、指定",
+    "part_of_speech": "v.",
+    "note": "人事管理。名詞 appointment。",
+    "sylKK": "ə·ˈpɔɪnt",
+    "sylWord": "ap·point"
+  },
+  {
+    "word": "benefit",
+    "kk": "[ˈbɛnəfɪt]",
+    "translation": "益處、福利；有益於",
+    "part_of_speech": "n. / v.",
+    "note": "人事管理。",
+    "sylKK": "ˈbɛ·nə·fɪt",
+    "sylWord": "ben·e·fit"
+  },
+  {
+    "word": "candidate",
+    "kk": "[ˈkændədet]",
+    "translation": "候選人、應徵者",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ˈkæn·də·det",
+    "sylWord": "can·di·date"
+  },
+  {
+    "word": "certificate",
+    "kk": "[sɚˈtɪfɪkət]",
+    "translation": "憑證、證明、證書",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "sɚ·ˈtɪ·fɪ·kət",
+    "sylWord": "cer·tifi·cate"
+  },
+  {
+    "word": "competent",
+    "kk": "[ˈkɑmpətɪnt]",
+    "translation": "有能力的、能勝任的",
+    "part_of_speech": "adj.",
+    "note": "人事管理。",
+    "sylKK": "ˈkɑm·pə·tɪnt",
+    "sylWord": "com·pe·tent"
+  },
+  {
+    "word": "coordinate",
+    "kk": "[koˈɔrdənət]",
+    "translation": "協調、調整",
+    "part_of_speech": "v.",
+    "note": "人事管理。",
+    "sylKK": "ko·ˈɔr·də·nət",
+    "sylWord": "co·or·di·nate"
+  },
+  {
+    "word": "deadline",
+    "kk": "[ˈdɛdˌlaɪn]",
+    "translation": "截止期限",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ˈdɛd·ˌlaɪn",
+    "sylWord": "dead·line"
+  },
+  {
+    "word": "employee",
+    "kk": "[ɛmˈplɔɪi]",
+    "translation": "員工、受雇者",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ɛm·ˈplɔɪ·i",
+    "sylWord": "em·ploy·ee"
+  },
+  {
+    "word": "expertise",
+    "kk": "[ˌɛkspɚˈtiz]",
+    "translation": "專門技術、專業知識",
+    "part_of_speech": "n.",
+    "note": "人事管理。",
+    "sylKK": "ˌɛk·spɚ·ˈtiz",
+    "sylWord": "ex·per·tise"
+  },
+  {
+    "word": "subsidy",
+    "kk": "[ˈsʌbsɪdi]",
+    "translation": "補助金、津貼",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ˈsʌb·sɪ·di",
+    "sylWord": "sub·sidy"
+  },
+  {
+    "word": "income",
+    "kk": "[ˈɪnˌkʌm]",
+    "translation": "收入、所得",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ˈɪn·ˌkʌm",
+    "sylWord": "in·come"
+  },
+  {
+    "word": "evaluation",
+    "kk": "[ɪˌvæljuˈeʃən]",
+    "translation": "評價、估值",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。動詞 evaluate。",
+    "sylKK": "ɪ·ˌvæ·lju·ˈe·ʃən",
+    "sylWord": "eval·u·a·tion"
+  },
+  {
+    "word": "occupation",
+    "kk": "[ˌɑkjəˈpeʃən]",
+    "translation": "職業",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ˌɑ·kjə·ˈpe·ʃən",
+    "sylWord": "oc·cu·pa·tion"
+  },
+  {
+    "word": "part-time",
+    "kk": "[ˈpɑrtˈtaɪm]",
+    "translation": "兼職的、兼任的",
+    "part_of_speech": "adj.",
+    "note": "薪資金錢。反義 full-time。",
+    "sylKK": "ˈpɑrt·ˈtaɪm",
+    "sylWord": "par·t-time"
+  },
+  {
+    "word": "permanent",
+    "kk": "[ˈpɝmənənt]",
+    "translation": "永久的、不變的",
+    "part_of_speech": "adj.",
+    "note": "薪資金錢。反義 temporary。",
+    "sylKK": "ˈpɝ·mə·nənt",
+    "sylWord": "per·ma·nent"
+  },
+  {
+    "word": "promote",
+    "kk": "[prəˈmot]",
+    "translation": "升職、促銷、推廣",
+    "part_of_speech": "v.",
+    "note": "薪資金錢。名詞 promotion。",
+    "sylKK": "prə·ˈmot",
+    "sylWord": "pro·mote"
+  },
+  {
+    "word": "recruit",
+    "kk": "[rəˈkrut]",
+    "translation": "招募、招聘",
+    "part_of_speech": "v.",
+    "note": "薪資金錢。名詞 recruitment。",
+    "sylKK": "rə·ˈkrut",
+    "sylWord": "re·cruit"
+  },
+  {
+    "word": "resume",
+    "kk": "[ˈrɛzəˌme]",
+    "translation": "履歷表",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。名詞唸 [ˈrɛzəˌme]；作動詞「重新開始」唸 [rɪˈzum]。",
+    "sylKK": "ˈrɛ·zə·ˌme",
+    "sylWord": "re·su·me"
+  },
+  {
+    "word": "salary",
+    "kk": "[ˈsæləri]",
+    "translation": "薪水",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ˈsæ·lə·ri",
+    "sylWord": "sa·la·ry"
+  },
+  {
+    "word": "annuity",
+    "kk": "[əˈnuəti]",
+    "translation": "年金",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ə·ˈnu·ə·ti",
+    "sylWord": "an·nu·ity"
+  },
+  {
+    "word": "penalty",
+    "kk": "[ˈpɛnəlti]",
+    "translation": "罰金、罰則",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ˈpɛ·nəl·ti",
+    "sylWord": "penal·ty"
+  },
+  {
+    "word": "deposit",
+    "kk": "[dəˈpɑzɪt]",
+    "translation": "押金、保證金；存款",
+    "part_of_speech": "n. / v.",
+    "note": "薪資金錢。",
+    "sylKK": "də·ˈpɑ·zɪt",
+    "sylWord": "de·posit"
+  },
+  {
+    "word": "overtime",
+    "kk": "[ˈovɚˌtaɪm]",
+    "translation": "加班（時間）",
+    "part_of_speech": "n.",
+    "note": "薪資金錢/辦公室。",
+    "sylKK": "ˈo·vɚ·ˌtaɪm",
+    "sylWord": "over·time"
+  },
+  {
+    "word": "pension",
+    "kk": "[ˈpɛnʃən]",
+    "translation": "養老金、退休金",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "ˈpɛn·ʃən",
+    "sylWord": "pen·sion"
+  },
+  {
+    "word": "rent",
+    "kk": "[ˈrɛnt]",
+    "translation": "租金；租",
+    "part_of_speech": "n. / v.",
+    "note": "薪資金錢。",
+    "sylKK": "ˈrɛnt",
+    "sylWord": "rent"
+  },
+  {
+    "word": "recommendation",
+    "kk": "[ˌrɛkəmənˈdeʃən]",
+    "translation": "推薦、建議",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。動詞 recommend。",
+    "sylKK": "ˌrɛ·kə·mən·ˈde·ʃən",
+    "sylWord": "rec·om·men·da·tion"
+  },
+  {
+    "word": "resign",
+    "kk": "[rɪˈzaɪn]",
+    "translation": "辭職",
+    "part_of_speech": "v.",
+    "note": "薪資金錢。名詞 resignation。",
+    "sylKK": "rɪ·ˈzaɪn",
+    "sylWord": "re·sign"
+  },
+  {
+    "word": "retire",
+    "kk": "[rɪˈtaɪr]",
+    "translation": "退休",
+    "part_of_speech": "v.",
+    "note": "薪資金錢。名詞 retirement。",
+    "sylKK": "rɪ·ˈtaɪr",
+    "sylWord": "re·tire"
+  },
+  {
+    "word": "remuneration",
+    "kk": "[rɪˌmjunəˈreʃən]",
+    "translation": "報酬、酬勞",
+    "part_of_speech": "n.",
+    "note": "薪資金錢。",
+    "sylKK": "rɪ·ˌmju·nə·ˈre·ʃən",
+    "sylWord": "re·mu·ner·a·tion"
+  },
+  {
+    "word": "accrue",
+    "kk": "[əˈkru]",
+    "translation": "（利息等）產生、累積",
+    "part_of_speech": "v.",
+    "note": "業務。",
+    "sylKK": "ə·ˈkru",
+    "sylWord": "ac·crue"
+  },
+  {
+    "word": "acquisition",
+    "kk": "[ˌækwəˈzɪʃən]",
+    "translation": "收購、併購；習得",
+    "part_of_speech": "n.",
+    "note": "業務。動詞 acquire。",
+    "sylKK": "ˌæ·kwə·ˈzɪ·ʃən",
+    "sylWord": "ac·qui·si·tion"
+  },
+  {
+    "word": "amplify",
+    "kk": "[ˈæmpləˌfaɪ]",
+    "translation": "放大、加強",
+    "part_of_speech": "v.",
+    "note": "業務。",
+    "sylKK": "ˈæm·plə·ˌfaɪ",
+    "sylWord": "am·pli·fy"
+  },
+  {
+    "word": "asset",
+    "kk": "[ˈæˌsɛt]",
+    "translation": "資產、優點、有用的人或物",
+    "part_of_speech": "n.",
+    "note": "業務。",
+    "sylKK": "ˈæ·ˌsɛt",
+    "sylWord": "as·set"
+  },
+  {
+    "word": "buyout",
+    "kk": "[ˈbaɪˌaʊt]",
+    "translation": "收購（全部股權）",
+    "part_of_speech": "n.",
+    "note": "業務。同義 takeover。",
+    "sylKK": "ˈbaɪ·ˌaʊt",
+    "sylWord": "buy·out"
+  },
+  {
+    "word": "corporation",
+    "kk": "[ˌkɔrpəˈreʃən]",
+    "translation": "法人、公司、企業",
+    "part_of_speech": "n.",
+    "note": "業務。形容詞 corporate。",
+    "sylKK": "ˌkɔr·pə·ˈre·ʃən",
+    "sylWord": "cor·po·ra·tion"
+  },
+  {
+    "word": "cutback",
+    "kk": "[ˈkʌtˌbæk]",
+    "translation": "削減、縮減",
+    "part_of_speech": "n.",
+    "note": "業務。",
+    "sylKK": "ˈkʌt·ˌbæk",
+    "sylWord": "cut·back"
+  },
+  {
+    "word": "enterprise",
+    "kk": "[ˈɛntɚˌpraɪz]",
+    "translation": "企業",
+    "part_of_speech": "n.",
+    "note": "業務。同義 company。",
+    "sylKK": "ˈɛn·tɚ·ˌpraɪz",
+    "sylWord": "en·ter·prise"
+  },
+  {
+    "word": "equity",
+    "kk": "[ˈɛkwəti]",
+    "translation": "股本、公平、稅後剩餘價值",
+    "part_of_speech": "n.",
+    "note": "業務/財務。",
+    "sylKK": "ˈɛ·kwə·ti",
+    "sylWord": "eq·ui·ty"
+  },
+  {
+    "word": "financier",
+    "kk": "[ˌfɪnənˈsɪr]",
+    "translation": "資本家、金主、投資者",
+    "part_of_speech": "n.",
+    "note": "業務。",
+    "sylKK": "ˌfɪ·nən·ˈsɪr",
+    "sylWord": "fi·nancier"
+  },
+  {
+    "word": "integrate",
+    "kk": "[ˈɪntəˌgret]",
+    "translation": "統合、整合",
+    "part_of_speech": "v.",
+    "note": "業務。名詞 integration。",
+    "sylKK": "ˈɪn·tə·ˌgret",
+    "sylWord": "in·te·grate"
+  },
+  {
+    "word": "merger",
+    "kk": "[ˈmɝdʒɚ]",
+    "translation": "合併、併吞",
+    "part_of_speech": "n.",
+    "note": "業務。動詞 merge。",
+    "sylKK": "ˈmɝ·dʒɚ",
+    "sylWord": "merg·er"
+  },
+  {
+    "word": "pending",
+    "kk": "[ˈpɛndɪŋ]",
+    "translation": "未決定的、待處理的",
+    "part_of_speech": "adj.",
+    "note": "業務。",
+    "sylKK": "ˈpɛn·dɪŋ",
+    "sylWord": "pend·ing"
+  },
+  {
+    "word": "preliminary",
+    "kk": "[prɪˈlɪməˌnɛri]",
+    "translation": "初步的、預備的",
+    "part_of_speech": "adj.",
+    "note": "業務。",
+    "sylKK": "prɪ·ˈlɪ·mə·ˌnɛ·ri",
+    "sylWord": "pre·lim·i·nary"
+  },
+  {
+    "word": "propose",
+    "kk": "[prəˈpoz]",
+    "translation": "提議、建議",
+    "part_of_speech": "v.",
+    "note": "業務。名詞 proposal。",
+    "sylKK": "prə·ˈpoz",
+    "sylWord": "pro·pose"
+  },
+  {
+    "word": "prospect",
+    "kk": "[ˈprɑspɛkt]",
+    "translation": "展望、前景、潛在客戶",
+    "part_of_speech": "n.",
+    "note": "業務。",
+    "sylKK": "ˈprɑ·spɛkt",
+    "sylWord": "pros·pect"
+  },
+  {
+    "word": "prosperity",
+    "kk": "[prɑˈspɛrəti]",
+    "translation": "繁榮、成功",
+    "part_of_speech": "n.",
+    "note": "業務。形容詞 prosperous。",
+    "sylKK": "prɑ·ˈspɛ·rə·ti",
+    "sylWord": "pros·per·i·ty"
+  },
+  {
+    "word": "scheme",
+    "kk": "[ˈskim]",
+    "translation": "計劃、方案",
+    "part_of_speech": "n.",
+    "note": "業務。",
+    "sylKK": "ˈskim",
+    "sylWord": "scheme"
+  },
+  {
+    "word": "thrive",
+    "kk": "[ˈθraɪv]",
+    "translation": "茂盛、興旺、蓬勃發展",
+    "part_of_speech": "v.",
+    "note": "業務。",
+    "sylKK": "ˈθraɪv",
+    "sylWord": "thrive"
+  },
+  {
+    "word": "undervalue",
+    "kk": "[ˈʌndɚˌvælju]",
+    "translation": "低估（價值）",
+    "part_of_speech": "v.",
+    "note": "業務。反義 overvalue。",
+    "sylKK": "ˈʌn·dɚ·ˌvæ·lju",
+    "sylWord": "un·der·val·ue"
+  },
+  {
+    "word": "customer",
+    "kk": "[ˈkʌstəmɚ]",
+    "translation": "顧客",
+    "part_of_speech": "n.",
+    "note": "類語：≒ client。",
+    "sylKK": "ˈkʌ·stə·mɚ",
+    "sylWord": "cus·tomer"
+  },
+  {
+    "word": "client",
+    "kk": "[ˈklaɪənt]",
+    "translation": "客戶、委託人",
+    "part_of_speech": "n.",
+    "note": "類語：≒ customer。",
+    "sylKK": "ˈklaɪ·ənt",
+    "sylWord": "client"
+  },
+  {
+    "word": "answer",
+    "kk": "[ˈænsɚ]",
+    "translation": "回答、答覆",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ reply。",
+    "sylKK": "ˈæn·sɚ",
+    "sylWord": "an·swer"
+  },
+  {
+    "word": "chance",
+    "kk": "[ˈtʃæns]",
+    "translation": "機會",
+    "part_of_speech": "n.",
+    "note": "類語：≒ opportunity。",
+    "sylKK": "ˈtʃæns",
+    "sylWord": "chance"
+  },
+  {
+    "word": "exhibition",
+    "kk": "[ˌɛksəˈbɪʃən]",
+    "translation": "展覽",
+    "part_of_speech": "n.",
+    "note": "類語：≒ fair。",
+    "sylKK": "ˌɛk·sə·ˈbɪ·ʃən",
+    "sylWord": "ex·hi·bi·tion"
+  },
+  {
+    "word": "odor",
+    "kk": "[ˈodɚ]",
+    "translation": "氣味",
+    "part_of_speech": "n.",
+    "note": "類語：≒ smell。",
+    "sylKK": "ˈo·dɚ",
+    "sylWord": "o·dor"
+  },
+  {
+    "word": "belongings",
+    "kk": "[bɪˈlɑŋɪŋz]",
+    "translation": "財物、所有物",
+    "part_of_speech": "n.",
+    "note": "類語：≒ possessions。",
+    "sylKK": "bɪ·ˈlɑ·ŋɪŋz",
+    "sylWord": "be·long·ings"
+  },
+  {
+    "word": "convention",
+    "kk": "[kənˈvɛnʃən]",
+    "translation": "大會、會議；慣例",
+    "part_of_speech": "n.",
+    "note": "類語：≒ congress。",
+    "sylKK": "kən·ˈvɛn·ʃən",
+    "sylWord": "con·ven·tion"
+  },
+  {
+    "word": "invoice",
+    "kk": "[ˈɪnvɔɪs]",
+    "translation": "帳單、發票、發貨清單",
+    "part_of_speech": "n.",
+    "note": "類語：≒ bill。",
+    "sylKK": "ˈɪn·vɔɪs",
+    "sylWord": "in·voice"
+  },
+  {
+    "word": "reservation",
+    "kk": "[ˌrɛzɚˈveʃən]",
+    "translation": "預約、預訂",
+    "part_of_speech": "n.",
+    "note": "類語：≒ booking。",
+    "sylKK": "ˌrɛ·zɚ·ˈve·ʃən",
+    "sylWord": "reser·va·tion"
+  },
+  {
+    "word": "evidence",
+    "kk": "[ˈɛvədəns]",
+    "translation": "證據",
+    "part_of_speech": "n.",
+    "note": "類語：≒ proof。",
+    "sylKK": "ˈɛ·və·dəns",
+    "sylWord": "ev·i·dence"
+  },
+  {
+    "word": "position",
+    "kk": "[pəˈzɪʃən]",
+    "translation": "職位、位置",
+    "part_of_speech": "n.",
+    "note": "類語：≒ post。",
+    "sylKK": "pə·ˈzɪ·ʃən",
+    "sylWord": "po·si·tion"
+  },
+  {
+    "word": "progress",
+    "kk": "[ˈprɑˌgrɛs]",
+    "translation": "進步、進展",
+    "part_of_speech": "n.",
+    "note": "類語：≒ advance。",
+    "sylKK": "ˈprɑ·ˌgrɛs",
+    "sylWord": "prog·ress"
+  },
+  {
+    "word": "draft",
+    "kk": "[ˈdræft]",
+    "translation": "草稿、草案",
+    "part_of_speech": "n.",
+    "note": "類語：≒ manuscript。",
+    "sylKK": "ˈdræft",
+    "sylWord": "draft"
+  },
+  {
+    "word": "aid",
+    "kk": "[ˈed]",
+    "translation": "援助、幫助",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ help。",
+    "sylKK": "ˈed",
+    "sylWord": "aid"
+  },
+  {
+    "word": "cuisine",
+    "kk": "[kwɪˈzin]",
+    "translation": "料理、菜餚",
+    "part_of_speech": "n.",
+    "note": "類語：≒ cooking。",
+    "sylKK": "kwɪ·ˈzin",
+    "sylWord": "cui·sine"
+  },
+  {
+    "word": "excerpt",
+    "kk": "[ˈɛksɚpt]",
+    "translation": "摘錄、引文",
+    "part_of_speech": "n.",
+    "note": "類語：≒ extract。",
+    "sylKK": "ˈɛk·sɚpt",
+    "sylWord": "ex·cerpt"
+  },
+  {
+    "word": "promptness",
+    "kk": "",
+    "translation": "迅速、及時",
+    "part_of_speech": "n.",
+    "note": "類語：≒ speed。"
+  },
+  {
+    "word": "effort",
+    "kk": "[ˈɛfɚt]",
+    "translation": "努力",
+    "part_of_speech": "n.",
+    "note": "類語：≒ endeavor。",
+    "sylKK": "ˈɛ·fɚt",
+    "sylWord": "ef·fort"
+  },
+  {
+    "word": "achievement",
+    "kk": "[əˈtʃivmənt]",
+    "translation": "成就、成功",
+    "part_of_speech": "n.",
+    "note": "類語：≒ success。",
+    "sylKK": "ə·ˈtʃiv·mənt",
+    "sylWord": "achieve·ment"
+  },
+  {
+    "word": "disorder",
+    "kk": "[dɪˈsɔrdɚ]",
+    "translation": "混亂、失調",
+    "part_of_speech": "n.",
+    "note": "類語：≒ confusion。",
+    "sylKK": "dɪ·ˈsɔr·dɚ",
+    "sylWord": "dis·or·der"
+  },
+  {
+    "word": "correspondence",
+    "kk": "[ˌkɔrəˈspɑndəns]",
+    "translation": "通信、信件",
+    "part_of_speech": "n.",
+    "note": "類語：≒ communication。",
+    "sylKK": "ˌkɔ·rə·ˈspɑn·dəns",
+    "sylWord": "cor·re·spon·dence"
+  },
+  {
+    "word": "hallway",
+    "kk": "[ˈhɑlˌwe]",
+    "translation": "走廊、玄關",
+    "part_of_speech": "n.",
+    "note": "類語：≒ corridor。",
+    "sylKK": "ˈhɑl·ˌwe",
+    "sylWord": "hall·way"
+  },
+  {
+    "word": "pastime",
+    "kk": "[ˈpæˌstaɪm]",
+    "translation": "消遣、興趣",
+    "part_of_speech": "n.",
+    "note": "類語：≒ hobby。",
+    "sylKK": "ˈpæ·ˌstaɪm",
+    "sylWord": "pas·time"
+  },
+  {
+    "word": "region",
+    "kk": "[ˈridʒən]",
+    "translation": "地區、區域",
+    "part_of_speech": "n.",
+    "note": "類語：≒ area。",
+    "sylKK": "ˈri·dʒən",
+    "sylWord": "re·gion"
+  },
+  {
+    "word": "incentive",
+    "kk": "[ˌɪnˈsɛntɪv]",
+    "translation": "動機、誘因、獎勵",
+    "part_of_speech": "n.",
+    "note": "類語：≒ motivation。",
+    "sylKK": "ˌɪn·ˈsɛn·tɪv",
+    "sylWord": "in·cen·tive"
+  },
+  {
+    "word": "constraint",
+    "kk": "[kənˈstrent]",
+    "translation": "限制、約束",
+    "part_of_speech": "n.",
+    "note": "類語：≒ restriction。",
+    "sylKK": "kən·ˈstrent",
+    "sylWord": "con·straint"
+  },
+  {
+    "word": "appraisal",
+    "kk": "[əˈprezəl]",
+    "translation": "評價、估價、考核",
+    "part_of_speech": "n.",
+    "note": "類語：≒ assessment / evaluation。",
+    "sylKK": "ə·ˈpre·zəl",
+    "sylWord": "ap·praisal"
+  },
+  {
+    "word": "intermission",
+    "kk": "[ˌɪntɚˈmɪʃən]",
+    "translation": "休息時間、中場休息",
+    "part_of_speech": "n.",
+    "note": "類語：≒ pause / break。",
+    "sylKK": "ˌɪn·tɚ·ˈmɪ·ʃən",
+    "sylWord": "in·ter·mis·sion"
+  },
+  {
+    "word": "accuracy",
+    "kk": "[ˈækjərəsi]",
+    "translation": "正確、準確",
+    "part_of_speech": "n.",
+    "note": "類語：≒ precision。形容詞 accurate。",
+    "sylKK": "ˈæ·kjə·rə·si",
+    "sylWord": "ac·cu·ra·cy"
+  },
+  {
+    "word": "reward",
+    "kk": "[rɪˈwɔrd]",
+    "translation": "報酬、獎賞",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ remuneration。",
+    "sylKK": "rɪ·ˈwɔrd",
+    "sylWord": "re·ward"
+  },
+  {
+    "word": "authorization",
+    "kk": "[ˌɑθərəˈzeʃən]",
+    "translation": "授權、認可、批准",
+    "part_of_speech": "n.",
+    "note": "類語：≒ permission。",
+    "sylKK": "ˌɑ·θə·rə·ˈze·ʃən",
+    "sylWord": "au·tho·riza·tion"
+  },
+  {
+    "word": "exemption",
+    "kk": "[ɪgˈzɛmpʃən]",
+    "translation": "豁免、免除",
+    "part_of_speech": "n.",
+    "note": "類語：≒ reduction。動詞 exempt。",
+    "sylKK": "ɪg·ˈzɛmp·ʃən",
+    "sylWord": "ex·emp·tion"
+  },
+  {
+    "word": "fitness",
+    "kk": "[ˈfɪtnəs]",
+    "translation": "健康、體適能、適合",
+    "part_of_speech": "n.",
+    "note": "類語：≒ health。",
+    "sylKK": "ˈfɪt·nəs",
+    "sylWord": "fit·ness"
+  },
+  {
+    "word": "revelation",
+    "kk": "[ˌrɛvəˈleʃən]",
+    "translation": "揭露、透露",
+    "part_of_speech": "n.",
+    "note": "類語：≒ disclosure。",
+    "sylKK": "ˌrɛ·və·ˈle·ʃən",
+    "sylWord": "rev·e·la·tion"
+  },
+  {
+    "word": "liability",
+    "kk": "[ˌlaɪəˈbɪlɪti]",
+    "translation": "責任、義務、負債",
+    "part_of_speech": "n.",
+    "note": "類語：≒ responsibility。",
+    "sylKK": "ˌlaɪ·ə·ˈbɪ·lɪ·ti",
+    "sylWord": "li·a·bil·i·ty"
+  },
+  {
+    "word": "takeover",
+    "kk": "[ˈteˌkovɚ]",
+    "translation": "接管、收購（企業）",
+    "part_of_speech": "n.",
+    "note": "類語：≒ buyout。",
+    "sylKK": "ˈte·ˌko·vɚ",
+    "sylWord": "ta·keo·ver"
+  },
+  {
+    "word": "acclaim",
+    "kk": "[əˈklem]",
+    "translation": "稱讚、讚揚",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ praise。",
+    "sylKK": "ə·ˈklem",
+    "sylWord": "ac·claim"
+  },
+  {
+    "word": "merchandise",
+    "kk": "[ˈmɝtʃənˌdaɪz]",
+    "translation": "商品、貨物",
+    "part_of_speech": "n.",
+    "note": "類語：≒ goods。不可數。",
+    "sylKK": "ˈmɝ·tʃən·ˌdaɪz",
+    "sylWord": "mer·chan·dise"
+  },
+  {
+    "word": "brochure",
+    "kk": "[broˈʃʊr]",
+    "translation": "小冊子、廣告手冊",
+    "part_of_speech": "n.",
+    "note": "類語：≒ pamphlet / booklet。",
+    "sylKK": "bro·ˈʃʊr",
+    "sylWord": "broc·hure"
+  },
+  {
+    "word": "shareholder",
+    "kk": "[ˈʃɛrˌholdɚ]",
+    "translation": "股東",
+    "part_of_speech": "n.",
+    "note": "人物。同義 stockholder。",
+    "sylKK": "ˈʃɛr·ˌhol·dɚ",
+    "sylWord": "share·hold·er"
+  },
+  {
+    "word": "consultant",
+    "kk": "[kənˈsʌltənt]",
+    "translation": "顧問",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "kən·ˈsʌl·tənt",
+    "sylWord": "con·sul·tant"
+  },
+  {
+    "word": "sales rep",
+    "kk": "",
+    "translation": "業務員、業務代表",
+    "part_of_speech": "n. phr.",
+    "note": "人物。rep = representative。"
+  },
+  {
+    "word": "supplier",
+    "kk": "[səˈplaɪɚ]",
+    "translation": "供應商",
+    "part_of_speech": "n.",
+    "note": "人物。動詞 supply。",
+    "sylKK": "sə·ˈplaɪ·ɚ",
+    "sylWord": "sup·pli·er"
+  },
+  {
+    "word": "account",
+    "kk": "[əˈkaʊnt]",
+    "translation": "帳目、帳戶；客戶",
+    "part_of_speech": "n.",
+    "note": "人物/財務。",
+    "sylKK": "ə·ˈkaʊnt",
+    "sylWord": "ac·count"
+  },
+  {
+    "word": "receptionist",
+    "kk": "[rɪˈsɛpʃənɪst]",
+    "translation": "接待員、櫃檯人員",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "rɪ·ˈsɛp·ʃə·nɪst",
+    "sylWord": "re·cep·tion·ist"
+  },
+  {
+    "word": "board of directors",
+    "kk": "",
+    "translation": "董事會",
+    "part_of_speech": "n. phr.",
+    "note": "人物。"
+  },
+  {
+    "word": "spectator",
+    "kk": "[ˈspɛktetɚ]",
+    "translation": "觀眾、旁觀者",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "ˈspɛk·te·tɚ",
+    "sylWord": "spec·ta·tor"
+  },
+  {
+    "word": "supervisor",
+    "kk": "[ˈsupɚˌvaɪzɚ]",
+    "translation": "主管、管理者、監督者",
+    "part_of_speech": "n.",
+    "note": "人物。動詞 supervise。",
+    "sylKK": "ˈsu·pɚ·ˌvaɪ·zɚ",
+    "sylWord": "su·per·vi·sor"
+  },
+  {
+    "word": "tenant",
+    "kk": "[ˈtɛnənt]",
+    "translation": "房客、租戶",
+    "part_of_speech": "n.",
+    "note": "人物。反義 landlord。",
+    "sylKK": "ˈtɛ·nənt",
+    "sylWord": "ten·ant"
+  },
+  {
+    "word": "plumber",
+    "kk": "[ˈplʌmɚ]",
+    "translation": "水電工、管線工",
+    "part_of_speech": "n.",
+    "note": "人物。b 不發音。",
+    "sylKK": "ˈplʌ·mɚ",
+    "sylWord": "plum·ber"
+  },
+  {
+    "word": "secretary",
+    "kk": "[ˈsɛkrəˌtɛri]",
+    "translation": "秘書",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "ˈsɛ·krə·ˌtɛ·ri",
+    "sylWord": "sec·re·tary"
+  },
+  {
+    "word": "president",
+    "kk": "[ˈprɛzəˌdɛnt]",
+    "translation": "總裁、董事長；總統",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "ˈprɛ·zə·ˌdɛnt",
+    "sylWord": "pres·i·dent"
+  },
+  {
+    "word": "vice president",
+    "kk": "",
+    "translation": "副總裁、副總",
+    "part_of_speech": "n. phr.",
+    "note": "人物。"
+  },
+  {
+    "word": "opponent",
+    "kk": "[əˈponənt]",
+    "translation": "對手、敵手",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "ə·ˈpo·nənt",
+    "sylWord": "op·po·nent"
+  },
+  {
+    "word": "novice",
+    "kk": "[ˈnɑvəs]",
+    "translation": "新手、初學者",
+    "part_of_speech": "n.",
+    "note": "人物。",
+    "sylKK": "ˈnɑ·vəs",
+    "sylWord": "no·vice"
+  },
+  {
+    "word": "appointment",
+    "kk": "[əˈpɔɪntmənt]",
+    "translation": "約會、約定、預約",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ə·ˈpɔɪnt·mənt",
+    "sylWord": "ap·point·ment"
+  },
+  {
+    "word": "attendance",
+    "kk": "[əˈtɛndəns]",
+    "translation": "出席、出席人數",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ə·ˈtɛn·dəns",
+    "sylWord": "at·ten·dance"
+  },
+  {
+    "word": "cabinet",
+    "kk": "[ˈkæbənət]",
+    "translation": "櫥櫃；內閣",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈkæ·bə·nət",
+    "sylWord": "cab·i·net"
+  },
+  {
+    "word": "calendar",
+    "kk": "[ˈkæləndɚ]",
+    "translation": "日曆、行事曆",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈkæ·lən·dɚ",
+    "sylWord": "cal·en·dar"
+  },
+  {
+    "word": "clerk",
+    "kk": "[ˈklɝk]",
+    "translation": "辦事員、職員、店員",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈklɝk",
+    "sylWord": "clerk"
+  },
+  {
+    "word": "directory",
+    "kk": "[dəˈrɛktəri]",
+    "translation": "通訊錄、人名住址簿",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "də·ˈrɛk·tə·ri",
+    "sylWord": "di·rec·to·ry"
+  },
+  {
+    "word": "duplicate",
+    "kk": "[ˈdupləkət]",
+    "translation": "複製、副本",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。",
+    "sylKK": "ˈdu·plə·kət",
+    "sylWord": "du·pli·cate"
+  },
+  {
+    "word": "filing",
+    "kk": "[ˈfaɪlɪŋ]",
+    "translation": "歸檔、存檔",
+    "part_of_speech": "n.",
+    "note": "辦公室。file cabinet 檔案櫃。",
+    "sylKK": "ˈfaɪ·lɪŋ",
+    "sylWord": "fil·ing"
+  },
+  {
+    "word": "in-tray",
+    "kk": "",
+    "translation": "待處理文件盒",
+    "part_of_speech": "n.",
+    "note": "辦公室。反義 out-tray。"
+  },
+  {
+    "word": "monitor",
+    "kk": "[ˈmɑnətɚ]",
+    "translation": "檢測、監視、追蹤；螢幕",
+    "part_of_speech": "v. / n.",
+    "note": "辦公室。",
+    "sylKK": "ˈmɑ·nə·tɚ",
+    "sylWord": "mon·i·tor"
+  },
+  {
+    "word": "out-tray",
+    "kk": "",
+    "translation": "已處理文件盒",
+    "part_of_speech": "n.",
+    "note": "辦公室。"
+  },
+  {
+    "word": "partition",
+    "kk": "[pɑrˈtɪʃən]",
+    "translation": "隔間、分隔物",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "pɑr·ˈtɪ·ʃən",
+    "sylWord": "par·ti·tion"
+  },
+  {
+    "word": "postage",
+    "kk": "[ˈpostədʒ]",
+    "translation": "郵資、郵費",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈpo·stədʒ",
+    "sylWord": "pos·tage"
+  },
+  {
+    "word": "punctuality",
+    "kk": "[ˌpʌŋktʃuˈælɪti]",
+    "translation": "準時、守時",
+    "part_of_speech": "n.",
+    "note": "辦公室。形容詞 punctual。",
+    "sylKK": "ˌpʌŋk·tʃu·ˈæ·lɪ·ti",
+    "sylWord": "punc·tu·al·i·ty"
+  },
+  {
+    "word": "schedule",
+    "kk": "[ˈskɛdʒʊl]",
+    "translation": "時間表、行程；排定",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。",
+    "sylKK": "ˈskɛ·dʒʊl",
+    "sylWord": "sched·ule"
+  },
+  {
+    "word": "shift",
+    "kk": "[ˈʃɪft]",
+    "translation": "輪班、換班；轉移",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。night shift 夜班。",
+    "sylKK": "ˈʃɪft",
+    "sylWord": "shift"
+  },
+  {
+    "word": "staff",
+    "kk": "[ˈstæf]",
+    "translation": "全體職員、員工",
+    "part_of_speech": "n.",
+    "note": "辦公室。集合名詞。",
+    "sylKK": "ˈstæf",
+    "sylWord": "staff"
+  },
+  {
+    "word": "strike",
+    "kk": "[ˈstraɪk]",
+    "translation": "罷工；打擊",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。",
+    "sylKK": "ˈstraɪk",
+    "sylWord": "strike"
+  },
+  {
+    "word": "task",
+    "kk": "[ˈtæsk]",
+    "translation": "工作、任務",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈtæsk",
+    "sylWord": "task"
+  },
+  {
+    "word": "workforce",
+    "kk": "[ˈwɝkˌfɔrs]",
+    "translation": "勞動力、全體員工",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈwɝk·ˌfɔrs",
+    "sylWord": "work·force"
+  },
+  {
+    "word": "assignment",
+    "kk": "[əˈsaɪnmənt]",
+    "translation": "分配的工作、任務、作業",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 assign。",
+    "sylKK": "ə·ˈsaɪn·mənt",
+    "sylWord": "as·sign·ment"
+  },
+  {
+    "word": "bulletin",
+    "kk": "[ˈbʊlɪtən]",
+    "translation": "公報、告示、簡報",
+    "part_of_speech": "n.",
+    "note": "辦公室。bulletin board 公佈欄。",
+    "sylKK": "ˈbʊ·lɪ·tən",
+    "sylWord": "bul·letin"
+  },
+  {
+    "word": "calculator",
+    "kk": "[ˈkælkjəˌletɚ]",
+    "translation": "計算機",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈkæl·kjə·ˌle·tɚ",
+    "sylWord": "cal·cu·la·tor"
+  },
+  {
+    "word": "carbon copy",
+    "kk": "",
+    "translation": "副本（複寫）",
+    "part_of_speech": "n. phr.",
+    "note": "辦公室。email 的 CC。"
+  },
+  {
+    "word": "colleague",
+    "kk": "[ˈkɑlig]",
+    "translation": "同事、同僚",
+    "part_of_speech": "n.",
+    "note": "辦公室。同義 coworker。",
+    "sylKK": "ˈkɑ·lig",
+    "sylWord": "col·league"
+  },
+  {
+    "word": "document",
+    "kk": "[ˈdɑkjəmɛnt]",
+    "translation": "文件、公文",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈdɑ·kjə·mɛnt",
+    "sylWord": "doc·u·ment"
+  },
+  {
+    "word": "extension",
+    "kk": "[ɪkˈstɛnʃən]",
+    "translation": "分機（電話）；延長",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ɪk·ˈstɛn·ʃən",
+    "sylWord": "ex·ten·sion"
+  },
+  {
+    "word": "intercom",
+    "kk": "[ˈɪntɚˌkɑm]",
+    "translation": "對講機、內部通話系統",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈɪn·tɚ·ˌkɑm",
+    "sylWord": "in·ter·com"
+  },
+  {
+    "word": "memo",
+    "kk": "[ˈmɛˌmo]",
+    "translation": "便條、備忘錄",
+    "part_of_speech": "n.",
+    "note": "辦公室。= memorandum。",
+    "sylKK": "ˈmɛ·ˌmo",
+    "sylWord": "me·mo"
+  },
+  {
+    "word": "operator",
+    "kk": "[ˈɑpəˌretɚ]",
+    "translation": "接線生、操作員",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈɑ·pə·ˌre·tɚ",
+    "sylWord": "op·er·a·tor"
+  },
+  {
+    "word": "portfolio",
+    "kk": "[pɔrtˈfoliˌo]",
+    "translation": "作品夾、公事包；投資組合",
+    "part_of_speech": "n.",
+    "note": "辦公室/財務。",
+    "sylKK": "pɔrt·ˈfo·li·ˌo",
+    "sylWord": "port·fo·lio"
+  },
+  {
+    "word": "printed matter",
+    "kk": "",
+    "translation": "印刷品",
+    "part_of_speech": "n. phr.",
+    "note": "辦公室。"
+  },
+  {
+    "word": "shorthand",
+    "kk": "[ˈʃɔrtˌhænd]",
+    "translation": "速記、速記法",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈʃɔrt·ˌhænd",
+    "sylWord": "short·hand"
+  },
+  {
+    "word": "stapler",
+    "kk": "[ˈstepəlɚ]",
+    "translation": "訂書機",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈste·pə·lɚ",
+    "sylWord": "sta·pler"
+  },
+  {
+    "word": "tardy",
+    "kk": "[ˈtɑrdi]",
+    "translation": "遲緩的、遲到的",
+    "part_of_speech": "adj.",
+    "note": "辦公室。",
+    "sylKK": "ˈtɑr·di",
+    "sylWord": "tar·dy"
+  },
+  {
+    "word": "typist",
+    "kk": "[ˈtaɪpɪst]",
+    "translation": "打字員",
+    "part_of_speech": "n.",
+    "note": "辦公室。",
+    "sylKK": "ˈtaɪ·pɪst",
+    "sylWord": "typ·ist"
+  },
+  {
+    "word": "xerox",
+    "kk": "[ˈzɪrɑks]",
+    "translation": "影印；影印機",
+    "part_of_speech": "v. / n.",
+    "note": "辦公室。原為品牌名。",
+    "sylKK": "ˈzɪ·rɑks",
+    "sylWord": "xe·rox"
+  },
+  {
+    "word": "balance",
+    "kk": "[ˈbæləns]",
+    "translation": "餘額、差額；平衡",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "ˈbæ·ləns",
+    "sylWord": "bal·ance"
+  },
+  {
+    "word": "bond",
+    "kk": "[ˈbɑnd]",
+    "translation": "債券",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "ˈbɑnd",
+    "sylWord": "bond"
+  },
+  {
+    "word": "chamber of commerce",
+    "kk": "",
+    "translation": "商會",
+    "part_of_speech": "n. phr.",
+    "note": "財務。"
+  },
+  {
+    "word": "credit",
+    "kk": "[ˈkrɛdət]",
+    "translation": "功勞、信用、貸方、存款額",
+    "part_of_speech": "n.",
+    "note": "財務。反義 debit。",
+    "sylKK": "ˈkrɛ·dət",
+    "sylWord": "cred·it"
+  },
+  {
+    "word": "debt",
+    "kk": "[ˈdɛt]",
+    "translation": "債、債務",
+    "part_of_speech": "n.",
+    "note": "財務。b 不發音。",
+    "sylKK": "ˈdɛt",
+    "sylWord": "debt"
+  },
+  {
+    "word": "deficit",
+    "kk": "[ˈdɛfəsət]",
+    "translation": "赤字、虧損",
+    "part_of_speech": "n.",
+    "note": "財務。反義 surplus。",
+    "sylKK": "ˈdɛ·fə·sət",
+    "sylWord": "de·fi·cit"
+  },
+  {
+    "word": "depreciation",
+    "kk": "[dɪˌpriʃiˈeʃən]",
+    "translation": "跌價、貶值、折舊",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "dɪ·ˌpri·ʃi·ˈe·ʃən",
+    "sylWord": "de·pre·ci·a·tion"
+  },
+  {
+    "word": "devaluation",
+    "kk": "[dɪˌvæljuˈeʃən]",
+    "translation": "（貨幣）貶值",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "dɪ·ˌvæ·lju·ˈe·ʃən",
+    "sylWord": "de·val·u·a·tion"
+  },
+  {
+    "word": "endorse",
+    "kk": "[ɛnˈdɔrs]",
+    "translation": "贊同、支持、背書",
+    "part_of_speech": "v.",
+    "note": "財務。名詞 endorsement。",
+    "sylKK": "ɛn·ˈdɔrs",
+    "sylWord": "en·dorse"
+  },
+  {
+    "word": "expense",
+    "kk": "[ɪkˈspɛns]",
+    "translation": "費用、開銷",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "ɪk·ˈspɛns",
+    "sylWord": "ex·pense"
+  },
+  {
+    "word": "fluctuation",
+    "kk": "[ˌflʌktʃuˈeʃən]",
+    "translation": "波動、起伏",
+    "part_of_speech": "n.",
+    "note": "財務。動詞 fluctuate。",
+    "sylKK": "ˌflʌk·tʃu·ˈe·ʃən",
+    "sylWord": "fluc·tu·a·tion"
+  },
+  {
+    "word": "gross",
+    "kk": "[ˈgros]",
+    "translation": "總共的、毛額的",
+    "part_of_speech": "adj.",
+    "note": "財務。反義 net。",
+    "sylKK": "ˈgros",
+    "sylWord": "gross"
+  },
+  {
+    "word": "inflation",
+    "kk": "[ˌɪnˈfleʃən]",
+    "translation": "通貨膨脹、物價上漲",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "ˌɪn·ˈfle·ʃən",
+    "sylWord": "in·fla·tion"
+  },
+  {
+    "word": "overdraft",
+    "kk": "[ˈovɚˌdræft]",
+    "translation": "透支",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "ˈo·vɚ·ˌdræft",
+    "sylWord": "over·draft"
+  },
+  {
+    "word": "profit",
+    "kk": "[ˈprɑfət]",
+    "translation": "利潤、收益",
+    "part_of_speech": "n.",
+    "note": "財務。反義 loss。",
+    "sylKK": "ˈprɑ·fət",
+    "sylWord": "prof·it"
+  },
+  {
+    "word": "revenue",
+    "kk": "[ˈrɛvəˌnu]",
+    "translation": "收益、營收、稅收",
+    "part_of_speech": "n.",
+    "note": "財務。",
+    "sylKK": "ˈrɛ·və·ˌnu",
+    "sylWord": "rev·enue"
+  },
+  {
+    "word": "stock",
+    "kk": "[ˈstɑk]",
+    "translation": "股票、公債；存貨、現貨",
+    "part_of_speech": "n.",
+    "note": "財務/貿易。",
+    "sylKK": "ˈstɑk",
+    "sylWord": "stock"
+  },
+  {
+    "word": "withdraw",
+    "kk": "[wɪðˈdrɑ]",
+    "translation": "撤回、提款、退出",
+    "part_of_speech": "v.",
+    "note": "財務。名詞 withdrawal。",
+    "sylKK": "wɪð·ˈdrɑ",
+    "sylWord": "with·draw"
+  },
+  {
+    "word": "bid",
+    "kk": "[ˈbɪd]",
+    "translation": "出價、投標、喊價",
+    "part_of_speech": "n. / v.",
+    "note": "貿易。",
+    "sylKK": "ˈbɪd",
+    "sylWord": "bid"
+  },
+  {
+    "word": "commercial",
+    "kk": "[kəˈmɝʃəl]",
+    "translation": "商業的、營利的；廣告",
+    "part_of_speech": "adj. / n.",
+    "note": "貿易。",
+    "sylKK": "kə·ˈmɝ·ʃəl",
+    "sylWord": "com·mer·cial"
+  },
+  {
+    "word": "competitor",
+    "kk": "[kəmˈpɛtətɚ]",
+    "translation": "競爭者、對手",
+    "part_of_speech": "n.",
+    "note": "貿易。動詞 compete。",
+    "sylKK": "kəm·ˈpɛ·tə·tɚ",
+    "sylWord": "com·peti·tor"
+  },
+  {
+    "word": "consolidate",
+    "kk": "[kənˈsɑlɪˌdet]",
+    "translation": "結合、強化、鞏固",
+    "part_of_speech": "v.",
+    "note": "貿易。",
+    "sylKK": "kən·ˈsɑ·lɪ·ˌdet",
+    "sylWord": "con·sol·i·date"
+  },
+  {
+    "word": "contract",
+    "kk": "[ˈkɑnˌtrækt]",
+    "translation": "契約、合同",
+    "part_of_speech": "n.",
+    "note": "貿易。",
+    "sylKK": "ˈkɑn·ˌtrækt",
+    "sylWord": "con·tract"
+  },
+  {
+    "word": "corporate",
+    "kk": "[ˈkɔrpərət]",
+    "translation": "公司的、法人的、全體的",
+    "part_of_speech": "adj.",
+    "note": "貿易。",
+    "sylKK": "ˈkɔr·pə·rət",
+    "sylWord": "cor·po·rate"
+  },
+  {
+    "word": "credible",
+    "kk": "[ˈkrɛdəbəl]",
+    "translation": "可信的、可靠的",
+    "part_of_speech": "adj.",
+    "note": "貿易。",
+    "sylKK": "ˈkrɛ·də·bəl",
+    "sylWord": "cred·i·ble"
+  },
+  {
+    "word": "debit",
+    "kk": "[ˈdɛbɪt]",
+    "translation": "借方、扣款",
+    "part_of_speech": "n.",
+    "note": "貿易/財務。反義 credit。",
+    "sylKK": "ˈdɛ·bɪt",
+    "sylWord": "deb·it"
+  },
+  {
+    "word": "earnings",
+    "kk": "[ˈɝnɪŋz]",
+    "translation": "收入、收益、盈餘",
+    "part_of_speech": "n.",
+    "note": "貿易。恆用複數。",
+    "sylKK": "ˈɝ·nɪŋz",
+    "sylWord": "earn·ings"
+  },
+  {
+    "word": "export",
+    "kk": "[ˈɛkspɔrt]",
+    "translation": "輸出、出口",
+    "part_of_speech": "v. / n.",
+    "note": "貿易。反義 import。",
+    "sylKK": "ˈɛk·spɔrt",
+    "sylWord": "ex·port"
+  },
+  {
+    "word": "haggle",
+    "kk": "[ˈhægəl]",
+    "translation": "討價還價",
+    "part_of_speech": "v.",
+    "note": "貿易。",
+    "sylKK": "ˈhæ·gəl",
+    "sylWord": "hag·gle"
+  },
+  {
+    "word": "import",
+    "kk": "[ˌɪmˈpɔrt]",
+    "translation": "輸入、進口",
+    "part_of_speech": "v. / n.",
+    "note": "貿易。",
+    "sylKK": "ˌɪm·ˈpɔrt",
+    "sylWord": "im·port"
+  },
+  {
+    "word": "long-range",
+    "kk": "[ˈlɑŋˈrendʒ]",
+    "translation": "長期的、遠程的",
+    "part_of_speech": "adj.",
+    "note": "貿易。",
+    "sylKK": "ˈlɑŋ·ˈrendʒ",
+    "sylWord": "lon·g-range"
+  },
+  {
+    "word": "payment",
+    "kk": "[ˈpemənt]",
+    "translation": "支付、付款",
+    "part_of_speech": "n.",
+    "note": "貿易。動詞 pay。",
+    "sylKK": "ˈpe·mənt",
+    "sylWord": "pay·ment"
+  },
+  {
+    "word": "quote",
+    "kk": "[ˈkwot]",
+    "translation": "報價；引用",
+    "part_of_speech": "v. / n.",
+    "note": "貿易。名詞 quotation。",
+    "sylKK": "ˈkwot",
+    "sylWord": "quote"
+  },
+  {
+    "word": "supply",
+    "kk": "[səˈplaɪ]",
+    "translation": "供應、供給、供應品",
+    "part_of_speech": "n. / v.",
+    "note": "貿易。反義 demand。",
+    "sylKK": "sə·ˈplaɪ",
+    "sylWord": "sup·ply"
+  },
+  {
+    "word": "tariff",
+    "kk": "[ˈtɛrəf]",
+    "translation": "關稅、稅率表",
+    "part_of_speech": "n.",
+    "note": "貿易。",
+    "sylKK": "ˈtɛ·rəf",
+    "sylWord": "tar·iff"
+  },
+  {
+    "word": "voucher",
+    "kk": "[ˈvaʊtʃɚ]",
+    "translation": "憑證、折價券、代金券",
+    "part_of_speech": "n.",
+    "note": "貿易。",
+    "sylKK": "ˈvaʊ·tʃɚ",
+    "sylWord": "vouch·er"
+  },
+  {
+    "word": "adjourn",
+    "kk": "[əˈdʒɝn]",
+    "translation": "暫停、休會、延期",
+    "part_of_speech": "v.",
+    "note": "會議。",
+    "sylKK": "ə·ˈdʒɝn",
+    "sylWord": "ad·journ"
+  },
+  {
+    "word": "agreement",
+    "kk": "[əˈgrimənt]",
+    "translation": "同意、協定、協議",
+    "part_of_speech": "n.",
+    "note": "會議。動詞 agree。",
+    "sylKK": "ə·ˈgri·mənt",
+    "sylWord": "agree·ment"
+  },
+  {
+    "word": "amendment",
+    "kk": "[əˈmɛndmənt]",
+    "translation": "修正、修正案",
+    "part_of_speech": "n.",
+    "note": "會議。動詞 amend。",
+    "sylKK": "ə·ˈmɛnd·mənt",
+    "sylWord": "amend·ment"
+  },
+  {
+    "word": "approval",
+    "kk": "[əˈpruvəl]",
+    "translation": "贊成、同意、核准",
+    "part_of_speech": "n.",
+    "note": "會議。動詞 approve。",
+    "sylKK": "ə·ˈpru·vəl",
+    "sylWord": "ap·proval"
+  },
+  {
+    "word": "attentive",
+    "kk": "[əˈtɛntɪv]",
+    "translation": "注意的、專心的、體貼的",
+    "part_of_speech": "adj.",
+    "note": "會議。",
+    "sylKK": "ə·ˈtɛn·tɪv",
+    "sylWord": "at·ten·tive"
+  },
+  {
+    "word": "board",
+    "kk": "[ˈbɔrd]",
+    "translation": "理事會、委員會、董事會",
+    "part_of_speech": "n.",
+    "note": "會議。",
+    "sylKK": "ˈbɔrd",
+    "sylWord": "board"
+  },
+  {
+    "word": "brainstorm",
+    "kk": "[ˈbrenˌstɔrm]",
+    "translation": "集思廣益、腦力激盪",
+    "part_of_speech": "v.",
+    "note": "會議。",
+    "sylKK": "ˈbren·ˌstɔrm",
+    "sylWord": "brain·storm"
+  },
+  {
+    "word": "concede",
+    "kk": "[kənˈsid]",
+    "translation": "讓步、承認、容忍",
+    "part_of_speech": "v.",
+    "note": "會議。",
+    "sylKK": "kən·ˈsid",
+    "sylWord": "con·cede"
+  },
+  {
+    "word": "conference",
+    "kk": "[ˈkɑnfərəns]",
+    "translation": "會議、研討會、協商",
+    "part_of_speech": "n.",
+    "note": "會議。",
+    "sylKK": "ˈkɑn·fə·rəns",
+    "sylWord": "con·fer·ence"
+  },
+  {
+    "word": "convince",
+    "kk": "[kənˈvɪns]",
+    "translation": "使信服、說服",
+    "part_of_speech": "v.",
+    "note": "會議。",
+    "sylKK": "kən·ˈvɪns",
+    "sylWord": "con·vince"
+  },
+  {
+    "word": "cross-reference",
+    "kk": "[ˈkrɑsˌrɛfərəns]",
+    "translation": "前後參照、交叉引用",
+    "part_of_speech": "n.",
+    "note": "會議。",
+    "sylKK": "ˈkrɑs·ˌrɛ·fə·rəns",
+    "sylWord": "cross-ref·er·ence"
+  },
+  {
+    "word": "delegate",
+    "kk": "[ˈdɛləˌget]",
+    "translation": "代表；委派",
+    "part_of_speech": "n. / v.",
+    "note": "會議。",
+    "sylKK": "ˈdɛ·lə·ˌget",
+    "sylWord": "del·e·gate"
+  },
+  {
+    "word": "demand",
+    "kk": "[dɪˈmænd]",
+    "translation": "要求、需求",
+    "part_of_speech": "n. / v.",
+    "note": "會議。反義 supply。",
+    "sylKK": "dɪ·ˈmænd",
+    "sylWord": "de·mand"
+  },
+  {
+    "word": "dispute",
+    "kk": "[dɪˈspjut]",
+    "translation": "爭端、糾紛；爭論",
+    "part_of_speech": "n. / v.",
+    "note": "會議。",
+    "sylKK": "dɪ·ˈspjut",
+    "sylWord": "dis·pute"
+  },
+  {
+    "word": "negotiation",
+    "kk": "[nɪˌgoʃiˈeʃən]",
+    "translation": "協商、談判",
+    "part_of_speech": "n.",
+    "note": "會議。動詞 negotiate。",
+    "sylKK": "nɪ·ˌgo·ʃi·ˈe·ʃən",
+    "sylWord": "ne·go·ti·a·tion"
+  },
+  {
+    "word": "persuade",
+    "kk": "[pɚˈswed]",
+    "translation": "說服、勸服",
+    "part_of_speech": "v.",
+    "note": "會議。名詞 persuasion。",
+    "sylKK": "pɚ·ˈswed",
+    "sylWord": "per·suade"
+  },
+  {
+    "word": "postpone",
+    "kk": "[postˈpon]",
+    "translation": "延遲、延期",
+    "part_of_speech": "v.",
+    "note": "會議。同義 delay、put off。",
+    "sylKK": "post·ˈpon",
+    "sylWord": "post·pone"
+  },
+  {
+    "word": "reconcile",
+    "kk": "[ˈrɛkənˌsaɪl]",
+    "translation": "調和、調解、使一致",
+    "part_of_speech": "v.",
+    "note": "會議。",
+    "sylKK": "ˈrɛ·kən·ˌsaɪl",
+    "sylWord": "rec·on·cile"
+  },
+  {
+    "word": "settlement",
+    "kk": "[ˈsɛtəlmənt]",
+    "translation": "協議、和解、清償",
+    "part_of_speech": "n.",
+    "note": "會議。動詞 settle。",
+    "sylKK": "ˈsɛ·təl·mənt",
+    "sylWord": "set·tle·ment"
+  }
+]
