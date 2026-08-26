@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=79"><!-- 外部樣式表（?v=79 為破快取版本號） -->
-<script defer src="index.js?v=79"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=80"><!-- 外部樣式表（?v=80 為破快取版本號） -->
+<script defer src="index.js?v=80"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -102,6 +102,11 @@
         <span style="color:#00ff99;">正確: <span id="quizCorrect">0</span></span> |
         <span style="color:#ff5555;">錯誤: <span id="quizWrong">0</span></span>
         <div id="quizProgress" style="font-size: 12px; color: #888; margin-top: 5px;">進度: 0 / 0</div>
+      </div>
+
+      <!-- 加入最愛：把本題的英文單字加進我的最愛（★） -->
+      <div style="text-align:right; margin-bottom:4px;">
+        <button id="quizFavStar" class="fav-star" style="display:none;" onclick="toggleQuizFav()" title="加入/移除我的最愛">☆</button>
       </div>
 
       <!-- 題目框：作答後整框變綠(對)/變紅(錯) 當作對錯回饋 -->
@@ -339,6 +344,29 @@ function toggleFav(btn) {
     renderFavPanel();
     window.scrollTo(x, y);
 }
+// 測驗中「加入最愛」：把當前題目的英文單字加進/移出我的最愛
+function toggleQuizFav() {
+    if (typeof currentQuizTarget === "undefined" || !currentQuizTarget) return;
+    const w = currentQuizTarget.en;
+    if (favorites[w]) delete favorites[w];
+    else favorites[w] = { word: w, kk: "", translation: currentQuizTarget.cn || "", note: "", part_of_speech: "" };
+    saveFavs();
+    updateQuizFavStar();
+    renderFavPanel();
+    document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === w) updateStar(b); });
+}
+// 依當前題目更新測驗裡那顆星星的外觀（★=已收藏 / ☆=未收藏）
+function updateQuizFavStar() {
+    const s = document.getElementById("quizFavStar");
+    if (!s) return;
+    if (typeof currentQuizTarget === "undefined" || !currentQuizTarget) { s.style.display = "none"; return; }
+    s.style.display = "inline-block";
+    s.dataset.word = currentQuizTarget.en;
+    const on = isFav(currentQuizTarget.en);
+    s.textContent = on ? "★" : "☆";
+    s.classList.toggle("active", on);
+}
+
 // 我的最愛區塊名稱（同時當循環播放/找卡片的 key，需固定不變）
 const FAV_SECTION = "⭐ 我的最愛";
 // 循環播放要用的單字清單來源：一般區塊用 quizPool；「我的最愛」用 favorites（不進 quizPool，避免污染抽考）
@@ -1064,15 +1092,16 @@ function searchWord() {
     const row = card.closest(".content-row");      // 卡片所屬的內容列
     const title = row.previousElementSibling;       // 內容列前面的標題列
 
-    card.querySelector(".word").classList.remove("highlight"); // 先清除舊的標亮
+    const wordEl = card.querySelector(".main-text");     // 卡片上的英文單字元素（class 為 main-text）
+    if (wordEl) wordEl.classList.remove("highlight");    // 先清除舊的標亮
 
     // 只要單字「包含」搜尋字串就算命中
     if (word.includes(query)) {
       found = true;
       row.classList.remove("collapsed");                 // 展開所屬區塊
-      title.querySelector(".arrow").classList.add("rotate");
+      if (title) title.querySelector(".arrow")?.classList.add("rotate");
 
-      card.querySelector(".word").classList.add("highlight"); // 標亮命中的單字
+      if (wordEl) wordEl.classList.add("highlight"); // 標亮命中的單字
       card.scrollIntoView({ behavior: "smooth", block: "center" }); // 平滑捲動到該卡
     }
   });
@@ -1489,6 +1518,7 @@ function nextQuestion() {
 
     const target = currentQuizList[quizIndex]; // 本題正解
     currentQuizTarget = target;                // 供「再唸一次」按鈕重播用
+    updateQuizFavStar();                       // 更新「加入最愛」星星（依本題是否已收藏）
 
     // --- 根據題型決定題目顯示哪一面 ---
     // 中選英：顯示中文；英選中：顯示英文；聽選中：不顯示英文（只聽發音），顯示提示字
