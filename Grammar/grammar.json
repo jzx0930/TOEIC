@@ -309,6 +309,78 @@
             },
             {
               "type": "h",
+              "text": "使用時機"
+            },
+            {
+              "type": "usetable",
+              "rows": [
+                {
+                  "n": "用法一",
+                  "note": "習慣、規律、反覆發生的動作",
+                  "hint": "常配 always／usually／often／every day",
+                  "ex": [
+                    {
+                      "en": "He <k>goes</k> to the gym three times a week.",
+                      "zh": "他一週上健身房三次。"
+                    },
+                    {
+                      "en": "We usually <k>hold</k> a team meeting every Monday.",
+                      "zh": "我們通常每週一開團隊會議。"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法二",
+                  "note": "事實、科學真理、恆常不變的狀態",
+                  "ex": [
+                    {
+                      "en": "Water <k>boils</k> at 100°C.",
+                      "zh": "水在攝氏一百度沸騰。"
+                    },
+                    {
+                      "en": "The Earth <k>revolves</k> around the Sun.",
+                      "zh": "地球繞著太陽公轉。"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法三",
+                  "note": "現在的狀態、想法、感受、擁有",
+                  "hint": "狀態動詞 like／know／want／own／cost…",
+                  "ex": [
+                    {
+                      "en": "I <k>know</k> the answer.",
+                      "zh": "我知道答案。"
+                    },
+                    {
+                      "en": "She <k>wants</k> a cup of tea.",
+                      "zh": "她想要一杯茶。"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法四",
+                  "note": "已排定時刻表的未來",
+                  "hint": "班機、車次、課表、營業時間",
+                  "ex": [
+                    {
+                      "en": "The train <k>leaves</k> at 6:30 tomorrow.",
+                      "zh": "火車明天早上六點半發車。"
+                    },
+                    {
+                      "en": "The conference <k>starts</k> next Monday.",
+                      "zh": "研討會下週一開始。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "頻率副詞的位置：放在「一般動詞前面」、但放在「be 動詞後面」。例如 She often works late；She is often late。（be 動詞＝am／is／are／was／were，也就是「是／在」的動詞；一般動詞則是 work、eat、go 這類表示動作的動詞。）"
+            },
+            {
+              "type": "h",
               "text": "現在簡單式的結構"
             },
             {
@@ -327,10 +399,22 @@
             {
               "type": "examples",
               "items": [
-                { "en": "I <k>work</k> from home on Fridays.", "zh": "我週五在家工作。" },
-                { "en": "We <k>hold</k> a team meeting every Monday.", "zh": "我們每週一開團隊會議。" },
-                { "en": "You <k>need</k> a visa to enter.", "zh": "你需要簽證才能入境。" },
-                { "en": "They <k>live</k> near the office.", "zh": "他們住在辦公室附近。" }
+                {
+                  "en": "I <k>work</k> from home on Fridays.",
+                  "zh": "我週五在家工作。"
+                },
+                {
+                  "en": "We <k>hold</k> a team meeting every Monday.",
+                  "zh": "我們每週一開團隊會議。"
+                },
+                {
+                  "en": "You <k>need</k> a visa to enter.",
+                  "zh": "你需要簽證才能入境。"
+                },
+                {
+                  "en": "They <k>live</k> near the office.",
+                  "zh": "他們住在辦公室附近。"
+                }
               ]
             },
             {
@@ -466,78 +550,6 @@
             },
             {
               "type": "h",
-              "text": "使用時機"
-            },
-            {
-              "type": "usetable",
-              "rows": [
-                {
-                  "n": "用法一",
-                  "note": "習慣、規律、反覆發生的動作",
-                  "hint": "常配 always／usually／often／every day",
-                  "ex": [
-                    {
-                      "en": "He <k>goes</k> to the gym three times a week.",
-                      "zh": "他一週上健身房三次。"
-                    },
-                    {
-                      "en": "We usually <k>hold</k> a team meeting every Monday.",
-                      "zh": "我們通常每週一開團隊會議。"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法二",
-                  "note": "事實、科學真理、恆常不變的狀態",
-                  "ex": [
-                    {
-                      "en": "Water <k>boils</k> at 100°C.",
-                      "zh": "水在攝氏一百度沸騰。"
-                    },
-                    {
-                      "en": "The Earth <k>revolves</k> around the Sun.",
-                      "zh": "地球繞著太陽公轉。"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法三",
-                  "note": "現在的狀態、想法、感受、擁有",
-                  "hint": "狀態動詞 like／know／want／own／cost…",
-                  "ex": [
-                    {
-                      "en": "I <k>know</k> the answer.",
-                      "zh": "我知道答案。"
-                    },
-                    {
-                      "en": "She <k>wants</k> a cup of tea.",
-                      "zh": "她想要一杯茶。"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法四",
-                  "note": "已排定時刻表的未來",
-                  "hint": "班機、車次、課表、營業時間",
-                  "ex": [
-                    {
-                      "en": "The train <k>leaves</k> at 6:30 tomorrow.",
-                      "zh": "火車明天早上六點半發車。"
-                    },
-                    {
-                      "en": "The conference <k>starts</k> next Monday.",
-                      "zh": "研討會下週一開始。"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "note",
-              "text": "頻率副詞的位置：放在「一般動詞前面」、但放在「be 動詞後面」。例如 She often works late；She is often late。（be 動詞＝am／is／are／was／were，也就是「是／在」的動詞；一般動詞則是 work、eat、go 這類表示動作的動詞。）"
-            },
-            {
-              "type": "h",
               "text": "常見錯誤"
             },
             {
@@ -620,6 +632,65 @@
             {
               "type": "p",
               "text": "現在進行式補上了現在簡單式做不到的地方——它專門描述「此刻正在進行的動作」，也能表達最近的趨勢和已安排好的近期計畫。"
+            },
+            {
+              "type": "h",
+              "text": "現在進行式的使用時機"
+            },
+            {
+              "type": "usetable",
+              "rows": [
+                {
+                  "n": "用法一",
+                  "note": "描述「說話當下正在進行」的動作",
+                  "ex": [
+                    {
+                      "en": "Please be quiet. The baby <b>is</b> <k>sleeping</k>.",
+                      "zh": "請安靜，寶寶正在睡覺。"
+                    },
+                    {
+                      "en": "I can't talk now; I <b>am</b> <k>driving</k>.",
+                      "zh": "我現在不方便講話，我在開車。"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法二",
+                  "note": "描述「最近一段時間的狀態或趨勢」，不一定是此刻正在做，而是「這陣子」的情況",
+                  "ex": [
+                    {
+                      "en": "I <b>am</b> <k>studying</k> for the TOEIC these days.",
+                      "zh": "我最近在準備多益。"
+                    },
+                    {
+                      "en": "House prices <b>are</b> <k>rising</k> quickly this year.",
+                      "zh": "今年房價漲得很快。"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法三",
+                  "note": "描述「已經安排好的近期未來計畫」，等於用進行式來表達未來",
+                  "ex": [
+                    {
+                      "en": "We <b>are</b> <k>meeting</k> the client tomorrow at three.",
+                      "zh": "我們明天三點要跟客戶碰面。"
+                    },
+                    {
+                      "en": "She <b>is</b> <k>flying</k> to Osaka next weekend.",
+                      "zh": "她下週末要飛去大阪。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "表「狀態、想法、感受、擁有」的動詞（know、like、want、believe、own、understand）通常不用進行式：說 I know，不說 I am knowing。"
+            },
+            {
+              "type": "p",
+              "text": "多益小提醒：聽力 Part 1 描述照片幾乎都用現在進行式（is holding、are walking），判斷「動作是不是真的正在發生」往往就是選對答案的關鍵。"
             },
             {
               "type": "h",
@@ -761,65 +832,6 @@
             },
             {
               "type": "h",
-              "text": "現在進行式的使用時機"
-            },
-            {
-              "type": "usetable",
-              "rows": [
-                {
-                  "n": "用法一",
-                  "note": "描述「說話當下正在進行」的動作",
-                  "ex": [
-                    {
-                      "en": "Please be quiet. The baby <b>is</b> <k>sleeping</k>.",
-                      "zh": "請安靜，寶寶正在睡覺。"
-                    },
-                    {
-                      "en": "I can't talk now; I <b>am</b> <k>driving</k>.",
-                      "zh": "我現在不方便講話，我在開車。"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法二",
-                  "note": "描述「最近一段時間的狀態或趨勢」，不一定是此刻正在做，而是「這陣子」的情況",
-                  "ex": [
-                    {
-                      "en": "I <b>am</b> <k>studying</k> for the TOEIC these days.",
-                      "zh": "我最近在準備多益。"
-                    },
-                    {
-                      "en": "House prices <b>are</b> <k>rising</k> quickly this year.",
-                      "zh": "今年房價漲得很快。"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法三",
-                  "note": "描述「已經安排好的近期未來計畫」，等於用進行式來表達未來",
-                  "ex": [
-                    {
-                      "en": "We <b>are</b> <k>meeting</k> the client tomorrow at three.",
-                      "zh": "我們明天三點要跟客戶碰面。"
-                    },
-                    {
-                      "en": "She <b>is</b> <k>flying</k> to Osaka next weekend.",
-                      "zh": "她下週末要飛去大阪。"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "note",
-              "text": "表「狀態、想法、感受、擁有」的動詞（know、like、want、believe、own、understand）通常不用進行式：說 I know，不說 I am knowing。"
-            },
-            {
-              "type": "p",
-              "text": "多益小提醒：聽力 Part 1 描述照片幾乎都用現在進行式（is holding、are walking），判斷「動作是不是真的正在發生」往往就是選對答案的關鍵。"
-            },
-            {
-              "type": "h",
               "text": "常見錯誤"
             },
             {
@@ -898,6 +910,81 @@
             {
               "type": "p",
               "text": "現在完成式把「過去」和「現在」連起來——它談的不是單純的過去，而是「從過去延續到現在」，或「過去的動作對現在造成的結果／影響」。它是多益超高頻的時態，也是中文母語者最容易用錯的時態之一。"
+            },
+            {
+              "type": "h",
+              "text": "現在完成式的使用時機"
+            },
+            {
+              "type": "diagram",
+              "svg": "<svg viewBox='0 0 600 125' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='108' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='44' width='240' height='30' rx='4' fill='#ffaa00'/><text x='180' y='64' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>現在完成式</text><line x1='40' y1='98' x2='300' y2='98' stroke='#888' stroke-width='2'/><line x1='300' y1='98' x2='558' y2='98' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,98 550,92 550,104' fill='#888'/></svg>"
+            },
+            {
+              "type": "usetable",
+              "rows": [
+                {
+                  "n": "用法一",
+                  "note": "「從過去持續到現在」的狀態或動作（現在仍在繼續）",
+                  "hint": "常搭配 for（一段時間）與 since（時間起點）",
+                  "ex": [
+                    {
+                      "en": "We <b>have</b> <k>worked</k> together <k>for</k> five years.",
+                      "zh": "我們已經一起共事五年了。"
+                    },
+                    {
+                      "en": "He <b>has</b> <k>been</k> busy <k>since</k> Monday.",
+                      "zh": "他從星期一忙到現在。"
+                    },
+                    {
+                      "en": "How long <b>have</b> you <k>known</k> her?",
+                      "zh": "你認識她多久了？"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法二",
+                  "note": "「人生經驗」——到目前為止做過或沒做過某事，不強調何時",
+                  "hint": "常搭配 ever、never、before、次數",
+                  "ex": [
+                    {
+                      "en": "<b>Have</b> you <k>ever visited</k> Japan?",
+                      "zh": "你去過日本嗎？"
+                    },
+                    {
+                      "en": "I<b>'ve</b> <k>never eaten</k> durian.",
+                      "zh": "我從沒吃過榴槤。"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法三",
+                  "note": "「剛完成、且結果影響到現在」",
+                  "hint": "常搭配 just、already、yet、recently",
+                  "ex": [
+                    {
+                      "en": "The bus <b>has</b> <k>just left</k>.",
+                      "zh": "公車剛開走。",
+                      "note": "結果：現在搭不到了"
+                    },
+                    {
+                      "en": "I<b>'ve</b> <k>already sent</k> the email.",
+                      "zh": "我已經把 email 寄出去了。"
+                    },
+                    {
+                      "en": "<b>Have</b> they <k>arrived</k> yet?",
+                      "zh": "他們到了嗎？"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "<k>for</k> 後接「一段時間長度」（for two hours、for a week）；<k>since</k> 後接「過去的時間點」（since 2020、since Monday）。"
+            },
+            {
+              "type": "note",
+              "text": "「去過（已回來）」用 have been to；「去了（還沒回來）」用 have gone to。She has been to Paris（去過、人在這）vs She has gone to Paris（去了、人在巴黎）。"
             },
             {
               "type": "h",
@@ -1023,81 +1110,6 @@
                   "zh": "她已經離開了嗎？"
                 }
               ]
-            },
-            {
-              "type": "h",
-              "text": "現在完成式的使用時機"
-            },
-            {
-              "type": "diagram",
-              "svg": "<svg viewBox='0 0 600 125' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='108' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='44' width='240' height='30' rx='4' fill='#ffaa00'/><text x='180' y='64' fill='#111' font-size='14' font-weight='700' text-anchor='middle'>現在完成式</text><line x1='40' y1='98' x2='300' y2='98' stroke='#888' stroke-width='2'/><line x1='300' y1='98' x2='558' y2='98' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,98 550,92 550,104' fill='#888'/></svg>"
-            },
-            {
-              "type": "usetable",
-              "rows": [
-                {
-                  "n": "用法一",
-                  "note": "「從過去持續到現在」的狀態或動作（現在仍在繼續）",
-                  "hint": "常搭配 for（一段時間）與 since（時間起點）",
-                  "ex": [
-                    {
-                      "en": "We <b>have</b> <k>worked</k> together <k>for</k> five years.",
-                      "zh": "我們已經一起共事五年了。"
-                    },
-                    {
-                      "en": "He <b>has</b> <k>been</k> busy <k>since</k> Monday.",
-                      "zh": "他從星期一忙到現在。"
-                    },
-                    {
-                      "en": "How long <b>have</b> you <k>known</k> her?",
-                      "zh": "你認識她多久了？"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法二",
-                  "note": "「人生經驗」——到目前為止做過或沒做過某事，不強調何時",
-                  "hint": "常搭配 ever、never、before、次數",
-                  "ex": [
-                    {
-                      "en": "<b>Have</b> you <k>ever visited</k> Japan?",
-                      "zh": "你去過日本嗎？"
-                    },
-                    {
-                      "en": "I<b>'ve</b> <k>never eaten</k> durian.",
-                      "zh": "我從沒吃過榴槤。"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法三",
-                  "note": "「剛完成、且結果影響到現在」",
-                  "hint": "常搭配 just、already、yet、recently",
-                  "ex": [
-                    {
-                      "en": "The bus <b>has</b> <k>just left</k>.",
-                      "zh": "公車剛開走。",
-                      "note": "結果：現在搭不到了"
-                    },
-                    {
-                      "en": "I<b>'ve</b> <k>already sent</k> the email.",
-                      "zh": "我已經把 email 寄出去了。"
-                    },
-                    {
-                      "en": "<b>Have</b> they <k>arrived</k> yet?",
-                      "zh": "他們到了嗎？"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "note",
-              "text": "<k>for</k> 後接「一段時間長度」（for two hours、for a week）；<k>since</k> 後接「過去的時間點」（since 2020、since Monday）。"
-            },
-            {
-              "type": "note",
-              "text": "「去過（已回來）」用 have been to；「去了（還沒回來）」用 have gone to。She has been to Paris（去過、人在這）vs She has gone to Paris（去了、人在巴黎）。"
             },
             {
               "type": "h",
@@ -1581,36 +1593,6 @@
             },
             {
               "type": "h",
-              "text": "過去完成式的結構"
-            },
-            {
-              "type": "formula",
-              "lines": [
-                {
-                  "label": "結構",
-                  "text": "主詞　＋　<b>had</b>　＋　<k>過去分詞 (Vp.p.)</k>　（不分人稱）"
-                }
-              ]
-            },
-            {
-              "type": "examples",
-              "items": [
-                {
-                  "en": "The train <b>had</b> already <k>left</k> when we got to the station.",
-                  "zh": "我們到車站時，火車已經開走了。"
-                },
-                {
-                  "en": "She <b>had</b> <k>finished</k> dinner before the guests arrived.",
-                  "zh": "客人到之前，她已經吃完晚餐了。"
-                }
-              ]
-            },
-            {
-              "type": "note",
-              "text": "had ＋ 過去分詞（過去分詞＝動詞第三態，如 finish→finished、go→gone、write→written）常和另一個「過去動作／時間點」一起出現，用來標示「更早發生」的那一件事。"
-            },
-            {
-              "type": "h",
               "text": "過去完成式的使用時機"
             },
             {
@@ -1661,14 +1643,14 @@
             },
             {
               "type": "h",
-              "text": "未來完成式的結構"
+              "text": "過去完成式的結構"
             },
             {
               "type": "formula",
               "lines": [
                 {
                   "label": "結構",
-                  "text": "主詞　＋　<b>will</b>　＋　<b>have</b>　＋　<k>過去分詞 (Vp.p.)</k>"
+                  "text": "主詞　＋　<b>had</b>　＋　<k>過去分詞 (Vp.p.)</k>　（不分人稱）"
                 }
               ]
             },
@@ -1676,10 +1658,18 @@
               "type": "examples",
               "items": [
                 {
-                  "en": "By 9 p.m., I <b>will have</b> <k>finished</k> the report.",
-                  "zh": "到晚上九點，我就會把報告寫完。"
+                  "en": "The train <b>had</b> already <k>left</k> when we got to the station.",
+                  "zh": "我們到車站時，火車已經開走了。"
+                },
+                {
+                  "en": "She <b>had</b> <k>finished</k> dinner before the guests arrived.",
+                  "zh": "客人到之前，她已經吃完晚餐了。"
                 }
               ]
+            },
+            {
+              "type": "note",
+              "text": "had ＋ 過去分詞（過去分詞＝動詞第三態，如 finish→finished、go→gone、write→written）常和另一個「過去動作／時間點」一起出現，用來標示「更早發生」的那一件事。"
             },
             {
               "type": "h",
@@ -1709,6 +1699,28 @@
             {
               "type": "note",
               "text": "未來完成式很常搭配 <k>by + 未來時間點</k>（by then、by 2030、by the time…），表示「到那時就已經…」。"
+            },
+            {
+              "type": "h",
+              "text": "未來完成式的結構"
+            },
+            {
+              "type": "formula",
+              "lines": [
+                {
+                  "label": "結構",
+                  "text": "主詞　＋　<b>will</b>　＋　<b>have</b>　＋　<k>過去分詞 (Vp.p.)</k>"
+                }
+              ]
+            },
+            {
+              "type": "examples",
+              "items": [
+                {
+                  "en": "By 9 p.m., I <b>will have</b> <k>finished</k> the report.",
+                  "zh": "到晚上九點，我就會把報告寫完。"
+                }
+              ]
             },
             {
               "type": "h",
@@ -1747,6 +1759,60 @@
             {
               "type": "p",
               "text": "完成進行式 ＝ 完成式 ＋ 進行式。它的重點在「一段時間內一直持續、到某個基準時間點都還在進行（或剛停下）」，回答的是『持續了多久』。"
+            },
+            {
+              "type": "h",
+              "text": "使用時機"
+            },
+            {
+              "type": "usetable",
+              "rows": [
+                {
+                  "n": "用法一",
+                  "note": "強調「動作持續的過程與時間長度」",
+                  "hint": "常搭配 for ＋ 一段時間、since、all day／morning、how long",
+                  "ex": [
+                    {
+                      "en": "How long <b>have</b> you <b>been</b> <k>learning</k> English?",
+                      "zh": "你學英文多久了？"
+                    }
+                  ]
+                },
+                {
+                  "n": "用法二",
+                  "note": "用「一直在進行的過程」來解釋「現在看得到的結果」",
+                  "ex": [
+                    {
+                      "en": "Your eyes are red. <b>Have</b> you <b>been</b> <k>crying</k>?",
+                      "zh": "你眼睛紅紅的，你剛剛在哭嗎？",
+                      "note": "由眼睛紅（結果）推測一直在哭（過程）"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "p",
+              "text": "和「完成式」的差別：完成式看『結果／完成的量』，完成進行式看『持續的過程』。"
+            },
+            {
+              "type": "examples",
+              "items": [
+                {
+                  "en": "I <b>have</b> <k>written</k> three reports.",
+                  "zh": "我（已）寫了三份報告。",
+                  "note": "看結果／數量 → 用完成式"
+                },
+                {
+                  "en": "I <b>have been</b> <k>writing</k> reports all morning.",
+                  "zh": "我整個早上都在寫報告。",
+                  "note": "看持續過程 → 用完成進行式"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "text": "表狀態的動詞（know、like、own）一般不用進行式，也就不用完成進行式；「認識多久」用現在完成式 I've known him for years，不說 been knowing。"
             },
             {
               "type": "h",
@@ -1839,60 +1905,6 @@
             {
               "type": "diagram",
               "svg": "<svg viewBox='0 0 600 125' xmlns='http://www.w3.org/2000/svg' style='width:100%;max-width:560px'><text x='58' y='20' fill='#ccc' font-size='15' font-weight='700'>過去</text><text x='300' y='20' fill='#00ff99' font-size='15' font-weight='700' text-anchor='middle'>現在</text><text x='525' y='20' fill='#ccc' font-size='15' font-weight='700' text-anchor='middle'>未來</text><line x1='300' y1='28' x2='300' y2='108' stroke='#00ff99' stroke-width='2' stroke-dasharray='4 4'/><rect x='60' y='44' width='224' height='30' rx='4' fill='#4da3ff'/><polygon points='300,59 284,49 284,69' fill='#4da3ff'/><text x='168' y='64' fill='#111' font-size='13' font-weight='700' text-anchor='middle'>完成進行式（持續中）</text><line x1='40' y1='98' x2='300' y2='98' stroke='#888' stroke-width='2'/><line x1='300' y1='98' x2='558' y2='98' stroke='#888' stroke-width='2' stroke-dasharray='6 6'/><polygon points='562,98 550,92 550,104' fill='#888'/></svg>"
-            },
-            {
-              "type": "h",
-              "text": "使用時機"
-            },
-            {
-              "type": "usetable",
-              "rows": [
-                {
-                  "n": "用法一",
-                  "note": "強調「動作持續的過程與時間長度」",
-                  "hint": "常搭配 for ＋ 一段時間、since、all day／morning、how long",
-                  "ex": [
-                    {
-                      "en": "How long <b>have</b> you <b>been</b> <k>learning</k> English?",
-                      "zh": "你學英文多久了？"
-                    }
-                  ]
-                },
-                {
-                  "n": "用法二",
-                  "note": "用「一直在進行的過程」來解釋「現在看得到的結果」",
-                  "ex": [
-                    {
-                      "en": "Your eyes are red. <b>Have</b> you <b>been</b> <k>crying</k>?",
-                      "zh": "你眼睛紅紅的，你剛剛在哭嗎？",
-                      "note": "由眼睛紅（結果）推測一直在哭（過程）"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "p",
-              "text": "和「完成式」的差別：完成式看『結果／完成的量』，完成進行式看『持續的過程』。"
-            },
-            {
-              "type": "examples",
-              "items": [
-                {
-                  "en": "I <b>have</b> <k>written</k> three reports.",
-                  "zh": "我（已）寫了三份報告。",
-                  "note": "看結果／數量 → 用完成式"
-                },
-                {
-                  "en": "I <b>have been</b> <k>writing</k> reports all morning.",
-                  "zh": "我整個早上都在寫報告。",
-                  "note": "看持續過程 → 用完成進行式"
-                }
-              ]
-            },
-            {
-              "type": "note",
-              "text": "表狀態的動詞（know、like、own）一般不用進行式，也就不用完成進行式；「認識多久」用現在完成式 I've known him for years，不說 been knowing。"
             },
             {
               "type": "h",
