@@ -1104,6 +1104,24 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+/* KK 音標（單獨一行，在單字下方） */
+.kk-line {
+  color: #00ff99;
+  font-family: Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+/* KK 音標的音節拆解（單獨一行，在單字拆解下方） */
+.sub-text.syl-kk-line {
+  margin-left: 1em;
+  color: #00ff99;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
 /* 第二行末尾：拆解後的 KK 音標，綠字 */
 .syl-line .syl-kk {
   color: #00ff99;
@@ -2084,7 +2102,9 @@ h3 {
 /* 「我的最愛」卡片：沿用一般單字卡（.term-card）全部功能，只把綠色主題改成金黃色 */
 .fav-cards{ --primary-green:#ffcf3f; --bright-green:#ffcf3f; }  /* 變數重映射：邊框、單字、發音鈕外框等綠色一次變金 */
 .fav-cards .main-kk,
-.fav-cards .syl-kk{ color:#ffcf3f; }                            /* 這兩處是寫死的 #00ff99，另外覆蓋 */
+.fav-cards .syl-kk,
+.fav-cards .kk-line,
+.fav-cards .syl-kk-line{ color:#ffcf3f; }                            /* 這兩處是寫死的 #00ff99，另外覆蓋 */
 .fav-cards .term-card:hover,
 .fav-cards .term-card.loop-highlight{ box-shadow:0 8px 24px rgba(255,207,63,.35); }
 
