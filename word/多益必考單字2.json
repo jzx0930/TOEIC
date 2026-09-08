@@ -9,15 +9,6 @@
     "sylWord": "al·lo·cate"
   },
   {
-    "word": "applicant",
-    "kk": "[ˈæplɪkənt]",
-    "translation": "申請人、應徵者",
-    "part_of_speech": "n.",
-    "note": "人事管理。",
-    "sylKK": "ˈæ·plɪ·kənt",
-    "sylWord": "ap·pli·cant"
-  },
-  {
     "word": "authorize",
     "kk": "[ˈɑθəˌraɪz]",
     "translation": "授權、委託",
@@ -66,15 +57,6 @@
     "translation": "履歷（CV）",
     "part_of_speech": "n. phr.",
     "note": "人事管理。同義 résumé。"
-  },
-  {
-    "word": "eligible",
-    "kk": "[ˈɛlədʒəbəl]",
-    "translation": "合格的、合適的、有資格的",
-    "part_of_speech": "adj.",
-    "note": "人事管理。",
-    "sylKK": "ˈɛ·lə·dʒə·bəl",
-    "sylWord": "el·i·gi·ble"
   },
   {
     "word": "employer",
@@ -138,15 +120,6 @@
     "note": "人事管理。",
     "sylKK": "ˈkɑm·pə·tɪnt",
     "sylWord": "com·pe·tent"
-  },
-  {
-    "word": "coordinate",
-    "kk": "[koˈɔrdənət]",
-    "translation": "協調、調整",
-    "part_of_speech": "v.",
-    "note": "人事管理。",
-    "sylKK": "ko·ˈɔr·də·nət",
-    "sylWord": "co·or·di·nate"
   },
   {
     "word": "deadline",
@@ -237,15 +210,6 @@
     "note": "薪資金錢。名詞 promotion。",
     "sylKK": "prə·ˈmot",
     "sylWord": "pro·mote"
-  },
-  {
-    "word": "recruit",
-    "kk": "[rəˈkrut]",
-    "translation": "招募、招聘",
-    "part_of_speech": "v.",
-    "note": "薪資金錢。名詞 recruitment。",
-    "sylKK": "rə·ˈkrut",
-    "sylWord": "re·cruit"
   },
   {
     "word": "resume",
@@ -453,15 +417,6 @@
     "note": "業務。名詞 integration。",
     "sylKK": "ˈɪn·tə·ˌgret",
     "sylWord": "in·te·grate"
-  },
-  {
-    "word": "merger",
-    "kk": "[ˈmɝdʒɚ]",
-    "translation": "合併、併吞",
-    "part_of_speech": "n.",
-    "note": "業務。動詞 merge。",
-    "sylKK": "ˈmɝ·dʒɚ",
-    "sylWord": "merg·er"
   },
   {
     "word": "pending",
@@ -883,15 +838,6 @@
     "note": "類語：≒ goods。不可數。",
     "sylKK": "ˈmɝ·tʃən·ˌdaɪz",
     "sylWord": "mer·chan·dise"
-  },
-  {
-    "word": "brochure",
-    "kk": "[broˈʃʊr]",
-    "translation": "小冊子、廣告手冊",
-    "part_of_speech": "n.",
-    "note": "類語：≒ pamphlet / booklet。",
-    "sylKK": "bro·ˈʃʊr",
-    "sylWord": "broc·hure"
   },
   {
     "word": "shareholder",
@@ -1670,15 +1616,6 @@
     "sylWord": "tar·iff"
   },
   {
-    "word": "voucher",
-    "kk": "[ˈvaʊtʃɚ]",
-    "translation": "憑證、折價券、代金券",
-    "part_of_speech": "n.",
-    "note": "貿易。",
-    "sylKK": "ˈvaʊ·tʃɚ",
-    "sylWord": "vouch·er"
-  },
-  {
     "word": "adjourn",
     "kk": "[əˈdʒɝn]",
     "translation": "暫停、休會、延期",
@@ -1821,15 +1758,6 @@
     "note": "會議。名詞 persuasion。",
     "sylKK": "pɚ·ˈswed",
     "sylWord": "per·suade"
-  },
-  {
-    "word": "postpone",
-    "kk": "[postˈpon]",
-    "translation": "延遲、延期",
-    "part_of_speech": "v.",
-    "note": "會議。同義 delay、put off。",
-    "sylKK": "post·ˈpon",
-    "sylWord": "post·pone"
   },
   {
     "word": "reconcile",

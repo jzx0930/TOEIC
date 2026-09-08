@@ -9,24 +9,6 @@
     "sylWord": "strat·e·gy"
   },
   {
-    "word": "mention",
-    "kk": "[ˈmɛnʃən]",
-    "translation": "提及、說起",
-    "part_of_speech": "v.",
-    "note": "及物動詞，後接名詞或子句。常用：as mentioned above（如上所述）、not to mention（更不用說）。",
-    "sylKK": "ˈmɛn·ʃən",
-    "sylWord": "men·tion"
-  },
-  {
-    "word": "staff",
-    "kk": "[ˈstæf]",
-    "translation": "全體員工、工作人員",
-    "part_of_speech": "n.",
-    "note": "集合名詞，作主詞時動詞可用單/複數。常用：staff member（員工）、hire staff（招聘員工）。",
-    "sylKK": "ˈstæf",
-    "sylWord": "staff"
-  },
-  {
     "word": "annual",
     "kk": "[ˈænjuəl]",
     "translation": "年度的、一年一度的",
@@ -36,24 +18,6 @@
     "sylWord": "an·nu·al"
   },
   {
-    "word": "shareholder",
-    "kk": "[ˈʃɛrˌholdɚ]",
-    "translation": "股東",
-    "part_of_speech": "n.",
-    "note": "常考：shareholders' meeting（股東大會）。同義詞：stockholder。",
-    "sylKK": "ˈʃɛr·ˌhol·dɚ",
-    "sylWord": "share·hold·er"
-  },
-  {
-    "word": "purchase",
-    "kk": "[ˈpɝtʃəs]",
-    "translation": "購買；採購的物品",
-    "part_of_speech": "v. / n.",
-    "note": "比 buy 更正式。常用：proof of purchase（購買憑證）、make a purchase（進行採購）。",
-    "sylKK": "ˈpɝ·tʃəs",
-    "sylWord": "pur·chase"
-  },
-  {
     "word": "chair",
     "kk": "[ˈtʃɛr]",
     "translation": "椅子；主席、主持",
@@ -61,15 +25,6 @@
     "note": "作動詞時意為「主持（會議/委員會）」。常用：chair the meeting（主持會議）。",
     "sylKK": "ˈtʃɛr",
     "sylWord": "chair"
-  },
-  {
-    "word": "charge",
-    "kk": "[ˈtʃɑrdʒ]",
-    "translation": "收費、費用；主管",
-    "part_of_speech": "n. / v.",
-    "note": "核心搭配：in charge of（負責...）、free of charge（免費）、extra charge（額外費用）。",
-    "sylKK": "ˈtʃɑrdʒ",
-    "sylWord": "charge"
   },
   {
     "word": "stay",
@@ -135,15 +90,6 @@
     "sylWord": "pro·pos·al"
   },
   {
-    "word": "convention",
-    "kk": "[kənˈvɛnʃən]",
-    "translation": "大型會議、公約",
-    "part_of_speech": "n.",
-    "note": "常考：convention center（會議中心）、attend a convention（參加大會）。",
-    "sylKK": "kən·ˈvɛn·ʃən",
-    "sylWord": "con·ven·tion"
-  },
-  {
     "word": "fundraising",
     "kk": "[ˈfʌnˌdresɪŋ]",
     "translation": "籌款、資金募集",
@@ -151,15 +97,6 @@
     "note": "常作修飾詞。常用：fundraising event（籌款活動）、fundraising campaign（募資活動）。",
     "sylKK": "ˈfʌn·ˌdre·sɪŋ",
     "sylWord": "fundrais·ing"
-  },
-  {
-    "word": "expense",
-    "kk": "[ɪkˈspɛns]",
-    "translation": "費用、開銷",
-    "part_of_speech": "n.",
-    "note": "常用：travel expenses（差旅費）、expense report（費用報銷單）、at one's own expense（自費）。",
-    "sylKK": "ɪk·ˈspɛns",
-    "sylWord": "ex·pense"
   },
   {
     "word": "reimbursable",
@@ -187,15 +124,6 @@
     "sylWord": "pro·duc·tion"
   },
   {
-    "word": "reception",
-    "kk": "[rɪˈsɛpʃən]",
-    "translation": "接待處、歡迎會、接收",
-    "part_of_speech": "n.",
-    "note": "多義詞。1. 櫃檯/接待處：reception desk；2. 宴會：welcome reception；3. 訊號：poor reception。",
-    "sylKK": "rɪ·ˈsɛp·ʃən",
-    "sylWord": "re·cep·tion"
-  },
-  {
     "word": "counter",
     "kk": "[ˈkaʊntɚ]",
     "translation": "櫃檯",
@@ -203,15 +131,6 @@
     "note": "聽力常考詞。常用：service counter（服務櫃檯）、over the counter（成藥/櫃檯買賣）。",
     "sylKK": "ˈkaʊn·tɚ",
     "sylWord": "coun·ter"
-  },
-  {
-    "word": "colleague",
-    "kk": "[ˈkɑlig]",
-    "translation": "同事",
-    "part_of_speech": "n.",
-    "note": "同義詞：coworker。注意拼寫與發音，常出現在辦公室對話情境。",
-    "sylKK": "ˈkɑ·lig",
-    "sylWord": "col·league"
   },
   {
     "word": "branch office",
@@ -332,24 +251,6 @@
     "note": "核心結構：apply for + 職位/項目（申請...）；apply to + 機構（向...申請）。",
     "sylKK": "ə·ˈplaɪ",
     "sylWord": "ap·ply"
-  },
-  {
-    "word": "application",
-    "kk": "[ˌæpləˈkeʃən]",
-    "translation": "申請書、應用程式",
-    "part_of_speech": "n.",
-    "note": "常用：job application（求職申請）、application form（申請表）。",
-    "sylKK": "ˌæ·plə·ˈke·ʃən",
-    "sylWord": "ap·pli·ca·tion"
-  },
-  {
-    "word": "resume",
-    "kk": "[rɪˈzum]",
-    "translation": "履歷表",
-    "part_of_speech": "n.",
-    "note": "招聘必考。常用：submit a resume（提交履歷）。注意：作動詞 /rɪˈzum/ 時為「重新開始」。",
-    "sylKK": "rɪ·ˈzum",
-    "sylWord": "re·sume"
   },
   {
     "word": "contact",
@@ -578,14 +479,5 @@
     "note": "所有格代名詞。易混淆同音字：there（在那裡）、they're（他們是）。",
     "sylKK": "ˈðɛr",
     "sylWord": "their"
-  },
-  {
-    "word": "merchandise",
-    "kk": "[ˈmɝtʃənˌdaɪz]",
-    "translation": "商品、貨物",
-    "part_of_speech": "n.",
-    "note": "不可數名詞，不可加 s。同義詞：goods, products。常用：display merchandise（陳列商品）。",
-    "sylKK": "ˈmɝ·tʃən·ˌdaɪz",
-    "sylWord": "mer·chan·dise"
   }
 ]

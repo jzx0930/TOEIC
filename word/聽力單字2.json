@@ -18,15 +18,6 @@
     "sylKK": "ˈtɪ·kət"
   },
   {
-    "word": "exhibition",
-    "kk": "[ˌɛksəˈbɪʃən]",
-    "translation": "展覽、展覽會",
-    "part_of_speech": "n.",
-    "note": "多益活動與行銷情境。常考情境：藝文活動、商展。常見搭配：art exhibition (藝術展)、hold an exhibition (舉辦展覽)。動詞型態為 exhibit。",
-    "sylWord": "ex·hi·bi·tion",
-    "sylKK": "ˌɛk·sə·ˈbɪ·ʃən"
-  },
-  {
     "word": "mad",
     "kk": "[ˈmæd]",
     "translation": "生氣的、憤怒的",
@@ -70,15 +61,6 @@
     "note": "多益公關與行銷發表會情境。常見搭配：press release (新聞稿)、press conference (記者會)。",
     "sylWord": "press",
     "sylKK": "ˈprɛs"
-  },
-  {
-    "word": "conference",
-    "kk": "[ˈkɑnfərəns]",
-    "translation": "會議、研討會",
-    "part_of_speech": "n.",
-    "note": "多益商務會議與大型活動情境。常見搭配：annual conference (年度大會)、conference room (會議室)。同義詞：convention, meeting。",
-    "sylWord": "con·fer·ence",
-    "sylKK": "ˈkɑn·fə·rəns"
   },
   {
     "word": "scheduled",
@@ -139,15 +121,6 @@
     "note": "多益財報與銷售分析核心字。一整年分為四個季度（first/second/third/fourth quarter）。常見搭配：fiscal quarter (財政季度)。",
     "sylWord": "quar·ter",
     "sylKK": "ˈkwɔr·tɚ"
-  },
-  {
-    "word": "deposit",
-    "kk": "[dəˈpɑzɪt]",
-    "translation": "存（款）、付押金；存款、押金",
-    "part_of_speech": "v. / n.",
-    "note": "多益銀行金融與租屋情境。常見搭配：deposit a paycheck (存入薪資支票)、security deposit (保證金/押金)。",
-    "sylWord": "de·posit",
-    "sylKK": "də·ˈpɑ·zɪt"
   },
   {
     "word": "paycheck",
@@ -307,24 +280,6 @@
     "sylKK": "mə·ˈtɪ·ri·əlz"
   },
   {
-    "word": "upcoming",
-    "kk": "[ˈʌpˌkʌmɪŋ]",
-    "translation": "即將到來的",
-    "part_of_speech": "adj.",
-    "note": "多益活動、日程安排高頻詞。常見搭配：upcoming event (即將舉辦的活動)、upcoming orientation (即將舉行的培訓)。同義詞：approaching, forthcoming。",
-    "sylWord": "up·com·ing",
-    "sylKK": "ˈʌp·ˌkʌ·mɪŋ"
-  },
-  {
-    "word": "orientation",
-    "kk": "[ˌɔriɛnˈteʃən]",
-    "translation": "新進員工培訓、迎新說明會",
-    "part_of_speech": "n.",
-    "note": "多益人事招募與員工培訓情境核心字。常見搭配：attend an orientation (參加培訓會)、orientation session (說明會/培訓課程)。",
-    "sylWord": "ori·en·ta·tion",
-    "sylKK": "ˌɔ·ri·ɛn·ˈte·ʃən"
-  },
-  {
     "word": "stationery",
     "kk": "[ˈsteʃəˌnɛri]",
     "translation": "辦公用品、文具",
@@ -439,15 +394,6 @@
     "sylKK": "ˈstet·mənt"
   },
   {
-    "word": "service",
-    "kk": "[ˈsɝvəs]",
-    "translation": "服務、維修",
-    "part_of_speech": "n.",
-    "note": "多益客戶服務核心詞。常見搭配：customer service (客服)、service charge (服務費)。動詞可表示「維修（機器）」。",
-    "sylWord": "ser·vice",
-    "sylKK": "ˈsɝ·vəs"
-  },
-  {
     "word": "charge",
     "kk": "[ˈtʃɑrdʒ]",
     "translation": "費用；收費；負責",
@@ -517,15 +463,6 @@
     "note": "多益會議或文件結構情境。常見搭配：Q&A section (問答環節)、technical section (技術章節)。",
     "sylWord": "sec·tion",
     "sylKK": "ˈsɛk·ʃən"
-  },
-  {
-    "word": "extension",
-    "kk": "[ɪkˈstɛnʃən]",
-    "translation": "展期、延長；分機號碼",
-    "part_of_speech": "n.",
-    "note": "多益多義高頻字。合約/保固情境指延長：warranty extension (保固延長)；辦公室電話情境指分機：Reach me at extension 101。",
-    "sylWord": "ex·ten·sion",
-    "sylKK": "ɪk·ˈstɛn·ʃən"
   },
   {
     "word": "included",
@@ -701,15 +638,6 @@
     "note": "多益人事招募情境。常用片語：be a good fit for the position (非常適合該職位)。",
     "sylWord": "fit",
     "sylKK": "ˈfɪt"
-  },
-  {
-    "word": "position",
-    "kk": "[pəˈzɪʃən]",
-    "translation": "職位、位置",
-    "part_of_speech": "n.",
-    "note": "多益人事招募情境核心字。常見搭配：open position (職缺)、apply for a position (申請職位)。同義詞：job opening。",
-    "sylWord": "po·si·tion",
-    "sylKK": "pə·ˈzɪ·ʃən"
   },
   {
     "word": "impressed",
