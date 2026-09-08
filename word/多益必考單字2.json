@@ -4,7 +4,7 @@
     "kk": "[ˈæləˌket]",
     "translation": "撥出、分配、配置",
     "part_of_speech": "v.",
-    "note": "人事管理。",
+    "note": "人事管理。常搭 allocate resources／a budget（分配資源／預算）。名詞 allocation（分配、配置）。≒ assign、distribute。",
     "sylKK": "ˈæ·lə·ˌket",
     "sylWord": "al·lo·cate"
   },
@@ -13,7 +13,7 @@
     "kk": "[ˈɑθəˌraɪz]",
     "translation": "授權、委託",
     "part_of_speech": "v.",
-    "note": "人事管理。名詞 authorization。",
+    "note": "人事管理。名詞 authorization（授權）、形容詞 authorized（經授權的）。常搭 authorize a payment（核准付款）。≒ permit、empower。",
     "sylKK": "ˈɑ·θə·ˌraɪz",
     "sylWord": "au·tho·rize"
   },
@@ -22,7 +22,7 @@
     "kk": "[ˌkepəˈbɪləti]",
     "translation": "能力、潛力",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。形容詞 capable（有能力的），常搭 be capable of（能夠）。≒ ability、competence。注意與 capacity（容量）語意不同。",
     "sylKK": "ˌke·pə·ˈbɪ·lə·ti",
     "sylWord": "ca·pa·bil·i·ty"
   },
@@ -31,14 +31,14 @@
     "kk": "",
     "translation": "（暫時）解雇、裁員",
     "part_of_speech": "v. phr.",
-    "note": "人事管理。"
+    "note": "人事管理。名詞 layoff（裁員）。指因營運（非個人過失）解雇，與 fire／dismiss（因過失開除）語氣不同。≒ make redundant。"
   },
   {
     "word": "collaboration",
     "kk": "[kəˌlæbəˈreʃən]",
     "translation": "合作",
     "part_of_speech": "n.",
-    "note": "人事管理。動詞 collaborate。",
+    "note": "人事管理。動詞 collaborate（合作）、形容詞 collaborative（協作的）。常搭 in collaboration with（與…合作）。≒ cooperation、teamwork。",
     "sylKK": "kə·ˌlæ·bə·ˈre·ʃən",
     "sylWord": "col·lab·o·ra·tion"
   },
@@ -47,7 +47,7 @@
     "kk": "[ˌkɑnsəlˈteʃən]",
     "translation": "諮詢、商量",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。動詞 consult（諮詢）、名詞 consultant（顧問）。常搭 in consultation with（與…商議）。≒ discussion、advice。",
     "sylKK": "ˌkɑn·səl·ˈte·ʃən",
     "sylWord": "con·sul·ta·tion"
   },
@@ -56,14 +56,14 @@
     "kk": "",
     "translation": "履歷（CV）",
     "part_of_speech": "n. phr.",
-    "note": "人事管理。同義 résumé。"
+    "note": "人事管理。縮寫 CV，源自拉丁文；≒ résumé（美式用語）。求職常搭 submit a CV（遞交履歷）。複數 curricula vitae。"
   },
   {
     "word": "employer",
     "kk": "[ɛmˈplɔɪɚ]",
     "translation": "雇主",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。反義 employee（員工）；動詞 employ（雇用）、名詞 employment（雇用）。字尾 -er 表主動方（雇人者）。",
     "sylKK": "ɛm·ˈplɔɪ·ɚ",
     "sylWord": "em·ploy·er"
   },
@@ -72,7 +72,7 @@
     "kk": "[ɪgˈzɛkjətɪv]",
     "translation": "主管、行政/管理人員",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。指高階經理人，如 CEO（chief executive officer 執行長）。亦可作形容詞（行政的、決策的）。≒ manager、director。",
     "sylKK": "ɪg·ˈzɛ·kjə·tɪv",
     "sylWord": "ex·ec·u·tive"
   },
@@ -81,7 +81,7 @@
     "kk": "[əˈpɔɪnt]",
     "translation": "任命、指定",
     "part_of_speech": "v.",
-    "note": "人事管理。名詞 appointment。",
+    "note": "人事管理。名詞 appointment（任命／約會）。常搭 appoint sb as（任命某人為）。≒ nominate、designate。",
     "sylKK": "ə·ˈpɔɪnt",
     "sylWord": "ap·point"
   },
@@ -90,7 +90,7 @@
     "kk": "[ˈbɛnəfɪt]",
     "translation": "益處、福利；有益於",
     "part_of_speech": "n. / v.",
-    "note": "人事管理。",
+    "note": "人事管理。複數 benefits 常指員工福利（如保險、休假）。常搭 benefit from（受益於）。形容詞 beneficial（有益的）。≒ advantage。",
     "sylKK": "ˈbɛ·nə·fɪt",
     "sylWord": "ben·e·fit"
   },
@@ -99,7 +99,7 @@
     "kk": "[ˈkændədet]",
     "translation": "候選人、應徵者",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。指求職者或選舉候選人。常搭 a strong candidate（有力人選）。≒ applicant（應徵者）、nominee（被提名人）。",
     "sylKK": "ˈkæn·də·det",
     "sylWord": "can·di·date"
   },
@@ -108,7 +108,7 @@
     "kk": "[sɚˈtɪfɪkət]",
     "translation": "憑證、證明、證書",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。動詞 certify（證明）、名詞 certification（認證）。常搭 a certificate of（…證明書）。≒ diploma、credential。",
     "sylKK": "sɚ·ˈtɪ·fɪ·kət",
     "sylWord": "cer·tifi·cate"
   },
@@ -117,7 +117,7 @@
     "kk": "[ˈkɑmpətɪnt]",
     "translation": "有能力的、能勝任的",
     "part_of_speech": "adj.",
-    "note": "人事管理。",
+    "note": "人事管理。名詞 competence（能力）、反義 incompetent（不能勝任的）。常搭 competent in／at（擅長）。≒ capable、qualified。",
     "sylKK": "ˈkɑm·pə·tɪnt",
     "sylWord": "com·pe·tent"
   },
@@ -126,7 +126,7 @@
     "kk": "[ˈdɛdˌlaɪn]",
     "translation": "截止期限",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。常搭 meet a deadline（趕上期限）、miss the deadline（錯過期限）、tight deadline（緊迫的期限）。≒ due date、time limit。",
     "sylKK": "ˈdɛd·ˌlaɪn",
     "sylWord": "dead·line"
   },
@@ -135,7 +135,7 @@
     "kk": "[ɛmˈplɔɪi]",
     "translation": "員工、受雇者",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。反義 employer（雇主）；字尾 -ee 表被動方（受雇者）。動詞 employ（雇用）。≒ worker、staff member。",
     "sylKK": "ɛm·ˈplɔɪ·i",
     "sylWord": "em·ploy·ee"
   },
@@ -144,7 +144,7 @@
     "kk": "[ˌɛkspɚˈtiz]",
     "translation": "專門技術、專業知識",
     "part_of_speech": "n.",
-    "note": "人事管理。",
+    "note": "人事管理。相關 expert（專家）、形容詞 expert（專業的）。常搭 technical expertise（技術專長）。不可數。≒ know-how、proficiency。",
     "sylKK": "ˌɛk·spɚ·ˈtiz",
     "sylWord": "ex·per·tise"
   },
@@ -153,7 +153,7 @@
     "kk": "[ˈsʌbsɪdi]",
     "translation": "補助金、津貼",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。動詞 subsidize（補助）。常搭 government subsidy（政府補貼）。≒ grant、allowance、aid。",
     "sylKK": "ˈsʌb·sɪ·di",
     "sylWord": "sub·sidy"
   },
@@ -162,7 +162,7 @@
     "kk": "[ˈɪnˌkʌm]",
     "translation": "收入、所得",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。常搭 annual income（年收入）、income tax（所得稅）。反義 expenditure（支出）。≒ earnings、revenue。",
     "sylKK": "ˈɪn·ˌkʌm",
     "sylWord": "in·come"
   },
@@ -171,7 +171,7 @@
     "kk": "[ɪˌvæljuˈeʃən]",
     "translation": "評價、估值",
     "part_of_speech": "n.",
-    "note": "薪資金錢。動詞 evaluate。",
+    "note": "薪資金錢。動詞 evaluate（評估）。常搭 performance evaluation（績效考核）。≒ assessment、appraisal。",
     "sylKK": "ɪ·ˌvæ·lju·ˈe·ʃən",
     "sylWord": "eval·u·a·tion"
   },
@@ -180,7 +180,7 @@
     "kk": "[ˌɑkjəˈpeʃən]",
     "translation": "職業",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。動詞 occupy（占用）、形容詞 occupational（職業的）。填表常見欄位。≒ job、profession、vocation。",
     "sylKK": "ˌɑ·kjə·ˈpe·ʃən",
     "sylWord": "oc·cu·pa·tion"
   },
@@ -189,7 +189,7 @@
     "kk": "[ˈpɑrtˈtaɪm]",
     "translation": "兼職的、兼任的",
     "part_of_speech": "adj.",
-    "note": "薪資金錢。反義 full-time。",
+    "note": "薪資金錢。反義 full-time（全職的）。可作副詞：work part-time（做兼職）。相關 part-timer（兼職者）。≒ casual。",
     "sylKK": "ˈpɑrt·ˈtaɪm",
     "sylWord": "par·t-time"
   },
@@ -198,7 +198,7 @@
     "kk": "[ˈpɝmənənt]",
     "translation": "永久的、不變的",
     "part_of_speech": "adj.",
-    "note": "薪資金錢。反義 temporary。",
+    "note": "薪資金錢。反義 temporary（臨時的）。副詞 permanently（永久地）。常搭 permanent position（正職）。≒ lasting、fixed。",
     "sylKK": "ˈpɝ·mə·nənt",
     "sylWord": "per·ma·nent"
   },
@@ -207,7 +207,7 @@
     "kk": "[prəˈmot]",
     "translation": "升職、促銷、推廣",
     "part_of_speech": "v.",
-    "note": "薪資金錢。名詞 promotion。",
+    "note": "薪資金錢。名詞 promotion（升遷／促銷）。常搭 be promoted to（被升為）。反義 demote（降職）。≒ advance、boost。",
     "sylKK": "prə·ˈmot",
     "sylWord": "pro·mote"
   },
@@ -216,7 +216,7 @@
     "kk": "[ˈrɛzəˌme]",
     "translation": "履歷表",
     "part_of_speech": "n.",
-    "note": "薪資金錢。名詞唸 [ˈrɛzəˌme]；作動詞「重新開始」唸 [rɪˈzum]。",
+    "note": "薪資金錢。名詞（履歷）唸 [ˈrɛzəˌme]；作動詞「重新開始」唸 [rɪˈzum]。同義 CV／curriculum vitae。常搭 update one's resume（更新履歷）。",
     "sylKK": "ˈrɛ·zə·ˌme",
     "sylWord": "re·su·me"
   },
@@ -225,7 +225,7 @@
     "kk": "[ˈsæləri]",
     "translation": "薪水",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。指固定月／年薪；時薪或計件工資為 wage。常搭 annual salary（年薪）、salary increase（加薪）。≒ pay、income。",
     "sylKK": "ˈsæ·lə·ri",
     "sylWord": "sa·la·ry"
   },
@@ -234,7 +234,7 @@
     "kk": "[əˈnuəti]",
     "translation": "年金",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。指每年定額給付，常用於退休規劃。相關 annual（每年的）、annually（每年地）。≒ pension（退休金）。",
     "sylKK": "ə·ˈnu·ə·ti",
     "sylWord": "an·nu·ity"
   },
@@ -243,7 +243,7 @@
     "kk": "[ˈpɛnəlti]",
     "translation": "罰金、罰則",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。動詞 penalize（處罰）。常搭 impose a penalty（處以罰款）、penalty for（…的罰則）。≒ fine、punishment。",
     "sylKK": "ˈpɛ·nəl·ti",
     "sylWord": "penal·ty"
   },
@@ -252,7 +252,7 @@
     "kk": "[dəˈpɑzɪt]",
     "translation": "押金、保證金；存款",
     "part_of_speech": "n. / v.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。反義（動詞）withdraw（提款）。常搭 pay a deposit（付訂金）、deposit money（存錢）。≒ down payment（頭期款）。",
     "sylKK": "də·ˈpɑ·zɪt",
     "sylWord": "de·posit"
   },
@@ -261,7 +261,7 @@
     "kk": "[ˈovɚˌtaɪm]",
     "translation": "加班（時間）",
     "part_of_speech": "n.",
-    "note": "薪資金錢/辦公室。",
+    "note": "薪資金錢／辦公室。常搭 work overtime（加班）、overtime pay（加班費）。亦可作副詞。體育中指「延長賽」。",
     "sylKK": "ˈo·vɚ·ˌtaɪm",
     "sylWord": "over·time"
   },
@@ -270,7 +270,7 @@
     "kk": "[ˈpɛnʃən]",
     "translation": "養老金、退休金",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。相關 pensioner（領退休金者）。常搭 pension plan／fund（退休金計畫／基金）。≒ annuity、retirement pay。",
     "sylKK": "ˈpɛn·ʃən",
     "sylWord": "pen·sion"
   },
@@ -279,7 +279,7 @@
     "kk": "[ˈrɛnt]",
     "translation": "租金；租",
     "part_of_speech": "n. / v.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。名詞／形容詞 rental（租賃／出租的）。常搭 pay the rent（付房租）、for rent（供出租）。相關 tenant（房客）。",
     "sylKK": "ˈrɛnt",
     "sylWord": "rent"
   },
@@ -288,7 +288,7 @@
     "kk": "[ˌrɛkəmənˈdeʃən]",
     "translation": "推薦、建議",
     "part_of_speech": "n.",
-    "note": "薪資金錢。動詞 recommend。",
+    "note": "薪資金錢。動詞 recommend（推薦）。常搭 letter of recommendation（推薦信）、make a recommendation（提出建議）。≒ suggestion、endorsement。",
     "sylKK": "ˌrɛ·kə·mən·ˈde·ʃən",
     "sylWord": "rec·om·men·da·tion"
   },
@@ -297,7 +297,7 @@
     "kk": "[rɪˈzaɪn]",
     "translation": "辭職",
     "part_of_speech": "v.",
-    "note": "薪資金錢。名詞 resignation。",
+    "note": "薪資金錢。名詞 resignation（辭職）。常搭 resign from（辭去…職務）、hand in one's resignation（遞辭呈）。≒ quit、step down。",
     "sylKK": "rɪ·ˈzaɪn",
     "sylWord": "re·sign"
   },
@@ -306,7 +306,7 @@
     "kk": "[rɪˈtaɪr]",
     "translation": "退休",
     "part_of_speech": "v.",
-    "note": "薪資金錢。名詞 retirement。",
+    "note": "薪資金錢。名詞 retirement（退休）、形容詞 retired（退休的）、名詞 retiree（退休者）。常搭 retire from（自…退休）。",
     "sylKK": "rɪ·ˈtaɪr",
     "sylWord": "re·tire"
   },
@@ -315,7 +315,7 @@
     "kk": "[rɪˌmjunəˈreʃən]",
     "translation": "報酬、酬勞",
     "part_of_speech": "n.",
-    "note": "薪資金錢。",
+    "note": "薪資金錢。正式用語。動詞 remunerate（酬勞）。≒ payment、compensation、reward。多益常考的正式書信用字。",
     "sylKK": "rɪ·ˌmju·nə·ˈre·ʃən",
     "sylWord": "re·mu·ner·a·tion"
   },
@@ -324,7 +324,7 @@
     "kk": "[əˈkru]",
     "translation": "（利息等）產生、累積",
     "part_of_speech": "v.",
-    "note": "業務。",
+    "note": "業務。常搭 accrue interest（生利息）、accrued benefits（累積的福利）。名詞 accrual（累積）。≒ accumulate、build up。",
     "sylKK": "ə·ˈkru",
     "sylWord": "ac·crue"
   },
@@ -333,7 +333,7 @@
     "kk": "[ˌækwəˈzɪʃən]",
     "translation": "收購、併購；習得",
     "part_of_speech": "n.",
-    "note": "業務。動詞 acquire。",
+    "note": "業務。動詞 acquire（取得）。常搭 mergers and acquisitions（併購，簡稱 M&A）。≒ takeover、purchase。亦指「習得」（語言）。",
     "sylKK": "ˌæ·kwə·ˈzɪ·ʃən",
     "sylWord": "ac·qui·si·tion"
   },
@@ -342,7 +342,7 @@
     "kk": "[ˈæmpləˌfaɪ]",
     "translation": "放大、加強",
     "part_of_speech": "v.",
-    "note": "業務。",
+    "note": "業務。名詞 amplifier（擴音器）、amplification（放大）。指放大聲音或加強說明。≒ magnify、intensify。反義 reduce。",
     "sylKK": "ˈæm·plə·ˌfaɪ",
     "sylWord": "am·pli·fy"
   },
@@ -351,7 +351,7 @@
     "kk": "[ˈæˌsɛt]",
     "translation": "資產、優點、有用的人或物",
     "part_of_speech": "n.",
-    "note": "業務。",
+    "note": "業務。反義 liability（負債）。常搭 fixed assets（固定資產）、a valuable asset（寶貴人才／資產）。亦指「有用的人」。",
     "sylKK": "ˈæ·ˌsɛt",
     "sylWord": "as·set"
   },
@@ -360,7 +360,7 @@
     "kk": "[ˈbaɪˌaʊt]",
     "translation": "收購（全部股權）",
     "part_of_speech": "n.",
-    "note": "業務。同義 takeover。",
+    "note": "業務。≒ takeover（接管）。常搭 management buyout（管理層收購，MBO）。相關動詞片語 buy out（買下…全部股份）。",
     "sylKK": "ˈbaɪ·ˌaʊt",
     "sylWord": "buy·out"
   },
@@ -369,7 +369,7 @@
     "kk": "[ˌkɔrpəˈreʃən]",
     "translation": "法人、公司、企業",
     "part_of_speech": "n.",
-    "note": "業務。形容詞 corporate。",
+    "note": "業務。形容詞 corporate（公司的），縮寫 Corp.。≒ company、enterprise、firm。相關 corporate culture（企業文化）。",
     "sylKK": "ˌkɔr·pə·ˈre·ʃən",
     "sylWord": "cor·po·ra·tion"
   },
@@ -378,7 +378,7 @@
     "kk": "[ˈkʌtˌbæk]",
     "translation": "削減、縮減",
     "part_of_speech": "n.",
-    "note": "業務。",
+    "note": "業務。常搭 cutbacks in spending（縮減支出）、staff cutbacks（裁員）。相關片語 cut back on（削減）。≒ reduction、cut。",
     "sylKK": "ˈkʌt·ˌbæk",
     "sylWord": "cut·back"
   },
@@ -387,7 +387,7 @@
     "kk": "[ˈɛntɚˌpraɪz]",
     "translation": "企業",
     "part_of_speech": "n.",
-    "note": "業務。同義 company。",
+    "note": "業務。≒ company、firm、corporation。形容詞 enterprising（有進取心的）。常搭 private enterprise（私人企業）。亦指「進取心」。",
     "sylKK": "ˈɛn·tɚ·ˌpraɪz",
     "sylWord": "en·ter·prise"
   },
@@ -396,7 +396,7 @@
     "kk": "[ˈɛkwəti]",
     "translation": "股本、公平、稅後剩餘價值",
     "part_of_speech": "n.",
-    "note": "業務/財務。",
+    "note": "業務／財務。指股東權益或公平。常搭 shareholders' equity（股東權益）、private equity（私募股權）。形容詞 equitable（公平的）。",
     "sylKK": "ˈɛ·kwə·ti",
     "sylWord": "eq·ui·ty"
   },
@@ -405,7 +405,7 @@
     "kk": "[ˌfɪnənˈsɪr]",
     "translation": "資本家、金主、投資者",
     "part_of_speech": "n.",
-    "note": "業務。",
+    "note": "業務。相關 finance（財務／融資）、financial（財務的）。指提供大筆資金者。≒ investor、backer。",
     "sylKK": "ˌfɪ·nən·ˈsɪr",
     "sylWord": "fi·nancier"
   },
@@ -414,7 +414,7 @@
     "kk": "[ˈɪntəˌgret]",
     "translation": "統合、整合",
     "part_of_speech": "v.",
-    "note": "業務。名詞 integration。",
+    "note": "業務。名詞 integration（整合）、形容詞 integrated（整合的）。常搭 integrate A into B（把 A 併入 B）。≒ combine、merge。",
     "sylKK": "ˈɪn·tə·ˌgret",
     "sylWord": "in·te·grate"
   },
@@ -423,7 +423,7 @@
     "kk": "[ˈpɛndɪŋ]",
     "translation": "未決定的、待處理的",
     "part_of_speech": "adj.",
-    "note": "業務。",
+    "note": "業務。常搭 pending approval（待核准）、a pending case（待處理案件）。亦作介系詞「在…期間」。≒ unresolved、awaiting。",
     "sylKK": "ˈpɛn·dɪŋ",
     "sylWord": "pend·ing"
   },
@@ -432,7 +432,7 @@
     "kk": "[prɪˈlɪməˌnɛri]",
     "translation": "初步的、預備的",
     "part_of_speech": "adj.",
-    "note": "業務。",
+    "note": "業務。常搭 preliminary results（初步結果）、a preliminary round（預賽）。≒ initial、introductory。反義 final。",
     "sylKK": "prɪ·ˈlɪ·mə·ˌnɛ·ri",
     "sylWord": "pre·lim·i·nary"
   },
@@ -441,7 +441,7 @@
     "kk": "[prəˈpoz]",
     "translation": "提議、建議",
     "part_of_speech": "v.",
-    "note": "業務。名詞 proposal。",
+    "note": "業務。名詞 proposal（提案）、proposition（主張）。常搭 propose a plan（提出計畫）。亦指「求婚」。≒ suggest、put forward。",
     "sylKK": "prə·ˈpoz",
     "sylWord": "pro·pose"
   },
@@ -450,7 +450,7 @@
     "kk": "[ˈprɑspɛkt]",
     "translation": "展望、前景、潛在客戶",
     "part_of_speech": "n.",
-    "note": "業務。",
+    "note": "業務。形容詞 prospective（潛在的、未來的）。常搭 job prospects（就業前景）。複數 prospects 指前途。≒ outlook、potential customer。",
     "sylKK": "ˈprɑ·spɛkt",
     "sylWord": "pros·pect"
   },
@@ -459,7 +459,7 @@
     "kk": "[prɑˈspɛrəti]",
     "translation": "繁榮、成功",
     "part_of_speech": "n.",
-    "note": "業務。形容詞 prosperous。",
+    "note": "業務。形容詞 prosperous（繁榮的）、動詞 prosper（興旺）。≒ success、boom。反義 recession（衰退）。",
     "sylKK": "prɑ·ˈspɛ·rə·ti",
     "sylWord": "pros·per·i·ty"
   },
@@ -468,7 +468,7 @@
     "kk": "[ˈskim]",
     "translation": "計劃、方案",
     "part_of_speech": "n.",
-    "note": "業務。",
+    "note": "業務。英式常指「方案」（如 pension scheme 退休金計畫）；亦含「陰謀」的貶義。≒ plan、program、plot。",
     "sylKK": "ˈskim",
     "sylWord": "scheme"
   },
@@ -477,7 +477,7 @@
     "kk": "[ˈθraɪv]",
     "translation": "茂盛、興旺、蓬勃發展",
     "part_of_speech": "v.",
-    "note": "業務。",
+    "note": "業務。形容詞 thriving（欣欣向榮的）。常搭 thrive on（靠…而興盛）。≒ flourish、prosper、boom。反義 decline。",
     "sylKK": "ˈθraɪv",
     "sylWord": "thrive"
   },
@@ -486,7 +486,7 @@
     "kk": "[ˈʌndɚˌvælju]",
     "translation": "低估（價值）",
     "part_of_speech": "v.",
-    "note": "業務。反義 overvalue。",
+    "note": "業務。反義 overvalue（高估）。字首 under-（不足）。常搭 undervalued stocks（被低估的股票）。≒ underestimate。",
     "sylKK": "ˈʌn·dɚ·ˌvæ·lju",
     "sylWord": "un·der·val·ue"
   },
@@ -495,7 +495,7 @@
     "kk": "[ˈkʌstəmɚ]",
     "translation": "顧客",
     "part_of_speech": "n.",
-    "note": "類語：≒ client。",
+    "note": "類語：≒ client（客戶）。指購買商品者。常搭 regular customer（老主顧）、customer service（客服）。勿與 customs（海關／習俗）混。",
     "sylKK": "ˈkʌ·stə·mɚ",
     "sylWord": "cus·tomer"
   },
@@ -504,7 +504,7 @@
     "kk": "[ˈklaɪənt]",
     "translation": "客戶、委託人",
     "part_of_speech": "n.",
-    "note": "類語：≒ customer。",
+    "note": "類語：≒ customer。多指接受專業服務者（如律師、顧問的客戶）。相關 clientele（顧客群）。常搭 potential client（潛在客戶）。",
     "sylKK": "ˈklaɪ·ənt",
     "sylWord": "client"
   },
@@ -513,7 +513,7 @@
     "kk": "[ˈænsɚ]",
     "translation": "回答、答覆",
     "part_of_speech": "n. / v.",
-    "note": "類語：≒ reply。",
+    "note": "類語：≒ reply、respond（回應）。常搭 answer the phone（接電話）、in answer to（回覆…）。名詞 response。",
     "sylKK": "ˈæn·sɚ",
     "sylWord": "an·swer"
   },
@@ -522,7 +522,7 @@
     "kk": "[ˈtʃæns]",
     "translation": "機會",
     "part_of_speech": "n.",
-    "note": "類語：≒ opportunity。",
+    "note": "類語：≒ opportunity（機會）。亦指「可能性、運氣」。常搭 by chance（偶然）、a good chance（很有可能）。",
     "sylKK": "ˈtʃæns",
     "sylWord": "chance"
   },
@@ -531,7 +531,7 @@
     "kk": "[ˌɛksəˈbɪʃən]",
     "translation": "展覽",
     "part_of_speech": "n.",
-    "note": "類語：≒ fair。",
+    "note": "類語：≒ fair（展覽會）、exhibit（展品）。動詞 exhibit（展出）。常搭 trade exhibition（商展）、on exhibition（展出中）。",
     "sylKK": "ˌɛk·sə·ˈbɪ·ʃən",
     "sylWord": "ex·hi·bi·tion"
   },
@@ -540,7 +540,7 @@
     "kk": "[ˈodɚ]",
     "translation": "氣味",
     "part_of_speech": "n.",
-    "note": "類語：≒ smell。",
+    "note": "類語：≒ smell、scent（香味）。多指難聞的氣味。形容詞 odorless（無味的）。英式拼法 odour。",
     "sylKK": "ˈo·dɚ",
     "sylWord": "o·dor"
   },
@@ -549,7 +549,7 @@
     "kk": "[bɪˈlɑŋɪŋz]",
     "translation": "財物、所有物",
     "part_of_speech": "n.",
-    "note": "類語：≒ possessions。",
+    "note": "類語：≒ possessions、property（財產）。恆用複數。常搭 personal belongings（個人物品）。動詞 belong（屬於）。",
     "sylKK": "bɪ·ˈlɑ·ŋɪŋz",
     "sylWord": "be·long·ings"
   },
@@ -558,7 +558,7 @@
     "kk": "[kənˈvɛnʃən]",
     "translation": "大會、會議；慣例",
     "part_of_speech": "n.",
-    "note": "類語：≒ congress。",
+    "note": "類語：≒ congress、conference（會議）。亦指「慣例、習俗」。形容詞 conventional（傳統的）。",
     "sylKK": "kən·ˈvɛn·ʃən",
     "sylWord": "con·ven·tion"
   },
@@ -567,7 +567,7 @@
     "kk": "[ˈɪnvɔɪs]",
     "translation": "帳單、發票、發貨清單",
     "part_of_speech": "n.",
-    "note": "類語：≒ bill。",
+    "note": "類語：≒ bill（帳單）。指開給客戶的請款單。常搭 issue an invoice（開發票）、pay an invoice（付款）。",
     "sylKK": "ˈɪn·vɔɪs",
     "sylWord": "in·voice"
   },
@@ -576,7 +576,7 @@
     "kk": "[ˌrɛzɚˈveʃən]",
     "translation": "預約、預訂",
     "part_of_speech": "n.",
-    "note": "類語：≒ booking。",
+    "note": "類語：≒ booking（預訂）。動詞 reserve（預訂／保留）。常搭 make a reservation（訂位）。亦指「保留意見」。",
     "sylKK": "ˌrɛ·zɚ·ˈve·ʃən",
     "sylWord": "reser·va·tion"
   },
@@ -585,7 +585,7 @@
     "kk": "[ˈɛvədəns]",
     "translation": "證據",
     "part_of_speech": "n.",
-    "note": "類語：≒ proof。",
+    "note": "類語：≒ proof（證明）。形容詞 evident（明顯的）。不可數。常搭 provide evidence（提供證據）。",
     "sylKK": "ˈɛ·və·dəns",
     "sylWord": "ev·i·dence"
   },
@@ -594,7 +594,7 @@
     "kk": "[pəˈzɪʃən]",
     "translation": "職位、位置",
     "part_of_speech": "n.",
-    "note": "類語：≒ post。",
+    "note": "類語：≒ post（職位）。亦指「立場、位置」。動詞 position（安置）。常搭 apply for a position（應徵職位）。",
     "sylKK": "pə·ˈzɪ·ʃən",
     "sylWord": "po·si·tion"
   },
@@ -603,7 +603,7 @@
     "kk": "[ˈprɑˌgrɛs]",
     "translation": "進步、進展",
     "part_of_speech": "n.",
-    "note": "類語：≒ advance。",
+    "note": "類語：≒ advance（進展）。動詞唸 [prəˈɡrɛs]（重音在後），名詞重音在前。常搭 make progress（取得進展）。",
     "sylKK": "ˈprɑ·ˌgrɛs",
     "sylWord": "prog·ress"
   },
@@ -612,7 +612,7 @@
     "kk": "[ˈdræft]",
     "translation": "草稿、草案",
     "part_of_speech": "n.",
-    "note": "類語：≒ manuscript。",
+    "note": "類語：≒ manuscript（手稿）。動詞 draft（起草）。常搭 first draft（初稿）、rough draft（草稿）。亦指「匯票」。",
     "sylKK": "ˈdræft",
     "sylWord": "draft"
   },
@@ -621,7 +621,7 @@
     "kk": "[ˈed]",
     "translation": "援助、幫助",
     "part_of_speech": "n. / v.",
-    "note": "類語：≒ help。",
+    "note": "類語：≒ help、assist（協助）。常搭 first aid（急救）、financial aid（財務援助）、in aid of（為援助…）。",
     "sylKK": "ˈed",
     "sylWord": "aid"
   },
@@ -630,7 +630,7 @@
     "kk": "[kwɪˈzin]",
     "translation": "料理、菜餚",
     "part_of_speech": "n.",
-    "note": "類語：≒ cooking。",
+    "note": "類語：≒ cooking（烹飪）。源自法文，指某地區或風格的菜系。常搭 French cuisine（法國菜）、local cuisine（當地料理）。",
     "sylKK": "kwɪ·ˈzin",
     "sylWord": "cui·sine"
   },
@@ -639,7 +639,7 @@
     "kk": "[ˈɛksɚpt]",
     "translation": "摘錄、引文",
     "part_of_speech": "n.",
-    "note": "類語：≒ extract。",
+    "note": "類語：≒ extract、passage（段落）。指書籍或影片的節錄。常搭 an excerpt from（…的摘錄）。",
     "sylKK": "ˈɛk·sɚpt",
     "sylWord": "ex·cerpt"
   },
@@ -648,14 +648,14 @@
     "kk": "",
     "translation": "迅速、及時",
     "part_of_speech": "n.",
-    "note": "類語：≒ speed。"
+    "note": "類語：≒ speed、punctuality（準時）。形容詞 prompt（迅速的）、副詞 promptly（即刻）。"
   },
   {
     "word": "effort",
     "kk": "[ˈɛfɚt]",
     "translation": "努力",
     "part_of_speech": "n.",
-    "note": "類語：≒ endeavor。",
+    "note": "類語：≒ endeavor、attempt（嘗試）。常搭 make an effort（努力）、put effort into（投入心力）。形容詞 effortless（不費力的）。",
     "sylKK": "ˈɛ·fɚt",
     "sylWord": "ef·fort"
   },
@@ -664,7 +664,7 @@
     "kk": "[əˈtʃivmənt]",
     "translation": "成就、成功",
     "part_of_speech": "n.",
-    "note": "類語：≒ success。",
+    "note": "類語：≒ success、accomplishment（成就）。動詞 achieve（達成）。常搭 a sense of achievement（成就感）。",
     "sylKK": "ə·ˈtʃiv·mənt",
     "sylWord": "achieve·ment"
   },
@@ -673,7 +673,7 @@
     "kk": "[dɪˈsɔrdɚ]",
     "translation": "混亂、失調",
     "part_of_speech": "n.",
-    "note": "類語：≒ confusion。",
+    "note": "類語：≒ confusion、chaos（混亂）。反義 order（秩序）。亦指「疾病、失調」（如 sleep disorder 睡眠障礙）。",
     "sylKK": "dɪ·ˈsɔr·dɚ",
     "sylWord": "dis·or·der"
   },
@@ -682,7 +682,7 @@
     "kk": "[ˌkɔrəˈspɑndəns]",
     "translation": "通信、信件",
     "part_of_speech": "n.",
-    "note": "類語：≒ communication。",
+    "note": "類語：≒ communication（通信）。動詞 correspond（通信／符合）、名詞 correspondent（通訊員）。指往來信件。",
     "sylKK": "ˌkɔ·rə·ˈspɑn·dəns",
     "sylWord": "cor·re·spon·dence"
   },
@@ -691,7 +691,7 @@
     "kk": "[ˈhɑlˌwe]",
     "translation": "走廊、玄關",
     "part_of_speech": "n.",
-    "note": "類語：≒ corridor。",
+    "note": "類語：≒ corridor、passage（通道）。指室內走廊或門廳。相關 hall（大廳）。",
     "sylKK": "ˈhɑl·ˌwe",
     "sylWord": "hall·way"
   },
@@ -700,7 +700,7 @@
     "kk": "[ˈpæˌstaɪm]",
     "translation": "消遣、興趣",
     "part_of_speech": "n.",
-    "note": "類語：≒ hobby。",
+    "note": "類語：≒ hobby（嗜好）、recreation（消遣）。由 pass + time 組成，指打發時間的活動。",
     "sylKK": "ˈpæ·ˌstaɪm",
     "sylWord": "pas·time"
   },
@@ -709,7 +709,7 @@
     "kk": "[ˈridʒən]",
     "translation": "地區、區域",
     "part_of_speech": "n.",
-    "note": "類語：≒ area。",
+    "note": "類語：≒ area、district、zone（區域）。形容詞 regional（區域的）。常搭 in the region of（大約）。",
     "sylKK": "ˈri·dʒən",
     "sylWord": "re·gion"
   },
@@ -718,7 +718,7 @@
     "kk": "[ˌɪnˈsɛntɪv]",
     "translation": "動機、誘因、獎勵",
     "part_of_speech": "n.",
-    "note": "類語：≒ motivation。",
+    "note": "類語：≒ motivation（動機）、stimulus（刺激）。常搭 financial incentive（金錢誘因）、an incentive to（做…的誘因）。",
     "sylKK": "ˌɪn·ˈsɛn·tɪv",
     "sylWord": "in·cen·tive"
   },
@@ -727,7 +727,7 @@
     "kk": "[kənˈstrent]",
     "translation": "限制、約束",
     "part_of_speech": "n.",
-    "note": "類語：≒ restriction。",
+    "note": "類語：≒ restriction、limitation（限制）。動詞 constrain（約束）。常搭 time／budget constraints（時間／預算限制）。",
     "sylKK": "kən·ˈstrent",
     "sylWord": "con·straint"
   },
@@ -736,7 +736,7 @@
     "kk": "[əˈprezəl]",
     "translation": "評價、估價、考核",
     "part_of_speech": "n.",
-    "note": "類語：≒ assessment / evaluation。",
+    "note": "類語：≒ assessment、evaluation（評估）。動詞 appraise（評估）。常搭 performance appraisal（績效考核）。",
     "sylKK": "ə·ˈpre·zəl",
     "sylWord": "ap·praisal"
   },
@@ -745,7 +745,7 @@
     "kk": "[ˌɪntɚˈmɪʃən]",
     "translation": "休息時間、中場休息",
     "part_of_speech": "n.",
-    "note": "類語：≒ pause / break。",
+    "note": "類語：≒ pause、break、interval（間隔）。多指戲劇、音樂會的中場休息。字首 inter-（之間）。",
     "sylKK": "ˌɪn·tɚ·ˈmɪ·ʃən",
     "sylWord": "in·ter·mis·sion"
   },
@@ -754,7 +754,7 @@
     "kk": "[ˈækjərəsi]",
     "translation": "正確、準確",
     "part_of_speech": "n.",
-    "note": "類語：≒ precision。形容詞 accurate。",
+    "note": "類語：≒ precision（精確）。形容詞 accurate（準確的）、副詞 accurately。反義 inaccuracy（不準確）。",
     "sylKK": "ˈæ·kjə·rə·si",
     "sylWord": "ac·cu·ra·cy"
   },
@@ -763,7 +763,7 @@
     "kk": "[rɪˈwɔrd]",
     "translation": "報酬、獎賞",
     "part_of_speech": "n. / v.",
-    "note": "類語：≒ remuneration。",
+    "note": "類語：≒ remuneration、prize（獎賞）。形容詞 rewarding（有回報的）。常搭 reward sb for（因…獎賞某人）。",
     "sylKK": "rɪ·ˈwɔrd",
     "sylWord": "re·ward"
   },
@@ -772,7 +772,7 @@
     "kk": "[ˌɑθərəˈzeʃən]",
     "translation": "授權、認可、批准",
     "part_of_speech": "n.",
-    "note": "類語：≒ permission。",
+    "note": "類語：≒ permission、approval（許可）。動詞 authorize（授權）、形容詞 authorized（經授權的）。常搭 without authorization（未經授權）。",
     "sylKK": "ˌɑ·θə·rə·ˈze·ʃən",
     "sylWord": "au·tho·riza·tion"
   },
@@ -781,7 +781,7 @@
     "kk": "[ɪgˈzɛmpʃən]",
     "translation": "豁免、免除",
     "part_of_speech": "n.",
-    "note": "類語：≒ reduction。動詞 exempt。",
+    "note": "類語：≒ reduction、immunity（免除）。動詞／形容詞 exempt（免除／免除的）。常搭 tax exemption（免稅）、exempt from（免除…）。",
     "sylKK": "ɪg·ˈzɛmp·ʃən",
     "sylWord": "ex·emp·tion"
   },
@@ -790,7 +790,7 @@
     "kk": "[ˈfɪtnəs]",
     "translation": "健康、體適能、適合",
     "part_of_speech": "n.",
-    "note": "類語：≒ health。",
+    "note": "類語：≒ health（健康）。形容詞 fit（健康的／合適的）。常搭 physical fitness（體適能）、fitness for the job（勝任度）。",
     "sylKK": "ˈfɪt·nəs",
     "sylWord": "fit·ness"
   },
@@ -799,7 +799,7 @@
     "kk": "[ˌrɛvəˈleʃən]",
     "translation": "揭露、透露",
     "part_of_speech": "n.",
-    "note": "類語：≒ disclosure。",
+    "note": "類語：≒ disclosure（揭露）。動詞 reveal（揭露）。指出人意料的揭露或啟示。",
     "sylKK": "ˌrɛ·və·ˈle·ʃən",
     "sylWord": "rev·e·la·tion"
   },
@@ -808,7 +808,7 @@
     "kk": "[ˌlaɪəˈbɪlɪti]",
     "translation": "責任、義務、負債",
     "part_of_speech": "n.",
-    "note": "類語：≒ responsibility。",
+    "note": "類語：≒ responsibility（責任）。反義（資產）asset。形容詞 liable（有責任的／易…的）。常搭 liable for（對…負責）。",
     "sylKK": "ˌlaɪ·ə·ˈbɪ·lɪ·ti",
     "sylWord": "li·a·bil·i·ty"
   },
@@ -817,7 +817,7 @@
     "kk": "[ˈteˌkovɚ]",
     "translation": "接管、收購（企業）",
     "part_of_speech": "n.",
-    "note": "類語：≒ buyout。",
+    "note": "類語：≒ buyout、acquisition（收購）。相關片語 take over（接管）。常搭 hostile takeover（惡意收購）。",
     "sylKK": "ˈte·ˌko·vɚ",
     "sylWord": "ta·keo·ver"
   },
@@ -826,7 +826,7 @@
     "kk": "[əˈklem]",
     "translation": "稱讚、讚揚",
     "part_of_speech": "n. / v.",
-    "note": "類語：≒ praise。",
+    "note": "類語：≒ praise、applause（讚揚）。形容詞 acclaimed（受讚譽的）。常搭 critical acclaim（好評）。",
     "sylKK": "ə·ˈklem",
     "sylWord": "ac·claim"
   },
@@ -835,7 +835,7 @@
     "kk": "[ˈmɝtʃənˌdaɪz]",
     "translation": "商品、貨物",
     "part_of_speech": "n.",
-    "note": "類語：≒ goods。不可數。",
+    "note": "類語：≒ goods、products（商品）。不可數。相關 merchant（商人）、merchandising（促銷）。",
     "sylKK": "ˈmɝ·tʃən·ˌdaɪz",
     "sylWord": "mer·chan·dise"
   },
@@ -844,7 +844,7 @@
     "kk": "[ˈʃɛrˌholdɚ]",
     "translation": "股東",
     "part_of_speech": "n.",
-    "note": "人物。同義 stockholder。",
+    "note": "人物。≒ stockholder（股東）。由 share（股份）+ holder（持有人）組成。常搭 shareholders' meeting（股東會）。",
     "sylKK": "ˈʃɛr·ˌhol·dɚ",
     "sylWord": "share·hold·er"
   },
@@ -853,7 +853,7 @@
     "kk": "[kənˈsʌltənt]",
     "translation": "顧問",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。動詞 consult（諮詢）、名詞 consultation（諮詢）。常搭 management consultant（管理顧問）。≒ adviser。",
     "sylKK": "kən·ˈsʌl·tənt",
     "sylWord": "con·sul·tant"
   },
@@ -862,14 +862,14 @@
     "kk": "",
     "translation": "業務員、業務代表",
     "part_of_speech": "n. phr.",
-    "note": "人物。rep = representative。"
+    "note": "人物。rep = representative（代表）。指負責銷售、拜訪客戶的業務。≒ salesperson。"
   },
   {
     "word": "supplier",
     "kk": "[səˈplaɪɚ]",
     "translation": "供應商",
     "part_of_speech": "n.",
-    "note": "人物。動詞 supply。",
+    "note": "人物。動詞 supply（供應）、名詞 supply（供給）。反義 demand。常搭 a reliable supplier（可靠的供應商）。≒ vendor、provider。",
     "sylKK": "sə·ˈplaɪ·ɚ",
     "sylWord": "sup·pli·er"
   },
@@ -878,7 +878,7 @@
     "kk": "[əˈkaʊnt]",
     "translation": "帳目、帳戶；客戶",
     "part_of_speech": "n.",
-    "note": "人物/財務。",
+    "note": "人物／財務。相關 accountant（會計師）、accounting（會計）。常搭 open an account（開戶）、bank account（銀行帳戶）。片語 account for（說明／占）。",
     "sylKK": "ə·ˈkaʊnt",
     "sylWord": "ac·count"
   },
@@ -887,7 +887,7 @@
     "kk": "[rɪˈsɛpʃənɪst]",
     "translation": "接待員、櫃檯人員",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。相關 reception（接待處／招待會）、receive（接收）。指櫃檯接待人員。",
     "sylKK": "rɪ·ˈsɛp·ʃə·nɪst",
     "sylWord": "re·cep·tion·ist"
   },
@@ -896,14 +896,14 @@
     "kk": "",
     "translation": "董事會",
     "part_of_speech": "n. phr.",
-    "note": "人物。"
+    "note": "人物。director 董事、board 委員會，指公司最高決策機構。相關 chairman（董事長）。"
   },
   {
     "word": "spectator",
     "kk": "[ˈspɛktetɚ]",
     "translation": "觀眾、旁觀者",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。多指運動賽事的觀眾；戲劇觀眾用 audience。相關 spectacle（奇觀）、spectacular（壯觀的）。",
     "sylKK": "ˈspɛk·te·tɚ",
     "sylWord": "spec·ta·tor"
   },
@@ -912,7 +912,7 @@
     "kk": "[ˈsupɚˌvaɪzɚ]",
     "translation": "主管、管理者、監督者",
     "part_of_speech": "n.",
-    "note": "人物。動詞 supervise。",
+    "note": "人物。動詞 supervise（監督）、名詞 supervision（監督）。指直屬上司。≒ manager、boss。",
     "sylKK": "ˈsu·pɚ·ˌvaɪ·zɚ",
     "sylWord": "su·per·vi·sor"
   },
@@ -921,7 +921,7 @@
     "kk": "[ˈtɛnənt]",
     "translation": "房客、租戶",
     "part_of_speech": "n.",
-    "note": "人物。反義 landlord。",
+    "note": "人物。反義 landlord（房東）。相關 tenancy（租賃）。常搭 pay rent（付房租）。",
     "sylKK": "ˈtɛ·nənt",
     "sylWord": "ten·ant"
   },
@@ -930,7 +930,7 @@
     "kk": "[ˈplʌmɚ]",
     "translation": "水電工、管線工",
     "part_of_speech": "n.",
-    "note": "人物。b 不發音。",
+    "note": "人物。b 不發音，唸 [ˈplʌmɚ]。相關 plumbing（水管裝置／配管）。指修理水管的工人。",
     "sylKK": "ˈplʌ·mɚ",
     "sylWord": "plum·ber"
   },
@@ -939,7 +939,7 @@
     "kk": "[ˈsɛkrəˌtɛri]",
     "translation": "秘書",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。亦指「部長／大臣」（如 Secretary of State 國務卿）。注意拼字 secre-tary。",
     "sylKK": "ˈsɛ·krə·ˌtɛ·ri",
     "sylWord": "sec·re·tary"
   },
@@ -948,7 +948,7 @@
     "kk": "[ˈprɛzəˌdɛnt]",
     "translation": "總裁、董事長；總統",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。形容詞 presidential（總統的）。企業指總裁；國家指總統。相關 preside（主持）。相對職 vice president（副總）。",
     "sylKK": "ˈprɛ·zə·ˌdɛnt",
     "sylWord": "pres·i·dent"
   },
@@ -957,14 +957,14 @@
     "kk": "",
     "translation": "副總裁、副總",
     "part_of_speech": "n. phr.",
-    "note": "人物。"
+    "note": "人物。字首 vice-（副）如 vice-chairman（副主席）。縮寫 VP。相對 president（總裁）。"
   },
   {
     "word": "opponent",
     "kk": "[əˈponənt]",
     "translation": "對手、敵手",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。動詞 oppose（反對）、名詞 opposition（反對）。≒ rival、competitor。反義 ally（盟友）、supporter。",
     "sylKK": "ə·ˈpo·nənt",
     "sylWord": "op·po·nent"
   },
@@ -973,7 +973,7 @@
     "kk": "[ˈnɑvəs]",
     "translation": "新手、初學者",
     "part_of_speech": "n.",
-    "note": "人物。",
+    "note": "人物。≒ beginner、rookie（新手）。反義 expert（專家）、veteran（老手）。指初學者。",
     "sylKK": "ˈnɑ·vəs",
     "sylWord": "no·vice"
   },
@@ -982,7 +982,7 @@
     "kk": "[əˈpɔɪntmənt]",
     "translation": "約會、約定、預約",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 appoint（任命）。常搭 make an appointment（預約）、have an appointment with（與…有約）。亦指「任命」。",
     "sylKK": "ə·ˈpɔɪnt·mənt",
     "sylWord": "ap·point·ment"
   },
@@ -991,7 +991,7 @@
     "kk": "[əˈtɛndəns]",
     "translation": "出席、出席人數",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 attend（出席）、名詞 attendant（服務員）。常搭 take attendance（點名）、in attendance（在場）。反義 absence。",
     "sylKK": "ə·ˈtɛn·dəns",
     "sylWord": "at·ten·dance"
   },
@@ -1000,7 +1000,7 @@
     "kk": "[ˈkæbənət]",
     "translation": "櫥櫃；內閣",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。常搭 filing cabinet（檔案櫃）。政治上指「內閣」。",
     "sylKK": "ˈkæ·bə·nət",
     "sylWord": "cab·i·net"
   },
@@ -1009,7 +1009,7 @@
     "kk": "[ˈkæləndɚ]",
     "translation": "日曆、行事曆",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。注意拼字 cal-en-dar（易誤拼 calender）。常搭 mark the calendar（在日曆上做記號）。",
     "sylKK": "ˈkæ·lən·dɚ",
     "sylWord": "cal·en·dar"
   },
@@ -1018,7 +1018,7 @@
     "kk": "[ˈklɝk]",
     "translation": "辦事員、職員、店員",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。常搭 bank clerk（銀行行員）、sales clerk（店員）。相關 clerical（文書的）。",
     "sylKK": "ˈklɝk",
     "sylWord": "clerk"
   },
@@ -1027,7 +1027,7 @@
     "kk": "[dəˈrɛktəri]",
     "translation": "通訊錄、人名住址簿",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。常搭 telephone directory（電話簿）。電腦上指「目錄」。相關 director（主管）、direct（指引）。",
     "sylKK": "də·ˈrɛk·tə·ri",
     "sylWord": "di·rec·to·ry"
   },
@@ -1036,7 +1036,7 @@
     "kk": "[ˈdupləkət]",
     "translation": "複製、副本",
     "part_of_speech": "n. / v.",
-    "note": "辦公室。",
+    "note": "辦公室。名詞 duplication（複製）。常搭 in duplicate（一式兩份）、make a duplicate（複製一份）。≒ copy。",
     "sylKK": "ˈdu·plə·kət",
     "sylWord": "du·pli·cate"
   },
@@ -1045,7 +1045,7 @@
     "kk": "[ˈfaɪlɪŋ]",
     "translation": "歸檔、存檔",
     "part_of_speech": "n.",
-    "note": "辦公室。file cabinet 檔案櫃。",
+    "note": "辦公室。動詞 file（歸檔／提出申請）。常搭 filing cabinet（檔案櫃）、filing system（歸檔系統）。file a complaint（提出申訴）。",
     "sylKK": "ˈfaɪ·lɪŋ",
     "sylWord": "fil·ing"
   },
@@ -1054,14 +1054,14 @@
     "kk": "",
     "translation": "待處理文件盒",
     "part_of_speech": "n.",
-    "note": "辦公室。反義 out-tray。"
+    "note": "辦公室。反義 out-tray（已處理文件盒）。美式亦稱 inbox。指桌上收件盒。"
   },
   {
     "word": "monitor",
     "kk": "[ˈmɑnətɚ]",
     "translation": "檢測、監視、追蹤；螢幕",
     "part_of_speech": "v. / n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞指「監控、追蹤」，名詞指「螢幕」。常搭 monitor progress（追蹤進度）。≒ track、observe。",
     "sylKK": "ˈmɑ·nə·tɚ",
     "sylWord": "mon·i·tor"
   },
@@ -1070,14 +1070,14 @@
     "kk": "",
     "translation": "已處理文件盒",
     "part_of_speech": "n.",
-    "note": "辦公室。"
+    "note": "辦公室。反義 in-tray（待處理文件盒）。美式亦稱 outbox。指桌上發件盒。"
   },
   {
     "word": "partition",
     "kk": "[pɑrˈtɪʃən]",
     "translation": "隔間、分隔物",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 partition（分隔）。指辦公室隔板或空間劃分。相關 part（部分）。≒ divider。",
     "sylKK": "pɑr·ˈtɪ·ʃən",
     "sylWord": "par·ti·tion"
   },
@@ -1086,7 +1086,7 @@
     "kk": "[ˈpostədʒ]",
     "translation": "郵資、郵費",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。相關 post（郵政／郵寄）、postal（郵政的）。常搭 postage stamp（郵票）、postage paid（郵資已付）。不可數。",
     "sylKK": "ˈpo·stədʒ",
     "sylWord": "pos·tage"
   },
@@ -1095,7 +1095,7 @@
     "kk": "[ˌpʌŋktʃuˈælɪti]",
     "translation": "準時、守時",
     "part_of_speech": "n.",
-    "note": "辦公室。形容詞 punctual。",
+    "note": "辦公室。形容詞 punctual（準時的）、副詞 punctually。≒ promptness。反義 tardiness（遲到）。",
     "sylKK": "ˌpʌŋk·tʃu·ˈæ·lɪ·ti",
     "sylWord": "punc·tu·al·i·ty"
   },
@@ -1104,7 +1104,7 @@
     "kk": "[ˈskɛdʒʊl]",
     "translation": "時間表、行程；排定",
     "part_of_speech": "n. / v.",
-    "note": "辦公室。",
+    "note": "辦公室。常搭 on schedule（準時）、behind schedule（落後進度）、be scheduled to（預定）。美式唸 [ˈskɛdʒul]。",
     "sylKK": "ˈskɛ·dʒʊl",
     "sylWord": "sched·ule"
   },
@@ -1113,7 +1113,7 @@
     "kk": "[ˈʃɪft]",
     "translation": "輪班、換班；轉移",
     "part_of_speech": "n. / v.",
-    "note": "辦公室。night shift 夜班。",
+    "note": "辦公室。常搭 night shift（夜班）、day shift（日班）、work in shifts（輪班）。動詞指「轉移、改變」。",
     "sylKK": "ˈʃɪft",
     "sylWord": "shift"
   },
@@ -1122,7 +1122,7 @@
     "kk": "[ˈstæf]",
     "translation": "全體職員、員工",
     "part_of_speech": "n.",
-    "note": "辦公室。集合名詞。",
+    "note": "辦公室。集合名詞（單複數同形），指全體員工。動詞 staff（配置人員）。相關 staffing（人力配置）。≒ personnel。",
     "sylKK": "ˈstæf",
     "sylWord": "staff"
   },
@@ -1131,7 +1131,7 @@
     "kk": "[ˈstraɪk]",
     "translation": "罷工；打擊",
     "part_of_speech": "n. / v.",
-    "note": "辦公室。",
+    "note": "辦公室。常搭 go on strike（發動罷工）、be on strike（罷工中）。動詞亦指「打擊、突然發生」，過去式 struck。",
     "sylKK": "ˈstraɪk",
     "sylWord": "strike"
   },
@@ -1140,7 +1140,7 @@
     "kk": "[ˈtæsk]",
     "translation": "工作、任務",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。常搭 carry out a task（執行任務）、task force（專案小組）。≒ job、assignment、duty。",
     "sylKK": "ˈtæsk",
     "sylWord": "task"
   },
@@ -1149,7 +1149,7 @@
     "kk": "[ˈwɝkˌfɔrs]",
     "translation": "勞動力、全體員工",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。由 work + force 組成，指全體勞動人口或某公司員工總數。≒ labor force、personnel。",
     "sylKK": "ˈwɝk·ˌfɔrs",
     "sylWord": "work·force"
   },
@@ -1158,7 +1158,7 @@
     "kk": "[əˈsaɪnmənt]",
     "translation": "分配的工作、任務、作業",
     "part_of_speech": "n.",
-    "note": "辦公室。動詞 assign。",
+    "note": "辦公室。動詞 assign（分派）。常搭 complete an assignment（完成任務）。≒ task、duty。",
     "sylKK": "ə·ˈsaɪn·mənt",
     "sylWord": "as·sign·ment"
   },
@@ -1167,7 +1167,7 @@
     "kk": "[ˈbʊlɪtən]",
     "translation": "公報、告示、簡報",
     "part_of_speech": "n.",
-    "note": "辦公室。bulletin board 公佈欄。",
+    "note": "辦公室。常搭 bulletin board（公佈欄）、news bulletin（新聞快報）。指簡短公告。",
     "sylKK": "ˈbʊ·lɪ·tən",
     "sylWord": "bul·letin"
   },
@@ -1176,7 +1176,7 @@
     "kk": "[ˈkælkjəˌletɚ]",
     "translation": "計算機",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 calculate（計算）、名詞 calculation（計算）。指計算工具。",
     "sylKK": "ˈkæl·kjə·ˌle·tɚ",
     "sylWord": "cal·cu·la·tor"
   },
@@ -1185,14 +1185,14 @@
     "kk": "",
     "translation": "副本（複寫）",
     "part_of_speech": "n. phr.",
-    "note": "辦公室。email 的 CC。"
+    "note": "辦公室。縮寫 CC（電子郵件的副本收件）。源自早期複寫紙（carbon paper）。亦比喻「一模一樣的人／物」。"
   },
   {
     "word": "colleague",
     "kk": "[ˈkɑlig]",
     "translation": "同事、同僚",
     "part_of_speech": "n.",
-    "note": "辦公室。同義 coworker。",
+    "note": "辦公室。≒ coworker、associate（同事）。注意拼字 col-league。指職場夥伴。",
     "sylKK": "ˈkɑ·lig",
     "sylWord": "col·league"
   },
@@ -1201,7 +1201,7 @@
     "kk": "[ˈdɑkjəmɛnt]",
     "translation": "文件、公文",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 document（記錄）、形容詞 documentary（記錄的／紀錄片）。常搭 legal document（法律文件）。",
     "sylKK": "ˈdɑ·kjə·mɛnt",
     "sylWord": "doc·u·ment"
   },
@@ -1210,7 +1210,7 @@
     "kk": "[ɪkˈstɛnʃən]",
     "translation": "分機（電話）；延長",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 extend（延長）、形容詞 extensive（廣泛的）。常搭 extension number（分機號碼）、request an extension（申請延期）。",
     "sylKK": "ɪk·ˈstɛn·ʃən",
     "sylWord": "ex·ten·sion"
   },
@@ -1219,7 +1219,7 @@
     "kk": "[ˈɪntɚˌkɑm]",
     "translation": "對講機、內部通話系統",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。intercommunication 的縮寫。指室內或樓層間通話系統。常搭 over the intercom（透過對講機）。",
     "sylKK": "ˈɪn·tɚ·ˌkɑm",
     "sylWord": "in·ter·com"
   },
@@ -1228,7 +1228,7 @@
     "kk": "[ˈmɛˌmo]",
     "translation": "便條、備忘錄",
     "part_of_speech": "n.",
-    "note": "辦公室。= memorandum。",
+    "note": "辦公室。= memorandum（備忘錄）的縮寫，複數 memos。指公司內部通知。常搭 send a memo（發備忘錄）。",
     "sylKK": "ˈmɛ·ˌmo",
     "sylWord": "me·mo"
   },
@@ -1237,7 +1237,7 @@
     "kk": "[ˈɑpəˌretɚ]",
     "translation": "接線生、操作員",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 operate（操作）、名詞 operation（運作）。指總機接線生或機器操作員。",
     "sylKK": "ˈɑ·pə·ˌre·tɚ",
     "sylWord": "op·er·a·tor"
   },
@@ -1246,7 +1246,7 @@
     "kk": "[pɔrtˈfoliˌo]",
     "translation": "作品夾、公事包；投資組合",
     "part_of_speech": "n.",
-    "note": "辦公室/財務。",
+    "note": "辦公室／財務。指作品集、公事包，或金融「投資組合」。常搭 investment portfolio（投資組合）。",
     "sylKK": "pɔrt·ˈfo·li·ˌo",
     "sylWord": "port·fo·lio"
   },
@@ -1255,14 +1255,14 @@
     "kk": "",
     "translation": "印刷品",
     "part_of_speech": "n. phr.",
-    "note": "辦公室。"
+    "note": "辦公室。matter 此處指「物品、東西」。郵局分類用語，指書刊、傳單等印刷物，郵資較低。"
   },
   {
     "word": "shorthand",
     "kk": "[ˈʃɔrtˌhænd]",
     "translation": "速記、速記法",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。由 short + hand 組成，指快速記錄的符號系統。反義 longhand（普通書寫）。",
     "sylKK": "ˈʃɔrt·ˌhænd",
     "sylWord": "short·hand"
   },
@@ -1271,7 +1271,7 @@
     "kk": "[ˈstepəlɚ]",
     "translation": "訂書機",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。相關 staple（訂書針／主要的）。動詞 staple（用訂書針裝訂）。",
     "sylKK": "ˈste·pə·lɚ",
     "sylWord": "sta·pler"
   },
@@ -1280,7 +1280,7 @@
     "kk": "[ˈtɑrdi]",
     "translation": "遲緩的、遲到的",
     "part_of_speech": "adj.",
-    "note": "辦公室。",
+    "note": "辦公室。名詞 tardiness（遲到）。≒ late、delayed。反義 punctual（準時的）、prompt。",
     "sylKK": "ˈtɑr·di",
     "sylWord": "tar·dy"
   },
@@ -1289,7 +1289,7 @@
     "kk": "[ˈtaɪpɪst]",
     "translation": "打字員",
     "part_of_speech": "n.",
-    "note": "辦公室。",
+    "note": "辦公室。動詞 type（打字）、名詞 typing（打字）、typewriter（打字機）。字尾 -ist 表「從事…的人」。",
     "sylKK": "ˈtaɪ·pɪst",
     "sylWord": "typ·ist"
   },
@@ -1298,7 +1298,7 @@
     "kk": "[ˈzɪrɑks]",
     "translation": "影印；影印機",
     "part_of_speech": "v. / n.",
-    "note": "辦公室。原為品牌名。",
+    "note": "辦公室。原為影印機品牌（Xerox），後成為「影印」的通用動詞。≒ photocopy、copy。",
     "sylKK": "ˈzɪ·rɑks",
     "sylWord": "xe·rox"
   },
@@ -1307,7 +1307,7 @@
     "kk": "[ˈbæləns]",
     "translation": "餘額、差額；平衡",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。動詞 balance（使平衡）。常搭 account balance（帳戶餘額）、balance sheet（資產負債表）、strike a balance（取得平衡）。",
     "sylKK": "ˈbæ·ləns",
     "sylWord": "bal·ance"
   },
@@ -1316,7 +1316,7 @@
     "kk": "[ˈbɑnd]",
     "translation": "債券",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。指政府或公司發行的債券；亦指「聯繫、束縛」。常搭 government bond（公債）、issue bonds（發行債券）。",
     "sylKK": "ˈbɑnd",
     "sylWord": "bond"
   },
@@ -1325,14 +1325,14 @@
     "kk": "",
     "translation": "商會",
     "part_of_speech": "n. phr.",
-    "note": "財務。"
+    "note": "財務。chamber 指「會所、議院」，commerce 指「商業」。指促進當地工商業的組織。"
   },
   {
     "word": "credit",
     "kk": "[ˈkrɛdət]",
     "translation": "功勞、信用、貸方、存款額",
     "part_of_speech": "n.",
-    "note": "財務。反義 debit。",
+    "note": "財務。反義 debit（借方）。常搭 credit card（信用卡）、on credit（賒帳）、take credit for（把…歸功於己）。",
     "sylKK": "ˈkrɛ·dət",
     "sylWord": "cred·it"
   },
@@ -1341,7 +1341,7 @@
     "kk": "[ˈdɛt]",
     "translation": "債、債務",
     "part_of_speech": "n.",
-    "note": "財務。b 不發音。",
+    "note": "財務。b 不發音，唸 [dɛt]。相關 debtor（債務人）。常搭 in debt（負債）、pay off a debt（還清債務）。反義 credit。",
     "sylKK": "ˈdɛt",
     "sylWord": "debt"
   },
@@ -1350,7 +1350,7 @@
     "kk": "[ˈdɛfəsət]",
     "translation": "赤字、虧損",
     "part_of_speech": "n.",
-    "note": "財務。反義 surplus。",
+    "note": "財務。反義 surplus（盈餘）。常搭 trade deficit（貿易逆差）、budget deficit（預算赤字）。指入不敷出。",
     "sylKK": "ˈdɛ·fə·sət",
     "sylWord": "de·fi·cit"
   },
@@ -1359,7 +1359,7 @@
     "kk": "[dɪˌpriʃiˈeʃən]",
     "translation": "跌價、貶值、折舊",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。動詞 depreciate（貶值）。反義 appreciation（增值）。指資產隨時間減損價值。",
     "sylKK": "dɪ·ˌpri·ʃi·ˈe·ʃən",
     "sylWord": "de·pre·ci·a·tion"
   },
@@ -1368,7 +1368,7 @@
     "kk": "[dɪˌvæljuˈeʃən]",
     "translation": "（貨幣）貶值",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。動詞 devalue（使貶值）。字首 de-（向下）+ value（價值）。特指官方調降貨幣幣值。反義 revaluation。",
     "sylKK": "dɪ·ˌvæ·lju·ˈe·ʃən",
     "sylWord": "de·val·u·a·tion"
   },
@@ -1377,7 +1377,7 @@
     "kk": "[ɛnˈdɔrs]",
     "translation": "贊同、支持、背書",
     "part_of_speech": "v.",
-    "note": "財務。名詞 endorsement。",
+    "note": "財務。名詞 endorsement（背書／代言）。指在支票背面簽名、或公開支持、名人代言。≒ support、approve。",
     "sylKK": "ɛn·ˈdɔrs",
     "sylWord": "en·dorse"
   },
@@ -1386,7 +1386,7 @@
     "kk": "[ɪkˈspɛns]",
     "translation": "費用、開銷",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。形容詞 expensive（昂貴的）。常搭 travel expenses（差旅費）、at the expense of（以…為代價）。≒ cost。",
     "sylKK": "ɪk·ˈspɛns",
     "sylWord": "ex·pense"
   },
@@ -1395,7 +1395,7 @@
     "kk": "[ˌflʌktʃuˈeʃən]",
     "translation": "波動、起伏",
     "part_of_speech": "n.",
-    "note": "財務。動詞 fluctuate。",
+    "note": "財務。動詞 fluctuate（波動）。常搭 price fluctuations（價格波動）、fluctuate between（在…之間波動）。",
     "sylKK": "ˌflʌk·tʃu·ˈe·ʃən",
     "sylWord": "fluc·tu·a·tion"
   },
@@ -1404,7 +1404,7 @@
     "kk": "[ˈgros]",
     "translation": "總共的、毛額的",
     "part_of_speech": "adj.",
-    "note": "財務。反義 net。",
+    "note": "財務。反義 net（淨額的）。常搭 gross income（毛收入）、gross profit（毛利）。亦指「嚴重的、噁心的」。",
     "sylKK": "ˈgros",
     "sylWord": "gross"
   },
@@ -1413,7 +1413,7 @@
     "kk": "[ˌɪnˈfleʃən]",
     "translation": "通貨膨脹、物價上漲",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。動詞 inflate（使膨脹）。反義 deflation（通貨緊縮）。常搭 rising inflation（通膨上升）、inflation rate（通膨率）。",
     "sylKK": "ˌɪn·ˈfle·ʃən",
     "sylWord": "in·fla·tion"
   },
@@ -1422,7 +1422,7 @@
     "kk": "[ˈovɚˌdræft]",
     "translation": "透支",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。相關片語 overdraw（透支）。字首 over-（超過）+ draft（支取）。指帳戶餘額被提超過。",
     "sylKK": "ˈo·vɚ·ˌdræft",
     "sylWord": "over·draft"
   },
@@ -1431,7 +1431,7 @@
     "kk": "[ˈprɑfət]",
     "translation": "利潤、收益",
     "part_of_speech": "n.",
-    "note": "財務。反義 loss。",
+    "note": "財務。反義 loss（虧損）。形容詞 profitable（有利可圖的）。常搭 make a profit（獲利）、net profit（淨利）。≒ gain、earnings。",
     "sylKK": "ˈprɑ·fət",
     "sylWord": "prof·it"
   },
@@ -1440,7 +1440,7 @@
     "kk": "[ˈrɛvəˌnu]",
     "translation": "收益、營收、稅收",
     "part_of_speech": "n.",
-    "note": "財務。",
+    "note": "財務。指營業總收入或政府稅收。常搭 annual revenue（年營收）、tax revenue（稅收）。≒ income。反義 expenditure。",
     "sylKK": "ˈrɛ·və·ˌnu",
     "sylWord": "rev·enue"
   },
@@ -1449,7 +1449,7 @@
     "kk": "[ˈstɑk]",
     "translation": "股票、公債；存貨、現貨",
     "part_of_speech": "n.",
-    "note": "財務/貿易。",
+    "note": "財務／貿易。常搭 stock market（股市）、in stock（有現貨）、out of stock（缺貨）。動詞 stock（進貨）。",
     "sylKK": "ˈstɑk",
     "sylWord": "stock"
   },
@@ -1458,7 +1458,7 @@
     "kk": "[wɪðˈdrɑ]",
     "translation": "撤回、提款、退出",
     "part_of_speech": "v.",
-    "note": "財務。名詞 withdrawal。",
+    "note": "財務。名詞 withdrawal（提款／撤回）。反義 deposit（存款）。常搭 withdraw money（提款）、withdraw from（退出）。",
     "sylKK": "wɪð·ˈdrɑ",
     "sylWord": "with·draw"
   },
@@ -1467,7 +1467,7 @@
     "kk": "[ˈbɪd]",
     "translation": "出價、投標、喊價",
     "part_of_speech": "n. / v.",
-    "note": "貿易。",
+    "note": "貿易。過去式／過去分詞 bid（不變）。常搭 make a bid（出價）、bid for a contract（投標）。相關 bidder（投標者）。",
     "sylKK": "ˈbɪd",
     "sylWord": "bid"
   },
@@ -1476,7 +1476,7 @@
     "kk": "[kəˈmɝʃəl]",
     "translation": "商業的、營利的；廣告",
     "part_of_speech": "adj. / n.",
-    "note": "貿易。",
+    "note": "貿易。名詞指電視／電台「廣告」。相關 commerce（商業）、commercialize（商業化）。常搭 commercial break（廣告時段）。",
     "sylKK": "kə·ˈmɝ·ʃəl",
     "sylWord": "com·mer·cial"
   },
@@ -1485,7 +1485,7 @@
     "kk": "[kəmˈpɛtətɚ]",
     "translation": "競爭者、對手",
     "part_of_speech": "n.",
-    "note": "貿易。動詞 compete。",
+    "note": "貿易。動詞 compete（競爭）、名詞 competition（競爭）、形容詞 competitive（有競爭力的）。≒ rival、opponent。",
     "sylKK": "kəm·ˈpɛ·tə·tɚ",
     "sylWord": "com·peti·tor"
   },
@@ -1494,7 +1494,7 @@
     "kk": "[kənˈsɑlɪˌdet]",
     "translation": "結合、強化、鞏固",
     "part_of_speech": "v.",
-    "note": "貿易。",
+    "note": "貿易。名詞 consolidation（合併／鞏固）。常搭 consolidate power（鞏固權力）、consolidate debts（整合債務）。≒ strengthen、merge。",
     "sylKK": "kən·ˈsɑ·lɪ·ˌdet",
     "sylWord": "con·sol·i·date"
   },
@@ -1503,7 +1503,7 @@
     "kk": "[ˈkɑnˌtrækt]",
     "translation": "契約、合同",
     "part_of_speech": "n.",
-    "note": "貿易。",
+    "note": "貿易。動詞 contract（收縮／簽約，重音在後）。常搭 sign a contract（簽約）、breach of contract（違約）。相關 contractor（承包商）。",
     "sylKK": "ˈkɑn·ˌtrækt",
     "sylWord": "con·tract"
   },
@@ -1512,7 +1512,7 @@
     "kk": "[ˈkɔrpərət]",
     "translation": "公司的、法人的、全體的",
     "part_of_speech": "adj.",
-    "note": "貿易。",
+    "note": "貿易。名詞 corporation（公司）。常搭 corporate culture（企業文化）、corporate image（企業形象）。作形容詞 ≒ company。",
     "sylKK": "ˈkɔr·pə·rət",
     "sylWord": "cor·po·rate"
   },
@@ -1521,7 +1521,7 @@
     "kk": "[ˈkrɛdəbəl]",
     "translation": "可信的、可靠的",
     "part_of_speech": "adj.",
-    "note": "貿易。",
+    "note": "貿易。名詞 credibility（可信度）。反義 incredible（難以置信的）。易混 credible（可信的）vs credulous（輕信的）。≒ believable。",
     "sylKK": "ˈkrɛ·də·bəl",
     "sylWord": "cred·i·ble"
   },
@@ -1530,7 +1530,7 @@
     "kk": "[ˈdɛbɪt]",
     "translation": "借方、扣款",
     "part_of_speech": "n.",
-    "note": "貿易/財務。反義 credit。",
+    "note": "貿易／財務。反義 credit（貸方）。常搭 debit card（簽帳金融卡）、direct debit（自動扣款）。指帳戶支出。",
     "sylKK": "ˈdɛ·bɪt",
     "sylWord": "deb·it"
   },
@@ -1539,7 +1539,7 @@
     "kk": "[ˈɝnɪŋz]",
     "translation": "收入、收益、盈餘",
     "part_of_speech": "n.",
-    "note": "貿易。恆用複數。",
+    "note": "貿易。恆用複數。動詞 earn（賺取）。常搭 net earnings（淨收益）、earnings report（財報）。≒ income、profit。",
     "sylKK": "ˈɝ·nɪŋz",
     "sylWord": "earn·ings"
   },
@@ -1548,7 +1548,7 @@
     "kk": "[ˈɛkspɔrt]",
     "translation": "輸出、出口",
     "part_of_speech": "v. / n.",
-    "note": "貿易。反義 import。",
+    "note": "貿易。反義 import（進口）。名詞重音在前 [ˈɛksport]，動詞在後 [ɪkˈsport]。相關 exporter（出口商）。",
     "sylKK": "ˈɛk·spɔrt",
     "sylWord": "ex·port"
   },
@@ -1557,7 +1557,7 @@
     "kk": "[ˈhægəl]",
     "translation": "討價還價",
     "part_of_speech": "v.",
-    "note": "貿易。",
+    "note": "貿易。常搭 haggle over／about the price（為價格討價還價）。≒ bargain、negotiate。指為價錢爭論。",
     "sylKK": "ˈhæ·gəl",
     "sylWord": "hag·gle"
   },
@@ -1566,7 +1566,7 @@
     "kk": "[ˌɪmˈpɔrt]",
     "translation": "輸入、進口",
     "part_of_speech": "v. / n.",
-    "note": "貿易。",
+    "note": "貿易。反義 export（出口）。名詞重音在前 [ˈɪmport]，動詞在後 [ɪmˈport]。相關 importer（進口商）。",
     "sylKK": "ˌɪm·ˈpɔrt",
     "sylWord": "im·port"
   },
@@ -1575,7 +1575,7 @@
     "kk": "[ˈlɑŋˈrendʒ]",
     "translation": "長期的、遠程的",
     "part_of_speech": "adj.",
-    "note": "貿易。",
+    "note": "貿易。≒ long-term（長期的）。常搭 long-range plan（長期計畫）、long-range forecast（長期預測）。反義 short-range。",
     "sylKK": "ˈlɑŋ·ˈrendʒ",
     "sylWord": "lon·g-range"
   },
@@ -1584,7 +1584,7 @@
     "kk": "[ˈpemənt]",
     "translation": "支付、付款",
     "part_of_speech": "n.",
-    "note": "貿易。動詞 pay。",
+    "note": "貿易。動詞 pay（付款）。常搭 make a payment（付款）、down payment（頭期款）、payment method（付款方式）。",
     "sylKK": "ˈpe·mənt",
     "sylWord": "pay·ment"
   },
@@ -1593,7 +1593,7 @@
     "kk": "[ˈkwot]",
     "translation": "報價；引用",
     "part_of_speech": "v. / n.",
-    "note": "貿易。名詞 quotation。",
+    "note": "貿易。名詞 quotation（報價單／引文）。常搭 quote a price（報價）、request a quote（索取報價）。",
     "sylKK": "ˈkwot",
     "sylWord": "quote"
   },
@@ -1602,7 +1602,7 @@
     "kk": "[səˈplaɪ]",
     "translation": "供應、供給、供應品",
     "part_of_speech": "n. / v.",
-    "note": "貿易。反義 demand。",
+    "note": "貿易。反義 demand（需求）。常搭 supply and demand（供需）、in short supply（供不應求）。相關 supplier（供應商）。",
     "sylKK": "sə·ˈplaɪ",
     "sylWord": "sup·ply"
   },
@@ -1611,7 +1611,7 @@
     "kk": "[ˈtɛrəf]",
     "translation": "關稅、稅率表",
     "part_of_speech": "n.",
-    "note": "貿易。",
+    "note": "貿易。常搭 impose tariffs on（對…課關稅）、import tariff（進口關稅）。≒ duty、customs。指進出口稅。",
     "sylKK": "ˈtɛ·rəf",
     "sylWord": "tar·iff"
   },
@@ -1620,7 +1620,7 @@
     "kk": "[əˈdʒɝn]",
     "translation": "暫停、休會、延期",
     "part_of_speech": "v.",
-    "note": "會議。",
+    "note": "會議。名詞 adjournment（休會）。常搭 adjourn the meeting（宣布休會）、adjourn until（延至）。≒ postpone、suspend。",
     "sylKK": "ə·ˈdʒɝn",
     "sylWord": "ad·journ"
   },
@@ -1629,7 +1629,7 @@
     "kk": "[əˈgrimənt]",
     "translation": "同意、協定、協議",
     "part_of_speech": "n.",
-    "note": "會議。動詞 agree。",
+    "note": "會議。動詞 agree（同意）。常搭 reach an agreement（達成協議）、in agreement（一致）。反義 disagreement。",
     "sylKK": "ə·ˈgri·mənt",
     "sylWord": "agree·ment"
   },
@@ -1638,7 +1638,7 @@
     "kk": "[əˈmɛndmənt]",
     "translation": "修正、修正案",
     "part_of_speech": "n.",
-    "note": "會議。動詞 amend。",
+    "note": "會議。動詞 amend（修改）。常搭 make an amendment（提出修正）、propose an amendment（提修正案）。指對法案或條文的修改。",
     "sylKK": "ə·ˈmɛnd·mənt",
     "sylWord": "amend·ment"
   },
@@ -1647,7 +1647,7 @@
     "kk": "[əˈpruvəl]",
     "translation": "贊成、同意、核准",
     "part_of_speech": "n.",
-    "note": "會議。動詞 approve。",
+    "note": "會議。動詞 approve（批准）。常搭 give approval（給予核准）、subject to approval（須經核准）。反義 disapproval。≒ authorization。",
     "sylKK": "ə·ˈpru·vəl",
     "sylWord": "ap·proval"
   },
@@ -1656,7 +1656,7 @@
     "kk": "[əˈtɛntɪv]",
     "translation": "注意的、專心的、體貼的",
     "part_of_speech": "adj.",
-    "note": "會議。",
+    "note": "會議。名詞 attention（注意）、動詞 attend（注意／出席）。常搭 attentive to（留意…）。反義 inattentive。≒ alert、considerate。",
     "sylKK": "ə·ˈtɛn·tɪv",
     "sylWord": "at·ten·tive"
   },
@@ -1665,7 +1665,7 @@
     "kk": "[ˈbɔrd]",
     "translation": "理事會、委員會、董事會",
     "part_of_speech": "n.",
-    "note": "會議。",
+    "note": "會議。常搭 board meeting（董事會議）、board member（董事）、on board（加入／在…之中）。亦指「木板、布告欄」。",
     "sylKK": "ˈbɔrd",
     "sylWord": "board"
   },
@@ -1674,7 +1674,7 @@
     "kk": "[ˈbrenˌstɔrm]",
     "translation": "集思廣益、腦力激盪",
     "part_of_speech": "v.",
-    "note": "會議。",
+    "note": "會議。名詞 brainstorming（腦力激盪）。由 brain（腦）+ storm（風暴）組成。常搭 brainstorm ideas（集思廣益）。",
     "sylKK": "ˈbren·ˌstɔrm",
     "sylWord": "brain·storm"
   },
@@ -1683,7 +1683,7 @@
     "kk": "[kənˈsid]",
     "translation": "讓步、承認、容忍",
     "part_of_speech": "v.",
-    "note": "會議。",
+    "note": "會議。名詞 concession（讓步）。常搭 concede defeat（認輸）、concede that（承認）。≒ admit、yield。",
     "sylKK": "kən·ˈsid",
     "sylWord": "con·cede"
   },
@@ -1692,7 +1692,7 @@
     "kk": "[ˈkɑnfərəns]",
     "translation": "會議、研討會、協商",
     "part_of_speech": "n.",
-    "note": "會議。",
+    "note": "會議。常搭 conference call（電話會議）、press conference（記者會）、hold a conference（舉行會議）。≒ convention、meeting。",
     "sylKK": "ˈkɑn·fə·rəns",
     "sylWord": "con·fer·ence"
   },
@@ -1701,7 +1701,7 @@
     "kk": "[kənˈvɪns]",
     "translation": "使信服、說服",
     "part_of_speech": "v.",
-    "note": "會議。",
+    "note": "會議。形容詞 convincing（有說服力的）、convinced（確信的）。常搭 convince sb to do／of（說服某人）。≒ persuade。",
     "sylKK": "kən·ˈvɪns",
     "sylWord": "con·vince"
   },
@@ -1710,7 +1710,7 @@
     "kk": "[ˈkrɑsˌrɛfərəns]",
     "translation": "前後參照、交叉引用",
     "part_of_speech": "n.",
-    "note": "會議。",
+    "note": "會議。由 cross（交叉）+ reference（參照）組成，亦可作動詞。指文件中前後互相參照的註記。",
     "sylKK": "ˈkrɑs·ˌrɛ·fə·rəns",
     "sylWord": "cross-ref·er·ence"
   },
@@ -1719,7 +1719,7 @@
     "kk": "[ˈdɛləˌget]",
     "translation": "代表；委派",
     "part_of_speech": "n. / v.",
-    "note": "會議。",
+    "note": "會議。名詞 delegation（代表團／授權）。名詞唸 [ˈdɛləɡət]，動詞唸 [ˈdɛləˌɡet]。常搭 delegate tasks（分派任務）。",
     "sylKK": "ˈdɛ·lə·ˌget",
     "sylWord": "del·e·gate"
   },
@@ -1728,7 +1728,7 @@
     "kk": "[dɪˈmænd]",
     "translation": "要求、需求",
     "part_of_speech": "n. / v.",
-    "note": "會議。反義 supply。",
+    "note": "會議。反義 supply（供應）。形容詞 demanding（要求高的）。常搭 in demand（受歡迎）、meet demand（滿足需求）。",
     "sylKK": "dɪ·ˈmænd",
     "sylWord": "de·mand"
   },
@@ -1737,7 +1737,7 @@
     "kk": "[dɪˈspjut]",
     "translation": "爭端、糾紛；爭論",
     "part_of_speech": "n. / v.",
-    "note": "會議。",
+    "note": "會議。常搭 settle a dispute（解決爭端）、in dispute（有爭議）、labor dispute（勞資糾紛）。≒ argument、conflict。",
     "sylKK": "dɪ·ˈspjut",
     "sylWord": "dis·pute"
   },
@@ -1746,7 +1746,7 @@
     "kk": "[nɪˌgoʃiˈeʃən]",
     "translation": "協商、談判",
     "part_of_speech": "n.",
-    "note": "會議。動詞 negotiate。",
+    "note": "會議。動詞 negotiate（談判）、名詞 negotiator（談判者）。常搭 under negotiation（協商中）、enter into negotiations（展開談判）。",
     "sylKK": "nɪ·ˌgo·ʃi·ˈe·ʃən",
     "sylWord": "ne·go·ti·a·tion"
   },
@@ -1755,7 +1755,7 @@
     "kk": "[pɚˈswed]",
     "translation": "說服、勸服",
     "part_of_speech": "v.",
-    "note": "會議。名詞 persuasion。",
+    "note": "會議。名詞 persuasion（說服）、形容詞 persuasive（有說服力的）。常搭 persuade sb to do（說服某人做）。≒ convince。反義 dissuade（勸阻）。",
     "sylKK": "pɚ·ˈswed",
     "sylWord": "per·suade"
   },
@@ -1764,7 +1764,7 @@
     "kk": "[ˈrɛkənˌsaɪl]",
     "translation": "調和、調解、使一致",
     "part_of_speech": "v.",
-    "note": "會議。",
+    "note": "會議。名詞 reconciliation（和解）。常搭 reconcile with（與…和好）、reconcile differences（化解分歧）。亦指「核對帳目」。",
     "sylKK": "ˈrɛ·kən·ˌsaɪl",
     "sylWord": "rec·on·cile"
   },
@@ -1773,7 +1773,7 @@
     "kk": "[ˈsɛtəlmənt]",
     "translation": "協議、和解、清償",
     "part_of_speech": "n.",
-    "note": "會議。動詞 settle。",
+    "note": "會議。動詞 settle（解決／定居）。常搭 reach a settlement（達成和解）、out-of-court settlement（庭外和解）。≒ agreement、resolution。",
     "sylKK": "ˈsɛ·təl·mənt",
     "sylWord": "set·tle·ment"
   }
