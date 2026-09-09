@@ -1,0 +1,438 @@
+[
+  {
+    "word": "board of directors",
+    "kk": "",
+    "translation": "董事會",
+    "part_of_speech": "n. phr.",
+    "note": "人物。director 董事、board 委員會，指公司最高決策機構。相關 chairman（董事長）。"
+  },
+  {
+    "word": "spectator",
+    "kk": "[ˈspɛktetɚ]",
+    "translation": "觀眾、旁觀者",
+    "part_of_speech": "n.",
+    "note": "人物。多指運動賽事的觀眾；戲劇觀眾用 audience。相關 spectacle（奇觀）、spectacular（壯觀的）。",
+    "sylKK": "ˈspɛk·te·tɚ",
+    "sylWord": "spec·ta·tor"
+  },
+  {
+    "word": "supervisor",
+    "kk": "[ˈsupɚˌvaɪzɚ]",
+    "translation": "主管、管理者、監督者",
+    "part_of_speech": "n.",
+    "note": "人物。動詞 supervise（監督）、名詞 supervision（監督）。指直屬上司。≒ manager、boss。",
+    "sylKK": "ˈsu·pɚ·ˌvaɪ·zɚ",
+    "sylWord": "su·per·vi·sor"
+  },
+  {
+    "word": "tenant",
+    "kk": "[ˈtɛnənt]",
+    "translation": "房客、租戶",
+    "part_of_speech": "n.",
+    "note": "人物。反義 landlord（房東）。相關 tenancy（租賃）。常搭 pay rent（付房租）。",
+    "sylKK": "ˈtɛ·nənt",
+    "sylWord": "ten·ant"
+  },
+  {
+    "word": "plumber",
+    "kk": "[ˈplʌmɚ]",
+    "translation": "水電工、管線工",
+    "part_of_speech": "n.",
+    "note": "人物。b 不發音，唸 [ˈplʌmɚ]。相關 plumbing（水管裝置／配管）。指修理水管的工人。",
+    "sylKK": "ˈplʌ·mɚ",
+    "sylWord": "plum·ber"
+  },
+  {
+    "word": "secretary",
+    "kk": "[ˈsɛkrəˌtɛri]",
+    "translation": "秘書",
+    "part_of_speech": "n.",
+    "note": "人物。亦指「部長／大臣」（如 Secretary of State 國務卿）。注意拼字 secre-tary。",
+    "sylKK": "ˈsɛ·krə·ˌtɛ·ri",
+    "sylWord": "sec·re·tary"
+  },
+  {
+    "word": "president",
+    "kk": "[ˈprɛzəˌdɛnt]",
+    "translation": "總裁、董事長；總統",
+    "part_of_speech": "n.",
+    "note": "人物。形容詞 presidential（總統的）。企業指總裁；國家指總統。相關 preside（主持）。相對職 vice president（副總）。",
+    "sylKK": "ˈprɛ·zə·ˌdɛnt",
+    "sylWord": "pres·i·dent"
+  },
+  {
+    "word": "vice president",
+    "kk": "",
+    "translation": "副總裁、副總",
+    "part_of_speech": "n. phr.",
+    "note": "人物。字首 vice-（副）如 vice-chairman（副主席）。縮寫 VP。相對 president（總裁）。"
+  },
+  {
+    "word": "opponent",
+    "kk": "[əˈponənt]",
+    "translation": "對手、敵手",
+    "part_of_speech": "n.",
+    "note": "人物。動詞 oppose（反對）、名詞 opposition（反對）。≒ rival、competitor。反義 ally（盟友）、supporter。",
+    "sylKK": "ə·ˈpo·nənt",
+    "sylWord": "op·po·nent"
+  },
+  {
+    "word": "novice",
+    "kk": "[ˈnɑvəs]",
+    "translation": "新手、初學者",
+    "part_of_speech": "n.",
+    "note": "人物。≒ beginner、rookie（新手）。反義 expert（專家）、veteran（老手）。指初學者。",
+    "sylKK": "ˈnɑ·vəs",
+    "sylWord": "no·vice"
+  },
+  {
+    "word": "appointment",
+    "kk": "[əˈpɔɪntmənt]",
+    "translation": "約會、約定、預約",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 appoint（任命）。常搭 make an appointment（預約）、have an appointment with（與…有約）。亦指「任命」。",
+    "sylKK": "ə·ˈpɔɪnt·mənt",
+    "sylWord": "ap·point·ment"
+  },
+  {
+    "word": "attendance",
+    "kk": "[əˈtɛndəns]",
+    "translation": "出席、出席人數",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 attend（出席）、名詞 attendant（服務員）。常搭 take attendance（點名）、in attendance（在場）。反義 absence。",
+    "sylKK": "ə·ˈtɛn·dəns",
+    "sylWord": "at·ten·dance"
+  },
+  {
+    "word": "cabinet",
+    "kk": "[ˈkæbənət]",
+    "translation": "櫥櫃；內閣",
+    "part_of_speech": "n.",
+    "note": "辦公室。常搭 filing cabinet（檔案櫃）。政治上指「內閣」。",
+    "sylKK": "ˈkæ·bə·nət",
+    "sylWord": "cab·i·net"
+  },
+  {
+    "word": "calendar",
+    "kk": "[ˈkæləndɚ]",
+    "translation": "日曆、行事曆",
+    "part_of_speech": "n.",
+    "note": "辦公室。注意拼字 cal-en-dar（易誤拼 calender）。常搭 mark the calendar（在日曆上做記號）。",
+    "sylKK": "ˈkæ·lən·dɚ",
+    "sylWord": "cal·en·dar"
+  },
+  {
+    "word": "clerk",
+    "kk": "[ˈklɝk]",
+    "translation": "辦事員、職員、店員",
+    "part_of_speech": "n.",
+    "note": "辦公室。常搭 bank clerk（銀行行員）、sales clerk（店員）。相關 clerical（文書的）。",
+    "sylKK": "ˈklɝk",
+    "sylWord": "clerk"
+  },
+  {
+    "word": "directory",
+    "kk": "[dəˈrɛktəri]",
+    "translation": "通訊錄、人名住址簿",
+    "part_of_speech": "n.",
+    "note": "辦公室。常搭 telephone directory（電話簿）。電腦上指「目錄」。相關 director（主管）、direct（指引）。",
+    "sylKK": "də·ˈrɛk·tə·ri",
+    "sylWord": "di·rec·to·ry"
+  },
+  {
+    "word": "duplicate",
+    "kk": "[ˈdupləkət]",
+    "translation": "複製、副本",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。名詞 duplication（複製）。常搭 in duplicate（一式兩份）、make a duplicate（複製一份）。≒ copy。",
+    "sylKK": "ˈdu·plə·kət",
+    "sylWord": "du·pli·cate"
+  },
+  {
+    "word": "filing",
+    "kk": "[ˈfaɪlɪŋ]",
+    "translation": "歸檔、存檔",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 file（歸檔／提出申請）。常搭 filing cabinet（檔案櫃）、filing system（歸檔系統）。file a complaint（提出申訴）。",
+    "sylKK": "ˈfaɪ·lɪŋ",
+    "sylWord": "fil·ing"
+  },
+  {
+    "word": "in-tray",
+    "kk": "",
+    "translation": "待處理文件盒",
+    "part_of_speech": "n.",
+    "note": "辦公室。反義 out-tray（已處理文件盒）。美式亦稱 inbox。指桌上收件盒。"
+  },
+  {
+    "word": "monitor",
+    "kk": "[ˈmɑnətɚ]",
+    "translation": "檢測、監視、追蹤；螢幕",
+    "part_of_speech": "v. / n.",
+    "note": "辦公室。動詞指「監控、追蹤」，名詞指「螢幕」。常搭 monitor progress（追蹤進度）。≒ track、observe。",
+    "sylKK": "ˈmɑ·nə·tɚ",
+    "sylWord": "mon·i·tor"
+  },
+  {
+    "word": "out-tray",
+    "kk": "",
+    "translation": "已處理文件盒",
+    "part_of_speech": "n.",
+    "note": "辦公室。反義 in-tray（待處理文件盒）。美式亦稱 outbox。指桌上發件盒。"
+  },
+  {
+    "word": "partition",
+    "kk": "[pɑrˈtɪʃən]",
+    "translation": "隔間、分隔物",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 partition（分隔）。指辦公室隔板或空間劃分。相關 part（部分）。≒ divider。",
+    "sylKK": "pɑr·ˈtɪ·ʃən",
+    "sylWord": "par·ti·tion"
+  },
+  {
+    "word": "postage",
+    "kk": "[ˈpostədʒ]",
+    "translation": "郵資、郵費",
+    "part_of_speech": "n.",
+    "note": "辦公室。相關 post（郵政／郵寄）、postal（郵政的）。常搭 postage stamp（郵票）、postage paid（郵資已付）。不可數。",
+    "sylKK": "ˈpo·stədʒ",
+    "sylWord": "pos·tage"
+  },
+  {
+    "word": "punctuality",
+    "kk": "[ˌpʌŋktʃuˈælɪti]",
+    "translation": "準時、守時",
+    "part_of_speech": "n.",
+    "note": "辦公室。形容詞 punctual（準時的）、副詞 punctually。≒ promptness。反義 tardiness（遲到）。",
+    "sylKK": "ˌpʌŋk·tʃu·ˈæ·lɪ·ti",
+    "sylWord": "punc·tu·al·i·ty"
+  },
+  {
+    "word": "schedule",
+    "kk": "[ˈskɛdʒʊl]",
+    "translation": "時間表、行程；排定",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。常搭 on schedule（準時）、behind schedule（落後進度）、be scheduled to（預定）。美式唸 [ˈskɛdʒul]。",
+    "sylKK": "ˈskɛ·dʒʊl",
+    "sylWord": "sched·ule"
+  },
+  {
+    "word": "shift",
+    "kk": "[ˈʃɪft]",
+    "translation": "輪班、換班；轉移",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。常搭 night shift（夜班）、day shift（日班）、work in shifts（輪班）。動詞指「轉移、改變」。",
+    "sylKK": "ˈʃɪft",
+    "sylWord": "shift"
+  },
+  {
+    "word": "staff",
+    "kk": "[ˈstæf]",
+    "translation": "全體職員、員工",
+    "part_of_speech": "n.",
+    "note": "辦公室。集合名詞（單複數同形），指全體員工。動詞 staff（配置人員）。相關 staffing（人力配置）。≒ personnel。",
+    "sylKK": "ˈstæf",
+    "sylWord": "staff"
+  },
+  {
+    "word": "strike",
+    "kk": "[ˈstraɪk]",
+    "translation": "罷工；打擊",
+    "part_of_speech": "n. / v.",
+    "note": "辦公室。常搭 go on strike（發動罷工）、be on strike（罷工中）。動詞亦指「打擊、突然發生」，過去式 struck。",
+    "sylKK": "ˈstraɪk",
+    "sylWord": "strike"
+  },
+  {
+    "word": "task",
+    "kk": "[ˈtæsk]",
+    "translation": "工作、任務",
+    "part_of_speech": "n.",
+    "note": "辦公室。常搭 carry out a task（執行任務）、task force（專案小組）。≒ job、assignment、duty。",
+    "sylKK": "ˈtæsk",
+    "sylWord": "task"
+  },
+  {
+    "word": "workforce",
+    "kk": "[ˈwɝkˌfɔrs]",
+    "translation": "勞動力、全體員工",
+    "part_of_speech": "n.",
+    "note": "辦公室。由 work + force 組成，指全體勞動人口或某公司員工總數。≒ labor force、personnel。",
+    "sylKK": "ˈwɝk·ˌfɔrs",
+    "sylWord": "work·force"
+  },
+  {
+    "word": "assignment",
+    "kk": "[əˈsaɪnmənt]",
+    "translation": "分配的工作、任務、作業",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 assign（分派）。常搭 complete an assignment（完成任務）。≒ task、duty。",
+    "sylKK": "ə·ˈsaɪn·mənt",
+    "sylWord": "as·sign·ment"
+  },
+  {
+    "word": "bulletin",
+    "kk": "[ˈbʊlɪtən]",
+    "translation": "公報、告示、簡報",
+    "part_of_speech": "n.",
+    "note": "辦公室。常搭 bulletin board（公佈欄）、news bulletin（新聞快報）。指簡短公告。",
+    "sylKK": "ˈbʊ·lɪ·tən",
+    "sylWord": "bul·letin"
+  },
+  {
+    "word": "calculator",
+    "kk": "[ˈkælkjəˌletɚ]",
+    "translation": "計算機",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 calculate（計算）、名詞 calculation（計算）。指計算工具。",
+    "sylKK": "ˈkæl·kjə·ˌle·tɚ",
+    "sylWord": "cal·cu·la·tor"
+  },
+  {
+    "word": "carbon copy",
+    "kk": "",
+    "translation": "副本（複寫）",
+    "part_of_speech": "n. phr.",
+    "note": "辦公室。縮寫 CC（電子郵件的副本收件）。源自早期複寫紙（carbon paper）。亦比喻「一模一樣的人／物」。"
+  },
+  {
+    "word": "colleague",
+    "kk": "[ˈkɑlig]",
+    "translation": "同事、同僚",
+    "part_of_speech": "n.",
+    "note": "辦公室。≒ coworker、associate（同事）。注意拼字 col-league。指職場夥伴。",
+    "sylKK": "ˈkɑ·lig",
+    "sylWord": "col·league"
+  },
+  {
+    "word": "document",
+    "kk": "[ˈdɑkjəmɛnt]",
+    "translation": "文件、公文",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 document（記錄）、形容詞 documentary（記錄的／紀錄片）。常搭 legal document（法律文件）。",
+    "sylKK": "ˈdɑ·kjə·mɛnt",
+    "sylWord": "doc·u·ment"
+  },
+  {
+    "word": "extension",
+    "kk": "[ɪkˈstɛnʃən]",
+    "translation": "分機（電話）；延長",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 extend（延長）、形容詞 extensive（廣泛的）。常搭 extension number（分機號碼）、request an extension（申請延期）。",
+    "sylKK": "ɪk·ˈstɛn·ʃən",
+    "sylWord": "ex·ten·sion"
+  },
+  {
+    "word": "intercom",
+    "kk": "[ˈɪntɚˌkɑm]",
+    "translation": "對講機、內部通話系統",
+    "part_of_speech": "n.",
+    "note": "辦公室。intercommunication 的縮寫。指室內或樓層間通話系統。常搭 over the intercom（透過對講機）。",
+    "sylKK": "ˈɪn·tɚ·ˌkɑm",
+    "sylWord": "in·ter·com"
+  },
+  {
+    "word": "memo",
+    "kk": "[ˈmɛˌmo]",
+    "translation": "便條、備忘錄",
+    "part_of_speech": "n.",
+    "note": "辦公室。= memorandum（備忘錄）的縮寫，複數 memos。指公司內部通知。常搭 send a memo（發備忘錄）。",
+    "sylKK": "ˈmɛ·ˌmo",
+    "sylWord": "me·mo"
+  },
+  {
+    "word": "operator",
+    "kk": "[ˈɑpəˌretɚ]",
+    "translation": "接線生、操作員",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 operate（操作）、名詞 operation（運作）。指總機接線生或機器操作員。",
+    "sylKK": "ˈɑ·pə·ˌre·tɚ",
+    "sylWord": "op·er·a·tor"
+  },
+  {
+    "word": "portfolio",
+    "kk": "[pɔrtˈfoliˌo]",
+    "translation": "作品夾、公事包；投資組合",
+    "part_of_speech": "n.",
+    "note": "辦公室／財務。指作品集、公事包，或金融「投資組合」。常搭 investment portfolio（投資組合）。",
+    "sylKK": "pɔrt·ˈfo·li·ˌo",
+    "sylWord": "port·fo·lio"
+  },
+  {
+    "word": "printed matter",
+    "kk": "",
+    "translation": "印刷品",
+    "part_of_speech": "n. phr.",
+    "note": "辦公室。matter 此處指「物品、東西」。郵局分類用語，指書刊、傳單等印刷物，郵資較低。"
+  },
+  {
+    "word": "shorthand",
+    "kk": "[ˈʃɔrtˌhænd]",
+    "translation": "速記、速記法",
+    "part_of_speech": "n.",
+    "note": "辦公室。由 short + hand 組成，指快速記錄的符號系統。反義 longhand（普通書寫）。",
+    "sylKK": "ˈʃɔrt·ˌhænd",
+    "sylWord": "short·hand"
+  },
+  {
+    "word": "stapler",
+    "kk": "[ˈstepəlɚ]",
+    "translation": "訂書機",
+    "part_of_speech": "n.",
+    "note": "辦公室。相關 staple（訂書針／主要的）。動詞 staple（用訂書針裝訂）。",
+    "sylKK": "ˈste·pə·lɚ",
+    "sylWord": "sta·pler"
+  },
+  {
+    "word": "tardy",
+    "kk": "[ˈtɑrdi]",
+    "translation": "遲緩的、遲到的",
+    "part_of_speech": "adj.",
+    "note": "辦公室。名詞 tardiness（遲到）。≒ late、delayed。反義 punctual（準時的）、prompt。",
+    "sylKK": "ˈtɑr·di",
+    "sylWord": "tar·dy"
+  },
+  {
+    "word": "typist",
+    "kk": "[ˈtaɪpɪst]",
+    "translation": "打字員",
+    "part_of_speech": "n.",
+    "note": "辦公室。動詞 type（打字）、名詞 typing（打字）、typewriter（打字機）。字尾 -ist 表「從事…的人」。",
+    "sylKK": "ˈtaɪ·pɪst",
+    "sylWord": "typ·ist"
+  },
+  {
+    "word": "xerox",
+    "kk": "[ˈzɪrɑks]",
+    "translation": "影印；影印機",
+    "part_of_speech": "v. / n.",
+    "note": "辦公室。原為影印機品牌（Xerox），後成為「影印」的通用動詞。≒ photocopy、copy。",
+    "sylKK": "ˈzɪ·rɑks",
+    "sylWord": "xe·rox"
+  },
+  {
+    "word": "balance",
+    "kk": "[ˈbæləns]",
+    "translation": "餘額、差額；平衡",
+    "part_of_speech": "n.",
+    "note": "財務。動詞 balance（使平衡）。常搭 account balance（帳戶餘額）、balance sheet（資產負債表）、strike a balance（取得平衡）。",
+    "sylKK": "ˈbæ·ləns",
+    "sylWord": "bal·ance"
+  },
+  {
+    "word": "bond",
+    "kk": "[ˈbɑnd]",
+    "translation": "債券",
+    "part_of_speech": "n.",
+    "note": "財務。指政府或公司發行的債券；亦指「聯繫、束縛」。常搭 government bond（公債）、issue bonds（發行債券）。",
+    "sylKK": "ˈbɑnd",
+    "sylWord": "bond"
+  },
+  {
+    "word": "chamber of commerce",
+    "kk": "",
+    "translation": "商會",
+    "part_of_speech": "n. phr.",
+    "note": "財務。chamber 指「會所、議院」，commerce 指「商業」。指促進當地工商業的組織。"
+  }
+]

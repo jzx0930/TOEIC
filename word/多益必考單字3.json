@@ -1,0 +1,448 @@
+[
+  {
+    "word": "prospect",
+    "kk": "[ˈprɑspɛkt]",
+    "translation": "展望、前景、潛在客戶",
+    "part_of_speech": "n.",
+    "note": "業務。形容詞 prospective（潛在的、未來的）。常搭 job prospects（就業前景）。複數 prospects 指前途。≒ outlook、potential customer。",
+    "sylKK": "ˈprɑ·spɛkt",
+    "sylWord": "pros·pect"
+  },
+  {
+    "word": "prosperity",
+    "kk": "[prɑˈspɛrəti]",
+    "translation": "繁榮、成功",
+    "part_of_speech": "n.",
+    "note": "業務。形容詞 prosperous（繁榮的）、動詞 prosper（興旺）。≒ success、boom。反義 recession（衰退）。",
+    "sylKK": "prɑ·ˈspɛ·rə·ti",
+    "sylWord": "pros·per·i·ty"
+  },
+  {
+    "word": "scheme",
+    "kk": "[ˈskim]",
+    "translation": "計劃、方案",
+    "part_of_speech": "n.",
+    "note": "業務。英式常指「方案」（如 pension scheme 退休金計畫）；亦含「陰謀」的貶義。≒ plan、program、plot。",
+    "sylKK": "ˈskim",
+    "sylWord": "scheme"
+  },
+  {
+    "word": "thrive",
+    "kk": "[ˈθraɪv]",
+    "translation": "茂盛、興旺、蓬勃發展",
+    "part_of_speech": "v.",
+    "note": "業務。形容詞 thriving（欣欣向榮的）。常搭 thrive on（靠…而興盛）。≒ flourish、prosper、boom。反義 decline。",
+    "sylKK": "ˈθraɪv",
+    "sylWord": "thrive"
+  },
+  {
+    "word": "undervalue",
+    "kk": "[ˈʌndɚˌvælju]",
+    "translation": "低估（價值）",
+    "part_of_speech": "v.",
+    "note": "業務。反義 overvalue（高估）。字首 under-（不足）。常搭 undervalued stocks（被低估的股票）。≒ underestimate。",
+    "sylKK": "ˈʌn·dɚ·ˌvæ·lju",
+    "sylWord": "un·der·val·ue"
+  },
+  {
+    "word": "customer",
+    "kk": "[ˈkʌstəmɚ]",
+    "translation": "顧客",
+    "part_of_speech": "n.",
+    "note": "類語：≒ client（客戶）。指購買商品者。常搭 regular customer（老主顧）、customer service（客服）。勿與 customs（海關／習俗）混。",
+    "sylKK": "ˈkʌ·stə·mɚ",
+    "sylWord": "cus·tomer"
+  },
+  {
+    "word": "client",
+    "kk": "[ˈklaɪənt]",
+    "translation": "客戶、委託人",
+    "part_of_speech": "n.",
+    "note": "類語：≒ customer。多指接受專業服務者（如律師、顧問的客戶）。相關 clientele（顧客群）。常搭 potential client（潛在客戶）。",
+    "sylKK": "ˈklaɪ·ənt",
+    "sylWord": "client"
+  },
+  {
+    "word": "answer",
+    "kk": "[ˈænsɚ]",
+    "translation": "回答、答覆",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ reply、respond（回應）。常搭 answer the phone（接電話）、in answer to（回覆…）。名詞 response。",
+    "sylKK": "ˈæn·sɚ",
+    "sylWord": "an·swer"
+  },
+  {
+    "word": "chance",
+    "kk": "[ˈtʃæns]",
+    "translation": "機會",
+    "part_of_speech": "n.",
+    "note": "類語：≒ opportunity（機會）。亦指「可能性、運氣」。常搭 by chance（偶然）、a good chance（很有可能）。",
+    "sylKK": "ˈtʃæns",
+    "sylWord": "chance"
+  },
+  {
+    "word": "exhibition",
+    "kk": "[ˌɛksəˈbɪʃən]",
+    "translation": "展覽",
+    "part_of_speech": "n.",
+    "note": "類語：≒ fair（展覽會）、exhibit（展品）。動詞 exhibit（展出）。常搭 trade exhibition（商展）、on exhibition（展出中）。",
+    "sylKK": "ˌɛk·sə·ˈbɪ·ʃən",
+    "sylWord": "ex·hi·bi·tion"
+  },
+  {
+    "word": "odor",
+    "kk": "[ˈodɚ]",
+    "translation": "氣味",
+    "part_of_speech": "n.",
+    "note": "類語：≒ smell、scent（香味）。多指難聞的氣味。形容詞 odorless（無味的）。英式拼法 odour。",
+    "sylKK": "ˈo·dɚ",
+    "sylWord": "o·dor"
+  },
+  {
+    "word": "belongings",
+    "kk": "[bɪˈlɑŋɪŋz]",
+    "translation": "財物、所有物",
+    "part_of_speech": "n.",
+    "note": "類語：≒ possessions、property（財產）。恆用複數。常搭 personal belongings（個人物品）。動詞 belong（屬於）。",
+    "sylKK": "bɪ·ˈlɑ·ŋɪŋz",
+    "sylWord": "be·long·ings"
+  },
+  {
+    "word": "convention",
+    "kk": "[kənˈvɛnʃən]",
+    "translation": "大會、會議；慣例",
+    "part_of_speech": "n.",
+    "note": "類語：≒ congress、conference（會議）。亦指「慣例、習俗」。形容詞 conventional（傳統的）。",
+    "sylKK": "kən·ˈvɛn·ʃən",
+    "sylWord": "con·ven·tion"
+  },
+  {
+    "word": "invoice",
+    "kk": "[ˈɪnvɔɪs]",
+    "translation": "帳單、發票、發貨清單",
+    "part_of_speech": "n.",
+    "note": "類語：≒ bill（帳單）。指開給客戶的請款單。常搭 issue an invoice（開發票）、pay an invoice（付款）。",
+    "sylKK": "ˈɪn·vɔɪs",
+    "sylWord": "in·voice"
+  },
+  {
+    "word": "reservation",
+    "kk": "[ˌrɛzɚˈveʃən]",
+    "translation": "預約、預訂",
+    "part_of_speech": "n.",
+    "note": "類語：≒ booking（預訂）。動詞 reserve（預訂／保留）。常搭 make a reservation（訂位）。亦指「保留意見」。",
+    "sylKK": "ˌrɛ·zɚ·ˈve·ʃən",
+    "sylWord": "reser·va·tion"
+  },
+  {
+    "word": "evidence",
+    "kk": "[ˈɛvədəns]",
+    "translation": "證據",
+    "part_of_speech": "n.",
+    "note": "類語：≒ proof（證明）。形容詞 evident（明顯的）。不可數。常搭 provide evidence（提供證據）。",
+    "sylKK": "ˈɛ·və·dəns",
+    "sylWord": "ev·i·dence"
+  },
+  {
+    "word": "position",
+    "kk": "[pəˈzɪʃən]",
+    "translation": "職位、位置",
+    "part_of_speech": "n.",
+    "note": "類語：≒ post（職位）。亦指「立場、位置」。動詞 position（安置）。常搭 apply for a position（應徵職位）。",
+    "sylKK": "pə·ˈzɪ·ʃən",
+    "sylWord": "po·si·tion"
+  },
+  {
+    "word": "progress",
+    "kk": "[ˈprɑˌgrɛs]",
+    "translation": "進步、進展",
+    "part_of_speech": "n.",
+    "note": "類語：≒ advance（進展）。動詞唸 [prəˈɡrɛs]（重音在後），名詞重音在前。常搭 make progress（取得進展）。",
+    "sylKK": "ˈprɑ·ˌgrɛs",
+    "sylWord": "prog·ress"
+  },
+  {
+    "word": "draft",
+    "kk": "[ˈdræft]",
+    "translation": "草稿、草案",
+    "part_of_speech": "n.",
+    "note": "類語：≒ manuscript（手稿）。動詞 draft（起草）。常搭 first draft（初稿）、rough draft（草稿）。亦指「匯票」。",
+    "sylKK": "ˈdræft",
+    "sylWord": "draft"
+  },
+  {
+    "word": "aid",
+    "kk": "[ˈed]",
+    "translation": "援助、幫助",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ help、assist（協助）。常搭 first aid（急救）、financial aid（財務援助）、in aid of（為援助…）。",
+    "sylKK": "ˈed",
+    "sylWord": "aid"
+  },
+  {
+    "word": "cuisine",
+    "kk": "[kwɪˈzin]",
+    "translation": "料理、菜餚",
+    "part_of_speech": "n.",
+    "note": "類語：≒ cooking（烹飪）。源自法文，指某地區或風格的菜系。常搭 French cuisine（法國菜）、local cuisine（當地料理）。",
+    "sylKK": "kwɪ·ˈzin",
+    "sylWord": "cui·sine"
+  },
+  {
+    "word": "excerpt",
+    "kk": "[ˈɛksɚpt]",
+    "translation": "摘錄、引文",
+    "part_of_speech": "n.",
+    "note": "類語：≒ extract、passage（段落）。指書籍或影片的節錄。常搭 an excerpt from（…的摘錄）。",
+    "sylKK": "ˈɛk·sɚpt",
+    "sylWord": "ex·cerpt"
+  },
+  {
+    "word": "promptness",
+    "kk": "",
+    "translation": "迅速、及時",
+    "part_of_speech": "n.",
+    "note": "類語：≒ speed、punctuality（準時）。形容詞 prompt（迅速的）、副詞 promptly（即刻）。"
+  },
+  {
+    "word": "effort",
+    "kk": "[ˈɛfɚt]",
+    "translation": "努力",
+    "part_of_speech": "n.",
+    "note": "類語：≒ endeavor、attempt（嘗試）。常搭 make an effort（努力）、put effort into（投入心力）。形容詞 effortless（不費力的）。",
+    "sylKK": "ˈɛ·fɚt",
+    "sylWord": "ef·fort"
+  },
+  {
+    "word": "achievement",
+    "kk": "[əˈtʃivmənt]",
+    "translation": "成就、成功",
+    "part_of_speech": "n.",
+    "note": "類語：≒ success、accomplishment（成就）。動詞 achieve（達成）。常搭 a sense of achievement（成就感）。",
+    "sylKK": "ə·ˈtʃiv·mənt",
+    "sylWord": "achieve·ment"
+  },
+  {
+    "word": "disorder",
+    "kk": "[dɪˈsɔrdɚ]",
+    "translation": "混亂、失調",
+    "part_of_speech": "n.",
+    "note": "類語：≒ confusion、chaos（混亂）。反義 order（秩序）。亦指「疾病、失調」（如 sleep disorder 睡眠障礙）。",
+    "sylKK": "dɪ·ˈsɔr·dɚ",
+    "sylWord": "dis·or·der"
+  },
+  {
+    "word": "correspondence",
+    "kk": "[ˌkɔrəˈspɑndəns]",
+    "translation": "通信、信件",
+    "part_of_speech": "n.",
+    "note": "類語：≒ communication（通信）。動詞 correspond（通信／符合）、名詞 correspondent（通訊員）。指往來信件。",
+    "sylKK": "ˌkɔ·rə·ˈspɑn·dəns",
+    "sylWord": "cor·re·spon·dence"
+  },
+  {
+    "word": "hallway",
+    "kk": "[ˈhɑlˌwe]",
+    "translation": "走廊、玄關",
+    "part_of_speech": "n.",
+    "note": "類語：≒ corridor、passage（通道）。指室內走廊或門廳。相關 hall（大廳）。",
+    "sylKK": "ˈhɑl·ˌwe",
+    "sylWord": "hall·way"
+  },
+  {
+    "word": "pastime",
+    "kk": "[ˈpæˌstaɪm]",
+    "translation": "消遣、興趣",
+    "part_of_speech": "n.",
+    "note": "類語：≒ hobby（嗜好）、recreation（消遣）。由 pass + time 組成，指打發時間的活動。",
+    "sylKK": "ˈpæ·ˌstaɪm",
+    "sylWord": "pas·time"
+  },
+  {
+    "word": "region",
+    "kk": "[ˈridʒən]",
+    "translation": "地區、區域",
+    "part_of_speech": "n.",
+    "note": "類語：≒ area、district、zone（區域）。形容詞 regional（區域的）。常搭 in the region of（大約）。",
+    "sylKK": "ˈri·dʒən",
+    "sylWord": "re·gion"
+  },
+  {
+    "word": "incentive",
+    "kk": "[ˌɪnˈsɛntɪv]",
+    "translation": "動機、誘因、獎勵",
+    "part_of_speech": "n.",
+    "note": "類語：≒ motivation（動機）、stimulus（刺激）。常搭 financial incentive（金錢誘因）、an incentive to（做…的誘因）。",
+    "sylKK": "ˌɪn·ˈsɛn·tɪv",
+    "sylWord": "in·cen·tive"
+  },
+  {
+    "word": "constraint",
+    "kk": "[kənˈstrent]",
+    "translation": "限制、約束",
+    "part_of_speech": "n.",
+    "note": "類語：≒ restriction、limitation（限制）。動詞 constrain（約束）。常搭 time／budget constraints（時間／預算限制）。",
+    "sylKK": "kən·ˈstrent",
+    "sylWord": "con·straint"
+  },
+  {
+    "word": "appraisal",
+    "kk": "[əˈprezəl]",
+    "translation": "評價、估價、考核",
+    "part_of_speech": "n.",
+    "note": "類語：≒ assessment、evaluation（評估）。動詞 appraise（評估）。常搭 performance appraisal（績效考核）。",
+    "sylKK": "ə·ˈpre·zəl",
+    "sylWord": "ap·praisal"
+  },
+  {
+    "word": "intermission",
+    "kk": "[ˌɪntɚˈmɪʃən]",
+    "translation": "休息時間、中場休息",
+    "part_of_speech": "n.",
+    "note": "類語：≒ pause、break、interval（間隔）。多指戲劇、音樂會的中場休息。字首 inter-（之間）。",
+    "sylKK": "ˌɪn·tɚ·ˈmɪ·ʃən",
+    "sylWord": "in·ter·mis·sion"
+  },
+  {
+    "word": "accuracy",
+    "kk": "[ˈækjərəsi]",
+    "translation": "正確、準確",
+    "part_of_speech": "n.",
+    "note": "類語：≒ precision（精確）。形容詞 accurate（準確的）、副詞 accurately。反義 inaccuracy（不準確）。",
+    "sylKK": "ˈæ·kjə·rə·si",
+    "sylWord": "ac·cu·ra·cy"
+  },
+  {
+    "word": "reward",
+    "kk": "[rɪˈwɔrd]",
+    "translation": "報酬、獎賞",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ remuneration、prize（獎賞）。形容詞 rewarding（有回報的）。常搭 reward sb for（因…獎賞某人）。",
+    "sylKK": "rɪ·ˈwɔrd",
+    "sylWord": "re·ward"
+  },
+  {
+    "word": "authorization",
+    "kk": "[ˌɑθərəˈzeʃən]",
+    "translation": "授權、認可、批准",
+    "part_of_speech": "n.",
+    "note": "類語：≒ permission、approval（許可）。動詞 authorize（授權）、形容詞 authorized（經授權的）。常搭 without authorization（未經授權）。",
+    "sylKK": "ˌɑ·θə·rə·ˈze·ʃən",
+    "sylWord": "au·tho·riza·tion"
+  },
+  {
+    "word": "exemption",
+    "kk": "[ɪgˈzɛmpʃən]",
+    "translation": "豁免、免除",
+    "part_of_speech": "n.",
+    "note": "類語：≒ reduction、immunity（免除）。動詞／形容詞 exempt（免除／免除的）。常搭 tax exemption（免稅）、exempt from（免除…）。",
+    "sylKK": "ɪg·ˈzɛmp·ʃən",
+    "sylWord": "ex·emp·tion"
+  },
+  {
+    "word": "fitness",
+    "kk": "[ˈfɪtnəs]",
+    "translation": "健康、體適能、適合",
+    "part_of_speech": "n.",
+    "note": "類語：≒ health（健康）。形容詞 fit（健康的／合適的）。常搭 physical fitness（體適能）、fitness for the job（勝任度）。",
+    "sylKK": "ˈfɪt·nəs",
+    "sylWord": "fit·ness"
+  },
+  {
+    "word": "revelation",
+    "kk": "[ˌrɛvəˈleʃən]",
+    "translation": "揭露、透露",
+    "part_of_speech": "n.",
+    "note": "類語：≒ disclosure（揭露）。動詞 reveal（揭露）。指出人意料的揭露或啟示。",
+    "sylKK": "ˌrɛ·və·ˈle·ʃən",
+    "sylWord": "rev·e·la·tion"
+  },
+  {
+    "word": "liability",
+    "kk": "[ˌlaɪəˈbɪlɪti]",
+    "translation": "責任、義務、負債",
+    "part_of_speech": "n.",
+    "note": "類語：≒ responsibility（責任）。反義（資產）asset。形容詞 liable（有責任的／易…的）。常搭 liable for（對…負責）。",
+    "sylKK": "ˌlaɪ·ə·ˈbɪ·lɪ·ti",
+    "sylWord": "li·a·bil·i·ty"
+  },
+  {
+    "word": "takeover",
+    "kk": "[ˈteˌkovɚ]",
+    "translation": "接管、收購（企業）",
+    "part_of_speech": "n.",
+    "note": "類語：≒ buyout、acquisition（收購）。相關片語 take over（接管）。常搭 hostile takeover（惡意收購）。",
+    "sylKK": "ˈte·ˌko·vɚ",
+    "sylWord": "ta·keo·ver"
+  },
+  {
+    "word": "acclaim",
+    "kk": "[əˈklem]",
+    "translation": "稱讚、讚揚",
+    "part_of_speech": "n. / v.",
+    "note": "類語：≒ praise、applause（讚揚）。形容詞 acclaimed（受讚譽的）。常搭 critical acclaim（好評）。",
+    "sylKK": "ə·ˈklem",
+    "sylWord": "ac·claim"
+  },
+  {
+    "word": "merchandise",
+    "kk": "[ˈmɝtʃənˌdaɪz]",
+    "translation": "商品、貨物",
+    "part_of_speech": "n.",
+    "note": "類語：≒ goods、products（商品）。不可數。相關 merchant（商人）、merchandising（促銷）。",
+    "sylKK": "ˈmɝ·tʃən·ˌdaɪz",
+    "sylWord": "mer·chan·dise"
+  },
+  {
+    "word": "shareholder",
+    "kk": "[ˈʃɛrˌholdɚ]",
+    "translation": "股東",
+    "part_of_speech": "n.",
+    "note": "人物。≒ stockholder（股東）。由 share（股份）+ holder（持有人）組成。常搭 shareholders' meeting（股東會）。",
+    "sylKK": "ˈʃɛr·ˌhol·dɚ",
+    "sylWord": "share·hold·er"
+  },
+  {
+    "word": "consultant",
+    "kk": "[kənˈsʌltənt]",
+    "translation": "顧問",
+    "part_of_speech": "n.",
+    "note": "人物。動詞 consult（諮詢）、名詞 consultation（諮詢）。常搭 management consultant（管理顧問）。≒ adviser。",
+    "sylKK": "kən·ˈsʌl·tənt",
+    "sylWord": "con·sul·tant"
+  },
+  {
+    "word": "sales rep",
+    "kk": "",
+    "translation": "業務員、業務代表",
+    "part_of_speech": "n. phr.",
+    "note": "人物。rep = representative（代表）。指負責銷售、拜訪客戶的業務。≒ salesperson。"
+  },
+  {
+    "word": "supplier",
+    "kk": "[səˈplaɪɚ]",
+    "translation": "供應商",
+    "part_of_speech": "n.",
+    "note": "人物。動詞 supply（供應）、名詞 supply（供給）。反義 demand。常搭 a reliable supplier（可靠的供應商）。≒ vendor、provider。",
+    "sylKK": "sə·ˈplaɪ·ɚ",
+    "sylWord": "sup·pli·er"
+  },
+  {
+    "word": "account",
+    "kk": "[əˈkaʊnt]",
+    "translation": "帳目、帳戶；客戶",
+    "part_of_speech": "n.",
+    "note": "人物／財務。相關 accountant（會計師）、accounting（會計）。常搭 open an account（開戶）、bank account（銀行帳戶）。片語 account for（說明／占）。",
+    "sylKK": "ə·ˈkaʊnt",
+    "sylWord": "ac·count"
+  },
+  {
+    "word": "receptionist",
+    "kk": "[rɪˈsɛpʃənɪst]",
+    "translation": "接待員、櫃檯人員",
+    "part_of_speech": "n.",
+    "note": "人物。相關 reception（接待處／招待會）、receive（接收）。指櫃檯接待人員。",
+    "sylKK": "rɪ·ˈsɛp·ʃə·nɪst",
+    "sylWord": "re·cep·tion·ist"
+  }
+]
