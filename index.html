@@ -29,8 +29,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=85"><!-- 外部樣式表（?v=85 為破快取版本號） -->
-<script defer src="index.js?v=85"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=86"><!-- 外部樣式表（?v=86 為破快取版本號） -->
+<script defer src="index.js?v=86"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -333,6 +333,39 @@ function saveFavs() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favorit
 function isFav(word) { return !!favorites[word]; }
 function attrEsc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
 function updateStar(btn) { const on = isFav(btn.dataset.word); btn.textContent = on ? "★" : "☆"; btn.classList.toggle("active", on); }
+
+// ===== 每個區塊的「⭐ 只看最愛」切換：開啟後該區塊只顯示已收藏的單字卡 =====
+function makeFavOnlyBtn() {
+    const b = document.createElement("button");
+    b.className = "control-button fav-only-btn";
+    b.style.cssText = "font-size:12px;padding:2px 8px;margin:0;border-color:#ffcf3f;background-color:transparent;color:#ffcf3f;";
+    b.innerText = "⭐ 只看最愛";
+    b.dataset.defaultLabel = "⭐ 只看最愛";
+    b.addEventListener("click", (e) => { e.stopPropagation(); toggleSectionFavOnly(b); });
+    return b;
+}
+function applyFavOnly(section) {
+    const on = section.classList.contains("fav-only");
+    section.querySelectorAll(".term-card").forEach(c => {
+        c.style.display = (!on || isFav(c.dataset.word)) ? "" : "none";
+    });
+    const btn = section.querySelector(".fav-only-btn");
+    if (btn) {
+        btn.innerText = on ? "★ 顯示全部" : "⭐ 只看最愛";
+        btn.style.backgroundColor = on ? "#ffcf3f" : "transparent";
+        btn.style.color = on ? "#111" : "#ffcf3f";
+    }
+}
+function toggleSectionFavOnly(btn) {
+    const section = btn.closest("section");
+    if (!section) return;
+    section.classList.toggle("fav-only");
+    applyFavOnly(section);
+}
+// 收藏狀態變動時，重新套用目前處於「只看最愛」的區塊，讓顯示即時同步
+function refreshFavOnlySections() {
+    document.querySelectorAll("section.fav-only").forEach(applyFavOnly);
+}
 // 增量更新最愛面板：只加/移一張卡片，★ 不整段重建 ★——避免收合區塊重建時重播 slideUp 動畫造成「展開又收起」的閃爍
 function updateFavPanelIncremental(word, adding) {
     const panel = document.getElementById("fav-panel");
@@ -358,6 +391,7 @@ function toggleFav(btn) {
     // 增量更新（不整段重建）＋保留捲動位置，星星不會造成清單閃爍或畫面亂跳
     const y = window.scrollY, x = window.scrollX;
     updateFavPanelIncremental(word, adding);
+    refreshFavOnlySections(); // 若有區塊正在「只看最愛」，即時同步顯示
     window.scrollTo(x, y);
 }
 // 測驗中「加入最愛」：把當前題目的英文單字加進/移出我的最愛
@@ -371,6 +405,7 @@ function toggleQuizFav() {
     updateQuizFavStar();
     updateFavPanelIncremental(w, adding);
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === w) updateStar(b); });
+    refreshFavOnlySections();
 }
 // 依當前題目更新測驗裡那顆星星的外觀（★=已收藏 / ☆=未收藏）
 function updateQuizFavStar() {
@@ -514,6 +549,7 @@ function buildWordSection(sectionTitleText, wordList, opts) {
     loopBtn.innerText = "🔁 循環播放區塊"; loopBtn.dataset.mode = "en"; loopBtn.dataset.defaultLabel = "🔁 循環播放區塊";
     loopBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleSectionLoop(sectionTitleText, "en"); });
     controlsRow2.appendChild(loopBtn);
+    controlsRow2.appendChild(makeFavOnlyBtn()); // ⭐ 只看最愛
 
     sectionLoopButtons[sectionTitleText] = { "en": loopBtn, "en-cn": loopEnCnBtn };
     title.appendChild(rightControls);
@@ -826,6 +862,7 @@ async function loadWordsFromFile(fileName) {
     toggleSectionLoop(sectionTitleText, "en");
   });
   controlsRow2.appendChild(loopBtn);
+  controlsRow2.appendChild(makeFavOnlyBtn()); // ⭐ 只看最愛：只顯示本區塊已收藏的單字
 
   // 記錄此區塊的兩個循環按鈕（供啟動/繼續時更新外觀）
   sectionLoopButtons[sectionTitleText] = { "en": loopBtn, "en-cn": loopEnCnBtn };
