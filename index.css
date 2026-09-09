@@ -1931,6 +1931,29 @@ h3 {
   .section-title {
     padding: 12px;
     font-size: 15px;
+    /* 手機：標題與控制區改成上下兩段，避免右側控制擠壓標題造成逐字換行 */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  /* 標題文字自成一列、佔滿整寬，正常換詞不逐字斷行 */
+  .section-title > span {
+    flex: none;
+    width: 100%;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* 控制區移到標題下方、佔滿整寬，兩列各自可換行靠左排 */
+  .section-right-controls {
+    width: 100%;
+    gap: 10px;
+  }
+  .section-controls-row {
+    flex-wrap: wrap;
+    gap: 8px 12px;
   }
 
   .quiz-controls {
