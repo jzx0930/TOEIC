@@ -1066,6 +1066,18 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+/* 單字後方的詞性標記（v. / n. / adj. …）：與單字間隔、字級較小、色調較暗以作區別 */
+.main-text .pos-tag {
+  margin-left: 0.5em;
+  font-size: 0.6em;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--bright-green);
+  opacity: 0.7;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
 /* 英文被隱藏時：文字透明（仍佔空間，只是看不到），並停用選取與點擊 */
 .main-text.hidden-word {
   color: transparent;
