@@ -1072,8 +1072,7 @@ h3 {
   font-size: 0.6em;
   font-weight: 600;
   font-style: italic;
-  color: var(--bright-green);
-  opacity: 0.7;
+  color: var(--yellow);
   letter-spacing: 0;
   vertical-align: middle;
 }
