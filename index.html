@@ -29,8 +29,14 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ctext x='32' y='47' font-size='42' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300ff99'%3ET%3C/text%3E%3C/svg%3E">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 手機響應式：寬度跟隨裝置 -->
-<link rel="stylesheet" href="index.css?v=89"><!-- 外部樣式表（?v=89 為破快取版本號） -->
-<script defer src="index.js?v=89"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<!-- 不快取 HTML 入口檔：iPhone「加到主畫面」的網頁 app 預設會把 index.html 快取住，
+     導致改了 CSS/JS 也看不到新版、只能刪掉重加（而刪 app 會清掉最愛的 localStorage）。
+     加下列 no-cache 後，每次開啟都重新抓 HTML，?v=N 破快取才會生效 → 更新只要重開 app、不必刪，最愛就不會消失。 -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" href="index.css?v=90"><!-- 外部樣式表（?v=90 為破快取版本號） -->
+<script defer src="index.js?v=90"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
