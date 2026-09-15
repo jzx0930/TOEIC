@@ -6,98 +6,98 @@
         "example": "tea",
         "ipa": "i",
         "exampleKK": "[ti]",
-        "audio": "vowels-lesson-01_tea.mp3"
+        "audio": "母音/i_tea.mp3"
       },
       {
         "symbol": "ɪ",
         "example": "sit",
         "ipa": "ɪ",
         "exampleKK": "[sɪt]",
-        "audio": "vowels-lesson-01_sit.mp3"
+        "audio": "母音/ih_sit.mp3"
       },
       {
         "symbol": "e",
         "example": "cake",
         "ipa": "eɪ",
         "exampleKK": "[kek]",
-        "audio": "vowels-lesson-02_cake.mp3"
+        "audio": "母音/e_cake.mp3"
       },
       {
         "symbol": "ɛ",
         "example": "pen",
         "ipa": "ɛ",
         "exampleKK": "[pɛn]",
-        "audio": "vowels-lesson-02_pen.mp3"
+        "audio": "母音/eh_pen.mp3"
       },
       {
         "symbol": "æ",
         "example": "cat",
         "ipa": "æ",
         "exampleKK": "[kæt]",
-        "audio": "vowels-lesson-02_cat.mp3"
+        "audio": "母音/ae_cat.mp3"
       },
       {
         "symbol": "ɑ",
         "example": "dot",
         "ipa": "ɑ",
         "exampleKK": "[dɑt]",
-        "audio": "consonants-lesson-02_dot.mp3"
+        "audio": "母音/ah_dot.mp3"
       },
       {
         "symbol": "o",
         "example": "soap",
         "ipa": "oʊ",
         "exampleKK": "[sop]",
-        "audio": "consonants-lesson-06_soap.mp3"
+        "audio": "母音/o_soap.mp3"
       },
       {
         "symbol": "ɔ",
         "example": "door",
         "ipa": "ɔ",
         "exampleKK": "[dɔr]",
-        "audio": "consonants-lesson-02_door.mp3"
+        "audio": "母音/aw_door.mp3"
       },
       {
         "symbol": "u",
         "example": "moon",
         "ipa": "u",
         "exampleKK": "[mun]",
-        "audio": "consonants-lesson-11_moon.mp3"
+        "audio": "母音/u_moon.mp3"
       },
       {
         "symbol": "ʊ",
         "example": "book",
         "ipa": "ʊ",
         "exampleKK": "[bʊk]",
-        "audio": "vowels-lesson-04_book.mp3"
+        "audio": "母音/uu_book.mp3"
       },
       {
         "symbol": "ʌ",
         "example": "bus",
         "ipa": "ʌ",
         "exampleKK": "[bʌs]",
-        "audio": "vowels-lesson-05_bus.mp3"
+        "audio": "母音/uh_bus.mp3"
       },
       {
         "symbol": "ə",
         "example": "about",
         "ipa": "ə",
         "exampleKK": "[əˈbaʊt]",
-        "audio": "vowels-lesson-05_about.mp3"
+        "audio": "母音/schwa_about.mp3"
       },
       {
         "symbol": "ɚ",
         "example": "teacher",
         "ipa": "ɚ",
         "exampleKK": "[ˈtitʃɚ]",
-        "audio": "vowels-lesson-06_teacher.mp3"
+        "audio": "母音/er_teacher.mp3"
       },
       {
         "symbol": "ɝ",
         "example": "bird",
         "ipa": "ɝ",
         "exampleKK": "[bɝd]",
-        "audio": "vowels-lesson-06_bird.mp3"
+        "audio": "母音/err_bird.mp3"
       }
     ],
     "diphthong": [
@@ -106,21 +106,21 @@
         "example": "bike",
         "ipa": "aɪ",
         "exampleKK": "[baɪk]",
-        "audio": "vowels-lesson-07_bike.mp3"
+        "audio": "母音/ai_bike.mp3"
       },
       {
         "symbol": "aʊ",
         "example": "now",
         "ipa": "aʊ",
         "exampleKK": "[naʊ]",
-        "audio": "vowels-lesson-07_now.mp3"
+        "audio": "母音/au_now.mp3"
       },
       {
         "symbol": "ɔɪ",
         "example": "boy",
         "ipa": "ɔɪ",
         "exampleKK": "[bɔɪ]",
-        "audio": "vowels-lesson-07_boy.mp3"
+        "audio": "母音/oi_boy.mp3"
       }
     ]
   },
@@ -130,168 +130,168 @@
       "example": "pet",
       "ipa": "pə",
       "exampleKK": "[pɛt]",
-      "audio": "consonants-lesson-01_pet.mp3"
+      "audio": "子音/p_pet.mp3"
     },
     {
       "symbol": "b",
       "example": "bad",
       "ipa": "bə",
       "exampleKK": "[bæd]",
-      "audio": "vowels-lesson-02_bad.mp3"
+      "audio": "子音/b_bad.mp3"
     },
     {
       "symbol": "t",
       "example": "time",
       "ipa": "tə",
       "exampleKK": "[taɪm]",
-      "audio": "consonants-lesson-02_time.mp3"
+      "audio": "子音/t_time.mp3"
     },
     {
       "symbol": "d",
       "example": "desk",
       "ipa": "də",
       "exampleKK": "[dɛsk]",
-      "audio": "vowels-lesson-02_desk.mp3"
+      "audio": "子音/d_desk.mp3"
     },
     {
       "symbol": "k",
       "example": "keep",
       "ipa": "kə",
       "exampleKK": "[kip]",
-      "audio": "consonants-lesson-03_keep.mp3"
+      "audio": "子音/k_keep.mp3"
     },
     {
       "symbol": "g",
       "example": "goat",
       "ipa": "ɡə",
       "exampleKK": "[got]",
-      "audio": "consonants-lesson-03_goat.mp3"
+      "audio": "子音/g_goat.mp3"
     },
     {
       "symbol": "f",
       "example": "food",
       "ipa": "f",
       "exampleKK": "[fud]",
-      "audio": "vowels-lesson-04_food.mp3"
+      "audio": "子音/f_food.mp3"
     },
     {
       "symbol": "v",
       "example": "vest",
       "ipa": "v",
       "exampleKK": "[vɛst]",
-      "audio": "consonants-lesson-04_vest.mp3"
+      "audio": "子音/v_vest.mp3"
     },
     {
       "symbol": "θ",
       "example": "thank",
       "ipa": "θ",
       "exampleKK": "[θæŋk]",
-      "audio": "consonants-lesson-05_thank.mp3"
+      "audio": "子音/th_thank.mp3"
     },
     {
       "symbol": "ð",
       "example": "this",
       "ipa": "ð",
       "exampleKK": "[ðɪs]",
-      "audio": "consonants-lesson-05_this.mp3"
+      "audio": "子音/dh_this.mp3"
     },
     {
       "symbol": "s",
       "example": "seat",
       "ipa": "s",
       "exampleKK": "[sit]",
-      "audio": "vowels-lesson-01_seat.mp3"
+      "audio": "子音/s_seat.mp3"
     },
     {
       "symbol": "z",
       "example": "zoo",
       "ipa": "z",
       "exampleKK": "[zu]",
-      "audio": "consonants-lesson-06_zoo.mp3"
+      "audio": "子音/z_zoo.mp3"
     },
     {
       "symbol": "ʃ",
       "example": "shop",
       "ipa": "ʃ",
       "exampleKK": "[ʃɑp]",
-      "audio": "consonants-lesson-07_shop.mp3"
+      "audio": "子音/sh_shop.mp3"
     },
     {
       "symbol": "ʒ",
       "example": "garage",
       "ipa": "ʒ",
       "exampleKK": "[gəˈrɑʒ]",
-      "audio": "consonants-lesson-07_garage.mp3"
+      "audio": "子音/zh_garage.mp3"
     },
     {
       "symbol": "tʃ",
       "example": "chair",
       "ipa": "tʃə",
       "exampleKK": "[tʃɛr]",
-      "audio": "consonants-lesson-08_chair.mp3"
+      "audio": "子音/ch_chair.mp3"
     },
     {
       "symbol": "dʒ",
       "example": "joke",
       "ipa": "dʒə",
       "exampleKK": "[dʒok]",
-      "audio": "consonants-lesson-08_joke.mp3"
+      "audio": "子音/j_joke.mp3"
     },
     {
       "symbol": "l",
       "example": "lake",
       "ipa": "lə",
       "exampleKK": "[lek]",
-      "audio": "consonants-lesson-09_lake.mp3"
+      "audio": "子音/l_lake.mp3"
     },
     {
       "symbol": "r",
       "example": "red",
       "ipa": "rə",
       "exampleKK": "[rɛd]",
-      "audio": "consonants-lesson-10_red.mp3"
+      "audio": "子音/r_red.mp3"
     },
     {
       "symbol": "m",
       "example": "mom",
       "ipa": "mə",
       "exampleKK": "[mɑm]",
-      "audio": "consonants-lesson-11_mom.mp3"
+      "audio": "子音/m_mom.mp3"
     },
     {
       "symbol": "n",
       "example": "name",
       "ipa": "nə",
       "exampleKK": "[nem]",
-      "audio": "consonants-lesson-11_name.mp3"
+      "audio": "子音/n_name.mp3"
     },
     {
       "symbol": "ŋ",
       "example": "sing",
       "ipa": "əŋ",
       "exampleKK": "[sɪŋ]",
-      "audio": "consonants-lesson-12_sing.mp3"
+      "audio": "子音/ng_sing.mp3"
     },
     {
       "symbol": "j",
       "example": "yes",
       "ipa": "jə",
       "exampleKK": "[jɛs]",
-      "audio": "consonants-lesson-12_yes.mp3"
+      "audio": "子音/y_yes.mp3"
     },
     {
       "symbol": "w",
       "example": "week",
       "ipa": "wə",
       "exampleKK": "[wik]",
-      "audio": "consonants-lesson-13_week.mp3"
+      "audio": "子音/w_week.mp3"
     },
     {
       "symbol": "h",
       "example": "hat",
       "ipa": "h",
       "exampleKK": "[hæt]",
-      "audio": "consonants-lesson-13_hat.mp3"
+      "audio": "子音/h_hat.mp3"
     }
   ]
 }
