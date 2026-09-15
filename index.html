@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=90"><!-- 外部樣式表（?v=90 為破快取版本號） -->
-<script defer src="index.js?v=90"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=91"><!-- 外部樣式表（?v=91 為破快取版本號） -->
+<script defer src="index.js?v=91"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1044,13 +1044,26 @@ async function speakWord(word, lang, callback) {
     }
 }
 // playKKAudio：發音表播放
-//   synth=1 → 用 Google TTS 的 SSML <phoneme> 合成「單音」（母音、m/n/ŋ/l/r）；
-//   其餘（摩擦音/塞音/塞擦音/滑音）→ 直接唸英文例字。
-function playKKAudio(slug, example, ipa, synth) {
+//   第一參數 audioFile＝本機錄音檔名（在 Pronunciation/audio/）→ 播放一次（優先）；
+//   沒有本機檔時：synth=1 走 SSML 合成單音；再不然唸例字。
+function playKKAudio(audioFile, example, ipa, synth) {
     window.speechSynthesis.cancel();
     stopCurrentTts();
-    if (synth && ipa) { playSSMLPhoneme(ipa, example); return; } // 有 synth：合成單音
-    if (example) speakWord(example, 'en-US');                    // 其餘：唸例字
+    if (audioFile) { playLocalKK(audioFile); return; }          // 本機錄音：點一下播一次、不重複
+    if (synth && ipa) { playSSMLPhoneme(ipa, example); return; } // 後備：合成單音
+    if (example) speakWord(example, 'en-US');                    // 後備：唸例字
+}
+
+// playLocalKK：播放 Pronunciation/audio/ 內的本機 mp3，一次、套用速度拖曳桿
+function playLocalKK(file) {
+    try {
+        const a = new Audio('Pronunciation/audio/' + file + '?t=' + Date.now());
+        a.playbackRate = getSpeechRate();   // 跟隨速度拖曳桿
+        currentAudio = a;                    // 交給 stopCurrentTts 統一管理，避免重疊
+        a.play().catch(err => console.error('本機 KK 音檔播放失敗：', file, err));
+    } catch (e) {
+        console.error('本機 KK 音檔播放失敗：', file, e);
+    }
 }
 
 // playSSMLPhoneme：用 SSML <phoneme>(IPA) 合成單一音素；放慢(rate=slow)讓氣音/摩擦音更清楚。失敗退回唸例字
