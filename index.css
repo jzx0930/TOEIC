@@ -2081,8 +2081,8 @@ h3 {
   border-left: 3px solid var(--bright-green);
   border-radius: 8px;
 }
-/* 兩種念法：兩顆精簡按鈕（數字+喇叭）並排靠右 */
-.kk-variants { display: flex; flex-direction: row; gap: 6px; margin-left: auto; }
+/* 兩種念法：兩顆精簡按鈕（數字+喇叭）上下排列靠右 */
+.kk-variants { display: flex; flex-direction: column; gap: 4px; margin-left: auto; }
 .kk-var {
   display: inline-flex;
   align-items: center;
