@@ -2138,6 +2138,9 @@ h3 {
 }
 @media (max-width: 480px) {
   .kk-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  /* 手機：雙念法一律上下排列、按鈕精簡不超出框格 */
+  .kk-variants { flex-direction: column; gap: 4px; }
+  .kk-var { font-size: 12px; padding: 3px 6px; }
 }
 
 /* ==================== 我的最愛（★ 星星 + 上方清單） ==================== */
