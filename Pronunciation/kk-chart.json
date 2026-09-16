@@ -6,8 +6,7 @@
         "example": "tea",
         "ipa": "i",
         "exampleKK": "[ti]",
-        "audio": "",
-        "synth": true,
+        "audio": "01.mp3",
         "num": 1
       },
       {
@@ -15,8 +14,7 @@
         "example": "sit",
         "ipa": "ɪ",
         "exampleKK": "[sɪt]",
-        "audio": "",
-        "synth": true,
+        "audio": "02.mp3",
         "num": 2
       },
       {
@@ -149,8 +147,7 @@
       "example": "pet",
       "ipa": "pə",
       "exampleKK": "[pɛt]",
-      "audio": "",
-      "synth": true,
+      "audio": "18.mp3",
       "num": 18
     },
     {
@@ -158,8 +155,7 @@
       "example": "bad",
       "ipa": "bə",
       "exampleKK": "[bæd]",
-      "audio": "",
-      "synth": true,
+      "audio": "19.mp3",
       "num": 19
     },
     {
@@ -263,16 +259,38 @@
       "example": "chair",
       "ipa": "tʃə",
       "exampleKK": "[tʃɛr]",
-      "audio": "32.mp3",
-      "num": 32
+      "num": 32,
+      "variants": [
+        {
+          "tag": "32-1",
+          "cond": "母音前、與母音拼音",
+          "audio": "32-1.mp3"
+        },
+        {
+          "tag": "32-2",
+          "cond": "不與母音拼音或在字尾",
+          "audio": "32-2.mp3"
+        }
+      ]
     },
     {
       "symbol": "dʒ",
       "example": "joke",
       "ipa": "dʒə",
       "exampleKK": "[dʒok]",
-      "audio": "33.mp3",
-      "num": 33
+      "num": 33,
+      "variants": [
+        {
+          "tag": "33-1",
+          "cond": "母音前、與母音拼音",
+          "audio": "33-1.mp3"
+        },
+        {
+          "tag": "33-2",
+          "cond": "不與母音拼音或在字尾",
+          "audio": "33-2.mp3"
+        }
+      ]
     },
     {
       "symbol": "l",
@@ -298,24 +316,57 @@
       "example": "red",
       "ipa": "rə",
       "exampleKK": "[rɛd]",
-      "audio": "35.mp3",
-      "num": 35
+      "num": 35,
+      "variants": [
+        {
+          "tag": "35-1",
+          "cond": "母音前、與母音拼音",
+          "audio": "35-1.mp3"
+        },
+        {
+          "tag": "35-2",
+          "cond": "不與母音拼音或在字尾",
+          "audio": "35-2.mp3"
+        }
+      ]
     },
     {
       "symbol": "m",
       "example": "mom",
       "ipa": "mə",
       "exampleKK": "[mɑm]",
-      "audio": "36.mp3",
-      "num": 36
+      "num": 36,
+      "variants": [
+        {
+          "tag": "36-1",
+          "cond": "母音前、與母音拼音",
+          "audio": "36-1.mp3"
+        },
+        {
+          "tag": "36-2",
+          "cond": "不與母音拼音或在字尾",
+          "audio": "36-2.mp3"
+        }
+      ]
     },
     {
       "symbol": "n",
       "example": "name",
       "ipa": "nə",
       "exampleKK": "[nem]",
-      "audio": "37.mp3",
-      "num": 37
+      "num": 37,
+      "variants": [
+        {
+          "tag": "37-1",
+          "cond": "母音前、與母音拼音",
+          "audio": "37-1.mp3"
+        },
+        {
+          "tag": "37-2",
+          "cond": "不與母音拼音或在字尾",
+          "audio": "37-2.mp3"
+        }
+      ]
     },
     {
       "symbol": "ŋ",
