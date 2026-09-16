@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=93"><!-- 外部樣式表（?v=93 為破快取版本號） -->
-<script defer src="index.js?v=93"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=94"><!-- 外部樣式表（?v=94 為破快取版本號） -->
+<script defer src="index.js?v=94"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1244,9 +1244,9 @@ function renderPronounce(data) {
         // 有兩種念法（variants）：各給一顆播放鈕（母音前 / 字尾），皆播一次
         let playHtml;
         if (Array.isArray(it.variants) && it.variants.length) {
-            playHtml = `<div class="kk-variants">` + it.variants.map(v => {
+            playHtml = `<div class="kk-variants">` + it.variants.map((v, idx) => {
                 const va = (v.audio || "").replace(/'/g, "\\'");
-                return `<button class="kk-play kk-var" title="${v.cond || ""}" onclick="playKKAudio('${va}','${ex}','${ip}','')"><b class="kk-var-tag">${v.tag || ""}</b> <span class="kk-var-cond">${v.cond || ""}</span> 🔊</button>`;
+                return `<button class="kk-play kk-var" title="${v.cond || ""}" onclick="playKKAudio('${va}','${ex}','${ip}','')"><b class="kk-var-tag">${idx + 1}</b>🔊</button>`;
             }).join("") + `</div>`;
         } else {
             const au = (it.audio || "").replace(/'/g, "\\'");
@@ -1264,7 +1264,8 @@ function renderPronounce(data) {
 
     const v = data.vowels || {};
     box.innerHTML = `
-        <p class="kk-intro">每格左上為編號（對應音檔 <code>NN.mp3</code>）。點 🔊 播放該 KK 音標的單音一次。</p>
+        <p class="kk-intro">每格左上為編號。點 🔊 播放該 KK 音標的單音一次。<br>
+        部分子音有兩種念法：<b>1</b> ＝母音前、與母音拼音　|　<b>2</b> ＝不與母音拼音或在字尾。</p>
 
         <div class="kk-block-title">母音 Vowels</div>
         <div class="kk-sub-label">單母音</div>
