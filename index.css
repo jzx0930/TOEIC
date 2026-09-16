@@ -2081,6 +2081,20 @@ h3 {
   border-left: 3px solid var(--bright-green);
   border-radius: 8px;
 }
+/* 兩種念法：兩顆按鈕直向排列，靠右 */
+.kk-cell-multi { align-items: flex-start; }
+.kk-variants { display: flex; flex-direction: column; gap: 5px; margin-left: auto; }
+.kk-var {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 3px 8px;
+}
+.kk-var-tag { color: var(--bright-green); }
+.kk-var-cond { color: var(--text-gray); }
+
 /* KK 音標編號徽章（左上角小數字，對應音檔檔名 NN.mp3） */
 .kk-num {
   position: absolute;

@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=92"><!-- 外部樣式表（?v=92 為破快取版本號） -->
-<script defer src="index.js?v=92"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=93"><!-- 外部樣式表（?v=93 為破快取版本號） -->
+<script defer src="index.js?v=93"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1240,14 +1240,24 @@ function renderPronounce(data) {
     // 🔊 播放規則：synth=用 TTS 合成單音(雙母音)；否則優先播本地音檔，沒有才唸例字
     const cell = it => {
         const ex = (it.example || "").replace(/'/g, "\\'");
-        const au = (it.audio || "").replace(/'/g, "\\'");
         const ip = (it.ipa || "").replace(/'/g, "\\'");
-        const synth = it.synth ? "1" : "";
-        return `<div class="kk-cell">
+        // 有兩種念法（variants）：各給一顆播放鈕（母音前 / 字尾），皆播一次
+        let playHtml;
+        if (Array.isArray(it.variants) && it.variants.length) {
+            playHtml = `<div class="kk-variants">` + it.variants.map(v => {
+                const va = (v.audio || "").replace(/'/g, "\\'");
+                return `<button class="kk-play kk-var" title="${v.cond || ""}" onclick="playKKAudio('${va}','${ex}','${ip}','')"><b class="kk-var-tag">${v.tag || ""}</b> <span class="kk-var-cond">${v.cond || ""}</span> 🔊</button>`;
+            }).join("") + `</div>`;
+        } else {
+            const au = (it.audio || "").replace(/'/g, "\\'");
+            const synth = it.synth ? "1" : "";
+            playHtml = `<button class="kk-play" title="播放這個 KK 音" onclick="playKKAudio('${au}','${ex}','${ip}','${synth}')">🔊</button>`;
+        }
+        return `<div class="kk-cell${it.variants ? " kk-cell-multi" : ""}">
             <span class="kk-num">${it.num != null ? it.num : ""}</span>
             <span class="kk-symbol">[${it.symbol}]</span>
             <span class="kk-example">${it.example || ""}${it.exampleKK ? ` <span class="kk-ex-kk">${it.exampleKK}</span>` : ""}</span>
-            <button class="kk-play" title="播放這個 KK 音" onclick="playKKAudio('${au}','${ex}','${ip}','${synth}')">🔊</button>
+            ${playHtml}
         </div>`;
     };
     const grid = arr => `<div class="kk-grid">${(arr || []).map(cell).join("")}</div>`;

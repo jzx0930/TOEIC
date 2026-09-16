@@ -279,8 +279,19 @@
       "example": "lake",
       "ipa": "lə",
       "exampleKK": "[lek]",
-      "audio": "34.mp3",
-      "num": 34
+      "num": 34,
+      "variants": [
+        {
+          "tag": "34-1",
+          "cond": "母音前、與母音拼音",
+          "audio": "34-1.mp3"
+        },
+        {
+          "tag": "34-2",
+          "cond": "不與母音拼音或在字尾",
+          "audio": "34-2.mp3"
+        }
+      ]
     },
     {
       "symbol": "r",
