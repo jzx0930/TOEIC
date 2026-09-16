@@ -7,7 +7,8 @@
         "ipa": "i",
         "exampleKK": "[ti]",
         "audio": "",
-        "synth": true
+        "synth": true,
+        "num": 1
       },
       {
         "symbol": "ɪ",
@@ -15,91 +16,104 @@
         "ipa": "ɪ",
         "exampleKK": "[sɪt]",
         "audio": "",
-        "synth": true
+        "synth": true,
+        "num": 2
       },
       {
         "symbol": "e",
         "example": "cake",
         "ipa": "eɪ",
         "exampleKK": "[kek]",
-        "audio": "母音/e_單音.mp3"
+        "audio": "03.mp3",
+        "num": 3
       },
       {
         "symbol": "ɛ",
         "example": "pen",
         "ipa": "ɛ",
         "exampleKK": "[pɛn]",
-        "audio": "母音/eh_單音.mp3"
+        "audio": "04.mp3",
+        "num": 4
       },
       {
         "symbol": "æ",
         "example": "cat",
         "ipa": "æ",
         "exampleKK": "[kæt]",
-        "audio": "母音/ae_單音.mp3"
+        "audio": "05.mp3",
+        "num": 5
       },
       {
         "symbol": "ɑ",
         "example": "dot",
         "ipa": "ɑ",
         "exampleKK": "[dɑt]",
-        "audio": "母音/ah_單音.mp3"
+        "audio": "06.mp3",
+        "num": 6
       },
       {
         "symbol": "o",
         "example": "soap",
         "ipa": "oʊ",
         "exampleKK": "[sop]",
-        "audio": "母音/o_單音.mp3"
+        "audio": "07.mp3",
+        "num": 7
       },
       {
         "symbol": "ɔ",
         "example": "door",
         "ipa": "ɔ",
         "exampleKK": "[dɔr]",
-        "audio": "母音/aw_單音.mp3"
+        "audio": "08.mp3",
+        "num": 8
       },
       {
         "symbol": "u",
         "example": "moon",
         "ipa": "u",
         "exampleKK": "[mun]",
-        "audio": "母音/u_單音.mp3"
+        "audio": "09.mp3",
+        "num": 9
       },
       {
         "symbol": "ʊ",
         "example": "book",
         "ipa": "ʊ",
         "exampleKK": "[bʊk]",
-        "audio": "母音/uu_單音.mp3"
+        "audio": "10.mp3",
+        "num": 10
       },
       {
         "symbol": "ʌ",
         "example": "bus",
         "ipa": "ʌ",
         "exampleKK": "[bʌs]",
-        "audio": "母音/uh_單音.mp3"
+        "audio": "11.mp3",
+        "num": 11
       },
       {
         "symbol": "ə",
         "example": "about",
         "ipa": "ə",
         "exampleKK": "[əˈbaʊt]",
-        "audio": "母音/schwa_單音.mp3"
+        "audio": "12.mp3",
+        "num": 12
       },
       {
         "symbol": "ɚ",
         "example": "teacher",
         "ipa": "ɚ",
         "exampleKK": "[ˈtitʃɚ]",
-        "audio": "母音/er_單音.mp3"
+        "audio": "13.mp3",
+        "num": 13
       },
       {
         "symbol": "ɝ",
         "example": "bird",
         "ipa": "ɝ",
         "exampleKK": "[bɝd]",
-        "audio": "母音/err_單音.mp3"
+        "audio": "14.mp3",
+        "num": 14
       }
     ],
     "diphthong": [
@@ -108,21 +122,24 @@
         "example": "bike",
         "ipa": "aɪ",
         "exampleKK": "[baɪk]",
-        "audio": "母音/ai_單音.mp3"
+        "audio": "15.mp3",
+        "num": 15
       },
       {
         "symbol": "aʊ",
         "example": "now",
         "ipa": "aʊ",
         "exampleKK": "[naʊ]",
-        "audio": "母音/au_單音.mp3"
+        "audio": "16.mp3",
+        "num": 16
       },
       {
         "symbol": "ɔɪ",
         "example": "boy",
         "ipa": "ɔɪ",
         "exampleKK": "[bɔɪ]",
-        "audio": "母音/oi_單音.mp3"
+        "audio": "17.mp3",
+        "num": 17
       }
     ]
   },
@@ -133,7 +150,8 @@
       "ipa": "pə",
       "exampleKK": "[pɛt]",
       "audio": "",
-      "synth": true
+      "synth": true,
+      "num": 18
     },
     {
       "symbol": "b",
@@ -141,161 +159,184 @@
       "ipa": "bə",
       "exampleKK": "[bæd]",
       "audio": "",
-      "synth": true
+      "synth": true,
+      "num": 19
     },
     {
       "symbol": "t",
       "example": "time",
       "ipa": "tə",
       "exampleKK": "[taɪm]",
-      "audio": "子音/t_單音.mp3"
+      "audio": "20.mp3",
+      "num": 20
     },
     {
       "symbol": "d",
       "example": "desk",
       "ipa": "də",
       "exampleKK": "[dɛsk]",
-      "audio": "子音/d_單音.mp3"
+      "audio": "21.mp3",
+      "num": 21
     },
     {
       "symbol": "k",
       "example": "keep",
       "ipa": "kə",
       "exampleKK": "[kip]",
-      "audio": "子音/k_單音.mp3"
+      "audio": "22.mp3",
+      "num": 22
     },
     {
       "symbol": "g",
       "example": "goat",
       "ipa": "ɡə",
       "exampleKK": "[got]",
-      "audio": "子音/g_單音.mp3"
+      "audio": "23.mp3",
+      "num": 23
     },
     {
       "symbol": "f",
       "example": "food",
       "ipa": "f",
       "exampleKK": "[fud]",
-      "audio": "子音/f_單音.mp3"
+      "audio": "24.mp3",
+      "num": 24
     },
     {
       "symbol": "v",
       "example": "vest",
       "ipa": "v",
       "exampleKK": "[vɛst]",
-      "audio": "子音/v_單音.mp3"
+      "audio": "25.mp3",
+      "num": 25
     },
     {
       "symbol": "θ",
       "example": "thank",
       "ipa": "θ",
       "exampleKK": "[θæŋk]",
-      "audio": "子音/th_單音.mp3"
+      "audio": "26.mp3",
+      "num": 26
     },
     {
       "symbol": "ð",
       "example": "this",
       "ipa": "ð",
       "exampleKK": "[ðɪs]",
-      "audio": "子音/dh_單音.mp3"
+      "audio": "27.mp3",
+      "num": 27
     },
     {
       "symbol": "s",
       "example": "seat",
       "ipa": "s",
       "exampleKK": "[sit]",
-      "audio": "子音/s_單音.mp3"
+      "audio": "28.mp3",
+      "num": 28
     },
     {
       "symbol": "z",
       "example": "zoo",
       "ipa": "z",
       "exampleKK": "[zu]",
-      "audio": "子音/z_單音.mp3"
+      "audio": "29.mp3",
+      "num": 29
     },
     {
       "symbol": "ʃ",
       "example": "shop",
       "ipa": "ʃ",
       "exampleKK": "[ʃɑp]",
-      "audio": "子音/sh_單音.mp3"
+      "audio": "30.mp3",
+      "num": 30
     },
     {
       "symbol": "ʒ",
       "example": "garage",
       "ipa": "ʒ",
       "exampleKK": "[gəˈrɑʒ]",
-      "audio": "子音/zh_單音.mp3"
+      "audio": "31.mp3",
+      "num": 31
     },
     {
       "symbol": "tʃ",
       "example": "chair",
       "ipa": "tʃə",
       "exampleKK": "[tʃɛr]",
-      "audio": "子音/ch_單音.mp3"
+      "audio": "32.mp3",
+      "num": 32
     },
     {
       "symbol": "dʒ",
       "example": "joke",
       "ipa": "dʒə",
       "exampleKK": "[dʒok]",
-      "audio": "子音/j_單音.mp3"
+      "audio": "33.mp3",
+      "num": 33
     },
     {
       "symbol": "l",
       "example": "lake",
       "ipa": "lə",
       "exampleKK": "[lek]",
-      "audio": "子音/l_單音.mp3"
+      "audio": "34.mp3",
+      "num": 34
     },
     {
       "symbol": "r",
       "example": "red",
       "ipa": "rə",
       "exampleKK": "[rɛd]",
-      "audio": "子音/r_單音.mp3"
+      "audio": "35.mp3",
+      "num": 35
     },
     {
       "symbol": "m",
       "example": "mom",
       "ipa": "mə",
       "exampleKK": "[mɑm]",
-      "audio": "子音/m_單音.mp3"
+      "audio": "36.mp3",
+      "num": 36
     },
     {
       "symbol": "n",
       "example": "name",
       "ipa": "nə",
       "exampleKK": "[nem]",
-      "audio": "子音/n_單音.mp3"
+      "audio": "37.mp3",
+      "num": 37
     },
     {
       "symbol": "ŋ",
       "example": "sing",
       "ipa": "əŋ",
       "exampleKK": "[sɪŋ]",
-      "audio": "子音/ng_單音.mp3"
+      "audio": "38.mp3",
+      "num": 38
     },
     {
       "symbol": "j",
       "example": "yes",
       "ipa": "jə",
       "exampleKK": "[jɛs]",
-      "audio": "子音/y_單音.mp3"
+      "audio": "39.mp3",
+      "num": 39
     },
     {
       "symbol": "w",
       "example": "week",
       "ipa": "wə",
       "exampleKK": "[wik]",
-      "audio": "子音/w_單音.mp3"
+      "audio": "40.mp3",
+      "num": 40
     },
     {
       "symbol": "h",
       "example": "hat",
       "ipa": "h",
       "exampleKK": "[hæt]",
-      "audio": "子音/h_單音.mp3"
+      "audio": "41.mp3",
+      "num": 41
     }
   ]
 }

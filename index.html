@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=91"><!-- 外部樣式表（?v=91 為破快取版本號） -->
-<script defer src="index.js?v=91"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=92"><!-- 外部樣式表（?v=92 為破快取版本號） -->
+<script defer src="index.js?v=92"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1244,6 +1244,7 @@ function renderPronounce(data) {
         const ip = (it.ipa || "").replace(/'/g, "\\'");
         const synth = it.synth ? "1" : "";
         return `<div class="kk-cell">
+            <span class="kk-num">${it.num != null ? it.num : ""}</span>
             <span class="kk-symbol">[${it.symbol}]</span>
             <span class="kk-example">${it.example || ""}${it.exampleKK ? ` <span class="kk-ex-kk">${it.exampleKK}</span>` : ""}</span>
             <button class="kk-play" title="播放這個 KK 音" onclick="playKKAudio('${au}','${ex}','${ip}','${synth}')">🔊</button>
@@ -1253,7 +1254,7 @@ function renderPronounce(data) {
 
     const v = data.vowels || {};
     box.innerHTML = `
-        <p class="kk-intro">點各音標的 🔊 會唸出該音的英文例字（自然發音示範這個 KK 音）。</p>
+        <p class="kk-intro">每格左上為編號（對應音檔 <code>NN.mp3</code>）。點 🔊 播放該 KK 音標的單音一次。</p>
 
         <div class="kk-block-title">母音 Vowels</div>
         <div class="kk-sub-label">單母音</div>
