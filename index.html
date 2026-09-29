@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=100"><!-- 外部樣式表（?v=100 為破快取版本號） -->
-<script defer src="index.js?v=100"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=101"><!-- 外部樣式表（?v=101 為破快取版本號） -->
+<script defer src="index.js?v=101"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1600,6 +1600,7 @@ function openQuiz() {
     fillAnswers = []; // 清空上一次填空作答紀錄
     document.getElementById("correctList").innerHTML = "";
     document.getElementById("wrongList").innerHTML = "";
+    document.getElementById("quizOptions").innerHTML = ""; // 清掉上一次殘留（含填空重用的輸入框），確保重新建立
     document.getElementById("quizCorrect").textContent = "0";
     document.getElementById("quizWrong").textContent = "0";
     // 填空題型：隱藏左右「正確/錯誤」清單與計分列（該類型不判分）
@@ -1633,33 +1634,44 @@ function nextQuestion() {
     document.getElementById("quizProgress").textContent = `進度: ${quizIndex + 1} / ${currentQuizList.length}`;
 
     const optionsBox = document.getElementById("quizOptions");
-    optionsBox.innerHTML = ""; // 清空上一題的選項
 
     const target = currentQuizList[quizIndex]; // 本題正解
     currentQuizTarget = target;                // 供「再唸一次」按鈕重播用
     updateQuizFavStar();                       // 更新「加入最愛」星星（依本題是否已收藏）
 
-    // --- 填空題型：只顯示英文，下面給輸入框讓使用者填中文，自己按「下一題」---
+    // --- 填空題型：只顯示英文，重用同一個輸入框填中文 ---
+    //   關鍵：不每題重建輸入框（重建會讓 iOS 收起鍵盤）。第一次建立後就重用，
+    //   在使用者手勢（Enter/下一題鈕）內同步清空並 refocus，鍵盤保持不收起。
     if (currentQuizType === "fill-cn") {
-        const qBoxFill = document.getElementById("quizQuestionCN");
-        qBoxFill.textContent = target.en;                                   // 只顯示英文
-        document.getElementById("quizReplayBtn").style.display = "block";   // 手動發音鈕（不自動唸，要聽才按）
-        optionsBox.innerHTML = `
-            <div class="fill-area">
-                <input id="fillInput" class="search-input fill-input" type="text" placeholder="請輸入中文意思…" autocomplete="off">
-                <button class="search-button" id="fillNextBtn">下一題 ▶</button>
-            </div>`;
-        const input = document.getElementById("fillInput");
-        const submitFill = () => {
-            fillAnswers.push({ en: target.en, cn: target.cn, user: input.value.trim() });
-            quizIndex++;
-            nextQuestion();
-        };
-        document.getElementById("fillNextBtn").onclick = submitFill;
-        input.addEventListener("keydown", e => { if (e.key === "Enter") submitFill(); });
-        setTimeout(() => input.focus(), 50);   // 自動聚焦方便打字
-        return;                                // 填空題不走下面的四選項邏輯（不自動發音，避免長題數在手機累積記憶體崩潰）
+        document.getElementById("quizQuestionCN").textContent = target.en;      // 只顯示英文
+        document.getElementById("quizReplayBtn").style.display = "block";        // 手動發音鈕（不自動唸）
+        let input = document.getElementById("fillInput");
+        if (!input) {
+            optionsBox.innerHTML = `
+                <div class="fill-area">
+                    <input id="fillInput" class="search-input fill-input" type="text" placeholder="請輸入中文意思…" autocomplete="off" enterkeyhint="next">
+                    <button class="search-button" id="fillNextBtn" type="button">下一題 ▶</button>
+                </div>`;
+            input = document.getElementById("fillInput");
+            const submitFill = () => {
+                const cur = currentQuizList[quizIndex];         // 目前這題（提交時 quizIndex 還沒加）
+                if (!cur) return;
+                fillAnswers.push({ en: cur.en, cn: cur.cn, user: input.value.trim() });
+                quizIndex++;
+                input.value = "";
+                input.focus();          // 手勢內同步 refocus → iOS 鍵盤不收起
+                nextQuestion();         // 只更新題目文字（輸入框重用、不重建）
+            };
+            document.getElementById("fillNextBtn").addEventListener("click", submitFill);
+            input.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); submitFill(); } });
+            setTimeout(() => input.focus(), 50);   // 第一題自動聚焦
+        } else {
+            input.value = "";           // 重用：清空即可，鍵盤保持
+        }
+        return;                         // 填空題不走下面的四選項邏輯
     }
+
+    optionsBox.innerHTML = ""; // 非填空：清空上一題的選項
 
     // --- 根據題型決定題目顯示哪一面 ---
     // 中選英：顯示中文；英選中：顯示英文；聽選中：不顯示英文（只聽發音），顯示提示字
