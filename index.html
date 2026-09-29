@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=96"><!-- 外部樣式表（?v=96 為破快取版本號） -->
-<script defer src="index.js?v=96"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=97"><!-- 外部樣式表（?v=97 為破快取版本號） -->
+<script defer src="index.js?v=97"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -76,6 +76,7 @@
     <option value="en-cn" selected>英選中 (看英文選中文)</option>
     <option value="cn-en">中選英 (看中文選英文)</option>
     <option value="listen-cn">聽選中 (聽發音選中文)</option>
+    <option value="fill-cn">填空 (看英文填中文)</option>
   </select>
 
 
@@ -1481,8 +1482,9 @@ let quizIndex = 0;            // 目前進行到第幾題
 let correctCount = 0;         // 答對題數
 let wrongCount = 0;           // 答錯題數
 let isAnswering = false;      // 是否正在處理作答（避免一題重複點擊）
-let currentQuizType = "en-cn";// 目前題型（預設 en-cn 英選中；另有 cn-en 中選英）
+let currentQuizType = "en-cn";// 目前題型（預設 en-cn 英選中；另有 cn-en 中選英、fill-cn 填空）
 let wrongWords = [];          // 本次測驗答錯的單字清單（[{en, cn}, ...]），測驗結束可匯出
+let fillAnswers = [];         // 填空題型：本次每題作答紀錄（[{en, cn, user}, ...]）
 let unfamiliarFileHandle = null; // 記住使用者選定的 Unfamiliar.json 檔案handle（同一次開啟頁面內只需選一次）
 
 // 洗牌演算法（Fisher–Yates）：把陣列順序隨機打亂
@@ -1575,6 +1577,7 @@ function openQuiz() {
     correctCount = 0;
     wrongCount = 0;
     wrongWords = []; // 清空上一次測驗的錯誤單字紀錄
+    fillAnswers = []; // 清空上一次填空作答紀錄
     document.getElementById("correctList").innerHTML = "";
     document.getElementById("wrongList").innerHTML = "";
     document.getElementById("quizCorrect").textContent = "0";
@@ -1613,6 +1616,29 @@ function nextQuestion() {
     const target = currentQuizList[quizIndex]; // 本題正解
     currentQuizTarget = target;                // 供「再唸一次」按鈕重播用
     updateQuizFavStar();                       // 更新「加入最愛」星星（依本題是否已收藏）
+
+    // --- 填空題型：只顯示英文，下面給輸入框讓使用者填中文，自己按「下一題」---
+    if (currentQuizType === "fill-cn") {
+        const qBoxFill = document.getElementById("quizQuestionCN");
+        qBoxFill.textContent = target.en;                                   // 只顯示英文
+        document.getElementById("quizReplayBtn").style.display = "none";
+        optionsBox.innerHTML = `
+            <div class="fill-area">
+                <input id="fillInput" class="search-input fill-input" type="text" placeholder="請輸入中文意思…" autocomplete="off">
+                <button class="search-button" id="fillNextBtn">下一題 ▶</button>
+            </div>`;
+        const input = document.getElementById("fillInput");
+        const submitFill = () => {
+            fillAnswers.push({ en: target.en, cn: target.cn, user: input.value.trim() });
+            quizIndex++;
+            nextQuestion();
+        };
+        document.getElementById("fillNextBtn").onclick = submitFill;
+        input.addEventListener("keydown", e => { if (e.key === "Enter") submitFill(); });
+        setTimeout(() => input.focus(), 50);   // 自動聚焦方便打字
+        speakWord(target.en, 'en-US');         // 唸一次英文（英文本來就顯示，不洩題）
+        return;                                // 填空題不走下面的四選項邏輯
+    }
 
     // --- 根據題型決定題目顯示哪一面 ---
     // 中選英：顯示中文；英選中：顯示英文；聽選中：不顯示英文（只聽發音），顯示提示字
@@ -1740,6 +1766,26 @@ function updateSideList(listId, wordObj, type) {
 
 // finishQuiz：所有題目作答完畢，顯示結算結果
 function finishQuiz() {
+    // --- 填空題型：列出每題（英文＋正解＋你的答案，同一橫排），讓使用者自己核對 ---
+    if (currentQuizType === "fill-cn") {
+        const qBoxF = document.getElementById("quizQuestionCN");
+        qBoxF.classList.remove("correct", "wrong");
+        qBoxF.textContent = "🎊 填空測驗完成！(自行核對)";
+        const rows = fillAnswers.map(a => {
+            const safeEn = a.en.replace(/'/g, "\\'");
+            return `<div class="fill-result-row">
+                <span class="fr-en"><b>${a.en}</b> <button class="speak-button" onclick="speakWord('${safeEn}','en-US')">🔊</button></span>
+                <span class="fr-correct">正解：${a.cn}</span>
+                <span class="fr-user">你的：${a.user || "（未填）"}</span>
+            </div>`;
+        }).join("");
+        document.getElementById("quizOptions").innerHTML = `
+            <div class="fill-results">${rows}</div>
+            <button class="search-button" style="grid-column:1/-1;margin-top:10px;" onclick="document.getElementById('quizModal').style.display='none'">關閉結果</button>`;
+        document.getElementById("quizFeedback").textContent = "";
+        return;
+    }
+
     // 若本次有答錯的單字，就多顯示一顆「儲存錯誤單字」按鈕
     const saveBtnHtml = (wrongWords.length > 0)
         ? `<button class="search-button" style="margin-top:10px;" onclick="saveWrongWords(this)">💾 儲存錯誤單字（${wrongWords.length}）到 Unfamiliar.json</button>`

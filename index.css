@@ -1615,6 +1615,46 @@ h3 {
   margin-bottom: 25px;
 }
 
+/* ===== 填空題型（fill-cn）===== */
+/* 作答區：輸入框＋下一題鈕，橫跨整個選項容器 */
+.fill-area {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+.fill-input {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  font-size: 18px;
+}
+/* 結算：每題一橫排（英文｜正解｜你的答案）*/
+.fill-results {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  text-align: left;
+}
+.fill-result-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  background: rgba(20, 20, 20, 0.6);
+}
+.fill-result-row .fr-en { min-width: 150px; color: var(--text-white); }
+.fill-result-row .fr-correct { color: var(--bright-green); }
+.fill-result-row .fr-user { color: var(--yellow); }
+
 /* 選項按鈕外觀 */
 /* 選項容器：2×2 四宮格（左上 / 右上 / 左下 / 右下），加大點擊區、避免點錯 */
 /* align-items:stretch（預設）→ 同一列的兩顆按鈕會等高：左上＝右上、左下＝右下。 */
