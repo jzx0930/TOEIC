@@ -1066,6 +1066,11 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+/* 搜尋即時篩選：隱藏不符開頭的字卡、以及沒有命中的整個區塊（含標題） */
+.term-card.card-hidden,
+.content-row.section-hidden,
+.section-title.section-hidden { display: none !important; }
+
 /* 單字後方的詞性標記（v. / n. / adj. …）：與單字間隔、字級較小、色調較暗以作區別 */
 .main-text .pos-tag {
   margin-left: 0.5em;

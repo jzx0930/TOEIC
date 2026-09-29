@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=97"><!-- 外部樣式表（?v=97 為破快取版本號） -->
-<script defer src="index.js?v=97"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=98"><!-- 外部樣式表（?v=98 為破快取版本號） -->
+<script defer src="index.js?v=98"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -147,7 +147,7 @@
 
   <!-- 搜尋框：輸入英文單字，按「搜尋」會跨所有區塊尋找並自動展開、捲動、標亮 -->
   <div class="search-box">
-    <input type="text" id="searchInput" class="search-input" placeholder="輸入英文單字搜尋...">
+    <input type="text" id="searchInput" class="search-input" placeholder="輸入英文開頭字母即時篩選…" oninput="searchWord()">
     <button class="search-button" onclick="searchWord()">搜尋</button>
   </div>
 
@@ -1157,36 +1157,42 @@ function collapseAll() {
   });
 }
 
-// 搜尋功能（支援跨檔案搜尋並自動展開、捲動、標亮）
+// 搜尋功能（即打即篩）：只顯示「開頭符合」的字卡，其餘隱藏；空白時顯示全部
+// 由搜尋框的 oninput 即時呼叫，也可按「搜尋」鈕。
 function searchWord() {
-  // 取得輸入字串，去頭尾空白並轉小寫（不分大小寫比對）
   const query = document.getElementById("searchInput").value.trim().toLowerCase();
-  if (!query) return; // 空字串不搜尋
 
-  let found = false; // 是否有找到任何符合
-
+  // 先全部還原：顯示所有卡片與區塊、清除標亮
   document.querySelectorAll(".term-card").forEach(card => {
-    const word = card.dataset.word.toLowerCase();
-    const row = card.closest(".content-row");      // 卡片所屬的內容列
-    const title = row.previousElementSibling;       // 內容列前面的標題列
+    card.classList.remove("card-hidden");
+    card.querySelector(".main-text")?.classList.remove("highlight");
+  });
+  document.querySelectorAll(".content-row, .section-title").forEach(el => el.classList.remove("section-hidden"));
 
-    const wordEl = card.querySelector(".main-text");     // 卡片上的英文單字元素（class 為 main-text）
-    if (wordEl) wordEl.classList.remove("highlight");    // 先清除舊的標亮
+  if (!query) return; // 清空搜尋 → 顯示全部
 
-    // 只要單字「包含」搜尋字串就算命中
-    if (word.includes(query)) {
-      found = true;
-      row.classList.remove("collapsed");                 // 展開所屬區塊
-      if (title) title.querySelector(".arrow")?.classList.add("rotate");
-
-      if (wordEl) wordEl.classList.add("highlight"); // 標亮命中的單字
-      card.scrollIntoView({ behavior: "smooth", block: "center" }); // 平滑捲動到該卡
+  // 只留「開頭符合」的字卡，其餘加 .card-hidden 隱藏
+  document.querySelectorAll(".term-card").forEach(card => {
+    const word = (card.dataset.word || "").toLowerCase();
+    if (word.startsWith(query)) {
+      card.querySelector(".main-text")?.classList.add("highlight"); // 標亮命中
+    } else {
+      card.classList.add("card-hidden");
     }
   });
 
-  if (!found) {
-    alert("找不到該單字！");
-  }
+  // 某區塊完全沒有可見字卡 → 連同標題一起隱藏；有命中的區塊自動展開
+  document.querySelectorAll(".content-row").forEach(row => {
+    const hasVisible = row.querySelector(".term-card:not(.card-hidden)");
+    const title = row.previousElementSibling; // 區塊標題
+    if (!hasVisible) {
+      row.classList.add("section-hidden");
+      if (title) title.classList.add("section-hidden");
+    } else {
+      row.classList.remove("collapsed"); // 展開有命中的區塊
+      if (title) title.querySelector(".arrow")?.classList.add("rotate");
+    }
+  });
 }
 
 // 執行載入
