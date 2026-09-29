@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=101"><!-- 外部樣式表（?v=101 為破快取版本號） -->
-<script defer src="index.js?v=101"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=102"><!-- 外部樣式表（?v=102 為破快取版本號） -->
+<script defer src="index.js?v=102"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -115,7 +115,7 @@
       </div>
 
       <!-- 加入最愛：把本題的英文單字加進我的最愛（★） -->
-      <div style="text-align:right; margin-bottom:4px;">
+      <div id="quizFavStarWrap" style="text-align:right; margin-bottom:4px;">
         <button id="quizFavStar" class="fav-star" style="display:none;" onclick="toggleQuizFav()" title="加入/移除我的最愛">☆</button>
       </div>
 
@@ -1643,8 +1643,10 @@ function nextQuestion() {
     //   關鍵：不每題重建輸入框（重建會讓 iOS 收起鍵盤）。第一次建立後就重用，
     //   在使用者手勢（Enter/下一題鈕）內同步清空並 refocus，鍵盤保持不收起。
     if (currentQuizType === "fill-cn") {
-        document.getElementById("quizQuestionCN").textContent = target.en;      // 只顯示英文
-        document.getElementById("quizReplayBtn").style.display = "block";        // 手動發音鈕（不自動唸）
+        // 題目＝英文＋內嵌小喇叭（手動發音，不自動唸）；不用下方「再唸一次」大鈕
+        document.getElementById("quizQuestionCN").innerHTML =
+            `${target.en} <button class="qbox-speak" type="button" onclick="replayQuizAudio()" title="發音">🔊</button>`;
+        document.getElementById("quizReplayBtn").style.display = "none";
         let input = document.getElementById("fillInput");
         if (!input) {
             optionsBox.innerHTML = `

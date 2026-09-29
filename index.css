@@ -1664,6 +1664,22 @@ h3 {
 /* 填空題型：隱藏左右「正確/錯誤」清單與計分數字（該類型不判分） */
 #quizModal.quiz-fill .quiz-sidebar { display: none; }
 #quizModal.quiz-fill #quizScoreLine { display: none; }
+/* 填空：壓縮空白（隱藏空的最愛外框與回饋列、縮小間距）讓版面緊湊 */
+#quizModal.quiz-fill #quizFavStarWrap { display: none; }
+#quizModal.quiz-fill #quizFeedback { display: none; }
+#quizModal.quiz-fill #quizOptions { margin-bottom: 0; }
+#quizModal.quiz-fill .main-quiz-area { gap: 10px; padding: 16px 18px; }
+
+/* 題目框內嵌的小喇叭發音鈕 */
+.qbox-speak {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.6em;
+  vertical-align: middle;
+  padding: 0 4px;
+  line-height: 1;
+}
 
 /* 選項按鈕外觀 */
 /* 選項容器：2×2 四宮格（左上 / 右上 / 左下 / 右下），加大點擊區、避免點錯 */
@@ -2191,6 +2207,11 @@ h3 {
   /* 手機：雙念法一律上下排列、按鈕精簡不超出框格 */
   .kk-variants { flex-direction: column; gap: 4px; }
   .kk-var { font-size: 12px; padding: 3px 6px; }
+
+  /* 手機：填空結算每列＝第一行(⭐英文🔊)、第二行(正解)、第三行(你的)，寬度不夠時換行 */
+  .fill-result-row { row-gap: 4px; }
+  .fill-result-row .fr-correct,
+  .fill-result-row .fr-user { flex-basis: 100%; }
 }
 
 /* ==================== 我的最愛（★ 星星 + 上方清單） ==================== */
