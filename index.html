@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=98"><!-- 外部樣式表（?v=98 為破快取版本號） -->
-<script defer src="index.js?v=98"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=100"><!-- 外部樣式表（?v=100 為破快取版本號） -->
+<script defer src="index.js?v=100"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -107,8 +107,10 @@
       <button class="exit-btn quiz-exit-top" onclick="closeQuiz()">⏹ 提前結束</button>
 
       <div style="margin-bottom: 16px;">
-        <span style="color:#00ff99;">正確: <span id="quizCorrect">0</span></span> |
-        <span style="color:#ff5555;">錯誤: <span id="quizWrong">0</span></span>
+        <span id="quizScoreLine">
+          <span style="color:#00ff99;">正確: <span id="quizCorrect">0</span></span> |
+          <span style="color:#ff5555;">錯誤: <span id="quizWrong">0</span></span>
+        </span>
         <div id="quizProgress" style="font-size: 12px; color: #888; margin-top: 5px;">進度: 0 / 0</div>
       </div>
 
@@ -414,11 +416,23 @@ function toggleQuizFav() {
     document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === w) updateStar(b); });
     refreshFavOnlySections();
 }
+// 填空結算：某一列的星星，加入/移除該單字到我的最愛（同步所有同字星星與上方清單）
+function toggleFillFav(btn) {
+    const w = btn.dataset.word;
+    const adding = !favorites[w];
+    if (adding) favorites[w] = { word: w, kk: "", translation: btn.dataset.cn || "", note: "", part_of_speech: "" };
+    else delete favorites[w];
+    saveFavs();
+    document.querySelectorAll(".fav-star").forEach(b => { if (b.dataset.word === w) updateStar(b); });
+    updateFavPanelIncremental(w, adding);
+    refreshFavOnlySections();
+}
 // 依當前題目更新測驗裡那顆星星的外觀（★=已收藏 / ☆=未收藏）
 function updateQuizFavStar() {
     const s = document.getElementById("quizFavStar");
     if (!s) return;
-    if (typeof currentQuizTarget === "undefined" || !currentQuizTarget) { s.style.display = "none"; return; }
+    // 填空題型：作答中不顯示這顆星（改在結算每列提供加/移除最愛）
+    if (currentQuizType === "fill-cn" || typeof currentQuizTarget === "undefined" || !currentQuizTarget) { s.style.display = "none"; return; }
     s.style.display = "inline-block";
     s.dataset.word = currentQuizTarget.en;
     const on = isFav(currentQuizTarget.en);
@@ -1588,6 +1602,8 @@ function openQuiz() {
     document.getElementById("wrongList").innerHTML = "";
     document.getElementById("quizCorrect").textContent = "0";
     document.getElementById("quizWrong").textContent = "0";
+    // 填空題型：隱藏左右「正確/錯誤」清單與計分列（該類型不判分）
+    document.getElementById("quizModal").classList.toggle("quiz-fill", currentQuizType === "fill-cn");
     document.getElementById("quizModal").style.display = "flex"; // 顯示測驗彈窗
 
     nextQuestion(); // 出第一題
@@ -1627,7 +1643,7 @@ function nextQuestion() {
     if (currentQuizType === "fill-cn") {
         const qBoxFill = document.getElementById("quizQuestionCN");
         qBoxFill.textContent = target.en;                                   // 只顯示英文
-        document.getElementById("quizReplayBtn").style.display = "none";
+        document.getElementById("quizReplayBtn").style.display = "block";   // 手動發音鈕（不自動唸，要聽才按）
         optionsBox.innerHTML = `
             <div class="fill-area">
                 <input id="fillInput" class="search-input fill-input" type="text" placeholder="請輸入中文意思…" autocomplete="off">
@@ -1642,8 +1658,7 @@ function nextQuestion() {
         document.getElementById("fillNextBtn").onclick = submitFill;
         input.addEventListener("keydown", e => { if (e.key === "Enter") submitFill(); });
         setTimeout(() => input.focus(), 50);   // 自動聚焦方便打字
-        speakWord(target.en, 'en-US');         // 唸一次英文（英文本來就顯示，不洩題）
-        return;                                // 填空題不走下面的四選項邏輯
+        return;                                // 填空題不走下面的四選項邏輯（不自動發音，避免長題數在手機累積記憶體崩潰）
     }
 
     // --- 根據題型決定題目顯示哪一面 ---
@@ -1779,7 +1794,9 @@ function finishQuiz() {
         qBoxF.textContent = "🎊 填空測驗完成！(自行核對)";
         const rows = fillAnswers.map(a => {
             const safeEn = a.en.replace(/'/g, "\\'");
+            const on = isFav(a.en);
             return `<div class="fill-result-row">
+                <button class="fav-star fr-star${on ? " active" : ""}" data-word="${attrEsc(a.en)}" data-cn="${attrEsc(a.cn)}" onclick="toggleFillFav(this)" title="加入/移除我的最愛">${on ? "★" : "☆"}</button>
                 <span class="fr-en"><b>${a.en}</b> <button class="speak-button" onclick="speakWord('${safeEn}','en-US')">🔊</button></span>
                 <span class="fr-correct">正解：${a.cn}</span>
                 <span class="fr-user">你的：${a.user || "（未填）"}</span>

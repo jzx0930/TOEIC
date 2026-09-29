@@ -1656,9 +1656,14 @@ h3 {
   border-radius: 6px;
   background: rgba(20, 20, 20, 0.6);
 }
-.fill-result-row .fr-en { min-width: 150px; color: var(--text-white); }
+.fill-result-row .fr-star { flex: 0 0 auto; font-size: 18px; padding: 0 2px; }
+.fill-result-row .fr-en { min-width: 140px; color: var(--text-white); }
 .fill-result-row .fr-correct { color: var(--bright-green); }
 .fill-result-row .fr-user { color: var(--yellow); }
+
+/* 填空題型：隱藏左右「正確/錯誤」清單與計分數字（該類型不判分） */
+#quizModal.quiz-fill .quiz-sidebar { display: none; }
+#quizModal.quiz-fill #quizScoreLine { display: none; }
 
 /* 選項按鈕外觀 */
 /* 選項容器：2×2 四宮格（左上 / 右上 / 左下 / 右下），加大點擊區、避免點錯 */
