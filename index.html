@@ -35,8 +35,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="index.css?v=102"><!-- 外部樣式表（?v=102 為破快取版本號） -->
-<script defer src="index.js?v=102"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
+<link rel="stylesheet" href="index.css?v=103"><!-- 外部樣式表（?v=103 為破快取版本號） -->
+<script defer src="index.js?v=103"></script><!-- 通用 UI 腳本；defer = 等 HTML 解析完才執行 -->
 
 </head>
 
@@ -1644,8 +1644,9 @@ function nextQuestion() {
     //   在使用者手勢（Enter/下一題鈕）內同步清空並 refocus，鍵盤保持不收起。
     if (currentQuizType === "fill-cn") {
         // 題目＝英文＋內嵌小喇叭（手動發音，不自動唸）；不用下方「再唸一次」大鈕
+        // onpointerdown preventDefault：點喇叭時不搶走輸入框焦點 → iOS 鍵盤不收起；並保險 refocus
         document.getElementById("quizQuestionCN").innerHTML =
-            `${target.en} <button class="qbox-speak" type="button" onclick="replayQuizAudio()" title="發音">🔊</button>`;
+            `${target.en} <button class="qbox-speak" type="button" onpointerdown="event.preventDefault()" onclick="replayQuizAudio(); document.getElementById('fillInput') && document.getElementById('fillInput').focus();" title="發音">🔊</button>`;
         document.getElementById("quizReplayBtn").style.display = "none";
         let input = document.getElementById("fillInput");
         if (!input) {
