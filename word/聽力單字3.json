@@ -63,8 +63,8 @@
   {
     "word": "appearance",
     "kk": "[əˈpɪrəns]",
-    "translation": "外貌、外觀、出現",
-    "part_of_speech": "n.",
+    "translation": "外貌、外觀;露面、出席",
+    "part_of_speech": "n. v",
     "note": "多益商務常用字，可用於產品外觀或人員儀表考題。常見搭配：personal appearance (個人儀表)、make an appearance (出席、露面)。",
     "sylWord": "ap·pear·ance",
     "sylKK": "ə·ˈpɪ·rəns"
@@ -81,7 +81,7 @@
   {
     "word": "placed",
     "kk": "[ˈplest]",
-    "translation": "放置、被放置的",
+    "translation": "放置",
     "part_of_speech": "v.",
     "note": "多益聽力 Part 1 靜態物品題最愛用被動語態 be placed。另外在 Part 3/4 中 place an order (下訂單) 為核心商務片語。",
     "sylWord": "pla·ced",
@@ -108,7 +108,7 @@
   {
     "word": "across",
     "kk": "[əˈkrɑs]",
-    "translation": "橫過、在...對面",
+    "translation": "穿過、在...對面",
     "part_of_speech": "prep. / adv.",
     "note": "多益聽力 Part 1 常見空間位置介係詞。常見搭配：walk across the street (穿過馬路)、across from the station (在車站正對面)。",
     "sylWord": "ac·ross",
@@ -117,7 +117,7 @@
   {
     "word": "served",
     "kk": "[ˈsɝvd]",
-    "translation": "供應（餐點）、服務",
+    "translation": "服務、提供(餐點)",
     "part_of_speech": "v.",
     "note": "多益餐飲或機艙情境常用字。常見搭配：food is being served (食物正被供應)、serve as a consultant (擔任顧問職務)。",
     "sylWord": "ser·ved",
@@ -126,7 +126,7 @@
   {
     "word": "meal",
     "kk": "[ˈmil]",
-    "translation": "餐點、一餐",
+    "translation": "餐點",
     "part_of_speech": "n.",
     "note": "多益餐飲與商務社交情境字。常見搭配：complimentary meal (免費贈送的餐點)、business meal (商務聚餐)。",
     "sylWord": "meal",
@@ -135,8 +135,8 @@
   {
     "word": "left",
     "kk": "[ˈlɛft]",
-    "translation": "留下、遺留、離開",
-    "part_of_speech": "v. / adj.",
+    "translation": "左邊;離開、留下;剩下的",
+    "part_of_speech": "n. / v. / adj.",
     "note": "多益聽力與閱讀常見字（leave的過去式/過去分詞）。常見搭配：items left unattended (無人看管的物品，多益機場廣播必考)、leave a message (留言)。",
     "sylWord": "left",
     "sylKK": "ˈlɛft"
@@ -153,7 +153,7 @@
   {
     "word": "installed",
     "kk": "[ˌɪnˈstɑld]",
-    "translation": "安裝（的）",
+    "translation": "安裝",
     "part_of_speech": "v.",
     "note": "多益 IT 資訊科技與設備維護情境核心字。常見搭配：install software (安裝軟體)、installation guide (安裝指南)。",
     "sylWord": "in·stalled",
@@ -224,7 +224,7 @@
   {
     "word": "experiencing",
     "kk": "[ɪkˈspɪriənsɪŋ]",
-    "translation": "經歷、體驗、遭受",
+    "translation": "正在遭遇",
     "part_of_speech": "v.",
     "note": "多益常考於系統故障、服務中斷或交通延誤公告。常見搭配：experiencing technical difficulties (正遭遇技術故障)。",
     "sylWord": "ex·pe·ri·enc·ing",
@@ -233,7 +233,7 @@
   {
     "word": "heavy traffic",
     "kk": "[ˈhɛvi ˈtræfɪk]",
-    "translation": "交通擁堵、車流量大",
+    "translation": "交通堵塞",
     "part_of_speech": "n. phr.",
     "note": "多益聽力 Part 4 交通廣播（Traffic Report）必考片語。同義詞：traffic congestion, gridlock。",
     "sylWord": "heavy traf·fic"
@@ -258,7 +258,7 @@
   {
     "word": "homemade",
     "kk": "[ˈhomˈmed]",
-    "translation": "自製的、家常的",
+    "translation": "在家自製的",
     "part_of_speech": "adj.",
     "note": "多益餐飲行銷、當地市集情境字。常用於強調天然、手工或非工廠批量生產的特色。",
     "sylWord": "home·made",
@@ -293,7 +293,7 @@
   {
     "word": "accommodation",
     "kk": "[əˌkɑməˈdeʃən]",
-    "translation": "住宿、膳宿",
+    "translation": "住宿",
     "part_of_speech": "n.",
     "note": "多益出差旅遊極高頻單字（美式多益亦常用複數 accommodations）。常見搭配：hotel accommodation (飯店住宿)、arrange accommodation (安排住宿)。",
     "sylWord": "ac·com·mo·da·tion",
@@ -342,17 +342,17 @@
     "sylWord": "mar·ket·ing ex·pe·ri·ence"
   },
   {
-    "word": "good asset to",
+    "word": "asset",
     "kk": "[gʊd ˈæset tu]",
-    "translation": "對...有價值的資產/人才",
+    "translation": "人才;優點",
     "part_of_speech": "adj. phr.",
     "note": "多益推薦信、主管評語高頻讚美用語。asset 指「資產、優勢、有用的人才」。常考用法：be a valuable asset to the company。",
-    "sylWord": "good as·set to"
+    "sylWord": "as·set"
   },
   {
     "word": "promotional code",
     "kk": "[prəˈmoʃənəl kod]",
-    "translation": "促銷代碼、優惠碼",
+    "translation": "優惠碼",
     "part_of_speech": "n. phr.",
     "note": "多益電子商務與零售消費必考。簡稱為 promo code。常見搭配：enter a promotional code (輸入促銷代碼)。",
     "sylWord": "pro·mo·tion·al code"
@@ -369,7 +369,7 @@
   {
     "word": "purchase",
     "kk": "[ˈpɝtʃəs]",
-    "translation": "購買、購買的物品",
+    "translation": "購買、採購;購買的物品",
     "part_of_speech": "v. / n.",
     "note": "多益商務高頻正式用字，比 buy 更常出現在閱讀題。常見搭配：make a purchase (進行購買)、proof of purchase (購買證明)。",
     "sylWord": "pur·chase",
@@ -448,7 +448,7 @@
   {
     "word": "workshop",
     "kk": "[ˈwɝkˌʃɑp]",
-    "translation": "討論會、工作坊",
+    "translation": "工作室;小型討論會",
     "part_of_speech": "n.",
     "note": "多益員工培訓／商務會議高頻字，強調互動與實務操作。搭 attend／hold a workshop（參加／舉辦工作坊）。【相近字比較】seminar：小型研討會、講座（偏單向授課）；conference：大型正式會議（多日、多場次）；workshop：實作型工作坊（重互動練習）；meeting：一般會議（開會討論）；forum：論壇（公開交流意見）；summit：高峰會（高層領袖級）；convention：大會、年會（同業大型集會）。",
     "sylWord": "work·shop",
@@ -457,7 +457,7 @@
   {
     "word": "presenting",
     "kk": "[prɪˈzɛntɪŋ]",
-    "translation": "簡報、呈現、贈送",
+    "translation": "報告中、呈現出、提交",
     "part_of_speech": "v.",
     "note": "多益商務會議核心動詞（此為現在分詞形式）。名詞為 presentation。常見搭配：present a marketing proposal (提出行銷提案)。",
     "sylWord": "pre·sent·ing",
@@ -517,7 +517,7 @@
   {
     "word": "delivered",
     "kk": "[dɪˈlɪvɚd]",
-    "translation": "遞送、交付",
+    "translation": "已遞送、已交付",
     "part_of_speech": "v.",
     "note": "多益物流、寄送服務與電商必考字。常見搭配：delivered to the warehouse (遞送到倉庫)、cash on delivery (貨到付款，簡稱 COD)。",
     "sylWord": "de·liv·ered",
@@ -526,7 +526,7 @@
   {
     "word": "express service",
     "kk": "[ɪkˈsprɛs ˈsɝvɪs]",
-    "translation": "快捷服務、快遞服務",
+    "translation": "快遞服務",
     "part_of_speech": "n. phr.",
     "note": "多益郵政、物流或客戶服務情境核心片語。常用於強調需要加價的高時效性服務。同義詞：expedited shipping。",
     "sylWord": "ex·press ser·vice"
@@ -543,7 +543,7 @@
   {
     "word": "sell",
     "kk": "[ˈsɛl]",
-    "translation": "銷售、出賣",
+    "translation": "銷售、賣出",
     "part_of_speech": "v.",
     "note": "商務基本字。名詞為 sale，複數 sales 常用作形容詞修飾（如 sales department 銷售部門、sales figures 銷售額）。",
     "sylWord": "sell",
@@ -559,13 +559,13 @@
     "sylKK": "ˈhop·fə·li"
   },
   {
-    "word": "participants",
-    "kk": "[pɑrˈtɪsəpənts]",
+    "word": "participant",
+    "kk": "[pɑrˈtɪsəpənt]",
     "translation": "參與者、學員",
     "part_of_speech": "n.",
     "note": "多益會議、研討會與公司訓練課程必考字。動詞為 participate (in)。同義詞：attendees (出席者)。",
-    "sylWord": "par·tic·i·pants",
-    "sylKK": "pɑr·ˈtɪ·sə·pənts"
+    "sylWord": "par·tic·i·pant",
+    "sylKK": "pɑr·ˈtɪ·sə·pənt"
   },
   {
     "word": "workplace",
